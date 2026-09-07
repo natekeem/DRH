@@ -1,3 +1,6 @@
+import type { OfficialShaderPreset } from '../../data/shaderPresets'
+import { recipes } from '../../lib/demos/recipes'
+import { DemoViewport, RecipeDemo } from './DemoViewport'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { ArrowUpRight, Check, ChevronDown, Command, Sparkles } from 'lucide-react'
 import { ShaderBackdrop } from '../ShaderBackdrop'
@@ -96,7 +99,7 @@ function DesignMdDemo({kind}:{kind:string}) {
   return <div className={`designmd-demo ${tone}`}><header><span>DESIGN.md</span><i>● ● ●</i></header><div><small># direction</small><b>{tone.replaceAll('-',' ')}</b><p>tokens → typography → layout → motion → agent rules</p><code>accent: var(--signal)</code></div></div>
 }
 
-export function DemoRenderer({ kind, detail=false }:{kind:string;detail?:boolean}) {
+function LegacyDemoRenderer({ kind, detail=false }:{kind:string;detail?:boolean}) {
   const [ripples,setRipples]=useState<{id:number,x:number,y:number}[]>([])
   if(kind==='shader-gradient') return <div className={`demo-stage shader-demo ${detail?'detail':''}`}><ShaderBackdrop compact={!detail}/><span className="shader-label">WebGL / LIVE</span></div>
   if(kind==='particles') return <div className="demo-stage light-demo"><Particles/><span className="demo-hint">pointer reactive</span></div>
@@ -164,3 +167,5 @@ export function DemoRenderer({ kind, detail=false }:{kind:string;detail?:boolean
     {kind==='style-dark' && <div className="dark-ui-demo"><div><i/><span>Design Index</span><b>93 live</b></div><section><small>ACTIVE</small><b>Motion library</b><span>Curated & verified</span></section></div>}
   </PointerSurface>
 }
+
+export function DemoRenderer({kind,detail=false,preset}:{kind:string;detail?:boolean;preset?:OfficialShaderPreset}){return <DemoViewport detail={detail}>{kind==='shader-gradient'&&preset?<div className="demo-stage shader-demo"><ShaderBackdrop preset={preset} compact={!detail}/></div>:recipes[kind]?<RecipeDemo kind={kind}/>:<LegacyDemoRenderer kind={kind} detail={detail}/>}</DemoViewport>}

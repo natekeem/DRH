@@ -1,3 +1,5 @@
+import { recipes } from '../lib/demos/recipes'
+import upstreamReview from '../../docs/licenses/upstream-review.json'
 import type { Category, ReferenceItem } from '../types'
 
 type Seed = {
@@ -26,8 +28,8 @@ const promptFor = (s: Seed) => `Create a ${s.name} treatment for a modern web in
 const mk = (s: Seed): ReferenceItem => ({
   ...s,
   implementation: {
-    type: s.source && s.source !== 'Design Reference Hub' ? 'native' : 'hub-original',
-    framework: s.dependencies?.some((d) => d.includes('three')) ? 'React + WebGL' : 'React + CSS',
+    type: s.demo === 'shader-gradient' ? 'native' : 'hub-original',
+    framework: s.demo === 'shader-gradient' ? 'React + WebGL' : /liquid|rgb-lens/.test(s.demo) ? 'HTML + WebGL' : recipes[s.demo] ? 'HTML + CSS + JavaScript' : 'React + CSS',
     dependencies: s.dependencies ?? [],
   },
   prompt: promptFor(s),
@@ -39,9 +41,9 @@ const mk = (s: Seed): ReferenceItem => ({
   license: {
     name: s.license ?? 'MIT (Hub original demo)',
     status: s.licenseStatus ?? 'copy-ok',
-    evidenceUrl: s.repo,
-    attributionRequired: Boolean(s.source && s.source !== 'Design Reference Hub'),
-    notes: s.source ? 'Source license applies to the referenced implementation; demo presentation and any external assets must be reviewed separately.' : 'Original demo implementation included in this repository.',
+    evidenceUrl: s.repo && upstreamReview.find(r=>'https://github.com/'+r.repository===s.repo)?.license !== 'unverified' ? upstreamReview.find(r=>'https://github.com/'+r.repository===s.repo)?.evidence : s.demo === 'shader-gradient' ? 'https://github.com/ruucm/shadergradient/blob/main/packages/shadergradient/package.json' : s.source === 'Magic UI' ? 'https://github.com/magicuidesign/magicui/blob/main/LICENSE.md' : 'https://github.com/natekeem/DRH/blob/main/LICENSE',
+    attributionRequired: s.demo === 'shader-gradient' || s.demo === 'meteors',
+    notes: s.demo === 'shader-gradient' ? '공식 패키지의 MIT 선언을 확인했습니다. 설치한 dependency 고지를 유지하세요.' : s.demo === 'meteors' ? 'Magic UI MIT 고지 전문을 실행 HTML에 포함합니다.' : 'Hub 독립 구현은 MIT입니다. 참고 Source 링크는 upstream 코드를 복사했다는 뜻이 아닙니다.',
   },
 })
 

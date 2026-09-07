@@ -1,0 +1,52 @@
+[
+  {
+    "license": "unverified",
+    "evidence": "https://github.com/ruucm/shadergradient",
+    "repository": "ruucm/shadergradient"
+  },
+  {
+    "license": "MIT",
+    "evidence": "https://github.com/tsparticles/tsparticles/blob/main/LICENSE",
+    "repository": "tsparticles/tsparticles"
+  },
+  {
+    "license": "MIT",
+    "evidence": "https://github.com/magicuidesign/magicui/blob/main/LICENSE.md",
+    "repository": "magicuidesign/magicui"
+  },
+  {
+    "license": "MIT",
+    "evidence": "https://github.com/ibelick/motion-primitives/blob/main/LICENCE.md",
+    "repository": "ibelick/motion-primitives"
+  },
+  {
+    "license": "MIT",
+    "evidence": "https://github.com/micku7zu/vanilla-tilt.js/blob/master/LICENSE",
+    "repository": "micku7zu/vanilla-tilt.js"
+  },
+  {
+    "license": "MIT",
+    "evidence": "https://github.com/tameemsafi/typewriterjs/blob/main/LICENSE",
+    "repository": "tameemsafi/typewriterjs"
+  },
+  {
+    "license": "MIT",
+    "evidence": "https://github.com/shshaw/Splitting/blob/master/LICENSE.md",
+    "repository": "shshaw/Splitting"
+  },
+  {
+    "license": "MIT",
+    "evidence": "https://github.com/rough-stuff/rough-notation/blob/master/LICENSE",
+    "repository": "rough-stuff/rough-notation"
+  },
+  {
+    "license": "MIT",
+    "evidence": "https://github.com/arthelokyo/astrowind/blob/main/LICENSE.md",
+    "repository": "onwidget/astrowind"
+  },
+  {
+    "license": "Apache-2.0",
+    "evidence": "https://github.com/tremorlabs/tremor/blob/main/LICENSE",
+    "repository": "tremorlabs/tremor"
+  }
+]

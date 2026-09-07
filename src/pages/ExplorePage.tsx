@@ -1,4 +1,4 @@
-﻿import { Search, SlidersHorizontal, X, ArrowUpRight } from 'lucide-react'
+import { Search, SlidersHorizontal, X, ArrowUpRight } from 'lucide-react'
 import { useEffect, useMemo, useState, useRef } from 'react'
 import { useSearchParams, useLocation, Link } from 'react-router-dom'
 import { ReferenceCard } from '../components/ReferenceCard'
@@ -20,20 +20,23 @@ export function ExplorePage(){
   const [params,setParams]=useSearchParams()
   const location = useLocation()
   const searchRef = useRef<HTMLInputElement>(null)
-  
+
   const currentView = params.get('view') === 'collections' ? 'collections' : 'references'
   const initialCategory=params.get('category') as Category|null
   const [category,setCategory]=useState<Category|'All'>(initialCategory&&categories.includes(initialCategory)?initialCategory:'All')
   const [query,setQuery]=useState(params.get('search')??'')
-  const [liveOnly,setLiveOnly]=useState(false)
-  const [copyOnly,setCopyOnly]=useState(false)
-  const [sub,setSub]=useState('All')
-  const [filterOpen, setFilterOpen] = useState(false)
+  const liveOnly=params.get('live')==='1'
+  const copyOnly=params.get('copy')==='1'
+  const sub=params.get('sub')??'All'
+  const setOption=(key:string,value:string)=>{const next=new URLSearchParams(params);if(value)next.set(key,value);else next.delete(key);setParams(next,{replace:true})}
+  const setSub=(value:string)=>setOption('sub',value==='All'?'':value)
+  const filterOpen=params.get('filters')==='1'
+  const setFilterOpen=(value:boolean)=>setOption('filters',value?'1':'')
 
   useEffect(()=>{
     if ((location.state as any)?.focusSearch) {
-      searchRef.current?.focus()
-      window.history.replaceState({}, document.title)
+      searchRef.current?.focus({preventScroll:true})
+
     }
   }, [location.state])
 
@@ -41,17 +44,17 @@ export function ExplorePage(){
     const nextSearch=params.get('search')??''
     setQuery(nextSearch)
     const nextCategory=params.get('category') as Category|null
-    if(nextCategory&&categories.includes(nextCategory)) { setCategory(nextCategory); setSub('All') }
+    if(nextCategory&&categories.includes(nextCategory)) { setCategory(nextCategory) }
     else if(!nextCategory) setCategory('All')
   },[params])
 
   const subcategories=useMemo(()=>Array.from(new Set(references.filter(r=>category==='All'||r.category===category).map(r=>r.subcategory))).sort(),[category])
-  
+
   const filteredReferences=useMemo(()=>references.filter(r=>{
     if(category!=='All'&&r.category!==category)return false
     if(sub!=='All'&&r.subcategory!==sub)return false
     if(copyOnly&&r.license.status!=='copy-ok')return false
-    if(liveOnly&&demoMaturity(r).kind==='external')return false
+    if(liveOnly&&!['official','working'].includes(demoMaturity(r).kind))return false
     if(query.trim()){const q=query.toLowerCase();return [r.name,r.description,r.category,r.subcategory,...r.tags,...r.useCases].join(' ').toLowerCase().includes(q)}
     return true
   }),[category,sub,copyOnly,liveOnly,query])
@@ -65,10 +68,10 @@ export function ExplorePage(){
     return true
   }), [query])
 
-  const choose=(cat:Category|'All')=>{setCategory(cat);setSub('All');const next=new URLSearchParams(params); if(cat==='All')next.delete('category');else next.set('category',cat);setParams(next,{replace:true})}
-  
+  const choose=(cat:Category|'All')=>{setCategory(cat);const next=new URLSearchParams(params);next.delete('sub'); if(cat==='All')next.delete('category');else next.set('category',cat);setParams(next,{replace:true})}
+
   const clearQuery=()=>{setQuery('');const next=new URLSearchParams(params);next.delete('search');setParams(next,{replace:true})}
-  
+
   const setView = (view: 'references' | 'collections') => {
     const next = new URLSearchParams(params)
     if(view === 'references') next.delete('view')
@@ -92,7 +95,7 @@ export function ExplorePage(){
         </>
       )}
     </section>
-    
+
     <section className="listing-toolbar">
       <div className="toolbar-top-row">
         <div className="view-switcher">
@@ -101,7 +104,7 @@ export function ExplorePage(){
         </div>
         <label className="big-search">
           <Search size={18}/>
-          <input ref={searchRef} placeholder={currentView==='collections' ? "컬렉션 검색..." : "glass, cursor, hero…"} value={query} onChange={e=>{
+          <input aria-label="레퍼런스 검색" ref={searchRef} placeholder={currentView==='collections' ? "컬렉션 검색..." : "glass, cursor, hero…"} value={query} onChange={e=>{
             setQuery(e.target.value)
             const next = new URLSearchParams(params)
             if(e.target.value) next.set('search', e.target.value)
@@ -129,13 +132,13 @@ export function ExplorePage(){
           <div className="filter-group">
             <span>Demo</span>
             <div className="subfilter-chips">
-              <button className={liveOnly?'toggle active':'toggle'} onClick={()=>setLiveOnly(v=>!v)}><i/> Live Demo</button>
+              <button className={liveOnly?'toggle active':'toggle'} onClick={()=>setOption('live',liveOnly?'':'1')}><i/> Live Demo</button>
             </div>
           </div>
           <div className="filter-group">
             <span>License</span>
             <div className="subfilter-chips">
-              <button className={copyOnly?'toggle active':'toggle'} onClick={()=>setCopyOnly(v=>!v)}><i/> Copy OK</button>
+              <button className={copyOnly?'toggle active':'toggle'} onClick={()=>setOption('copy',copyOnly?'':'1')}><i/> Copy OK</button>
             </div>
           </div>
           <div className="filter-group">

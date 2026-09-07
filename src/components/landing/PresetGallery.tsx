@@ -10,7 +10,7 @@ export function PresetGallery(){
     <div className="sg-gallery-head"><small>LIVE BACKGROUND / OFFICIAL PRESETS · 01–09</small><p>00 Halo는 Hero에서 이미 실행 중입니다. 나머지 9개 공식 preset을 한 화면에서 비교하세요.</p></div>
     <div className="sg-preset-grid sg-preset-grid-nine">
       {presets.map((preset,i)=><Reveal key={preset.id} delay={(i%3)*.06}>
-        <button type="button" className="sg-preset-tile" onClick={()=>navigate('/reference/shader-gradient')}>
+        <button type="button" className="sg-preset-tile" onClick={()=>navigate('/reference/shader-gradient?preset='+preset.id)}>
           <ShaderBackdrop preset={preset} compact/>
           <span className="sg-preset-caption"><span>{String(i+1).padStart(2,'0')}</span>{preset.title}</span>
         </button>

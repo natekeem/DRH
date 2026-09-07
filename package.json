@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc --noEmit -p tsconfig.app.json && vite build",
     "preview": "vite preview",
-    "typecheck": "tsc --noEmit -p tsconfig.app.json"
+    "typecheck": "tsc --noEmit -p tsconfig.app.json",
+    "audit:v1.4": "node scripts/audit-v1.4.mjs"
   },
   "dependencies": {
     "@react-three/fiber": "8.18.0",

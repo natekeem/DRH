@@ -25,12 +25,12 @@ export function SiteHeader() {
     const onKey=(e:KeyboardEvent)=>{
       if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k'){
         e.preventDefault();
-        navigate('/explore', { state: { focusSearch: true } });
+        navigate(location.pathname==='/explore'?'/explore'+location.search:'/explore', { state: { focusSearch: true } });
       }
     }
     window.addEventListener('keydown',onKey);return()=>window.removeEventListener('keydown',onKey)
-  },[navigate])
-  const onSearchClick=()=>{navigate('/explore', { state: { focusSearch: true } })}
+  },[navigate,location.pathname,location.search])
+  const onSearchClick=()=>{navigate(location.pathname==='/explore'?'/explore'+location.search:'/explore', { state: { focusSearch: true } })}
 
   return <>
     <div className={`header-backdrop-rail ${home&&!pastHero?'over-hero':''}`} />
@@ -44,7 +44,7 @@ export function SiteHeader() {
         <NavLink className={({isActive})=>isActive?'active':''} to="/sources">출처</NavLink>
         <button className="nav-search-trigger" onClick={onSearchClick}><Search size={15}/> 검색 <kbd>⌘K</kbd></button>
       </nav>
-      <button className="menu-button" onClick={()=>setOpen(v=>!v)} aria-label="메뉴 열기/닫기">{open?<X/>:<Menu/>}</button>
+      <button className="menu-button" onClick={()=>setOpen(v=>!v)} aria-label="메뉴 열기/닫기" aria-expanded={open}>{open?<X/>:<Menu/>}</button>
     </header>
   </>
 }

@@ -18,7 +18,7 @@ export function LandingHero(){
   },[])
 
   return <section className={`sg-hero ${preset.ink==='dark'?'dark-ink':'light-ink'}`} aria-label="Design Reference Hub 소개">
-    <ShaderBackdrop preset={preset} lazyLoad={false}/>
+    <ShaderBackdrop preset={preset} lazyLoad/>
     <div className="sg-hero-overlay"/>
     <Link className="sg-hero-logo" to="/">Design Reference Hub</Link>
 

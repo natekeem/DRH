@@ -24,7 +24,9 @@ function useWebGLSupport() {
   useEffect(() => {
     try {
       const canvas = document.createElement('canvas')
-      setSupported(Boolean(canvas.getContext('webgl2') || canvas.getContext('webgl')))
+      const context=canvas.getContext('webgl2') || canvas.getContext('webgl')
+      setSupported(Boolean(context))
+      context?.getExtension('WEBGL_lose_context')?.loseContext()
     } catch { setSupported(false) }
   }, [])
   return supported
@@ -56,7 +58,7 @@ export function ShaderBackdrop({
 }) {
   const reduced = useReducedMotion()
   const webgl = useWebGLSupport()
-  const virtualize = lazyLoad ?? compact
+  const virtualize = lazyLoad ?? true
   const {ref,near}=useNearViewport(virtualize)
   const live=!reduced && webgl===true && near
 
