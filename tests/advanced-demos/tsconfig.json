@@ -1,0 +1,4 @@
+{
+  "extends": "../../tsconfig.app.json",
+  "include": ["../../src/vite-env.d.ts", "./fixture.tsx", "../../src/components/demos/advanced", "../../src/lib/demo-exports"]
+}
