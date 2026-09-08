@@ -85,13 +85,13 @@ export function ExplorePage(){
         <>
           <span className="eyebrow">EXPLORE / {references.length} REFERENCES</span>
           <h1>마음에 걸리는 걸<br/><i>먼저 고르세요.</i></h1>
-          <p>용어를 먼저 알 필요는 없습니다. Card의 Demo를 움직여 보고, 열어 본 뒤 필요한 이름과 Prompt를 가져가세요.</p>
+          <p>용어를 먼저 알 필요는 없습니다. Demo를 직접 움직여 보고, 마음에 들면 이름과 Prompt를 가져가세요.</p>
         </>
       ) : (
         <>
           <span className="eyebrow">CURATED PATHS</span>
           <h1>카테고리가 아니라<br/><i>목적으로 시작하세요.</i></h1>
-          <p>서로 잘 어울리는 Reference를 한 묶음으로 정리했습니다. 원하는 분위기나 제품 유형이 이미 있다면 여기서 시작하는 편이 빠릅니다.</p>
+          <p>서로 잘 어울리는 Reference를 묶었습니다. 원하는 분위기나 제품 유형이 있다면 여기서 시작하는 편이 빠릅니다.</p>
         </>
       )}
     </section>

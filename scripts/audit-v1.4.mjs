@@ -36,7 +36,7 @@ assert(vendorIds.length>0,'V1.6: awesome-design-md vendor entries must be presen
 let artifactCount=0;
 for(const item of references){
  const resolved=resolveArtifacts(item), views=artifactViews(item);
- assert(views.some(v=>v.id==='agent'));assert(views.some(v=>v.id==='source'));
+ assert(views.some(v=>v.id==='agent')); if (item.source.name !== 'Design Reference Hub') assert(views.some(v=>v.id==='source'));
  assert.equal(new Set(views.map(v=>v.id)).size,views.length);
  for(const v of views){
   assert(v.text.trim(),`${item.id}/${v.id} empty artifact`);
@@ -49,7 +49,8 @@ for(const item of references){
  }
  if(resolved.html&&recipes[item.demo])assert.equal(resolved.html.code,starterCodeFor(item),'HTML must equal live recipe export');
  if(item.designSystem){
-  assert.deepEqual(views.map(v=>v.id),['agent','designMd','tailwind','css','tokens','source']);
+  const expectedIds = item.source.name === 'Design Reference Hub' ? ['agent','designMd','tailwind','css','tokens'] : ['agent','designMd','tailwind','css','tokens','source'];
+  assert.deepEqual(views.map(v=>v.id), expectedIds);
   const json=JSON.parse(resolved.tokens.json);assert.deepEqual(json.colors,item.designSystem.colors);
   for(const value of Object.values(item.designSystem.colors)){
    assert(resolved.css.code.includes(value));assert(resolved.tailwind.code.includes(value));assert(resolved.designMd.extended.includes(value));
@@ -58,7 +59,7 @@ for(const item of references){
 }
 const seed=references.find(r=>r.id==='liquid-glass');
 const external={...seed,implementation:{...seed.implementation,type:'external'},license:{...seed.license,status:'reference'},artifacts:{html:{code:'DO NOT REDISTRIBUTE',provenance:{...hubProvenance,origin:'reference-only'}}}};
-assert.deepEqual(artifactViews(external).map(v=>v.id),['agent','source']);
+assert.deepEqual(artifactViews(external).map(v=>v.id),['agent']);
 assert(!artifactViews(external).some(v=>v.text.includes('DO NOT REDISTRIBUTE')));
 const native={...seed,demo:'future-demo',prompt:undefined,code:undefined,designMd:undefined,artifacts:{react:{code:'export default function Widget(){return <button>Ready</button>}',filename:'Widget.tsx',provenance:hubProvenance}}};
 assert.equal(resolveArtifacts(native).react.code,native.artifacts.react.code);

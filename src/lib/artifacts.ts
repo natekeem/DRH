@@ -109,6 +109,8 @@ export function artifactViews(item: ReferenceItem, preset?: OfficialShaderPreset
     if(!text.trim())continue
     views.push({id,label,filename:entry.filename??filename,text,compact:'compact' in entry?entry.compact:undefined,provenance:entry.provenance,hint:id==='react'&&a.react?.code.includes('srcDoc=')?'React iframe wrapper · HTML/CSS/JS를 격리해 실행합니다.':id==='tailwind'?`Tailwind CSS v${a.tailwind?.version??'4'}용 테마입니다.`:id==='css'&&a.html?'HTML의 구조·동작과 함께 사용하는 스타일입니다.':undefined})
   }
-  views.push({id:'source',label:'Source',filename:`${item.id}-source.md`,provenance:hubProvenance,text:`# ${item.name} — Source / License\n\n${provenanceFor(item)}\n\nDiscovery source: ${item.source.name}\n${item.source.url||hub}\nRepository: ${item.source.repository||hub}\nReference license: ${item.license.name}\nEvidence: ${item.license.evidenceUrl||hub+'/blob/main/LICENSE'}\n${item.license.notes??''}\n\n## Artifact provenance\n${views.map(v=>`### ${v.label}\nOrigin: ${v.provenance.origin}\nSource: ${v.provenance.sourceUrl}\nRepository: ${v.provenance.repository??'—'}\nLicense: ${v.provenance.license}\nEvidence: ${v.provenance.evidenceUrl}\n${v.provenance.notices??''}`).join('\n\n')}`})
+  if (item.source.name !== 'Design Reference Hub') {
+    views.push({id:'source',label:'Source',filename:`${item.id}-source.md`,provenance:hubProvenance,text:`# ${item.name} — Source / License\n\n${provenanceFor(item)}\n\nDiscovery source: ${item.source.name}\n${item.source.url||hub}\nRepository: ${item.source.repository||hub}\nReference license: ${item.license.name}\nEvidence: ${item.license.evidenceUrl||hub+'/blob/main/LICENSE'}\n${item.license.notes??''}\n\n## Artifact provenance\n${views.map(v=>`### ${v.label}\nOrigin: ${v.provenance.origin}\nSource: ${v.provenance.sourceUrl}\nRepository: ${v.provenance.repository??'—'}\nLicense: ${v.provenance.license}\nEvidence: ${v.provenance.evidenceUrl}\n${v.provenance.notices??''}`).join('\n\n')}`})
+  }
   return views
 }

@@ -22,14 +22,14 @@ function PointerSurface({ className='', children }:{className?:string;children?:
   return <div ref={ref} onPointerMove={move} className={`pointer-surface ${className}`}>{children}</div>
 }
 
-function Particles() {
+function Particles({ detail }: { detail?: boolean }) {
   const canvas = useRef<HTMLCanvasElement>(null)
   const reduced = useReducedMotion()
   useEffect(() => {
     const el=canvas.current; if(!el) return
     const ctx=el.getContext('2d'); if(!ctx) return
     let raf=0, pointer={x:-999,y:-999}
-    const dots=Array.from({length:38},(_,i)=>({x:(i*73)%320,y:(i*47)%190,vx:(i%3-1)*.13,vy:((i+1)%3-1)*.1}))
+    const dots=Array.from({length: detail ? 150 : 38},(_,i)=>({x:(i*73)%320,y:(i*47)%190,vx:(i%3-1)*.13,vy:((i+1)%3-1)*.1}))
     const resize=()=>{const r=el.getBoundingClientRect(); el.width=r.width*devicePixelRatio; el.height=r.height*devicePixelRatio; ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0)}
     const move=(e:PointerEvent)=>{const r=el.getBoundingClientRect(); pointer={x:e.clientX-r.left,y:e.clientY-r.top}}
     resize(); window.addEventListener('resize',resize); el.addEventListener('pointermove',move)
@@ -104,7 +104,7 @@ function DesignMdDemo({kind}:{kind:string}) {
 function LegacyDemoRenderer({ kind, detail=false }:{kind:string;detail?:boolean}) {
   const [ripples,setRipples]=useState<{id:number,x:number,y:number}[]>([])
   if(kind==='shader-gradient') return <div className={`demo-stage shader-demo ${detail?'detail':''}`}><ShaderBackdrop compact={!detail}/><span className="shader-label">WebGL / LIVE</span></div>
-  if(kind==='particles') return <div className="demo-stage light-demo"><Particles/><span className="demo-hint">pointer reactive</span></div>
+  if(kind==='particles') return <div className="demo-stage light-demo"><Particles detail={detail}/><span className="demo-hint">pointer reactive</span></div>
   if(kind==='image-trail') return <div className="demo-stage"><ImageTrail/></div>
   if(kind==='magnetic-button') return <div className="demo-stage warm-demo"><MagneticButton/></div>
   if(kind==='tilt-card'||kind==='style-clay') return <div className={`demo-stage ${kind==='style-clay'?'clay-stage':'dark-demo'}`}><TiltCard/></div>
@@ -131,7 +131,7 @@ function LegacyDemoRenderer({ kind, detail=false }:{kind:string;detail?:boolean}
     {kind==='waves' && <><div className="wave-lines">{Array.from({length:8},(_,i)=><i key={i} style={{'--i':i} as React.CSSProperties}/>)}</div><b className="center-label dark-label">SIGNAL</b></>}
     {kind==='noise-blobs' && <><i className="noise-blob n1"/><i className="noise-blob n2"/><i className="noise-blob n3"/><div className="grain"/></>}
     {kind==='fluid-cursor' && <><div className="fluid-field"/><b className="center-label">MOVE / MIX</b></>}
-    {kind==='metaballs' && <><div className="metaballs">{Array.from({length:7},(_,i)=><i key={i} className={`ball ball-${i}`}/>)}</div><span className="demo-hint">living cells</span></>}
+    {kind==='metaballs' && <><div className="metaballs">{Array.from({length:detail?14:7},(_,i)=><i key={i} className={`ball ball-${i}`}/>)}</div><span className="demo-hint">living cells</span></>}
     {kind==='starfield' && <><div className="stars s1"/><div className="stars s2"/><b className="center-label">DEEP SPACE</b></>}
     {kind==='scroll-reveal' && <div className="scroll-reveal-sim"><small>SCROLL / REVEAL</small><div><b>01</b><span>Discover</span></div><div><b>02</b><span>Recognize</span></div><div><b>03</b><span>Build</span></div></div>}
     {kind==='parallax' && <><div className="parallax-card pc1">STYLE</div><div className="parallax-card pc2">MOTION</div><div className="parallax-card pc3">TYPE</div><b className="center-label dark-label">PARALLAX</b></>}
@@ -177,5 +177,5 @@ export function DemoRenderer({kind,detail=false,preset}:{kind:string;detail?:boo
     if(entry)return <DemoViewport detail={detail}><VendorDesignPreview tokens={entry.tokens} name={entry.name} category={entry.category}/></DemoViewport>
     return <DemoViewport detail={detail}><div className="ds-preview"><p>Preview loading…</p></div></DemoViewport>
   }
-  return <DemoViewport detail={detail}>{kind==='shader-gradient'&&preset?<div className="demo-stage shader-demo"><ShaderBackdrop preset={preset} compact={!detail}/></div>:recipes[kind]?<RecipeDemo kind={kind}/>:<LegacyDemoRenderer kind={kind} detail={detail}/>}</DemoViewport>
+  return <DemoViewport detail={detail}>{kind==='shader-gradient'&&preset?<div className="demo-stage shader-demo"><ShaderBackdrop preset={preset} compact={!detail}/></div>:recipes[kind]?<RecipeDemo kind={kind} detail={detail}/>:<LegacyDemoRenderer kind={kind} detail={detail}/>}</DemoViewport>
 }

@@ -1,0 +1,45 @@
+
+/* CODE THEME OVERRIDES */
+.artifact-panel, .copy-block {
+  background: #151515;
+  color: #ededed;
+}
+.artifact-workspace {
+  background: #151515 !important;
+  border: 1px solid #333 !important;
+}
+.artifact-tabs, .artifact-options, .artifact-actions, .artifact-provenance {
+  background: #1a1a1a !important;
+  color: #ededed !important;
+  border-color: #333 !important;
+}
+.artifact-tabs button {
+  color: #a0a0a0;
+}
+.artifact-tabs button[aria-selected='true'] {
+  color: #fff;
+  background: #151515;
+  border-bottom-color: #151515;
+}
+.copy-block header {
+  background: #1a1a1a !important;
+  color: #ededed !important;
+  border-bottom: 1px solid #333 !important;
+}
+.copy-block {
+  border: 1px solid #333 !important;
+}
+.artifact-panel pre, .copy-block pre.code {
+  background: #151515 !important;
+  color: #ededed !important;
+  white-space: pre !important;
+  overflow-x: auto !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+}
+.artifact-panel[data-type='designMd'] pre, .copy-block pre:not(.code) {
+  white-space: pre-wrap !important;
+  word-break: keep-all !important;
+  overflow-wrap: anywhere !important;
+}
+
