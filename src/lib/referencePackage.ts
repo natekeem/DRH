@@ -7,6 +7,7 @@ export type DemoMaturity = 'official' | 'working' | 'prototype' | 'external'
 const legacy = new Set(['particles','accordion','rough-highlight','style-brutal','style-bento'])
 export function demoMaturity(item:ReferenceItem):{kind:DemoMaturity;label:string;description:string}{
  if(item.implementation.type==='external')return{kind:'external',label:'LINK ONLY',description:'원본에서 확인하며 코드는 재배포하지 않습니다.'}
+ if(item.demo?.startsWith('vendor-design-md:'))return{kind:'working',label:'WORKING DEMO',description:'awesome-design-md (MIT)에서 가져온 토큰으로 타이포, 색상, 버튼과 표면을 오프라인으로 렌더링합니다.'}
  if(item.designSystem)return{kind:'working',label:'WORKING DEMO',description:'정규화된 토큰으로 타이포, 색상, 버튼과 표면을 렌더링한 DRH 자체 specimen입니다.'}
  if(item.demo==='shader-gradient')return{kind:'official',label:'OFFICIAL LIVE',description:'공식 renderer를 실행합니다. WebGL 미지원·동작 줄이기 환경은 정적 fallback입니다.'}
  if((recipes[item.demo]&&item.demo!=='fluid-cursor')||legacy.has(item.demo))return{kind:'working',label:'WORKING DEMO',description:'핵심 시각 효과와 입력 동작을 구현한 Hub 데모입니다.'}
@@ -15,11 +16,13 @@ export function demoMaturity(item:ReferenceItem):{kind:DemoMaturity;label:string
 const hub='https://github.com/natekeem/DRH'
 export function provenanceFor(item:ReferenceItem){
  if(item.implementation.type==='external')return 'Reference Only — 소스 코드를 재배포하지 않습니다. 원본 Reference를 확인하세요.'
+ if(item.demo?.startsWith('vendor-design-md:'))return `Derived / MIT — Design analysis from VoltAgent/awesome-design-md (MIT). Raw DESIGN.md는 upstream 원문 그대로 저장됩니다. DRH Preview, Compact, Agent는 파생 산출물입니다. Source: https://github.com/VoltAgent/awesome-design-md`
  if(item.artifacts?.designMd&&item.artifacts.designMd.provenance.origin!=='hub-original')return `DESIGN.md: ${item.artifacts.designMd.provenance.origin} / ${item.artifacts.designMd.provenance.license}. 토큰 미리보기는 DRH의 공통 renderer이며, 문서와 파생 Artifact의 출처를 Source 탭에서 확인하세요.`
  if(item.demo==='shader-gradient')return 'Original OSS — 공식 @shadergradient/react 2.4.20 패키지를 직접 실행합니다.'
  if(item.demo==='meteors')return 'Adapted OSS — Magic UI의 MIT Meteor head/tail 구조를 참고하여 CSS 데모로 재구현했습니다. 원문 라이선스를 다운로드에 포함합니다.'
  return 'Hub Original — Design Reference Hub에서 일반적인 시각 패턴을 학습/구현 목적으로 독립 구현한 데모입니다.'
 }
+
 export function starterCodeFor(item:ReferenceItem,preset:OfficialShaderPreset=shaderPresets[0]):string{
  if(item.implementation.type==='external'||item.license.status!=='copy-ok')return ''
  const candidates=[item.artifacts?.react,item.artifacts?.html,item.artifacts?.designMd].filter(x=>x!==undefined)

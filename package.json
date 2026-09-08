@@ -8,7 +8,9 @@
     "build": "tsc --noEmit -p tsconfig.app.json && vite build",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit -p tsconfig.app.json",
-    "audit:v1.4": "node scripts/audit-v1.4.mjs"
+    "audit:v1.4": "node scripts/audit-v1.4.mjs",
+    "audit:design-md": "node scripts/audit-design-md.mjs",
+    "sync:awesome-design-md": "node scripts/sync-awesome-design-md.mjs"
   },
   "dependencies": {
     "@react-three/fiber": "8.18.0",

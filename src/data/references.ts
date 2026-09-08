@@ -1,7 +1,11 @@
 import { recipes } from '../lib/demos/recipes'
 import { designSystemFor, designMarkdown } from '../lib/designSystem'
 import upstreamReview from '../../docs/licenses/upstream-review.json'
+import { vendorEntries, UPSTREAM_COMMIT, UPSTREAM_REPO } from './awesomeDesignMd'
 import type { Category, ReferenceItem } from '../types'
+
+// Re-export upstream constants so other modules can import them from references
+export { UPSTREAM_COMMIT, UPSTREAM_REPO }
 
 type Seed = {
   id: string
@@ -160,10 +164,34 @@ export const references: ReferenceItem[] = [
     ['educational-system','ELI5 / Educational','Friendly, accessible system with annotations, diagrams and progressive disclosure.','Education'],
     ['bento-saas-system','Bento SaaS','Modular product system centered on bento feature cards and concise proof.','SaaS'],
   ].map(([id,name,description,useCase]) => mk({
-    id, name, category:'DESIGN.md', subcategory:'Preset', demo:`designmd-${id}`, description, tags:['design.md','agent','tokens'], useCases:[useCase], featured:id==='minimal-saas'||id==='developer-tool-system', source:'Design Reference Hub' }))
+    id, name, category:'DESIGN.md', subcategory:'Preset', demo:`designmd-${id}`, description, tags:['design.md','agent','tokens'], useCases:[useCase], featured:id==='minimal-saas'||id==='developer-tool-system', source:'Design Reference Hub' })),
+
+  // VoltAgent awesome-design-md — MIT ingested brand DESIGN.md entries
+  // Source: https://github.com/VoltAgent/awesome-design-md  commit: 8147538b
+  // Each entry provenance: derived / MIT. Raw DESIGN.md served from /vendor/awesome-design-md/<slug>/DESIGN.md
+  ...vendorEntries.map(v => mk({
+    id: `admd-${v.slug}`,
+    name: v.name,
+    category: 'DESIGN.md' as Category,
+    subcategory: v.category,
+    demo: `vendor-design-md:${v.slug}`,
+    description: v.description || `${v.name} design system analysis via awesome-design-md.`,
+    tags: [...v.tags, 'brand', 'design.md', 'vendor', 'awesome-design-md'],
+    useCases: [v.category],
+    source: 'VoltAgent awesome-design-md',
+    sourceUrl: `${UPSTREAM_REPO}/tree/main/${v.upstreamPath}`,
+    repo: UPSTREAM_REPO,
+    license: 'MIT',
+    licenseStatus: 'copy-ok' as const,
+  })),
 ]
 
+
 export const categories: Category[] = ['Styles','Pages','Sections','Background','Motion','Text','Effects','DESIGN.md']
+
+// ── Vendor entry lookup ───────────────────────────────────────────────────────
+export const vendorEntryBySlug = Object.fromEntries(vendorEntries.map(v => [v.slug, v]))
+export const vendorSlugFromId = (id: string) => id.startsWith('admd-') ? id.slice(5) : null
 
 export const collections = [
   { id:'wow', title:'WOW Landing Effects', description:'High-impact motion and interaction that earns attention in the first 10 seconds.', ids:['shader-gradient','liquid-lens-effect','image-trail','fluid-cursor','rgb-lens','metaballs','parallax','text-reveal'] },
@@ -172,7 +200,14 @@ export const collections = [
   { id:'vibe-styles', title:'Vibe Coding Style Starter', description:'The visual vocabulary people most often know by sight before they know the name.', ids:['neo-brutalism','glassmorphism','bento','editorial','y2k','frutiger-aero','claymorphism','cyberpunk'] },
   { id:'internal', title:'Internal Tool Essentials', description:'Calm practical references for dashboards, operations and citizen-developer tools.', ids:['dashboard-page','admin-page','corporate-dashboard','bento-section','stats-section','comparison-section','faq-section'] },
   { id:'motion', title:'Motion That Explains', description:'Animation patterns that improve hierarchy, feedback and spatial understanding.', ids:['scroll-reveal','hover-lift','accordion-motion','number-ticker','ripple','text-reveal','marquee'] },
+  // Brand Design Systems — from VoltAgent/awesome-design-md (MIT)
+  { id:'brand-design-systems', title:'Brand Design Systems', description:'Real-world design language analyses from publicly-visible brand websites. Each entry is a DESIGN.md snapshot via VoltAgent awesome-design-md (MIT).', ids:['admd-apple','admd-stripe','admd-notion','admd-linear.app','admd-figma','admd-vercel','admd-cursor','admd-supabase','admd-raycast','admd-spotify','admd-ferrari','admd-tesla'] },
+  { id:'brand-ai-llm', title:'AI & LLM Design', description:'Design language patterns from AI-native products — dark cinematics, monochrome precision, and emergent interfaces.', ids:['admd-claude','admd-elevenlabs','admd-ollama','admd-mistral.ai','admd-cohere','admd-minimax','admd-runwayml','admd-x.ai','admd-voltagent'] },
+  { id:'brand-developer', title:'Developer Tool Design', description:'Terminal-first, code-forward, dark-native interface design from the tools developers actually use.', ids:['admd-cursor','admd-warp','admd-raycast','admd-expo','admd-superhuman','admd-lovable','admd-vercel','admd-opencode.ai'] },
+  { id:'brand-automotive', title:'Automotive & Luxury', description:'High-contrast editorial systems, precision typography, and premium material design from automotive brands.', ids:['admd-ferrari','admd-tesla','admd-bmw','admd-bmw-m','admd-lamborghini','admd-bugatti','admd-renault','admd-spacex'] },
+  { id:'brand-retro', title:'Retro Web', description:'Web design aesthetics from a different era — pixel constraints, CRT monitors, and early-internet energy.', ids:['admd-dell-1996','admd-nintendo-2001','admd-hp','admd-playstation','admd-wired','admd-theverge'] },
 ]
 
 export const featuredReferences = references.filter((r) => r.featured)
 export const wowReferences = references.filter((r) => r.wow)
+

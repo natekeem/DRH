@@ -2,7 +2,7 @@
 
 Ready: 효과별 로직·DOM·동일한 실행 HTML·출처·검수 조건 제공. Partial: 구조는 제공하지만 완성된 재현 코드/효과별 계약이 부족함. DESIGN.md는 문서이며 실행 코드로 집계하지 않는다.
 
-{"Partial":50,"Ready":43}
+{"Partial":124,"Ready":43}
 
 | Reference | Prompt | Logic | Starter Code | Source | License | Ready |
 |---|---|---|---|---|---|---|
@@ -99,3 +99,77 @@ Ready: 효과별 로직·DOM·동일한 실행 HTML·출처·검수 조건 제�
 | Dark Futuristic (dark-futuristic) | 기본/부분 | 미완성 | DESIGN.md | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
 | ELI5 / Educational (educational-system) | 기본/부분 | 미완성 | DESIGN.md | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
 | Bento SaaS (bento-saas-system) | 기본/부분 | 미완성 | DESIGN.md | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
+| AIrbnb (admd-airbnb) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/airbnb/DESIGN.md | undefined | Partial |
+| AIrtable (admd-airtable) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/airtable/DESIGN.md | undefined | Partial |
+| Apple (admd-apple) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/apple/DESIGN.md | undefined | Partial |
+| Binance (admd-binance) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/binance/DESIGN.md | undefined | Partial |
+| BMW M (admd-bmw-m) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/bmw-m/DESIGN.md | undefined | Partial |
+| BMW (admd-bmw) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/bmw/DESIGN.md | undefined | Partial |
+| Bugatti (admd-bugatti) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/bugatti/DESIGN.md | undefined | Partial |
+| Cal (admd-cal) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/cal/DESIGN.md | undefined | Partial |
+| Claude (admd-claude) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/claude/DESIGN.md | undefined | Partial |
+| Clay (admd-clay) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/clay/DESIGN.md | undefined | Partial |
+| Clickhouse (admd-clickhouse) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/clickhouse/DESIGN.md | undefined | Partial |
+| Cohere (admd-cohere) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/cohere/DESIGN.md | undefined | Partial |
+| Coinbase (admd-coinbase) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/coinbase/DESIGN.md | undefined | Partial |
+| Composio (admd-composio) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/composio/DESIGN.md | undefined | Partial |
+| Cursor (admd-cursor) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/cursor/DESIGN.md | undefined | Partial |
+| Dell 1996 (admd-dell-1996) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/dell-1996/DESIGN.md | undefined | Partial |
+| Elevenlabs (admd-elevenlabs) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/elevenlabs/DESIGN.md | undefined | Partial |
+| Expo (admd-expo) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/expo/DESIGN.md | undefined | Partial |
+| Ferrari (admd-ferrari) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/ferrari/DESIGN.md | undefined | Partial |
+| Figma (admd-figma) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/figma/DESIGN.md | undefined | Partial |
+| Framer (admd-framer) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/framer/DESIGN.md | undefined | Partial |
+| Hashicorp (admd-hashicorp) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/hashicorp/DESIGN.md | undefined | Partial |
+| HP (admd-hp) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/hp/DESIGN.md | undefined | Partial |
+| IBM (admd-ibm) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/ibm/DESIGN.md | undefined | Partial |
+| Intercom (admd-intercom) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/intercom/DESIGN.md | undefined | Partial |
+| Kraken (admd-kraken) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/kraken/DESIGN.md | undefined | Partial |
+| Lamborghini (admd-lamborghini) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/lamborghini/DESIGN.md | undefined | Partial |
+| Linear App (admd-linear.app) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/linear.app/DESIGN.md | undefined | Partial |
+| Lovable (admd-lovable) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/lovable/DESIGN.md | undefined | Partial |
+| Mastercard (admd-mastercard) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/mastercard/DESIGN.md | undefined | Partial |
+| Meta (admd-meta) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/meta/DESIGN.md | undefined | Partial |
+| Minimax (admd-minimax) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/minimax/DESIGN.md | undefined | Partial |
+| Mintlify (admd-mintlify) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/mintlify/DESIGN.md | undefined | Partial |
+| Miro (admd-miro) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/miro/DESIGN.md | undefined | Partial |
+| Mistral AI (admd-mistral.ai) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/mistral.ai/DESIGN.md | undefined | Partial |
+| Mongodb (admd-mongodb) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/mongodb/DESIGN.md | undefined | Partial |
+| Nike (admd-nike) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/nike/DESIGN.md | undefined | Partial |
+| Nintendo 2001 (admd-nintendo-2001) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/nintendo-2001/DESIGN.md | undefined | Partial |
+| Notion (admd-notion) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/notion/DESIGN.md | undefined | Partial |
+| Nvidia (admd-nvidia) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/nvidia/DESIGN.md | undefined | Partial |
+| Ollama (admd-ollama) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/ollama/DESIGN.md | undefined | Partial |
+| Opencode AI (admd-opencode.ai) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/opencode.ai/DESIGN.md | undefined | Partial |
+| Pinterest (admd-pinterest) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/pinterest/DESIGN.md | undefined | Partial |
+| Playstation (admd-playstation) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/playstation/DESIGN.md | undefined | Partial |
+| Posthog (admd-posthog) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/posthog/DESIGN.md | undefined | Partial |
+| Raycast (admd-raycast) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/raycast/DESIGN.md | undefined | Partial |
+| Renault (admd-renault) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/renault/DESIGN.md | undefined | Partial |
+| Replicate (admd-replicate) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/replicate/DESIGN.md | undefined | Partial |
+| Resend (admd-resend) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/resend/DESIGN.md | undefined | Partial |
+| Revolut (admd-revolut) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/revolut/DESIGN.md | undefined | Partial |
+| Runwayml (admd-runwayml) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/runwayml/DESIGN.md | undefined | Partial |
+| Sanity (admd-sanity) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/sanity/DESIGN.md | undefined | Partial |
+| Sentry (admd-sentry) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/sentry/DESIGN.md | undefined | Partial |
+| Shopify (admd-shopify) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/shopify/DESIGN.md | undefined | Partial |
+| Slack (admd-slack) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/slack/DESIGN.md | undefined | Partial |
+| Spacex (admd-spacex) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/spacex/DESIGN.md | undefined | Partial |
+| Spotify (admd-spotify) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/spotify/DESIGN.md | undefined | Partial |
+| Starbucks (admd-starbucks) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/starbucks/DESIGN.md | undefined | Partial |
+| Stripe (admd-stripe) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/stripe/DESIGN.md | undefined | Partial |
+| Supabase (admd-supabase) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/supabase/DESIGN.md | undefined | Partial |
+| Superhuman (admd-superhuman) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/superhuman/DESIGN.md | undefined | Partial |
+| Tesla (admd-tesla) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/tesla/DESIGN.md | undefined | Partial |
+| Theverge (admd-theverge) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/theverge/DESIGN.md | undefined | Partial |
+| Together AI (admd-together.ai) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/together.ai/DESIGN.md | undefined | Partial |
+| Uber (admd-uber) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/uber/DESIGN.md | undefined | Partial |
+| Vercel (admd-vercel) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/vercel/DESIGN.md | undefined | Partial |
+| Vodafone (admd-vodafone) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/vodafone/DESIGN.md | undefined | Partial |
+| Voltagent (admd-voltagent) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/voltagent/DESIGN.md | undefined | Partial |
+| Warp (admd-warp) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/warp/DESIGN.md | undefined | Partial |
+| Webflow (admd-webflow) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/webflow/DESIGN.md | undefined | Partial |
+| Wired (admd-wired) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/wired/DESIGN.md | undefined | Partial |
+| Wise (admd-wise) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/wise/DESIGN.md | undefined | Partial |
+| X AI (admd-x.ai) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/x.ai/DESIGN.md | undefined | Partial |
+| Zapier (admd-zapier) | 기본/부분 | 미완성 | 없음 | https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/zapier/DESIGN.md | undefined | Partial |

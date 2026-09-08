@@ -5,6 +5,8 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { ArrowUpRight, Check, ChevronDown, Command, Sparkles } from 'lucide-react'
 import { ShaderBackdrop } from '../ShaderBackdrop'
 import { usePointerFine, useReducedMotion } from '../../lib/hooks'
+import { VendorDesignPreview } from './VendorDesignPreview'
+import { vendorEntryBySlug } from '../../data/references'
 
 const labels = ['Bento', 'Glass', 'Motion', 'Y2K', 'Editorial', 'Aurora']
 
@@ -168,4 +170,12 @@ function LegacyDemoRenderer({ kind, detail=false }:{kind:string;detail?:boolean}
   </PointerSurface>
 }
 
-export function DemoRenderer({kind,detail=false,preset}:{kind:string;detail?:boolean;preset?:OfficialShaderPreset}){return <DemoViewport detail={detail}>{kind==='shader-gradient'&&preset?<div className="demo-stage shader-demo"><ShaderBackdrop preset={preset} compact={!detail}/></div>:recipes[kind]?<RecipeDemo kind={kind}/>:<LegacyDemoRenderer kind={kind} detail={detail}/>}</DemoViewport>}
+export function DemoRenderer({kind,detail=false,preset}:{kind:string;detail?:boolean;preset?:OfficialShaderPreset}){
+  if(kind.startsWith('vendor-design-md:')){
+    const slug=kind.slice('vendor-design-md:'.length)
+    const entry=vendorEntryBySlug[slug]
+    if(entry)return <DemoViewport detail={detail}><VendorDesignPreview tokens={entry.tokens} name={entry.name} category={entry.category}/></DemoViewport>
+    return <DemoViewport detail={detail}><div className="ds-preview"><p>Preview loading…</p></div></DemoViewport>
+  }
+  return <DemoViewport detail={detail}>{kind==='shader-gradient'&&preset?<div className="demo-stage shader-demo"><ShaderBackdrop preset={preset} compact={!detail}/></div>:recipes[kind]?<RecipeDemo kind={kind}/>:<LegacyDemoRenderer kind={kind} detail={detail}/>}</DemoViewport>
+}
