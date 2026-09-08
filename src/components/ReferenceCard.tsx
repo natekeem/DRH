@@ -4,6 +4,7 @@ import type { ReferenceItem } from '../types'
 import { categoryKo, descriptionKo } from '../data/ko'
 import { demoMaturity } from '../lib/referencePackage'
 import { DemoRenderer } from './demos/DemoRenderer'
+import { DesignSystemPreview } from './demos/DesignSystemPreview'
 
 const statusLabel = { 'copy-ok':'Copy OK', 'reference':'Reference', 'restricted':'Restricted' } as const
 
@@ -11,7 +12,7 @@ export function ReferenceCard({ item, large=false }:{item:ReferenceItem;large?:b
   const location=useLocation()
   const maturity=demoMaturity(item)
   return <article className={`reference-card ${large?'large':''}`}>
-    <div className="card-demo"><DemoRenderer kind={item.demo}/><div className={`live-chip maturity-${maturity.kind}`}><i/> {maturity.label}</div></div>
+    <div className="card-demo">{item.designSystem?<DesignSystemPreview tokens={item.designSystem} compact/>:<DemoRenderer kind={item.demo}/>}<div className={`live-chip maturity-${maturity.kind}`}><i/> {maturity.label}</div></div>
     <Link className="reference-card-link" state={{fromExplore:location.pathname==='/explore'}} to={`/reference/${item.id}`} aria-label={`${item.name} 상세 보기`}>
       <div className="card-meta">
         <div><span className="eyebrow">{item.category} · {categoryKo[item.category]} / {item.subcategory}</span><h3>{item.name}</h3></div>

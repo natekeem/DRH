@@ -1,9 +1,9 @@
 # V1.4 Demo Status
 
-93개 항목을 renderer, CSS/JS 동작, source, export 기준으로 재분류했다. Working은 canonical 핵심 효과를 보여주는 데모이며 실제 제품 통합 완료를 의미하지 않는다. Prototype은 수량을 맞추기 위해 승격하지 않았다. Browser 증거와 검수 범위는 V1_4_AUDIT.md 참조.
+93개 항목을 renderer, CSS/JS 동작, source, export 기준으로 재분류했다. Working은 canonical 핵심 효과를 보여주는 데모이며 실제 제품 통합 완료를 의미하지 않는다. Prototype은 수량을 맞추기 위해 승격하지 않았다. V1.5에서 정규화 토큰을 갖춘 DESIGN.md specimen 10개를 Working으로 검증했다. Browser 증거와 검수 범위는 V1_4_AUDIT.md 및 V1_5_REFERENCE_WORKSPACE.md 참조.
 
-- PROTOTYPE: 47
-- WORKING DEMO: 45
+- PROTOTYPE: 37
+- WORKING DEMO: 55
 - OFFICIAL LIVE: 1
 
 | Reference | Category | Previous Status | New Status | Implementation | Source | Needs More Work |
@@ -91,13 +91,13 @@
 | Internal Admin (admin-page) | Pages | PROTOTYPE | PROTOTYPE | 기존 React/CSS demo | Design Reference Hub | 실제 다중 section/화면 동작 및 일치하는 export 필요 |
 | Login / Signup (login-page) | Pages | PROTOTYPE | PROTOTYPE | 기존 React/CSS demo | Design Reference Hub | 실제 다중 section/화면 동작 및 일치하는 export 필요 |
 | Event Landing (event-page) | Pages | PROTOTYPE | PROTOTYPE | 기존 React/CSS demo | Design Reference Hub | 실제 다중 section/화면 동작 및 일치하는 export 필요 |
-| Minimal SaaS (minimal-saas) | DESIGN.md | PROTOTYPE | PROTOTYPE | 기존 React/CSS demo | Design Reference Hub | 방향별 구체적 token/타이포/예시 구현 필요 |
-| Playful Neo-Brutalism (playful-brutal) | DESIGN.md | PROTOTYPE | PROTOTYPE | 기존 React/CSS demo | Design Reference Hub | 방향별 구체적 token/타이포/예시 구현 필요 |
-| Editorial (editorial-system) | DESIGN.md | PROTOTYPE | PROTOTYPE | 기존 React/CSS demo | Design Reference Hub | 방향별 구체적 token/타이포/예시 구현 필요 |
-| Developer Tool (developer-tool-system) | DESIGN.md | PROTOTYPE | PROTOTYPE | 기존 React/CSS demo | Design Reference Hub | 방향별 구체적 token/타이포/예시 구현 필요 |
-| Corporate Dashboard (corporate-dashboard) | DESIGN.md | PROTOTYPE | PROTOTYPE | 기존 React/CSS demo | Design Reference Hub | 방향별 구체적 token/타이포/예시 구현 필요 |
-| Luxury (luxury-system) | DESIGN.md | PROTOTYPE | PROTOTYPE | 기존 React/CSS demo | Design Reference Hub | 방향별 구체적 token/타이포/예시 구현 필요 |
-| Documentation (docs-system) | DESIGN.md | PROTOTYPE | PROTOTYPE | 기존 React/CSS demo | Design Reference Hub | 방향별 구체적 token/타이포/예시 구현 필요 |
-| Dark Futuristic (dark-futuristic) | DESIGN.md | PROTOTYPE | PROTOTYPE | 기존 React/CSS demo | Design Reference Hub | 방향별 구체적 token/타이포/예시 구현 필요 |
-| ELI5 / Educational (educational-system) | DESIGN.md | PROTOTYPE | PROTOTYPE | 기존 React/CSS demo | Design Reference Hub | 방향별 구체적 token/타이포/예시 구현 필요 |
-| Bento SaaS (bento-saas-system) | DESIGN.md | PROTOTYPE | PROTOTYPE | 기존 React/CSS demo | Design Reference Hub | 방향별 구체적 token/타이포/예시 구현 필요 |
+| Minimal SaaS (minimal-saas) | DESIGN.md | PROTOTYPE | WORKING DEMO | Normalized tokens / generic specimen | Design Reference Hub | 실행 가능한 export 보강 |
+| Playful Neo-Brutalism (playful-brutal) | DESIGN.md | PROTOTYPE | WORKING DEMO | Normalized tokens / generic specimen | Design Reference Hub | 실행 가능한 export 보강 |
+| Editorial (editorial-system) | DESIGN.md | PROTOTYPE | WORKING DEMO | Normalized tokens / generic specimen | Design Reference Hub | 실행 가능한 export 보강 |
+| Developer Tool (developer-tool-system) | DESIGN.md | PROTOTYPE | WORKING DEMO | Normalized tokens / generic specimen | Design Reference Hub | 실행 가능한 export 보강 |
+| Corporate Dashboard (corporate-dashboard) | DESIGN.md | PROTOTYPE | WORKING DEMO | Normalized tokens / generic specimen | Design Reference Hub | 실행 가능한 export 보강 |
+| Luxury (luxury-system) | DESIGN.md | PROTOTYPE | WORKING DEMO | Normalized tokens / generic specimen | Design Reference Hub | 실행 가능한 export 보강 |
+| Documentation (docs-system) | DESIGN.md | PROTOTYPE | WORKING DEMO | Normalized tokens / generic specimen | Design Reference Hub | 실행 가능한 export 보강 |
+| Dark Futuristic (dark-futuristic) | DESIGN.md | PROTOTYPE | WORKING DEMO | Normalized tokens / generic specimen | Design Reference Hub | 실행 가능한 export 보강 |
+| ELI5 / Educational (educational-system) | DESIGN.md | PROTOTYPE | WORKING DEMO | Normalized tokens / generic specimen | Design Reference Hub | 실행 가능한 export 보강 |
+| Bento SaaS (bento-saas-system) | DESIGN.md | PROTOTYPE | WORKING DEMO | Normalized tokens / generic specimen | Design Reference Hub | 실행 가능한 export 보강 |

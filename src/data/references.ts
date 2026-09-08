@@ -1,4 +1,5 @@
 import { recipes } from '../lib/demos/recipes'
+import { designSystemFor, designMarkdown } from '../lib/designSystem'
 import upstreamReview from '../../docs/licenses/upstream-review.json'
 import type { Category, ReferenceItem } from '../types'
 
@@ -27,6 +28,7 @@ const promptFor = (s: Seed) => `Create a ${s.name} treatment for a modern web in
 
 const mk = (s: Seed): ReferenceItem => ({
   ...s,
+  ...(s.category === 'DESIGN.md' && designSystemFor(s.id) ? { designSystem: designSystemFor(s.id), designMd: designMarkdown(s.name, s.description, designSystemFor(s.id)!) } : {}),
   implementation: {
     type: s.demo === 'shader-gradient' ? 'native' : 'hub-original',
     framework: s.demo === 'shader-gradient' ? 'React + WebGL' : /liquid|rgb-lens/.test(s.demo) ? 'HTML + WebGL' : recipes[s.demo] ? 'HTML + CSS + JavaScript' : 'React + CSS',
@@ -158,7 +160,7 @@ export const references: ReferenceItem[] = [
     ['educational-system','ELI5 / Educational','Friendly, accessible system with annotations, diagrams and progressive disclosure.','Education'],
     ['bento-saas-system','Bento SaaS','Modular product system centered on bento feature cards and concise proof.','SaaS'],
   ].map(([id,name,description,useCase]) => mk({
-    id, name, category:'DESIGN.md', subcategory:'Preset', demo:`designmd-${id}`, description, tags:['design.md','agent','tokens'], useCases:[useCase], featured:id==='minimal-saas'||id==='developer-tool-system', source:'Design Reference Hub', designMd:`# ${name}\n\n## Direction\n${description}\n\n## Color\n- Background: #F5F4F0\n- Text: #111111\n- Accent: choose one vivid product color\n\n## Typography\n- Display: bold grotesk or editorial serif according to the direction\n- Body: neutral sans-serif, 16–18px\n\n## Layout\n- Use a 12-column desktop grid and generous section spacing.\n- Prefer visual hierarchy over decoration.\n\n## Motion\n- 180–500ms interactions; only animate to explain state, depth or emphasis.\n- Respect prefers-reduced-motion.\n\n## Agent rules\n- Do not introduce new colors without a token.\n- Keep one primary CTA per section.\n- Reuse existing component primitives before creating variants.\n` }))
+    id, name, category:'DESIGN.md', subcategory:'Preset', demo:`designmd-${id}`, description, tags:['design.md','agent','tokens'], useCases:[useCase], featured:id==='minimal-saas'||id==='developer-tool-system', source:'Design Reference Hub' }))
 ]
 
 export const categories: Category[] = ['Styles','Pages','Sections','Background','Motion','Text','Effects','DESIGN.md']

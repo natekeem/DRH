@@ -41,6 +41,7 @@ export function SiteHeader() {
       <Link className="brand" to="/"><span>DRH</span><i>Design Reference Hub</i></Link>
       <nav className={open?'main-nav open':'main-nav'} aria-label="주요 메뉴">
         <NavLink className={({isActive})=>isActive?'active':''} to="/explore">탐색</NavLink>
+        <NavLink className={({isActive})=>isActive?'active':''} to="/guides">가이드</NavLink>
         <NavLink className={({isActive})=>isActive?'active':''} to="/sources">출처</NavLink>
         <button className="nav-search-trigger" onClick={onSearchClick}><Search size={15}/> 검색 <kbd>⌘K</kbd></button>
       </nav>
