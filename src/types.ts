@@ -76,7 +76,7 @@ export type SourceRecord = {
   source: string
   category: string
   what_it_provides: string
-  preview: string
+  preview: string | { type: 'demo' | 'design-system' | 'generated' | 'image'; key?: string; src?: string }
   code: string
   stack: string
   license: string

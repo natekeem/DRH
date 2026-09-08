@@ -5485,63 +5485,6 @@ pre, code, .overflow-anywhere, .guide-markdown p {
   height: 100%;
 }
 
-/* CODE THEME OVERRIDES */
-.artifact-panel, .copy-block {
-  background: #151515;
-  color: #ededed;
-}
-.artifact-workspace {
-  background: #151515 !important;
-  border: 1px solid #333 !important;
-}
-.artifact-tabs, .artifact-options, .artifact-actions, .artifact-provenance {
-  background: #1a1a1a !important;
-  color: #ededed !important;
-  border-color: #333 !important;
-}
-.artifact-tabs button {
-  color: #a0a0a0;
-}
-.artifact-tabs button[aria-selected='true'] {
-  color: #fff;
-  background: #151515;
-  border-bottom-color: #151515;
-}
-.copy-block header {
-  background: #1a1a1a !important;
-  color: #ededed !important;
-  border-bottom: 1px solid #333 !important;
-}
-.copy-block {
-  border: 1px solid #333 !important;
-}
-.artifact-panel pre, .copy-block pre.code {
-  background: #151515 !important;
-  color: #ededed !important;
-  white-space: pre !important;
-  overflow-x: auto !important;
-  overflow-wrap: normal !important;
-  word-break: normal !important;
-}
-.artifact-panel[data-type='designMd'] pre, .copy-block pre:not(.code) {
-  white-space: pre-wrap !important;
-  word-break: keep-all !important;
-  overflow-wrap: anywhere !important;
-}
-
-
-
-/* OVERRIDES FOR CARD DEMO ASPECT RATIO */
-.card-demo, .reference-grid .card-demo, .compact-grid .card-demo, .collection-strip .card-demo {
-  height: auto !important;
-  aspect-ratio: 16 / 10 !important;
-}
-.reference-card.large .card-demo {
-  height: auto !important;
-  aspect-ratio: 16 / 10 !important;
-}
-
-
 /* SCROLLBAR & DETAIL UI POLISH */
 .workspace-demo::-webkit-scrollbar, .artifact-panel::-webkit-scrollbar {
   width: 8px;
@@ -5557,3 +5500,281 @@ pre, code, .overflow-anywhere, .guide-markdown p {
 .workspace-demo::-webkit-scrollbar-thumb:hover, .artifact-panel::-webkit-scrollbar-thumb:hover {
   background: rgba(128, 128, 128, 0.4);
 }
+
+/* V1.6.1 CODE VIEWER THEME (Light Shell + Dark Viewer) */
+.artifact-panel pre, .copy-block pre {
+  background: #161616 !important;
+  color: #e8e8e8 !important;
+  border-top: 1px solid #2b2b2b;
+  margin: 0 !important;
+  padding: 16px !important;
+  white-space: pre !important;
+  overflow-x: auto !important;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+.artifact-panel, .copy-block {
+  background: #161616 !important;
+  color: #e8e8e8 !important;
+  border: 1px solid #2b2b2b !important;
+  border-radius: 8px !important;
+  overflow: hidden;
+}
+.artifact-file, .copy-block header {
+  background: #1c1c1c !important;
+  color: #e8e8e8 !important;
+  border-bottom: 1px solid #2b2b2b !important;
+  padding: 12px 16px;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.artifact-file span, .copy-block header span {
+  opacity: 0.8;
+}
+
+/* Document wrappers */
+.artifact-panel[data-type='designMd'] pre, .artifact-panel[data-type='agent'] pre, .copy-block:not(.code) pre {
+  white-space: pre-wrap !important;
+  word-break: keep-all !important;
+  overflow-wrap: anywhere !important;
+  line-height: 1.6 !important;
+}
+
+/* Subtle scrollbars for dark viewer */
+.artifact-panel pre::-webkit-scrollbar, .copy-block pre::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.artifact-panel pre::-webkit-scrollbar-track, .copy-block pre::-webkit-scrollbar-track {
+  background: transparent;
+}
+.artifact-panel pre::-webkit-scrollbar-thumb, .copy-block pre::-webkit-scrollbar-thumb {
+  background: #3a3a3a;
+  border-radius: 4px;
+}
+.artifact-panel pre::-webkit-scrollbar-thumb:hover, .copy-block pre::-webkit-scrollbar-thumb:hover {
+  background: #555555;
+}
+
+/* Fix Compact/Extended Segmented Control */
+.artifact-mode {
+  display: inline-flex;
+  background: #ebe9e4;
+  border-radius: 6px;
+  padding: 2px;
+}
+.artifact-mode button {
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 12px;
+  font-size: 11px;
+  color: #656568;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.artifact-mode button[aria-pressed='true'] {
+  background: #ffffff;
+  color: #111111;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+
+/* WORKSPACE CONTEXT & SOURCE */
+.workspace-context {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  margin: 64px 0;
+  padding-top: 32px;
+  border-top: 1px solid var(--line);
+}
+@media(min-width: 768px) {
+  .workspace-context {
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+  }
+}
+.context-about h2, .context-where h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  letter-spacing: -0.01em;
+}
+.context-about p, .context-where p {
+  color: #656568;
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+.workspace-source {
+  margin-bottom: 64px;
+  padding: 32px;
+  background: var(--surface);
+  border-radius: 12px;
+  border: 1px solid var(--line);
+}
+.workspace-source h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.workspace-source p {
+  color: #656568;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+.workspace-source-links {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.workspace-source-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #111;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+
+/* GUIDE PAGE WIDTH */
+.guide-article {
+  max-width: none !important;
+  margin: 0 !important;
+}
+.guide-article > .guide-markdown {
+  max-width: 920px;
+}
+.guide-article > header {
+  max-width: 920px;
+}
+.guides-listing {
+  padding: 150px var(--page-gutter) 80px !important;
+  max-width: none !important;
+  margin: 0 !important;
+}
+.guides-listing .guide-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 32px;
+}
+
+
+/* SOURCE STATUS BADGES */
+.source-status {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+.source-status.s-import---copy-candidate {
+  background: #e9ff70;
+  color: #3b4200;
+}
+.source-status.s-reference {
+  background: #fbfaf7;
+  color: #656568;
+  border: 1px solid var(--line);
+}
+.source-status.s-restricted {
+  background: #ffe5e5;
+  color: #b00000;
+}
+
+
+/* SOURCE ROW TYPOGRAPHY POLISH */
+.source-row b {
+  font-size: 13px;
+  font-weight: 600;
+  color: #111;
+  letter-spacing: -0.01em;
+}
+.source-row p {
+  font-size: 13px;
+  opacity: 0.7;
+  max-width: 90%;
+}
+.source-row > div:nth-child(n+2) {
+  font-size: 13px;
+}
+.source-row small {
+  font-size: 12px;
+  opacity: 0.6;
+}
+.source-row .source-links {
+  margin-top: 8px;
+}
+
+
+/* COMPACT FOOTER REWRITE */
+.site-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 40px var(--page-gutter);
+  background: var(--surface);
+  border-top: 1px solid var(--line);
+}
+@media(min-width: 768px) {
+  .site-footer {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.footer-left .footer-brand {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+.footer-left .footer-brand b {
+  font-size: 16px;
+  letter-spacing: -0.04em;
+}
+.footer-left .footer-brand span {
+  font-size: 14px;
+  color: #656568;
+}
+.footer-left p {
+  font-size: 13px;
+  color: #656568;
+}
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+@media(min-width: 768px) {
+  .footer-right {
+    align-items: flex-end;
+  }
+}
+.footer-links {
+  display: flex;
+  gap: 16px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.footer-links a {
+  color: #111;
+  text-decoration: none;
+}
+.footer-policy {
+  font-size: 12px;
+  color: #656568;
+}
+

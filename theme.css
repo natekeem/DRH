@@ -1,45 +1,66 @@
 
-/* CODE THEME OVERRIDES */
-.artifact-panel, .copy-block {
-  background: #151515;
-  color: #ededed;
+/* COMPACT FOOTER REWRITE */
+.site-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 40px var(--page-gutter);
+  background: var(--surface);
+  border-top: 1px solid var(--line);
 }
-.artifact-workspace {
-  background: #151515 !important;
-  border: 1px solid #333 !important;
+@media(min-width: 768px) {
+  .site-footer {
+    flex-direction: row;
+    align-items: center;
+  }
 }
-.artifact-tabs, .artifact-options, .artifact-actions, .artifact-provenance {
-  background: #1a1a1a !important;
-  color: #ededed !important;
-  border-color: #333 !important;
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
-.artifact-tabs button {
-  color: #a0a0a0;
+.footer-left .footer-brand {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
 }
-.artifact-tabs button[aria-selected='true'] {
-  color: #fff;
-  background: #151515;
-  border-bottom-color: #151515;
+.footer-left .footer-brand b {
+  font-size: 16px;
+  letter-spacing: -0.04em;
 }
-.copy-block header {
-  background: #1a1a1a !important;
-  color: #ededed !important;
-  border-bottom: 1px solid #333 !important;
+.footer-left .footer-brand span {
+  font-size: 14px;
+  color: #656568;
 }
-.copy-block {
-  border: 1px solid #333 !important;
+.footer-left p {
+  font-size: 13px;
+  color: #656568;
 }
-.artifact-panel pre, .copy-block pre.code {
-  background: #151515 !important;
-  color: #ededed !important;
-  white-space: pre !important;
-  overflow-x: auto !important;
-  overflow-wrap: normal !important;
-  word-break: normal !important;
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
 }
-.artifact-panel[data-type='designMd'] pre, .copy-block pre:not(.code) {
-  white-space: pre-wrap !important;
-  word-break: keep-all !important;
-  overflow-wrap: anywhere !important;
+@media(min-width: 768px) {
+  .footer-right {
+    align-items: flex-end;
+  }
+}
+.footer-links {
+  display: flex;
+  gap: 16px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.footer-links a {
+  color: #111;
+  text-decoration: none;
+}
+.footer-policy {
+  font-size: 12px;
+  color: #656568;
 }
 
