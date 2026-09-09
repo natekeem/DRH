@@ -3,14 +3,18 @@ import type { ReferenceItem } from '../types'
 import officialStarter from './demos/HeroShader.tsx?raw'
 import { shaderPresets, type OfficialShaderPreset } from '../data/shaderPresets'
 import { recipes, recipeHtml } from './demos/recipes'
+import { fluidCursorHtml } from './demo-exports/fluidCursorHtml'
+import { metaballsHtml } from './demo-exports/metaballsHtml'
+import { liquidRefractionHtml } from './demo-exports/liquidRefractionHtml'
 export type DemoMaturity = 'official' | 'working' | 'prototype' | 'external'
 const legacy = new Set(['particles','accordion','rough-highlight','style-brutal','style-bento'])
+const advancedDemos = new Set(['fluid-cursor', 'metaballs', 'liquid-refraction'])
 export function demoMaturity(item:ReferenceItem):{kind:DemoMaturity;label:string;description:string}{
  if(item.implementation.type==='external')return{kind:'external',label:'LINK ONLY',description:'원본에서 확인하며 코드는 재배포하지 않습니다.'}
  if(item.demo?.startsWith('vendor-design-md:'))return{kind:'working',label:'WORKING DEMO',description:'awesome-design-md (MIT)에서 가져온 토큰으로 타이포, 색상, 버튼과 표면을 오프라인으로 렌더링합니다.'}
  if(item.designSystem)return{kind:'working',label:'WORKING DEMO',description:'정규화된 토큰으로 타이포, 색상, 버튼과 표면을 렌더링한 DRH 자체 specimen입니다.'}
  if(item.demo==='shader-gradient')return{kind:'official',label:'OFFICIAL LIVE',description:'공식 renderer를 실행합니다. WebGL 미지원·동작 줄이기 환경은 정적 fallback입니다.'}
- if((recipes[item.demo]&&item.demo!=='fluid-cursor')||legacy.has(item.demo))return{kind:'working',label:'WORKING DEMO',description:'핵심 시각 효과와 입력 동작을 구현한 Hub 데모입니다.'}
+ if(recipes[item.demo]||legacy.has(item.demo)||advancedDemos.has(item.demo))return{kind:'working',label:'WORKING DEMO',description:'핵심 시각 효과와 입력 동작을 구현한 Hub 데모입니다.'}
  return{kind:'prototype',label:'PROTOTYPE',description:'구도 또는 개념 예시입니다. 효과의 완전한 구현은 아직 제공하지 않습니다.'}
 }
 const hub='https://github.com/natekeem/DRH'
@@ -34,9 +38,12 @@ export function starterCodeFor(item:ReferenceItem,preset:OfficialShaderPreset=sh
   const props=Object.entries(preset.props).map(([key,value])=>`${key}={${JSON.stringify(value)}}`).join('\n     ')
   return '/* '+hubLicense+' */\n'+officialStarter.replace(/<ShaderGradient animate[\s\S]*?\/>/,`<ShaderGradient\n     ${props}\n   />`).replace("background:'linear-gradient(120deg,#ff5005,#dbba95,#d0bce1)'",`background:${JSON.stringify(preset.fallback)}`)
  }
+ if (item.demo === 'fluid-cursor') return fluidCursorHtml({ variant: 'detail' })
+ if (item.demo === 'metaballs') return metaballsHtml({ variant: 'detail' })
+ if (item.demo === 'liquid-refraction') return liquidRefractionHtml({ variant: 'detail', intensity: 1, radius: 155 })
  return recipeHtml(item.demo)??item.code??''
 }
-export function packageReadiness(item:ReferenceItem):'Ready'|'Partial'|'Missing'{return (recipes[item.demo]&&item.demo!=='fluid-cursor')||item.demo==='shader-gradient'?'Ready':'Partial'}
+export function packageReadiness(item:ReferenceItem):'Ready'|'Partial'|'Missing'{return recipes[item.demo]||advancedDemos.has(item.demo)||item.demo==='shader-gradient'?'Ready':'Partial'}
 export function buildAgentPackage(item:ReferenceItem,preset:OfficialShaderPreset=shaderPresets[0]):string{
  if(item.artifacts?.agent&&item.artifacts.agent.provenance.origin!=='reference-only'&&((item.license.status==='copy-ok'&&item.implementation.type!=='external')||item.artifacts.agent.provenance.origin==='hub-original'))return item.artifacts.agent.extended
  if(item.designSystem&&item.license.status==='copy-ok'&&item.implementation.type!=='external'&&item.artifacts?.designMd?.provenance.origin!=='reference-only')return `# ${item.name}
@@ -96,7 +103,24 @@ MIT — ${hub}/blob/main/LICENSE
 ${item.artifacts?.designMd?.extended??item.designMd??''}
 `
  const official=item.demo==='shader-gradient'
- const r=recipes[item.demo]??(official?{html:'<HeroShader />',logic:`공식 ShaderGradientCanvas 안에 ShaderGradient를 배치한다. ${preset.title} preset의 색상·카메라·rotation·amplitude를 아래 TSX대로 적용한다. IntersectionObserver, visibilitychange, reduced-motion으로 renderer를 mount/unmount한다. WebGL 미지원 또는 오류 시 gradient fallback을 유지한다.`,acceptance:`공식 ${preset.title} 색상과 mesh가 움직인다. offscreen/reduced-motion에서 renderer가 정지하고 fallback을 표시한다.`}:undefined),starter=starterCodeFor(item,preset),m=demoMaturity(item)
+ const advancedFakeRecipes: Record<string, {html:string,logic:string,acceptance:string}> = {
+  'fluid-cursor': {
+    html: '<canvas></canvas>',
+    logic: 'pressure solver, velocity / dye splat, advection, diffusion, vorticity, divergence, pressure Jacobi, gradient subtraction, mobile budgets, reduced motion, cleanup. DO NOT replace this with: - opacity trail - blur-only glass - CSS circles',
+    acceptance: 'pointer strokes visibly curl, spread, persist briefly, and dissipate. reduced motion releases resources.'
+  },
+  'metaballs': {
+    html: '<canvas></canvas>',
+    logic: 'continuous field, smooth merge, pointer repel / attraction, spring equilibrium, ellipse deformation, field shader, card/detail blob counts. DO NOT replace this with: - opacity trail - blur-only glass - CSS circles',
+    acceptance: 'blobs share smooth necks, merge/separate under input. velocity changes ellipse deformation.'
+  },
+  'liquid-refraction': {
+    html: '<canvas></canvas>',
+    logic: 'generated texture, UV refraction, RGB channel offset, Fresnel / rim, pointer spring, velocity squash/stretch, press response. DO NOT replace this with: - opacity trail - blur-only glass - CSS circles',
+    acceptance: 'grid/text bends visibly through the lens, with color fringes and moving highlight. pointer motion produces smooth spring follow and deformation.'
+  }
+ }
+ const r=recipes[item.demo]??advancedFakeRecipes[item.demo]??(official?{html:'<HeroShader />',logic:`공식 ShaderGradientCanvas 안에 ShaderGradient를 배치한다. ${preset.title} preset의 색상·카메라·rotation·amplitude를 아래 TSX대로 적용한다. IntersectionObserver, visibilitychange, reduced-motion으로 renderer를 mount/unmount한다. WebGL 미지원 또는 오류 시 gradient fallback을 유지한다.`,acceptance:`공식 ${preset.title} 색상과 mesh가 움직인다. offscreen/reduced-motion에서 renderer가 정지하고 fallback을 표시한다.`}:undefined),starter=starterCodeFor(item,preset),m=demoMaturity(item)
  return `# ${item.name}${official?' / '+preset.title:''}
 
 ## Goal
@@ -161,4 +185,10 @@ Upstream 링크는 코드가 그 프로젝트에서 복사됐다는 뜻이 아�
 - Source와 코드 출처의 구분 및 라이선스 고지를 유지한다.
 `
 }
-export function buildStandaloneHtml(item:ReferenceItem):string|null{return item.license.status==='copy-ok'&&item.implementation.type!=='external'?recipeHtml(item.demo):null}
+export function buildStandaloneHtml(item:ReferenceItem):string|null{
+ if (item.license.status!=='copy-ok'||item.implementation.type==='external') return null
+ if (item.demo === 'fluid-cursor') return fluidCursorHtml({ variant: 'detail' })
+ if (item.demo === 'metaballs') return metaballsHtml({ variant: 'detail' })
+ if (item.demo === 'liquid-refraction') return liquidRefractionHtml({ variant: 'detail', intensity: 1, radius: 155 })
+ return recipeHtml(item.demo)
+}

@@ -1,6 +1,9 @@
 import type { OfficialShaderPreset } from '../../data/shaderPresets'
 import { recipes } from '../../lib/demos/recipes'
 import { DemoViewport, RecipeDemo } from './DemoViewport'
+import { FluidCursorDemo } from './advanced/FluidCursorDemo'
+import { MetaballsDemo } from './advanced/MetaballsDemo'
+import { LiquidRefractionDemo } from './advanced/LiquidRefractionDemo'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { ArrowUpRight, Check, ChevronDown, Command, Sparkles } from 'lucide-react'
 import { ShaderBackdrop } from '../ShaderBackdrop'
@@ -177,5 +180,10 @@ export function DemoRenderer({kind,detail=false,preset}:{kind:string;detail?:boo
     if(entry)return <DemoViewport detail={detail}><VendorDesignPreview tokens={entry.tokens} name={entry.name} category={entry.category}/></DemoViewport>
     return <DemoViewport detail={detail}><div className="ds-preview"><p>Preview loading…</p></div></DemoViewport>
   }
+
+  if (kind === 'fluid-cursor') return <DemoViewport detail={detail}><FluidCursorDemo variant={detail ? 'detail' : 'card'} /></DemoViewport>
+  if (kind === 'metaballs') return <DemoViewport detail={detail}><MetaballsDemo variant={detail ? 'detail' : 'card'} /></DemoViewport>
+  if (kind === 'liquid-refraction') return <DemoViewport detail={detail}><LiquidRefractionDemo variant={detail ? 'detail' : 'card'} /></DemoViewport>
+
   return <DemoViewport detail={detail}>{kind==='shader-gradient'&&preset?<div className="demo-stage shader-demo"><ShaderBackdrop preset={preset} compact={!detail}/></div>:recipes[kind]?<RecipeDemo kind={kind} detail={detail}/>:<LegacyDemoRenderer kind={kind} detail={detail}/>}</DemoViewport>
 }
