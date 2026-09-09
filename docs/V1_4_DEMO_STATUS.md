@@ -2,8 +2,8 @@
 
 93개 항목을 renderer, CSS/JS 동작, source, export 기준으로 재분류했다. Working은 canonical 핵심 효과를 보여주는 데모이며 실제 제품 통합 완료를 의미하지 않는다. Prototype은 수량을 맞추기 위해 승격하지 않았다. V1.5에서 정규화 토큰을 갖춘 DESIGN.md specimen 10개를 Working으로 검증했다. Browser 증거와 검수 범위는 V1_4_AUDIT.md 및 V1_5_REFERENCE_WORKSPACE.md 참조.
 
-- PROTOTYPE: 37
-- WORKING DEMO: 129
+- PROTOTYPE: 35
+- WORKING DEMO: 131
 - OFFICIAL LIVE: 1
 
 | Reference | Category | Previous Status | New Status | Implementation | Source | Needs More Work |
@@ -33,8 +33,8 @@
 | Light Beams (beams) | Background | PROTOTYPE | PROTOTYPE | 기존 React/CSS demo | Design Reference Hub | canonical 세부 동작과 완성 export 필요 |
 | Wave Lines (wave-lines) | Background | PROTOTYPE | PROTOTYPE | 기존 React/CSS demo | Design Reference Hub | canonical 세부 동작과 완성 export 필요 |
 | Noise Blobs (noise-blobs) | Background | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
-| Fluid Cursor Field (fluid-cursor) | Background | PROTOTYPE | PROTOTYPE | HTML/CSS/JS shared preview/export | Design Reference Hub | 유체 solver와 잔류 흐름 미구현 |
-| Interactive Metaballs (metaballs) | Background | PROTOTYPE | PROTOTYPE | 기존 React/CSS demo | Design Reference Hub | pointer 반발/병합 검증 필요 |
+| Fluid Cursor Field (fluid-cursor) | Background | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
+| Interactive Metaballs (metaballs) | Background | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
 | Starfield (starfield) | Background | PROTOTYPE | PROTOTYPE | 기존 React/CSS demo | Design Reference Hub | canonical 세부 동작과 완성 export 필요 |
 | Scroll Reveal (scroll-reveal) | Motion | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Motion Primitives | 제품 적용 시 크기/내용 조정 |
 | Mouse Parallax (parallax) | Motion | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
@@ -64,7 +64,7 @@
 | Spotlight Card (spotlight-card) | Effects | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
 | Animated Border (animated-border) | Effects | WORKING DEMO | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
 | Shimmer Button (shimmer-button) | Effects | WORKING DEMO | WORKING DEMO | HTML/CSS/JS shared preview/export | Magic UI | 제품 적용 시 크기/내용 조정 |
-| Liquid Lens (liquid-lens-effect) | Effects | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
+| Liquid Lens (liquid-lens-effect) | Effects | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
 | RGB Lens Reveal (rgb-lens) | Effects | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
 | Image Reveal (image-reveal) | Effects | WORKING DEMO | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
 | Image Comparison (comparison-slider) | Effects | WORKING DEMO | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |

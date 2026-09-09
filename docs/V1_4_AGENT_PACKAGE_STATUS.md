@@ -2,7 +2,7 @@
 
 Ready: 효과별 로직·DOM·동일한 실행 HTML·출처·검수 조건 제공. Partial: 구조는 제공하지만 완성된 재현 코드/효과별 계약이 부족함. DESIGN.md는 문서이며 실행 코드로 집계하지 않는다.
 
-{"Partial":124,"Ready":43}
+{"Partial":122,"Ready":45}
 
 | Reference | Prompt | Logic | Starter Code | Source | License | Ready |
 |---|---|---|---|---|---|---|
@@ -31,8 +31,8 @@ Ready: 효과별 로직·DOM·동일한 실행 HTML·출처·검수 조건 제�
 | Light Beams (beams) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
 | Wave Lines (wave-lines) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
 | Noise Blobs (noise-blobs) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
-| Fluid Cursor Field (fluid-cursor) | 기본/부분 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
-| Interactive Metaballs (metaballs) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
+| Fluid Cursor Field (fluid-cursor) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Interactive Metaballs (metaballs) | 구체적 | 미완성 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
 | Starfield (starfield) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
 | Scroll Reveal (scroll-reveal) | 구체적 | 효과별 | 실행 HTML | https://motion-primitives.com/ | https://github.com/ibelick/motion-primitives/blob/main/LICENCE.md | Ready |
 | Mouse Parallax (parallax) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
@@ -62,7 +62,7 @@ Ready: 효과별 로직·DOM·동일한 실행 HTML·출처·검수 조건 제�
 | Spotlight Card (spotlight-card) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
 | Animated Border (animated-border) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
 | Shimmer Button (shimmer-button) | 구체적 | 효과별 | 실행 HTML | https://magicui.design/ | https://github.com/magicuidesign/magicui/blob/main/LICENSE.md | Ready |
-| Liquid Lens (liquid-lens-effect) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Liquid Lens (liquid-lens-effect) | 구체적 | 미완성 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
 | RGB Lens Reveal (rgb-lens) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
 | Image Reveal (image-reveal) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
 | Image Comparison (comparison-slider) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
