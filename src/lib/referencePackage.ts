@@ -120,7 +120,7 @@ ${item.artifacts?.designMd?.extended??item.designMd??''}
     acceptance: 'grid/text bends visibly through the lens, with color fringes and moving highlight. pointer motion produces smooth spring follow and deformation.'
   }
  }
- const r=recipes[item.demo]??advancedFakeRecipes[item.demo]??(official?{html:'<HeroShader />',logic:`공식 ShaderGradientCanvas 안에 ShaderGradient를 배치한다. ${preset.title} preset의 색상·카메라·rotation·amplitude를 아래 TSX대로 적용한다. IntersectionObserver, visibilitychange, reduced-motion으로 renderer를 mount/unmount한다. WebGL 미지원 또는 오류 시 gradient fallback을 유지한다.`,acceptance:`공식 ${preset.title} 색상과 mesh가 움직인다. offscreen/reduced-motion에서 renderer가 정지하고 fallback을 표시한다.`}:undefined),starter=starterCodeFor(item,preset),m=demoMaturity(item)
+ const r=advancedFakeRecipes[item.demo]??recipes[item.demo]??(official?{html:'<HeroShader />',logic:`공식 ShaderGradientCanvas 안에 ShaderGradient를 배치한다. ${preset.title} preset의 색상·카메라·rotation·amplitude를 아래 TSX대로 적용한다. IntersectionObserver, visibilitychange, reduced-motion으로 renderer를 mount/unmount한다. WebGL 미지원 또는 오류 시 gradient fallback을 유지한다.`,acceptance:`공식 ${preset.title} 색상과 mesh가 움직인다. offscreen/reduced-motion에서 renderer가 정지하고 fallback을 표시한다.`}:undefined),starter=starterCodeFor(item,preset),m=demoMaturity(item)
  return `# ${item.name}${official?' / '+preset.title:''}
 
 ## Goal

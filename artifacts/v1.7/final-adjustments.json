@@ -1,0 +1,925 @@
+{
+  "results": [
+    {
+      "kind": "noise-blobs",
+      "width": 1920,
+      "height": 1080,
+      "surfaces": [
+        {
+          "selector": ".qa-card",
+          "width": 320,
+          "height": 192,
+          "policy": "scale-sensitive",
+          "overflow": false,
+          "images": 0
+        },
+        {
+          "selector": ".qa-detail",
+          "width": 1528,
+          "height": 560,
+          "policy": "scale-sensitive",
+          "overflow": false,
+          "images": 0
+        }
+      ]
+    },
+    {
+      "kind": "retro-grid",
+      "width": 1920,
+      "height": 1080,
+      "surfaces": [
+        {
+          "selector": ".qa-card",
+          "width": 320,
+          "height": 192,
+          "policy": "density-sensitive",
+          "overflow": false,
+          "images": 0
+        },
+        {
+          "selector": ".qa-detail",
+          "width": 1528,
+          "height": 560,
+          "policy": "density-sensitive",
+          "overflow": false,
+          "images": 0
+        }
+      ]
+    },
+    {
+      "kind": "magnetic-button",
+      "width": 1920,
+      "height": 1080,
+      "surfaces": [
+        {
+          "selector": ".qa-card",
+          "width": 320,
+          "height": 192,
+          "policy": "fixed-object",
+          "overflow": false,
+          "images": 0
+        },
+        {
+          "selector": ".qa-detail",
+          "width": 1528,
+          "height": 560,
+          "policy": "fixed-object",
+          "overflow": false,
+          "images": 0
+        }
+      ]
+    },
+    {
+      "kind": "animated-border",
+      "width": 1920,
+      "height": 1080,
+      "surfaces": [
+        {
+          "selector": ".qa-card",
+          "width": 320,
+          "height": 192,
+          "policy": "fixed-object",
+          "overflow": false,
+          "images": 0
+        },
+        {
+          "selector": ".qa-detail",
+          "width": 1528,
+          "height": 560,
+          "policy": "fixed-object",
+          "overflow": false,
+          "images": 0
+        }
+      ]
+    },
+    {
+      "kind": "shimmer-button",
+      "width": 1920,
+      "height": 1080,
+      "surfaces": [
+        {
+          "selector": ".qa-card",
+          "width": 320,
+          "height": 192,
+          "policy": "fixed-object",
+          "overflow": false,
+          "images": 0
+        },
+        {
+          "selector": ".qa-detail",
+          "width": 1528,
+          "height": 560,
+          "policy": "fixed-object",
+          "overflow": false,
+          "images": 0
+        }
+      ]
+    },
+    {
+      "kind": "section-faq",
+      "width": 1920,
+      "height": 1080,
+      "surfaces": [
+        {
+          "selector": ".qa-card",
+          "width": 320,
+          "height": 192,
+          "policy": "fixed-object",
+          "overflow": false,
+          "images": 0
+        },
+        {
+          "selector": ".qa-detail",
+          "width": 1528,
+          "height": 560,
+          "policy": "fixed-object",
+          "overflow": false,
+          "images": 0
+        }
+      ]
+    },
+    {
+      "route": "guides",
+      "width": 1920,
+      "overflow": false
+    },
+    {
+      "route": "guides/using-design-md",
+      "width": 1920,
+      "toc": {
+        "tag": "H2",
+        "top": 524.625
+      }
+    },
+    {
+      "route": "guides/using-design-md",
+      "width": 1920,
+      "overflow": false
+    },
+    {
+      "route": "guides/writing-brand-design-md",
+      "width": 1920,
+      "toc": {
+        "tag": "H3",
+        "top": 110.40625
+      }
+    },
+    {
+      "route": "guides/writing-brand-design-md",
+      "width": 1920,
+      "overflow": false
+    },
+    {
+      "route": "reference/particles",
+      "width": 1920,
+      "ratios": [
+        1.666685935603214,
+        1.666685935603214,
+        1.666685935603214,
+        1.666685935603214
+      ]
+    },
+    {
+      "route": "reference/particles",
+      "width": 1920,
+      "overflow": false
+    },
+    {
+      "kind": "noise-blobs",
+      "width": 1440,
+      "height": 1000,
+      "surfaces": [
+        {
+          "selector": ".qa-card",
+          "width": 320,
+          "height": 192,
+          "policy": "scale-sensitive",
+          "overflow": false,
+          "images": 0
+        },
+        {
+          "selector": ".qa-detail",
+          "width": 1048,
+          "height": 560,
+          "policy": "scale-sensitive",
+          "overflow": false,
+          "images": 0
+        }
+      ]
+    },
+    {
+      "kind": "retro-grid",
+      "width": 1440,
+      "height": 1000,
+      "surfaces": [
+        {
+          "selector": ".qa-card",
+          "width": 320,
+          "height": 192,
+          "policy": "density-sensitive",
+          "overflow": false,
+          "images": 0
+        },
+        {
+          "selector": ".qa-detail",
+          "width": 1048,
+          "height": 560,
+          "policy": "density-sensitive",
+          "overflow": false,
+          "images": 0
+        }
+      ]
+    },
+    {
+      "kind": "magnetic-button",
+      "width": 1440,
+      "height": 1000,
+      "surfaces": [
+        {
+          "selector": ".qa-card",
+          "width": 320,
+          "height": 192,
+          "policy": "fixed-object",
+          "overflow": false,
+          "images": 0
+        },
+        {
+          "selector": ".qa-detail",
+          "width": 1048,
+          "height": 560,
+          "policy": "fixed-object",
+          "overflow": false,
+          "images": 0
+        }
+      ]
+    },
+    {
+      "kind": "animated-border",
+      "width": 1440,
+      "height": 1000,
+      "surfaces": [
+        {
+          "selector": ".qa-card",
+          "width": 320,
+          "height": 192,
+          "policy": "fixed-object",
+          "overflow": false,
+          "images": 0
+        },
+        {
+          "selector": ".qa-detail",
+          "width": 1048,
+          "height": 560,
+          "policy": "fixed-object",
+          "overflow": false,
+          "images": 0
+        }
+      ]
+    },
+    {
+      "kind": "shimmer-button",
+      "width": 1440,
+      "height": 1000,
+      "surfaces": [
+        {
+          "selector": ".qa-card",
+          "width": 320,
+          "height": 192,
+          "policy": "fixed-object",
+          "overflow": false,
+          "images": 0
+        },
+        {
+          "selector": ".qa-detail",
+          "width": 1048,
+          "height": 560,
+          "policy": "fixed-object",
+          "overflow": false,
+          "images": 0
+        }
+      ]
+    },
+    {
+      "kind": "section-faq",
+      "width": 1440,
+      "height": 1000,
+      "surfaces": [
+        {
+          "selector": ".qa-card",
+          "width": 320,
+          "height": 192,
+          "policy": "fixed-object",
+          "overflow": false,
+          "images": 0
+        },
+        {
+          "selector": ".qa-detail",
+          "width": 1048,
+          "height": 560,
+          "policy": "fixed-object",
+          "overflow": false,
+          "images": 0
+        }
+      ]
+    },
+    {
+      "route": "guides",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "guides/using-design-md",
+      "width": 1440,
+      "toc": {
+        "tag": "H2",
+        "top": 444.625
+      }
+    },
+    {
+      "route": "guides/using-design-md",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "guides/writing-brand-design-md",
+      "width": 1440,
+      "toc": {
+        "tag": "H3",
+        "top": 110.40625
+      }
+    },
+    {
+      "route": "guides/writing-brand-design-md",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "reference/particles",
+      "width": 1440,
+      "ratios": [
+        1.6666929319990544,
+        1.6666929319990544,
+        1.6666929319990544,
+        1.6666929319990544
+      ]
+    },
+    {
+      "route": "reference/particles",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "kind": "noise-blobs",
+      "width": 1366,
+      "height": 768,
+      "surfaces": [
+        {
+          "selector": ".qa-card",
+          "width": 320,
+          "height": 192,
+          "policy": "scale-sensitive",
+          "overflow": false,
+          "images": 0
+        },
+        {
+          "selector": ".qa-detail",
+          "width": 974,
+          "height": 560,
+          "policy": "scale-sensitive",
+          "overflow": false,
+          "images": 0
+        }
+      ]
+    },
+    {
+      "kind": "retro-grid",
+      "width": 1366,
+      "height": 768,
+      "surfaces": [
+        {
+          "selector": ".qa-card",
+          "width": 320,
+          "height": 192,
+          "policy": "density-sensitive",
+          "overflow": false,
+          "images": 0
+        },
+        {
+          "selector": ".qa-detail",
+          "width": 974,
+          "height": 560,
+          "policy": "density-sensitive",
+          "overflow": false,
+          "images": 0
+        }
+      ]
+    },
+    {
+      "kind": "magnetic-button",
+      "width": 1366,
+      "height": 768,
+      "surfaces": [
+        {
+          "selector": ".qa-card",
+          "width": 320,
+          "height": 192,
+          "policy": "fixed-object",
+          "overflow": false,
+          "images": 0
+        },
+        {
+          "selector": ".qa-detail",
+          "width": 974,
+          "height": 560,
+          "policy": "fixed-object",
+          "overflow": false,
+          "images": 0
+        }
+      ]
+    },
+    {
+      "kind": "animated-border",
+      "width": 1366,
+      "height": 768,
+      "surfaces": [
+        {
+          "selector": ".qa-card",
+          "width": 320,
+          "height": 192,
+          "policy": "fixed-object",
+          "overflow": false,
+          "images": 0
+        },
+        {
+          "selector": ".qa-detail",
+          "width": 974,
+          "height": 560,
+          "policy": "fixed-object",
+          "overflow": false,
+          "images": 0
+        }
+      ]
+    },
+    {
+      "kind": "shimmer-button",
+      "width": 1366,
+      "height": 768,
+      "surfaces": [
+        {
+          "selector": ".qa-card",
+          "width": 320,
+          "height": 192,
+          "policy": "fixed-object",
+          "overflow": false,
+          "images": 0
+        },
+        {
+          "selector": ".qa-detail",
+          "width": 974,
+          "height": 560,
+          "policy": "fixed-object",
+          "overflow": false,
+          "images": 0
+        }
+      ]
+    },
+    {
+      "kind": "section-faq",
+      "width": 1366,
+      "height": 768,
+      "surfaces": [
+        {
+          "selector": ".qa-card",
+          "width": 320,
+          "height": 192,
+          "policy": "fixed-object",
+          "overflow": false,
+          "images": 0
+        },
+        {
+          "selector": ".qa-detail",
+          "width": 974,
+          "height": 560,
+          "policy": "fixed-object",
+          "overflow": false,
+          "images": 0
+        }
+      ]
+    },
+    {
+      "route": "guides",
+      "width": 1366,
+      "overflow": false
+    },
+    {
+      "route": "guides/using-design-md",
+      "width": 1366,
+      "toc": {
+        "tag": "H2",
+        "top": 213.375
+      }
+    },
+    {
+      "route": "guides/using-design-md",
+      "width": 1366,
+      "overflow": false
+    },
+    {
+      "route": "guides/writing-brand-design-md",
+      "width": 1366,
+      "toc": {
+        "tag": "H3",
+        "top": 110.15625
+      }
+    },
+    {
+      "route": "guides/writing-brand-design-md",
+      "width": 1366,
+      "overflow": false
+    },
+    {
+      "route": "reference/particles",
+      "width": 1366,
+      "ratios": [
+        1.6667779632721202,
+        1.6667779632721202,
+        1.6667779632721202,
+        1.6667779632721202
+      ]
+    },
+    {
+      "route": "reference/particles",
+      "width": 1366,
+      "overflow": false
+    },
+    {
+      "kind": "noise-blobs",
+      "width": 1024,
+      "height": 768,
+      "surfaces": [
+        {
+          "selector": ".qa-card",
+          "width": 320,
+          "height": 192,
+          "policy": "scale-sensitive",
+          "overflow": false,
+          "images": 0
+        },
+        {
+          "selector": ".qa-detail",
+          "width": 632,
+          "height": 560,
+          "policy": "scale-sensitive",
+          "overflow": false,
+          "images": 0
+        }
+      ]
+    },
+    {
+      "kind": "retro-grid",
+      "width": 1024,
+      "height": 768,
+      "surfaces": [
+        {
+          "selector": ".qa-card",
+          "width": 320,
+          "height": 192,
+          "policy": "density-sensitive",
+          "overflow": false,
+          "images": 0
+        },
+        {
+          "selector": ".qa-detail",
+          "width": 632,
+          "height": 560,
+          "policy": "density-sensitive",
+          "overflow": false,
+          "images": 0
+        }
+      ]
+    },
+    {
+      "kind": "magnetic-button",
+      "width": 1024,
+      "height": 768,
+      "surfaces": [
+        {
+          "selector": ".qa-card",
+          "width": 320,
+          "height": 192,
+          "policy": "fixed-object",
+          "overflow": false,
+          "images": 0
+        },
+        {
+          "selector": ".qa-detail",
+          "width": 632,
+          "height": 560,
+          "policy": "fixed-object",
+          "overflow": false,
+          "images": 0
+        }
+      ]
+    },
+    {
+      "kind": "animated-border",
+      "width": 1024,
+      "height": 768,
+      "surfaces": [
+        {
+          "selector": ".qa-card",
+          "width": 320,
+          "height": 192,
+          "policy": "fixed-object",
+          "overflow": false,
+          "images": 0
+        },
+        {
+          "selector": ".qa-detail",
+          "width": 632,
+          "height": 560,
+          "policy": "fixed-object",
+          "overflow": false,
+          "images": 0
+        }
+      ]
+    },
+    {
+      "kind": "shimmer-button",
+      "width": 1024,
+      "height": 768,
+      "surfaces": [
+        {
+          "selector": ".qa-card",
+          "width": 320,
+          "height": 192,
+          "policy": "fixed-object",
+          "overflow": false,
+          "images": 0
+        },
+        {
+          "selector": ".qa-detail",
+          "width": 632,
+          "height": 560,
+          "policy": "fixed-object",
+          "overflow": false,
+          "images": 0
+        }
+      ]
+    },
+    {
+      "kind": "section-faq",
+      "width": 1024,
+      "height": 768,
+      "surfaces": [
+        {
+          "selector": ".qa-card",
+          "width": 320,
+          "height": 192,
+          "policy": "fixed-object",
+          "overflow": false,
+          "images": 0
+        },
+        {
+          "selector": ".qa-detail",
+          "width": 632,
+          "height": 560,
+          "policy": "fixed-object",
+          "overflow": false,
+          "images": 0
+        }
+      ]
+    },
+    {
+      "route": "guides",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "guides/using-design-md",
+      "width": 1024,
+      "toc": {
+        "tag": "H2",
+        "top": 213.359375
+      }
+    },
+    {
+      "route": "guides/using-design-md",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "guides/writing-brand-design-md",
+      "width": 1024,
+      "toc": {
+        "tag": "H3",
+        "top": 110.4375
+      }
+    },
+    {
+      "route": "guides/writing-brand-design-md",
+      "width": 1024,
+      "overflow": true
+    },
+    {
+      "route": "reference/particles",
+      "width": 1024,
+      "ratios": [
+        1.6667816488444291,
+        1.6667816488444291,
+        1.6667816488444291,
+        1.6667816488444291
+      ]
+    },
+    {
+      "route": "reference/particles",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "kind": "noise-blobs",
+      "width": 390,
+      "height": 844,
+      "surfaces": [
+        {
+          "selector": ".qa-card",
+          "width": 342,
+          "height": 205.1875,
+          "policy": "scale-sensitive",
+          "overflow": false,
+          "images": 0
+        },
+        {
+          "selector": ".qa-detail",
+          "width": 342,
+          "height": 450,
+          "policy": "scale-sensitive",
+          "overflow": false,
+          "images": 0
+        }
+      ]
+    },
+    {
+      "kind": "retro-grid",
+      "width": 390,
+      "height": 844,
+      "surfaces": [
+        {
+          "selector": ".qa-card",
+          "width": 342,
+          "height": 205.1875,
+          "policy": "density-sensitive",
+          "overflow": false,
+          "images": 0
+        },
+        {
+          "selector": ".qa-detail",
+          "width": 342,
+          "height": 450,
+          "policy": "density-sensitive",
+          "overflow": false,
+          "images": 0
+        }
+      ]
+    },
+    {
+      "kind": "magnetic-button",
+      "width": 390,
+      "height": 844,
+      "surfaces": [
+        {
+          "selector": ".qa-card",
+          "width": 342,
+          "height": 205.1875,
+          "policy": "fixed-object",
+          "overflow": false,
+          "images": 0
+        },
+        {
+          "selector": ".qa-detail",
+          "width": 342,
+          "height": 450,
+          "policy": "fixed-object",
+          "overflow": false,
+          "images": 0
+        }
+      ]
+    },
+    {
+      "kind": "animated-border",
+      "width": 390,
+      "height": 844,
+      "surfaces": [
+        {
+          "selector": ".qa-card",
+          "width": 342,
+          "height": 205.1875,
+          "policy": "fixed-object",
+          "overflow": false,
+          "images": 0
+        },
+        {
+          "selector": ".qa-detail",
+          "width": 342,
+          "height": 450,
+          "policy": "fixed-object",
+          "overflow": false,
+          "images": 0
+        }
+      ]
+    },
+    {
+      "kind": "shimmer-button",
+      "width": 390,
+      "height": 844,
+      "surfaces": [
+        {
+          "selector": ".qa-card",
+          "width": 342,
+          "height": 205.1875,
+          "policy": "fixed-object",
+          "overflow": false,
+          "images": 0
+        },
+        {
+          "selector": ".qa-detail",
+          "width": 342,
+          "height": 450,
+          "policy": "fixed-object",
+          "overflow": false,
+          "images": 0
+        }
+      ]
+    },
+    {
+      "kind": "section-faq",
+      "width": 390,
+      "height": 844,
+      "surfaces": [
+        {
+          "selector": ".qa-card",
+          "width": 342,
+          "height": 205.1875,
+          "policy": "fixed-object",
+          "overflow": false,
+          "images": 0
+        },
+        {
+          "selector": ".qa-detail",
+          "width": 342,
+          "height": 450,
+          "policy": "fixed-object",
+          "overflow": false,
+          "images": 0
+        }
+      ]
+    },
+    {
+      "route": "guides",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "guides/using-design-md",
+      "width": 390,
+      "toc": {
+        "tag": "H2",
+        "top": 110.34375
+      }
+    },
+    {
+      "route": "guides/using-design-md",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "guides/writing-brand-design-md",
+      "width": 390,
+      "toc": {
+        "tag": "H3",
+        "top": 109.96875
+      }
+    },
+    {
+      "route": "guides/writing-brand-design-md",
+      "width": 390,
+      "overflow": true
+    },
+    {
+      "route": "reference/particles",
+      "width": 390,
+      "ratios": [
+        1.6666909143813196,
+        1.6666909143813196,
+        1.6666909143813196,
+        1.6666909143813196
+      ]
+    },
+    {
+      "route": "reference/particles",
+      "width": 390,
+      "overflow": false
+    }
+  ],
+  "errors": []
+}

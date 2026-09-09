@@ -10,7 +10,8 @@
     "typecheck": "tsc --noEmit -p tsconfig.app.json",
     "audit:v1.4": "node scripts/audit-v1.4.mjs",
     "audit:design-md": "node scripts/audit-design-md.mjs",
-    "sync:awesome-design-md": "node scripts/sync-awesome-design-md.mjs"
+    "sync:awesome-design-md": "node scripts/sync-awesome-design-md.mjs",
+    "audit:demos": "node scripts/audit-demos.mjs"
   },
   "dependencies": {
     "@react-three/fiber": "8.18.0",
@@ -22,8 +23,10 @@
     "react-markdown": "^10.1.0",
     "react-router-dom": "7.1.1",
     "remark-gfm": "^4.0.1",
+    "remark-parse": "11.0.0",
     "three": "0.180.0",
-    "three-stdlib": "2.36.0"
+    "three-stdlib": "2.36.0",
+    "unified": "11.0.5"
   },
   "devDependencies": {
     "@types/react": "18.3.18",

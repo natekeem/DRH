@@ -1,0 +1,121 @@
+[
+  {
+    "width": 1920,
+    "article": 940,
+    "wrapping": "normal",
+    "h1": 1
+  },
+  {
+    "width": 1920,
+    "article": 940,
+    "wrapping": "normal",
+    "h1": 1
+  },
+  {
+    "width": 1920,
+    "relatedRatios": [
+      1.666685935603214,
+      1.666685935603214,
+      1.666685935603214,
+      1.666685935603214
+    ],
+    "exploreRatio": 1.6666666666666667
+  },
+  {
+    "width": 1440,
+    "article": 940,
+    "wrapping": "normal",
+    "h1": 1
+  },
+  {
+    "width": 1440,
+    "article": 940,
+    "wrapping": "normal",
+    "h1": 1
+  },
+  {
+    "width": 1440,
+    "relatedRatios": [
+      1.6666929319990544,
+      1.6666929319990544,
+      1.6666929319990544,
+      1.6666929319990544
+    ],
+    "exploreRatio": 1.6666666666666667
+  },
+  {
+    "width": 1366,
+    "article": 940,
+    "wrapping": "normal",
+    "h1": 1
+  },
+  {
+    "width": 1366,
+    "article": 940,
+    "wrapping": "normal",
+    "h1": 1
+  },
+  {
+    "width": 1366,
+    "relatedRatios": [
+      1.6667779632721202,
+      1.6667779632721202,
+      1.6667779632721202,
+      1.6667779632721202
+    ],
+    "exploreRatio": 1.6666666666666667
+  },
+  {
+    "width": 1024,
+    "article": 920,
+    "wrapping": "normal",
+    "h1": 1
+  },
+  {
+    "width": 1024,
+    "article": 920,
+    "wrapping": "normal",
+    "h1": 1
+  },
+  {
+    "width": 1024,
+    "relatedRatios": [
+      1.6667816488444291,
+      1.6667816488444291,
+      1.6667816488444291,
+      1.6667816488444291
+    ],
+    "exploreRatio": 1.666694609774499
+  },
+  {
+    "width": 390,
+    "article": 350,
+    "wrapping": "normal",
+    "h1": 1
+  },
+  {
+    "width": 390,
+    "article": 350,
+    "wrapping": "normal",
+    "h1": 1
+  },
+  {
+    "width": 390,
+    "relatedRatios": [
+      1.6666909143813196,
+      1.6666909143813196,
+      1.6666909143813196,
+      1.6666909143813196
+    ],
+    "exploreRatio": 1.6667446393762184
+  },
+  {
+    "particleFrameIntervals": {
+      "frames": 120,
+      "median": 16.699999999999932,
+      "p95": 16.799999999999955,
+      "max": 17.200000000000045,
+      "count": "180"
+    }
+  }
+]

@@ -1,0 +1,15 @@
+import { demoModule } from './demo-module.mjs'
+import { writeFile } from 'node:fs/promises'
+const {references, recipes, starterCodeFor, densityPolicy} = await demoModule()
+const advanced = {'fluid-cursor':'FluidCursorDemo',metaballs:'MetaballsDemo','liquid-refraction':'LiquidRefractionDemo'}
+const groups = Object.groupBy(references,r=>r.demo)
+const rows = Object.entries(groups).map(([key, refs])=> {
+ const renderer=key.startsWith('vendor-design-md:')?'VendorDesignPreview':advanced[key]?'Advanced React':key==='shader-gradient'?'ShaderBackdrop':recipes[key]?'RecipeDemo iframe':'LegacyDemoRenderer'
+ const component=renderer==='LegacyDemoRenderer'?(key.startsWith('page-')?'PageDemo':key.startsWith('section-')?'SectionDemo':key.startsWith('designmd-')?'DesignMdDemo':key==='style-clay'?'TiltCard':'Legacy inline JSX'):renderer==='RecipeDemo iframe'?'RecipeDemo':renderer
+ return `| ${key} | ${refs.map(r=>r.name).join(', ')} | ${renderer} | ${recipes[key]?'recipes['+key+']':'—'} | ${component} | ${advanced[key]??'—'} | visible-only lightweight ${recipes[key]?densityPolicy(key):'card variant'} | visible-only ${recipes[key]?densityPolicy(key):'detail variant'} | ${starterCodeFor(refs[0]).startsWith('<!doctype')?'Standalone HTML':key==='shader-gradient'?'Official TSX':'Partial / document'} |`
+})
+const aliases=[]
+const entries=Object.entries(recipes)
+for(let i=0;i<entries.length;i++)for(let j=i+1;j<entries.length;j++)if(entries[i][1]===entries[j][1])aliases.push(entries[i][0]+' ↔ '+entries[j][0])
+await writeFile('docs/V1_7_DEMO_RENDER_PATHS.md',`# V1.7 Rendering paths\n\n## Pre-change audit (completed before implementation)\n\nThe original table was generated before editing application code. Parallax, Magnetic Button and Hover Lift already had distinct final recipe objects despite sharing initialization. Tilt combined rotation and translation. Spotlight, Spotlight Background, Fluid Cursor and Cursor Follow shared an object; Fluid Cursor actually dispatched to advanced React, but Agent Package selected the shadow recipe. Legacy Particles, MagneticButton and ImageTrail were unreachable. TiltCard remains reachable through style-clay.\n\n## Final dispatch\n\nPriority: vendor specimen → advanced React → official ShaderBackdrop preset → recipe iframe → Legacy JSX. Exports and Agent Package select advanced implementations before recipes. Recipe HTML defaults to detail and both variants use the same responsive implementation. DemoViewport mounts visible surfaces only. The metadata function densityPolicy and the acceptance contracts in recipes describe scaling; advanced engines keep their V1.6.2 variant policies.\n\n| Key | Reference names | Renderer | Recipe | React component | Advanced component | Card | Detail | Export |\n|---|---|---|---|---|---|---|---|---|\n${rows.join('\n')}\n\n## Final shared object identity\n\n${aliases.map(a=>'- '+a).join('\n')}\n\nIntentional alias rationale and visual evidence: V1_7_DEMO_FIDELITY_AUDIT.md. Reproduce this current table with node scripts/document-demo-paths.mjs.\n`)
+console.log({keys:rows.length,aliases})

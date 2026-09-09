@@ -1,13 +1,18 @@
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { CopyBlock } from './CopyBlock'
+import { guideHeadings } from '../lib/guideHeadings'
 
 export function GuideMarkdown({text}:{text:string}) {
+  const headings = guideHeadings(text)
   return (
     <div className="guide-markdown">
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
         components={{
+          h1: () => null,
+          h2: ({node, children}) => <h2 tabIndex={-1} id={headings.find(h=>h.line===node?.position?.start.line)?.id}>{children}</h2>,
+          h3: ({node, children}) => <h3 tabIndex={-1} id={headings.find(h=>h.line===node?.position?.start.line)?.id}>{children}</h3>,
           code({node, inline, className, children, ...props}: any) {
             const match = /language-(\w+)/.exec(className || '')
             if (!inline && match) {

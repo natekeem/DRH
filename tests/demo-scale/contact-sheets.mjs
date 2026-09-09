@@ -1,0 +1,7 @@
+import {createRequire} from 'node:module'
+import {readFile} from 'node:fs/promises'
+const require=createRequire(import.meta.url),{chromium}=require(process.env.PLAYWRIGHT_PATH||'playwright')
+const browser=await chromium.launch({channel:'msedge',headless:true}),page=await browser.newPage({viewport:{width:1440,height:1060}})
+const keys=['gradient-mesh','noise-blobs','parallax','tilt-card','magnetic-button','hover-lift','spotlight','cursor-follow','fluid-cursor','metaballs','liquid-refraction','starfield','retro-grid','beams','waves','animated-border']
+for(let i=0;i<keys.length;i+=4){const images=await Promise.all(keys.slice(i,i+4).map(async key=>`<img alt="${key}" src="data:image/png;base64,${(await readFile(`artifacts/v1.7/${key}-1440.png`)).toString('base64')}">`));await page.setContent('<style>body{margin:0;display:grid;grid-template-columns:1fr 1fr;gap:8px;background:#aaa}img{width:100%}</style>'+images.join(''));await page.screenshot({path:`artifacts/v1.7/contact-${i/4+1}.png`,fullPage:true})}
+await page.goto('http://127.0.0.1:5173/tests/demo-scale/?kind=section-faq');await page.waitForTimeout(350);const el=page.locator('.qa-detail iframe');const f=await(await el.elementHandle()).contentFrame();await f.locator('summary').nth(1).click();if(await f.locator('details[open]').count()!==1)throw Error('FAQ independence');await page.screenshot({path:'artifacts/v1.7/section-faq-1440.png',fullPage:true});await browser.close()
