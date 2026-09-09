@@ -1,8 +1,9 @@
+import { batch1Recipes } from './batch1Recipes'
 import { fidelityRecipes, densityPolicy } from './fidelityRecipes'
 export { densityPolicy } from './fidelityRecipes'
 import hubLicense from '../../../LICENSE?raw'
 import meteorLicense from '../../../docs/licenses/Magic-UI-MIT.txt?raw'
-export type DemoRecipe = { html: string; css: string; js?: string; logic: string; acceptance: string }
+export type DemoRecipe = { html: string; css: string; js?: string; logic: string; acceptance: string; sourceNotes?: string; notices?: string; responsive?: string }
 export const recipes: Record<string, DemoRecipe> = {}
 const add = (keys: string[], recipe: DemoRecipe) => keys.forEach(key => { recipes[key] = recipe })
 const title = '<h1>DESIGN<br>IN MOTION</h1>'
@@ -46,6 +47,7 @@ export function recipeHtml(kind: string, options?: { variant?: 'detail' | 'card'
  const variant = options?.variant ?? 'detail';
  const {html,css,js}=r;
  return `<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${kind} — Hub Original</title><style>*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;font-family:system-ui,sans-serif}main{position:relative;width:100%;height:100%;min-height:0;overflow:hidden;display:flex;align-items:center;justify-content:center;background:#141e30;color:#fff;isolation:isolate}h1{position:relative;z-index:1;font-size:clamp(32px,9vw,72px);line-height:1.05;letter-spacing:-.055em;margin:16px 0}small{font-size:10px;letter-spacing:.13em}button{font:inherit;cursor:pointer}button:focus-visible,[tabindex]:focus-visible{outline:3px solid #e4ff93;outline-offset:4px}.hint{position:absolute;bottom:16px;font-size:11px;z-index:2}.replay{border:1px solid #ffffff50;border-radius:99px;background:#ffffff10;color:#fff;min-height:36px}${css}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.steps section{opacity:1;transform:none}.object{transform:none!important}}@media(pointer:coarse){.object{transform:none!important}}</style></head><body><main data-variant="${variant}" data-density="${densityPolicy(kind)}">${html}</main><script>${kind === 'meteors' ? '/* Adapted from Magic UI meteor head/tail structure.\n'+meteorLicense+'\n*/' : ''}/* ${hubLicense} */
+${r.notices ? '/* '+r.notices.replaceAll('*/','* /')+' */' : ''}
 window.addEventListener('message',e=>{if(e.source!==parent||e.data?.type!=='drh:pointerleave')return;document.querySelector('main').dispatchEvent(new PointerEvent('pointerleave'));document.querySelector('canvas')?.dispatchEvent(new PointerEvent('pointerleave'))});
 const reduced=matchMedia('(prefers-reduced-motion:reduce)');let raf=0;let render;function loop(fn){render=fn;const tick=now=>{const keep=fn(now);if(keep!==false&&!reduced.matches&&!document.hidden)raf=requestAnimationFrame(tick)};tick(performance.now())}function restart(){cancelAnimationFrame(raf);document.querySelectorAll('.meteor,.field').forEach(el=>el.style.animationPlayState=document.hidden?'paused':'running');if(render&&!document.hidden)loop(render)}document.addEventListener('visibilitychange',restart);reduced.addEventListener('change',restart);window.addEventListener('pagehide',()=>cancelAnimationFrame(raf),{once:true});
 ${js??''}
@@ -80,4 +82,4 @@ recipes['glow-card']={...recipes['glow-card'],html:'<article tabindex="0"><small
 recipes['rgb-lens']={...recipes['rgb-lens'],js:recipes['rgb-lens'].js!.replaceAll('shift*.025','shift*.16'),logic:recipes['rgb-lens'].logic+' RGB Lens 변형은 색상 채널 offset 계수를 .025에서 .16으로 높여 색 분리를 더 뚜렷하게 표시한다.'};
 
 // Canonical implementations: one renderer shared by live preview and export.
-Object.assign(recipes, fidelityRecipes)
+Object.assign(recipes, fidelityRecipes, batch1Recipes)

@@ -1,3 +1,4 @@
+import { batch1References } from './batch1References'
 import { recipes } from '../lib/demos/recipes'
 import { designSystemFor, designMarkdown } from '../lib/designSystem'
 import upstreamReview from '../../docs/licenses/upstream-review.json'
@@ -166,6 +167,8 @@ export const references: ReferenceItem[] = [
   ].map(([id,name,description,useCase]) => mk({
     id, name, category:'DESIGN.md', subcategory:'Preset', demo:`designmd-${id}`, description, tags:['design.md','agent','tokens'], useCases:[useCase], featured:id==='minimal-saas'||id==='developer-tool-system', source:'Design Reference Hub' })),
 
+  ...batch1References,
+
   // VoltAgent awesome-design-md — MIT ingested brand DESIGN.md entries
   // Source: https://github.com/VoltAgent/awesome-design-md  commit: 8147538b
   // Each entry provenance: derived / MIT. Raw DESIGN.md served from /vendor/awesome-design-md/<slug>/DESIGN.md
@@ -187,7 +190,7 @@ export const references: ReferenceItem[] = [
 ]
 
 
-export const categories: Category[] = ['Styles','Pages','Sections','Background','Motion','Text','Effects','DESIGN.md']
+export const categories: Category[] = ['Styles','UI Patterns','Pages','Sections','Background','Motion','Text','Effects','DESIGN.md']
 
 // ── Vendor entry lookup ───────────────────────────────────────────────────────
 export const vendorEntryBySlug = Object.fromEntries(vendorEntries.map(v => [v.slug, v]))

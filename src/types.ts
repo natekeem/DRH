@@ -1,4 +1,4 @@
-export type Category = 'Styles' | 'Pages' | 'Sections' | 'Background' | 'Motion' | 'Text' | 'Effects' | 'DESIGN.md'
+export type Category = 'Styles' | 'Pages' | 'Sections' | 'Background' | 'Motion' | 'Text' | 'Effects' | 'UI Patterns' | 'DESIGN.md'
 export type VendorDsCategory = 'AI & LLM' | 'Developer Tools' | 'Backend & DevOps' | 'SaaS & Productivity' | 'Fintech & Crypto' | 'E-commerce & Consumer' | 'Big Tech' | 'Automotive' | 'Automotive & Space' | 'Retro Web' | 'Design Tools' | 'Brand Design'
 export type LicenseStatus = 'copy-ok' | 'reference' | 'restricted'
 

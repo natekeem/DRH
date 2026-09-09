@@ -1,6 +1,7 @@
 import type { Category, ReferenceItem } from '../types'
 
 export const categoryKo: Record<Category, string> = {
+  'UI Patterns': 'UI 패턴',
   Styles: '스타일',
   Pages: '페이지',
   Sections: '섹션',
@@ -12,6 +13,7 @@ export const categoryKo: Record<Category, string> = {
 }
 
 export const categoryDescriptionKo: Record<Category, string> = {
+  'UI Patterns': '검색, 선택, 알림과 로딩처럼 반복해서 쓰는 인터페이스 동작입니다.',
   Styles: '페이지 전체의 시각 언어와 분위기를 먼저 눈으로 찾습니다.',
   Pages: '랜딩, 대시보드, 문서 등 완성된 페이지 구성을 참고합니다.',
   Sections: 'Hero, Pricing, FAQ처럼 필요한 구간만 골라 참고합니다.',

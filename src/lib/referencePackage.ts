@@ -19,6 +19,7 @@ export function demoMaturity(item:ReferenceItem):{kind:DemoMaturity;label:string
 }
 const hub='https://github.com/natekeem/DRH'
 export function provenanceFor(item:ReferenceItem){
+ if(recipes[item.demo]?.sourceNotes)return recipes[item.demo].sourceNotes!
  if(item.implementation.type==='external')return 'Reference Only — 소스 코드를 재배포하지 않습니다. 원본 Reference를 확인하세요.'
  if(item.demo?.startsWith('vendor-design-md:'))return `Derived / MIT — Design analysis from VoltAgent/awesome-design-md (MIT). Raw DESIGN.md는 upstream 원문 그대로 저장됩니다. DRH Preview, Compact, Agent는 파생 산출물입니다. Source: https://github.com/VoltAgent/awesome-design-md`
  if(item.artifacts?.designMd&&item.artifacts.designMd.provenance.origin!=='hub-original')return `DESIGN.md: ${item.artifacts.designMd.provenance.origin} / ${item.artifacts.designMd.provenance.license}. 토큰 미리보기는 DRH의 공통 renderer이며, 문서와 파생 Artifact의 출처를 Source 탭에서 확인하세요.`
@@ -156,7 +157,7 @@ ${starter?'```'+(item.designMd||item.artifacts?.designMd?'markdown':official||it
 ${official?'HeroShader.tsx로 저장하고 <HeroShader />로 사용한다. 의존성 설치 명령은 코드 상단에 있다.':r?'의존성 설치 없이 index.html로 저장해 연다. iframe 삽입 시 title과 sandbox="allow-scripts"를 사용한다. viewport 진입 시 mount하고 화면 밖에서 unmount한다.':item.designMd?'DESIGN.md로 저장한다.':'원본의 설치·사용 지침을 확인한다.'}
 
 ## Responsive
-${r?'main은 부모 너비/높이에 맞추며 최소 높이는 190px이다. typography는 clamp를 사용한다. coarse pointer에서는 중앙/정적 구도를 유지한다. Scroll demo는 native touch scroll을 사용한다.':'390px 너비에서 레이아웃과 텍스트 overflow를 별도 검증한다.'}
+${recipes[item.demo]?.responsive??(r?'main은 부모 너비/높이에 맞추며 최소 높이는 190px이다. typography는 clamp를 사용한다. coarse pointer에서는 중앙/정적 구도를 유지한다. Scroll demo는 native touch scroll을 사용한다.':'390px 너비에서 레이아웃과 텍스트 overflow를 별도 검증한다.')}
 
 ## Reduced Motion
 prefers-reduced-motion: reduce에서 장식 CSS animation/transition을 제거한다. RAF는 한 프레임만 렌더한다. 시스템 설정 변경도 반영한다. 읽기 순서와 핵심 정보는 유지한다.

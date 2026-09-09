@@ -1,0 +1,234 @@
+{
+  "viewports": [
+    {
+      "id": "agency-landing",
+      "viewportWidth": 1920,
+      "viewportHeight": 1080,
+      "variant": "card",
+      "width": 365,
+      "height": 218,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "agency",
+          "width": 365,
+          "overflow": false
+        },
+        {
+          "class": "",
+          "width": 0,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "agency-landing",
+      "viewportWidth": 1920,
+      "viewportHeight": 1080,
+      "variant": "detail",
+      "width": 1386,
+      "height": 718,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "agency",
+          "width": 1386,
+          "overflow": false
+        },
+        {
+          "class": "",
+          "width": 0,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "agency-landing",
+      "viewportWidth": 1440,
+      "viewportHeight": 1000,
+      "variant": "card",
+      "width": 365,
+      "height": 218,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "agency",
+          "width": 365,
+          "overflow": false
+        },
+        {
+          "class": "",
+          "width": 0,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "agency-landing",
+      "viewportWidth": 1440,
+      "viewportHeight": 1000,
+      "variant": "detail",
+      "width": 1026,
+      "height": 698,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "agency",
+          "width": 1026,
+          "overflow": false
+        },
+        {
+          "class": "",
+          "width": 0,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "agency-landing",
+      "viewportWidth": 1366,
+      "viewportHeight": 768,
+      "variant": "card",
+      "width": 365,
+      "height": 218,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "agency",
+          "width": 365,
+          "overflow": false
+        },
+        {
+          "class": "",
+          "width": 0,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "agency-landing",
+      "viewportWidth": 1366,
+      "viewportHeight": 768,
+      "variant": "detail",
+      "width": 952,
+      "height": 536,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "agency",
+          "width": 952,
+          "overflow": false
+        },
+        {
+          "class": "",
+          "width": 0,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "agency-landing",
+      "viewportWidth": 1024,
+      "viewportHeight": 768,
+      "variant": "card",
+      "width": 365,
+      "height": 218,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "agency",
+          "width": 365,
+          "overflow": false
+        },
+        {
+          "class": "",
+          "width": 0,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "agency-landing",
+      "viewportWidth": 1024,
+      "viewportHeight": 768,
+      "variant": "detail",
+      "width": 610,
+      "height": 536,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "agency",
+          "width": 610,
+          "overflow": false
+        },
+        {
+          "class": "",
+          "width": 0,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "agency-landing",
+      "viewportWidth": 390,
+      "viewportHeight": 844,
+      "variant": "card",
+      "width": 318,
+      "height": 190,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "agency",
+          "width": 318,
+          "overflow": false
+        },
+        {
+          "class": "",
+          "width": 0,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "agency-landing",
+      "viewportWidth": 390,
+      "viewportHeight": 844,
+      "variant": "detail",
+      "width": 356,
+      "height": 538,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "agency",
+          "width": 356,
+          "overflow": false
+        },
+        {
+          "class": "",
+          "width": 0,
+          "overflow": false
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "id": "agency-landing",
+      "variant": "card",
+      "passed": true
+    },
+    {
+      "id": "agency-landing",
+      "variant": "detail",
+      "passed": true
+    },
+    {
+      "id": "agency-landing",
+      "offline": true,
+      "reducedMotion": true,
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "network": []
+}

@@ -3,7 +3,7 @@ import type { DemoRecipe } from './recipes'
 export type DensityPolicy = 'density-sensitive' | 'scale-sensitive' | 'fixed-object'
 export const densityPolicy = (kind: string): DensityPolicy =>
   ['particles','meteors','dot-grid','retro-grid','starfield','beams','waves','confetti','image-trail'].includes(kind) ? 'density-sensitive' :
-  ['aurora','gradient-mesh','noise-blobs','spotlight','spotlight-background','cursor-follow','ripple','image-reveal','comparison-slider'].includes(kind) ? 'scale-sensitive' : 'fixed-object'
+  ['style-neumorphism','style-skeuomorphism','style-bauhaus','style-japandi','page-agency','aurora','gradient-mesh','noise-blobs','spotlight','spotlight-background','cursor-follow','ripple','image-reveal','comparison-slider'].includes(kind) ? 'scale-sensitive' : 'fixed-object'
 
 const observe = `function observeSize(fn){const ro=new ResizeObserver(()=>{fn();restart()});ro.observe(document.querySelector('main'));fn();window.addEventListener('pagehide',()=>ro.disconnect(),{once:true})}`
 const canvas = {html:'<canvas aria-label="포인터에 반응하는 공간"></canvas>',css:'canvas{position:absolute;inset:0;width:100%;height:100%}'}

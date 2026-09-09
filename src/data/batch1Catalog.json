@@ -1,0 +1,172 @@
+[
+  {
+    "id": "neumorphism",
+    "name": "Neumorphism / Soft UI",
+    "category": "Styles",
+    "demo": "style-neumorphism",
+    "description": "배경과 같은 표면에 빛과 그림자를 짝지어 돌출·함몰을 만드는 부드러운 스타일입니다.",
+    "source": {
+      "title": "ui-neumorphism",
+      "url": "https://github.com/AKAspanion/ui-neumorphism",
+      "demo": "https://akaspanion.github.io/ui-neumorphism/",
+      "license": "MIT",
+      "scope": "CODE_OK",
+      "note": "50+ React neumorphic components; strong canonical implementation reference."
+    },
+    "repository": "AKAspanion/ui-neumorphism",
+    "canonicalAcceptance": "Raised and inset surfaces must be visibly driven by paired shadow geometry on a near-background surface; not just a gray card with one drop shadow."
+  },
+  {
+    "id": "skeuomorphism",
+    "name": "Skeuomorphism",
+    "category": "Styles",
+    "demo": "style-skeuomorphism",
+    "description": "나무·금속·유리의 질감과 실제 눌리는 컨트롤로 물리적 도구를 닮은 화면입니다.",
+    "source": {
+      "title": "Tactile UI",
+      "url": "https://github.com/KzqKzq/tactile-ui",
+      "demo": "https://kzqkzq.github.io/tactile-ui/",
+      "license": "MIT",
+      "scope": "CODE_OK_WITH_CAUTION",
+      "note": "30+ tactile/skeuomorphic React components. README says learning/testing only; treat as reference/adaptation with explicit provenance, not production endorsement."
+    },
+    "repository": "KzqKzq/tactile-ui",
+    "canonicalAcceptance": "Use physical material cues (gloss, bevel, inset, texture/lighting) and at least one tactile control state."
+  },
+  {
+    "id": "bauhaus",
+    "name": "Bauhaus",
+    "category": "Styles",
+    "demo": "style-bauhaus",
+    "description": "원·사각형·삼각형과 원색, 비대칭 그리드로 기능과 조형을 연결합니다.",
+    "source": {
+      "title": "design-isms",
+      "url": "https://lidge-jun.github.io/design-isms/",
+      "demo": "https://lidge-jun.github.io/design-isms/",
+      "license": "Unknown/no root license verified",
+      "scope": "DISCOVERY_ONLY",
+      "note": "Taxonomy benchmark only; no code/text/image copying."
+    },
+    "repository": null,
+    "canonicalAcceptance": "Primary geometry, asymmetric/function-led grid, strong display type and restrained primary-color accents; avoid turning it into generic geometric minimalism."
+  },
+  {
+    "id": "japandi",
+    "name": "Japandi",
+    "category": "Styles",
+    "demo": "style-japandi",
+    "description": "따뜻한 자연색, 절제된 글꼴과 넉넉한 여백으로 조용한 재료감을 만듭니다.",
+    "source": {
+      "title": "Framer Marketplace",
+      "url": "https://www.framer.com/marketplace/templates/",
+      "demo": "https://www.framer.com/marketplace/templates/",
+      "license": "Per-item / marketplace terms",
+      "scope": "DISCOVERY_ONLY",
+      "note": "Use layout/style trend discovery only."
+    },
+    "repository": null,
+    "canonicalAcceptance": "Warm natural neutrals, restrained serif/sans pairing, natural-material impression and generous rhythm; avoid generic beige SaaS."
+  },
+  {
+    "id": "bottom-sheet",
+    "name": "Bottom Sheet",
+    "category": "UI Patterns",
+    "demo": "pattern-bottom-sheet",
+    "description": "화면 아래에서 펼쳐지고 터치 드래그로 높이를 조절하는 모달 패널입니다.",
+    "source": {
+      "title": "pure-web-bottom-sheet",
+      "url": "https://github.com/viliket/pure-web-bottom-sheet",
+      "demo": "https://viliket.github.io/pure-web-bottom-sheet/",
+      "license": "MIT",
+      "scope": "CODE_OK",
+      "note": "Accessible, scroll-snap based, framework-agnostic, React wrapper, multiple snap points."
+    },
+    "repository": "viliket/pure-web-bottom-sheet",
+    "canonicalAcceptance": "Touch drag/snap heights + modal semantics; simple bottom-aligned dialog is insufficient."
+  },
+  {
+    "id": "command-palette",
+    "name": "Command Palette",
+    "category": "UI Patterns",
+    "demo": "pattern-command-palette",
+    "description": "검색과 키보드만으로 그룹별 명령을 찾아 실행하는 빠른 작업 창입니다.",
+    "source": {
+      "title": "beUI Command Palette",
+      "url": "https://github.com/starc007/ui-components/blob/main/AGENTS.md",
+      "demo": "https://beui.dev/",
+      "license": "MIT",
+      "scope": "CODE_OK",
+      "note": "Repository explicitly lists a ⌘K palette with fuzzy filter and animated active row."
+    },
+    "repository": "starc007/ui-components",
+    "canonicalAcceptance": "Keyboard-first searchable action surface with groups, shortcuts and active-row behavior."
+  },
+  {
+    "id": "toast-notification",
+    "name": "Toast Notification",
+    "category": "UI Patterns",
+    "demo": "pattern-toast",
+    "description": "작업을 막지 않고 결과를 알리며 쌓이거나 자동으로 닫히는 알림입니다.",
+    "source": {
+      "title": "react-hot-toast",
+      "url": "https://github.com/timolins/react-hot-toast",
+      "demo": "https://react-hot-toast.com/",
+      "license": "MIT",
+      "scope": "CODE_OK",
+      "note": "Accessible headless/customizable toast reference."
+    },
+    "repository": "timolins/react-hot-toast",
+    "canonicalAcceptance": "Non-blocking live-region notification with lifecycle/stacking/dismiss behavior."
+  },
+  {
+    "id": "skeleton-loading",
+    "name": "Skeleton Loading",
+    "category": "UI Patterns",
+    "demo": "pattern-skeleton",
+    "description": "실제 콘텐츠와 같은 자리를 먼저 확보해 로딩 중에도 화면 구조를 유지합니다.",
+    "source": {
+      "title": "react-loading-skeleton",
+      "url": "https://github.com/dvtng/react-loading-skeleton",
+      "demo": "https://www.npmjs.com/package/react-loading-skeleton",
+      "license": "MIT",
+      "scope": "CODE_OK",
+      "note": "Canonical adaptive skeleton loading implementation."
+    },
+    "repository": "dvtng/react-loading-skeleton",
+    "canonicalAcceptance": "Placeholders preserve target layout and communicate loading; spinner-only is insufficient."
+  },
+  {
+    "id": "segmented-control",
+    "name": "Segmented Control",
+    "category": "UI Patterns",
+    "demo": "pattern-segmented",
+    "description": "한 그룹에서 하나의 옵션을 선택하고 표시 데이터까지 함께 바꾸는 컨트롤입니다.",
+    "source": {
+      "title": "@rc-component/segmented",
+      "url": "https://github.com/react-component/segmented",
+      "demo": "https://react-component.github.io/segmented",
+      "license": "MIT",
+      "scope": "CODE_OK",
+      "note": "Canonical accessible segmented control with keyboard/RTL/vertical support."
+    },
+    "repository": "react-component/segmented",
+    "canonicalAcceptance": "Mutually exclusive compact options with a clear active indicator and keyboard behavior."
+  },
+  {
+    "id": "agency-landing",
+    "name": "Agency Landing",
+    "category": "Pages",
+    "demo": "page-agency",
+    "description": "프로젝트 사례와 큰 타이포그래피를 중심으로 작업 방식과 문의까지 연결하는 에이전시 페이지입니다.",
+    "source": {
+      "title": "Agency Website v2",
+      "url": "https://github.com/Shatlyk1011/agency-website",
+      "demo": "https://agency-website-v2.vercel.app/",
+      "license": "No license verified",
+      "scope": "REFERENCE_ONLY",
+      "note": "Use only as visual/fidelity benchmark: GSAP, Motion, Lenis, WebGL smoke cursor."
+    },
+    "repository": null,
+    "canonicalAcceptance": "Case-study-led creative composition with strong motion language and project storytelling."
+  }
+]

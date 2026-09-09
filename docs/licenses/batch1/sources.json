@@ -1,0 +1,121 @@
+[
+  {
+    "repository": "AKAspanion/ui-neumorphism",
+    "commit": "b94b185ce6865c9c47469a4361fe95de88604aef",
+    "license": "MIT",
+    "licensePath": "LICENSE",
+    "evidenceUrl": "https://github.com/AKAspanion/ui-neumorphism/blob/b94b185ce6865c9c47469a4361fe95de88604aef/LICENSE",
+    "localLicense": "ui-neumorphism-LICENSE.txt",
+    "reviewedAt": "2026-09-10",
+    "reviewedFiles": [
+      {
+        "path": "src/components/button/Button.module.css",
+        "url": "https://raw.githubusercontent.com/AKAspanion/ui-neumorphism/b94b185ce6865c9c47469a4361fe95de88604aef/src/components/button/Button.module.css",
+        "sha256": "14f52eee32bf76c1ce5f7d936eac24c847e3c66c5946e8d93f8e7d4236bb2f4f"
+      }
+    ],
+    "implementation": "Hub Original: independently implemented from canonical acceptance and reviewed behavior. No upstream source code, assets, fonts or component runtime copied."
+  },
+  {
+    "repository": "KzqKzq/tactile-ui",
+    "commit": "b4f25939e2087490674815fffe72672f05b500b4",
+    "license": "MIT",
+    "licensePath": "LICENSE",
+    "evidenceUrl": "https://github.com/KzqKzq/tactile-ui/blob/b4f25939e2087490674815fffe72672f05b500b4/LICENSE",
+    "localLicense": "tactile-ui-LICENSE.txt",
+    "reviewedAt": "2026-09-10",
+    "reviewedFiles": [
+      {
+        "path": "src/components/Button/Button.css",
+        "url": "https://raw.githubusercontent.com/KzqKzq/tactile-ui/b4f25939e2087490674815fffe72672f05b500b4/src/components/Button/Button.css",
+        "sha256": "f2757da9e969e5569962ee8399ff1cfb083d8f6ed0090052f44eb03b058452b9"
+      }
+    ],
+    "implementation": "Hub Original: independently implemented from canonical acceptance and reviewed behavior. No upstream source code, assets, fonts or component runtime copied."
+  },
+  {
+    "repository": "viliket/pure-web-bottom-sheet",
+    "commit": "57156f253dd1fe5a2026fe360ae45aac1385a832",
+    "license": "MIT",
+    "licensePath": "LICENSE",
+    "evidenceUrl": "https://github.com/viliket/pure-web-bottom-sheet/blob/57156f253dd1fe5a2026fe360ae45aac1385a832/LICENSE",
+    "localLicense": "pure-web-bottom-sheet-LICENSE.txt",
+    "reviewedAt": "2026-09-10",
+    "reviewedFiles": [
+      {
+        "path": "src/web/bottom-sheet.ts",
+        "url": "https://raw.githubusercontent.com/viliket/pure-web-bottom-sheet/57156f253dd1fe5a2026fe360ae45aac1385a832/src/web/bottom-sheet.ts",
+        "sha256": "57898684b901281c4a48b4c776db2cd7b9eccbb43b5b3d8ddaa0752077b962e0"
+      }
+    ],
+    "implementation": "Hub Original: independently implemented from canonical acceptance and reviewed behavior. No upstream source code, assets, fonts or component runtime copied."
+  },
+  {
+    "repository": "starc007/ui-components",
+    "commit": "04d6f76e9e67e35cded996b1b8d08a5ddcebc13a",
+    "license": "MIT",
+    "licensePath": "LICENSE",
+    "evidenceUrl": "https://github.com/starc007/ui-components/blob/04d6f76e9e67e35cded996b1b8d08a5ddcebc13a/LICENSE",
+    "localLicense": "ui-components-LICENSE.txt",
+    "reviewedAt": "2026-09-10",
+    "reviewedFiles": [
+      {
+        "path": "components/motion/command-palette.tsx",
+        "url": "https://raw.githubusercontent.com/starc007/ui-components/04d6f76e9e67e35cded996b1b8d08a5ddcebc13a/components/motion/command-palette.tsx",
+        "sha256": "0cb0204987ed56acb20bdb824a7b6e46a192c5cb8e3de4aa39a2110b708d73a7"
+      }
+    ],
+    "implementation": "Hub Original: independently implemented from canonical acceptance and reviewed behavior. No upstream source code, assets, fonts or component runtime copied."
+  },
+  {
+    "repository": "timolins/react-hot-toast",
+    "commit": "f339d7105c90e64bc80ee836b987f2efe235035c",
+    "license": "MIT",
+    "licensePath": "LICENSE",
+    "evidenceUrl": "https://github.com/timolins/react-hot-toast/blob/f339d7105c90e64bc80ee836b987f2efe235035c/LICENSE",
+    "localLicense": "react-hot-toast-LICENSE.txt",
+    "reviewedAt": "2026-09-10",
+    "reviewedFiles": [
+      {
+        "path": "src/core/use-toaster.ts",
+        "url": "https://raw.githubusercontent.com/timolins/react-hot-toast/f339d7105c90e64bc80ee836b987f2efe235035c/src/core/use-toaster.ts",
+        "sha256": "58b1255263ce07de9896daccc33f7bc50b896386e9b73cc67ef3fe31b4072aba"
+      }
+    ],
+    "implementation": "Hub Original: independently implemented from canonical acceptance and reviewed behavior. No upstream source code, assets, fonts or component runtime copied."
+  },
+  {
+    "repository": "dvtng/react-loading-skeleton",
+    "commit": "f8b040dade9cfaad7e3e6fbc50243d79f508f1ca",
+    "license": "MIT",
+    "licensePath": "LICENSE",
+    "evidenceUrl": "https://github.com/dvtng/react-loading-skeleton/blob/f8b040dade9cfaad7e3e6fbc50243d79f508f1ca/LICENSE",
+    "localLicense": "react-loading-skeleton-LICENSE.txt",
+    "reviewedAt": "2026-09-10",
+    "reviewedFiles": [
+      {
+        "path": "src/skeleton.css",
+        "url": "https://raw.githubusercontent.com/dvtng/react-loading-skeleton/f8b040dade9cfaad7e3e6fbc50243d79f508f1ca/src/skeleton.css",
+        "sha256": "66e7600afa857a7d2d848c4332d16aa0a6506fd2eaed44e23a963a9e4c4fdf8d"
+      }
+    ],
+    "implementation": "Hub Original: independently implemented from canonical acceptance and reviewed behavior. No upstream source code, assets, fonts or component runtime copied."
+  },
+  {
+    "repository": "react-component/segmented",
+    "commit": "8cbec0b3a0a4097b683a55b39b565ea1e249b47f",
+    "license": "MIT",
+    "licensePath": "LICENSE",
+    "evidenceUrl": "https://github.com/react-component/segmented/blob/8cbec0b3a0a4097b683a55b39b565ea1e249b47f/LICENSE",
+    "localLicense": "segmented-LICENSE.txt",
+    "reviewedAt": "2026-09-10",
+    "reviewedFiles": [
+      {
+        "path": "src/index.tsx",
+        "url": "https://raw.githubusercontent.com/react-component/segmented/8cbec0b3a0a4097b683a55b39b565ea1e249b47f/src/index.tsx",
+        "sha256": "2cd8b5638b509fd01032c405dd31565514ddfc658f0eecea158084a42db5932d"
+      }
+    ],
+    "implementation": "Hub Original: independently implemented from canonical acceptance and reviewed behavior. No upstream source code, assets, fonts or component runtime copied."
+  }
+]

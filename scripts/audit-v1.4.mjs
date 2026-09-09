@@ -31,7 +31,13 @@ console.log('10 official preset exports: syntax, identity, geometry, color and f
 // V1.6 extends: vendor entries from awesome-design-md (MIT) are counted separately.
 const vendorIds=references.filter(r=>r.id.startsWith('admd-'))
 const nonVendorRefs=references.filter(r=>!r.id.startsWith('admd-'))
-assert.equal(nonVendorRefs.length,93,'V1.5 must not bulk-import non-vendor references\nOriginal 93 DRH entries must remain intact.');
+const baselineIds=JSON.parse(await readFile('tests/batch1/baseline-reference-ids.json','utf8'));
+const batch1=JSON.parse(await readFile('src/data/batch1Catalog.json','utf8'));
+assert.equal(baselineIds.length,167,'Pinned V1.7 inventory');
+assert.equal(baselineIds.filter(id=>!id.startsWith('admd-')).length,93,'Original 93 entries');
+assert.equal(batch1.length,10,'Only the authorized Batch 1 additions');
+assert.deepEqual(references.map(r=>r.id).sort(),[...baselineIds,...batch1.map(r=>r.id)].sort(),'Preserve every V1.7 ID; allow only Batch 1');
+assert.equal(nonVendorRefs.length,103,'93 original + 10 authorized Batch 1 entries');
 assert(vendorIds.length>0,'V1.6: awesome-design-md vendor entries must be present');
 let artifactCount=0;
 for(const item of references){
@@ -74,7 +80,7 @@ for(const name of ['Refero Styles','VoltAgent Awesome DESIGN.md / getdesign.md',
 const guide=await readFile('src/content/guides/using-design-md.md','utf8');
 for(let n=1;n<=11;n++)assert(guide.includes('## '+n+'.'),'guide section '+n);
 assert.equal((guide.match(/^```/gm)||[]).length%2,0,'unclosed guide code fence');
-console.log(`V1.5/V1.6: ${artifactCount} artifacts; 93 legacy records + ${vendorIds.length} vendor entries (awesome-design-md MIT); 10 normalized previews; TSX syntax; token parity; Compact length; provenance; restricted/native schema fixtures; six source policies; guide content passed.`);
+console.log(`V1.5/V1.6: ${artifactCount} artifacts; 93 original + ${batch1.length} Batch 1 records + ${vendorIds.length} vendor entries (awesome-design-md MIT); 10 normalized previews; TSX syntax; token parity; Compact length; provenance; restricted/native schema fixtures; six source policies; guide content passed.`);
 const blockedAgent={...external,artifacts:{agent:{extended:'RESTRICTED AGENT BODY',provenance:{...hubProvenance,origin:'reference-only'}}}};
 assert(!artifactViews(blockedAgent).some(v=>v.text.includes('RESTRICTED AGENT BODY')),'restricted agent must not leak through compatibility fallback');
 const meteor=resolveArtifacts(references.find(r=>r.demo==='meteors'));

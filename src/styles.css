@@ -5767,3 +5767,6 @@ pre, code, .overflow-anywhere {
   color: #656568;
 }
 
+
+/* Interactive specimens keep maturity labels clear of their controls. */
+.live-chip[hidden]{display:none}.preview-status{display:inline-block;font-size:9px;font-weight:700;letter-spacing:.04em;color:#28695a;background:#e5f4eb;border-radius:99px;padding:4px 8px;margin-top:8px}

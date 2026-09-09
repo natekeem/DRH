@@ -1,6 +1,6 @@
 # Design Reference Hub
 
-> Current package: **V1.3** — demo maturity + Agent Package + provenance polish
+> Current package: **Post-V1.7 Batch 1** — foundational styles + accessible UI patterns. [Audit and source record](docs/POST_V17_BATCH1_AUDIT.md)
 
 > **See it. Name it. Build it.**
 
@@ -10,12 +10,12 @@ The product deliberately optimizes for this workflow:
 
 **Browse → See → Pick → Copy → Vibe Coding**
 
-## Current V1.3
+## Current Post-V1.7 Batch 1
 
 - ShaderGradient-powered full-screen Hero using the 10 official upstream presets
 - ShaderGradient-style landing sequence: live preset gallery → marketing demos → Agent handoff
-- 93 curated reference entries
-- 8 content categories: Styles, Pages, Sections, Background, Motion, Text, Effects, DESIGN.md
+- 177 reference entries: 93 original + 74 vendor DESIGN.md + 10 Batch 1 additions
+- 9 content categories: Styles, UI Patterns, Pages, Sections, Background, Motion, Text, Effects, DESIGN.md
 - Live/interactive preview renderer shared by gallery cards and detail pages
 - Search, category and subcategory filters
 - Demo maturity labels: OFFICIAL LIVE / WORKING DEMO / PROTOTYPE / LINK ONLY

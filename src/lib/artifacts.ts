@@ -62,7 +62,7 @@ export function resolveArtifacts(item: ReferenceItem, preset?: OfficialShaderPre
     ? {...hubProvenance,origin:'derived',sourceUrl:item.source.url,repository:item.source.repository,evidenceUrl:item.license.evidenceUrl!,notices:meteorLicense+'\n'+hubLicense}
     : item.demo==='shader-gradient'
     ? {...hubProvenance,origin:'derived',sourceUrl:item.source.url,repository:item.source.repository,evidenceUrl:item.license.evidenceUrl!,notices:'DRH wrapper MIT; @shadergradient/react MIT. Retain installed dependency notices.\n'+hubLicense}
-    : hubProvenance
+    : recipes[item.demo]?.notices ? {...hubProvenance,notices:hubLicense+'\n'+recipes[item.demo].notices} : hubProvenance
   const standalone=allowed?buildStandaloneHtml(item):null
   const starter=allowed?starterCodeFor(item,preset):''
   const recipe=recipes[item.demo]
