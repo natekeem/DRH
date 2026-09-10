@@ -1,4 +1,4 @@
-.drh-advanced{position:relative;isolation:isolate;width:100%;height:480px;min-width:0;overflow:hidden;border-radius:16px;background:#080b1b;touch-action:pan-y;outline-offset:4px;color:#fff}
+.drh-advanced{position:relative;isolation:isolate;width:100%;height:100%;min-width:0;overflow:hidden;border-radius:16px;background:#080b1b;touch-action:pan-y;outline-offset:4px;color:#fff}
 .drh-advanced--card{height:220px;border-radius:12px}
 .drh-advanced:focus-visible{outline:3px solid #8ce6dc}
 .drh-advanced__canvas,.drh-advanced__fallback{position:absolute;inset:0;width:100%;height:100%;display:block}
