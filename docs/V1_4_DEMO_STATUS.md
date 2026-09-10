@@ -2,12 +2,16 @@
 
 93개 항목을 renderer, CSS/JS 동작, source, export 기준으로 재분류했다. Working은 canonical 핵심 효과를 보여주는 데모이며 실제 제품 통합 완료를 의미하지 않는다. Prototype은 수량을 맞추기 위해 승격하지 않았다. V1.5에서 정규화 토큰을 갖춘 DESIGN.md specimen 10개를 Working으로 검증했다. Browser 증거와 검수 범위는 V1_4_AUDIT.md 및 V1_5_REFERENCE_WORKSPACE.md 참조.
 
-- PROTOTYPE: 32
-- WORKING DEMO: 144
+- WORKING DEMO: 152
+- PROTOTYPE: 28
 - OFFICIAL LIVE: 1
 
 | Reference | Category | Previous Status | New Status | Implementation | Source | Needs More Work |
 |---|---|---|---|---|---|---|
+| Progressive Blur (progressive-blur) | Effects | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
+| Morphing Dialog (morphing-dialog) | Motion | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
+| Dock Magnification (dock-magnification) | Motion | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
+| Split Flap (split-flap) | Text | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
 | Minimalism (minimalism) | Styles | PROTOTYPE | PROTOTYPE | 기존 React/CSS demo | Design Reference Hub | canonical 세부 동작과 완성 export 필요 |
 | Neo-Brutalism (neo-brutalism) | Styles | WORKING DEMO | WORKING DEMO | 기존 React/CSS demo | Design Reference Hub | 실행 가능한 export 보강 |
 | Glassmorphism (glassmorphism) | Styles | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
@@ -18,7 +22,7 @@
 | Y2K (y2k) | Styles | PROTOTYPE | PROTOTYPE | 기존 React/CSS demo | Design Reference Hub | canonical 세부 동작과 완성 export 필요 |
 | Frutiger Aero (frutiger-aero) | Styles | PROTOTYPE | PROTOTYPE | 기존 React/CSS demo | Design Reference Hub | canonical 세부 동작과 완성 export 필요 |
 | Terminal Aesthetic (terminal) | Styles | PROTOTYPE | PROTOTYPE | 기존 React/CSS demo | Design Reference Hub | canonical 세부 동작과 완성 export 필요 |
-| Claymorphism (claymorphism) | Styles | PROTOTYPE | PROTOTYPE | 기존 React/CSS demo | Design Reference Hub | canonical 세부 동작과 완성 export 필요 |
+| Claymorphism (claymorphism) | Styles | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
 | Cyberpunk (cyberpunk) | Styles | PROTOTYPE | PROTOTYPE | 기존 React/CSS demo | Design Reference Hub | canonical 세부 동작과 완성 export 필요 |
 | Luxury (luxury) | Styles | PROTOTYPE | PROTOTYPE | 기존 React/CSS demo | Design Reference Hub | canonical 세부 동작과 완성 export 필요 |
 | Dark UI (dark-ui) | Styles | PROTOTYPE | PROTOTYPE | 기존 React/CSS demo | Design Reference Hub | canonical 세부 동작과 완성 export 필요 |
@@ -47,7 +51,7 @@
 | Horizontal Scroll (horizontal-scroll) | Motion | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
 | Cursor Follower (cursor-follow) | Motion | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
 | Ripple Interaction (ripple) | Motion | WORKING DEMO | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
-| Shape Morph (morph) | Motion | PROTOTYPE | PROTOTYPE | 기존 React/CSS demo | Design Reference Hub | canonical 세부 동작과 완성 export 필요 |
+| Shape Morph (morph) | Motion | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
 | Accordion Motion (accordion-motion) | Motion | WORKING DEMO | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
 | Typewriter (typewriter) | Text | WORKING DEMO | WORKING DEMO | HTML/CSS/JS shared preview/export | TypewriterJS | 제품 적용 시 크기/내용 조정 |
 | Text Reveal (text-reveal) | Text | WORKING DEMO | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
@@ -71,7 +75,7 @@
 | Confetti Burst (confetti) | Effects | WORKING DEMO | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
 | Hero Section (hero-section) | Sections | PROTOTYPE | PROTOTYPE | 기존 React/CSS demo | Design Reference Hub | canonical 세부 동작과 완성 export 필요 |
 | Floating Navbar (navbar-section) | Sections | PROTOTYPE | PROTOTYPE | 기존 React/CSS demo | Design Reference Hub | canonical 세부 동작과 완성 export 필요 |
-| Bento Feature Grid (bento-section) | Sections | PROTOTYPE | PROTOTYPE | 기존 React/CSS demo | Design Reference Hub | canonical 세부 동작과 완성 export 필요 |
+| Bento Feature Grid (bento-section) | Sections | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
 | Logo Cloud (logo-cloud) | Sections | PROTOTYPE | PROTOTYPE | 기존 React/CSS demo | Design Reference Hub | canonical 세부 동작과 완성 export 필요 |
 | Statistics (stats-section) | Sections | PROTOTYPE | PROTOTYPE | 기존 React/CSS demo | Design Reference Hub | canonical 세부 동작과 완성 export 필요 |
 | Timeline (timeline-section) | Sections | PROTOTYPE | PROTOTYPE | 기존 React/CSS demo | Design Reference Hub | canonical 세부 동작과 완성 export 필요 |
@@ -81,7 +85,7 @@
 | FAQ (faq-section) | Sections | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
 | CTA Banner (cta-section) | Sections | PROTOTYPE | PROTOTYPE | 기존 React/CSS demo | Design Reference Hub | canonical 세부 동작과 완성 export 필요 |
 | Footer (footer-section) | Sections | PROTOTYPE | PROTOTYPE | 기존 React/CSS demo | Design Reference Hub | canonical 세부 동작과 완성 export 필요 |
-| Contact Split (contact-section) | Sections | PROTOTYPE | PROTOTYPE | 기존 React/CSS demo | Design Reference Hub | canonical 세부 동작과 완성 export 필요 |
+| Contact Split (contact-section) | Sections | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
 | SaaS Landing (saas-page) | Pages | PROTOTYPE | PROTOTYPE | 기존 React/CSS demo | AstroWind | 실제 다중 section/화면 동작 및 일치하는 export 필요 |
 | Developer Tool (developer-tool-page) | Pages | PROTOTYPE | PROTOTYPE | 기존 React/CSS demo | Design Reference Hub | 실제 다중 section/화면 동작 및 일치하는 export 필요 |
 | Dashboard (dashboard-page) | Pages | PROTOTYPE | PROTOTYPE | 기존 React/CSS demo | Tremor | 실제 다중 section/화면 동작 및 일치하는 export 필요 |

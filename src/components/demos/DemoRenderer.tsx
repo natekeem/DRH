@@ -66,7 +66,6 @@ function DesignMdDemo({kind}:{kind:string}) {
 
 function LegacyDemoRenderer({ kind, detail=false }:{kind:string;detail?:boolean}) {
   if(kind==='shader-gradient') return <div className={`demo-stage shader-demo ${detail?'detail':''}`}><ShaderBackdrop compact={!detail}/><span className="shader-label">WebGL / LIVE</span></div>
-  if(kind==='style-clay') return <div className={`demo-stage ${kind==='style-clay'?'clay-stage':'dark-demo'}`}><TiltCard/></div>
   if(kind==='accordion'||kind==='accordion-motion') return <div className="demo-stage warm-demo"><Accordion/></div>
   if(kind.startsWith('section-')) return <div className="demo-stage section-stage"><SectionDemo kind={kind}/></div>
   if(kind.startsWith('page-')) return <div className="demo-stage page-stage"><PageDemo kind={kind}/></div>
@@ -74,7 +73,6 @@ function LegacyDemoRenderer({ kind, detail=false }:{kind:string;detail?:boolean}
 
 
   return <PointerSurface className={`demo-stage demo-${kind}`}>
-    {kind==='morph' && <div className="morph-shape"/>}
     {kind==='rough-highlight' && <div className="rough-demo">Build the <mark>idea</mark>,<br/>not the jargon.</div>}
     {kind==='style-minimal' && <div className="style-mini minimal-card"><small>01 / SYSTEM</small><h3>Less,<br/>but clear.</h3><span>One action at a time →</span></div>}
     {kind==='style-brutal' && <div className="brutal-demo"><span>NEW</span><b>LOUD<br/>BY<br/>DESIGN</b><button>CLICK →</button></div>}

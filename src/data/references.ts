@@ -48,13 +48,19 @@ const mk = (s: Seed): ReferenceItem => ({
   license: {
     name: s.license ?? 'MIT (Hub original demo)',
     status: s.licenseStatus ?? 'copy-ok',
-    evidenceUrl: s.repo && upstreamReview.find(r=>'https://github.com/'+r.repository===s.repo)?.license !== 'unverified' ? upstreamReview.find(r=>'https://github.com/'+r.repository===s.repo)?.evidence : s.demo === 'shader-gradient' ? 'https://github.com/ruucm/shadergradient/blob/main/packages/shadergradient/package.json' : s.source === 'Magic UI' ? 'https://github.com/magicuidesign/magicui/blob/main/LICENSE.md' : 'https://github.com/natekeem/DRH/blob/main/LICENSE',
+    evidenceUrl: s.repo && upstreamReview.find(r=>'https://github.com/'+r.repository===s.repo)?.license !== 'unverified' ? upstreamReview.find(r=>'https://github.com/'+r.repository===s.repo)?.evidence : s.demo === 'shader-gradient' ? 'https://github.com/ruucm/shadergradient/blob/main/packages/shadergradient/package.json' : s.source === 'Magic UI' ? 'https://github.com/magicuidesign/magicui/blob/main/LICENSE.md' : s.repo === 'VoltAgent/awesome-design-md' ? 'https://github.com/VoltAgent/awesome-design-md/blob/main/LICENSE' : 'https://github.com/natekeem/DRH/blob/main/LICENSE',
     attributionRequired: s.demo === 'shader-gradient' || s.demo === 'meteors',
     notes: s.demo === 'shader-gradient' ? '공식 패키지의 MIT 선언을 확인했습니다. 설치한 dependency 고지를 유지하세요.' : s.demo === 'meteors' ? 'Magic UI MIT 고지 전문을 실행 HTML에 포함합니다.' : 'Hub 독립 구현은 MIT입니다. 참고 Source 링크는 upstream 코드를 복사했다는 뜻이 아닙니다.',
   },
 })
 
 export const references: ReferenceItem[] = [
+
+  mk({ id:'progressive-blur', name:'Progressive Blur', category:'Effects', subcategory:'Blur', demo:'progressive-blur', description:'A blur effect that smoothly increases in strength towards an edge.', tags:['blur','gradient','mask'], useCases:['hero','footer','overlay'] }),
+  mk({ id:'morphing-dialog', name:'Morphing Dialog', category:'Motion', subcategory:'Modal', demo:'morphing-dialog', description:'A trigger element expands continuously into a dialog surface.', tags:['modal','morph','shared-layout'], useCases:['creation form','detail view','menu'] }),
+  mk({ id:'dock-magnification', name:'Dock Magnification', category:'Motion', subcategory:'Navigation', demo:'dock-magnification', description:'Items scale up based on proximity to the pointer with smooth falloff.', tags:['dock','scale','proximity'], useCases:['navigation','toolbar','launcher'] }),
+  mk({ id:'split-flap', name:'Split Flap', category:'Text', subcategory:'Display', demo:'split-flap', description:'Characters flip like an analog arrivals board with top and bottom panels.', tags:['text','flip','analog'], useCases:['countdown','live stats','hero text'] }),
+
   // Styles
   mk({ id:'minimalism', name:'Minimalism', category:'Styles', subcategory:'Core', demo:'style-minimal', description:'Quiet hierarchy, generous whitespace, restrained color and only necessary UI.', tags:['clean','white-space','neutral'], useCases:['SaaS','documentation','product'], featured:true }),
   mk({ id:'neo-brutalism', name:'Neo-Brutalism', category:'Styles', subcategory:'Bold', demo:'style-brutal', description:'Thick borders, blunt geometry, loud color and intentionally mechanical layouts.', tags:['bold','border','playful'], useCases:['creative landing','portfolio','campaign'], featured:true }),

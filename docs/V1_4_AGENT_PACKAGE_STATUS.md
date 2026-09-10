@@ -2,10 +2,14 @@
 
 Ready: 효과별 로직·DOM·동일한 실행 HTML·출처·검수 조건 제공. Partial: 구조는 제공하지만 완성된 재현 코드/효과별 계약이 부족함. DESIGN.md는 문서이며 실행 코드로 집계하지 않는다.
 
-{"Partial":119,"Ready":58}
+{"Ready":66,"Partial":115}
 
 | Reference | Prompt | Logic | Starter Code | Source | License | Ready |
 |---|---|---|---|---|---|---|
+| Progressive Blur (progressive-blur) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Morphing Dialog (morphing-dialog) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Dock Magnification (dock-magnification) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Split Flap (split-flap) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
 | Minimalism (minimalism) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
 | Neo-Brutalism (neo-brutalism) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
 | Glassmorphism (glassmorphism) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
@@ -16,7 +20,7 @@ Ready: 효과별 로직·DOM·동일한 실행 HTML·출처·검수 조건 제�
 | Y2K (y2k) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
 | Frutiger Aero (frutiger-aero) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
 | Terminal Aesthetic (terminal) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
-| Claymorphism (claymorphism) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
+| Claymorphism (claymorphism) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
 | Cyberpunk (cyberpunk) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
 | Luxury (luxury) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
 | Dark UI (dark-ui) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
@@ -45,7 +49,7 @@ Ready: 효과별 로직·DOM·동일한 실행 HTML·출처·검수 조건 제�
 | Horizontal Scroll (horizontal-scroll) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
 | Cursor Follower (cursor-follow) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
 | Ripple Interaction (ripple) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
-| Shape Morph (morph) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
+| Shape Morph (morph) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
 | Accordion Motion (accordion-motion) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
 | Typewriter (typewriter) | 구체적 | 효과별 | 실행 HTML | https://safi.me.uk/typewriterjs/ | https://github.com/tameemsafi/typewriterjs/blob/main/LICENSE | Ready |
 | Text Reveal (text-reveal) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
@@ -69,7 +73,7 @@ Ready: 효과별 로직·DOM·동일한 실행 HTML·출처·검수 조건 제�
 | Confetti Burst (confetti) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
 | Hero Section (hero-section) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
 | Floating Navbar (navbar-section) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
-| Bento Feature Grid (bento-section) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
+| Bento Feature Grid (bento-section) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
 | Logo Cloud (logo-cloud) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
 | Statistics (stats-section) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
 | Timeline (timeline-section) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
@@ -79,7 +83,7 @@ Ready: 효과별 로직·DOM·동일한 실행 HTML·출처·검수 조건 제�
 | FAQ (faq-section) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
 | CTA Banner (cta-section) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
 | Footer (footer-section) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
-| Contact Split (contact-section) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
+| Contact Split (contact-section) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
 | SaaS Landing (saas-page) | 기본/부분 | 미완성 | 없음 | https://astrowind.vercel.app/ | https://github.com/arthelokyo/astrowind/blob/main/LICENSE.md | Partial |
 | Developer Tool (developer-tool-page) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
 | Dashboard (dashboard-page) | 기본/부분 | 미완성 | 없음 | https://tremor.so/ | https://github.com/tremorlabs/tremor/blob/main/LICENSE | Partial |

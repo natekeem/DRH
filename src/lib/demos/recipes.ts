@@ -1,5 +1,6 @@
 import { batch1Recipes } from './batch1Recipes'
 import { fidelityRecipes, densityPolicy } from './fidelityRecipes'
+import { contentBatch1Recipes } from './contentBatch1'
 export { densityPolicy } from './fidelityRecipes'
 import hubLicense from '../../../LICENSE?raw'
 import meteorLicense from '../../../docs/licenses/Magic-UI-MIT.txt?raw'
@@ -82,4 +83,4 @@ recipes['glow-card']={...recipes['glow-card'],html:'<article tabindex="0"><small
 recipes['rgb-lens']={...recipes['rgb-lens'],js:recipes['rgb-lens'].js!.replaceAll('shift*.025','shift*.16'),logic:recipes['rgb-lens'].logic+' RGB Lens 변형은 색상 채널 offset 계수를 .025에서 .16으로 높여 색 분리를 더 뚜렷하게 표시한다.'};
 
 // Canonical implementations: one renderer shared by live preview and export.
-Object.assign(recipes, fidelityRecipes, batch1Recipes)
+Object.assign(recipes, fidelityRecipes, batch1Recipes, contentBatch1Recipes)
