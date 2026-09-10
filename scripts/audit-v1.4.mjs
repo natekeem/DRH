@@ -77,9 +77,17 @@ assert.equal(registry.source_count,registry.sources.length);
 assert.equal(new Set(registry.sources.map(s=>s.source)).size,registry.sources.length);
 for(const [status,count] of Object.entries(registry.status_counts))assert.equal(count,registry.sources.filter(s=>s.recommendation===status).length);
 for(const name of ['Refero Styles','VoltAgent Awesome DESIGN.md / getdesign.md','design-isms','MotionSites','PromptSites','GetLayers'])assert(registry.sources.find(s=>s.source===name)?.classification,name+' missing classification');
-const guide=await readFile('src/content/guides/using-design-md.md','utf8');
-for(let n=1;n<=11;n++)assert(guide.includes('## '+n+'.'),'guide section '+n);
-assert.equal((guide.match(/^```/gm)||[]).length%2,0,'unclosed guide code fence');
+// The guide catalog evolves independently of demo work. Validate its current
+// registered files, rather than the removed pre-quickstart article/section count.
+const guideIndex=await readFile('src/content/guides/index.ts','utf8');
+const guideSlugs=[...guideIndex.matchAll(/slug:\s*'([^']+)'/g)].map(match=>match[1]);
+assert(guideSlugs.length>0,'guide catalog must not be empty');
+assert.equal(new Set(guideSlugs).size,guideSlugs.length,'duplicate guide slug');
+for(const slug of guideSlugs){
+ const guide=await readFile(`src/content/guides/${slug}.md`,'utf8');
+ assert(/^# /m.test(guide)&&/^## /m.test(guide),slug+' missing article headings');
+ assert.equal((guide.match(/^```/gm)||[]).length%2,0,slug+' unclosed code fence');
+}
 console.log(`V1.5/V1.6: ${artifactCount} artifacts; 93 original + ${batch1.length} Batch 1 records + ${vendorIds.length} vendor entries (awesome-design-md MIT); 10 normalized previews; TSX syntax; token parity; Compact length; provenance; restricted/native schema fixtures; six source policies; guide content passed.`);
 const blockedAgent={...external,artifacts:{agent:{extended:'RESTRICTED AGENT BODY',provenance:{...hubProvenance,origin:'reference-only'}}}};
 assert(!artifactViews(blockedAgent).some(v=>v.text.includes('RESTRICTED AGENT BODY')),'restricted agent must not leak through compatibility fallback');

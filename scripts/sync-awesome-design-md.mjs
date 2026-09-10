@@ -10,7 +10,8 @@
  * Requirements: Node 18+ (uses built-in fetch)
  */
 
-import { writeFileSync, mkdirSync, existsSync, readFileSync } from 'fs'
+import { parseYamlFrontmatter, extractColors, normalisedTokens, brandSpec, compactBrandSpec, brandName, summary } from './brand-design-spec.mjs'
+import { readdirSync, writeFileSync, mkdirSync, existsSync, readFileSync } from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
 
@@ -49,124 +50,6 @@ const CATEGORY_MAP = {
   stripe:'Fintech & Crypto', ibm_:'Big Tech',
 }
 
-// ─── YAML frontmatter parser ──────────────────────────────────────────────────
-function parseYamlFrontmatter(raw) {
-  const match = raw.match(/^---\r?\n([\s\S]*?)\r?\n---/m)
-  if (!match) return {}
-  const yaml = match[1]
-  const result = {}
-  // Simple line-by-line parser (not full YAML — covers the actual format)
-  let currentKey = null
-  let currentObj = null
-  const lines = yaml.split(/\r?\n/)
-  for (let i = 0; i < lines.length; i++) {
-    const line = lines[i]
-    // Top-level key: value
-    const topKv = line.match(/^(\w[\w-]*)\s*:\s*(.+)$/)
-    if (topKv && !line.startsWith('  ') && !line.startsWith('\t')) {
-      currentKey = topKv[1]
-      const val = topKv[2].trim().replace(/^["']|["']$/g, '')
-      result[currentKey] = val
-      currentObj = null
-      continue
-    }
-    // Top-level key: (object follows)
-    const topSection = line.match(/^(\w[\w-]*)\s*:\s*$/)
-    if (topSection && !line.startsWith('  ') && !line.startsWith('\t')) {
-      currentKey = topSection[1]
-      currentObj = {}
-      result[currentKey] = currentObj
-      continue
-    }
-    // Nested key: value (2-space indent)
-    if (currentObj !== null && line.match(/^  (\w[\w-]*)\s*:/)) {
-      // Could be a sub-section or k:v
-      const subKv = line.match(/^  ([\w-]+)\s*:\s*"?([^"]+)"?\s*$/)
-      if (subKv) {
-        const k = subKv[1]
-        const v = subKv[2].trim().replace(/^["']|["']$/g, '')
-        currentObj[k] = v
-      } else {
-        const subSection = line.match(/^  ([\w-]+)\s*:\s*$/)
-        if (subSection) {
-          // nested section — we collect it as sub-object
-          const subKey = subSection[1]
-          currentObj[subKey] = {}
-          // read ahead
-        }
-      }
-    }
-  }
-  return result
-}
-
-// Extract first N colors from parsed data
-function extractColors(parsed) {
-  if (!parsed.colors || typeof parsed.colors !== 'object') return {}
-  const out = {}
-  for (const [k, v] of Object.entries(parsed.colors)) {
-    if (typeof v === 'string' && v.startsWith('#')) out[k] = v
-    if (Object.keys(out).length >= 12) break
-  }
-  return out
-}
-
-// Normalise to DRH DesignSystemTokens shape for the preview renderer
-function normalisedTokens(parsed) {
-  const colors = extractColors(parsed)
-  const primary = colors.primary || Object.values(colors).find(v => v && v.startsWith('#')) || '#333'
-  const canvas = colors.canvas || colors['canvas-soft'] || '#ffffff'
-  const surface = colors['canvas-soft'] || colors['surface'] || colors['canvas-parchment'] || '#f9f9f9'
-  const text = colors.ink || colors['body'] || colors['text'] || '#111111'
-  const border = colors.hairline || colors['hairline'] || colors['border'] || '#e0e0e0'
-  const onPrimary = colors['on-primary'] || '#ffffff'
-
-  // Typography — find first display entry
-  let displayFont = 'system-ui, sans-serif'
-  let displaySize = 48
-  let bodyFont = 'system-ui, sans-serif'
-  const typo = parsed.typography
-  if (typo && typeof typo === 'object') {
-    for (const [, val] of Object.entries(typo)) {
-      if (val && typeof val === 'object') {
-        if (val.fontFamily) {
-          // Strip proprietary fonts — keep system fallbacks
-          const families = val.fontFamily
-            .split(',')
-            .map(f => f.trim())
-            .filter(f => !f.match(/^(SF Pro|Sohne|sohne|Söhne|Geist|Inter|Euclid|GT\s)/i) || f.match(/system-ui|-apple-system|sans-serif|serif|monospace/i))
-          if (families.length) { displayFont = families.join(', '); break }
-        }
-      }
-    }
-    for (const [, val] of Object.entries(typo)) {
-      if (val && typeof val === 'object' && val.fontSize) {
-        const px = parseInt(val.fontSize)
-        if (!isNaN(px) && px >= 32) { displaySize = Math.min(px, 64); break }
-      }
-    }
-    // body
-    for (const [k, val] of Object.entries(typo)) {
-      if (k === 'body' && val && typeof val === 'object' && val.fontFamily) {
-        const families = val.fontFamily
-          .split(',')
-          .map(f => f.trim())
-          .filter(f => !f.match(/^(SF Pro|Sohne|sohne|Söhne|Geist|Inter|Euclid|GT\s)/i) || f.match(/system-ui|-apple-system|sans-serif|serif|monospace/i))
-        if (families.length) bodyFont = families.join(', ')
-      }
-    }
-  }
-
-  return {
-    colors: { canvas, surface, text, primary, onPrimary, border },
-    typography: { display: displayFont, body: bodyFont, displaySize, bodySize: 16, lineHeight: 1.6 },
-    spacing: [4, 8, 16, 24, 40, 64],
-    radius: 6,
-    borderWidth: 1,
-    duration: 200,
-  }
-}
-
 // ─── Tags derived from description + category ─────────────────────────────────
 function deriveTags(slug, desc, category) {
   const base = [slug.replace(/[-_.]/g, ' ').split(' ')[0].toLowerCase()]
@@ -193,8 +76,12 @@ async function fetchText(url) {
 
 // ─── Main ─────────────────────────────────────────────────────────────────────
 async function main() {
-  console.log('🔄  Fetching design-md directory from GitHub API…')
-  const entries = await fetchJson(`${API_BASE}/contents/design-md`)
+  console.log(process.argv.includes('--local') ? 'Regenerating from unchanged local DESIGN.md files…' : 'Fetching pinned upstream DESIGN.md files…')
+  const local = process.argv.includes('--local')
+  const importDate = local
+    ? readFileSync(join(ROOT, 'third_party/awesome-design-md/UPSTREAM.md'), 'utf8').match(/Imported at: (\d{4}-\d{2}-\d{2})/)?.[1] ?? 'unknown'
+    : new Date().toISOString().slice(0, 10)
+  const entries = local ? readdirSync(join(ROOT,'public/vendor/awesome-design-md'),{withFileTypes:true}).filter(e=>e.isDirectory()).map(e=>({type:'dir',name:e.name})) : await fetchJson(`${API_BASE}/contents/design-md?ref=${UPSTREAM_COMMIT}`)
   const dirs = entries.filter(e => e.type === 'dir').map(e => e.name)
   console.log(`    Discovered ${dirs.length} entries: ${dirs.join(', ')}`)
 
@@ -208,21 +95,19 @@ async function main() {
     process.stdout.write(`  ↓ ${slug.padEnd(24)} `)
     try {
       const rawUrl = `${RAW_BASE}/design-md/${slug}/DESIGN.md`
-      const raw = await fetchText(rawUrl)
+      const raw = local ? readFileSync(join(vendorBase,slug,'DESIGN.md'),'utf8') : await fetchText(rawUrl)
 
       // Save raw DESIGN.md verbatim
       const destDir = join(vendorBase, slug)
       mkdirSync(destDir, { recursive: true })
-      writeFileSync(join(destDir, 'DESIGN.md'), raw, 'utf8')
+      if (!local) writeFileSync(join(destDir, 'DESIGN.md'), raw, 'utf8')
 
       const parsed = parseYamlFrontmatter(raw)
       const colors = extractColors(parsed)
-      const tokens = normalisedTokens(parsed)
+      const tokens = normalisedTokens(parsed, raw)
       const category = CATEGORY_MAP[slug] || 'Brand Design'
-      const name = slug.split(/[-.]/).map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')
-        .replace('Ai', 'AI').replace('Bmw', 'BMW').replace('Ibm', 'IBM').replace('Hp', 'HP')
-        .replace('Llm', 'LLM').replace('Saas', 'SaaS')
-      const description = (parsed.description || '').slice(0, 200)
+      const name = brandName(parsed,slug)
+      const description = summary(String(parsed.description || ''))
       const tags = deriveTags(slug, description, category)
 
       // Check for external deps in raw content (report only)
@@ -233,8 +118,8 @@ async function main() {
       if (extDeps.length) report.externalDeps++
 
       // Check for preview.html availability
-      let hasPreviewHtml = false
-      try {
+      let hasPreviewHtml = existsSync(join(destDir, 'preview.html'))
+      if (!local) try {
         const previewUrl = `${RAW_BASE}/design-md/${slug}/preview.html`
         const previewRes = await fetch(previewUrl, { method: 'HEAD', headers: { 'User-Agent': 'DRH-Sync/1.0' } })
         hasPreviewHtml = previewRes.ok
@@ -263,9 +148,18 @@ async function main() {
         tags,
         upstreamPath: `design-md/${slug}/DESIGN.md`,
         upstreamCommit: UPSTREAM_COMMIT,
-        importedAt: new Date().toISOString().slice(0, 10),
+        importedAt: importDate,
         colors,
         tokens,
+        spec: (() => {
+          const full = brandSpec(parsed, raw)
+          const specDir = join(ROOT, 'public', 'brand-design-specs')
+          mkdirSync(specDir, { recursive: true })
+          writeFileSync(join(specDir, `${slug}.json`), JSON.stringify(full, null, 2) + '\n')
+          // Browse carries visual values; full source evidence is loaded on detail only.
+          return compactBrandSpec(full)
+        })(),
+        rawDescription: String(parsed.description || ''),
         hasPreviewHtml,
         externalDeps: extDeps,
       }
@@ -278,6 +172,7 @@ async function main() {
     }
   }
 
+  if (report.skipped) throw new Error('Incomplete sync; catalog not written')
   // ─── Generate src/data/awesomeDesignMd.ts ────────────────────────────────
   const tsPath = join(ROOT, 'src', 'data', 'awesomeDesignMd.ts')
   const generated = `// AUTO-GENERATED by scripts/sync-awesome-design-md.mjs — DO NOT EDIT MANUALLY
@@ -287,10 +182,11 @@ async function main() {
 // Run \`npm run sync:awesome-design-md\` to update.
 
 import type { DesignSystemTokens } from '../types'
+import type { BrandDesignSpec } from '../brandDesignSpec'
 
 export const UPSTREAM_COMMIT = '${UPSTREAM_COMMIT}' as const
 export const UPSTREAM_REPO = 'https://github.com/VoltAgent/awesome-design-md' as const
-export const IMPORT_DATE = '${new Date().toISOString().slice(0, 10)}' as const
+export const IMPORT_DATE = '${importDate}' as const
 
 export type VendorEntry = {
   slug: string
@@ -304,6 +200,8 @@ export type VendorEntry = {
   importedAt: string
   colors: Record<string, string>
   tokens: DesignSystemTokens
+  spec: BrandDesignSpec
+  rawDescription: string
   hasPreviewHtml: boolean
   externalDeps: string[]
 }
@@ -315,7 +213,7 @@ export const vendorEntries: VendorEntry[] = ${JSON.stringify(metaList, null, 2)}
 
   // ─── Update UPSTREAM.md with fresh commit SHA ────────────────────────────
   const upstreamMd = join(ROOT, 'third_party', 'awesome-design-md', 'UPSTREAM.md')
-  if (existsSync(upstreamMd)) {
+  if (!local && existsSync(upstreamMd)) {
     let content = readFileSync(upstreamMd, 'utf8')
     content = content.replace(/Upstream commit:.*/, `Upstream commit: ${UPSTREAM_COMMIT}`)
     content = content.replace(/Imported at:.*/, `Imported at: ${new Date().toISOString().slice(0, 10)}`)

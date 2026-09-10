@@ -1,0 +1,810 @@
+{
+  "colors": {
+    "primary": "#da291c",
+    "primary-active": "#b01e0a",
+    "primary-hover": "#9d2211",
+    "ink": "#ffffff",
+    "body": "#969696",
+    "body-strong": "#ffffff",
+    "body-on-light": "#181818",
+    "muted": "#666666",
+    "muted-soft": "#8f8f8f",
+    "hairline": "#303030",
+    "hairline-on-light": "#d2d2d2",
+    "hairline-soft": "#ebebeb",
+    "canvas": "#181818",
+    "canvas-elevated": "#303030",
+    "canvas-light": "#ffffff",
+    "surface-card": "#303030",
+    "surface-soft-light": "#f7f7f7",
+    "surface-strong-light": "#ebebeb",
+    "on-primary": "#ffffff",
+    "on-dark": "#ffffff",
+    "on-light": "#181818",
+    "accent-yellow-hypersail": "#fff200",
+    "accent-yellow": "#f6e500",
+    "semantic-info": "#4c98b9",
+    "semantic-success": "#03904a",
+    "semantic-warning": "#f13a2c"
+  },
+  "typography": {
+    "display-mega": {
+      "fontFamily": "'FerrariSans', -apple-system, system-ui, sans-serif",
+      "fontSize": "80px",
+      "fontWeight": 500,
+      "lineHeight": 1.05,
+      "letterSpacing": "-1.6px",
+      "declaredFamily": "'FerrariSans', -apple-system, system-ui, sans-serif",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "display-xl": {
+      "fontFamily": "'FerrariSans', sans-serif",
+      "fontSize": "56px",
+      "fontWeight": 500,
+      "lineHeight": 1.1,
+      "letterSpacing": "-1.12px",
+      "declaredFamily": "'FerrariSans', sans-serif",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "display-lg": {
+      "fontFamily": "'FerrariSans', sans-serif",
+      "fontSize": "36px",
+      "fontWeight": 500,
+      "lineHeight": 1.2,
+      "letterSpacing": "-0.36px",
+      "declaredFamily": "'FerrariSans', sans-serif",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "display-md": {
+      "fontFamily": "'FerrariSans', sans-serif",
+      "fontSize": "26px",
+      "fontWeight": 500,
+      "lineHeight": 1.5,
+      "letterSpacing": "0.195px",
+      "declaredFamily": "'FerrariSans', sans-serif",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "title-md": {
+      "fontFamily": "'FerrariSans', sans-serif",
+      "fontSize": "18px",
+      "fontWeight": 700,
+      "lineHeight": 1.2,
+      "letterSpacing": 0,
+      "declaredFamily": "'FerrariSans', sans-serif",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "title-sm": {
+      "fontFamily": "'FerrariSans', sans-serif",
+      "fontSize": "16px",
+      "fontWeight": 500,
+      "lineHeight": 1.4,
+      "letterSpacing": "0.08px",
+      "declaredFamily": "'FerrariSans', sans-serif",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "body-md": {
+      "fontFamily": "'FerrariSans', sans-serif",
+      "fontSize": "14px",
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "letterSpacing": 0,
+      "declaredFamily": "'FerrariSans', sans-serif",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "body-sm": {
+      "fontFamily": "'FerrariSans', sans-serif",
+      "fontSize": "13px",
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "letterSpacing": 0,
+      "declaredFamily": "'FerrariSans', sans-serif",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "caption": {
+      "fontFamily": "'FerrariSans', sans-serif",
+      "fontSize": "12px",
+      "fontWeight": 400,
+      "lineHeight": 1.4,
+      "letterSpacing": 0,
+      "declaredFamily": "'FerrariSans', sans-serif",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "caption-uppercase": {
+      "fontFamily": "'FerrariSans', sans-serif",
+      "fontSize": "11px",
+      "fontWeight": 600,
+      "lineHeight": 1.4,
+      "letterSpacing": "1.1px",
+      "textTransform": "uppercase",
+      "declaredFamily": "'FerrariSans', sans-serif",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "button": {
+      "fontFamily": "'FerrariSans', sans-serif",
+      "fontSize": "14px",
+      "fontWeight": 700,
+      "lineHeight": 1,
+      "letterSpacing": "1.4px",
+      "textTransform": "uppercase",
+      "declaredFamily": "'FerrariSans', sans-serif",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "nav-link": {
+      "fontFamily": "'FerrariSans', sans-serif",
+      "fontSize": "13px",
+      "fontWeight": 600,
+      "lineHeight": 1.4,
+      "letterSpacing": "0.65px",
+      "textTransform": "uppercase",
+      "declaredFamily": "'FerrariSans', sans-serif",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "number-display": {
+      "fontFamily": "'FerrariSans', sans-serif",
+      "fontSize": "80px",
+      "fontWeight": 700,
+      "lineHeight": 1,
+      "letterSpacing": "-1.6px",
+      "declaredFamily": "'FerrariSans', sans-serif",
+      "renderFallback": "system-ui, sans-serif"
+    }
+  },
+  "spacing": {
+    "xxxs": "4px",
+    "xxs": "8px",
+    "xs": "16px",
+    "sm": "24px",
+    "md": "32px",
+    "lg": "48px",
+    "xl": "64px",
+    "xxl": "96px",
+    "super": "128px"
+  },
+  "radius": {
+    "none": "0px",
+    "xs": "2px",
+    "sm": "4px",
+    "md": "6px",
+    "lg": "8px",
+    "xl": "12px",
+    "full": "9999px"
+  },
+  "border": {},
+  "motion": {
+    "rules": [
+      "- **Dark grey gradient** (`linear-gradient(180deg, #3c3c3c, #030303 64%)`): Atmospheric darken used at section transitions."
+    ]
+  },
+  "depth": {
+    "Elevation & Depth": "The system uses **photographic depth + brightness-step** elevation. No drop shadows except a single soft-small `{shadow.small}` documented in extracted tokens.\n\n| Level | Treatment | Use |\n|---|---|---|\n| Flat (canvas) | `{colors.canvas}` (#181818) | Body bands, footer |\n| Card | `{colors.canvas-elevated}` (#303030) | Driver cards, livery plates |\n| Light band | `{colors.canvas-light}` (#ffffff) | Preowned listings, pricing |\n| Hairline border | 1px `{colors.hairline}` or `{colors.hairline-on-light}` | Card outlines, dividers |\n| Soft drop | `0 4px 8px rgba(0,0,0,0.1)` | Hovered cards (single shadow tier) |\n| Photographic | Full-bleed cinema imagery | Hero band, livery photographs |\n\n### Decorative Depth\n- **Full-bleed cinema photography** is the brand's primary depth treatment.\n- **Brand red gradient** (`linear-gradient(180deg, #a00c01, #da291c 64%)`): The Rosso Corsa gradient used inside accent bands and CTA hover states.\n- **Dark grey gradient** (`linear-gradient(180deg, #3c3c3c, #030303 64%)`): Atmospheric darken used at section transitions."
+  },
+  "components": {
+    "top-nav-on-dark": {
+      "backgroundColor": "#181818",
+      "textColor": "#ffffff",
+      "typography": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "13px",
+        "fontWeight": 600,
+        "lineHeight": 1.4,
+        "letterSpacing": "0.65px",
+        "textTransform": "uppercase"
+      },
+      "height": "64px"
+    },
+    "top-nav-on-light": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#181818",
+      "typography": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "13px",
+        "fontWeight": 600,
+        "lineHeight": 1.4,
+        "letterSpacing": "0.65px",
+        "textTransform": "uppercase"
+      },
+      "height": "64px"
+    },
+    "button-primary": {
+      "backgroundColor": "#da291c",
+      "textColor": "#ffffff",
+      "typography": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 700,
+        "lineHeight": 1,
+        "letterSpacing": "1.4px",
+        "textTransform": "uppercase"
+      },
+      "rounded": "0px",
+      "padding": "14px 32px",
+      "height": "48px"
+    },
+    "button-primary-active": {
+      "backgroundColor": "#b01e0a",
+      "textColor": "#ffffff",
+      "rounded": "0px"
+    },
+    "button-outline-on-dark": {
+      "backgroundColor": "transparent",
+      "textColor": "#ffffff",
+      "typography": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 700,
+        "lineHeight": 1,
+        "letterSpacing": "1.4px",
+        "textTransform": "uppercase"
+      },
+      "rounded": "0px",
+      "padding": "13px 31px",
+      "height": "48px"
+    },
+    "button-outline-on-light": {
+      "backgroundColor": "transparent",
+      "textColor": "#181818",
+      "typography": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 700,
+        "lineHeight": 1,
+        "letterSpacing": "1.4px",
+        "textTransform": "uppercase"
+      },
+      "rounded": "0px",
+      "padding": "13px 31px",
+      "height": "48px"
+    },
+    "button-tertiary-text": {
+      "backgroundColor": "transparent",
+      "textColor": "#ffffff",
+      "typography": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 700,
+        "lineHeight": 1,
+        "letterSpacing": "1.4px",
+        "textTransform": "uppercase"
+      }
+    },
+    "hero-band-cinema": {
+      "backgroundColor": "#181818",
+      "textColor": "#ffffff",
+      "typography": {
+        "fontFamily": "'FerrariSans', -apple-system, system-ui, sans-serif",
+        "fontSize": "80px",
+        "fontWeight": 500,
+        "lineHeight": 1.05,
+        "letterSpacing": "-1.6px"
+      },
+      "padding": 0
+    },
+    "hero-band-light": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#181818",
+      "typography": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "56px",
+        "fontWeight": 500,
+        "lineHeight": 1.1,
+        "letterSpacing": "-1.12px"
+      },
+      "padding": "96px"
+    },
+    "feature-card-photo": {
+      "backgroundColor": "#181818",
+      "textColor": "#ffffff",
+      "typography": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "lineHeight": 1.2,
+        "letterSpacing": 0
+      },
+      "rounded": "0px",
+      "padding": 0
+    },
+    "feature-card-light": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#181818",
+      "typography": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "lineHeight": 1.2,
+        "letterSpacing": 0
+      },
+      "rounded": "0px",
+      "padding": "32px"
+    },
+    "livery-band": {
+      "backgroundColor": "#da291c",
+      "textColor": "#ffffff",
+      "typography": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "36px",
+        "fontWeight": 500,
+        "lineHeight": 1.2,
+        "letterSpacing": "-0.36px"
+      },
+      "padding": "96px"
+    },
+    "preowned-listing-card": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#181818",
+      "typography": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "rounded": "0px",
+      "padding": "24px"
+    },
+    "spec-cell": {
+      "backgroundColor": "transparent",
+      "textColor": "#ffffff",
+      "typography": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "80px",
+        "fontWeight": 700,
+        "lineHeight": 1,
+        "letterSpacing": "-1.6px"
+      },
+      "padding": "24px 0"
+    },
+    "race-position-cell": {
+      "backgroundColor": "transparent",
+      "textColor": "#da291c",
+      "typography": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "80px",
+        "fontWeight": 700,
+        "lineHeight": 1,
+        "letterSpacing": "-1.6px"
+      }
+    },
+    "race-calendar-row": {
+      "backgroundColor": "transparent",
+      "textColor": "#ffffff",
+      "typography": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "padding": "16px 0"
+    },
+    "driver-card": {
+      "backgroundColor": "#303030",
+      "textColor": "#ffffff",
+      "typography": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "lineHeight": 1.2,
+        "letterSpacing": 0
+      },
+      "rounded": "0px",
+      "padding": "24px"
+    },
+    "text-input-on-dark": {
+      "backgroundColor": "#181818",
+      "textColor": "#ffffff",
+      "typography": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "rounded": "4px",
+      "padding": "14px 16px",
+      "height": "48px"
+    },
+    "text-input-on-light": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#181818",
+      "typography": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "rounded": "4px",
+      "padding": "14px 16px",
+      "height": "48px"
+    },
+    "badge-pill": {
+      "backgroundColor": "#303030",
+      "textColor": "#ffffff",
+      "typography": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "11px",
+        "fontWeight": 600,
+        "lineHeight": 1.4,
+        "letterSpacing": "1.1px",
+        "textTransform": "uppercase"
+      },
+      "rounded": "9999px",
+      "padding": "4px 12px"
+    },
+    "cta-band-dark": {
+      "backgroundColor": "#181818",
+      "textColor": "#ffffff",
+      "typography": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "36px",
+        "fontWeight": 500,
+        "lineHeight": 1.2,
+        "letterSpacing": "-0.36px"
+      },
+      "padding": "96px"
+    },
+    "newsletter-input-band": {
+      "backgroundColor": "#303030",
+      "textColor": "#ffffff",
+      "typography": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "rounded": "4px",
+      "padding": "32px"
+    },
+    "footer-dark": {
+      "backgroundColor": "#181818",
+      "textColor": "#969696",
+      "typography": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "13px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "padding": "64px 48px"
+    },
+    "footer-link": {
+      "backgroundColor": "transparent",
+      "textColor": "#969696",
+      "typography": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "13px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      }
+    }
+  },
+  "layout": "cinematic",
+  "traits": "A luxury-automotive brand whose marketing surfaces read as cinematic editorial. The base canvas is **near-black** (`#181818`) holding pure white display type; white-canvas bands appear only inside specific editorial contexts (preowned listings, pricing tables). The single brand voltage is **Rosso Corsa** (`#da291c`) — the iconic Ferrari racing red — used scarcely on primary CTAs, the Cavallino mark, and Formula 1 race-position highlights. Type runs **FerrariSans** at modest weights (display 500, body 400) — never bombastic. Spacing follows an explicit 8px token ladder (`xxxs` 4px through `super` 128px); generous editorial pacing throughout. The brand's strongest visual signature is the **full-bleed cinematic hero photograph** that fills the viewport top with car photography, model details, or trackside livery — followed by a tighter editorial body layout below.",
+  "sections": {
+    "Overview": "Ferrari's marketing site reads as cinematic editorial — closer to a luxury-magazine spread than a typical car-OEM site. The base canvas is **near-black** (`{colors.canvas}` — #181818) holding pure white display type; white-canvas bands appear only inside specific editorial contexts (preowned listings, pricing tables, dealer surfaces). The single brand voltage is **Rosso Corsa** (`{colors.primary}` — #da291c), the iconic Ferrari racing red, used scarcely on primary CTAs, the Cavallino mark, and Formula 1 race-position highlights.\n\nType runs **FerrariSans** as the single sans family at modest weights — display 500, body 400. CTA labels render in uppercase with generous tracking (1.1-1.4px). The brand never uses bold display copy.\n\nThe brand's strongest visual signature is the **full-bleed cinematic hero photograph** — top-of-page imagery shows car photography, model details, or trackside livery without any chrome competing with it. Headlines float over the bottom of the photo or sit in a tight band beneath. Spacing follows the explicit 8px token ladder: `xxxs` 4 / `xxs` 8 / `xs` 16 / `sm` 24 / `md` 32 / `lg` 48 / `xl` 64 / `xxl` 96 / `super` 128.\n\n**Key Characteristics:**\n- Single accent: `{colors.primary}` (Rosso Corsa #da291c) for primary CTAs, the Cavallino, F1 race-position highlights. Used scarcely.\n- Near-black canvas (#181818) — never pure black. White-canvas bands only inside editorial contexts.\n- Single sans family: FerrariSans across every text role.\n- Display weight stays at 500 — never bold.\n- CTA labels render uppercase with 1.4px tracking.\n- Sharp `{rounded.none}` (0px) corners on every CTA, card, and band — luxury-automotive precision.\n- Full-bleed cinematic hero photography is the page chrome.\n- Explicit 8px spacing token ladder with named scale (xxxs through super).\n- Hairlines + photographic depth — no drop shadow tiers.",
+    "Colors": "### Brand & Accent\n- **Rosso Corsa** (`{colors.primary}` — #da291c): The iconic Ferrari racing red. Primary CTA fill, Cavallino mark, F1 driver-position highlights. Used scarcely.\n- **Rosso Corsa Active** (`{colors.primary-active}` — #b01e0a): Press state.\n- **Rosso Corsa Hover-darker** (`{colors.primary-hover}` — #9d2211): Documented for completeness; per the no-hover policy this is not used in preview HTML.\n- **Hypersail Yellow** (`{colors.accent-yellow-hypersail}` — #fff200) + **Yellow** (`{colors.accent-yellow}` — #f6e500): Sub-brand accents reserved for the Hypersail sailing program and the global focus-ring color. Not part of the main automotive palette.\n\n### Surface\n- **Canvas** (`{colors.canvas}` — #181818): Near-black page floor — never pure black, slight warmth.\n- **Canvas Elevated** (`{colors.canvas-elevated}` — #303030): Cards and panels on dark canvas.\n- **Canvas Light** (`{colors.canvas-light}` — #ffffff): White editorial bands (preowned listings, pricing).\n- **Surface Card** (`{colors.surface-card}` — #303030): Same as canvas-elevated — driver cards, livery photo plates.\n- **Surface Soft Light** (`{colors.surface-soft-light}` — #f7f7f7): Light editorial alternating band.\n- **Surface Strong Light** (`{colors.surface-strong-light}` — #ebebeb): Light-canvas dividers, badges.\n\n### Hairlines\n- **Hairline** (`{colors.hairline}` — #303030): 1px divider on dark — same hex as `{colors.canvas-elevated}`.\n- **Hairline On Light** (`{colors.hairline-on-light}` — #d2d2d2): 1px divider on light bands.\n- **Hairline Soft** (`{colors.hairline-soft}` — #ebebeb): Lighter divider.\n\n### Text\n- **Ink** (`{colors.ink}` — #ffffff): Display, body emphasis on dark.\n- **Body** (`{colors.body}` — #969696): Default running-text on dark.\n- **Body Strong** (`{colors.body-strong}` — #ffffff): Same as ink.\n- **Body On Light** (`{colors.body-on-light}` — #181818): Default text on light bands.\n- **Muted** (`{colors.muted}` — #666666): Sub-titles, captions on dark.\n- **Muted Soft** (`{colors.muted-soft}` — #8f8f8f): Disabled link text.\n- **On Primary** (`{colors.on-primary}` — #ffffff): White text on Rosso Corsa.\n\n### Semantic\n- **Info** (`{colors.semantic-info}` — #4c98b9): Info badges, callout backgrounds.\n- **Success** (`{colors.semantic-success}` — #03904a): Confirmation.\n- **Warning** (`{colors.semantic-warning}` — #f13a2c): Validation warnings.",
+    "Typography": "### Font Family\n**FerrariSans** is the licensed single sans family across every text role. Fallback: `-apple-system, system-ui, sans-serif`. No display/body family split.\n\n### Hierarchy\n\n| Token | Size | Weight | Line Height | Letter Spacing | Use |\n|---|---|---|---|---|---|\n| `{typography.display-mega}` | 80px | 500 | 1.05 | -1.6px | Homepage hero h1 |\n| `{typography.display-xl}` | 56px | 500 | 1.1 | -1.12px | Subsidiary heroes |\n| `{typography.display-lg}` | 36px | 500 | 1.2 | -0.36px | Section heads, livery band |\n| `{typography.display-md}` | 26px | 500 | 1.5 | 0.195px | Sub-section heads |\n| `{typography.title-md}` | 18px | 700 | 1.2 | 0 | Component titles |\n| `{typography.title-sm}` | 16px | 500 | 1.4 | 0.08px | List labels |\n| `{typography.body-md}` | 14px | 400 | 1.5 | 0 | Default body |\n| `{typography.body-sm}` | 13px | 400 | 1.5 | 0 | Footer body |\n| `{typography.caption}` | 12px | 400 | 1.4 | 0 | Photo captions |\n| `{typography.caption-uppercase}` | 11px | 600 | 1.4 | 1.1px | Section labels, badges |\n| `{typography.button}` | 14px | 700 | 1.0 | 1.4px (uppercase) | CTA pill labels |\n| `{typography.nav-link}` | 13px | 600 | 1.4 | 0.65px (uppercase) | Top-nav menu items |\n| `{typography.number-display}` | 80px | 700 | 1.0 | -1.6px | Race position highlights, spec values |\n\n### Principles\n- **Display weight stays at 500.** Editorial confidence, not bombastic. The cinematic photography is doing the visual heavy-lifting — type doesn't need to compete.\n- **CTA labels are uppercase with 1.4px tracking.** Luxury-precision feel.\n- **Nav labels are uppercase with 0.65px tracking.** Consistent with CTA voice.\n- **Negative letter-spacing on display only.** -0.36px to -1.6px on display sizes; body stays at 0.\n\n### Note on Font Substitutes\nFerrariSans is licensed. Open-source substitute: **Inter** at weight 500 with letter-spacing -1%, or **Söhne** for closer humanist proportions.",
+    "Layout": "### Spacing System\n- **Base unit:** 4px.\n- **Tokens:** `{spacing.xxxs}` 4px · `{spacing.xxs}` 8px · `{spacing.xs}` 16px · `{spacing.sm}` 24px · `{spacing.md}` 32px · `{spacing.lg}` 48px · `{spacing.xl}` 64px · `{spacing.xxl}` 96px · `{spacing.super}` 128px.\n- **Section padding:** `{spacing.xxl}` (96px) for major bands; `{spacing.super}` (128px) reserved for hero band depth.\n\n### Grid & Container\n- Max content width: ~1280px on editorial bands. Hero photography goes full-bleed.\n- Editorial body: 12-column grid.\n- Feature card grids: 2-up at desktop for hero splits, 3-up for benefit grids, 4-up for preowned listing tiles.\n- Footer: 5-column at desktop.\n\n### Whitespace Philosophy\nGenerous editorial pacing. Cinematic hero photography occupies generous viewport real-estate; body sections sit in tighter editorial layouts beneath. The canvas-light editorial bands (preowned, pricing) carry tighter density than the dark cinema bands.",
+    "Elevation & Depth": "The system uses **photographic depth + brightness-step** elevation. No drop shadows except a single soft-small `{shadow.small}` documented in extracted tokens.\n\n| Level | Treatment | Use |\n|---|---|---|\n| Flat (canvas) | `{colors.canvas}` (#181818) | Body bands, footer |\n| Card | `{colors.canvas-elevated}` (#303030) | Driver cards, livery plates |\n| Light band | `{colors.canvas-light}` (#ffffff) | Preowned listings, pricing |\n| Hairline border | 1px `{colors.hairline}` or `{colors.hairline-on-light}` | Card outlines, dividers |\n| Soft drop | `0 4px 8px rgba(0,0,0,0.1)` | Hovered cards (single shadow tier) |\n| Photographic | Full-bleed cinema imagery | Hero band, livery photographs |\n\n### Decorative Depth\n- **Full-bleed cinema photography** is the brand's primary depth treatment.\n- **Brand red gradient** (`linear-gradient(180deg, #a00c01, #da291c 64%)`): The Rosso Corsa gradient used inside accent bands and CTA hover states.\n- **Dark grey gradient** (`linear-gradient(180deg, #3c3c3c, #030303 64%)`): Atmospheric darken used at section transitions.",
+    "Shapes": "### Border Radius Scale\n\n| Token | Value | Use |\n|---|---|---|\n| `{rounded.none}` | 0px | Every CTA, card, band — dominant radius |\n| `{rounded.xs}` | 2px | Tight badges (rare) |\n| `{rounded.sm}` | 4px | Form inputs |\n| `{rounded.md}` | 6px | Compact cards (rare) |\n| `{rounded.lg}` | 8px | Mobile-only collapse cards |\n| `{rounded.xl}` | 12px | Modal/dialog corners (rare) |\n| `{rounded.full}` | 9999px | Avatar plates, badge pills |\n\nThe radius vocabulary is **sharp by default**. Sharp 0px corners are the brand button shape — never rounded pills. Pill geometry is reserved for badge labels only.",
+    "Components": "### Top Navigation\n\n**`top-nav-on-dark`** — Default top nav on dark hero pages. Background `{colors.canvas}`, text `{colors.ink}`, height 64px. Layout: Cavallino mark left, primary horizontal menu (Models / F1 / Lifestyle / Owners / Preowned), language picker + utilities right. Menu items render uppercase with 0.65px tracking.\n\n**`top-nav-on-light`** — White-canvas variant for editorial light bands.\n\n### Buttons\n\n**`button-primary`** — The signature Rosso Corsa CTA. Background `{colors.primary}`, text `{colors.on-primary}`, type `{typography.button}` (14px / 700 / 1.4px tracking, uppercase), padding 14px × 32px, height 48px, **rounded `{rounded.none}` (0px — sharp corners)**.\n\n**`button-primary-active`** — Press state. Background `{colors.primary-active}`.\n\n**`button-outline-on-dark`** — Transparent with 1px white border. Background transparent, text `{colors.ink}`, 1px white border, same sharp 0px corners.\n\n**`button-outline-on-light`** — Transparent with 1px ink border on light bands.\n\n**`button-tertiary-text`** — Inline text link, uppercase tracking.\n\n### Hero Bands\n\n**`hero-band-cinema`** — Full-bleed cinematic photograph. Background `{colors.canvas}` underneath, but the photo fills the viewport. Display headline floats over the bottom of the photo or sits in a tight band beneath, in `{typography.display-mega}` (80px / 500 / -1.6px). One primary CTA + one outline CTA. Zero padding — the photo fills edge-to-edge.\n\n**`hero-band-light`** — White-canvas variant for editorial bands. Background `{colors.canvas-light}`, text `{colors.body-on-light}`, padding 96px.\n\n### Cards\n\n**`feature-card-photo`** — Image-first card. Background `{colors.canvas}`, text `{colors.ink}`, rounded `{rounded.none}`. Image fills the top edge-to-edge; title + body sit beneath in tight typography.\n\n**`feature-card-light`** — White-canvas variant. Background `{colors.canvas-light}`, text `{colors.body-on-light}`, rounded `{rounded.none}`, padding 32px.\n\n**`driver-card`** — F1 driver portrait card. Background `{colors.canvas-elevated}`, text `{colors.ink}`, rounded `{rounded.none}`, padding 24px. Layout: driver portrait + name + race number + team badge.\n\n### Editorial Surfaces\n\n**`livery-band`** — A full-width Rosso Corsa accent band. Background `{colors.primary}`, text `{colors.ink}`, type `{typography.display-lg}`, 96px padding. Used as a standout livery callout between dark editorial bands.\n\n**`preowned-listing-card`** — Used in the preowned Ferrari listing grid. Background `{colors.canvas-light}`, text `{colors.body-on-light}`, rounded `{rounded.none}`, padding 24px. Layout: car photo top + model name + year/mileage + price.\n\n### Spec & Race Surfaces\n\n**`spec-cell`** — Technical spec callout. Transparent background, value in `{typography.number-display}` (80px / 700 / -1.6px white), label below in `{typography.caption-uppercase}`.\n\n**`race-position-cell`** — F1 driver finishing position. Same number-display geometry but text in `{colors.primary}` Rosso Corsa for the brand's racing identity.\n\n**`race-calendar-row`** — Hairline-divided row in the F1 race calendar. Layout: date column left, race name + circuit middle, results column right.\n\n### Forms & Tags\n\n**`text-input-on-dark`** — Background `{colors.canvas}`, text `{colors.ink}`, rounded `{rounded.sm}` (4px), padding 14px × 16px, height 48px, 1px `{colors.hairline}` border.\n\n**`text-input-on-light`** — White-canvas variant.\n\n**`badge-pill`** — Small uppercase pill. Background `{colors.canvas-elevated}`, text `{colors.ink}`, type `{typography.caption-uppercase}` (11px / 600 / 1.1px tracking, uppercase), rounded `{rounded.full}` (9999px), padding 4px × 12px. The only place pill geometry is used.\n\n### Newsletter / CTA / Footer\n\n**`newsletter-input-band`** — Newsletter signup band. Background `{colors.canvas-elevated}`, padding 32px, rounded `{rounded.sm}`. Holds an inline email input + primary CTA.\n\n**`cta-band-dark`** — Pre-footer band. Background `{colors.canvas}`, centered display headline in `{typography.display-lg}`, single Rosso Corsa CTA. 96px padding.\n\n**`footer-dark`** — Closing dark footer. Background `{colors.canvas}`, text `{colors.body}`. 5-column link list. 64×48px padding.\n\n**`footer-link`** — Background transparent, text `{colors.body}`, type `{typography.body-sm}`.",
+    "Do's and Don'ts": "### Do\n- Reserve `{colors.primary}` (Rosso Corsa) for primary CTAs, the Cavallino mark, and F1 race-position highlights.\n- Set every CTA at `{rounded.none}` (0px sharp corners) — the brand's signature precision.\n- Render CTA labels in uppercase with 1.4px tracking via `{typography.button}`.\n- Pair every hero with a full-bleed cinematic photograph — the photograph IS the depth.\n- Use the explicit 8px spacing ladder (`xxxs` through `super`) rather than ad-hoc px values.\n- Keep display weight at 500 — never bold.\n\n### Don't\n- Don't introduce a saturated brand color other than Rosso Corsa.\n- Don't use rounded or pill CTAs — sharp 0px corners are the brand button.\n- Don't bold display copy. The cinematic photography does the visual heavy-lifting.\n- Don't use Hypersail yellow outside the Hypersail sailing program context.\n- Don't use pure black canvas. The brand canvas is `{colors.canvas}` (#181818) — slightly warm.\n- Don't add drop shadow tiers. Photography + brightness-step elevation carry the depth.\n- Don't extract a CTA color from a third-party widget (cookie consent, OneTrust). The brand's CTA color is what appears on actual product CTAs, not on injected modals.",
+    "Responsive Behavior": "### Breakpoints\n\n| Name | Width | Key Changes |\n|---|---|---|\n| Mobile | < 640px | Hero photograph crops vertically; hero h1 80→32px; feature card grid 1-up; nav hamburger; preowned listing 1-up. |\n| Tablet | 640–1024px | Hero h1 56px; feature card grid 2-up; preowned listing 2-up. |\n| Desktop | 1024–1280px | Full hero h1 80px; feature card grid 3-up; preowned listing 4-up. |\n| Wide | > 1280px | Editorial body content caps at 1280px; hero photography continues full-bleed. |\n\n### Touch Targets\n- Primary CTA at 48px height — at WCAG AAA (44 × 44).\n- Nav items render uppercase with 0.65px tracking, padded for an effective 48px tap area.\n\n### Collapsing Strategy\n- Top nav switches to hamburger below 768px.\n- Hero photograph reframes per breakpoint via art direction — desktop carries wide cinematic; mobile crops tighter or shifts to vertical.\n- Feature card grid: 4-up → 3-up → 2-up → 1-up.\n- F1 driver cards: 2-up at desktop, 1-up at mobile.",
+    "Iteration Guide": "1. Focus on a single component at a time.\n2. CTAs default to `{rounded.none}` (0px sharp). Cards use `{rounded.none}` too. Pill is reserved for badges.\n3. Variants live as separate entries inside `components:`.\n4. Use `{token.refs}` everywhere — never inline hex.\n5. Hover state never documented.\n6. FerrariSans 500 for display, 400/700 for body. Uppercase + tracking on CTAs and nav.\n7. Rosso Corsa stays scarce — primary CTAs, Cavallino, race-position highlights only.\n8. Use the explicit 8px named spacing ladder.",
+    "Known Gaps": "- FerrariSans is a licensed typeface; Inter at weight 500 is the documented substitute.\n- Animation timings (hero parallax, livery band entrance, race position counter) out of scope.\n- In-product surfaces (preowned configurator, F1 telemetry overlays) only partially captured via marketing surfaces.\n- Form validation states beyond focus not visible on captured surfaces.\n- Hypersail yellow tokens are extracted but only appear in the Hypersail sailing program context — documented as scoped accents."
+  },
+  "frontmatter": {
+    "version": "alpha",
+    "name": "Ferrari-design-analysis",
+    "description": "A luxury-automotive brand whose marketing surfaces read as cinematic editorial. The base canvas is **near-black** (`#181818`) holding pure white display type; white-canvas bands appear only inside specific editorial contexts (preowned listings, pricing tables). The single brand voltage is **Rosso Corsa** (`#da291c`) — the iconic Ferrari racing red — used scarcely on primary CTAs, the Cavallino mark, and Formula 1 race-position highlights. Type runs **FerrariSans** at modest weights (display 500, body 400) — never bombastic. Spacing follows an explicit 8px token ladder (`xxxs` 4px through `super` 128px); generous editorial pacing throughout. The brand's strongest visual signature is the **full-bleed cinematic hero photograph** that fills the viewport top with car photography, model details, or trackside livery — followed by a tighter editorial body layout below.",
+    "colors": {
+      "primary": "#da291c",
+      "primary-active": "#b01e0a",
+      "primary-hover": "#9d2211",
+      "ink": "#ffffff",
+      "body": "#969696",
+      "body-strong": "#ffffff",
+      "body-on-light": "#181818",
+      "muted": "#666666",
+      "muted-soft": "#8f8f8f",
+      "hairline": "#303030",
+      "hairline-on-light": "#d2d2d2",
+      "hairline-soft": "#ebebeb",
+      "canvas": "#181818",
+      "canvas-elevated": "#303030",
+      "canvas-light": "#ffffff",
+      "surface-card": "#303030",
+      "surface-soft-light": "#f7f7f7",
+      "surface-strong-light": "#ebebeb",
+      "on-primary": "#ffffff",
+      "on-dark": "#ffffff",
+      "on-light": "#181818",
+      "accent-yellow-hypersail": "#fff200",
+      "accent-yellow": "#f6e500",
+      "semantic-info": "#4c98b9",
+      "semantic-success": "#03904a",
+      "semantic-warning": "#f13a2c"
+    },
+    "typography": {
+      "display-mega": {
+        "fontFamily": "'FerrariSans', -apple-system, system-ui, sans-serif",
+        "fontSize": "80px",
+        "fontWeight": 500,
+        "lineHeight": 1.05,
+        "letterSpacing": "-1.6px"
+      },
+      "display-xl": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "56px",
+        "fontWeight": 500,
+        "lineHeight": 1.1,
+        "letterSpacing": "-1.12px"
+      },
+      "display-lg": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "36px",
+        "fontWeight": 500,
+        "lineHeight": 1.2,
+        "letterSpacing": "-0.36px"
+      },
+      "display-md": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "26px",
+        "fontWeight": 500,
+        "lineHeight": 1.5,
+        "letterSpacing": "0.195px"
+      },
+      "title-md": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "lineHeight": 1.2,
+        "letterSpacing": 0
+      },
+      "title-sm": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "16px",
+        "fontWeight": 500,
+        "lineHeight": 1.4,
+        "letterSpacing": "0.08px"
+      },
+      "body-md": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "body-sm": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "13px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "caption": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "12px",
+        "fontWeight": 400,
+        "lineHeight": 1.4,
+        "letterSpacing": 0
+      },
+      "caption-uppercase": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "11px",
+        "fontWeight": 600,
+        "lineHeight": 1.4,
+        "letterSpacing": "1.1px",
+        "textTransform": "uppercase"
+      },
+      "button": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 700,
+        "lineHeight": 1,
+        "letterSpacing": "1.4px",
+        "textTransform": "uppercase"
+      },
+      "nav-link": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "13px",
+        "fontWeight": 600,
+        "lineHeight": 1.4,
+        "letterSpacing": "0.65px",
+        "textTransform": "uppercase"
+      },
+      "number-display": {
+        "fontFamily": "'FerrariSans', sans-serif",
+        "fontSize": "80px",
+        "fontWeight": 700,
+        "lineHeight": 1,
+        "letterSpacing": "-1.6px"
+      }
+    },
+    "rounded": {
+      "none": "0px",
+      "xs": "2px",
+      "sm": "4px",
+      "md": "6px",
+      "lg": "8px",
+      "xl": "12px",
+      "full": "9999px"
+    },
+    "spacing": {
+      "xxxs": "4px",
+      "xxs": "8px",
+      "xs": "16px",
+      "sm": "24px",
+      "md": "32px",
+      "lg": "48px",
+      "xl": "64px",
+      "xxl": "96px",
+      "super": "128px"
+    },
+    "components": {
+      "top-nav-on-dark": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.nav-link}",
+        "height": "64px"
+      },
+      "top-nav-on-light": {
+        "backgroundColor": "{colors.canvas-light}",
+        "textColor": "{colors.body-on-light}",
+        "typography": "{typography.nav-link}",
+        "height": "64px"
+      },
+      "button-primary": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.none}",
+        "padding": "14px 32px",
+        "height": "48px"
+      },
+      "button-primary-active": {
+        "backgroundColor": "{colors.primary-active}",
+        "textColor": "{colors.on-primary}",
+        "rounded": "{rounded.none}"
+      },
+      "button-outline-on-dark": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.none}",
+        "padding": "13px 31px",
+        "height": "48px"
+      },
+      "button-outline-on-light": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.body-on-light}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.none}",
+        "padding": "13px 31px",
+        "height": "48px"
+      },
+      "button-tertiary-text": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button}"
+      },
+      "hero-band-cinema": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.display-mega}",
+        "padding": 0
+      },
+      "hero-band-light": {
+        "backgroundColor": "{colors.canvas-light}",
+        "textColor": "{colors.body-on-light}",
+        "typography": "{typography.display-xl}",
+        "padding": "96px"
+      },
+      "feature-card-photo": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.title-md}",
+        "rounded": "{rounded.none}",
+        "padding": 0
+      },
+      "feature-card-light": {
+        "backgroundColor": "{colors.canvas-light}",
+        "textColor": "{colors.body-on-light}",
+        "typography": "{typography.title-md}",
+        "rounded": "{rounded.none}",
+        "padding": "32px"
+      },
+      "livery-band": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.display-lg}",
+        "padding": "96px"
+      },
+      "preowned-listing-card": {
+        "backgroundColor": "{colors.canvas-light}",
+        "textColor": "{colors.body-on-light}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.none}",
+        "padding": "24px"
+      },
+      "spec-cell": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.number-display}",
+        "padding": "24px 0"
+      },
+      "race-position-cell": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.primary}",
+        "typography": "{typography.number-display}"
+      },
+      "race-calendar-row": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "padding": "16px 0"
+      },
+      "driver-card": {
+        "backgroundColor": "{colors.canvas-elevated}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.title-md}",
+        "rounded": "{rounded.none}",
+        "padding": "24px"
+      },
+      "text-input-on-dark": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.sm}",
+        "padding": "14px 16px",
+        "height": "48px"
+      },
+      "text-input-on-light": {
+        "backgroundColor": "{colors.canvas-light}",
+        "textColor": "{colors.body-on-light}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.sm}",
+        "padding": "14px 16px",
+        "height": "48px"
+      },
+      "badge-pill": {
+        "backgroundColor": "{colors.canvas-elevated}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.caption-uppercase}",
+        "rounded": "{rounded.full}",
+        "padding": "4px 12px"
+      },
+      "cta-band-dark": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.display-lg}",
+        "padding": "96px"
+      },
+      "newsletter-input-band": {
+        "backgroundColor": "{colors.canvas-elevated}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.sm}",
+        "padding": "32px"
+      },
+      "footer-dark": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.body}",
+        "typography": "{typography.body-sm}",
+        "padding": "64px 48px"
+      },
+      "footer-link": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.body}",
+        "typography": "{typography.body-sm}"
+      }
+    }
+  },
+  "brandAsset": {
+    "type": "text-wordmark",
+    "label": "Ferrari"
+  }
+}

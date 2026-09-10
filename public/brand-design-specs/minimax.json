@@ -1,0 +1,1082 @@
+{
+  "colors": {
+    "primary": "#0a0a0a",
+    "on-primary": "#ffffff",
+    "primary-soft": "#181e25",
+    "brand-coral": "#ff5530",
+    "brand-magenta": "#ea5ec1",
+    "brand-blue": "#1456f0",
+    "brand-blue-mid": "#3b82f6",
+    "brand-blue-deep": "#1d4ed8",
+    "brand-blue-700": "#17437d",
+    "brand-cyan": "#3daeff",
+    "brand-blue-200": "#bfdbfe",
+    "brand-purple": "#a855f7",
+    "canvas": "#ffffff",
+    "surface": "#f7f8fa",
+    "surface-soft": "#f2f3f5",
+    "hairline": "#e5e7eb",
+    "hairline-soft": "#eaecf0",
+    "ink": "#0a0a0a",
+    "ink-strong": "#000000",
+    "charcoal": "#222222",
+    "slate": "#45515e",
+    "steel": "#5f5f5f",
+    "stone": "#8e8e93",
+    "muted": "#a8aab2",
+    "success-bg": "#e8ffea",
+    "success-text": "#1ba673",
+    "on-dark": "#ffffff",
+    "footer-bg": "#0a0a0a"
+  },
+  "typography": {
+    "hero-display": {
+      "fontFamily": "DM Sans",
+      "fontSize": "80px",
+      "fontWeight": 600,
+      "lineHeight": 1.1,
+      "letterSpacing": "-2px",
+      "declaredFamily": "DM Sans",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "display-lg": {
+      "fontFamily": "DM Sans",
+      "fontSize": "56px",
+      "fontWeight": 600,
+      "lineHeight": 1.1,
+      "letterSpacing": "-1.5px",
+      "declaredFamily": "DM Sans",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "heading-lg": {
+      "fontFamily": "DM Sans",
+      "fontSize": "40px",
+      "fontWeight": 600,
+      "lineHeight": 1.2,
+      "letterSpacing": "-1px",
+      "declaredFamily": "DM Sans",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "heading-md": {
+      "fontFamily": "DM Sans",
+      "fontSize": "32px",
+      "fontWeight": 600,
+      "lineHeight": 1.25,
+      "letterSpacing": "-0.5px",
+      "declaredFamily": "DM Sans",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "heading-sm": {
+      "fontFamily": "DM Sans",
+      "fontSize": "24px",
+      "fontWeight": 600,
+      "lineHeight": 1.3,
+      "declaredFamily": "DM Sans",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "card-title": {
+      "fontFamily": "DM Sans",
+      "fontSize": "20px",
+      "fontWeight": 600,
+      "lineHeight": 1.4,
+      "declaredFamily": "DM Sans",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "subtitle": {
+      "fontFamily": "DM Sans",
+      "fontSize": "18px",
+      "fontWeight": 500,
+      "lineHeight": 1.5,
+      "declaredFamily": "DM Sans",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "body-md": {
+      "fontFamily": "DM Sans",
+      "fontSize": "16px",
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "declaredFamily": "DM Sans",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "body-md-bold": {
+      "fontFamily": "DM Sans",
+      "fontSize": "16px",
+      "fontWeight": 700,
+      "lineHeight": 1.5,
+      "declaredFamily": "DM Sans",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "body-sm": {
+      "fontFamily": "DM Sans",
+      "fontSize": "14px",
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "declaredFamily": "DM Sans",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "body-sm-medium": {
+      "fontFamily": "DM Sans",
+      "fontSize": "14px",
+      "fontWeight": 500,
+      "lineHeight": 1.5,
+      "declaredFamily": "DM Sans",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "caption": {
+      "fontFamily": "DM Sans",
+      "fontSize": "13px",
+      "fontWeight": 400,
+      "lineHeight": 1.7,
+      "declaredFamily": "DM Sans",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "caption-bold": {
+      "fontFamily": "DM Sans",
+      "fontSize": "13px",
+      "fontWeight": 600,
+      "lineHeight": 1.5,
+      "declaredFamily": "DM Sans",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "micro": {
+      "fontFamily": "DM Sans",
+      "fontSize": "12px",
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "declaredFamily": "DM Sans",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "button-md": {
+      "fontFamily": "DM Sans",
+      "fontSize": "14px",
+      "fontWeight": 600,
+      "lineHeight": 1.4,
+      "declaredFamily": "DM Sans",
+      "renderFallback": "system-ui, sans-serif"
+    }
+  },
+  "spacing": {
+    "xxs": "4px",
+    "xs": "8px",
+    "sm": "12px",
+    "md": "16px",
+    "lg": "20px",
+    "xl": "24px",
+    "xxl": "32px",
+    "xxxl": "40px",
+    "section-sm": "48px",
+    "section": "64px",
+    "section-lg": "80px",
+    "hero": "96px"
+  },
+  "radius": {
+    "xs": "4px",
+    "sm": "6px",
+    "md": "8px",
+    "lg": "12px",
+    "xl": "16px",
+    "xxl": "20px",
+    "xxxl": "24px",
+    "hero": "32px",
+    "full": "9999px"
+  },
+  "border": {
+    "button-secondary": "1px solid #0a0a0a",
+    "button-tertiary": "1px solid #e5e7eb",
+    "button-icon-circular": "1px solid #e5e7eb",
+    "card-base": "1px solid #e5e7eb",
+    "card-recommendation": "1px solid #e5e7eb",
+    "text-input": "1px solid #e5e7eb",
+    "text-input-focused": "2px solid #1d4ed8",
+    "text-input-error": "1px solid #d45656",
+    "search-pill": "1px solid #e5e7eb",
+    "segmented-tab": "0 0 2px transparent solid",
+    "segmented-tab-active": "0 0 2px #0a0a0a solid",
+    "pill-tab": "1px solid #e5e7eb",
+    "pill-tab-active": "1px solid #0a0a0a",
+    "data-table": "1px solid #e5e7eb",
+    "data-table-row": "0 0 1px #eaecf0 solid",
+    "ai-product-tile": "1px solid #e5e7eb",
+    "ai-product-matrix": "1px solid #e5e7eb",
+    "models-comparison-table": "1px solid #e5e7eb"
+  },
+  "motion": {
+    "rules": [
+      "- Animation/transition timings are not extracted; recommend 150–200ms ease for hover/focus state transitions."
+    ]
+  },
+  "depth": {
+    "Elevation & Depth": "The system runs predominantly flat. Elevation is reserved for sticky panels, dropdowns, and the rare floating CTA.\n\n| Level | Treatment | Use |\n|---|---|---|\n| 0 (flat) | No shadow; `{colors.hairline}` border | Default cards, table rows, form inputs |\n| 1 (subtle) | `rgba(0, 0, 0, 0.04) 0px 1px 2px 0px` | Card-recommendation, hover-elevated tiles |\n| 2 (card) | `rgba(0, 0, 0, 0.08) 0px 4px 6px 0px` | Standard feature cards, dropdowns |\n| 3 (atmospheric) | `rgba(0, 0, 0, 0.08) 0px 0px 22px 0px` | Diffuse glow on featured product cards |\n| 4 (modal) | `rgba(36, 36, 36, 0.08) 0px 12px 16px -4px` | Modals, confirmation dialogs, sticky panels |\n\n### Decorative Depth\n- The vibrant gradient product cards carry their own atmospheric depth via internal radial gradients and silhouette imagery — no shadow needed; the color does the work.\n- Brand-tinted shadows (`rgba(44, 30, 116, 0.16) 0px 0px 15px`) appear under purple-themed cards for subtle ambient lift.\n- Dotted/grain textures occasionally appear inside product cards as photographic-content decoration; these are not formalized as system tokens."
+  },
+  "components": {
+    "button-primary": {
+      "backgroundColor": "#0a0a0a",
+      "textColor": "#ffffff",
+      "typography": {
+        "fontFamily": "DM Sans",
+        "fontSize": "14px",
+        "fontWeight": 600,
+        "lineHeight": 1.4
+      },
+      "rounded": "9999px",
+      "padding": "11px 24px"
+    },
+    "button-primary-pressed": {
+      "backgroundColor": "#222222",
+      "textColor": "#ffffff"
+    },
+    "button-primary-disabled": {
+      "backgroundColor": "#e5e7eb",
+      "textColor": "#a8aab2"
+    },
+    "button-secondary": {
+      "backgroundColor": "transparent",
+      "textColor": "#0a0a0a",
+      "typography": {
+        "fontFamily": "DM Sans",
+        "fontSize": "14px",
+        "fontWeight": 600,
+        "lineHeight": 1.4
+      },
+      "rounded": "9999px",
+      "padding": "11px 24px",
+      "border": "1px solid #0a0a0a"
+    },
+    "button-tertiary": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#0a0a0a",
+      "typography": {
+        "fontFamily": "DM Sans",
+        "fontSize": "14px",
+        "fontWeight": 600,
+        "lineHeight": 1.4
+      },
+      "rounded": "9999px",
+      "padding": "11px 24px",
+      "border": "1px solid #e5e7eb"
+    },
+    "button-link": {
+      "backgroundColor": "transparent",
+      "textColor": "#0a0a0a",
+      "typography": {
+        "fontFamily": "DM Sans",
+        "fontSize": "14px",
+        "fontWeight": 500,
+        "lineHeight": 1.5
+      },
+      "padding": "8px 0"
+    },
+    "button-icon-circular": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#0a0a0a",
+      "rounded": "9999px",
+      "size": "36px",
+      "border": "1px solid #e5e7eb"
+    },
+    "product-card-coral": {
+      "backgroundColor": "#ff5530",
+      "textColor": "#ffffff",
+      "rounded": "32px",
+      "padding": "32px"
+    },
+    "product-card-magenta": {
+      "backgroundColor": "#ea5ec1",
+      "textColor": "#ffffff",
+      "rounded": "32px",
+      "padding": "32px"
+    },
+    "product-card-blue": {
+      "backgroundColor": "#1456f0",
+      "textColor": "#ffffff",
+      "rounded": "32px",
+      "padding": "32px"
+    },
+    "product-card-purple": {
+      "backgroundColor": "#a855f7",
+      "textColor": "#ffffff",
+      "rounded": "32px",
+      "padding": "32px"
+    },
+    "product-card-photo": {
+      "backgroundColor": "#0a0a0a",
+      "textColor": "#ffffff",
+      "rounded": "32px",
+      "padding": "32px"
+    },
+    "card-base": {
+      "backgroundColor": "#ffffff",
+      "rounded": "16px",
+      "padding": "24px",
+      "border": "1px solid #e5e7eb"
+    },
+    "card-feature": {
+      "backgroundColor": "#f7f8fa",
+      "rounded": "16px",
+      "padding": "32px"
+    },
+    "card-recommendation": {
+      "backgroundColor": "#ffffff",
+      "rounded": "12px",
+      "padding": "20px",
+      "border": "1px solid #e5e7eb"
+    },
+    "promo-cta-card": {
+      "backgroundColor": "#ff5530",
+      "textColor": "#ffffff",
+      "rounded": "32px",
+      "padding": "64px"
+    },
+    "text-input": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#0a0a0a",
+      "typography": {
+        "fontFamily": "DM Sans",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": 1.5
+      },
+      "rounded": "8px",
+      "padding": "12px 16px",
+      "border": "1px solid #e5e7eb",
+      "height": "40px"
+    },
+    "text-input-focused": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#0a0a0a",
+      "border": "2px solid #1d4ed8"
+    },
+    "text-input-error": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#0a0a0a",
+      "border": "1px solid #d45656"
+    },
+    "search-pill": {
+      "backgroundColor": "#f7f8fa",
+      "textColor": "#5f5f5f",
+      "typography": {
+        "fontFamily": "DM Sans",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.5
+      },
+      "rounded": "8px",
+      "padding": "8px 16px",
+      "height": "36px",
+      "border": "1px solid #e5e7eb"
+    },
+    "segmented-tab": {
+      "backgroundColor": "transparent",
+      "textColor": "#5f5f5f",
+      "typography": {
+        "fontFamily": "DM Sans",
+        "fontSize": "14px",
+        "fontWeight": 600,
+        "lineHeight": 1.4
+      },
+      "rounded": "0",
+      "padding": "16px 20px",
+      "border": "0 0 2px transparent solid"
+    },
+    "segmented-tab-active": {
+      "backgroundColor": "transparent",
+      "textColor": "#0a0a0a",
+      "typography": {
+        "fontFamily": "DM Sans",
+        "fontSize": "14px",
+        "fontWeight": 600,
+        "lineHeight": 1.4
+      },
+      "border": "0 0 2px #0a0a0a solid"
+    },
+    "pill-tab": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#5f5f5f",
+      "typography": {
+        "fontFamily": "DM Sans",
+        "fontSize": "14px",
+        "fontWeight": 500,
+        "lineHeight": 1.5
+      },
+      "rounded": "9999px",
+      "padding": "8px 16px",
+      "border": "1px solid #e5e7eb"
+    },
+    "pill-tab-active": {
+      "backgroundColor": "#0a0a0a",
+      "textColor": "#ffffff",
+      "rounded": "9999px",
+      "border": "1px solid #0a0a0a"
+    },
+    "badge-success": {
+      "backgroundColor": "#e8ffea",
+      "textColor": "#1ba673",
+      "typography": {
+        "fontFamily": "DM Sans",
+        "fontSize": "13px",
+        "fontWeight": 600,
+        "lineHeight": 1.5
+      },
+      "rounded": "9999px",
+      "padding": "4px 10px"
+    },
+    "badge-new": {
+      "backgroundColor": "#ff5530",
+      "textColor": "#ffffff",
+      "typography": {
+        "fontFamily": "DM Sans",
+        "fontSize": "13px",
+        "fontWeight": 600,
+        "lineHeight": 1.5
+      },
+      "rounded": "9999px",
+      "padding": "4px 10px"
+    },
+    "badge-beta": {
+      "backgroundColor": "#bfdbfe",
+      "textColor": "#1d4ed8",
+      "typography": {
+        "fontFamily": "DM Sans",
+        "fontSize": "13px",
+        "fontWeight": 600,
+        "lineHeight": 1.5
+      },
+      "rounded": "9999px",
+      "padding": "4px 10px"
+    },
+    "badge-code": {
+      "backgroundColor": "#bfdbfe",
+      "textColor": "#1d4ed8",
+      "typography": {
+        "fontFamily": "DM Sans",
+        "fontSize": "13px",
+        "fontWeight": 600,
+        "lineHeight": 1.5
+      },
+      "rounded": "6px",
+      "padding": "2px 6px"
+    },
+    "promo-banner": {
+      "backgroundColor": "#0a0a0a",
+      "textColor": "#ffffff",
+      "typography": {
+        "fontFamily": "DM Sans",
+        "fontSize": "14px",
+        "fontWeight": 500,
+        "lineHeight": 1.5
+      },
+      "padding": "12px 20px"
+    },
+    "data-table": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#0a0a0a",
+      "typography": {
+        "fontFamily": "DM Sans",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.5
+      },
+      "rounded": "8px",
+      "border": "1px solid #e5e7eb"
+    },
+    "data-table-header": {
+      "backgroundColor": "#f7f8fa",
+      "textColor": "#5f5f5f",
+      "typography": {
+        "fontFamily": "DM Sans",
+        "fontSize": "13px",
+        "fontWeight": 600,
+        "lineHeight": 1.5
+      },
+      "padding": "12px 16px"
+    },
+    "data-table-row": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#0a0a0a",
+      "typography": {
+        "fontFamily": "DM Sans",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.5
+      },
+      "padding": "16px",
+      "border": "0 0 1px #eaecf0 solid"
+    },
+    "sidebar-nav-item": {
+      "backgroundColor": "transparent",
+      "textColor": "#222222",
+      "typography": {
+        "fontFamily": "DM Sans",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.5
+      },
+      "rounded": "6px",
+      "padding": "8px 16px"
+    },
+    "sidebar-nav-item-active": {
+      "backgroundColor": "#f7f8fa",
+      "textColor": "#0a0a0a",
+      "typography": {
+        "fontFamily": "DM Sans",
+        "fontSize": "14px",
+        "fontWeight": 500,
+        "lineHeight": 1.5
+      }
+    },
+    "doc-toc-item": {
+      "backgroundColor": "transparent",
+      "textColor": "#5f5f5f",
+      "typography": {
+        "fontFamily": "DM Sans",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.5
+      },
+      "padding": "8px 0"
+    },
+    "ai-product-tile": {
+      "backgroundColor": "#ffffff",
+      "rounded": "24px",
+      "padding": "24px",
+      "border": "1px solid #e5e7eb"
+    },
+    "footer-region": {
+      "backgroundColor": "#0a0a0a",
+      "textColor": "#ffffff",
+      "typography": {
+        "fontFamily": "DM Sans",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.5
+      },
+      "padding": "64px 32px"
+    },
+    "footer-link": {
+      "backgroundColor": "transparent",
+      "textColor": "#a8aab2",
+      "typography": {
+        "fontFamily": "DM Sans",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.5
+      },
+      "padding": "4px 0"
+    },
+    "hero-band-marketing": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#0a0a0a",
+      "typography": {
+        "fontFamily": "DM Sans",
+        "fontSize": "80px",
+        "fontWeight": 600,
+        "lineHeight": 1.1,
+        "letterSpacing": "-2px"
+      },
+      "rounded": "12px",
+      "padding": "96px"
+    },
+    "product-matrix-grid": {
+      "backgroundColor": "#ffffff",
+      "rounded": "32px",
+      "padding": "32px"
+    },
+    "ai-product-matrix": {
+      "backgroundColor": "#ffffff",
+      "rounded": "24px",
+      "padding": "24px",
+      "border": "1px solid #e5e7eb"
+    },
+    "docs-prose-block": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#222222",
+      "typography": {
+        "fontFamily": "DM Sans",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": 1.5
+      },
+      "padding": "32px"
+    },
+    "models-comparison-table": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#0a0a0a",
+      "typography": {
+        "fontFamily": "DM Sans",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.5
+      },
+      "rounded": "8px",
+      "border": "1px solid #e5e7eb"
+    },
+    "testimonial-stat-row": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#0a0a0a",
+      "typography": {
+        "fontFamily": "DM Sans",
+        "fontSize": "40px",
+        "fontWeight": 600,
+        "lineHeight": 1.2,
+        "letterSpacing": "-1px"
+      },
+      "padding": "24px"
+    }
+  },
+  "layout": "product",
+  "traits": "MiniMax presents itself as a premium AI infrastructure brand through a striking duality — bold black-pill CTAs and stark white canvas for marketing, paired with vibrant gradient product cards (orange-red, magenta-pink, purple, blue) that turn each model release into a distinctive visual identity. The system uses DM Sans across all surfaces, employs an oversized 80px hero display, anchors major actions in deep near-black pills, and layers content density via a 3-column documentation grid with sidebar nav, prose body, and TOC. Coverage spans the marketing homepage, model showcase pages, developer documentation, and platform pricing surfaces.",
+  "sections": {
+    "Overview": "MiniMax stages itself as a Chinese AI infrastructure brand with a sophisticated dual identity. Marketing surfaces and platform pages anchor in stark white canvas with deep-black typographic emphasis — the brand voice is confident, technical, almost editorial. But each model release gets its own vibrant gradient identity card: M2.7 in volcanic coral-red, Music 2.6 in magenta-pink, Hailuo in deep blue, Speech 2.8 in saturated orange-purple. Together these vibrant tiles read like album covers laid out on the homepage — each one declaring its own product personality.\n\nDM Sans anchors every surface from oversized 80px hero displays down to 12px micro labels. The geometric, slightly humanist character of the face suits both the dense documentation surfaces (where 14px body type carries 1.5 line-height for long-form prose) and the high-impact marketing displays (where -2px letter-spacing tightens 80px headlines). Buttons are universally pill-shaped (`rounded-full`) with a sharp two-tier system: black-pill primary (the dominant CTA) and outline-pill secondary. Cards split into two distinct families: vibrant gradient product showcases (32px corner softening) and quiet white documentation cards (16px corner softening).\n\n**Key Characteristics:**\n- Stark monochrome palette — black ({colors.primary}) and white ({colors.canvas}) — broken open by saturated brand-color gradient cards\n- Distinct product-color encoding: each model line has its own vibrant brand color (coral M2.7, magenta Music 2.6, blue Hailuo, orange Speech 2.8)\n- DM Sans across the entire system; Inter as fallback\n- Pill-shaped buttons ({rounded.full}) and pill-shaped tabs everywhere; rectangular forms only inside data tables and dense docs\n- Hero typography uses tight 1.10 line-height with -2px letter-spacing for impact\n- Documentation surfaces use a 3-column layout: left sidebar nav, center prose body, right table-of-contents\n- Black promo banners ({colors.primary}) above the nav for time-bound brand moments",
+    "Colors": "> Source pages: minimax.io/ (homepage), /models/text/m27 (product showcase), platform.minimax.io/docs/guides/models-intro (documentation), /subscribe/token-plan (pricing). Token coverage was identical across all four pages.\n\n### Brand & Accent\n- **Brand Coral** ({colors.brand-coral}): Signature high-impact accent. Used on M2.7 product card, \"Token Plan\" hero band, promo CTA strips, and \"NEW\" badges. Carries the brand's most attention-grabbing energy.\n- **Brand Magenta** ({colors.brand-magenta}): Secondary product-card identity (Music 2.6); used for music/audio product encoding.\n- **Brand Blue** ({colors.brand-blue}): Hailuo video product identity; primary blue accent across the system.\n- **Brand Blue Deep** ({colors.brand-blue-deep}): Form-control activation, link emphasis.\n- **Brand Blue 700** ({colors.brand-blue-700}): Documentation tag and reference text color.\n- **Brand Cyan** ({colors.brand-cyan}): Atmospheric blue for product gradients and decorative wash.\n- **Brand Blue 200** ({colors.brand-blue-200}): Code badges, info-tag backgrounds.\n- **Brand Purple** ({colors.brand-purple}): Speech 2.8 and minor purple-product identity; gradient mate for magenta cards.\n\n### Surface\n- **Canvas White** ({colors.canvas}): Primary page background and card surface.\n- **Surface** ({colors.surface}): Subtle section backgrounds, search-pill rest, sidebar-nav active state.\n- **Surface Soft** ({colors.surface-soft}): Quieter section divisions.\n- **Hairline** ({colors.hairline}): 1px input border and primary divider.\n- **Hairline Soft** ({colors.hairline-soft}): Quieter table-row divider and secondary section break.\n\n### Text\n- **Ink** ({colors.ink}): Primary headline and CTA text — the brand's near-black anchor.\n- **Ink Strong** ({colors.ink-strong}): Pure black used in promo banners and hero displays for maximum contrast.\n- **Charcoal** ({colors.charcoal}): Body text on light surfaces.\n- **Slate** ({colors.slate}): Secondary text, metadata.\n- **Steel** ({colors.steel}): Tertiary text, table headers, sidebar inactive items.\n- **Stone** ({colors.stone}): Muted captions and tab inactive labels.\n- **Muted** ({colors.muted}): Footer link text and de-emphasized labels.\n\n### Semantic\n- **Success Background** ({colors.success-bg}): Pale-green wash for success badges and confirmations.\n- **Success Text** ({colors.success-text}): Deep-green ink for success badge labels.\n- Error tones derive from a `#d45656` red used in input border error states (not extracted as a top-level system token).",
+    "Typography": "### Font Family\n**DM Sans** (primary): Geometric variable sans-serif. Used across every surface, every role. Fallbacks: Inter, Helvetica Neue, Helvetica, Arial.\n\nDM Sans was chosen for its dual fluency: it scales cleanly from 80px hero displays (where -2px letter-spacing creates magazine-grade tightness) down to 12px micro labels (where the slightly humanist counters maintain legibility). The face has no italic variant in the brand's deployment — emphasis comes from weight (500/600/700) instead.\n\n### Hierarchy\n\n| Token | Size | Weight | Line Height | Letter Spacing | Use |\n|---|---|---|---|---|---|\n| `{typography.hero-display}` | 80px | 600 | 1.10 | -2px | Homepage hero (\"MiniMax Music 2.6\") |\n| `{typography.display-lg}` | 56px | 600 | 1.10 | -1.5px | Section openers, major page heroes |\n| `{typography.heading-lg}` | 40px | 600 | 1.20 | -1px | Sub-page headlines (\"Token Plan\", \"Models Overview\") |\n| `{typography.heading-md}` | 32px | 600 | 1.25 | -0.5px | Subsection headers (\"Full-Stack Model Matrix\") |\n| `{typography.heading-sm}` | 24px | 600 | 1.30 | 0 | Card titles, feature headers |\n| `{typography.card-title}` | 20px | 600 | 1.40 | 0 | Product-card titles, feature-tile headers |\n| `{typography.subtitle}` | 18px | 500 | 1.50 | 0 | Section subtitles, lead body |\n| `{typography.body-md}` | 16px | 400 | 1.50 | 0 | Primary body text |\n| `{typography.body-md-bold}` | 16px | 700 | 1.50 | 0 | Body emphasis |\n| `{typography.body-sm}` | 14px | 400 | 1.50 | 0 | Secondary body, table cells, navigation |\n| `{typography.body-sm-medium}` | 14px | 500 | 1.50 | 0 | Active sidebar nav, button labels |\n| `{typography.caption}` | 13px | 400 | 1.70 | 0 | Documentation captions, fine print |\n| `{typography.caption-bold}` | 13px | 600 | 1.50 | 0 | Badge labels, table-header text |\n| `{typography.micro}` | 12px | 400 | 1.50 | 0 | Footer microcopy, chip labels |\n| `{typography.button-md}` | 14px | 600 | 1.40 | 0 | Pill button labels |\n\n### Principles\n- **Tight hero leading** (1.10) and aggressive negative letter-spacing on display sizes create a magazine-quality typographic display unique to MiniMax.\n- **Generous body leading** (1.50) keeps long-form documentation comfortable; captions push to 1.70 for scientific-paper-grade clarity.\n- **Weight discipline:** 400 (body), 500 (medium emphasis), 600 (headings/buttons), 700 (strong inline emphasis). Heavier weights are not used.\n- **Single typeface** strategy — never mix DM Sans with another sans-serif. Code samples (when shown) use a system monospace fallback, but no second typeface enters the brand canvas.",
+    "Layout": "### Spacing System\n- **Base unit**: 4px (8px primary increment).\n- **Tokens**: `{spacing.xxs}` (4px) · `{spacing.xs}` (8px) · `{spacing.sm}` (12px) · `{spacing.md}` (16px) · `{spacing.lg}` (20px) · `{spacing.xl}` (24px) · `{spacing.xxl}` (32px) · `{spacing.xxxl}` (40px) · `{spacing.section-sm}` (48px) · `{spacing.section}` (64px) · `{spacing.section-lg}` (80px) · `{spacing.hero}` (96px).\n- **Section rhythm**: Marketing pages separate at `{spacing.hero}` (96px) above-fold, then `{spacing.section-lg}` (80px) below; documentation tightens to `{spacing.section}` (64px); table rows compress to `{spacing.md}` (16px).\n- **Card internal padding**: Vibrant product cards use `{spacing.xxl}` (32px); documentation cards use `{spacing.lg}–{spacing.xl}` (20–24px); promo strips expand to `{spacing.section}` (64px).\n\n### Grid & Container\n- Marketing pages use a 1280px max-width with 32px gutters.\n- Homepage product matrix renders as a 4-column row of 32px-rounded gradient cards, each ~280–320px wide.\n- AI Product Matrix below uses a 4-column grid with 16px-rounded white cards.\n- Documentation surfaces use a 3-column layout: left sidebar nav (~220px), center prose body (~720px max-width), right TOC (~180px). Sidebar persists on desktop; collapses to drawer below 1024px.\n- Token Plan / pricing pages use 2-column tabs above a 3-column tier card grid.\n\n### Whitespace Philosophy\nMarketing pages give product photography and color cards generous breathing room — `{spacing.hero}` (96px) above-the-fold creates visual oxygen for the 80px hero display. Inside documentation, whitespace tightens dramatically: section gaps drop to `{spacing.xxl}` (32px), table rows pack down to `{spacing.md}` (16px), and the sidebar nav uses `{spacing.xs}` (8px) vertical rhythm.",
+    "Elevation & Depth": "The system runs predominantly flat. Elevation is reserved for sticky panels, dropdowns, and the rare floating CTA.\n\n| Level | Treatment | Use |\n|---|---|---|\n| 0 (flat) | No shadow; `{colors.hairline}` border | Default cards, table rows, form inputs |\n| 1 (subtle) | `rgba(0, 0, 0, 0.04) 0px 1px 2px 0px` | Card-recommendation, hover-elevated tiles |\n| 2 (card) | `rgba(0, 0, 0, 0.08) 0px 4px 6px 0px` | Standard feature cards, dropdowns |\n| 3 (atmospheric) | `rgba(0, 0, 0, 0.08) 0px 0px 22px 0px` | Diffuse glow on featured product cards |\n| 4 (modal) | `rgba(36, 36, 36, 0.08) 0px 12px 16px -4px` | Modals, confirmation dialogs, sticky panels |\n\n### Decorative Depth\n- The vibrant gradient product cards carry their own atmospheric depth via internal radial gradients and silhouette imagery — no shadow needed; the color does the work.\n- Brand-tinted shadows (`rgba(44, 30, 116, 0.16) 0px 0px 15px`) appear under purple-themed cards for subtle ambient lift.\n- Dotted/grain textures occasionally appear inside product cards as photographic-content decoration; these are not formalized as system tokens.",
+    "Shapes": "### Border Radius Scale\n\n| Token | Value | Use |\n|---|---|---|\n| `{rounded.xs}` | 4px | Code chips, micro-controls |\n| `{rounded.sm}` | 6px | Compact controls, table cells |\n| `{rounded.md}` | 8px | Inputs, secondary buttons, search pill |\n| `{rounded.lg}` | 12px | Documentation cards, recommendation tiles |\n| `{rounded.xl}` | 16px | Standard feature cards, AI product tiles |\n| `{rounded.xxl}` | 20px | Larger feature panels |\n| `{rounded.xxxl}` | 24px | AI product tile feature variants |\n| `{rounded.hero}` | 32px | Vibrant gradient product cards, promo CTA strip |\n| `{rounded.full}` | 9999px | All buttons, all pill tabs, badges |\n\n### Photography Geometry\n- Vibrant product cards use 32px corner softening — distinct from the 16px used on quiet white cards. The doubled radius is the visual signature of \"this is a featured product moment.\"\n- Product imagery inside cards is treated as photographic content (silhouettes, dark portrait studio lighting) without rounded internal frames.\n- Avatar circles (rare, in testimonials) are `{rounded.full}` — perfect circles.",
+    "Components": "> Per the no-hover policy, hover states are NOT documented. Default and pressed/active states only.\n\n### Buttons\n\n**`button-primary`** — Black pill primary CTA, the dominant action across all surfaces.\n- Background `{colors.primary}`, text `{colors.on-primary}`, typography `{typography.button-md}`, padding `11px 24px`, rounded `{rounded.full}`.\n- Pressed state `button-primary-pressed` lifts to `{colors.charcoal}`.\n- Disabled state `button-primary-disabled` uses `{colors.hairline}` background and `{colors.muted}` text.\n\n**`button-secondary`** — Outlined pill secondary action, paired with primary in dual-CTA hero patterns.\n- Background transparent, text `{colors.ink}`, border `1px solid {colors.ink}`, typography `{typography.button-md}`, padding `11px 24px`, rounded `{rounded.full}`.\n\n**`button-tertiary`** — White-fill quieter pill, used for tertiary nav and informational CTAs.\n- Background `{colors.canvas}`, text `{colors.ink}`, border `1px solid {colors.hairline}`, typography `{typography.button-md}`, padding `11px 24px`, rounded `{rounded.full}`.\n\n**`button-link`** — Inline text link styled as a subtle button.\n- Background transparent, text `{colors.ink}`, typography `{typography.body-sm-medium}`, padding `8px 0`. Underline appears on activation.\n\n**`button-icon-circular`** — 36×36px circular utility button (carousel arrows, share, copy).\n- Background `{colors.canvas}`, text `{colors.ink}`, border `1px solid {colors.hairline}`, rounded `{rounded.full}`.\n\n### Vibrant Product Cards\n\n**`product-card-coral`** — M2.7 / Token Plan signature card.\n- Background `{colors.brand-coral}`, text `{colors.on-dark}`, rounded `{rounded.hero}` (32px), padding `{spacing.xxl}`.\n- Hosts the M2.7 wordmark in massive `{typography.display-lg}` with white tagline.\n\n**`product-card-magenta`** — Music 2.6 product showcase.\n- Background `{colors.brand-magenta}`, text `{colors.on-dark}`, rounded `{rounded.hero}`, padding `{spacing.xxl}`.\n\n**`product-card-blue`** — Hailuo Video product showcase.\n- Background `{colors.brand-blue}`, text `{colors.on-dark}`, rounded `{rounded.hero}`, padding `{spacing.xxl}`.\n\n**`product-card-purple`** — Speech 2.8 / variant product showcase.\n- Background `{colors.brand-purple}`, text `{colors.on-dark}`, rounded `{rounded.hero}`, padding `{spacing.xxl}`.\n\n**`product-card-photo`** — Dark portrait product card (homepage S2 placement, video-emotion product).\n- Background `{colors.primary}` (black with overlaid product photo), text `{colors.on-dark}`, rounded `{rounded.hero}`, padding `{spacing.xxl}`.\n\n### Cards & Containers\n\n**`card-base`** — Standard documentation/feature card.\n- Background `{colors.canvas}`, rounded `{rounded.xl}`, padding `{spacing.xl}`, border `1px solid {colors.hairline}`.\n\n**`card-feature`** — Quieter feature panel on light gray.\n- Background `{colors.surface}`, rounded `{rounded.xl}`, padding `{spacing.xxl}`.\n\n**`card-recommendation`** — \"Recommended Reading\" tile in documentation footer.\n- Background `{colors.canvas}`, rounded `{rounded.lg}`, padding `{spacing.lg}`, border `1px solid {colors.hairline}`.\n\n**`promo-cta-card`** — Bright orange \"Refunds of 10%...\" promo strip with embedded CTA pill.\n- Background `{colors.brand-coral}`, text `{colors.on-dark}`, rounded `{rounded.hero}`, padding `{spacing.section}`. Embedded button uses `button-tertiary` (white pill on coral) for the \"Join Now\" action.\n\n**`ai-product-tile`** — White card in the AI Product Matrix grid (Agent, Hailuo Video, MiniMax Audio).\n- Background `{colors.canvas}`, rounded `{rounded.xxxl}`, padding `{spacing.xl}`, border `1px solid {colors.hairline}`. Carries an icon/illustration top, title `{typography.card-title}`, description `{typography.body-sm}`.\n\n### Inputs & Forms\n\n**`text-input`** — Standard text field.\n- Background `{colors.canvas}`, text `{colors.ink}`, border `1px solid {colors.hairline}`, rounded `{rounded.md}`, padding `{spacing.sm} {spacing.md}`, height 40px.\n\n**`text-input-focused`** — Activated state.\n- Border switches to `2px solid {colors.brand-blue-deep}`.\n\n**`text-input-error`** — Validation error state.\n- Border switches to `1px solid #d45656`; error label below in matching red `{typography.body-sm}`.\n\n**`search-pill`** — Documentation top-bar search field.\n- Background `{colors.surface}`, text `{colors.steel}`, typography `{typography.body-sm}`, rounded `{rounded.md}`, height 36px, border `1px solid {colors.hairline}`.\n\n### Tabs\n\n**`segmented-tab`** + **`segmented-tab-active`** — Underline-style tab navigation (Benchmark / Self-Evaluation / Multi-Agent Collaboration on the M2.7 page).\n- Inactive: text `{colors.steel}`, transparent background, padding `{spacing.md} {spacing.lg}`. Active: text shifts to `{colors.ink}`, 2px bottom border in `{colors.ink}`.\n\n**`pill-tab`** + **`pill-tab-active`** — Pricing-page tab nav (Token Plan / Audio Subscription / Video Package).\n- Inactive: background `{colors.canvas}`, text `{colors.steel}`, border `1px solid {colors.hairline}`, padding `{spacing.xs} {spacing.md}`, rounded `{rounded.full}`.\n- Active: background `{colors.primary}`, text `{colors.on-primary}`, no border (or matching black border).\n\n### Badges & Status\n\n**`badge-success`** — Pale-green confirmation badge (\"Available\", \"Active\").\n- Background `{colors.success-bg}`, text `{colors.success-text}`, typography `{typography.caption-bold}`, rounded `{rounded.full}`, padding `4px 10px`.\n\n**`badge-new`** — Coral \"NEW\" / \"Live\" pill for fresh releases.\n- Background `{colors.brand-coral}`, text `{colors.on-dark}`, typography `{typography.caption-bold}`, rounded `{rounded.full}`, padding `4px 10px`.\n\n**`badge-beta`** — Pale-blue \"BETA\" / informational pill.\n- Background `{colors.brand-blue-200}`, text `{colors.brand-blue-deep}`, typography `{typography.caption-bold}`, rounded `{rounded.full}`, padding `4px 10px`.\n\n**`badge-code`** — Inline code-style chip (\"Code\", \"API\").\n- Background `{colors.brand-blue-200}`, text `{colors.brand-blue-deep}`, typography `{typography.caption-bold}`, rounded `{rounded.sm}`, padding `2px 6px`.\n\n**`promo-banner`** — Sticky black promotional strip ABOVE the top nav (\"Invite & Earn — Rewards for Both!\").\n- Background `{colors.primary}`, text `{colors.on-primary}`, typography `{typography.body-sm-medium}`, padding `{spacing.sm} {spacing.lg}`. Carries one-line copy with optional inline link.\n\n### Data Tables\n\n**`data-table`** — Documentation models comparison table.\n- Background `{colors.canvas}`, text `{colors.ink}`, typography `{typography.body-sm}`, rounded `{rounded.md}`, border `1px solid {colors.hairline}`.\n\n**`data-table-header`** — Top header row of the data table.\n- Background `{colors.surface}`, text `{colors.steel}`, typography `{typography.caption-bold}`, padding `{spacing.sm} {spacing.md}`.\n\n**`data-table-row`** — Body rows.\n- Background `{colors.canvas}`, text `{colors.ink}`, typography `{typography.body-sm}`, padding `{spacing.md}`, bottom border `1px solid {colors.hairline-soft}`.\n\n### Navigation\n\n**Top Navigation (Marketing)** — Sticky white bar with logo, link list, and right-side CTAs.\n- Background `{colors.canvas}`, height ~64px, bottom border `1px solid {colors.hairline-soft}`.\n- Left: MiniMax wordmark + horizontal link list (Models, Product, API, Company).\n- Right: black-pill \"Contact Us\" + outlined-pill \"Login\".\n\n**Top Navigation (Documentation/Platform)** — Compressed nav with center search-pill and right-side account/upgrade CTAs.\n- Background `{colors.canvas}`, height ~56px, with search-pill at center and \"Documentation / Account / Subscribe\" links + black-pill \"Sign Up\" right.\n\n**`sidebar-nav-item`** + **`sidebar-nav-item-active`** — Documentation left rail link entries.\n- Inactive: background transparent, text `{colors.charcoal}`, typography `{typography.body-sm}`, rounded `{rounded.sm}`, padding `{spacing.xs} {spacing.md}`.\n- Active: background `{colors.surface}`, text `{colors.ink}`, typography `{typography.body-sm-medium}`.\n\n**`doc-toc-item`** — Right-rail table-of-contents links.\n- Background transparent, text `{colors.steel}`, typography `{typography.body-sm}`, padding `{spacing.xs} 0`. Active item color shifts to `{colors.ink}`.\n\n### Signature Components\n\n**`hero-band-marketing`** — Centered hero with massive 80px display + dual-CTA pair.\n- Layout: centered headline in `{typography.hero-display}` ({colors.ink}), centered subtitle in `{typography.subtitle}` ({colors.steel}), centered button row (`button-primary` + `button-secondary`).\n\n**`product-matrix-grid`** — 4-column horizontal scroll of vibrant gradient product cards (homepage \"Full-Stack Model Matrix\").\n- Each tile uses one of the `product-card-*` variants (coral, magenta, blue, purple, photo).\n- Card title in `{typography.display-lg}` (M2.7 wordmark) or `{typography.heading-lg}` (Music 2.6).\n- Below the wordmark: thin tagline in `{typography.body-sm}` 80% white opacity.\n- Optional badge top-right: `badge-new`.\n- Card heights are uniform (~360–400px); the row scrolls horizontally on mobile.\n\n**`ai-product-matrix`** — 4-column grid of white product tiles below the vibrant matrix (Agent / Hailuo Video / Audio / Video).\n- Each tile is `ai-product-tile` chrome.\n- Top: 100px-tall illustration zone (often line-art icon or 3D mark).\n- Below: title in `{typography.card-title}`, description in `{typography.body-sm}` `{colors.steel}`.\n\n**`docs-prose-block`** — Documentation main content area.\n- Max-width ~720px, centered. Body in `{typography.body-md}` `{colors.charcoal}` line-height 1.6.\n- Inline code in `{typography.body-md}` monospace fallback with `{colors.surface}` background and `{rounded.xs}` corners.\n\n**`models-comparison-table`** — Documentation table comparing model sizes and features.\n- Uses `data-table` chrome. Each row carries a model name (linkified, in `{colors.ink}` body-sm-medium), a description column (`{colors.charcoal}`), and a features bullet list column.\n\n**`testimonial-stat-row`** — Stats strip (\"214,000+ Enterprise Clients & Developers\", \"0+ Countries Served\").\n- Horizontal row of 4 stat cells, each cell with a large number in `{typography.heading-lg}` `{colors.ink}` and a label below in `{typography.body-sm}` `{colors.steel}`.\n\n**`footer-region`** — Dense black-canvas multi-column footer.\n- Background `{colors.footer-bg}`, padding `{spacing.section} {spacing.xxl}`.\n- Top row: MiniMax wordmark (\"intelligence with everyone\" tagline) and social icons (X, Twitter, GitHub, etc.).\n- Body: 4-column link grid (Research / Product / API / Company / News).\n- Section headers in `{typography.body-sm-medium}` `{colors.on-dark}`.\n\n**`footer-link`** — Individual link entry inside the footer column.\n- Background transparent, text `{colors.muted}`, typography `{typography.body-sm}`, padding `{spacing.xxs} 0`. Active/visited states do not change color — only opacity shifts on activation.",
+    "Do's and Don'ts": "### Do\n- Use `{colors.primary}` (black) as the dominant CTA — it's the brand's most recognizable interactive element.\n- Reserve product brand colors (`{colors.brand-coral}`, `{colors.brand-magenta}`, `{colors.brand-blue}`, `{colors.brand-purple}`) ONLY for product-identity moments — never for general buttons or text.\n- Pair `{rounded.hero}` (32px) gradient cards with `{rounded.xl}` (16px) white cards in the same viewport — the radius contrast is the visual signature.\n- Apply `{rounded.full}` to every button, every pill tab, every badge.\n- Use `{typography.hero-display}` (80px) with -2px letter-spacing for hero displays — never compromise the leading or letter-spacing.\n- Treat each model/product line as a distinct color identity. M2.7 is coral, Music is magenta, Hailuo is blue. These are brand assignments, not free choices.\n\n### Don't\n- Don't use brand-coral or brand-magenta on body text or large surfaces — they lose meaning when overused.\n- Don't soften corners on buttons (anything less than `{rounded.full}`); the pill is a brand signature.\n- Don't introduce a second display typeface; DM Sans handles every role.\n- Don't reduce hero leading below 1.10 — the brand needs that breathing room on the 80px display.\n- Don't apply heavy shadows on white cards; flat-with-borders is the documentation default.\n- Don't put gradient backgrounds on standard buttons; gradients are reserved for product-card identity moments.",
+    "Responsive Behavior": "### Breakpoints\n| Name | Width | Key Changes |\n|---|---|---|\n| Mobile (small) | < 480px | Single column. Hero drops to 40px. Pill nav collapses to hamburger. Product matrix horizontal-scroll. Footer 1-column accordion. |\n| Mobile (large) | 480 – 767px | Same as small but AI product matrix renders 2-up. |\n| Tablet | 768 – 1023px | 2-column AI product matrix. Pill-tab nav returns. Documentation sidebar collapses to drawer. |\n| Desktop | 1024 – 1279px | Full 4-column product matrix; 3-column docs grid (sidebar / body / TOC). |\n| Wide Desktop | ≥ 1280px | Wider hero gutters, larger product photography, fixed 220px sidebar. |\n\n### Touch Targets\n- Pill buttons render at 38–40px effective height — bumps to 44px on mobile via padding override.\n- Circular icon buttons: 36×36px desktop → 44×44px on mobile.\n- Form inputs render at 40px height; bumps to 44px on mobile.\n- Sidebar nav items render at ~32px tall — bumps to 44px on mobile drawers.\n\n### Collapsing Strategy\n- **Promo banner** stays full-width; collapses to single line at < 480px with truncation.\n- **Top nav** below 1024px collapses to hamburger; horizontal links move into drawer.\n- **Documentation grid**: 3-column desktop → sidebar-drawer at < 1024px → single-column with collapsible sidebar at < 768px.\n- **Product matrix**: 4-column desktop → horizontal-scroll at < 1024px (carousel-style with snap points).\n- **AI Product Matrix**: 4-column → 2-column at tablet → 1-column at mobile.\n- **Hero typography**: `{typography.hero-display}` (80px) → 56px at < 1024px → 40px at < 768px → 32px at < 480px.\n- **Stats strip**: 4-column → 2×2 at < 768px → 1-column at < 480px.\n\n### Image Behavior\n- Product card imagery uses photographic content with internal gradient overlays; lazy-loaded below the fold.\n- AI product tile illustrations are SVG-based; remain crisp at all breakpoints.\n- Avatar imagery in testimonials uses 1:1 aspect ratio with `{rounded.full}` masking.",
+    "Iteration Guide": "1. Focus on ONE component at a time. The system has high internal consistency.\n2. Reference component names and tokens directly (`{colors.primary}`, `{component-name}-pressed`, `{rounded.full}`) — do not paraphrase.\n3. Run `npx @google/design.md lint DESIGN.md` after edits to catch broken refs and contrast issues.\n4. Add new variants as separate `components:` entries (`-pressed`, `-disabled`, `-active`).\n5. Default to `{typography.body-md}` for body and `{typography.subtitle}` for emphasis. Headlines step down `hero-display → display-lg → heading-lg → heading-md → heading-sm`.\n6. Keep brand colors (coral, magenta, blue, purple) confined to product-card identity. If a brand color appears on a standard button or generic surface, ask whether it earned that surface.\n7. Pill-shaped buttons (`{rounded.full}`) always; squared buttons signal \"third-party widget\" in this language.",
+    "Known Gaps": "- Specific dark-mode token values (canvas, surface, ink, hairline) are not surfaced on these pages; the brand has not yet shipped a published dark-mode palette.\n- Animation/transition timings are not extracted; recommend 150–200ms ease for hover/focus state transitions.\n- Form validation success state is not explicitly captured beyond defaults — implement following standard green-border + success badge patterns.\n- Code syntax highlighting palette inside docs is not formalized; documentation samples appear with system-default monospace and minimal coloring."
+  },
+  "frontmatter": {
+    "version": "alpha",
+    "name": "MiniMax-design-analysis",
+    "description": "MiniMax presents itself as a premium AI infrastructure brand through a striking duality — bold black-pill CTAs and stark white canvas for marketing, paired with vibrant gradient product cards (orange-red, magenta-pink, purple, blue) that turn each model release into a distinctive visual identity. The system uses DM Sans across all surfaces, employs an oversized 80px hero display, anchors major actions in deep near-black pills, and layers content density via a 3-column documentation grid with sidebar nav, prose body, and TOC. Coverage spans the marketing homepage, model showcase pages, developer documentation, and platform pricing surfaces.",
+    "colors": {
+      "primary": "#0a0a0a",
+      "on-primary": "#ffffff",
+      "primary-soft": "#181e25",
+      "brand-coral": "#ff5530",
+      "brand-magenta": "#ea5ec1",
+      "brand-blue": "#1456f0",
+      "brand-blue-mid": "#3b82f6",
+      "brand-blue-deep": "#1d4ed8",
+      "brand-blue-700": "#17437d",
+      "brand-cyan": "#3daeff",
+      "brand-blue-200": "#bfdbfe",
+      "brand-purple": "#a855f7",
+      "canvas": "#ffffff",
+      "surface": "#f7f8fa",
+      "surface-soft": "#f2f3f5",
+      "hairline": "#e5e7eb",
+      "hairline-soft": "#eaecf0",
+      "ink": "#0a0a0a",
+      "ink-strong": "#000000",
+      "charcoal": "#222222",
+      "slate": "#45515e",
+      "steel": "#5f5f5f",
+      "stone": "#8e8e93",
+      "muted": "#a8aab2",
+      "success-bg": "#e8ffea",
+      "success-text": "#1ba673",
+      "on-dark": "#ffffff",
+      "footer-bg": "#0a0a0a"
+    },
+    "typography": {
+      "hero-display": {
+        "fontFamily": "DM Sans",
+        "fontSize": "80px",
+        "fontWeight": 600,
+        "lineHeight": 1.1,
+        "letterSpacing": "-2px"
+      },
+      "display-lg": {
+        "fontFamily": "DM Sans",
+        "fontSize": "56px",
+        "fontWeight": 600,
+        "lineHeight": 1.1,
+        "letterSpacing": "-1.5px"
+      },
+      "heading-lg": {
+        "fontFamily": "DM Sans",
+        "fontSize": "40px",
+        "fontWeight": 600,
+        "lineHeight": 1.2,
+        "letterSpacing": "-1px"
+      },
+      "heading-md": {
+        "fontFamily": "DM Sans",
+        "fontSize": "32px",
+        "fontWeight": 600,
+        "lineHeight": 1.25,
+        "letterSpacing": "-0.5px"
+      },
+      "heading-sm": {
+        "fontFamily": "DM Sans",
+        "fontSize": "24px",
+        "fontWeight": 600,
+        "lineHeight": 1.3
+      },
+      "card-title": {
+        "fontFamily": "DM Sans",
+        "fontSize": "20px",
+        "fontWeight": 600,
+        "lineHeight": 1.4
+      },
+      "subtitle": {
+        "fontFamily": "DM Sans",
+        "fontSize": "18px",
+        "fontWeight": 500,
+        "lineHeight": 1.5
+      },
+      "body-md": {
+        "fontFamily": "DM Sans",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": 1.5
+      },
+      "body-md-bold": {
+        "fontFamily": "DM Sans",
+        "fontSize": "16px",
+        "fontWeight": 700,
+        "lineHeight": 1.5
+      },
+      "body-sm": {
+        "fontFamily": "DM Sans",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.5
+      },
+      "body-sm-medium": {
+        "fontFamily": "DM Sans",
+        "fontSize": "14px",
+        "fontWeight": 500,
+        "lineHeight": 1.5
+      },
+      "caption": {
+        "fontFamily": "DM Sans",
+        "fontSize": "13px",
+        "fontWeight": 400,
+        "lineHeight": 1.7
+      },
+      "caption-bold": {
+        "fontFamily": "DM Sans",
+        "fontSize": "13px",
+        "fontWeight": 600,
+        "lineHeight": 1.5
+      },
+      "micro": {
+        "fontFamily": "DM Sans",
+        "fontSize": "12px",
+        "fontWeight": 400,
+        "lineHeight": 1.5
+      },
+      "button-md": {
+        "fontFamily": "DM Sans",
+        "fontSize": "14px",
+        "fontWeight": 600,
+        "lineHeight": 1.4
+      }
+    },
+    "rounded": {
+      "xs": "4px",
+      "sm": "6px",
+      "md": "8px",
+      "lg": "12px",
+      "xl": "16px",
+      "xxl": "20px",
+      "xxxl": "24px",
+      "hero": "32px",
+      "full": "9999px"
+    },
+    "spacing": {
+      "xxs": "4px",
+      "xs": "8px",
+      "sm": "12px",
+      "md": "16px",
+      "lg": "20px",
+      "xl": "24px",
+      "xxl": "32px",
+      "xxxl": "40px",
+      "section-sm": "48px",
+      "section": "64px",
+      "section-lg": "80px",
+      "hero": "96px"
+    },
+    "components": {
+      "button-primary": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.full}",
+        "padding": "11px 24px"
+      },
+      "button-primary-pressed": {
+        "backgroundColor": "{colors.charcoal}",
+        "textColor": "{colors.on-primary}"
+      },
+      "button-primary-disabled": {
+        "backgroundColor": "{colors.hairline}",
+        "textColor": "{colors.muted}"
+      },
+      "button-secondary": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.full}",
+        "padding": "11px 24px",
+        "border": "1px solid {colors.ink}"
+      },
+      "button-tertiary": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.full}",
+        "padding": "11px 24px",
+        "border": "1px solid {colors.hairline}"
+      },
+      "button-link": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-sm-medium}",
+        "padding": "8px 0"
+      },
+      "button-icon-circular": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "rounded": "{rounded.full}",
+        "size": "36px",
+        "border": "1px solid {colors.hairline}"
+      },
+      "product-card-coral": {
+        "backgroundColor": "{colors.brand-coral}",
+        "textColor": "{colors.on-dark}",
+        "rounded": "{rounded.hero}",
+        "padding": "{spacing.xxl}"
+      },
+      "product-card-magenta": {
+        "backgroundColor": "{colors.brand-magenta}",
+        "textColor": "{colors.on-dark}",
+        "rounded": "{rounded.hero}",
+        "padding": "{spacing.xxl}"
+      },
+      "product-card-blue": {
+        "backgroundColor": "{colors.brand-blue}",
+        "textColor": "{colors.on-dark}",
+        "rounded": "{rounded.hero}",
+        "padding": "{spacing.xxl}"
+      },
+      "product-card-purple": {
+        "backgroundColor": "{colors.brand-purple}",
+        "textColor": "{colors.on-dark}",
+        "rounded": "{rounded.hero}",
+        "padding": "{spacing.xxl}"
+      },
+      "product-card-photo": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-dark}",
+        "rounded": "{rounded.hero}",
+        "padding": "{spacing.xxl}"
+      },
+      "card-base": {
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.xl}",
+        "padding": "{spacing.xl}",
+        "border": "1px solid {colors.hairline}"
+      },
+      "card-feature": {
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.xl}",
+        "padding": "{spacing.xxl}"
+      },
+      "card-recommendation": {
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.lg}",
+        "border": "1px solid {colors.hairline}"
+      },
+      "promo-cta-card": {
+        "backgroundColor": "{colors.brand-coral}",
+        "textColor": "{colors.on-dark}",
+        "rounded": "{rounded.hero}",
+        "padding": "{spacing.section}"
+      },
+      "text-input": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.md}",
+        "padding": "{spacing.sm} {spacing.md}",
+        "border": "1px solid {colors.hairline}",
+        "height": "40px"
+      },
+      "text-input-focused": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "border": "2px solid {colors.brand-blue-deep}"
+      },
+      "text-input-error": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "border": "1px solid #d45656"
+      },
+      "search-pill": {
+        "backgroundColor": "{colors.surface}",
+        "textColor": "{colors.steel}",
+        "typography": "{typography.body-sm}",
+        "rounded": "{rounded.md}",
+        "padding": "{spacing.xs} {spacing.md}",
+        "height": "36px",
+        "border": "1px solid {colors.hairline}"
+      },
+      "segmented-tab": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.steel}",
+        "typography": "{typography.button-md}",
+        "rounded": "0",
+        "padding": "{spacing.md} {spacing.lg}",
+        "border": "0 0 2px transparent solid"
+      },
+      "segmented-tab-active": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button-md}",
+        "border": "0 0 2px {colors.ink} solid"
+      },
+      "pill-tab": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.steel}",
+        "typography": "{typography.body-sm-medium}",
+        "rounded": "{rounded.full}",
+        "padding": "{spacing.xs} {spacing.md}",
+        "border": "1px solid {colors.hairline}"
+      },
+      "pill-tab-active": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "rounded": "{rounded.full}",
+        "border": "1px solid {colors.primary}"
+      },
+      "badge-success": {
+        "backgroundColor": "{colors.success-bg}",
+        "textColor": "{colors.success-text}",
+        "typography": "{typography.caption-bold}",
+        "rounded": "{rounded.full}",
+        "padding": "4px 10px"
+      },
+      "badge-new": {
+        "backgroundColor": "{colors.brand-coral}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.caption-bold}",
+        "rounded": "{rounded.full}",
+        "padding": "4px 10px"
+      },
+      "badge-beta": {
+        "backgroundColor": "{colors.brand-blue-200}",
+        "textColor": "{colors.brand-blue-deep}",
+        "typography": "{typography.caption-bold}",
+        "rounded": "{rounded.full}",
+        "padding": "4px 10px"
+      },
+      "badge-code": {
+        "backgroundColor": "{colors.brand-blue-200}",
+        "textColor": "{colors.brand-blue-deep}",
+        "typography": "{typography.caption-bold}",
+        "rounded": "{rounded.sm}",
+        "padding": "2px 6px"
+      },
+      "promo-banner": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.body-sm-medium}",
+        "padding": "{spacing.sm} {spacing.lg}"
+      },
+      "data-table": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-sm}",
+        "rounded": "{rounded.md}",
+        "border": "1px solid {colors.hairline}"
+      },
+      "data-table-header": {
+        "backgroundColor": "{colors.surface}",
+        "textColor": "{colors.steel}",
+        "typography": "{typography.caption-bold}",
+        "padding": "{spacing.sm} {spacing.md}"
+      },
+      "data-table-row": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-sm}",
+        "padding": "{spacing.md}",
+        "border": "0 0 1px {colors.hairline-soft} solid"
+      },
+      "sidebar-nav-item": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.charcoal}",
+        "typography": "{typography.body-sm}",
+        "rounded": "{rounded.sm}",
+        "padding": "{spacing.xs} {spacing.md}"
+      },
+      "sidebar-nav-item-active": {
+        "backgroundColor": "{colors.surface}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-sm-medium}"
+      },
+      "doc-toc-item": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.steel}",
+        "typography": "{typography.body-sm}",
+        "padding": "{spacing.xs} 0"
+      },
+      "ai-product-tile": {
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.xxxl}",
+        "padding": "{spacing.xl}",
+        "border": "1px solid {colors.hairline}"
+      },
+      "footer-region": {
+        "backgroundColor": "{colors.footer-bg}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.body-sm}",
+        "padding": "{spacing.section} {spacing.xxl}"
+      },
+      "footer-link": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.muted}",
+        "typography": "{typography.body-sm}",
+        "padding": "{spacing.xxs} 0"
+      },
+      "hero-band-marketing": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.hero-display}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.hero}"
+      },
+      "product-matrix-grid": {
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.hero}",
+        "padding": "{spacing.xxl}"
+      },
+      "ai-product-matrix": {
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.xxxl}",
+        "padding": "{spacing.xl}",
+        "border": "1px solid {colors.hairline}"
+      },
+      "docs-prose-block": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.charcoal}",
+        "typography": "{typography.body-md}",
+        "padding": "{spacing.xxl}"
+      },
+      "models-comparison-table": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-sm}",
+        "rounded": "{rounded.md}",
+        "border": "1px solid {colors.hairline}"
+      },
+      "testimonial-stat-row": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.heading-lg}",
+        "padding": "{spacing.xl}"
+      }
+    }
+  },
+  "brandAsset": {
+    "type": "text-wordmark",
+    "label": "MiniMax"
+  }
+}

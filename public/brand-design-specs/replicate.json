@@ -1,0 +1,803 @@
+{
+  "colors": {
+    "primary": "#ea2804",
+    "primary-deep": "#c01f00",
+    "on-primary": "#ffffff",
+    "ink": "#202020",
+    "body": "#3a3a3a",
+    "charcoal": "#575757",
+    "mute": "#646464",
+    "ash": "#8d8d8d",
+    "stone": "#bbbbbb",
+    "on-dark": "#fcfcfc",
+    "on-dark-mute": "rgba(252,252,252,0.72)",
+    "canvas": "#f9f7f3",
+    "surface-bone": "#f3f0e8",
+    "surface-card": "#ffffff",
+    "surface-dark": "#202020",
+    "surface-deep": "#000000",
+    "hairline": "rgba(32,32,32,0.12)",
+    "hairline-strong": "#202020",
+    "divider-dark": "rgba(255,255,255,0.2)",
+    "hero-warm": "#ea2804",
+    "hero-glow": "#ff6a3d",
+    "hero-pink": "#f4a8a0",
+    "badge-success": "#2b9a66",
+    "link": "#ea2804",
+    "ring-focus": "rgba(59,130,246,0.5)",
+    "github-dark": "#24292e"
+  },
+  "typography": {
+    "display-xxl": {
+      "fontFamily": "rb-freigeist-neue",
+      "fontSize": "128px",
+      "fontWeight": 700,
+      "lineHeight": 1,
+      "letterSpacing": "-3px",
+      "declaredFamily": "rb-freigeist-neue",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "display-xl": {
+      "fontFamily": "rb-freigeist-neue",
+      "fontSize": "72px",
+      "fontWeight": 700,
+      "lineHeight": 1,
+      "letterSpacing": "-1.8px",
+      "declaredFamily": "rb-freigeist-neue",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "display-lg": {
+      "fontFamily": "rb-freigeist-neue",
+      "fontSize": "48px",
+      "fontWeight": 700,
+      "lineHeight": 1,
+      "letterSpacing": "-1px",
+      "declaredFamily": "rb-freigeist-neue",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "display-md": {
+      "fontFamily": "rb-freigeist-neue",
+      "fontSize": "30px",
+      "fontWeight": 600,
+      "lineHeight": 1.2,
+      "letterSpacing": "-0.5px",
+      "declaredFamily": "rb-freigeist-neue",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "heading-lg": {
+      "fontFamily": "basier-square",
+      "fontSize": "38.4px",
+      "fontWeight": 600,
+      "lineHeight": 0.83,
+      "letterSpacing": "-0.5px",
+      "declaredFamily": "basier-square",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "heading-md": {
+      "fontFamily": "basier-square",
+      "fontSize": "24px",
+      "fontWeight": 600,
+      "lineHeight": 1.33,
+      "letterSpacing": "-0.35px",
+      "declaredFamily": "basier-square",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "heading-sm": {
+      "fontFamily": "basier-square",
+      "fontSize": "20px",
+      "fontWeight": 600,
+      "lineHeight": 1.4,
+      "letterSpacing": "-0.3px",
+      "declaredFamily": "basier-square",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "subtitle": {
+      "fontFamily": "rb-freigeist-neue",
+      "fontSize": "18px",
+      "fontWeight": 600,
+      "lineHeight": 1.56,
+      "letterSpacing": 0,
+      "declaredFamily": "rb-freigeist-neue",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "body-lg": {
+      "fontFamily": "basier-square",
+      "fontSize": "18px",
+      "fontWeight": 400,
+      "lineHeight": 1.56,
+      "letterSpacing": 0,
+      "declaredFamily": "basier-square",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "body-md": {
+      "fontFamily": "basier-square",
+      "fontSize": "16px",
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "letterSpacing": 0,
+      "declaredFamily": "basier-square",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "body-sm": {
+      "fontFamily": "basier-square",
+      "fontSize": "14px",
+      "fontWeight": 400,
+      "lineHeight": 1.43,
+      "letterSpacing": 0,
+      "declaredFamily": "basier-square",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "button-md": {
+      "fontFamily": "basier-square",
+      "fontSize": "16px",
+      "fontWeight": 600,
+      "lineHeight": 1,
+      "letterSpacing": 0,
+      "declaredFamily": "basier-square",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "button-sm": {
+      "fontFamily": "basier-square",
+      "fontSize": "14px",
+      "fontWeight": 600,
+      "lineHeight": 1,
+      "letterSpacing": 0,
+      "declaredFamily": "basier-square",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "caption": {
+      "fontFamily": "basier-square",
+      "fontSize": "12px",
+      "fontWeight": 400,
+      "lineHeight": 1.33,
+      "letterSpacing": 0,
+      "declaredFamily": "basier-square",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "caption-tight": {
+      "fontFamily": "basier-square",
+      "fontSize": "14px",
+      "fontWeight": 600,
+      "lineHeight": 1.43,
+      "letterSpacing": "-0.35px",
+      "declaredFamily": "basier-square",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "code-md": {
+      "fontFamily": "jetbrains-mono",
+      "fontSize": "14px",
+      "fontWeight": 400,
+      "lineHeight": 1.43,
+      "letterSpacing": 0,
+      "declaredFamily": "jetbrains-mono",
+      "renderFallback": "monospace"
+    },
+    "code-sm": {
+      "fontFamily": "jetbrains-mono",
+      "fontSize": "11px",
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "letterSpacing": 0,
+      "declaredFamily": "jetbrains-mono",
+      "renderFallback": "monospace"
+    }
+  },
+  "spacing": {
+    "xxs": "2px",
+    "xs": "4px",
+    "sm": "8px",
+    "md": "12px",
+    "lg": "16px",
+    "xl": "24px",
+    "xxl": "32px",
+    "xxxl": "48px",
+    "section": "96px",
+    "band": "160px"
+  },
+  "radius": {
+    "none": "0px",
+    "xs": "4px",
+    "sm": "6px",
+    "md": "10px",
+    "lg": "16px",
+    "full": "9999px"
+  },
+  "border": {},
+  "motion": {
+    "rules": [
+      "- **Hero Pink** (`{colors.hero-pink}` — `#f4a8a0`): a warm pink wash that softens the bottom edge of the hero band before it transitions to cream."
+    ]
+  },
+  "depth": {
+    "Elevation & Depth": "| Level | Treatment | Use |\n|---|---|---|\n| 0 — flat | No shadow, no border | Default cream canvas, full-bleed bands. |\n| 1 — outline | 1px solid `{colors.hairline}` or `{colors.hairline-strong}` | Model cards, pricing tiers, collection tiles. |\n| 2 — bone inset | Surface colour shift to `{colors.surface-bone}` inside a `{colors.canvas}` band | Feature group containers, \"How it works\" walkthrough. |\n| 3 — dark inversion | Card swaps to `{colors.surface-dark}` against cream | Code wells, featured pricing tier, \"Scale on Replicate\" hero card. |\n| 4 — soft drop | `0 8px 24px rgba(32,32,32,0.08)` | Hover-anchored model thumbnails (visual only — not interaction-state-documented). |\n\nDrop shadows exist in the extracted tokens but are restrained — used sparingly to lift photography thumbnails one step off the cream canvas. The dominant elevation language is colour-blocking.\n\n### Decorative Depth\n- **Hero atmospheric mesh** — the orange-to-pink gradient backing the home hero is a layered radial mesh: `{colors.primary}` core → `{colors.hero-glow}` mid-stop → `{colors.hero-pink}` outer wash. Reserved for the home hero band only.\n- **Code-story dark band** — the \"How it works\" section uses `{colors.surface-dark}` full-bleed with a single hairline `{colors.divider-dark}` separating narrative copy and code well.\n- **Contributor mosaic** — the home page features a horizontally-scrolling band of circular avatars (`{component.contributor-avatar}`) over a textured cream canvas; this is the only place avatars appear at the brand level."
+  },
+  "components": {
+    "button-primary": {
+      "backgroundColor": "#ea2804",
+      "textColor": "#ffffff",
+      "typography": {
+        "fontFamily": "basier-square",
+        "fontSize": "16px",
+        "fontWeight": 600,
+        "lineHeight": 1,
+        "letterSpacing": 0
+      },
+      "rounded": "9999px",
+      "padding": "12px 24px",
+      "height": "44px"
+    },
+    "button-primary-pressed": {
+      "backgroundColor": "#c01f00",
+      "textColor": "#ffffff",
+      "typography": {
+        "fontFamily": "basier-square",
+        "fontSize": "16px",
+        "fontWeight": 600,
+        "lineHeight": 1,
+        "letterSpacing": 0
+      },
+      "rounded": "9999px"
+    },
+    "button-dark": {
+      "backgroundColor": "#202020",
+      "textColor": "#fcfcfc",
+      "typography": {
+        "fontFamily": "basier-square",
+        "fontSize": "16px",
+        "fontWeight": 600,
+        "lineHeight": 1,
+        "letterSpacing": 0
+      },
+      "rounded": "9999px",
+      "padding": "12px 24px",
+      "height": "44px"
+    },
+    "button-outline": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#202020",
+      "typography": {
+        "fontFamily": "basier-square",
+        "fontSize": "16px",
+        "fontWeight": 600,
+        "lineHeight": 1,
+        "letterSpacing": 0
+      },
+      "rounded": "9999px",
+      "padding": "11px 23px",
+      "height": "44px"
+    },
+    "button-ghost": {
+      "backgroundColor": "#f9f7f3",
+      "textColor": "#202020",
+      "typography": {
+        "fontFamily": "basier-square",
+        "fontSize": "16px",
+        "fontWeight": 600,
+        "lineHeight": 1,
+        "letterSpacing": 0
+      },
+      "rounded": "9999px",
+      "padding": "8px 16px",
+      "height": "36px"
+    },
+    "button-icon": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#202020",
+      "rounded": "9999px",
+      "size": "36px"
+    },
+    "text-input": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#202020",
+      "typography": {
+        "fontFamily": "basier-square",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "rounded": "9999px",
+      "padding": "12px 20px",
+      "height": "44px"
+    },
+    "hero-band": {
+      "backgroundColor": "#ea2804",
+      "textColor": "#fcfcfc",
+      "typography": {
+        "fontFamily": "rb-freigeist-neue",
+        "fontSize": "72px",
+        "fontWeight": 700,
+        "lineHeight": 1,
+        "letterSpacing": "-1.8px"
+      },
+      "rounded": "0px",
+      "padding": "96px 32px"
+    },
+    "model-card": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#202020",
+      "typography": {
+        "fontFamily": "basier-square",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "rounded": "10px",
+      "padding": "16px"
+    },
+    "collection-tile": {
+      "backgroundColor": "#f9f7f3",
+      "textColor": "#202020",
+      "typography": {
+        "fontFamily": "basier-square",
+        "fontSize": "24px",
+        "fontWeight": 600,
+        "lineHeight": 1.33,
+        "letterSpacing": "-0.35px"
+      },
+      "rounded": "10px",
+      "padding": "24px"
+    },
+    "pricing-tier": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#202020",
+      "typography": {
+        "fontFamily": "basier-square",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "rounded": "16px",
+      "padding": "32px"
+    },
+    "pricing-tier-featured": {
+      "backgroundColor": "#202020",
+      "textColor": "#fcfcfc",
+      "typography": {
+        "fontFamily": "basier-square",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "rounded": "16px",
+      "padding": "32px"
+    },
+    "code-block": {
+      "backgroundColor": "#202020",
+      "textColor": "#fcfcfc",
+      "typography": {
+        "fontFamily": "jetbrains-mono",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.43,
+        "letterSpacing": 0
+      },
+      "rounded": "10px",
+      "padding": "24px"
+    },
+    "code-tab": {
+      "backgroundColor": "#000000",
+      "textColor": "rgba(252,252,252,0.72)",
+      "typography": {
+        "fontFamily": "jetbrains-mono",
+        "fontSize": "11px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "rounded": "4px",
+      "padding": "6px 12px"
+    },
+    "badge-status": {
+      "backgroundColor": "#2b9a66",
+      "textColor": "#fcfcfc",
+      "typography": {
+        "fontFamily": "basier-square",
+        "fontSize": "12px",
+        "fontWeight": 400,
+        "lineHeight": 1.33,
+        "letterSpacing": 0
+      },
+      "rounded": "9999px",
+      "padding": "4px 10px"
+    },
+    "badge-tag": {
+      "backgroundColor": "#f9f7f3",
+      "textColor": "#202020",
+      "typography": {
+        "fontFamily": "basier-square",
+        "fontSize": "12px",
+        "fontWeight": 400,
+        "lineHeight": 1.33,
+        "letterSpacing": 0
+      },
+      "rounded": "9999px",
+      "padding": "4px 10px"
+    },
+    "nav-bar": {
+      "backgroundColor": "#f9f7f3",
+      "textColor": "#202020",
+      "typography": {
+        "fontFamily": "basier-square",
+        "fontSize": "14px",
+        "fontWeight": 600,
+        "lineHeight": 1,
+        "letterSpacing": 0
+      },
+      "rounded": "0px",
+      "height": "60px"
+    },
+    "sub-nav-pill": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#202020",
+      "typography": {
+        "fontFamily": "basier-square",
+        "fontSize": "14px",
+        "fontWeight": 600,
+        "lineHeight": 1,
+        "letterSpacing": 0
+      },
+      "rounded": "9999px",
+      "padding": "6px 14px"
+    },
+    "contributor-avatar": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#202020",
+      "rounded": "9999px",
+      "size": "40px"
+    },
+    "footer": {
+      "backgroundColor": "#000000",
+      "textColor": "#fcfcfc",
+      "typography": {
+        "fontFamily": "basier-square",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.43,
+        "letterSpacing": 0
+      },
+      "rounded": "0px",
+      "padding": "64px 32px"
+    }
+  },
+  "layout": "gallery",
+  "traits": "Replicate's marketing surfaces pair the warm-cream developer-tools aesthetic\nof an indie ML playground with a confident hot-orange brand accent and a\nsignature display typeface (rb-freigeist-neue) sized aggressively large at\n72px+. The system reads as \"AI lab notebook crossed with print magazine\":\ncream and bone surfaces, dark ink type, monospace code wells, irregular\nhand-drawn-feeling diagrams, and a rich orange used scarcely on the most\nconsequential CTA. Photography of contributors and example outputs is\nsquare-ish with mid-radius corners; everything else is borderless or hairline.\n",
+  "sections": {
+    "Overview": "Replicate is a developer-tools platform with the soul of an art zine. The\npublic marketing surfaces sit on a warm cream canvas (`{colors.canvas}` —\n`#f9f7f3`) rather than the white-or-near-black default of typical AI\ninfrastructure sites, and that single decision colours everything else:\nphotography reads as editorial, code wells read as printed pull-quotes, and\nthe brand orange (`{colors.primary}` — `#ea2804`) feels like a stamp rather\nthan a notification.\n\nThe typography is the load-bearing decoration. **rb-freigeist-neue** — a\nheavy, slightly condensed grotesque — appears at sizes up to 128px in hero\nbands, with a tight `lineHeight: 1.0` and negative letter-spacing that lets\nmulti-line headlines pack into geometric blocks. The companion family,\n**basier-square**, takes care of body, button labels, and metadata in the\n14–18px range. **JetBrains Mono** carries every code well, command, and\nexample. Three families, three jobs, no overlap.\n\nPage rhythm cycles between a default cream canvas, a bold full-bleed orange\nhero band, and a `{colors.surface-dark}` (`#202020`) section that hosts the\ncode stories — the \"how it works\" walkthrough. Curves are intentional and\nsoft: every interactive surface (buttons, inputs, tags, avatars) uses\n`{rounded.full}`, while content cards and code wells step up to `{rounded.md}`\nor `{rounded.lg}`. There are no sharp corners on Replicate; the system reads\nas friendly precision.\n\n**Key Characteristics:**\n- A warm cream canvas (`{colors.canvas}` — `#f9f7f3`) replaces the typical white background, paired with `{colors.surface-bone}` for inset cards.\n- Hot orange (`{colors.primary}` — `#ea2804`) is reserved for the primary CTA, the hero band, and inline link colour. Never decorative.\n- Display headlines run massive — `{typography.display-xxl}` at 128px in hero bands and `{typography.display-xl}` at 72px on section openers — with tight `lineHeight: 1.0` and negative letter-spacing.\n- Three-family typography stack: `rb-freigeist-neue` for display, `basier-square` for UI/body, `jetbrains-mono` for code.\n- Every interactive element is fully rounded (`{rounded.full}` 9999px) — buttons, inputs, badges, avatars — while content cards step to `{rounded.md}` 10px.\n- Dark code wells (`{colors.surface-dark}` background) sit inside the cream canvas as full-bleed reading surfaces, mimicking print pull-quotes.\n- Section rhythm: cream → orange hero → cream → dark code-story band → cream → black footer.",
+    "Colors": "### Brand & Accent\n- **Replicate Orange** (`{colors.primary}` — `#ea2804`): the brand accent. Reserved for the primary CTA, hero band background, and inline link colour. Treat as a stamp — one orange element per viewport at most.\n- **Orange Pressed** (`{colors.primary-deep}` — `#c01f00`): the active/pressed state of `{colors.primary}` — used on `{component.button-primary-pressed}`.\n- **Hero Glow** (`{colors.hero-glow}` — `#ff6a3d`): the lighter orange that appears in the radial atmospheric mesh behind the hero copy.\n- **Hero Pink** (`{colors.hero-pink}` — `#f4a8a0`): a warm pink wash that softens the bottom edge of the hero band before it transitions to cream.\n- **On-Primary** (`{colors.on-primary}` — `#ffffff`): label colour on top of `{colors.primary}` surfaces.\n\n### Surface\n- **Canvas** (`{colors.canvas}` — `#f9f7f3`): the default page background. Warm cream, never pure white.\n- **Surface Bone** (`{colors.surface-bone}` — `#f3f0e8`): a half-step deeper cream used for inset card groups and feature bands.\n- **Surface Card** (`{colors.surface-card}` — `#ffffff`): pure white for individual model cards, search inputs, and pricing tiers — the only place white appears.\n- **Surface Dark** (`{colors.surface-dark}` — `#202020`): code wells, featured pricing tier, and the \"how it works\" walkthrough band.\n- **Surface Deep** (`{colors.surface-deep}` — `#000000`): footer canvas and the inset code-tab strip inside `{component.code-block}`.\n- **Hairline** (`{colors.hairline}` — `rgba(32,32,32,0.12)`): low-contrast 1px dividers on cream surfaces.\n- **Hairline Strong** (`{colors.hairline-strong}` — `#202020`): button outlines, focused inputs, and structural separators.\n\n### Text\n- **Ink** (`{colors.ink}` — `#202020`): primary text colour. Notably warmer than `#000000`, matching the cream canvas.\n- **Body** (`{colors.body}` — `#3a3a3a`): long-form body copy where ink would feel too heavy at 18px+ line lengths.\n- **Charcoal** (`{colors.charcoal}` — `#575757`): captions, metadata, secondary nav.\n- **Mute** (`{colors.mute}` — `#646464`): supporting text and inactive labels.\n- **Ash** (`{colors.ash}` — `#8d8d8d`): tertiary text, placeholder copy.\n- **Stone** (`{colors.stone}` — `#bbbbbb`): disabled foreground, neutral icon outlines.\n- **On-Dark** (`{colors.on-dark}` — `#fcfcfc`): primary text on `{colors.surface-dark}` and `{colors.surface-deep}`.\n- **On-Dark Mute** (`{colors.on-dark-mute}` — `rgba(252,252,252,0.72)`): secondary text in dark regions; preserves the off-white feel without pure white pop.\n\n### Semantic\n- **Success** (`{colors.badge-success}` — `#2b9a66`): inline success badges and \"running\" status pills on model cards.\n- **Link** (`{colors.link}` — `#ea2804`): inline link colour — same as primary orange, intentionally pulling links into the brand accent.\n- **Focus Ring** (`{colors.ring-focus}` — `rgba(59,130,246,0.5)`): the default focus ring on interactive elements.\n- **GitHub Dark** (`{colors.github-dark}` — `#24292e`): the GitHub-branded button surface (kept off-brand-on-purpose to match GitHub's own tokens).",
+    "Typography": "### Font Family\n\nReplicate ships a deliberate three-family stack:\n\n- **rb-freigeist-neue** — proprietary heavy grotesque used for all display sizes (30px+). Carries the editorial-magazine personality through tight `lineHeight: 1.0` and negative letter-spacing.\n- **basier-square** — proprietary humanist sans-serif used for body, button labels, captions, and metadata.\n- **jetbrains-mono** — open-source monospace used in every code well and inline command.\n\nWhen proprietary families cannot be licensed, **Bricolage Grotesque** or **Migra** are credible substitutes for rb-freigeist-neue, and **Geist** or **Inter** can stand in for basier-square. JetBrains Mono is open-source and should always be used directly.\n\n### Hierarchy\n\n| Token | Size | Weight | Line Height | Letter Spacing | Use |\n|---|---|---|---|---|---|\n| `{typography.display-xxl}` | 128px | 700 | 1.0 | -3px | The single hero \"Run AI\" / \"Imagine what you can build\" headline. One per page. |\n| `{typography.display-xl}` | 72px | 700 | 1.0 | -1.8px | Section openers (\"How it works\", \"Scale on Replicate\"). |\n| `{typography.display-lg}` | 48px | 700 | 1.0 | -1px | Sub-section titles, pricing tier names. |\n| `{typography.display-md}` | 30px | 600 | 1.2 | -0.5px | Feature card titles. |\n| `{typography.heading-lg}` | 38.4px | 600 | 0.83 | -0.5px | Tightly-stacked basier-square headlines, used in pricing and enterprise hero. |\n| `{typography.heading-md}` | 24px | 600 | 1.33 | -0.35px | Card titles, model detail headers. |\n| `{typography.heading-sm}` | 20px | 600 | 1.4 | -0.3px | List section headers. |\n| `{typography.subtitle}` | 18px | 600 | 1.56 | 0 | Lead paragraphs in display sections. |\n| `{typography.body-lg}` | 18px | 400 | 1.56 | 0 | Marketing prose. |\n| `{typography.body-md}` | 16px | 400 | 1.5 | 0 | Default body. |\n| `{typography.body-sm}` | 14px | 400 | 1.43 | 0 | Captions, metadata. |\n| `{typography.button-md}` | 16px | 600 | 1.0 | 0 | Default button label. |\n| `{typography.button-sm}` | 14px | 600 | 1.0 | 0 | Compact button label, sub-nav pills. |\n| `{typography.caption}` | 12px | 400 | 1.33 | 0 | Footer disclosure, copyright. |\n| `{typography.caption-tight}` | 14px | 600 | 1.43 | -0.35px | Emphatic small caption used in pricing tier rows. |\n| `{typography.code-md}` | 14px | 400 | 1.43 | 0 | Code blocks and inline code. |\n| `{typography.code-sm}` | 11px | 400 | 1.5 | 0 | Code-tab labels and small inline tokens. |\n\n### Principles\n- Display sizes hold `lineHeight: 1.0` (or 0.83 on `{typography.heading-lg}`) so multi-line stacks read as single typographic blocks.\n- Negative letter-spacing scales with size — bigger types tighten more (-3px at 128px down to -0.3px at 20px). Body type stays at 0.\n- Body weight sits at 400 across `{typography.body-lg}` and `{typography.body-md}` — never bumped to 500 for emphasis. Emphasis comes from family change (basier-square → rb-freigeist-neue) rather than weight.\n- Code is never set in basier-square, even at small sizes — JetBrains Mono carries every literal command, every model slug, every API call.\n\n### Note on Font Substitutes\n\nWhen the proprietary families are unavailable, clamp display `lineHeight` to 1.0 explicitly and apply a -3% letter-spacing on display-xxl / display-xl to match the original tightness. Substitutes typically render with looser tracking by default.",
+    "Layout": "### Spacing System\n- **Base unit**: 4px, with the working scale on multiples of 4 / 8 / 16.\n- **Tokens**: `{spacing.xxs}` 2px · `{spacing.xs}` 4px · `{spacing.sm}` 8px · `{spacing.md}` 12px · `{spacing.lg}` 16px · `{spacing.xl}` 24px · `{spacing.xxl}` 32px · `{spacing.xxxl}` 48px · `{spacing.section}` 96px · `{spacing.band}` 160px.\n- Section padding: `{spacing.section}` (96px) vertical between full-width bands; `{spacing.band}` (160px) when a band needs extra editorial breathing room (the hero, the closing \"Imagine what you can build\" stripe).\n- Card internal padding: `{spacing.lg}` (16px) on `{component.model-card}`, `{spacing.xxl}` (32px) on `{component.pricing-tier}`.\n\n### Grid & Container\n- **Max content width** ≈ 1280px on body sections, 1440px on hero bands which run full-bleed.\n- **Model grid** on collections: 4 columns at desktop, 3 at tablet large, 2 at tablet, 1 at mobile.\n- **Pricing**: 3-tier grid centred at desktop, stacking vertically below 1024px; the centre tier flips to `{component.pricing-tier-featured}` (dark inversion) as the recommended option.\n- **Code-story sections**: a 2-up split — narrative copy left, code well right — collapsing to stacked at < 1024px.\n\n### Whitespace Philosophy\n- Whitespace on cream is generous and editorial — sections breathe at 96px and key bands open at 160px so the typography can scale up without feeling cramped.\n- Inside cards, the system tightens to 16–32px so model thumbnails, statuses, and metadata sit in a compact list-of-cards rhythm.\n- Hairline `{colors.hairline}` dividers replace shadow on cream surfaces; on dark surfaces, `{colors.divider-dark}` carries the equivalent role.",
+    "Elevation & Depth": "| Level | Treatment | Use |\n|---|---|---|\n| 0 — flat | No shadow, no border | Default cream canvas, full-bleed bands. |\n| 1 — outline | 1px solid `{colors.hairline}` or `{colors.hairline-strong}` | Model cards, pricing tiers, collection tiles. |\n| 2 — bone inset | Surface colour shift to `{colors.surface-bone}` inside a `{colors.canvas}` band | Feature group containers, \"How it works\" walkthrough. |\n| 3 — dark inversion | Card swaps to `{colors.surface-dark}` against cream | Code wells, featured pricing tier, \"Scale on Replicate\" hero card. |\n| 4 — soft drop | `0 8px 24px rgba(32,32,32,0.08)` | Hover-anchored model thumbnails (visual only — not interaction-state-documented). |\n\nDrop shadows exist in the extracted tokens but are restrained — used sparingly to lift photography thumbnails one step off the cream canvas. The dominant elevation language is colour-blocking.\n\n### Decorative Depth\n- **Hero atmospheric mesh** — the orange-to-pink gradient backing the home hero is a layered radial mesh: `{colors.primary}` core → `{colors.hero-glow}` mid-stop → `{colors.hero-pink}` outer wash. Reserved for the home hero band only.\n- **Code-story dark band** — the \"How it works\" section uses `{colors.surface-dark}` full-bleed with a single hairline `{colors.divider-dark}` separating narrative copy and code well.\n- **Contributor mosaic** — the home page features a horizontally-scrolling band of circular avatars (`{component.contributor-avatar}`) over a textured cream canvas; this is the only place avatars appear at the brand level.",
+    "Shapes": "### Border Radius Scale\n\n| Token | Value | Use |\n|---|---|---|\n| `{rounded.none}` | 0px | Hero bands, full-bleed sections, footer. |\n| `{rounded.xs}` | 4px | Code tabs, inline tags inside code wells. |\n| `{rounded.sm}` | 6px | Mid-radius callouts, small inset chips. |\n| `{rounded.md}` | 10px | Model cards, collection tiles, code wells. |\n| `{rounded.lg}` | 16px | Pricing tiers, larger feature cards. |\n| `{rounded.full}` | 9999px | Buttons, inputs, badges, avatars, pills. |\n\n### Photography Geometry\n- Model thumbnails: square (1:1) with `{rounded.md}` corners, full-bleed image to the card edge.\n- Hero example outputs: 4:3 or 16:9 with `{rounded.md}` corners.\n- Contributor avatars: circular (`{rounded.full}`), 40px on home, 32px in card metadata.\n- The hero band uses a stylised black-ink illustration (the \"tinkerer at the workbench\") as its photography stand-in — kept inside the orange band rather than overlaid on cream.",
+    "Components": "### Buttons\n\n**`button-primary`** — orange CTA\n- Background `{colors.primary}`, label `{colors.on-primary}`, type `{typography.button-md}`, padding `12px 24px`, `rounded: {rounded.full}`, height 44px.\n- The single most important action on a page (e.g. \"Sign in with GitHub\", \"Try a model\").\n- Pressed state lives in `button-primary-pressed` (background `{colors.primary-deep}`).\n\n**`button-dark`** — dark CTA\n- Background `{colors.surface-dark}`, label `{colors.on-dark}`, type `{typography.button-md}`, `rounded: {rounded.full}`.\n- Equal-weight secondary action paired with `{component.button-primary}`, or the primary action on cream when orange would be too loud.\n\n**`button-outline`** — outlined CTA\n- Background `{colors.surface-card}`, label `{colors.ink}`, 1px solid `{colors.hairline-strong}`, type `{typography.button-md}`, `rounded: {rounded.full}`.\n- Tertiary action; appears alongside primary/dark for \"View docs\", \"Read more\".\n\n**`button-ghost`** — inline button\n- Background `{colors.canvas}`, label `{colors.ink}`, no border, type `{typography.button-md}`, `rounded: {rounded.full}`, padding `8px 16px`.\n- Sub-actions inside cards and inline with body copy.\n\n**`button-icon`** — icon button\n- Background `{colors.surface-card}`, label `{colors.ink}`, 1px solid `{colors.hairline}`, `rounded: {rounded.full}`, 36×36px circular.\n- Carousel arrows, copy-to-clipboard, GitHub link icon.\n\n### Cards & Containers\n\n**`model-card`** — model listing card\n- Background `{colors.surface-card}`, text `{colors.ink}`, type `{typography.body-md}`, `rounded: {rounded.md}`, padding `{spacing.lg}` (16px).\n- Square thumbnail on top, model owner + name beneath in `{typography.body-sm}`, single-line description in `{colors.charcoal}`, status pill `{component.badge-status}` bottom-left.\n\n**`collection-tile`** — collection-of-models tile\n- Background `{colors.canvas}`, text `{colors.ink}`, type `{typography.heading-md}`, `rounded: {rounded.md}`, padding `{spacing.xl}` (24px).\n- Cream-on-cream tile inside a `{colors.surface-bone}` band, used for browsing model categories.\n\n**`pricing-tier`** — pricing tier card\n- Background `{colors.surface-card}`, text `{colors.ink}`, type `{typography.body-md}`, `rounded: {rounded.lg}`, padding `{spacing.xxl}` (32px).\n- 3-up grid; tier name in `{typography.display-lg}` (\"Free\", \"Pro\", \"Enterprise\"), price in `{typography.display-md}`.\n\n**`pricing-tier-featured`** — featured pricing tier\n- Background `{colors.surface-dark}`, text `{colors.on-dark}`, type `{typography.body-md}`, `rounded: {rounded.lg}`, padding `{spacing.xxl}`.\n- Centre tier flipped to dark inversion to mark \"recommended\".\n\n**`code-block`** — code well\n- Background `{colors.surface-dark}`, text `{colors.on-dark}`, type `{typography.code-md}`, `rounded: {rounded.md}`, padding `{spacing.xl}` (24px).\n- Tab strip on top using `{component.code-tab}` for switching between languages (Python, Node.js, cURL, HTTP).\n\n**`code-tab`** — code tab chip\n- Background `{colors.surface-deep}`, text `{colors.on-dark-mute}`, type `{typography.code-sm}`, `rounded: {rounded.xs}`, padding `6px 12px`.\n- Active tab swaps text colour to `{colors.on-dark}` and adds a 2px bottom underline in `{colors.primary}`.\n\n**`hero-band`** — full-bleed hero\n- Background `{colors.hero-warm}` with the atmospheric mesh detailed in Elevation, text `{colors.on-dark}`, type `{typography.display-xxl}` for the title.\n- Used only on the home page; secondary pages open with cream + `{typography.display-xl}`.\n\n### Inputs & Forms\n\n**`text-input`** — default input\n- Background `{colors.surface-card}`, text `{colors.ink}`, type `{typography.body-md}`, 1px solid `{colors.hairline}`, `rounded: {rounded.full}`, padding `12px 20px`, height 44px.\n- Pill-shaped search and email fields. Focus state adds a `{colors.ring-focus}` 3px ring.\n\n### Navigation\n\n**`nav-bar`** — top nav (desktop)\n- Background `{colors.canvas}`, type `{typography.button-sm}`, height 60px, single hairline `{colors.hairline}` bottom border.\n- Left: wordmark logo. Centre: top-level nav (\"Explore\", \"Pricing\", \"Docs\", \"Blog\"). Right: GitHub icon + \"Sign in\" link + `{component.button-primary}`.\n\n**`nav-bar`** (mobile)\n- Same height 60px, collapses centre nav into a hamburger icon. Logo stays left, sign-in CTA stays right.\n\n**`sub-nav-pill`** — sub-nav chip\n- Pill chips set in a horizontal row above content (e.g. \"All\", \"Featured\", \"Image generation\", \"Audio\"), `{component.sub-nav-pill}` styling.\n\n### Signature Components\n\n**`badge-status`** — model status badge\n- Background `{colors.badge-success}`, label `{colors.on-dark}`, type `{typography.caption}`, `rounded: {rounded.full}`, padding `4px 10px`.\n- Anchored on the bottom-left of model cards to indicate \"running\" or \"deployed\".\n\n**`badge-tag`** — neutral tag\n- Background `{colors.canvas}`, label `{colors.ink}`, 1px solid `{colors.hairline}`, type `{typography.caption}`, `rounded: {rounded.full}`, padding `4px 10px`.\n- Capability tags (\"text-to-image\", \"video\", \"audio\") on model cards.\n\n**`contributor-avatar`** — community contributor\n- Background `{colors.surface-card}` placeholder behind 1:1 photography, `rounded: {rounded.full}`, 40×40px (32px in metadata contexts).\n- Used in the home-page contributor mosaic.\n\n**`footer`** — global footer\n- Background `{colors.surface-deep}`, text `{colors.on-dark}`, type `{typography.body-sm}`, `rounded: {rounded.none}`, padding `64px 32px`.\n- Multi-column quick-links grid above a copyright row separated by `{colors.divider-dark}`.",
+    "Do's and Don'ts": "### Do\n- Use `{colors.canvas}` (cream) as the default page background. White (`{colors.surface-card}`) appears only on individual cards, inputs, and the hero illustration backdrop.\n- Reserve `{colors.primary}` for the primary CTA, the home hero band, and inline links — three roles, nothing else.\n- Set every interactive element to `{rounded.full}` — buttons, inputs, badges, avatars, pills.\n- Step content cards up to `{rounded.md}` (10px) or `{rounded.lg}` (16px) — never sharp corners.\n- Open hero bands with `{typography.display-xxl}` (128px) and `{typography.display-xl}` (72px) at `lineHeight: 1.0` with negative letter-spacing.\n- Use `rb-freigeist-neue` for all display, `basier-square` for UI/body, `jetbrains-mono` for code. Keep the lanes strict.\n- Render code in `{component.code-block}` with a `{colors.surface-dark}` background — code is print, not an inline grey box.\n- Pair photography with `{rounded.md}` corners and full-bleed crop inside cards.\n\n### Don't\n- Don't replace cream with pure white at the page level. The brand temperature comes from `{colors.canvas}`.\n- Don't introduce a secondary brand colour. Orange is the only accent; semantic green and focus blue are functional, not decorative.\n- Don't loosen display `lineHeight` past 1.0. Tight stacking is structural.\n- Don't bump body weight to 500 for emphasis — change family (`basier-square` → `rb-freigeist-neue`) instead.\n- Don't apply `{rounded.full}` to content cards. Pill-shaped cards break the rhythm.\n- Don't put code in a light grey box. Code wells are always `{colors.surface-dark}` or `{colors.surface-deep}`.\n- Don't use orange on body text or large surfaces — it loses its stamp quality immediately.\n- Don't add drop shadows on cream surfaces. Elevation is colour-blocking; shadows are reserved for floating thumbnails.",
+    "Responsive Behavior": "### Breakpoints\n\n| Name | Width | Key Changes |\n|---|---|---|\n| Desktop XL | ≥ 1440px | Full max-width 1280 body, hero band runs full-bleed, 4-up model grid. |\n| Desktop | 1280–1439px | Container shrinks; padding `{spacing.xl}` (24px) sides. |\n| Tablet Large | 1024–1279px | Model grid 3-up, code-story splits remain 2-up. |\n| Tablet | 768–1023px | Model grid 2-up, code-story stacks (narrative on top, code below), pricing stacks vertically. |\n| Mobile Large | 426–767px | Model grid 1-up at 480px+, nav collapses to hamburger, hero `{typography.display-xxl}` clamps to 64px. |\n| Mobile | ≤ 425px | All grids 1-up, hero clamps to 48px, section padding `{spacing.section}` collapses to 64px. |\n\n### Touch Targets\n- All buttons ship at minimum 44px tall on mobile; default `{component.button-primary}` is 44px tall — comfortably clearing WCAG AAA.\n- `{component.button-icon}` (36px) is bumped to 44px on mobile via increased padding.\n- `{component.sub-nav-pill}` stays at 36px on desktop and grows to 40px on mobile via vertical padding adjustment.\n\n### Collapsing Strategy\n- Top-level nav collapses to hamburger at < 1024px; the wordmark and `{component.button-primary}` stay anchored.\n- Hero `{typography.display-xxl}` clamps: 128px → 96px → 64px → 48px across the breakpoint ladder.\n- Pricing 3-up grid stacks vertically at < 1024px with the featured tier remaining centre-stacked.\n- Code-story splits switch from side-by-side to stacked at < 1024px, code well always second.\n- Sub-nav pills convert from a wrap row to a horizontal scroll-rail at < 768px.\n\n### Image Behavior\n- Model thumbnails serve at 1.5× and 2× DPR; below 768px the system swaps to a 600×600 export instead of 1200×1200.\n- Hero atmospheric mesh is rendered as a CSS gradient — no asset cost, no breakpoint variation.\n- Code-block contents wrap softly at < 1024px (no horizontal scroll); long lines break with a continuation marker.",
+    "Iteration Guide": "1. Focus on ONE component at a time. Most interactive elements share `{rounded.full}` and the `{colors.canvas}` / `{colors.surface-card}` pair — only the role-specific tokens (`{colors.primary}`, `{component.code-block}`) shift between variants.\n2. Reference component names and tokens directly (`{colors.primary}`, `{component.button-primary-pressed}`, `{rounded.lg}`) — do not paraphrase.\n3. Run `npx @google/design.md lint DESIGN.md` after edits; orphaned-tokens warnings will catch unused entries.\n4. Add new variants as separate entries (`-pressed`, `-disabled`, `-featured`) — do not bury them in prose.\n5. Default body type to `{typography.body-md}`; reach for `{typography.subtitle}` only on hero subtitles.\n6. Keep `{colors.primary}` scarce — if more than one orange element appears per viewport, ask whether one should drop to `{colors.surface-dark}` instead.",
+    "Known Gaps": "- Active/pressed visual states are documented for `button-primary-pressed` only; other components rely on the focus-ring (`{colors.ring-focus}`) for interactive feedback, which is not extracted as a per-component variant.\n- The model playground / try-this-model interactive surfaces (logged-in feature) are out of scope; only the public marketing canvas is documented.\n- Dashboard / billing / API key management surfaces are not extracted — those live behind authentication.\n- The home hero illustration (\"the tinkerer at the workbench\") is treated as decorative artwork, not a system component; replicating it requires bespoke illustration rather than tokens."
+  },
+  "frontmatter": {
+    "version": "alpha",
+    "name": "Replicate-design-analysis",
+    "description": "Replicate's marketing surfaces pair the warm-cream developer-tools aesthetic\nof an indie ML playground with a confident hot-orange brand accent and a\nsignature display typeface (rb-freigeist-neue) sized aggressively large at\n72px+. The system reads as \"AI lab notebook crossed with print magazine\":\ncream and bone surfaces, dark ink type, monospace code wells, irregular\nhand-drawn-feeling diagrams, and a rich orange used scarcely on the most\nconsequential CTA. Photography of contributors and example outputs is\nsquare-ish with mid-radius corners; everything else is borderless or hairline.\n",
+    "colors": {
+      "primary": "#ea2804",
+      "primary-deep": "#c01f00",
+      "on-primary": "#ffffff",
+      "ink": "#202020",
+      "body": "#3a3a3a",
+      "charcoal": "#575757",
+      "mute": "#646464",
+      "ash": "#8d8d8d",
+      "stone": "#bbbbbb",
+      "on-dark": "#fcfcfc",
+      "on-dark-mute": "rgba(252,252,252,0.72)",
+      "canvas": "#f9f7f3",
+      "surface-bone": "#f3f0e8",
+      "surface-card": "#ffffff",
+      "surface-dark": "#202020",
+      "surface-deep": "#000000",
+      "hairline": "rgba(32,32,32,0.12)",
+      "hairline-strong": "#202020",
+      "divider-dark": "rgba(255,255,255,0.2)",
+      "hero-warm": "#ea2804",
+      "hero-glow": "#ff6a3d",
+      "hero-pink": "#f4a8a0",
+      "badge-success": "#2b9a66",
+      "link": "#ea2804",
+      "ring-focus": "rgba(59,130,246,0.5)",
+      "github-dark": "#24292e"
+    },
+    "typography": {
+      "display-xxl": {
+        "fontFamily": "rb-freigeist-neue",
+        "fontSize": "128px",
+        "fontWeight": 700,
+        "lineHeight": 1,
+        "letterSpacing": "-3px"
+      },
+      "display-xl": {
+        "fontFamily": "rb-freigeist-neue",
+        "fontSize": "72px",
+        "fontWeight": 700,
+        "lineHeight": 1,
+        "letterSpacing": "-1.8px"
+      },
+      "display-lg": {
+        "fontFamily": "rb-freigeist-neue",
+        "fontSize": "48px",
+        "fontWeight": 700,
+        "lineHeight": 1,
+        "letterSpacing": "-1px"
+      },
+      "display-md": {
+        "fontFamily": "rb-freigeist-neue",
+        "fontSize": "30px",
+        "fontWeight": 600,
+        "lineHeight": 1.2,
+        "letterSpacing": "-0.5px"
+      },
+      "heading-lg": {
+        "fontFamily": "basier-square",
+        "fontSize": "38.4px",
+        "fontWeight": 600,
+        "lineHeight": 0.83,
+        "letterSpacing": "-0.5px"
+      },
+      "heading-md": {
+        "fontFamily": "basier-square",
+        "fontSize": "24px",
+        "fontWeight": 600,
+        "lineHeight": 1.33,
+        "letterSpacing": "-0.35px"
+      },
+      "heading-sm": {
+        "fontFamily": "basier-square",
+        "fontSize": "20px",
+        "fontWeight": 600,
+        "lineHeight": 1.4,
+        "letterSpacing": "-0.3px"
+      },
+      "subtitle": {
+        "fontFamily": "rb-freigeist-neue",
+        "fontSize": "18px",
+        "fontWeight": 600,
+        "lineHeight": 1.56,
+        "letterSpacing": 0
+      },
+      "body-lg": {
+        "fontFamily": "basier-square",
+        "fontSize": "18px",
+        "fontWeight": 400,
+        "lineHeight": 1.56,
+        "letterSpacing": 0
+      },
+      "body-md": {
+        "fontFamily": "basier-square",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "body-sm": {
+        "fontFamily": "basier-square",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.43,
+        "letterSpacing": 0
+      },
+      "button-md": {
+        "fontFamily": "basier-square",
+        "fontSize": "16px",
+        "fontWeight": 600,
+        "lineHeight": 1,
+        "letterSpacing": 0
+      },
+      "button-sm": {
+        "fontFamily": "basier-square",
+        "fontSize": "14px",
+        "fontWeight": 600,
+        "lineHeight": 1,
+        "letterSpacing": 0
+      },
+      "caption": {
+        "fontFamily": "basier-square",
+        "fontSize": "12px",
+        "fontWeight": 400,
+        "lineHeight": 1.33,
+        "letterSpacing": 0
+      },
+      "caption-tight": {
+        "fontFamily": "basier-square",
+        "fontSize": "14px",
+        "fontWeight": 600,
+        "lineHeight": 1.43,
+        "letterSpacing": "-0.35px"
+      },
+      "code-md": {
+        "fontFamily": "jetbrains-mono",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.43,
+        "letterSpacing": 0
+      },
+      "code-sm": {
+        "fontFamily": "jetbrains-mono",
+        "fontSize": "11px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      }
+    },
+    "rounded": {
+      "none": "0px",
+      "xs": "4px",
+      "sm": "6px",
+      "md": "10px",
+      "lg": "16px",
+      "full": "9999px"
+    },
+    "spacing": {
+      "xxs": "2px",
+      "xs": "4px",
+      "sm": "8px",
+      "md": "12px",
+      "lg": "16px",
+      "xl": "24px",
+      "xxl": "32px",
+      "xxxl": "48px",
+      "section": "96px",
+      "band": "160px"
+    },
+    "components": {
+      "button-primary": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.full}",
+        "padding": "12px 24px",
+        "height": "44px"
+      },
+      "button-primary-pressed": {
+        "backgroundColor": "{colors.primary-deep}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.full}"
+      },
+      "button-dark": {
+        "backgroundColor": "{colors.surface-dark}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.full}",
+        "padding": "12px 24px",
+        "height": "44px"
+      },
+      "button-outline": {
+        "backgroundColor": "{colors.surface-card}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.full}",
+        "padding": "11px 23px",
+        "height": "44px"
+      },
+      "button-ghost": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.full}",
+        "padding": "8px 16px",
+        "height": "36px"
+      },
+      "button-icon": {
+        "backgroundColor": "{colors.surface-card}",
+        "textColor": "{colors.ink}",
+        "rounded": "{rounded.full}",
+        "size": "36px"
+      },
+      "text-input": {
+        "backgroundColor": "{colors.surface-card}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.full}",
+        "padding": "12px 20px",
+        "height": "44px"
+      },
+      "hero-band": {
+        "backgroundColor": "{colors.hero-warm}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.display-xl}",
+        "rounded": "{rounded.none}",
+        "padding": "96px 32px"
+      },
+      "model-card": {
+        "backgroundColor": "{colors.surface-card}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.md}",
+        "padding": "16px"
+      },
+      "collection-tile": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.heading-md}",
+        "rounded": "{rounded.md}",
+        "padding": "24px"
+      },
+      "pricing-tier": {
+        "backgroundColor": "{colors.surface-card}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.lg}",
+        "padding": "32px"
+      },
+      "pricing-tier-featured": {
+        "backgroundColor": "{colors.surface-dark}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.lg}",
+        "padding": "32px"
+      },
+      "code-block": {
+        "backgroundColor": "{colors.surface-dark}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.code-md}",
+        "rounded": "{rounded.md}",
+        "padding": "24px"
+      },
+      "code-tab": {
+        "backgroundColor": "{colors.surface-deep}",
+        "textColor": "{colors.on-dark-mute}",
+        "typography": "{typography.code-sm}",
+        "rounded": "{rounded.xs}",
+        "padding": "6px 12px"
+      },
+      "badge-status": {
+        "backgroundColor": "{colors.badge-success}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.caption}",
+        "rounded": "{rounded.full}",
+        "padding": "4px 10px"
+      },
+      "badge-tag": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.caption}",
+        "rounded": "{rounded.full}",
+        "padding": "4px 10px"
+      },
+      "nav-bar": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button-sm}",
+        "rounded": "{rounded.none}",
+        "height": "60px"
+      },
+      "sub-nav-pill": {
+        "backgroundColor": "{colors.surface-card}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button-sm}",
+        "rounded": "{rounded.full}",
+        "padding": "6px 14px"
+      },
+      "contributor-avatar": {
+        "backgroundColor": "{colors.surface-card}",
+        "textColor": "{colors.ink}",
+        "rounded": "{rounded.full}",
+        "size": "40px"
+      },
+      "footer": {
+        "backgroundColor": "{colors.surface-deep}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.body-sm}",
+        "rounded": "{rounded.none}",
+        "padding": "64px 32px"
+      }
+    }
+  },
+  "brandAsset": {
+    "type": "text-wordmark",
+    "label": "Replicate"
+  }
+}

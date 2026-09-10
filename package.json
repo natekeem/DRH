@@ -11,7 +11,9 @@
     "audit:v1.4": "node scripts/audit-v1.4.mjs",
     "audit:design-md": "node scripts/audit-design-md.mjs",
     "sync:awesome-design-md": "node scripts/sync-awesome-design-md.mjs",
-    "audit:demos": "node scripts/audit-demos.mjs"
+    "audit:demos": "node scripts/audit-demos.mjs",
+    "audit:brand-designs": "node scripts/audit-brand-designs.mjs",
+    "sync:brand-designs": "node scripts/sync-awesome-design-md.mjs --local"
   },
   "dependencies": {
     "@react-three/fiber": "8.18.0",
@@ -34,6 +36,7 @@
     "@types/three": "0.180.0",
     "@vitejs/plugin-react": "4.3.4",
     "typescript": "5.7.2",
-    "vite": "6.0.5"
+    "vite": "6.0.5",
+    "yaml": "^2.9.0"
   }
 }

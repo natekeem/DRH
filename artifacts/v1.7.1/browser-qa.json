@@ -1,0 +1,854 @@
+{
+  "screens": [
+    "artifacts/v1.7.1/canaries-masked-1920.png",
+    "artifacts/v1.7.1/detail-apple-1920.png",
+    "artifacts/v1.7.1/detail-apple-tokens-1920.png",
+    "artifacts/v1.7.1/detail-ferrari-1920.png",
+    "artifacts/v1.7.1/detail-ferrari-tokens-1920.png",
+    "artifacts/v1.7.1/detail-airbnb-1920.png",
+    "artifacts/v1.7.1/detail-airbnb-tokens-1920.png",
+    "artifacts/v1.7.1/detail-binance-1920.png",
+    "artifacts/v1.7.1/detail-binance-tokens-1920.png",
+    "artifacts/v1.7.1/detail-nintendo-2001-1920.png",
+    "artifacts/v1.7.1/detail-nintendo-2001-tokens-1920.png",
+    "artifacts/v1.7.1/guide-index-1920.png",
+    "artifacts/v1.7.1/guide-count-2-1920.png",
+    "artifacts/v1.7.1/guide-count-3-1920.png",
+    "artifacts/v1.7.1/guide-count-4-1920.png",
+    "artifacts/v1.7.1/guide-article-1920.png",
+    "artifacts/v1.7.1/explore-grouping-1920.png",
+    "artifacts/v1.7.1/collections-1920.png",
+    "artifacts/v1.7.1/home-shader-gradient-1920.png",
+    "artifacts/v1.7.1/home-liquid-lens-effect-1920.png",
+    "artifacts/v1.7.1/explore-lens-1920.png",
+    "artifacts/v1.7.1/detail-lens-1920.png",
+    "artifacts/v1.7.1/related-1920.png",
+    "artifacts/v1.7.1/detail-apple-1440.png",
+    "artifacts/v1.7.1/detail-apple-tokens-1440.png",
+    "artifacts/v1.7.1/detail-ferrari-1440.png",
+    "artifacts/v1.7.1/detail-ferrari-tokens-1440.png",
+    "artifacts/v1.7.1/detail-airbnb-1440.png",
+    "artifacts/v1.7.1/detail-airbnb-tokens-1440.png",
+    "artifacts/v1.7.1/detail-binance-1440.png",
+    "artifacts/v1.7.1/detail-binance-tokens-1440.png",
+    "artifacts/v1.7.1/detail-nintendo-2001-1440.png",
+    "artifacts/v1.7.1/detail-nintendo-2001-tokens-1440.png",
+    "artifacts/v1.7.1/guide-index-1440.png",
+    "artifacts/v1.7.1/guide-article-1440.png",
+    "artifacts/v1.7.1/explore-grouping-1440.png",
+    "artifacts/v1.7.1/collections-1440.png",
+    "artifacts/v1.7.1/home-shader-gradient-1440.png",
+    "artifacts/v1.7.1/home-liquid-lens-effect-1440.png",
+    "artifacts/v1.7.1/explore-lens-1440.png",
+    "artifacts/v1.7.1/detail-lens-1440.png",
+    "artifacts/v1.7.1/related-1440.png",
+    "artifacts/v1.7.1/canary-apple-390.png",
+    "artifacts/v1.7.1/canary-airbnb-390.png",
+    "artifacts/v1.7.1/canary-binance-390.png",
+    "artifacts/v1.7.1/canary-ferrari-390.png",
+    "artifacts/v1.7.1/canary-linear.app-390.png",
+    "artifacts/v1.7.1/canary-notion-390.png",
+    "artifacts/v1.7.1/canary-spotify-390.png",
+    "artifacts/v1.7.1/canary-tesla-390.png",
+    "artifacts/v1.7.1/canary-nintendo-2001-390.png",
+    "artifacts/v1.7.1/canary-theverge-390.png",
+    "artifacts/v1.7.1/detail-apple-390.png",
+    "artifacts/v1.7.1/detail-apple-tokens-390.png",
+    "artifacts/v1.7.1/detail-ferrari-390.png",
+    "artifacts/v1.7.1/detail-ferrari-tokens-390.png",
+    "artifacts/v1.7.1/detail-airbnb-390.png",
+    "artifacts/v1.7.1/detail-airbnb-tokens-390.png",
+    "artifacts/v1.7.1/detail-binance-390.png",
+    "artifacts/v1.7.1/detail-binance-tokens-390.png",
+    "artifacts/v1.7.1/detail-nintendo-2001-390.png",
+    "artifacts/v1.7.1/detail-nintendo-2001-tokens-390.png",
+    "artifacts/v1.7.1/guide-index-390.png",
+    "artifacts/v1.7.1/guide-article-390.png",
+    "artifacts/v1.7.1/explore-grouping-390.png",
+    "artifacts/v1.7.1/collections-390.png",
+    "artifacts/v1.7.1/home-shader-gradient-390.png",
+    "artifacts/v1.7.1/home-liquid-lens-effect-390.png",
+    "artifacts/v1.7.1/explore-lens-390.png",
+    "artifacts/v1.7.1/detail-lens-390.png",
+    "artifacts/v1.7.1/related-390.png"
+  ],
+  "cards": [
+    {
+      "width": 1920,
+      "brand": "apple",
+      "height": 212,
+      "contentHeight": 212,
+      "layout": "gallery"
+    },
+    {
+      "width": 1920,
+      "brand": "airbnb",
+      "height": 212,
+      "contentHeight": 212,
+      "layout": "marketplace"
+    },
+    {
+      "width": 1920,
+      "brand": "binance",
+      "height": 212,
+      "contentHeight": 212,
+      "layout": "utility"
+    },
+    {
+      "width": 1920,
+      "brand": "ferrari",
+      "height": 212,
+      "contentHeight": 212,
+      "layout": "cinematic"
+    },
+    {
+      "width": 1920,
+      "brand": "linear.app",
+      "height": 212,
+      "contentHeight": 212,
+      "layout": "product"
+    },
+    {
+      "width": 1920,
+      "brand": "notion",
+      "height": 212,
+      "contentHeight": 212,
+      "layout": "product"
+    },
+    {
+      "width": 1920,
+      "brand": "spotify",
+      "height": 212,
+      "contentHeight": 212,
+      "layout": "product"
+    },
+    {
+      "width": 1920,
+      "brand": "tesla",
+      "height": 212,
+      "contentHeight": 212,
+      "layout": "gallery"
+    },
+    {
+      "width": 1920,
+      "brand": "nintendo-2001",
+      "height": 212,
+      "contentHeight": 206,
+      "layout": "retro"
+    },
+    {
+      "width": 1920,
+      "brand": "theverge",
+      "height": 212,
+      "contentHeight": 212,
+      "layout": "editorial"
+    },
+    {
+      "width": 1440,
+      "brand": "apple",
+      "height": 266,
+      "contentHeight": 266,
+      "layout": "gallery"
+    },
+    {
+      "width": 1440,
+      "brand": "airbnb",
+      "height": 266,
+      "contentHeight": 266,
+      "layout": "marketplace"
+    },
+    {
+      "width": 1440,
+      "brand": "binance",
+      "height": 266,
+      "contentHeight": 266,
+      "layout": "utility"
+    },
+    {
+      "width": 1440,
+      "brand": "ferrari",
+      "height": 266,
+      "contentHeight": 266,
+      "layout": "cinematic"
+    },
+    {
+      "width": 1440,
+      "brand": "linear.app",
+      "height": 266,
+      "contentHeight": 266,
+      "layout": "product"
+    },
+    {
+      "width": 1440,
+      "brand": "notion",
+      "height": 266,
+      "contentHeight": 266,
+      "layout": "product"
+    },
+    {
+      "width": 1440,
+      "brand": "spotify",
+      "height": 266,
+      "contentHeight": 266,
+      "layout": "product"
+    },
+    {
+      "width": 1440,
+      "brand": "tesla",
+      "height": 266,
+      "contentHeight": 266,
+      "layout": "gallery"
+    },
+    {
+      "width": 1440,
+      "brand": "nintendo-2001",
+      "height": 266,
+      "contentHeight": 260,
+      "layout": "retro"
+    },
+    {
+      "width": 1440,
+      "brand": "theverge",
+      "height": 266,
+      "contentHeight": 266,
+      "layout": "editorial"
+    },
+    {
+      "width": 390,
+      "brand": "apple",
+      "height": 208,
+      "contentHeight": 208,
+      "layout": "gallery"
+    },
+    {
+      "width": 390,
+      "brand": "airbnb",
+      "height": 208,
+      "contentHeight": 208,
+      "layout": "marketplace"
+    },
+    {
+      "width": 390,
+      "brand": "binance",
+      "height": 208,
+      "contentHeight": 208,
+      "layout": "utility"
+    },
+    {
+      "width": 390,
+      "brand": "ferrari",
+      "height": 208,
+      "contentHeight": 208,
+      "layout": "cinematic"
+    },
+    {
+      "width": 390,
+      "brand": "linear.app",
+      "height": 208,
+      "contentHeight": 208,
+      "layout": "product"
+    },
+    {
+      "width": 390,
+      "brand": "notion",
+      "height": 208,
+      "contentHeight": 208,
+      "layout": "product"
+    },
+    {
+      "width": 390,
+      "brand": "spotify",
+      "height": 208,
+      "contentHeight": 208,
+      "layout": "product"
+    },
+    {
+      "width": 390,
+      "brand": "tesla",
+      "height": 208,
+      "contentHeight": 208,
+      "layout": "gallery"
+    },
+    {
+      "width": 390,
+      "brand": "nintendo-2001",
+      "height": 208,
+      "contentHeight": 202,
+      "layout": "retro"
+    },
+    {
+      "width": 390,
+      "brand": "theverge",
+      "height": 208,
+      "contentHeight": 208,
+      "layout": "editorial"
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "airbnb",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "airtable",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "apple",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "binance",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "bmw",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "bmw-m",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "bugatti",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "cal",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "claude",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "clay",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "clickhouse",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "cohere",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "coinbase",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "composio",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "cursor",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "dell-1996",
+      "height": 212,
+      "contentHeight": 206
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "elevenlabs",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "expo",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "ferrari",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "figma",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "framer",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "hashicorp",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "hp",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "ibm",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "intercom",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "kraken",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "lamborghini",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "linear.app",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "lovable",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "mastercard",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "meta",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "minimax",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "mintlify",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "miro",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "mistral.ai",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "mongodb",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "nike",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "nintendo-2001",
+      "height": 212,
+      "contentHeight": 206
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "notion",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "nvidia",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "ollama",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "opencode.ai",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "pinterest",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "playstation",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "posthog",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "raycast",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "renault",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "replicate",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "resend",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "revolut",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "runwayml",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "sanity",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "sentry",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "shopify",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "slack",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "spacex",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "spotify",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "starbucks",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "stripe",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "supabase",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "superhuman",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "tesla",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "theverge",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "together.ai",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "uber",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "vercel",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "vodafone",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "voltagent",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "warp",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "webflow",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "wired",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "wise",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "x.ai",
+      "height": 212,
+      "contentHeight": 212
+    },
+    {
+      "width": 1920,
+      "all": true,
+      "brand": "zapier",
+      "height": 212,
+      "contentHeight": 212
+    }
+  ],
+  "geometry": [
+    {
+      "width": 1920,
+      "rail": {
+        "width": 280,
+        "overflow": "visible",
+        "position": "sticky"
+      }
+    },
+    {
+      "width": 1920,
+      "homeLens": {
+        "parent": 360,
+        "child": 358
+      }
+    },
+    {
+      "width": 1440,
+      "rail": {
+        "width": 280,
+        "overflow": "visible",
+        "position": "sticky"
+      }
+    },
+    {
+      "width": 1440,
+      "homeLens": {
+        "parent": 360,
+        "child": 358
+      }
+    },
+    {
+      "width": 390,
+      "rail": {
+        "width": 350,
+        "overflow": "visible",
+        "position": "static"
+      }
+    },
+    {
+      "width": 390,
+      "homeLens": {
+        "parent": 200.390625,
+        "child": 198.390625
+      }
+    }
+  ],
+  "errors": [],
+  "externalBrandRequests": []
+}

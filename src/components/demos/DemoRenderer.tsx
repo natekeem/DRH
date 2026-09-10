@@ -94,7 +94,7 @@ export function DemoRenderer({kind,detail=false,preset}:{kind:string;detail?:boo
   if(kind.startsWith('vendor-design-md:')){
     const slug=kind.slice('vendor-design-md:'.length)
     const entry=vendorEntryBySlug[slug]
-    if(entry)return <DemoViewport detail={detail}><VendorDesignPreview tokens={entry.tokens} name={entry.name} category={entry.category}/></DemoViewport>
+    if(entry)return <DemoViewport detail={detail}><VendorDesignPreview entry={entry} detail={detail}/></DemoViewport>
     return <DemoViewport detail={detail}><div className="ds-preview"><p>Preview loading…</p></div></DemoViewport>
   }
 

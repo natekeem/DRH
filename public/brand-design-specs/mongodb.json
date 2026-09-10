@@ -1,0 +1,1129 @@
+{
+  "colors": {
+    "primary": "#00ed64",
+    "primary-deep": "#00b545",
+    "primary-pressed": "#008c34",
+    "on-primary": "#001e2b",
+    "brand-green": "#00ed64",
+    "brand-green-dark": "#00684a",
+    "brand-green-mid": "#00a35c",
+    "brand-green-soft": "#c3f0d2",
+    "brand-teal-deep": "#001e2b",
+    "brand-teal": "#003d4f",
+    "brand-teal-mid": "#00684a",
+    "accent-purple": "#7b3ff2",
+    "accent-orange": "#fa6e39",
+    "accent-pink": "#f06bb8",
+    "accent-blue": "#3d4f9f",
+    "semantic-warning-bg": "#fff8e0",
+    "semantic-warning-text": "#946f3f",
+    "canvas": "#ffffff",
+    "canvas-dark": "#001e2b",
+    "surface": "#f9fbfa",
+    "surface-soft": "#f4f7f6",
+    "surface-feature": "#e3fcef",
+    "hairline": "#e1e5e8",
+    "hairline-soft": "#eceff1",
+    "hairline-strong": "#c1ccd6",
+    "hairline-dark": "#1c2d38",
+    "ink": "#001e2b",
+    "charcoal": "#1c2d38",
+    "slate": "#3d4f5b",
+    "steel": "#5c6c7a",
+    "stone": "#7c8c9a",
+    "muted": "#a8b3bc",
+    "on-dark": "#ffffff",
+    "on-dark-muted": "#a8b3bc"
+  },
+  "typography": {
+    "hero-display": {
+      "fontFamily": "Euclid Circular A",
+      "fontSize": "72px",
+      "fontWeight": 500,
+      "lineHeight": 1.1,
+      "letterSpacing": "-1.5px",
+      "declaredFamily": "Euclid Circular A",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "display-lg": {
+      "fontFamily": "Euclid Circular A",
+      "fontSize": "56px",
+      "fontWeight": 500,
+      "lineHeight": 1.15,
+      "letterSpacing": "-1px",
+      "declaredFamily": "Euclid Circular A",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "heading-1": {
+      "fontFamily": "Euclid Circular A",
+      "fontSize": "48px",
+      "fontWeight": 500,
+      "lineHeight": 1.2,
+      "letterSpacing": "-0.5px",
+      "declaredFamily": "Euclid Circular A",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "heading-2": {
+      "fontFamily": "Euclid Circular A",
+      "fontSize": "36px",
+      "fontWeight": 500,
+      "lineHeight": 1.25,
+      "letterSpacing": "-0.5px",
+      "declaredFamily": "Euclid Circular A",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "heading-3": {
+      "fontFamily": "Euclid Circular A",
+      "fontSize": "28px",
+      "fontWeight": 500,
+      "lineHeight": 1.3,
+      "declaredFamily": "Euclid Circular A",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "heading-4": {
+      "fontFamily": "Euclid Circular A",
+      "fontSize": "22px",
+      "fontWeight": 500,
+      "lineHeight": 1.35,
+      "declaredFamily": "Euclid Circular A",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "heading-5": {
+      "fontFamily": "Euclid Circular A",
+      "fontSize": "18px",
+      "fontWeight": 600,
+      "lineHeight": 1.4,
+      "declaredFamily": "Euclid Circular A",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "subtitle": {
+      "fontFamily": "Euclid Circular A",
+      "fontSize": "18px",
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "declaredFamily": "Euclid Circular A",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "body-md": {
+      "fontFamily": "Euclid Circular A",
+      "fontSize": "16px",
+      "fontWeight": 400,
+      "lineHeight": 1.55,
+      "declaredFamily": "Euclid Circular A",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "body-md-medium": {
+      "fontFamily": "Euclid Circular A",
+      "fontSize": "16px",
+      "fontWeight": 500,
+      "lineHeight": 1.55,
+      "declaredFamily": "Euclid Circular A",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "body-sm": {
+      "fontFamily": "Euclid Circular A",
+      "fontSize": "14px",
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "declaredFamily": "Euclid Circular A",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "body-sm-medium": {
+      "fontFamily": "Euclid Circular A",
+      "fontSize": "14px",
+      "fontWeight": 500,
+      "lineHeight": 1.5,
+      "declaredFamily": "Euclid Circular A",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "caption": {
+      "fontFamily": "Euclid Circular A",
+      "fontSize": "13px",
+      "fontWeight": 400,
+      "lineHeight": 1.4,
+      "declaredFamily": "Euclid Circular A",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "caption-bold": {
+      "fontFamily": "Euclid Circular A",
+      "fontSize": "13px",
+      "fontWeight": 600,
+      "lineHeight": 1.4,
+      "declaredFamily": "Euclid Circular A",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "micro": {
+      "fontFamily": "Euclid Circular A",
+      "fontSize": "12px",
+      "fontWeight": 500,
+      "lineHeight": 1.4,
+      "declaredFamily": "Euclid Circular A",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "micro-uppercase": {
+      "fontFamily": "Euclid Circular A",
+      "fontSize": "11px",
+      "fontWeight": 600,
+      "lineHeight": 1.4,
+      "letterSpacing": "1px",
+      "declaredFamily": "Euclid Circular A",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "button-md": {
+      "fontFamily": "Euclid Circular A",
+      "fontSize": "14px",
+      "fontWeight": 600,
+      "lineHeight": 1.3,
+      "declaredFamily": "Euclid Circular A",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "code-md": {
+      "fontFamily": "Source Code Pro",
+      "fontSize": "14px",
+      "fontWeight": 400,
+      "lineHeight": 1.55,
+      "declaredFamily": "Source Code Pro",
+      "renderFallback": "system-ui, sans-serif"
+    }
+  },
+  "spacing": {
+    "xxs": "4px",
+    "xs": "8px",
+    "sm": "12px",
+    "md": "16px",
+    "lg": "20px",
+    "xl": "24px",
+    "xxl": "32px",
+    "xxxl": "40px",
+    "section-sm": "48px",
+    "section": "64px",
+    "section-lg": "96px",
+    "hero": "120px"
+  },
+  "radius": {
+    "xs": "4px",
+    "sm": "6px",
+    "md": "8px",
+    "lg": "12px",
+    "xl": "16px",
+    "xxl": "24px",
+    "full": "9999px"
+  },
+  "border": {
+    "button-secondary": "1px solid #c1ccd6",
+    "button-secondary-on-dark": "1px solid #1c2d38",
+    "card-base": "1px solid #e1e5e8",
+    "card-feature": "1px solid #e1e5e8",
+    "card-product-deploy": "1px solid #e1e5e8",
+    "card-course": "1px solid #e1e5e8",
+    "card-cert": "1px solid #e1e5e8",
+    "pricing-card": "1px solid #e1e5e8",
+    "pricing-card-featured": "2px solid #00ed64",
+    "text-input": "1px solid #c1ccd6",
+    "text-input-focused": "2px solid #00684a",
+    "search-pill": "1px solid #c1ccd6",
+    "search-pill-large": "1px solid #c1ccd6",
+    "pill-tab": "1px solid #e1e5e8",
+    "pill-tab-active": "1px solid #001e2b",
+    "segmented-tab": "0 0 2px transparent solid",
+    "segmented-tab-active": "0 0 2px #00684a solid",
+    "comparison-table": "1px solid #e1e5e8",
+    "comparison-row": "0 0 1px #eceff1 solid",
+    "service-tile": "1px solid #e1e5e8",
+    "customer-testimonial-card": "1px solid #e1e5e8",
+    "faq-accordion-item": "0 0 1px #e1e5e8 solid"
+  },
+  "motion": {
+    "rules": [
+      "- Animation/transition timings not extracted; recommend 150–200ms ease"
+    ]
+  },
+  "depth": {
+    "Elevation & Depth": "| Level | Treatment | Use |\n|---|---|---|\n| 0 (flat) | No shadow; `{colors.hairline}` border | Default cards, table rows |\n| 1 (subtle) | `rgba(0, 30, 43, 0.04) 0px 1px 2px 0px` | Hover-elevated tiles |\n| 2 (card) | `rgba(0, 30, 43, 0.08) 0px 4px 12px 0px` | Feature cards |\n| 3 (mockup) | `rgba(0, 30, 43, 0.12) 0px 12px 24px -4px` | Code mockup over hero |\n| 4 (modal) | `rgba(0, 30, 43, 0.16) 0px 16px 48px -8px` | Modals, dropdowns |\n\n### Decorative Depth\n- Dark teal hero bands carry atmospheric gradient depth\n- Code mockup cards on hero use canvas-dark surface with terminal aesthetic\n- Pale-mint pricing-feature tier uses brand-tinted shadow"
+  },
+  "components": {
+    "button-primary": {
+      "backgroundColor": "#00ed64",
+      "textColor": "#001e2b",
+      "typography": {
+        "fontFamily": "Euclid Circular A",
+        "fontSize": "14px",
+        "fontWeight": 600,
+        "lineHeight": 1.3
+      },
+      "rounded": "9999px",
+      "padding": "10px 22px"
+    },
+    "button-primary-pressed": {
+      "backgroundColor": "#008c34",
+      "textColor": "#001e2b"
+    },
+    "button-primary-disabled": {
+      "backgroundColor": "#e1e5e8",
+      "textColor": "#a8b3bc"
+    },
+    "button-secondary": {
+      "backgroundColor": "transparent",
+      "textColor": "#001e2b",
+      "typography": {
+        "fontFamily": "Euclid Circular A",
+        "fontSize": "14px",
+        "fontWeight": 600,
+        "lineHeight": 1.3
+      },
+      "rounded": "9999px",
+      "padding": "10px 22px",
+      "border": "1px solid #c1ccd6"
+    },
+    "button-on-dark": {
+      "backgroundColor": "#00ed64",
+      "textColor": "#001e2b",
+      "typography": {
+        "fontFamily": "Euclid Circular A",
+        "fontSize": "14px",
+        "fontWeight": 600,
+        "lineHeight": 1.3
+      },
+      "rounded": "9999px",
+      "padding": "10px 22px"
+    },
+    "button-secondary-on-dark": {
+      "backgroundColor": "transparent",
+      "textColor": "#ffffff",
+      "typography": {
+        "fontFamily": "Euclid Circular A",
+        "fontSize": "14px",
+        "fontWeight": 600,
+        "lineHeight": 1.3
+      },
+      "rounded": "9999px",
+      "padding": "10px 22px",
+      "border": "1px solid #1c2d38"
+    },
+    "button-ghost": {
+      "backgroundColor": "transparent",
+      "textColor": "#001e2b",
+      "typography": {
+        "fontFamily": "Euclid Circular A",
+        "fontSize": "14px",
+        "fontWeight": 600,
+        "lineHeight": 1.3
+      },
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    "button-link": {
+      "backgroundColor": "transparent",
+      "textColor": "#00684a",
+      "typography": {
+        "fontFamily": "Euclid Circular A",
+        "fontSize": "14px",
+        "fontWeight": 500,
+        "lineHeight": 1.5
+      },
+      "padding": "0"
+    },
+    "card-base": {
+      "backgroundColor": "#ffffff",
+      "rounded": "12px",
+      "padding": "24px",
+      "border": "1px solid #e1e5e8"
+    },
+    "card-feature": {
+      "backgroundColor": "#ffffff",
+      "rounded": "12px",
+      "padding": "32px",
+      "border": "1px solid #e1e5e8"
+    },
+    "card-product-deploy": {
+      "backgroundColor": "#ffffff",
+      "rounded": "12px",
+      "padding": "32px",
+      "border": "1px solid #e1e5e8"
+    },
+    "card-feature-dark": {
+      "backgroundColor": "#001e2b",
+      "textColor": "#ffffff",
+      "rounded": "12px",
+      "padding": "32px"
+    },
+    "card-course": {
+      "backgroundColor": "#ffffff",
+      "rounded": "12px",
+      "padding": "24px",
+      "border": "1px solid #e1e5e8"
+    },
+    "card-cert": {
+      "backgroundColor": "#ffffff",
+      "rounded": "12px",
+      "padding": "24px",
+      "border": "1px solid #e1e5e8"
+    },
+    "pricing-card": {
+      "backgroundColor": "#ffffff",
+      "rounded": "12px",
+      "padding": "32px",
+      "border": "1px solid #e1e5e8"
+    },
+    "pricing-card-featured": {
+      "backgroundColor": "#e3fcef",
+      "rounded": "12px",
+      "padding": "32px",
+      "border": "2px solid #00ed64"
+    },
+    "text-input": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#001e2b",
+      "typography": {
+        "fontFamily": "Euclid Circular A",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": 1.55
+      },
+      "rounded": "8px",
+      "padding": "12px 16px",
+      "border": "1px solid #c1ccd6",
+      "height": "44px"
+    },
+    "text-input-focused": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#001e2b",
+      "border": "2px solid #00684a"
+    },
+    "search-pill": {
+      "backgroundColor": "#f9fbfa",
+      "textColor": "#5c6c7a",
+      "typography": {
+        "fontFamily": "Euclid Circular A",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": 1.55
+      },
+      "rounded": "8px",
+      "padding": "12px 16px",
+      "height": "44px",
+      "border": "1px solid #c1ccd6"
+    },
+    "search-pill-large": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#5c6c7a",
+      "typography": {
+        "fontFamily": "Euclid Circular A",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": 1.55
+      },
+      "rounded": "8px",
+      "padding": "16px",
+      "height": "56px",
+      "border": "1px solid #c1ccd6"
+    },
+    "pill-tab": {
+      "backgroundColor": "transparent",
+      "textColor": "#5c6c7a",
+      "typography": {
+        "fontFamily": "Euclid Circular A",
+        "fontSize": "14px",
+        "fontWeight": 500,
+        "lineHeight": 1.5
+      },
+      "rounded": "9999px",
+      "padding": "8px 16px",
+      "border": "1px solid #e1e5e8"
+    },
+    "pill-tab-active": {
+      "backgroundColor": "#001e2b",
+      "textColor": "#ffffff",
+      "rounded": "9999px",
+      "border": "1px solid #001e2b"
+    },
+    "segmented-tab": {
+      "backgroundColor": "transparent",
+      "textColor": "#5c6c7a",
+      "typography": {
+        "fontFamily": "Euclid Circular A",
+        "fontSize": "14px",
+        "fontWeight": 500,
+        "lineHeight": 1.5
+      },
+      "padding": "12px 16px",
+      "border": "0 0 2px transparent solid"
+    },
+    "segmented-tab-active": {
+      "backgroundColor": "transparent",
+      "textColor": "#00684a",
+      "typography": {
+        "fontFamily": "Euclid Circular A",
+        "fontSize": "14px",
+        "fontWeight": 500,
+        "lineHeight": 1.5
+      },
+      "border": "0 0 2px #00684a solid"
+    },
+    "badge-green": {
+      "backgroundColor": "#00ed64",
+      "textColor": "#001e2b",
+      "typography": {
+        "fontFamily": "Euclid Circular A",
+        "fontSize": "13px",
+        "fontWeight": 600,
+        "lineHeight": 1.4
+      },
+      "rounded": "6px",
+      "padding": "2px 8px"
+    },
+    "badge-green-soft": {
+      "backgroundColor": "#c3f0d2",
+      "textColor": "#00684a",
+      "typography": {
+        "fontFamily": "Euclid Circular A",
+        "fontSize": "13px",
+        "fontWeight": 600,
+        "lineHeight": 1.4
+      },
+      "rounded": "9999px",
+      "padding": "4px 10px"
+    },
+    "badge-purple": {
+      "backgroundColor": "#7b3ff2",
+      "textColor": "#ffffff",
+      "typography": {
+        "fontFamily": "Euclid Circular A",
+        "fontSize": "13px",
+        "fontWeight": 600,
+        "lineHeight": 1.4
+      },
+      "rounded": "6px",
+      "padding": "2px 8px"
+    },
+    "badge-orange": {
+      "backgroundColor": "#fa6e39",
+      "textColor": "#ffffff",
+      "typography": {
+        "fontFamily": "Euclid Circular A",
+        "fontSize": "13px",
+        "fontWeight": 600,
+        "lineHeight": 1.4
+      },
+      "rounded": "6px",
+      "padding": "2px 8px"
+    },
+    "badge-popular": {
+      "backgroundColor": "#001e2b",
+      "textColor": "#00ed64",
+      "typography": {
+        "fontFamily": "Euclid Circular A",
+        "fontSize": "13px",
+        "fontWeight": 600,
+        "lineHeight": 1.4
+      },
+      "rounded": "9999px",
+      "padding": "4px 10px"
+    },
+    "promo-banner": {
+      "backgroundColor": "#001e2b",
+      "textColor": "#ffffff",
+      "typography": {
+        "fontFamily": "Euclid Circular A",
+        "fontSize": "14px",
+        "fontWeight": 500,
+        "lineHeight": 1.5
+      },
+      "padding": "12px 16px"
+    },
+    "hero-band-dark": {
+      "backgroundColor": "#001e2b",
+      "textColor": "#ffffff",
+      "rounded": "0",
+      "padding": "120px"
+    },
+    "hero-platform-card": {
+      "backgroundColor": "#00684a",
+      "textColor": "#ffffff",
+      "rounded": "16px",
+      "padding": "32px"
+    },
+    "cta-banner-dark": {
+      "backgroundColor": "#001e2b",
+      "textColor": "#ffffff",
+      "rounded": "12px",
+      "padding": "64px"
+    },
+    "code-block": {
+      "backgroundColor": "#001e2b",
+      "textColor": "#ffffff",
+      "typography": {
+        "fontFamily": "Source Code Pro",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.55
+      },
+      "rounded": "8px",
+      "padding": "16px"
+    },
+    "code-mockup-card": {
+      "backgroundColor": "#001e2b",
+      "textColor": "#ffffff",
+      "rounded": "12px",
+      "padding": "20px"
+    },
+    "comparison-table": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#001e2b",
+      "typography": {
+        "fontFamily": "Euclid Circular A",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.5
+      },
+      "rounded": "8px",
+      "border": "1px solid #e1e5e8"
+    },
+    "comparison-row": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#001e2b",
+      "padding": "16px 20px",
+      "border": "0 0 1px #eceff1 solid"
+    },
+    "service-tile": {
+      "backgroundColor": "#ffffff",
+      "rounded": "12px",
+      "padding": "24px",
+      "border": "1px solid #e1e5e8"
+    },
+    "why-card": {
+      "backgroundColor": "#f9fbfa",
+      "rounded": "12px",
+      "padding": "24px"
+    },
+    "customer-testimonial-card": {
+      "backgroundColor": "#ffffff",
+      "rounded": "12px",
+      "padding": "32px",
+      "border": "1px solid #e1e5e8"
+    },
+    "logo-wall-item": {
+      "backgroundColor": "transparent",
+      "textColor": "#5c6c7a",
+      "typography": {
+        "fontFamily": "Euclid Circular A",
+        "fontSize": "16px",
+        "fontWeight": 500,
+        "lineHeight": 1.55
+      },
+      "padding": "20px"
+    },
+    "faq-accordion-item": {
+      "backgroundColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "24px",
+      "border": "0 0 1px #e1e5e8 solid"
+    },
+    "footer-region": {
+      "backgroundColor": "#001e2b",
+      "textColor": "#ffffff",
+      "typography": {
+        "fontFamily": "Euclid Circular A",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.5
+      },
+      "padding": "64px 32px"
+    },
+    "footer-link": {
+      "backgroundColor": "transparent",
+      "textColor": "#a8b3bc",
+      "typography": {
+        "fontFamily": "Euclid Circular A",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.5
+      },
+      "padding": "4px 0"
+    }
+  },
+  "layout": "product",
+  "traits": "MongoDB carries a strong dual-mode visual identity — dark deep-teal hero bands with bright MongoDB green ({colors.brand-green}) CTAs paired with stark white documentation surfaces. The signature green pill button is unmistakable across product, pricing, learning, and AI use-case surfaces. The system uses Euclid Circular A as its display face, anchors a 3-tier pricing comparison (Free / Flex / Dedicated), and presents extensive course catalogs in card grids with colored category tags. Coverage spans homepage, Atlas product page, Community Edition, MongoDB University, AI use cases, and pricing.",
+  "sections": {
+    "Overview": "MongoDB carries a strong dual-mode visual identity — dark deep-teal hero bands with the unmistakable bright MongoDB green ({colors.brand-green}) CTA pill paired with stark white documentation and pricing surfaces. The homepage opens with \"One data platform. Unlimited AI potential.\" headline over a deep navy hero, the green pill sitting at the visual center as the primary CTA. Lower on the page, embedded code mockup cards (terminal-aesthetic) sit on the dark hero band, breaking out into white feature cards below. The pricing page renders a 3-tier comparison (Free / Flex / Dedicated) with a featured tier highlighted in soft mint background and bright green border. The MongoDB University page presents a course catalog grid where each tile carries a colored category tag (orange, purple, green, teal) — these are MongoDB's category-encoding accent colors and are the only place outside the brand green where saturated color appears.\n\nThe system uses Euclid Circular A as its display face. The face is contemporary geometric — confident but not overly playful — and pairs naturally with both the developer-tool aesthetic of the database product and the educational positioning of the learning surfaces. Cards use `{rounded.lg}` (12px) corners; buttons use `{rounded.full}` pills universally. The brand-teal palette ({colors.brand-teal-deep}) anchors hero bands, footer, code mockups, and the dark CTA banners.\n\n**Key Characteristics:**\n- Deep navy/teal hero bands ({colors.brand-teal-deep}) with bright MongoDB green ({colors.brand-green}) CTA pills\n- Stark white pricing/documentation surfaces with colored category tags for course tiles (purple, orange, green, teal)\n- Euclid Circular A across every UI surface\n- Pill-shaped buttons ({rounded.full}) and 12px-rounded cards\n- 3-tier pricing comparison (Free / Flex / Dedicated) with featured-mint highlight tier\n- Code mockup cards with terminal-aesthetic dark canvas",
+    "Colors": "> Source pages: mongodb.com/ (homepage), /products/platform/atlas-database (Atlas product), /products/self-managed/community-edition, learn.mongodb.com/ (MongoDB University), /solutions/use-cases/artificial-intelligence (AI), /pricing (3-tier comparison). Token coverage was identical across all six pages.\n\n### Brand & Accent\n- **MongoDB Green** ({colors.brand-green}): The brand's most recognizable signal — bright pill-CTA color\n- **Green Dark** ({colors.brand-green-dark}): Inline link color, secondary green\n- **Green Mid** ({colors.brand-green-mid}): Mid-spectrum green for atmospheric tints\n- **Green Soft** ({colors.brand-green-soft}): Pale-mint background tint for success badges and featured pricing tier\n- **Brand Teal Deep** ({colors.brand-teal-deep}): Deep navy-teal for hero bands, footer\n- **Brand Teal** ({colors.brand-teal}): Mid-spectrum teal\n- **Brand Teal Mid** ({colors.brand-teal-mid}): Lighter teal for hero platform cards\n\n### Category Accent (Course Tags)\n- **Accent Purple** ({colors.accent-purple}): Course tag for \"Database & Security\"\n- **Accent Orange** ({colors.accent-orange}): Course tag for \"Search\"\n- **Accent Pink** ({colors.accent-pink}): Course tag variant\n- **Accent Blue** ({colors.accent-blue}): Course tag variant for atlas/cloud topics\n\n### Surface\n- **Canvas White** ({colors.canvas}): Page background and primary card surface\n- **Canvas Dark** ({colors.canvas-dark}): Code-block backgrounds, dark mockup canvas\n- **Surface** ({colors.surface}): Subtle section backgrounds, search-pill rest\n- **Surface Soft** ({colors.surface-soft}): Quieter section divisions\n- **Surface Feature** ({colors.surface-feature}): Pale mint background for featured pricing tier\n- **Hairline** ({colors.hairline}): 1px borders and primary dividers\n- **Hairline Soft** ({colors.hairline-soft}): Quieter dividers\n- **Hairline Strong** ({colors.hairline-strong}): Stronger 1px border for inputs\n- **Hairline Dark** ({colors.hairline-dark}): Border on dark surfaces\n\n### Text\n- **Ink** ({colors.ink}): Primary headlines and body text (deep navy-teal)\n- **Charcoal** ({colors.charcoal}): Body emphasis\n- **Slate** ({colors.slate}): Secondary text\n- **Steel** ({colors.steel}): Tertiary text, captions\n- **Stone** ({colors.stone}): Muted labels\n- **Muted** ({colors.muted}): Disabled, placeholders\n- **On Dark** ({colors.on-dark}): White text on dark surfaces\n- **On Dark Muted** ({colors.on-dark-muted}): Reduced-opacity white\n\n### Semantic\n- **Warning Background** ({colors.semantic-warning-bg}): Pale yellow callout bg\n- **Warning Text** ({colors.semantic-warning-text}): Warning state copy color",
+    "Typography": "### Font Family\n**Euclid Circular A** (primary): MongoDB's geometric sans-serif. Fallbacks: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif.\n**Source Code Pro** (code): Monospace for code mockups. Fallbacks: 'SF Mono', Menlo, Consolas, monospace.\n\n### Hierarchy\n\n| Token | Size | Weight | Line Height | Letter Spacing | Use |\n|---|---|---|---|---|---|\n| `{typography.hero-display}` | 72px | 500 | 1.10 | -1.5px | Hero (\"One data platform\") |\n| `{typography.display-lg}` | 56px | 500 | 1.15 | -1px | Major section openers |\n| `{typography.heading-1}` | 48px | 500 | 1.20 | -0.5px | Page-level headlines |\n| `{typography.heading-2}` | 36px | 500 | 1.25 | -0.5px | Subsection headlines |\n| `{typography.heading-3}` | 28px | 500 | 1.30 | 0 | Card titles |\n| `{typography.heading-4}` | 22px | 500 | 1.35 | 0 | Feature tile titles |\n| `{typography.heading-5}` | 18px | 600 | 1.40 | 0 | Smaller card titles, FAQ questions |\n| `{typography.subtitle}` | 18px | 400 | 1.50 | 0 | Hero subtitle, lead body |\n| `{typography.body-md}` | 16px | 400 | 1.55 | 0 | Primary body text |\n| `{typography.body-sm}` | 14px | 400 | 1.50 | 0 | Secondary body, table cells |\n| `{typography.body-sm-medium}` | 14px | 500 | 1.50 | 0 | Active sidebar, button labels |\n| `{typography.caption-bold}` | 13px | 600 | 1.40 | 0 | Badge labels |\n| `{typography.micro-uppercase}` | 11px | 600 | 1.40 | 1px | Section eyebrows, course category tags |\n| `{typography.button-md}` | 14px | 600 | 1.30 | 0 | Pill button labels |\n| `{typography.code-md}` | 14px | 400 | 1.55 | 0 | Code mockups |\n\n### Principles\n- Tight hero leading (1.10) on 72px display\n- Negative letter-spacing on display sizes (-1.5px to -0.5px)\n- 600 weight reserved for buttons and small emphasis (FAQ headings, badges)\n- Generous body leading (1.55) for technical documentation readability",
+    "Layout": "### Spacing System\n- **Base unit**: 4px (8px primary increment)\n- **Tokens**: `{spacing.xxs}` (4px) through `{spacing.hero}` (120px)\n- **Section rhythm**: Marketing pages use `{spacing.section-lg}` (96px); pricing tightens to `{spacing.section}` (64px)\n\n### Grid & Container\n- 1280px max-width with 32px gutters\n- Pricing: 3-tier card row, dense feature comparison table below\n- Learn catalog: 3-up course tile grid, 4-up certification grid\n- AI use cases: 2-column hero with atmospheric illustration\n\n### Whitespace Philosophy\nMarketing surfaces give content generous breathing room — `{spacing.hero}` (120px) hero padding for deep teal bands. Pricing/learn surfaces tighten dramatically.",
+    "Elevation & Depth": "| Level | Treatment | Use |\n|---|---|---|\n| 0 (flat) | No shadow; `{colors.hairline}` border | Default cards, table rows |\n| 1 (subtle) | `rgba(0, 30, 43, 0.04) 0px 1px 2px 0px` | Hover-elevated tiles |\n| 2 (card) | `rgba(0, 30, 43, 0.08) 0px 4px 12px 0px` | Feature cards |\n| 3 (mockup) | `rgba(0, 30, 43, 0.12) 0px 12px 24px -4px` | Code mockup over hero |\n| 4 (modal) | `rgba(0, 30, 43, 0.16) 0px 16px 48px -8px` | Modals, dropdowns |\n\n### Decorative Depth\n- Dark teal hero bands carry atmospheric gradient depth\n- Code mockup cards on hero use canvas-dark surface with terminal aesthetic\n- Pale-mint pricing-feature tier uses brand-tinted shadow",
+    "Shapes": "### Border Radius Scale\n\n| Token | Value | Use |\n|---|---|---|\n| `{rounded.xs}` | 4px | Course category tags |\n| `{rounded.sm}` | 6px | Type badges, code chips |\n| `{rounded.md}` | 8px | Inputs, search-pill, code blocks |\n| `{rounded.lg}` | 12px | Cards, pricing tiers, course tiles |\n| `{rounded.xl}` | 16px | Larger feature panels |\n| `{rounded.xxl}` | 24px | Featured product showcases |\n| `{rounded.full}` | 9999px | All buttons, status badges |\n\n### Photography Geometry\n- Hero illustrations sit on full-bleed dark backgrounds\n- Course tile thumbnails use `{rounded.lg}` corners\n- Customer logos wall: wordmarks at consistent 60–80px height",
+    "Components": "> Per the no-hover policy, hover states are NOT documented. Default and pressed/active states only.\n\n### Buttons\n\n**`button-primary`** — Bright MongoDB green pill primary CTA, the dominant action.\n- Background `{colors.brand-green}`, text `{colors.on-primary}` (deep navy), typography `{typography.button-md}`, padding `10px 22px`, rounded `{rounded.full}`.\n- Pressed state `button-primary-pressed` deepens to `{colors.primary-pressed}`.\n- Disabled state `button-primary-disabled` uses `{colors.hairline}` background.\n\n**`button-secondary`** — Outlined pill for secondary actions.\n- Background transparent, text `{colors.ink}`, border `1px solid {colors.hairline-strong}`, typography `{typography.button-md}`, padding `10px 22px`, rounded `{rounded.full}`.\n\n**`button-on-dark`** — Bright green pill on dark hero bands.\n- Background `{colors.brand-green}`, text `{colors.on-primary}`, typography `{typography.button-md}`, padding `10px 22px`, rounded `{rounded.full}`.\n\n**`button-secondary-on-dark`** — Outlined pill on dark backgrounds.\n- Background transparent, text `{colors.on-dark}`, border `1px solid {colors.hairline-dark}`, typography `{typography.button-md}`, padding `10px 22px`, rounded `{rounded.full}`.\n\n**`button-ghost`** — Quieter rectangular ghost button.\n- Background transparent, text `{colors.ink}`, typography `{typography.button-md}`, padding `8px 12px`, rounded `{rounded.md}`.\n\n**`button-link`** — Inline green text link.\n- Background transparent, text `{colors.brand-green-dark}`, typography `{typography.body-sm-medium}`, padding `0`.\n\n### Cards & Containers\n\n**`card-base`** — Standard content card.\n- Background `{colors.canvas}`, rounded `{rounded.lg}`, padding `{spacing.xl}`, border `1px solid {colors.hairline}`.\n\n**`card-feature`** — Feature card with larger padding.\n- Background `{colors.canvas}`, rounded `{rounded.lg}`, padding `{spacing.xxl}`, border `1px solid {colors.hairline}`.\n\n**`card-product-deploy`** — Product deployment card (\"MongoDB Atlas / Community\").\n- Background `{colors.canvas}`, rounded `{rounded.lg}`, padding `{spacing.xxl}`, border `1px solid {colors.hairline}`.\n\n**`card-feature-dark`** — Dark teal feature card on hero band.\n- Background `{colors.brand-teal-deep}`, text `{colors.on-dark}`, rounded `{rounded.lg}`, padding `{spacing.xxl}`.\n\n**`card-course`** — MongoDB University course tile.\n- Background `{colors.canvas}`, rounded `{rounded.lg}`, padding `{spacing.xl}`, border `1px solid {colors.hairline}`.\n- Top: colored category tag. Below: title `{typography.heading-5}`, description `{typography.body-sm}`, \"Get Started →\" link.\n\n**`card-cert`** — Certification card.\n- Background `{colors.canvas}`, rounded `{rounded.lg}`, padding `{spacing.xl}`, border `1px solid {colors.hairline}`.\n\n**`pricing-card`** — Standard pricing tier card.\n- Background `{colors.canvas}`, rounded `{rounded.lg}`, padding `{spacing.xxl}`, border `1px solid {colors.hairline}`.\n\n**`pricing-card-featured`** — Featured pricing tier (Flex tier, mint background + green border).\n- Background `{colors.surface-feature}`, rounded `{rounded.lg}`, padding `{spacing.xxl}`, border `2px solid {colors.brand-green}`.\n\n### Inputs & Forms\n\n**`text-input`** — Standard text field.\n- Background `{colors.canvas}`, text `{colors.ink}`, border `1px solid {colors.hairline-strong}`, rounded `{rounded.md}`, padding `{spacing.sm} {spacing.md}`, height 44px.\n\n**`text-input-focused`** — Activated state.\n- Border switches to `2px solid {colors.brand-green-dark}`.\n\n**`search-pill`** — Standard 44px search bar.\n- Background `{colors.surface}`, text `{colors.steel}`, typography `{typography.body-md}`, rounded `{rounded.md}`, height 44px, border `1px solid {colors.hairline-strong}`.\n\n**`search-pill-large`** — Large 56px search bar (top of MongoDB University catalog).\n- Background `{colors.canvas}`, text `{colors.steel}`, typography `{typography.body-md}`, rounded `{rounded.md}`, height 56px, border `1px solid {colors.hairline-strong}`.\n\n### Tabs\n\n**`pill-tab`** + **`pill-tab-active`** — Pill-style tab nav (top of pricing: \"MongoDB Atlas / Enterprise Advanced\").\n- Inactive: text `{colors.steel}`, border `1px solid {colors.hairline}`, padding `{spacing.xs} {spacing.md}`, rounded `{rounded.full}`.\n- Active: background `{colors.ink}`, text `{colors.on-dark}`.\n\n**`segmented-tab`** + **`segmented-tab-active`** — Underline-style tab navigation.\n- Inactive: text `{colors.steel}`, no border. Active: text `{colors.brand-green-dark}`, 2px bottom border in `{colors.brand-green-dark}`.\n\n### Badges & Status\n\n**`badge-green`** — Bright green badge for new product highlights.\n- Background `{colors.brand-green}`, text `{colors.on-primary}`, typography `{typography.caption-bold}`, rounded `{rounded.sm}`, padding `2px 8px`.\n\n**`badge-green-soft`** — Pale-mint pill for success/free indicators.\n- Background `{colors.brand-green-soft}`, text `{colors.brand-green-dark}`, typography `{typography.caption-bold}`, rounded `{rounded.full}`, padding `4px 10px`.\n\n**`badge-purple`** — Purple course category tag.\n- Background `{colors.accent-purple}`, text `{colors.on-dark}`, typography `{typography.caption-bold}`, rounded `{rounded.sm}`, padding `2px 8px`.\n\n**`badge-orange`** — Orange course category tag.\n- Background `{colors.accent-orange}`, text `{colors.on-dark}`, typography `{typography.caption-bold}`, rounded `{rounded.sm}`, padding `2px 8px`.\n\n**`badge-popular`** — \"Most Popular\" tier indicator (dark teal pill with green text).\n- Background `{colors.brand-teal-deep}`, text `{colors.brand-green}`, typography `{typography.caption-bold}`, rounded `{rounded.full}`, padding `4px 10px`.\n\n**`promo-banner`** — Dark teal sticky promo strip ABOVE the top nav.\n- Background `{colors.brand-teal-deep}`, text `{colors.on-dark}`, typography `{typography.body-sm-medium}`, padding `{spacing.sm} {spacing.md}`.\n\n### Code\n\n**`code-block`** — Code container.\n- Background `{colors.canvas-dark}`, text `{colors.on-dark}`, typography `{typography.code-md}`, rounded `{rounded.md}`, padding `{spacing.md}`.\n\n**`code-mockup-card`** — Embedded code mockup on hero band.\n- Background `{colors.canvas-dark}`, text `{colors.on-dark}`, rounded `{rounded.lg}`, padding `{spacing.lg}`. Carries terminal-aesthetic code snippet.\n\n### Tables\n\n**`comparison-table`** — Pricing feature comparison table.\n- Background `{colors.canvas}`, text `{colors.ink}`, typography `{typography.body-sm}`, rounded `{rounded.md}`, border `1px solid {colors.hairline}`.\n\n**`comparison-row`** — Individual feature row.\n- Background `{colors.canvas}`, text `{colors.ink}`, padding `{spacing.md} {spacing.lg}`, bottom border `1px solid {colors.hairline-soft}`.\n\n### Documentation Components\n\n**`service-tile`** — Tile in \"Customize your deployment\" 6-up grid.\n- Background `{colors.canvas}`, rounded `{rounded.lg}`, padding `{spacing.xl}`, border `1px solid {colors.hairline}`.\n\n**`why-card`** — \"Loved by builders\" feature card.\n- Background `{colors.surface}`, rounded `{rounded.lg}`, padding `{spacing.xl}`.\n\n**`customer-testimonial-card`** — Customer quote card.\n- Background `{colors.canvas}`, rounded `{rounded.lg}`, padding `{spacing.xxl}`, border `1px solid {colors.hairline}`.\n\n**`logo-wall-item`** — Customer logo wordmark cell.\n- Background transparent, text `{colors.steel}`, typography `{typography.body-md-medium}`, padding `{spacing.lg}`.\n\n**`faq-accordion-item`** — FAQ panel.\n- Background `{colors.canvas}`, rounded `{rounded.md}`, padding `{spacing.xl}`, bottom border `1px solid {colors.hairline}`.\n\n### Navigation\n\n**Top Navigation (Marketing)** — Sticky white bar.\n- Background `{colors.canvas}`, height ~64px, bottom border `1px solid {colors.hairline}`.\n- Left: MongoDB leaf logo + \"Solutions / Resources / Company / Pricing\" links.\n- Right: \"Sign In\" link + bright-green pill \"Try Free\" CTA.\n\n### Signature Components\n\n**`hero-band-dark`** — Deep teal hero band with embedded code mockup.\n- Background `{colors.brand-teal-deep}`, text `{colors.on-dark}`, padding `{spacing.hero}`.\n- Layout: centered headline `{typography.hero-display}`, subtitle, button row, `code-mockup-card` below.\n\n**`hero-platform-card`** — Lighter-teal platform showcase card on dark hero.\n- Background `{colors.brand-teal-mid}`, text `{colors.on-dark}`, rounded `{rounded.xl}`, padding `{spacing.xxl}`.\n\n**`cta-banner-dark`** — Dark CTA banner at the bottom of feature pages.\n- Background `{colors.brand-teal-deep}`, text `{colors.on-dark}`, rounded `{rounded.lg}`, padding `{spacing.section}`.\n\n**`footer-region`** — Dark teal multi-column footer.\n- Background `{colors.brand-teal-deep}`, padding `{spacing.section} {spacing.xxl}`.\n- 6-column link grid.\n- Section headings in `{typography.body-sm-medium}` `{colors.on-dark}`.\n\n**`footer-link`** — Individual footer link.\n- Background transparent, text `{colors.on-dark-muted}`, typography `{typography.body-sm}`, padding `{spacing.xxs} 0`.",
+    "Do's and Don'ts": "### Do\n- Use `{colors.brand-green}` (bright MongoDB green) for primary CTAs everywhere\n- Pair dark-teal hero bands with bright green CTA pills\n- Apply `{rounded.full}` to every button, every status badge\n- Apply `{rounded.lg}` (12px) to cards consistently\n- Use category accent colors (purple, orange, green, teal) ONLY for course tags\n- Maintain Euclid Circular A across every UI surface\n- Use code mockup cards with terminal-aesthetic content for product showcases\n\n### Don't\n- Don't use the bright green for body text or large surfaces\n- Don't introduce additional accent colors beyond the brand green and category-encoding palette\n- Don't soften corners on buttons; the pill is a brand signature\n- Don't replace deep teal hero bands with white hero bands\n- Don't apply heavy shadows on flat documentation cards; reserve elevation for code mockups\n- Don't use Source Code Pro for prose",
+    "Responsive Behavior": "### Breakpoints\n| Name | Width | Key Changes |\n|---|---|---|\n| Mobile (small) | < 480px | Single column. Hero 36px. Pricing 1-up. Course catalog 1-up. |\n| Mobile (large) | 480 – 767px | Course tiles 2-up. Hero 48px. |\n| Tablet | 768 – 1023px | 2-column feature grids. Hero 56px. |\n| Desktop | 1024 – 1279px | 3-tier pricing card row. 3-up course catalog. Hero 64px. |\n| Wide Desktop | ≥ 1280px | Full 72px hero presentation. |\n\n### Touch Targets\n- Pill buttons render at 40–44px effective height\n- Form inputs render at 44px height\n- Search pill (large) renders at 56px\n- Pill tabs ~32px → 44px on mobile\n\n### Collapsing Strategy\n- **Promo banner** stays full-width; truncates at < 480px\n- **Top nav** below 1024px collapses to hamburger\n- **Hero band**: code mockup card moves below text on mobile\n- **Pricing tiers**: 3-column → 2-column tablet → 1-column mobile\n- **Course catalog**: 3-up → 2-up tablet → 1-up mobile\n- **Hero typography**: 72px → 56px → 48px → 36px\n- **Footer**: 6-column desktop → 3-column tablet → accordion mobile\n\n### Image Behavior\n- Atmospheric AI imagery uses 16:9 ratio with full-bleed scaling\n- Code mockup card content remains readable across breakpoints\n- Customer logo wall: wordmarks at consistent 60–80px height",
+    "Iteration Guide": "1. Focus on ONE component at a time\n2. Reference component names and tokens directly\n3. Run `npx @google/design.md lint DESIGN.md` after edits\n4. Add new variants as separate `components:` entries\n5. Default to `{typography.body-md}` for body\n6. Keep `{colors.brand-green}` as the primary CTA across all surfaces\n7. Pill-shaped buttons (`{rounded.full}`) always\n8. Dark-teal hero bands frame primary CTAs",
+    "Known Gaps": "- Specific dark-mode token values for canvas/surface beyond hero bands not surfaced\n- Animation/transition timings not extracted; recommend 150–200ms ease\n- Form validation success state not explicitly captured\n- Course-tile category color mappings are observation-based"
+  },
+  "frontmatter": {
+    "version": "alpha",
+    "name": "MongoDB-design-analysis",
+    "description": "MongoDB carries a strong dual-mode visual identity — dark deep-teal hero bands with bright MongoDB green ({colors.brand-green}) CTAs paired with stark white documentation surfaces. The signature green pill button is unmistakable across product, pricing, learning, and AI use-case surfaces. The system uses Euclid Circular A as its display face, anchors a 3-tier pricing comparison (Free / Flex / Dedicated), and presents extensive course catalogs in card grids with colored category tags. Coverage spans homepage, Atlas product page, Community Edition, MongoDB University, AI use cases, and pricing.",
+    "colors": {
+      "primary": "#00ed64",
+      "primary-deep": "#00b545",
+      "primary-pressed": "#008c34",
+      "on-primary": "#001e2b",
+      "brand-green": "#00ed64",
+      "brand-green-dark": "#00684a",
+      "brand-green-mid": "#00a35c",
+      "brand-green-soft": "#c3f0d2",
+      "brand-teal-deep": "#001e2b",
+      "brand-teal": "#003d4f",
+      "brand-teal-mid": "#00684a",
+      "accent-purple": "#7b3ff2",
+      "accent-orange": "#fa6e39",
+      "accent-pink": "#f06bb8",
+      "accent-blue": "#3d4f9f",
+      "semantic-warning-bg": "#fff8e0",
+      "semantic-warning-text": "#946f3f",
+      "canvas": "#ffffff",
+      "canvas-dark": "#001e2b",
+      "surface": "#f9fbfa",
+      "surface-soft": "#f4f7f6",
+      "surface-feature": "#e3fcef",
+      "hairline": "#e1e5e8",
+      "hairline-soft": "#eceff1",
+      "hairline-strong": "#c1ccd6",
+      "hairline-dark": "#1c2d38",
+      "ink": "#001e2b",
+      "charcoal": "#1c2d38",
+      "slate": "#3d4f5b",
+      "steel": "#5c6c7a",
+      "stone": "#7c8c9a",
+      "muted": "#a8b3bc",
+      "on-dark": "#ffffff",
+      "on-dark-muted": "#a8b3bc"
+    },
+    "typography": {
+      "hero-display": {
+        "fontFamily": "Euclid Circular A",
+        "fontSize": "72px",
+        "fontWeight": 500,
+        "lineHeight": 1.1,
+        "letterSpacing": "-1.5px"
+      },
+      "display-lg": {
+        "fontFamily": "Euclid Circular A",
+        "fontSize": "56px",
+        "fontWeight": 500,
+        "lineHeight": 1.15,
+        "letterSpacing": "-1px"
+      },
+      "heading-1": {
+        "fontFamily": "Euclid Circular A",
+        "fontSize": "48px",
+        "fontWeight": 500,
+        "lineHeight": 1.2,
+        "letterSpacing": "-0.5px"
+      },
+      "heading-2": {
+        "fontFamily": "Euclid Circular A",
+        "fontSize": "36px",
+        "fontWeight": 500,
+        "lineHeight": 1.25,
+        "letterSpacing": "-0.5px"
+      },
+      "heading-3": {
+        "fontFamily": "Euclid Circular A",
+        "fontSize": "28px",
+        "fontWeight": 500,
+        "lineHeight": 1.3
+      },
+      "heading-4": {
+        "fontFamily": "Euclid Circular A",
+        "fontSize": "22px",
+        "fontWeight": 500,
+        "lineHeight": 1.35
+      },
+      "heading-5": {
+        "fontFamily": "Euclid Circular A",
+        "fontSize": "18px",
+        "fontWeight": 600,
+        "lineHeight": 1.4
+      },
+      "subtitle": {
+        "fontFamily": "Euclid Circular A",
+        "fontSize": "18px",
+        "fontWeight": 400,
+        "lineHeight": 1.5
+      },
+      "body-md": {
+        "fontFamily": "Euclid Circular A",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": 1.55
+      },
+      "body-md-medium": {
+        "fontFamily": "Euclid Circular A",
+        "fontSize": "16px",
+        "fontWeight": 500,
+        "lineHeight": 1.55
+      },
+      "body-sm": {
+        "fontFamily": "Euclid Circular A",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.5
+      },
+      "body-sm-medium": {
+        "fontFamily": "Euclid Circular A",
+        "fontSize": "14px",
+        "fontWeight": 500,
+        "lineHeight": 1.5
+      },
+      "caption": {
+        "fontFamily": "Euclid Circular A",
+        "fontSize": "13px",
+        "fontWeight": 400,
+        "lineHeight": 1.4
+      },
+      "caption-bold": {
+        "fontFamily": "Euclid Circular A",
+        "fontSize": "13px",
+        "fontWeight": 600,
+        "lineHeight": 1.4
+      },
+      "micro": {
+        "fontFamily": "Euclid Circular A",
+        "fontSize": "12px",
+        "fontWeight": 500,
+        "lineHeight": 1.4
+      },
+      "micro-uppercase": {
+        "fontFamily": "Euclid Circular A",
+        "fontSize": "11px",
+        "fontWeight": 600,
+        "lineHeight": 1.4,
+        "letterSpacing": "1px"
+      },
+      "button-md": {
+        "fontFamily": "Euclid Circular A",
+        "fontSize": "14px",
+        "fontWeight": 600,
+        "lineHeight": 1.3
+      },
+      "code-md": {
+        "fontFamily": "Source Code Pro",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.55
+      }
+    },
+    "rounded": {
+      "xs": "4px",
+      "sm": "6px",
+      "md": "8px",
+      "lg": "12px",
+      "xl": "16px",
+      "xxl": "24px",
+      "full": "9999px"
+    },
+    "spacing": {
+      "xxs": "4px",
+      "xs": "8px",
+      "sm": "12px",
+      "md": "16px",
+      "lg": "20px",
+      "xl": "24px",
+      "xxl": "32px",
+      "xxxl": "40px",
+      "section-sm": "48px",
+      "section": "64px",
+      "section-lg": "96px",
+      "hero": "120px"
+    },
+    "components": {
+      "button-primary": {
+        "backgroundColor": "{colors.brand-green}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.full}",
+        "padding": "10px 22px"
+      },
+      "button-primary-pressed": {
+        "backgroundColor": "{colors.primary-pressed}",
+        "textColor": "{colors.on-primary}"
+      },
+      "button-primary-disabled": {
+        "backgroundColor": "{colors.hairline}",
+        "textColor": "{colors.muted}"
+      },
+      "button-secondary": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.full}",
+        "padding": "10px 22px",
+        "border": "1px solid {colors.hairline-strong}"
+      },
+      "button-on-dark": {
+        "backgroundColor": "{colors.brand-green}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.full}",
+        "padding": "10px 22px"
+      },
+      "button-secondary-on-dark": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.full}",
+        "padding": "10px 22px",
+        "border": "1px solid {colors.hairline-dark}"
+      },
+      "button-ghost": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.md}",
+        "padding": "8px 12px"
+      },
+      "button-link": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.brand-green-dark}",
+        "typography": "{typography.body-sm-medium}",
+        "padding": "0"
+      },
+      "card-base": {
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.xl}",
+        "border": "1px solid {colors.hairline}"
+      },
+      "card-feature": {
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.xxl}",
+        "border": "1px solid {colors.hairline}"
+      },
+      "card-product-deploy": {
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.xxl}",
+        "border": "1px solid {colors.hairline}"
+      },
+      "card-feature-dark": {
+        "backgroundColor": "{colors.brand-teal-deep}",
+        "textColor": "{colors.on-dark}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.xxl}"
+      },
+      "card-course": {
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.xl}",
+        "border": "1px solid {colors.hairline}"
+      },
+      "card-cert": {
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.xl}",
+        "border": "1px solid {colors.hairline}"
+      },
+      "pricing-card": {
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.xxl}",
+        "border": "1px solid {colors.hairline}"
+      },
+      "pricing-card-featured": {
+        "backgroundColor": "{colors.surface-feature}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.xxl}",
+        "border": "2px solid {colors.brand-green}"
+      },
+      "text-input": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.md}",
+        "padding": "{spacing.sm} {spacing.md}",
+        "border": "1px solid {colors.hairline-strong}",
+        "height": "44px"
+      },
+      "text-input-focused": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "border": "2px solid {colors.brand-green-dark}"
+      },
+      "search-pill": {
+        "backgroundColor": "{colors.surface}",
+        "textColor": "{colors.steel}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.md}",
+        "padding": "{spacing.sm} {spacing.md}",
+        "height": "44px",
+        "border": "1px solid {colors.hairline-strong}"
+      },
+      "search-pill-large": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.steel}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.md}",
+        "padding": "{spacing.md}",
+        "height": "56px",
+        "border": "1px solid {colors.hairline-strong}"
+      },
+      "pill-tab": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.steel}",
+        "typography": "{typography.body-sm-medium}",
+        "rounded": "{rounded.full}",
+        "padding": "{spacing.xs} {spacing.md}",
+        "border": "1px solid {colors.hairline}"
+      },
+      "pill-tab-active": {
+        "backgroundColor": "{colors.ink}",
+        "textColor": "{colors.on-dark}",
+        "rounded": "{rounded.full}",
+        "border": "1px solid {colors.ink}"
+      },
+      "segmented-tab": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.steel}",
+        "typography": "{typography.body-sm-medium}",
+        "padding": "{spacing.sm} {spacing.md}",
+        "border": "0 0 2px transparent solid"
+      },
+      "segmented-tab-active": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.brand-green-dark}",
+        "typography": "{typography.body-sm-medium}",
+        "border": "0 0 2px {colors.brand-green-dark} solid"
+      },
+      "badge-green": {
+        "backgroundColor": "{colors.brand-green}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.caption-bold}",
+        "rounded": "{rounded.sm}",
+        "padding": "2px 8px"
+      },
+      "badge-green-soft": {
+        "backgroundColor": "{colors.brand-green-soft}",
+        "textColor": "{colors.brand-green-dark}",
+        "typography": "{typography.caption-bold}",
+        "rounded": "{rounded.full}",
+        "padding": "4px 10px"
+      },
+      "badge-purple": {
+        "backgroundColor": "{colors.accent-purple}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.caption-bold}",
+        "rounded": "{rounded.sm}",
+        "padding": "2px 8px"
+      },
+      "badge-orange": {
+        "backgroundColor": "{colors.accent-orange}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.caption-bold}",
+        "rounded": "{rounded.sm}",
+        "padding": "2px 8px"
+      },
+      "badge-popular": {
+        "backgroundColor": "{colors.brand-teal-deep}",
+        "textColor": "{colors.brand-green}",
+        "typography": "{typography.caption-bold}",
+        "rounded": "{rounded.full}",
+        "padding": "4px 10px"
+      },
+      "promo-banner": {
+        "backgroundColor": "{colors.brand-teal-deep}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.body-sm-medium}",
+        "padding": "{spacing.sm} {spacing.md}"
+      },
+      "hero-band-dark": {
+        "backgroundColor": "{colors.brand-teal-deep}",
+        "textColor": "{colors.on-dark}",
+        "rounded": "0",
+        "padding": "{spacing.hero}"
+      },
+      "hero-platform-card": {
+        "backgroundColor": "{colors.brand-teal-mid}",
+        "textColor": "{colors.on-dark}",
+        "rounded": "{rounded.xl}",
+        "padding": "{spacing.xxl}"
+      },
+      "cta-banner-dark": {
+        "backgroundColor": "{colors.brand-teal-deep}",
+        "textColor": "{colors.on-dark}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.section}"
+      },
+      "code-block": {
+        "backgroundColor": "{colors.canvas-dark}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.code-md}",
+        "rounded": "{rounded.md}",
+        "padding": "{spacing.md}"
+      },
+      "code-mockup-card": {
+        "backgroundColor": "{colors.canvas-dark}",
+        "textColor": "{colors.on-dark}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.lg}"
+      },
+      "comparison-table": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-sm}",
+        "rounded": "{rounded.md}",
+        "border": "1px solid {colors.hairline}"
+      },
+      "comparison-row": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "padding": "{spacing.md} {spacing.lg}",
+        "border": "0 0 1px {colors.hairline-soft} solid"
+      },
+      "service-tile": {
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.xl}",
+        "border": "1px solid {colors.hairline}"
+      },
+      "why-card": {
+        "backgroundColor": "{colors.surface}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.xl}"
+      },
+      "customer-testimonial-card": {
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.xxl}",
+        "border": "1px solid {colors.hairline}"
+      },
+      "logo-wall-item": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.steel}",
+        "typography": "{typography.body-md-medium}",
+        "padding": "{spacing.lg}"
+      },
+      "faq-accordion-item": {
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.md}",
+        "padding": "{spacing.xl}",
+        "border": "0 0 1px {colors.hairline} solid"
+      },
+      "footer-region": {
+        "backgroundColor": "{colors.brand-teal-deep}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.body-sm}",
+        "padding": "{spacing.section} {spacing.xxl}"
+      },
+      "footer-link": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.on-dark-muted}",
+        "typography": "{typography.body-sm}",
+        "padding": "{spacing.xxs} 0"
+      }
+    }
+  },
+  "brandAsset": {
+    "type": "text-wordmark",
+    "label": "MongoDB"
+  }
+}

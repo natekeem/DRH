@@ -1,0 +1,152 @@
+[
+  {
+    "kind": "fluid",
+    "variant": "detail",
+    "mode": "webgl2",
+    "running": true,
+    "disposed": false,
+    "frames": 71,
+    "inputs": 11,
+    "contextLosses": 0,
+    "width": 1100,
+    "height": 480,
+    "mobile": false,
+    "resources": {
+      "textures": 8,
+      "framebuffers": 8,
+      "programs": 9
+    },
+    "simulation": [
+      367,
+      160
+    ],
+    "dye": [
+      512,
+      384
+    ],
+    "pressureIterations": 32,
+    "divergenceBefore": 2.423607252514013,
+    "divergenceAfter": 1.0284279641222773,
+    "dyeEnergy": 0.01996063788719619
+  },
+  {
+    "kind": "fluid",
+    "variant": "card",
+    "mode": "webgl2",
+    "running": true,
+    "disposed": false,
+    "frames": 138,
+    "inputs": 11,
+    "contextLosses": 0,
+    "width": 1100,
+    "height": 220,
+    "mobile": false,
+    "resources": {
+      "textures": 8,
+      "framebuffers": 8,
+      "programs": 9
+    },
+    "simulation": [
+      480,
+      96
+    ],
+    "dye": [
+      512,
+      192
+    ],
+    "pressureIterations": 16,
+    "divergenceBefore": 0.44652052425462846,
+    "divergenceAfter": 0.101935592359525,
+    "dyeEnergy": 0.0031561938628979027
+  },
+  {
+    "kind": "metaballs",
+    "variant": "detail",
+    "mode": "webgl2",
+    "running": true,
+    "disposed": false,
+    "frames": 66,
+    "inputs": 11,
+    "contextLosses": 0,
+    "width": 1100,
+    "height": 480,
+    "mobile": false,
+    "resources": {
+      "textures": 0,
+      "framebuffers": 0,
+      "programs": 1
+    },
+    "blobCount": 10,
+    "maxDeformation": 1.2320534922751982
+  },
+  {
+    "kind": "metaballs",
+    "variant": "card",
+    "mode": "webgl2",
+    "running": true,
+    "disposed": false,
+    "frames": 69,
+    "inputs": 11,
+    "contextLosses": 0,
+    "width": 1100,
+    "height": 220,
+    "mobile": false,
+    "resources": {
+      "textures": 0,
+      "framebuffers": 0,
+      "programs": 1
+    },
+    "blobCount": 6,
+    "maxDeformation": 1.0132714609861035
+  },
+  {
+    "kind": "refraction",
+    "variant": "detail",
+    "mode": "webgl2",
+    "running": true,
+    "disposed": false,
+    "frames": 65,
+    "inputs": 11,
+    "contextLosses": 0,
+    "width": 1100,
+    "height": 480,
+    "mobile": false,
+    "resources": {
+      "textures": 1,
+      "framebuffers": 0,
+      "programs": 1
+    },
+    "lens": {
+      "x": 0.695682418195502,
+      "y": 0.40282962733126576,
+      "radius": 155,
+      "stretch": 1.1676662887127671,
+      "intensity": 1
+    }
+  },
+  {
+    "kind": "refraction",
+    "variant": "card",
+    "mode": "webgl2",
+    "running": true,
+    "disposed": false,
+    "frames": 64,
+    "inputs": 11,
+    "contextLosses": 0,
+    "width": 1100,
+    "height": 220,
+    "mobile": false,
+    "resources": {
+      "textures": 1,
+      "framebuffers": 0,
+      "programs": 1
+    },
+    "lens": {
+      "x": 0.6966903166915223,
+      "y": 0.4021740155121334,
+      "radius": 94.6,
+      "stretch": 1.2406838306943955,
+      "intensity": 1
+    }
+  }
+]

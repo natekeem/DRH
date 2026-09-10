@@ -1,0 +1,756 @@
+{
+  "colors": {
+    "primary": "#000000",
+    "primary-active": "#1a1a1a",
+    "text-link": "#0d74ce",
+    "text-link-secondary": "#476cff",
+    "ink": "#171717",
+    "body": "#60646c",
+    "body-strong": "#171717",
+    "muted": "#999999",
+    "muted-soft": "#cccccc",
+    "hairline": "#f0f0f3",
+    "hairline-soft": "#f5f5f7",
+    "hairline-strong": "#dcdee0",
+    "canvas": "#ffffff",
+    "canvas-soft": "#fafafa",
+    "surface-card": "#ffffff",
+    "surface-strong": "#f0f0f3",
+    "surface-dark": "#171717",
+    "surface-dark-elevated": "#1a1a1a",
+    "on-primary": "#ffffff",
+    "on-dark": "#ffffff",
+    "on-dark-soft": "#b0b4ba",
+    "gradient-sky-light": "#cfe7ff",
+    "gradient-sky-mid": "#a8c8e8",
+    "accent-warning": "#ab6400",
+    "accent-preview": "#8145b5",
+    "accent-link-bright": "#47c2ff",
+    "semantic-error": "#eb8e90",
+    "semantic-success": "#16a34a"
+  },
+  "typography": {
+    "display-mega": {
+      "fontFamily": "'Inter', -apple-system, system-ui, sans-serif",
+      "fontSize": "64px",
+      "fontWeight": 600,
+      "lineHeight": 1.05,
+      "letterSpacing": "-1.92px",
+      "declaredFamily": "'Inter', -apple-system, system-ui, sans-serif",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "display-xl": {
+      "fontFamily": "'Inter', sans-serif",
+      "fontSize": "48px",
+      "fontWeight": 600,
+      "lineHeight": 1.1,
+      "letterSpacing": "-1.44px",
+      "declaredFamily": "'Inter', sans-serif",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "display-lg": {
+      "fontFamily": "'Inter', sans-serif",
+      "fontSize": "36px",
+      "fontWeight": 600,
+      "lineHeight": 1.15,
+      "letterSpacing": "-1.08px",
+      "declaredFamily": "'Inter', sans-serif",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "display-md": {
+      "fontFamily": "'Inter', sans-serif",
+      "fontSize": "28px",
+      "fontWeight": 600,
+      "lineHeight": 1.2,
+      "letterSpacing": "-0.84px",
+      "declaredFamily": "'Inter', sans-serif",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "display-sm": {
+      "fontFamily": "'Inter', sans-serif",
+      "fontSize": "22px",
+      "fontWeight": 600,
+      "lineHeight": 1.25,
+      "letterSpacing": "-0.5px",
+      "declaredFamily": "'Inter', sans-serif",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "title-md": {
+      "fontFamily": "'Inter', sans-serif",
+      "fontSize": "18px",
+      "fontWeight": 600,
+      "lineHeight": 1.4,
+      "letterSpacing": 0,
+      "declaredFamily": "'Inter', sans-serif",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "title-sm": {
+      "fontFamily": "'Inter', sans-serif",
+      "fontSize": "16px",
+      "fontWeight": 600,
+      "lineHeight": 1.4,
+      "letterSpacing": 0,
+      "declaredFamily": "'Inter', sans-serif",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "body-md": {
+      "fontFamily": "'Inter', sans-serif",
+      "fontSize": "16px",
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "letterSpacing": 0,
+      "declaredFamily": "'Inter', sans-serif",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "body-sm": {
+      "fontFamily": "'Inter', sans-serif",
+      "fontSize": "14px",
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "letterSpacing": 0,
+      "declaredFamily": "'Inter', sans-serif",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "caption": {
+      "fontFamily": "'Inter', sans-serif",
+      "fontSize": "13px",
+      "fontWeight": 400,
+      "lineHeight": 1.4,
+      "letterSpacing": 0,
+      "declaredFamily": "'Inter', sans-serif",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "caption-uppercase": {
+      "fontFamily": "'Inter', sans-serif",
+      "fontSize": "11px",
+      "fontWeight": 600,
+      "lineHeight": 1.4,
+      "letterSpacing": "0.88px",
+      "textTransform": "uppercase",
+      "declaredFamily": "'Inter', sans-serif",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "code": {
+      "fontFamily": "'JetBrains Mono', 'Fira Code', monospace",
+      "fontSize": "13px",
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "letterSpacing": 0,
+      "declaredFamily": "'JetBrains Mono', 'Fira Code', monospace",
+      "renderFallback": "monospace"
+    },
+    "button": {
+      "fontFamily": "'Inter', sans-serif",
+      "fontSize": "14px",
+      "fontWeight": 500,
+      "lineHeight": 1,
+      "letterSpacing": 0,
+      "declaredFamily": "'Inter', sans-serif",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "nav-link": {
+      "fontFamily": "'Inter', sans-serif",
+      "fontSize": "14px",
+      "fontWeight": 500,
+      "lineHeight": 1.4,
+      "letterSpacing": 0,
+      "declaredFamily": "'Inter', sans-serif",
+      "renderFallback": "system-ui, sans-serif"
+    }
+  },
+  "spacing": {
+    "xxs": "4px",
+    "xs": "8px",
+    "sm": "12px",
+    "base": "16px",
+    "md": "20px",
+    "lg": "24px",
+    "xl": "32px",
+    "xxl": "48px",
+    "section": "96px"
+  },
+  "radius": {
+    "none": "0px",
+    "xs": "4px",
+    "sm": "6px",
+    "md": "8px",
+    "lg": "12px",
+    "xl": "16px",
+    "xxl": "24px",
+    "pill": "9999px",
+    "full": "9999px"
+  },
+  "border": {},
+  "motion": {
+    "rules": []
+  },
+  "depth": {
+    "Elevation & Depth": "| Level | Treatment | Use |\n|---|---|---|\n| Flat (canvas) | `{colors.canvas}` (#ffffff) | Body bands, footer |\n| Card | `{colors.surface-card}` (#ffffff) | Content cards |\n| Hairline border | 1px `{colors.hairline}` | Card outlines |\n| Soft drop | `0 4px 12px rgba(0, 0, 0, 0.04)` | Hovered cards (single shadow tier) |\n| Atmospheric gradient | Sky-blue radial wash | Hero backdrop only |\n| Dark inversion | `{colors.surface-dark}` (#171717) | Dark feature cards, code blocks, featured pricing |\n\n### Decorative Depth\n- **Sky-blue gradient backdrop** in the hero only — atmospheric depth without claiming to be a brand color.\n- **Device mockup composite** as page chrome — MacBook + iPhone showing real Expo dev surfaces."
+  },
+  "components": {
+    "top-nav": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#171717",
+      "typography": {
+        "fontFamily": "'Inter', sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 500,
+        "lineHeight": 1.4,
+        "letterSpacing": 0
+      },
+      "height": "64px"
+    },
+    "button-primary": {
+      "backgroundColor": "#000000",
+      "textColor": "#ffffff",
+      "typography": {
+        "fontFamily": "'Inter', sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 500,
+        "lineHeight": 1,
+        "letterSpacing": 0
+      },
+      "rounded": "8px",
+      "padding": "10px 18px",
+      "height": "40px"
+    },
+    "button-primary-active": {
+      "backgroundColor": "#1a1a1a",
+      "textColor": "#ffffff",
+      "rounded": "8px"
+    },
+    "button-secondary": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#171717",
+      "typography": {
+        "fontFamily": "'Inter', sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 500,
+        "lineHeight": 1,
+        "letterSpacing": 0
+      },
+      "rounded": "8px",
+      "padding": "9px 17px",
+      "height": "40px"
+    },
+    "button-tertiary-text": {
+      "backgroundColor": "transparent",
+      "textColor": "#0d74ce",
+      "typography": {
+        "fontFamily": "'Inter', sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 500,
+        "lineHeight": 1,
+        "letterSpacing": 0
+      }
+    },
+    "hero-band": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#171717",
+      "typography": {
+        "fontFamily": "'Inter', -apple-system, system-ui, sans-serif",
+        "fontSize": "64px",
+        "fontWeight": 600,
+        "lineHeight": 1.05,
+        "letterSpacing": "-1.92px"
+      },
+      "padding": "96px"
+    },
+    "device-mockup-card": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#171717",
+      "rounded": "16px",
+      "padding": 0
+    },
+    "feature-card": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#171717",
+      "typography": {
+        "fontFamily": "'Inter', sans-serif",
+        "fontSize": "18px",
+        "fontWeight": 600,
+        "lineHeight": 1.4,
+        "letterSpacing": 0
+      },
+      "rounded": "12px",
+      "padding": "24px"
+    },
+    "feature-card-dark": {
+      "backgroundColor": "#171717",
+      "textColor": "#ffffff",
+      "typography": {
+        "fontFamily": "'Inter', sans-serif",
+        "fontSize": "18px",
+        "fontWeight": 600,
+        "lineHeight": 1.4,
+        "letterSpacing": 0
+      },
+      "rounded": "12px",
+      "padding": "24px"
+    },
+    "workflow-step-card": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#60646c",
+      "typography": {
+        "fontFamily": "'Inter', sans-serif",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "rounded": "12px",
+      "padding": "20px"
+    },
+    "workflow-step-icon": {
+      "backgroundColor": "#f0f0f3",
+      "rounded": "8px",
+      "size": "32px"
+    },
+    "code-block": {
+      "backgroundColor": "#171717",
+      "textColor": "#ffffff",
+      "typography": {
+        "fontFamily": "'JetBrains Mono', 'Fira Code', monospace",
+        "fontSize": "13px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "rounded": "12px",
+      "padding": "20px"
+    },
+    "ide-mockup-card": {
+      "backgroundColor": "#171717",
+      "textColor": "#ffffff",
+      "rounded": "12px",
+      "padding": 0
+    },
+    "pricing-tier-card": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#171717",
+      "typography": {
+        "fontFamily": "'Inter', sans-serif",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "rounded": "12px",
+      "padding": "32px"
+    },
+    "pricing-tier-featured": {
+      "backgroundColor": "#171717",
+      "textColor": "#ffffff",
+      "typography": {
+        "fontFamily": "'Inter', sans-serif",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "rounded": "12px",
+      "padding": "32px"
+    },
+    "text-input": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#171717",
+      "typography": {
+        "fontFamily": "'Inter', sans-serif",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "rounded": "8px",
+      "padding": "12px 16px",
+      "height": "44px"
+    },
+    "badge-pill": {
+      "backgroundColor": "#f0f0f3",
+      "textColor": "#171717",
+      "typography": {
+        "fontFamily": "'Inter', sans-serif",
+        "fontSize": "11px",
+        "fontWeight": 600,
+        "lineHeight": 1.4,
+        "letterSpacing": "0.88px",
+        "textTransform": "uppercase"
+      },
+      "rounded": "9999px",
+      "padding": "4px 10px"
+    },
+    "ecosystem-tile": {
+      "backgroundColor": "#ffffff",
+      "rounded": "8px",
+      "size": "64px"
+    },
+    "cta-band": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#171717",
+      "typography": {
+        "fontFamily": "'Inter', sans-serif",
+        "fontSize": "36px",
+        "fontWeight": 600,
+        "lineHeight": 1.15,
+        "letterSpacing": "-1.08px"
+      },
+      "padding": "96px"
+    },
+    "testimonial-card": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#60646c",
+      "typography": {
+        "fontFamily": "'Inter', sans-serif",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "rounded": "12px",
+      "padding": "24px"
+    },
+    "footer-light": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#60646c",
+      "typography": {
+        "fontFamily": "'Inter', sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "padding": "64px 48px"
+    },
+    "footer-link": {
+      "backgroundColor": "transparent",
+      "textColor": "#60646c",
+      "typography": {
+        "fontFamily": "'Inter', sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      }
+    }
+  },
+  "layout": "editorial",
+  "traits": "A React Native developer-platform whose marketing site reads like a quietly-confident infrastructure brand. The base canvas is pure white with a soft sky-blue gradient atmospheric wash behind the hero; near-black ink (`#171717`) carries body and display alike. The single brand voltage is **pure black** (`#000000`) for primary CTAs — minimal and editorial-feeling, paired with a small blue text-link accent (`#0d74ce`) reserved for inline body links. Type pairs Inter at modest weights (display 600, body 400) with JetBrains Mono on every code surface. The brand's strongest visual signature is the **device-mockup hero** — a centered MacBook + iPhone composite showing real Expo dev surfaces — over the gradient sky wash.",
+  "sections": {
+    "Overview": "Expo's marketing site reads like a quietly-confident React-Native developer platform. The base canvas is **pure white** (`{colors.canvas}` — #ffffff) with a soft **sky-blue gradient atmospheric wash** behind the hero band. Near-black ink `{colors.ink}` (#171717) carries body and display alike. The single brand voltage is **pure black** (`{colors.primary}` — #000000) for primary CTAs — minimal and editorial-feeling. A small blue text-link accent (`{colors.text-link}` — #0d74ce) is reserved for inline body links, never as a CTA.\n\nType runs **Inter** as the single sans family at modest weights (display 600, body 400). JetBrains Mono carries every code surface. No custom typeface — the brand trusts Inter's editorial neutrality.\n\nThe brand's strongest visual signature is the **device-mockup hero** — a centered MacBook + iPhone composite showing real Expo dev surfaces (Expo Studio, EAS Build dashboard, the Expo Go simulator) — over a sky-blue gradient atmospheric wash. The composite is the page's chrome instead of an illustration.\n\n**Key Characteristics:**\n- Pure white canvas with sky-blue gradient atmospheric backdrop in hero only.\n- Single primary CTA: pure black pill at `{rounded.md}` (8px) — compact developer-tool dialect.\n- Text-link blue (`{colors.text-link}`) for inline links only — never on a CTA.\n- Inter as the single sans family — no custom display typeface.\n- JetBrains Mono on every code surface.\n- Device-mockup hero with real Expo product surfaces is the brand chrome.\n- Hairline + soft drop depth; no atmospheric brand decoration outside the hero.\n- 96px section rhythm.",
+    "Colors": "### Brand & Accent\n- **Black** (`{colors.primary}` — #000000): Primary CTA fill. Used scarcely.\n- **Black Active** (`{colors.primary-active}` — #1a1a1a): Press state.\n- **Text Link Blue** (`{colors.text-link}` — #0d74ce): Inline body links inside long-form copy. Scoped narrowly — never on CTAs.\n- **Legal Link Blue** (`{colors.text-link-secondary}` — #476cff): Inline links inside legal copy footer.\n- **Bright Cyan** (`{colors.accent-link-bright}` — #47c2ff): Used very sparingly inside docs widget links.\n\n### Surface\n- **Canvas** (`{colors.canvas}` — #ffffff): Pure white page floor.\n- **Canvas Soft** (`{colors.canvas-soft}` — #fafafa): Subtle alternating band.\n- **Surface Card** (`{colors.surface-card}` — #ffffff): Pure white card.\n- **Surface Strong** (`{colors.surface-strong}` — #f0f0f3): Badges, ecosystem tiles, secondary buttons.\n- **Surface Dark** (`{colors.surface-dark}` — #171717): Dark feature cards, code blocks, IDE mockups, featured pricing.\n- **Surface Dark Elevated** (`{colors.surface-dark-elevated}` — #1a1a1a): One step lighter inside dark cards.\n\n### Atmospheric Backdrop\n- **Sky Light** (`{colors.gradient-sky-light}` — #cfe7ff) + **Sky Mid** (`{colors.gradient-sky-mid}` — #a8c8e8): The soft sky-blue gradient wash behind the homepage hero only. Not a brand action color.\n\n### Hairlines\n- **Hairline** (`{colors.hairline}` — #f0f0f3): Default 1px divider.\n- **Hairline Soft** (`{colors.hairline-soft}` — #f5f5f7): Lighter divider.\n- **Hairline Strong** (`{colors.hairline-strong}` — #dcdee0): Stronger panel outline.\n\n### Text\n- **Ink** (`{colors.ink}` — #171717): Display, body emphasis.\n- **Body** (`{colors.body}` — #60646c): Default running-text — slightly cool gray.\n- **Body Strong** (`{colors.body-strong}` — #171717): Same as ink.\n- **Muted** (`{colors.muted}` — #999999): Sub-titles.\n- **Muted Soft** (`{colors.muted-soft}` — #cccccc): Disabled text.\n- **On Primary** (`{colors.on-primary}` — #ffffff): White text on black CTA.\n- **On Dark** (`{colors.on-dark}` — #ffffff): White text on dark cards.\n- **On Dark Soft** (`{colors.on-dark-soft}` — #b0b4ba): Muted off-white on dark.\n\n### Semantic\n- **Warning** (`{colors.accent-warning}` — #ab6400): Warning text inside docs callouts.\n- **Preview** (`{colors.accent-preview}` — #8145b5): \"Preview\" tag color.\n- **Success** (`{colors.semantic-success}` — #16a34a): Confirmation.\n- **Error** (`{colors.semantic-error}` — #eb8e90): Validation errors.",
+    "Typography": "### Font Family\n**Inter** is the single sans family across every text role. **JetBrains Mono** carries every code surface. Fallback: `-apple-system, system-ui, sans-serif`.\n\n### Hierarchy\n\n| Token | Size | Weight | Line Height | Letter Spacing | Use |\n|---|---|---|---|---|---|\n| `{typography.display-mega}` | 64px | 600 | 1.05 | -1.92px | Homepage hero h1 |\n| `{typography.display-xl}` | 48px | 600 | 1.1 | -1.44px | Subsidiary heroes |\n| `{typography.display-lg}` | 36px | 600 | 1.15 | -1.08px | Section heads |\n| `{typography.display-md}` | 28px | 600 | 1.2 | -0.84px | Sub-section heads |\n| `{typography.display-sm}` | 22px | 600 | 1.25 | -0.5px | Card group titles |\n| `{typography.title-md}` | 18px | 600 | 1.4 | 0 | Component titles |\n| `{typography.title-sm}` | 16px | 600 | 1.4 | 0 | List labels |\n| `{typography.body-md}` | 16px | 400 | 1.5 | 0 | Default body |\n| `{typography.body-sm}` | 14px | 400 | 1.5 | 0 | Footer body |\n| `{typography.caption}` | 13px | 400 | 1.4 | 0 | Photo captions |\n| `{typography.caption-uppercase}` | 11px | 600 | 1.4 | 0.88px | Section labels, badges |\n| `{typography.code}` | 13px | 400 | 1.5 | 0 | Code blocks — JetBrains Mono |\n| `{typography.button}` | 14px | 500 | 1.0 | 0 | CTA labels |\n| `{typography.nav-link}` | 14px | 500 | 1.4 | 0 | Top-nav menu |\n\n### Principles\n- **Display weight stays at 600** — confident but not bombastic. Inter at 600 reads cleaner than 700.\n- **Negative letter-spacing on display** — -0.5px to -1.92px tracking.\n- **JetBrains Mono on every code surface.**\n\n### Note on Font Substitutes\nInter and JetBrains Mono are both freely available — the system uses them directly.",
+    "Layout": "### Spacing System\n- **Base unit:** 4px.\n- **Tokens:** `{spacing.xxs}` 4px · `{spacing.xs}` 8px · `{spacing.sm}` 12px · `{spacing.base}` 16px · `{spacing.md}` 20px · `{spacing.lg}` 24px · `{spacing.xl}` 32px · `{spacing.xxl}` 48px · `{spacing.section}` 96px.\n- **Section padding:** 96px.\n\n### Grid & Container\n- Max content width: ~1200px.\n- Editorial body: 12-column grid.\n- Feature card grids: 2-up at desktop for hero splits, 3-up for benefit grids.\n- Ecosystem tile grid: 8-up at desktop.\n- Footer: 5-column at desktop.\n\n### Whitespace Philosophy\nGenerous editorial pacing. The white canvas does not compete with the hero's gradient sky wash; cards inside dense workflow sections sit close (16-24px gap).",
+    "Elevation & Depth": "| Level | Treatment | Use |\n|---|---|---|\n| Flat (canvas) | `{colors.canvas}` (#ffffff) | Body bands, footer |\n| Card | `{colors.surface-card}` (#ffffff) | Content cards |\n| Hairline border | 1px `{colors.hairline}` | Card outlines |\n| Soft drop | `0 4px 12px rgba(0, 0, 0, 0.04)` | Hovered cards (single shadow tier) |\n| Atmospheric gradient | Sky-blue radial wash | Hero backdrop only |\n| Dark inversion | `{colors.surface-dark}` (#171717) | Dark feature cards, code blocks, featured pricing |\n\n### Decorative Depth\n- **Sky-blue gradient backdrop** in the hero only — atmospheric depth without claiming to be a brand color.\n- **Device mockup composite** as page chrome — MacBook + iPhone showing real Expo dev surfaces.",
+    "Shapes": "### Border Radius Scale\n\n| Token | Value | Use |\n|---|---|---|\n| `{rounded.none}` | 0px | Reserved |\n| `{rounded.xs}` | 4px | Inline tags |\n| `{rounded.sm}` | 6px | Compact rows |\n| `{rounded.md}` | 8px | CTA buttons, form inputs, ecosystem tiles |\n| `{rounded.lg}` | 12px | Feature cards, code blocks, pricing tiers |\n| `{rounded.xl}` | 16px | Device mockup cards |\n| `{rounded.xxl}` | 24px | Larger atmospheric cards (rare) |\n| `{rounded.pill}` | 9999px | Badges only |\n| `{rounded.full}` | 9999px | Avatar plates (rare) |\n\nCompact developer-ergonomic radii — 8px CTAs, 12px cards. Pill geometry is reserved for badges, never CTAs.",
+    "Components": "### Top Navigation\n\n**`top-nav`** — Background `{colors.canvas}`, text `{colors.ink}`, height 64px. Layout: Expo wordmark left, primary horizontal menu (Tools / Workflows / EAS / Pricing / Docs / Showcase), Sign In + Get started CTA right.\n\n### Buttons\n\n**`button-primary`** — Pure black pill. Background `{colors.primary}`, text `{colors.on-primary}`, type `{typography.button}` (14px / 500), padding 10px × 18px, height 40px, rounded `{rounded.md}` (8px).\n\n**`button-primary-active`** — Press state. Background `{colors.primary-active}`.\n\n**`button-secondary`** — White card with 1px hairline-strong border. Background `{colors.surface-card}`, text `{colors.ink}`, 1px `{colors.hairline-strong}` border.\n\n**`button-tertiary-text`** — Inline blue text link. Background transparent, text `{colors.text-link}`.\n\n### Hero & Device Mockup\n\n**`hero-band`** — Background `{colors.canvas}` with a soft sky-blue gradient wash behind the centered headline. Display headline in `{typography.display-mega}` (64px / 600 / -1.92px), subhead in `{typography.body-md}`, single primary CTA, then below — the device mockup composite.\n\n**`device-mockup-card`** — A layered MacBook + iPhone composite showing real Expo dev surfaces. Background `{colors.surface-card}`, rounded `{rounded.xl}`. The MacBook holds the EAS dashboard or Expo Studio screenshot; the iPhone overlay shows the running app in Expo Go. This is the page chrome.\n\n### Cards\n\n**`feature-card`** — Background `{colors.surface-card}`, text `{colors.ink}`, type `{typography.title-md}`, rounded `{rounded.lg}`, padding 24px, 1px `{colors.hairline-strong}` border.\n\n**`feature-card-dark`** — Dark variant. Background `{colors.surface-dark}`, text `{colors.on-dark}`. Same shape, dark inversion.\n\n**`workflow-step-card`** — Step in the \"Get your app on every device\" workflow row. Background `{colors.surface-card}`, text `{colors.body}`, rounded `{rounded.lg}`, padding 20px. Layout: 32px square `{component.workflow-step-icon}` + step number + label + body.\n\n**`workflow-step-icon`** — Square plate. Background `{colors.surface-strong}`, rounded `{rounded.md}`, 32px size.\n\n**`testimonial-card`** — Quote card. Background `{colors.surface-card}`, text `{colors.body}`, rounded `{rounded.lg}`, padding 24px.\n\n### Code & IDE\n\n**`code-block`** — Inline code block. Background `{colors.surface-dark}`, text `{colors.on-dark}` in `{typography.code}` (JetBrains Mono 13px), rounded `{rounded.lg}`, padding 20px. White text on dark.\n\n**`ide-mockup-card`** — Stylized IDE mockup. Background `{colors.surface-dark}`, rounded `{rounded.lg}`. Multi-pane editor + terminal preview.\n\n### Pricing\n\n**`pricing-tier-card`** — Standard pricing tier. Background `{colors.surface-card}`, rounded `{rounded.lg}`, padding 32px, 1px `{colors.hairline-strong}` border.\n\n**`pricing-tier-featured`** — Featured tier. Background `{colors.surface-dark}`, text `{colors.on-dark}`. Same shape, dark inversion.\n\n### Ecosystem\n\n**`ecosystem-tile`** — Square logo plate for ecosystem partner logos (TypeScript, React, Sentry, etc.). Background `{colors.surface-card}`, rounded `{rounded.md}`, 64px size, 1px `{colors.hairline}` border.\n\n### Forms & Tags\n\n**`text-input`** — Background `{colors.surface-card}`, text `{colors.ink}`, rounded `{rounded.md}` (8px), padding 12px × 16px, height 44px, 1px `{colors.hairline-strong}` border. Focus thickens border to 2px ink.\n\n**`badge-pill`** — Small uppercase pill. Background `{colors.surface-strong}`, text `{colors.ink}`, type `{typography.caption-uppercase}`, rounded `{rounded.pill}`, padding 4px × 10px.\n\n### CTA / Footer\n\n**`cta-band`** — Pre-footer band. Background `{colors.canvas}`, centered display headline in `{typography.display-lg}`, single black pill CTA. 96px padding.\n\n**`footer-light`** — Closing white footer. Background `{colors.canvas}`, text `{colors.body}`. 5-column link list. 64×48px padding.\n\n**`footer-link`** — Background transparent, text `{colors.body}`, type `{typography.body-sm}`.",
+    "Do's and Don'ts": "### Do\n- Reserve `{colors.primary}` (black) for primary CTAs.\n- Use `{colors.text-link}` (blue) for inline body links only — never on CTAs or buttons.\n- Set every CTA at `{rounded.md}` (8px) — developer dialect.\n- Use Inter at weight 600 for display, 400 for body.\n- Render every code surface in JetBrains Mono.\n- Pair the hero with the device-mockup composite — it's the page chrome.\n\n### Don't\n- Don't introduce a saturated brand action color. Black is the only CTA fill.\n- Don't use blue (`{colors.text-link}`) on a CTA. Inline links only.\n- Don't drop display below weight 600 or above 700.\n- Don't use full pills on CTAs — pills are for badges only.\n- Don't replicate the sky-blue gradient backdrop outside the hero.\n- Don't extract a CTA color from a third-party widget (cookie consent, OneTrust). The brand's CTA is what appears on actual page CTAs.",
+    "Responsive Behavior": "### Breakpoints\n\n| Name | Width | Key Changes |\n|---|---|---|\n| Mobile | < 640px | Hero h1 64→32px; device mockup → single iPhone screen; feature grid 1-up; nav hamburger. |\n| Tablet | 640–1024px | Hero h1 48px; device mockup compresses; feature grid 2-up. |\n| Desktop | 1024–1280px | Full hero h1 64px; full MacBook + iPhone composite; feature grid 3-up. |\n| Wide | > 1280px | Content caps at 1200px. |\n\n### Touch Targets\n- Primary CTA at 40px height — at WCAG AA, padded for AAA.\n- Search input 44px — at AAA.\n\n### Collapsing Strategy\n- Top nav switches to hamburger below 768px.\n- Device mockup MacBook + iPhone collapses to a single iPhone preview on mobile.\n- Feature grid: 3-up → 2-up → 1-up.\n- Ecosystem tile grid: 8-up → 4-up → 3-up → 2-up.",
+    "Iteration Guide": "1. Focus on a single component at a time.\n2. CTAs default to `{rounded.md}` (8px). Cards use `{rounded.lg}` (12px).\n3. Variants live as separate entries.\n4. Use `{token.refs}` everywhere — never inline hex.\n5. Hover state never documented.\n6. Inter 600 for display, Inter 400 for body. JetBrains Mono on code.\n7. Black stays the only CTA color; text-link blue stays inline-only.",
+    "Known Gaps": "- Inter and JetBrains Mono are freely available — no licensing concerns.\n- Animation timings (device mockup parallax, hero entrance) out of scope.\n- In-app surfaces (EAS dashboard interactive, Expo Go simulator) only partially captured via marketing mockups.\n- Form validation states beyond focus not visible on captured surfaces."
+  },
+  "frontmatter": {
+    "version": "alpha",
+    "name": "Expo-design-analysis",
+    "description": "A React Native developer-platform whose marketing site reads like a quietly-confident infrastructure brand. The base canvas is pure white with a soft sky-blue gradient atmospheric wash behind the hero; near-black ink (`#171717`) carries body and display alike. The single brand voltage is **pure black** (`#000000`) for primary CTAs — minimal and editorial-feeling, paired with a small blue text-link accent (`#0d74ce`) reserved for inline body links. Type pairs Inter at modest weights (display 600, body 400) with JetBrains Mono on every code surface. The brand's strongest visual signature is the **device-mockup hero** — a centered MacBook + iPhone composite showing real Expo dev surfaces — over the gradient sky wash.",
+    "colors": {
+      "primary": "#000000",
+      "primary-active": "#1a1a1a",
+      "text-link": "#0d74ce",
+      "text-link-secondary": "#476cff",
+      "ink": "#171717",
+      "body": "#60646c",
+      "body-strong": "#171717",
+      "muted": "#999999",
+      "muted-soft": "#cccccc",
+      "hairline": "#f0f0f3",
+      "hairline-soft": "#f5f5f7",
+      "hairline-strong": "#dcdee0",
+      "canvas": "#ffffff",
+      "canvas-soft": "#fafafa",
+      "surface-card": "#ffffff",
+      "surface-strong": "#f0f0f3",
+      "surface-dark": "#171717",
+      "surface-dark-elevated": "#1a1a1a",
+      "on-primary": "#ffffff",
+      "on-dark": "#ffffff",
+      "on-dark-soft": "#b0b4ba",
+      "gradient-sky-light": "#cfe7ff",
+      "gradient-sky-mid": "#a8c8e8",
+      "accent-warning": "#ab6400",
+      "accent-preview": "#8145b5",
+      "accent-link-bright": "#47c2ff",
+      "semantic-error": "#eb8e90",
+      "semantic-success": "#16a34a"
+    },
+    "typography": {
+      "display-mega": {
+        "fontFamily": "'Inter', -apple-system, system-ui, sans-serif",
+        "fontSize": "64px",
+        "fontWeight": 600,
+        "lineHeight": 1.05,
+        "letterSpacing": "-1.92px"
+      },
+      "display-xl": {
+        "fontFamily": "'Inter', sans-serif",
+        "fontSize": "48px",
+        "fontWeight": 600,
+        "lineHeight": 1.1,
+        "letterSpacing": "-1.44px"
+      },
+      "display-lg": {
+        "fontFamily": "'Inter', sans-serif",
+        "fontSize": "36px",
+        "fontWeight": 600,
+        "lineHeight": 1.15,
+        "letterSpacing": "-1.08px"
+      },
+      "display-md": {
+        "fontFamily": "'Inter', sans-serif",
+        "fontSize": "28px",
+        "fontWeight": 600,
+        "lineHeight": 1.2,
+        "letterSpacing": "-0.84px"
+      },
+      "display-sm": {
+        "fontFamily": "'Inter', sans-serif",
+        "fontSize": "22px",
+        "fontWeight": 600,
+        "lineHeight": 1.25,
+        "letterSpacing": "-0.5px"
+      },
+      "title-md": {
+        "fontFamily": "'Inter', sans-serif",
+        "fontSize": "18px",
+        "fontWeight": 600,
+        "lineHeight": 1.4,
+        "letterSpacing": 0
+      },
+      "title-sm": {
+        "fontFamily": "'Inter', sans-serif",
+        "fontSize": "16px",
+        "fontWeight": 600,
+        "lineHeight": 1.4,
+        "letterSpacing": 0
+      },
+      "body-md": {
+        "fontFamily": "'Inter', sans-serif",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "body-sm": {
+        "fontFamily": "'Inter', sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "caption": {
+        "fontFamily": "'Inter', sans-serif",
+        "fontSize": "13px",
+        "fontWeight": 400,
+        "lineHeight": 1.4,
+        "letterSpacing": 0
+      },
+      "caption-uppercase": {
+        "fontFamily": "'Inter', sans-serif",
+        "fontSize": "11px",
+        "fontWeight": 600,
+        "lineHeight": 1.4,
+        "letterSpacing": "0.88px",
+        "textTransform": "uppercase"
+      },
+      "code": {
+        "fontFamily": "'JetBrains Mono', 'Fira Code', monospace",
+        "fontSize": "13px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": 0
+      },
+      "button": {
+        "fontFamily": "'Inter', sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 500,
+        "lineHeight": 1,
+        "letterSpacing": 0
+      },
+      "nav-link": {
+        "fontFamily": "'Inter', sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 500,
+        "lineHeight": 1.4,
+        "letterSpacing": 0
+      }
+    },
+    "rounded": {
+      "none": "0px",
+      "xs": "4px",
+      "sm": "6px",
+      "md": "8px",
+      "lg": "12px",
+      "xl": "16px",
+      "xxl": "24px",
+      "pill": "9999px",
+      "full": "9999px"
+    },
+    "spacing": {
+      "xxs": "4px",
+      "xs": "8px",
+      "sm": "12px",
+      "base": "16px",
+      "md": "20px",
+      "lg": "24px",
+      "xl": "32px",
+      "xxl": "48px",
+      "section": "96px"
+    },
+    "components": {
+      "top-nav": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.nav-link}",
+        "height": "64px"
+      },
+      "button-primary": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.md}",
+        "padding": "10px 18px",
+        "height": "40px"
+      },
+      "button-primary-active": {
+        "backgroundColor": "{colors.primary-active}",
+        "textColor": "{colors.on-primary}",
+        "rounded": "{rounded.md}"
+      },
+      "button-secondary": {
+        "backgroundColor": "{colors.surface-card}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.button}",
+        "rounded": "{rounded.md}",
+        "padding": "9px 17px",
+        "height": "40px"
+      },
+      "button-tertiary-text": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.text-link}",
+        "typography": "{typography.button}"
+      },
+      "hero-band": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.display-mega}",
+        "padding": "96px"
+      },
+      "device-mockup-card": {
+        "backgroundColor": "{colors.surface-card}",
+        "textColor": "{colors.ink}",
+        "rounded": "{rounded.xl}",
+        "padding": 0
+      },
+      "feature-card": {
+        "backgroundColor": "{colors.surface-card}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.title-md}",
+        "rounded": "{rounded.lg}",
+        "padding": "24px"
+      },
+      "feature-card-dark": {
+        "backgroundColor": "{colors.surface-dark}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.title-md}",
+        "rounded": "{rounded.lg}",
+        "padding": "24px"
+      },
+      "workflow-step-card": {
+        "backgroundColor": "{colors.surface-card}",
+        "textColor": "{colors.body}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.lg}",
+        "padding": "20px"
+      },
+      "workflow-step-icon": {
+        "backgroundColor": "{colors.surface-strong}",
+        "rounded": "{rounded.md}",
+        "size": "32px"
+      },
+      "code-block": {
+        "backgroundColor": "{colors.surface-dark}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.code}",
+        "rounded": "{rounded.lg}",
+        "padding": "20px"
+      },
+      "ide-mockup-card": {
+        "backgroundColor": "{colors.surface-dark}",
+        "textColor": "{colors.on-dark}",
+        "rounded": "{rounded.lg}",
+        "padding": 0
+      },
+      "pricing-tier-card": {
+        "backgroundColor": "{colors.surface-card}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.lg}",
+        "padding": "32px"
+      },
+      "pricing-tier-featured": {
+        "backgroundColor": "{colors.surface-dark}",
+        "textColor": "{colors.on-dark}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.lg}",
+        "padding": "32px"
+      },
+      "text-input": {
+        "backgroundColor": "{colors.surface-card}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.md}",
+        "padding": "12px 16px",
+        "height": "44px"
+      },
+      "badge-pill": {
+        "backgroundColor": "{colors.surface-strong}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.caption-uppercase}",
+        "rounded": "{rounded.pill}",
+        "padding": "4px 10px"
+      },
+      "ecosystem-tile": {
+        "backgroundColor": "{colors.surface-card}",
+        "rounded": "{rounded.md}",
+        "size": "64px"
+      },
+      "cta-band": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.display-lg}",
+        "padding": "96px"
+      },
+      "testimonial-card": {
+        "backgroundColor": "{colors.surface-card}",
+        "textColor": "{colors.body}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.lg}",
+        "padding": "24px"
+      },
+      "footer-light": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.body}",
+        "typography": "{typography.body-sm}",
+        "padding": "64px 48px"
+      },
+      "footer-link": {
+        "backgroundColor": "transparent",
+        "textColor": "{colors.body}",
+        "typography": "{typography.body-sm}"
+      }
+    }
+  },
+  "brandAsset": {
+    "type": "text-wordmark",
+    "label": "Expo"
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "results": [
+    {
+      "id": "neumorphism",
+      "mobile": false,
+      "detail": true,
+      "download": true,
+      "clipboard": true,
+      "agent": true,
+      "source": true
+    },
+    {
+      "id": "skeuomorphism",
+      "mobile": false,
+      "detail": true,
+      "download": true,
+      "clipboard": true,
+      "agent": true,
+      "source": true
+    },
+    {
+      "id": "bauhaus",
+      "mobile": false,
+      "detail": true,
+      "download": true,
+      "clipboard": true,
+      "agent": true,
+      "source": true
+    },
+    {
+      "id": "japandi",
+      "mobile": false,
+      "detail": true,
+      "download": true,
+      "clipboard": true,
+      "agent": true,
+      "source": true
+    },
+    {
+      "id": "bottom-sheet",
+      "mobile": false,
+      "detail": true,
+      "download": true,
+      "clipboard": true,
+      "agent": true,
+      "source": true
+    },
+    {
+      "id": "command-palette",
+      "mobile": false,
+      "detail": true,
+      "download": true,
+      "clipboard": true,
+      "agent": true,
+      "source": true
+    },
+    {
+      "id": "toast-notification",
+      "mobile": false,
+      "detail": true,
+      "download": true,
+      "clipboard": true,
+      "agent": true,
+      "source": true
+    },
+    {
+      "id": "skeleton-loading",
+      "mobile": false,
+      "detail": true,
+      "download": true,
+      "clipboard": true,
+      "agent": true,
+      "source": true
+    },
+    {
+      "id": "segmented-control",
+      "mobile": false,
+      "detail": true,
+      "download": true,
+      "clipboard": true,
+      "agent": true,
+      "source": true
+    },
+    {
+      "id": "agency-landing",
+      "mobile": false,
+      "detail": true,
+      "download": true,
+      "clipboard": true,
+      "agent": true,
+      "source": true
+    },
+    {
+      "uiPatternsFilter": true,
+      "mobile": false,
+      "focusTrap": true,
+      "touchSnap": false
+    },
+    {
+      "id": "neumorphism",
+      "mobile": true,
+      "detail": true,
+      "download": true,
+      "clipboard": true,
+      "agent": true,
+      "source": true
+    },
+    {
+      "id": "skeuomorphism",
+      "mobile": true,
+      "detail": true,
+      "download": true,
+      "clipboard": true,
+      "agent": true,
+      "source": true
+    },
+    {
+      "id": "bauhaus",
+      "mobile": true,
+      "detail": true,
+      "download": true,
+      "clipboard": true,
+      "agent": true,
+      "source": true
+    },
+    {
+      "id": "japandi",
+      "mobile": true,
+      "detail": true,
+      "download": true,
+      "clipboard": true,
+      "agent": true,
+      "source": true
+    },
+    {
+      "id": "bottom-sheet",
+      "mobile": true,
+      "detail": true,
+      "download": true,
+      "clipboard": true,
+      "agent": true,
+      "source": true
+    },
+    {
+      "id": "command-palette",
+      "mobile": true,
+      "detail": true,
+      "download": true,
+      "clipboard": true,
+      "agent": true,
+      "source": true
+    },
+    {
+      "id": "toast-notification",
+      "mobile": true,
+      "detail": true,
+      "download": true,
+      "clipboard": true,
+      "agent": true,
+      "source": true
+    },
+    {
+      "id": "skeleton-loading",
+      "mobile": true,
+      "detail": true,
+      "download": true,
+      "clipboard": true,
+      "agent": true,
+      "source": true
+    },
+    {
+      "id": "segmented-control",
+      "mobile": true,
+      "detail": true,
+      "download": true,
+      "clipboard": true,
+      "agent": true,
+      "source": true
+    },
+    {
+      "id": "agency-landing",
+      "mobile": true,
+      "detail": true,
+      "download": true,
+      "clipboard": true,
+      "agent": true,
+      "source": true
+    },
+    {
+      "uiPatternsFilter": true,
+      "mobile": true,
+      "focusTrap": true,
+      "touchSnap": true
+    }
+  ],
+  "errors": []
+}

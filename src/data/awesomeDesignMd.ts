@@ -5,6 +5,7 @@
 // Run `npm run sync:awesome-design-md` to update.
 
 import type { DesignSystemTokens } from '../types'
+import type { BrandDesignSpec } from '../brandDesignSpec'
 
 export const UPSTREAM_COMMIT = '8147538b4226ae41e2487a9179e3bcc1f68e8554' as const
 export const UPSTREAM_REPO = 'https://github.com/VoltAgent/awesome-design-md' as const
@@ -22,6 +23,8 @@ export type VendorEntry = {
   importedAt: string
   colors: Record<string, string>
   tokens: DesignSystemTokens
+  spec: BrandDesignSpec
+  rawDescription: string
   hasPreviewHtml: boolean
   externalDeps: string[]
 }
@@ -29,8 +32,8 @@ export type VendorEntry = {
 export const vendorEntries: VendorEntry[] = [
   {
     "slug": "airbnb",
-    "name": "AIrbnb",
-    "description": "A warm, generous consumer marketplace anchored on a clean white canvas and Airbnb Rausch (#ff385c), the single brand voltage that carries every primary CTA, search-button orb, and rating dot. Type run",
+    "name": "Airbnb",
+    "description": "A warm, generous consumer marketplace anchored on a clean white canvas and Airbnb Rausch (#ff385c), the single brand voltage that carries every primary CTA, search-button orb, and rating dot.",
     "category": "E-commerce & Consumer",
     "subcategory": "Brand Design",
     "tags": [
@@ -53,12 +56,23 @@ export const vendorEntries: VendorEntry[] = [
       "body": "#3f3f3f",
       "muted": "#6a6a6a",
       "muted-soft": "#929292",
-      "hairline": "#dddddd"
+      "hairline": "#dddddd",
+      "hairline-soft": "#ebebeb",
+      "border-strong": "#c1c1c1",
+      "canvas": "#ffffff",
+      "surface-soft": "#f7f7f7",
+      "surface-card": "#ffffff",
+      "surface-strong": "#f2f2f2",
+      "on-primary": "#ffffff",
+      "on-dark": "#ffffff",
+      "legal-link": "#428bff",
+      "star-rating": "#222222",
+      "scrim": "#000000"
     },
     "tokens": {
       "colors": {
         "canvas": "#ffffff",
-        "surface": "#f9f9f9",
+        "surface": "#ffffff",
         "text": "#222222",
         "primary": "#ff385c",
         "onPrimary": "#ffffff",
@@ -67,29 +81,151 @@ export const vendorEntries: VendorEntry[] = [
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
+        "displaySize": 28,
         "bodySize": 16,
-        "lineHeight": 1.6
+        "lineHeight": 1.5
       },
       "spacing": [
+        2,
         4,
         8,
+        12,
         16,
         24,
-        40,
+        32,
+        48,
         64
       ],
-      "radius": 6,
+      "radius": 14,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#ff385c",
+        "primary-active": "#e00b41",
+        "primary-disabled": "#ffd1da",
+        "primary-error-text": "#c13515",
+        "primary-error-text-hover": "#b32505",
+        "luxe": "#460479",
+        "plus": "#92174d",
+        "ink": "#222222",
+        "body": "#3f3f3f",
+        "muted": "#6a6a6a",
+        "muted-soft": "#929292",
+        "hairline": "#dddddd",
+        "hairline-soft": "#ebebeb",
+        "border-strong": "#c1c1c1",
+        "canvas": "#ffffff",
+        "surface-soft": "#f7f7f7",
+        "surface-card": "#ffffff",
+        "surface-strong": "#f2f2f2",
+        "on-primary": "#ffffff",
+        "on-dark": "#ffffff",
+        "legal-link": "#428bff",
+        "star-rating": "#222222",
+        "scrim": "#000000"
+      },
+      "typography": {
+        "display-xl": {
+          "fontFamily": "'Airbnb Cereal VF', Circular, -apple-system, system-ui, Roboto, 'Helvetica Neue', sans-serif",
+          "fontSize": "28px",
+          "fontWeight": 700,
+          "lineHeight": 1.43,
+          "letterSpacing": 0,
+          "declaredFamily": "'Airbnb Cereal VF', Circular, -apple-system, system-ui, Roboto, 'Helvetica Neue', sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-md": {
+          "fontFamily": "'Airbnb Cereal VF', Circular, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": 400,
+          "lineHeight": 1.5,
+          "letterSpacing": 0,
+          "declaredFamily": "'Airbnb Cereal VF', Circular, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "2px",
+        "xs": "4px",
+        "sm": "8px",
+        "md": "12px",
+        "base": "16px",
+        "lg": "24px",
+        "xl": "32px",
+        "xxl": "48px",
+        "section": "64px"
+      },
+      "radius": {
+        "none": "0px",
+        "xs": "4px",
+        "sm": "8px",
+        "md": "14px",
+        "lg": "20px",
+        "xl": "32px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#ff385c",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "'Airbnb Cereal VF', Circular, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": 500,
+            "lineHeight": 1.25,
+            "letterSpacing": 0
+          },
+          "rounded": "8px",
+          "padding": "14px 24px",
+          "height": "48px"
+        },
+        "property-card": {
+          "backgroundColor": "#ffffff",
+          "textColor": "#222222",
+          "typography": {
+            "fontFamily": "'Airbnb Cereal VF', Circular, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": 400,
+            "lineHeight": 1.43,
+            "letterSpacing": 0
+          },
+          "rounded": "14px"
+        },
+        "search-bar-pill": {
+          "backgroundColor": "#ffffff",
+          "textColor": "#222222",
+          "typography": {
+            "fontFamily": "'Airbnb Cereal VF', Circular, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": 400,
+            "lineHeight": 1.43,
+            "letterSpacing": 0
+          },
+          "rounded": "9999px",
+          "padding": "14px 24px",
+          "height": "64px"
+        }
+      },
+      "layout": "marketplace",
+      "traits": "A warm, generous consumer marketplace anchored on a clean white canvas and Airbnb Rausch (#ff385c), the single brand voltage that carries every primary CTA, search-button orb, and rating dot. Type runs Airbnb Cereal VF at modest weights — display sits at 22–28px in weight 500/600 rather than the heavy 700+ that fintech and enterprise systems use; the brand trusts photography and generous whitespace over typographic muscle. Three product entries (Homes, Experiences, Services) sit in the top nav with hand-illustrated 32-icon glyphs and \"NEW\" badges, signaling a marketplace expansion rather than a feature dump. Pill-shaped search bars (`{rounded.full}`), softly rounded property cards (`{rounded.lg}` ~14px), and 32px button radii read as friendly and human — there is no hard corner anywhere except the body grid.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Airbnb"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "A warm, generous consumer marketplace anchored on a clean white canvas and Airbnb Rausch (#ff385c), the single brand voltage that carries every primary CTA, search-button orb, and rating dot. Type runs Airbnb Cereal VF at modest weights — display sits at 22–28px in weight 500/600 rather than the heavy 700+ that fintech and enterprise systems use; the brand trusts photography and generous whitespace over typographic muscle. Three product entries (Homes, Experiences, Services) sit in the top nav with hand-illustrated 32-icon glyphs and \"NEW\" badges, signaling a marketplace expansion rather than a feature dump. Pill-shaped search bars (`{rounded.full}`), softly rounded property cards (`{rounded.lg}` ~14px), and 32px button radii read as friendly and human — there is no hard corner anywhere except the body grid.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "airtable",
-    "name": "AIrtable",
-    "description": "A sober, editorial workflow-software interface anchored on white canvas and dark-ink type, where brand voltage comes from full-bleed signature cards in coral, dark green, peach, and dark navy that pun",
+    "name": "Airtable",
+    "description": "A sober, editorial workflow-software interface anchored on white canvas and dark-ink type, where brand voltage comes from full-bleed signature cards in coral, dark green, peach, and dark navy that punctuate long-scroll explainer pages.",
     "category": "SaaS & Productivity",
     "subcategory": "Brand Design",
     "tags": [
@@ -113,12 +249,28 @@ export const vendorEntries: VendorEntry[] = [
       "surface-soft": "#f8fafc",
       "surface-strong": "#e0e2e6",
       "surface-dark": "#181d26",
-      "surface-dark-elevated": "#1d1f25"
+      "surface-dark-elevated": "#1d1f25",
+      "signature-coral": "#aa2d00",
+      "signature-forest": "#0a2e0e",
+      "signature-cream": "#f5e9d4",
+      "signature-peach": "#fcab79",
+      "signature-mint": "#a8d8c4",
+      "signature-yellow": "#f4d35e",
+      "signature-mustard": "#d9a441",
+      "on-primary": "#ffffff",
+      "on-dark": "#ffffff",
+      "link": "#1b61c9",
+      "link-active": "#1a3866",
+      "info": "#254fad",
+      "info-border": "#458fff",
+      "success": "#006400",
+      "success-border": "#39bf45",
+      "pricing-ink": "#1d1f25"
     },
     "tokens": {
       "colors": {
         "canvas": "#ffffff",
-        "surface": "#f9f9f9",
+        "surface": "#ffffff",
         "text": "#181d26",
         "primary": "#181d26",
         "onPrimary": "#ffffff",
@@ -128,35 +280,143 @@ export const vendorEntries: VendorEntry[] = [
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
         "displaySize": 48,
-        "bodySize": 16,
-        "lineHeight": 1.6
+        "bodySize": 14,
+        "lineHeight": 1.25
       },
       "spacing": [
         4,
         8,
+        12,
         16,
         24,
-        40,
-        64
+        32,
+        48,
+        96
       ],
-      "radius": 6,
+      "radius": 12,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#181d26",
+        "primary-active": "#0d1218",
+        "ink": "#181d26",
+        "body": "#333840",
+        "muted": "#41454d",
+        "hairline": "#dddddd",
+        "border-strong": "#9297a0",
+        "canvas": "#ffffff",
+        "surface-soft": "#f8fafc",
+        "surface-strong": "#e0e2e6",
+        "surface-dark": "#181d26",
+        "surface-dark-elevated": "#1d1f25",
+        "signature-coral": "#aa2d00",
+        "signature-forest": "#0a2e0e",
+        "signature-cream": "#f5e9d4",
+        "signature-peach": "#fcab79",
+        "signature-mint": "#a8d8c4",
+        "signature-yellow": "#f4d35e",
+        "signature-mustard": "#d9a441",
+        "on-primary": "#ffffff",
+        "on-dark": "#ffffff",
+        "link": "#1b61c9",
+        "link-active": "#1a3866",
+        "info": "#254fad",
+        "info-border": "#458fff",
+        "success": "#006400",
+        "success-border": "#39bf45",
+        "pricing-ink": "#1d1f25"
+      },
+      "typography": {
+        "display-xl": {
+          "fontFamily": "Haas Groot Disp, Haas, sans-serif",
+          "fontSize": "48px",
+          "fontWeight": 500,
+          "lineHeight": 1.1,
+          "letterSpacing": 0,
+          "declaredFamily": "Haas Groot Disp, Haas, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-md": {
+          "fontFamily": "Haas, sans-serif",
+          "fontSize": "14px",
+          "fontWeight": 400,
+          "lineHeight": 1.25,
+          "letterSpacing": 0,
+          "declaredFamily": "Haas, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "4px",
+        "xs": "8px",
+        "sm": "12px",
+        "md": "16px",
+        "lg": "24px",
+        "xl": "32px",
+        "xxl": "48px",
+        "section": "96px"
+      },
+      "radius": {
+        "xs": "2px",
+        "sm": "6px",
+        "md": "10px",
+        "lg": "12px",
+        "pill": "9999px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#181d26",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "Haas, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": 500,
+            "lineHeight": 1.4,
+            "letterSpacing": 0
+          },
+          "rounded": "12px",
+          "padding": "16px 24px"
+        },
+        "signature-coral-card": {
+          "backgroundColor": "#aa2d00",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "Haas Groot Disp, Haas, sans-serif",
+            "fontSize": "32px",
+            "fontWeight": 400,
+            "lineHeight": 1.2,
+            "letterSpacing": 0
+          },
+          "rounded": "12px",
+          "padding": "48px"
+        }
+      },
+      "layout": "editorial",
+      "traits": "A sober, editorial workflow-software interface anchored on white canvas and dark-ink type, where brand voltage comes from full-bleed signature cards in coral, dark green, peach, and dark navy that punctuate long-scroll explainer pages. Primary actions use a near-black pill CTA; secondary actions sit in a white outlined button. Type runs Haas Grotesk in modest weights — never bold for its own sake.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Airtable"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "A sober, editorial workflow-software interface anchored on white canvas and dark-ink type, where brand voltage comes from full-bleed signature cards in coral, dark green, peach, and dark navy that punctuate long-scroll explainer pages. Primary actions use a near-black pill CTA; secondary actions sit in a white outlined button. Type runs Haas Grotesk in modest weights — never bold for its own sake.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "apple",
     "name": "Apple",
-    "description": "A photography-first interface that turns marketing into a museum gallery. Edge-to-edge product tiles alternate light and dark canvases, framed by SF Pro Display headlines with negative letter-spacing ",
+    "description": "A photography-first interface that turns marketing into a museum gallery.",
     "category": "Big Tech",
     "subcategory": "Brand Design",
     "tags": [
       "apple",
-      "big",
-      "light",
-      "dark"
+      "big"
     ],
     "upstreamPath": "design-md/apple/DESIGN.md",
     "upstreamCommit": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
@@ -173,12 +433,21 @@ export const vendorEntries: VendorEntry[] = [
       "ink-muted-48": "#7a7a7a",
       "divider-soft": "#f0f0f0",
       "hairline": "#e0e0e0",
-      "canvas": "#ffffff"
+      "canvas": "#ffffff",
+      "canvas-parchment": "#f5f5f7",
+      "surface-pearl": "#fafafc",
+      "surface-tile-1": "#272729",
+      "surface-tile-2": "#2a2a2c",
+      "surface-tile-3": "#252527",
+      "surface-black": "#000000",
+      "surface-chip-translucent": "#d2d2d7",
+      "on-primary": "#ffffff",
+      "on-dark": "#ffffff"
     },
     "tokens": {
       "colors": {
         "canvas": "#ffffff",
-        "surface": "#f9f9f9",
+        "surface": "#f5f5f7",
         "text": "#1d1d1f",
         "primary": "#0066cc",
         "onPrimary": "#ffffff",
@@ -187,29 +456,133 @@ export const vendorEntries: VendorEntry[] = [
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
-        "bodySize": 16,
-        "lineHeight": 1.6
+        "displaySize": 56,
+        "bodySize": 17,
+        "lineHeight": 1.47
       },
       "spacing": [
         4,
         8,
-        16,
+        12,
+        17,
         24,
-        40,
-        64
+        32,
+        48,
+        80
       ],
-      "radius": 6,
+      "radius": 18,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#0066cc",
+        "primary-focus": "#0071e3",
+        "primary-on-dark": "#2997ff",
+        "ink": "#1d1d1f",
+        "body": "#1d1d1f",
+        "body-on-dark": "#ffffff",
+        "body-muted": "#cccccc",
+        "ink-muted-80": "#333333",
+        "ink-muted-48": "#7a7a7a",
+        "divider-soft": "#f0f0f0",
+        "hairline": "#e0e0e0",
+        "canvas": "#ffffff",
+        "canvas-parchment": "#f5f5f7",
+        "surface-pearl": "#fafafc",
+        "surface-tile-1": "#272729",
+        "surface-tile-2": "#2a2a2c",
+        "surface-tile-3": "#252527",
+        "surface-black": "#000000",
+        "surface-chip-translucent": "#d2d2d7",
+        "on-primary": "#ffffff",
+        "on-dark": "#ffffff"
+      },
+      "typography": {
+        "hero-display": {
+          "fontFamily": "SF Pro Display, system-ui, -apple-system, sans-serif",
+          "fontSize": "56px",
+          "fontWeight": 600,
+          "lineHeight": 1.07,
+          "letterSpacing": "-0.28px",
+          "declaredFamily": "SF Pro Display, system-ui, -apple-system, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body": {
+          "fontFamily": "SF Pro Text, system-ui, -apple-system, sans-serif",
+          "fontSize": "17px",
+          "fontWeight": 400,
+          "lineHeight": 1.47,
+          "letterSpacing": "-0.374px",
+          "declaredFamily": "SF Pro Text, system-ui, -apple-system, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "4px",
+        "xs": "8px",
+        "sm": "12px",
+        "md": "17px",
+        "lg": "24px",
+        "xl": "32px",
+        "xxl": "48px",
+        "section": "80px"
+      },
+      "radius": {
+        "none": "0px",
+        "xs": "5px",
+        "sm": "8px",
+        "md": "11px",
+        "lg": "18px",
+        "pill": "9999px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#0066cc",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "SF Pro Text, system-ui, -apple-system, sans-serif",
+            "fontSize": "17px",
+            "fontWeight": 400,
+            "lineHeight": 1.47,
+            "letterSpacing": "-0.374px"
+          },
+          "rounded": "9999px",
+          "padding": "11px 22px"
+        },
+        "store-utility-card": {
+          "backgroundColor": "#ffffff",
+          "textColor": "#1d1d1f",
+          "typography": {
+            "fontFamily": "SF Pro Text, system-ui, -apple-system, sans-serif",
+            "fontSize": "17px",
+            "fontWeight": 600,
+            "lineHeight": 1.24,
+            "letterSpacing": "-0.374px"
+          },
+          "rounded": "18px",
+          "padding": "24px"
+        }
+      },
+      "layout": "gallery",
+      "traits": "A photography-first interface that turns marketing into a museum gallery. Edge-to-edge product tiles alternate light and dark canvases, framed by SF Pro Display headlines with negative letter-spacing and a single Action Blue (#0066cc) interactive color. UI chrome recedes so the product can speak — no decorative gradients, no shadows on chrome, only the one signature drop-shadow under product imagery resting on a surface.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Apple"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "A photography-first interface that turns marketing into a museum gallery. Edge-to-edge product tiles alternate light and dark canvases, framed by SF Pro Display headlines with negative letter-spacing and a single Action Blue (#0066cc) interactive color. UI chrome recedes so the product can speak — no decorative gradients, no shadows on chrome, only the one signature drop-shadow under product imagery resting on a surface.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "binance",
     "name": "Binance",
-    "description": "A confident financial-platform interface anchored on a deep near-black canvas, where Binance's iconic yellow (#FCD535) carries every primary CTA, brand accent, and value-claim moment. Type runs Binanc",
+    "description": "A confident financial-platform interface anchored on a deep near-black canvas, where Binance's iconic yellow (#FCD535) carries every primary CTA, brand accent, and value-claim moment.",
     "category": "Fintech & Crypto",
     "subcategory": "Brand Design",
     "tags": [
@@ -231,43 +604,343 @@ export const vendorEntries: VendorEntry[] = [
       "hairline-on-light": "#eaecef",
       "hairline-on-dark": "#2b3139",
       "border-strong": "#cdd1d6",
-      "canvas-light": "#ffffff"
+      "canvas-light": "#ffffff",
+      "canvas-dark": "#0b0e11",
+      "surface-card-dark": "#1e2329",
+      "surface-elevated-dark": "#2b3139",
+      "surface-soft-light": "#fafafa",
+      "surface-strong-light": "#f5f5f5",
+      "on-primary": "#181a20",
+      "on-dark": "#ffffff",
+      "trading-up": "#0ecb81",
+      "trading-down": "#f6465d",
+      "accent-turquoise": "#2dbdb6",
+      "info": "#3b82f6",
+      "info-ring": "#3b82f6"
     },
     "tokens": {
       "colors": {
-        "canvas": "#ffffff",
-        "surface": "#f9f9f9",
-        "text": "#181a20",
+        "canvas": "#0b0e11",
+        "surface": "#1e2329",
+        "text": "#eaecef",
         "primary": "#fcd535",
-        "onPrimary": "#ffffff",
-        "border": "#e0e0e0"
+        "onPrimary": "#181a20",
+        "border": "#2b3139"
       },
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
-        "bodySize": 16,
-        "lineHeight": 1.6
+        "displaySize": 64,
+        "bodySize": 14,
+        "lineHeight": 1.5
       },
       "spacing": [
         4,
         8,
+        12,
         16,
         24,
-        40,
-        64
+        32,
+        48,
+        80
       ],
-      "radius": 6,
+      "radius": 12,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#fcd535",
+        "primary-active": "#f0b90b",
+        "primary-disabled": "#3a3a1f",
+        "ink": "#181a20",
+        "body": "#eaecef",
+        "body-on-light": "#181a20",
+        "muted": "#707a8a",
+        "muted-strong": "#929aa5",
+        "hairline-on-light": "#eaecef",
+        "hairline-on-dark": "#2b3139",
+        "border-strong": "#cdd1d6",
+        "canvas-light": "#ffffff",
+        "canvas-dark": "#0b0e11",
+        "surface-card-dark": "#1e2329",
+        "surface-elevated-dark": "#2b3139",
+        "surface-soft-light": "#fafafa",
+        "surface-strong-light": "#f5f5f5",
+        "on-primary": "#181a20",
+        "on-dark": "#ffffff",
+        "trading-up": "#0ecb81",
+        "trading-down": "#f6465d",
+        "accent-turquoise": "#2dbdb6",
+        "info": "#3b82f6",
+        "info-ring": "#3b82f6"
+      },
+      "typography": {
+        "hero-display": {
+          "fontFamily": "BinanceNova, -apple-system, BlinkMacSystemFont, sans-serif",
+          "fontSize": "64px",
+          "fontWeight": 700,
+          "lineHeight": 1.1,
+          "letterSpacing": "-1px",
+          "declaredFamily": "BinanceNova, -apple-system, BlinkMacSystemFont, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-md": {
+          "fontFamily": "BinanceNova, sans-serif",
+          "fontSize": "14px",
+          "fontWeight": 400,
+          "lineHeight": 1.5,
+          "letterSpacing": 0,
+          "declaredFamily": "BinanceNova, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "4px",
+        "xs": "8px",
+        "sm": "12px",
+        "md": "16px",
+        "lg": "24px",
+        "xl": "32px",
+        "xxl": "48px",
+        "section": "80px"
+      },
+      "radius": {
+        "xs": "2px",
+        "sm": "4px",
+        "md": "6px",
+        "lg": "8px",
+        "xl": "12px",
+        "pill": "9999px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#fcd535",
+          "textColor": "#181a20",
+          "typography": {
+            "fontFamily": "BinanceNova, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": 600,
+            "lineHeight": 1,
+            "letterSpacing": 0
+          },
+          "rounded": "6px",
+          "padding": "12px 24px",
+          "height": "40px"
+        },
+        "qr-promo-card": {
+          "backgroundColor": "#1e2329",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "BinanceNova, sans-serif",
+            "fontSize": "20px",
+            "fontWeight": 600,
+            "lineHeight": 1.35,
+            "letterSpacing": 0
+          },
+          "rounded": "12px",
+          "padding": "32px"
+        }
+      },
+      "layout": "utility",
+      "traits": "A confident financial-platform interface anchored on a deep near-black canvas, where Binance's iconic yellow (#FCD535) carries every primary CTA, brand accent, and value-claim moment. Type runs Binance's custom BinanceNova / BinancePlex stack at modest weights — the system trusts size and yellow voltage over bold weight. Marketing and product surfaces default to the dark theme; transactional surfaces (buy crypto, deposit, exchange) flip to a light theme that shares the same yellow CTAs and gray-blue hairlines. Trading green (up) and red (down) accents thread through both modes for price-direction signals.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Binance"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "A confident financial-platform interface anchored on a deep near-black canvas, where Binance's iconic yellow (#FCD535) carries every primary CTA, brand accent, and value-claim moment. Type runs Binance's custom BinanceNova / BinancePlex stack at modest weights — the system trusts size and yellow voltage over bold weight. Marketing and product surfaces default to the dark theme; transactional surfaces (buy crypto, deposit, exchange) flip to a light theme that shares the same yellow CTAs and gray-blue hairlines. Trading green (up) and red (down) accents thread through both modes for price-direction signals.",
+    "hasPreviewHtml": false,
+    "externalDeps": []
+  },
+  {
+    "slug": "bmw",
+    "name": "BMW",
+    "description": "BMW's corporate site — distinct from BMW M's motorsport-bombastic variant, this is a measured and settled corporate-automotive interface.",
+    "category": "Automotive",
+    "subcategory": "Brand Design",
+    "tags": [
+      "bmw",
+      "automotive"
+    ],
+    "upstreamPath": "design-md/bmw/DESIGN.md",
+    "upstreamCommit": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+    "importedAt": "2026-09-08",
+    "colors": {
+      "primary": "#1c69d4",
+      "primary-active": "#0653b6",
+      "primary-disabled": "#d6d6d6",
+      "ink": "#262626",
+      "body": "#3c3c3c",
+      "body-strong": "#1a1a1a",
+      "muted": "#6b6b6b",
+      "muted-soft": "#9a9a9a",
+      "hairline": "#e6e6e6",
+      "hairline-strong": "#cccccc",
+      "canvas": "#ffffff",
+      "surface-soft": "#f7f7f7",
+      "surface-card": "#fafafa",
+      "surface-strong": "#ebebeb",
+      "surface-dark": "#1a2129",
+      "surface-dark-elevated": "#262e38",
+      "on-primary": "#ffffff",
+      "on-dark": "#ffffff",
+      "on-dark-soft": "#bbbbbb",
+      "m-blue-light": "#0066b1",
+      "m-blue-dark": "#1c69d4",
+      "m-red": "#e22718",
+      "success": "#22c55e",
+      "warning": "#f59e0b",
+      "error": "#dc2626"
+    },
+    "tokens": {
+      "colors": {
+        "canvas": "#ffffff",
+        "surface": "#ffffff",
+        "text": "#262626",
+        "primary": "#1c69d4",
+        "onPrimary": "#ffffff",
+        "border": "#e6e6e6"
+      },
+      "typography": {
+        "display": "system-ui, sans-serif",
+        "body": "system-ui, sans-serif",
+        "displaySize": 64,
+        "bodySize": 16,
+        "lineHeight": 1.55
+      },
+      "spacing": [
+        4,
+        8,
+        12,
+        16,
+        24,
+        32,
+        48,
+        80
+      ],
+      "radius": 0,
+      "borderWidth": 1,
+      "duration": 0
+    },
+    "spec": {
+      "colors": {
+        "primary": "#1c69d4",
+        "primary-active": "#0653b6",
+        "primary-disabled": "#d6d6d6",
+        "ink": "#262626",
+        "body": "#3c3c3c",
+        "body-strong": "#1a1a1a",
+        "muted": "#6b6b6b",
+        "muted-soft": "#9a9a9a",
+        "hairline": "#e6e6e6",
+        "hairline-strong": "#cccccc",
+        "canvas": "#ffffff",
+        "surface-soft": "#f7f7f7",
+        "surface-card": "#fafafa",
+        "surface-strong": "#ebebeb",
+        "surface-dark": "#1a2129",
+        "surface-dark-elevated": "#262e38",
+        "on-primary": "#ffffff",
+        "on-dark": "#ffffff",
+        "on-dark-soft": "#bbbbbb",
+        "m-blue-light": "#0066b1",
+        "m-blue-dark": "#1c69d4",
+        "m-red": "#e22718",
+        "success": "#22c55e",
+        "warning": "#f59e0b",
+        "error": "#dc2626"
+      },
+      "typography": {
+        "display-xl": {
+          "fontFamily": "'BMW Type Next Latin', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+          "fontSize": "64px",
+          "fontWeight": 700,
+          "lineHeight": 1.05,
+          "letterSpacing": 0,
+          "declaredFamily": "'BMW Type Next Latin', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-md": {
+          "fontFamily": "'BMW Type Next Latin', sans-serif",
+          "fontSize": "16px",
+          "fontWeight": 300,
+          "lineHeight": 1.55,
+          "letterSpacing": 0,
+          "declaredFamily": "'BMW Type Next Latin', sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "4px",
+        "xs": "8px",
+        "sm": "12px",
+        "md": "16px",
+        "lg": "24px",
+        "xl": "32px",
+        "xxl": "48px",
+        "section": "80px"
+      },
+      "radius": {
+        "none": "0px",
+        "xs": "2px",
+        "sm": "4px",
+        "md": "8px",
+        "lg": "12px",
+        "pill": "9999px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#1c69d4",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "'BMW Type Next Latin', sans-serif",
+            "fontSize": "14px",
+            "fontWeight": 700,
+            "lineHeight": 1,
+            "letterSpacing": "0.5px"
+          },
+          "rounded": "0px",
+          "padding": "14px 32px",
+          "height": "48px"
+        },
+        "model-card": {
+          "backgroundColor": "#ffffff",
+          "textColor": "#262626",
+          "typography": {
+            "fontFamily": "'BMW Type Next Latin', sans-serif",
+            "fontSize": "18px",
+            "fontWeight": 700,
+            "lineHeight": 1.4,
+            "letterSpacing": 0
+          },
+          "rounded": "0px",
+          "padding": "24px"
+        }
+      },
+      "layout": "gallery",
+      "traits": "BMW's corporate site — distinct from BMW M's motorsport-bombastic variant, this is a measured and settled corporate-automotive interface. On a light (cream-tinted white) canvas, BMW corporate blue (#1c69d4) carries every primary CTA; dark navy hero bands frame model photography. BMW Type Next Latin sets the entire hierarchy on two weights — heavy 700 display and Light 300 body. Configuration and reservation flows ride a card-based 4-up grid, where each card holds a model render, a name, and a \"Learn More\" link.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "BMW"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "BMW's corporate site — distinct from BMW M's motorsport-bombastic variant, this is a measured and settled corporate-automotive interface. On a light (cream-tinted white) canvas, BMW corporate blue (#1c69d4) carries every primary CTA; dark navy hero bands frame model photography. BMW Type Next Latin sets the entire hierarchy on two weights — heavy 700 display and Light 300 body. Configuration and reservation flows ride a card-based 4-up grid, where each card holds a model render, a name, and a \"Learn More\" link.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "bmw-m",
-    "name": "BMW M",
-    "description": "A motorsport-engineering interface anchored on a near-black canvas with white BMW Type Next Latin display headlines in confident UPPERCASE. The brand carries no decorative voltage — its energy comes f",
+    "name": "BMW-M",
+    "description": "A motorsport-engineering interface anchored on a near-black canvas with white BMW Type Next Latin display headlines in confident UPPERCASE.",
     "category": "Automotive",
     "subcategory": "Brand Design",
     "tags": [
@@ -289,12 +962,21 @@ export const vendorEntries: VendorEntry[] = [
       "surface-card": "#1a1a1a",
       "surface-elevated": "#262626",
       "surface-soft": "#0d0d0d",
-      "on-primary": "#000000"
+      "on-primary": "#000000",
+      "on-dark": "#ffffff",
+      "m-blue-light": "#0066b1",
+      "m-blue-dark": "#1c69d4",
+      "m-red": "#e22718",
+      "bmw-blue": "#1c69d4",
+      "electric-blue": "#0653b6",
+      "carbon-gray": "#2b2b2b",
+      "warning": "#f4b400",
+      "success": "#0fa336"
     },
     "tokens": {
       "colors": {
         "canvas": "#000000",
-        "surface": "#f9f9f9",
+        "surface": "#000000",
         "text": "#ffffff",
         "primary": "#ffffff",
         "onPrimary": "#000000",
@@ -303,88 +985,132 @@ export const vendorEntries: VendorEntry[] = [
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
+        "displaySize": 80,
         "bodySize": 16,
-        "lineHeight": 1.6
+        "lineHeight": 1.5
       },
       "spacing": [
         4,
         8,
+        12,
         16,
         24,
         40,
-        64
+        64,
+        96
       ],
-      "radius": 6,
+      "radius": 0,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
-    "hasPreviewHtml": false,
-    "externalDeps": []
-  },
-  {
-    "slug": "bmw",
-    "name": "BMW",
-    "description": "BMW's corporate site — distinct from BMW M's motorsport-bombastic variant, this is a measured and settled corporate-automotive interface. On a light (cream-tinted white) canvas, BMW corporate blue (#1",
-    "category": "Automotive",
-    "subcategory": "Brand Design",
-    "tags": [
-      "bmw",
-      "automotive",
-      "light"
-    ],
-    "upstreamPath": "design-md/bmw/DESIGN.md",
-    "upstreamCommit": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-    "importedAt": "2026-09-08",
-    "colors": {
-      "primary": "#1c69d4",
-      "primary-active": "#0653b6",
-      "primary-disabled": "#d6d6d6",
-      "ink": "#262626",
-      "body": "#3c3c3c",
-      "body-strong": "#1a1a1a",
-      "muted": "#6b6b6b",
-      "muted-soft": "#9a9a9a",
-      "hairline": "#e6e6e6",
-      "hairline-strong": "#cccccc",
-      "canvas": "#ffffff",
-      "surface-soft": "#f7f7f7"
-    },
-    "tokens": {
+    "spec": {
       "colors": {
-        "canvas": "#ffffff",
-        "surface": "#f9f9f9",
-        "text": "#262626",
-        "primary": "#1c69d4",
-        "onPrimary": "#ffffff",
-        "border": "#e6e6e6"
+        "primary": "#ffffff",
+        "ink": "#ffffff",
+        "body": "#bbbbbb",
+        "body-strong": "#e6e6e6",
+        "muted": "#7e7e7e",
+        "hairline": "#3c3c3c",
+        "hairline-strong": "#262626",
+        "canvas": "#000000",
+        "surface-card": "#1a1a1a",
+        "surface-elevated": "#262626",
+        "surface-soft": "#0d0d0d",
+        "on-primary": "#000000",
+        "on-dark": "#ffffff",
+        "m-blue-light": "#0066b1",
+        "m-blue-dark": "#1c69d4",
+        "m-red": "#e22718",
+        "bmw-blue": "#1c69d4",
+        "electric-blue": "#0653b6",
+        "carbon-gray": "#2b2b2b",
+        "warning": "#f4b400",
+        "success": "#0fa336"
       },
       "typography": {
-        "display": "system-ui, sans-serif",
-        "body": "system-ui, sans-serif",
-        "displaySize": 48,
-        "bodySize": 16,
-        "lineHeight": 1.6
+        "display-xl": {
+          "fontFamily": "BMWTypeNextLatin, sans-serif",
+          "fontSize": "80px",
+          "fontWeight": 700,
+          "lineHeight": 1,
+          "letterSpacing": 0,
+          "declaredFamily": "BMWTypeNextLatin, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-md": {
+          "fontFamily": "BMWTypeNextLatin Light, BMWTypeNextLatin, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": 300,
+          "lineHeight": 1.5,
+          "letterSpacing": 0,
+          "declaredFamily": "BMWTypeNextLatin Light, BMWTypeNextLatin, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        }
       },
-      "spacing": [
-        4,
-        8,
-        16,
-        24,
-        40,
-        64
-      ],
-      "radius": 6,
-      "borderWidth": 1,
-      "duration": 200
+      "spacing": {
+        "xxs": "4px",
+        "xs": "8px",
+        "sm": "12px",
+        "md": "16px",
+        "lg": "24px",
+        "xl": "40px",
+        "xxl": "64px",
+        "section": "96px"
+      },
+      "radius": {
+        "none": "0px",
+        "xs": "2px",
+        "sm": "4px",
+        "md": "6px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#000000",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "BMWTypeNextLatin, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": 700,
+            "lineHeight": 1,
+            "letterSpacing": "1.5px"
+          },
+          "rounded": "0px",
+          "padding": "16px 32px",
+          "height": "48px"
+        },
+        "feature-photo-card": {
+          "backgroundColor": "#1a1a1a",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "BMWTypeNextLatin, sans-serif",
+            "fontSize": "20px",
+            "fontWeight": 400,
+            "lineHeight": 1.4,
+            "letterSpacing": 0
+          },
+          "rounded": "0px",
+          "padding": "24px"
+        }
+      },
+      "layout": "gallery",
+      "traits": "A motorsport-engineering interface anchored on a near-black canvas with white BMW Type Next Latin display headlines in confident UPPERCASE. The brand carries no decorative voltage — its energy comes from full-bleed automotive photography (cars on tracks, driver-cockpit shots, carbon-fiber detail) and the iconic M tricolor stripe (light blue → dark blue → red) used sparingly as a brand signature on logos, dividers, and motorsport chrome. Type stays light to medium weight to feel European-engineered, never American-bombastic.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "BMW-M"
+      },
+      "depth": null,
+      "motion": null
     },
+    "rawDescription": "A motorsport-engineering interface anchored on a near-black canvas with white BMW Type Next Latin display headlines in confident UPPERCASE. The brand carries no decorative voltage — its energy comes from full-bleed automotive photography (cars on tracks, driver-cockpit shots, carbon-fiber detail) and the iconic M tricolor stripe (light blue → dark blue → red) used sparingly as a brand signature on logos, dividers, and motorsport chrome. Type stays light to medium weight to feel European-engineered, never American-bombastic.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "bugatti",
     "name": "Bugatti",
-    "description": "An austere luxury-automotive interface that uses near-pure black canvas, white uppercase letterspaced display, and full-bleed automotive photography as the only voltage. The system runs three custom B",
+    "description": "An austere luxury-automotive interface that uses near-pure black canvas, white uppercase letterspaced display, and full-bleed automotive photography as the only voltage.",
     "category": "Automotive",
     "subcategory": "Brand Design",
     "tags": [
@@ -407,43 +1133,148 @@ export const vendorEntries: VendorEntry[] = [
       "canvas": "#000000",
       "surface-soft": "#0d0d0d",
       "surface-card": "#141414",
-      "surface-elevated": "#1f1f1f"
+      "surface-elevated": "#1f1f1f",
+      "on-primary": "#000000",
+      "on-dark": "#ffffff",
+      "on-photo": "#ffffff",
+      "link": "#c3d9f3",
+      "warning": "#d4a017",
+      "success": "#5fa657"
     },
     "tokens": {
       "colors": {
         "canvas": "#000000",
-        "surface": "#f9f9f9",
+        "surface": "#000000",
         "text": "#ffffff",
         "primary": "#ffffff",
-        "onPrimary": "#ffffff",
+        "onPrimary": "#000000",
         "border": "#262626"
       },
       "typography": {
         "display": "system-ui, sans-serif",
-        "body": "system-ui, sans-serif",
-        "displaySize": 48,
+        "body": "serif",
+        "displaySize": 64,
         "bodySize": 16,
-        "lineHeight": 1.6
+        "lineHeight": 1.5
       },
       "spacing": [
         4,
         8,
+        12,
         16,
         24,
         40,
-        64
+        64,
+        120
       ],
-      "radius": 6,
+      "radius": 0,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#ffffff",
+        "ink": "#ffffff",
+        "body": "#cccccc",
+        "body-strong": "#e6e6e6",
+        "muted": "#999999",
+        "muted-soft": "#666666",
+        "hairline": "#262626",
+        "hairline-strong": "#3a3a3a",
+        "canvas": "#000000",
+        "surface-soft": "#0d0d0d",
+        "surface-card": "#141414",
+        "surface-elevated": "#1f1f1f",
+        "on-primary": "#000000",
+        "on-dark": "#ffffff",
+        "on-photo": "#ffffff",
+        "link": "#c3d9f3",
+        "warning": "#d4a017",
+        "success": "#5fa657"
+      },
+      "typography": {
+        "display-xl": {
+          "fontFamily": "Bugatti Display, sans-serif",
+          "fontSize": "64px",
+          "fontWeight": 400,
+          "lineHeight": 1.1,
+          "letterSpacing": "4px",
+          "declaredFamily": "Bugatti Display, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-md": {
+          "fontFamily": "Bugatti Text Regular, serif",
+          "fontSize": "16px",
+          "fontWeight": 400,
+          "lineHeight": 1.5,
+          "letterSpacing": 0,
+          "declaredFamily": "Bugatti Text Regular, serif",
+          "renderFallback": "serif"
+        }
+      },
+      "spacing": {
+        "xxs": "4px",
+        "xs": "8px",
+        "sm": "12px",
+        "md": "16px",
+        "lg": "24px",
+        "xl": "40px",
+        "xxl": "64px",
+        "section": "120px"
+      },
+      "radius": {
+        "none": "0px",
+        "pill": "9999px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "transparent",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "Bugatti Monospace, ui-monospace, monospace",
+            "fontSize": "14px",
+            "fontWeight": 400,
+            "lineHeight": 1,
+            "letterSpacing": "2.5px"
+          },
+          "rounded": "9999px",
+          "padding": "14px 32px",
+          "height": "44px"
+        },
+        "career-callout-card": {
+          "backgroundColor": "#141414",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "Bugatti Text Regular, serif",
+            "fontSize": "14px",
+            "fontWeight": 400,
+            "lineHeight": 1.5,
+            "letterSpacing": 0
+          },
+          "rounded": "0px",
+          "padding": "16px",
+          "width": "320px"
+        }
+      },
+      "layout": "cinematic",
+      "traits": "An austere luxury-automotive interface that uses near-pure black canvas, white uppercase letterspaced display, and full-bleed automotive photography as the only voltage. The system runs three custom Bugatti typefaces — Bugatti Display, Bugatti Text Regular, and Bugatti Monospace — and combines them at modest weights with wide tracking to feel European-engineered, hyper-minimal, and quietly expensive. There is no accent color, no decorative element, no chrome — only photography, typography, and the brand wordmark.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Bugatti"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "An austere luxury-automotive interface that uses near-pure black canvas, white uppercase letterspaced display, and full-bleed automotive photography as the only voltage. The system runs three custom Bugatti typefaces — Bugatti Display, Bugatti Text Regular, and Bugatti Monospace — and combines them at modest weights with wide tracking to feel European-engineered, hyper-minimal, and quietly expensive. There is no accent color, no decorative element, no chrome — only photography, typography, and the brand wordmark.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "cal",
-    "name": "Cal",
-    "description": "A clean, calendar-software-first interface anchored on white canvas with black primary CTAs and custom Cal Sans display typography. The system reads as friendly modern SaaS — generous whitespace, soft",
+    "name": "Cal.com",
+    "description": "A clean, calendar-software-first interface anchored on white canvas with black primary CTAs and custom Cal Sans display typography.",
     "category": "SaaS & Productivity",
     "subcategory": "Brand Design",
     "tags": [
@@ -466,12 +1297,26 @@ export const vendorEntries: VendorEntry[] = [
       "hairline-soft": "#f3f4f6",
       "canvas": "#ffffff",
       "surface-soft": "#f8f9fa",
-      "surface-card": "#f5f5f5"
+      "surface-card": "#f5f5f5",
+      "surface-strong": "#e5e7eb",
+      "surface-dark": "#101010",
+      "surface-dark-elevated": "#1a1a1a",
+      "on-primary": "#ffffff",
+      "on-dark": "#ffffff",
+      "on-dark-soft": "#a1a1aa",
+      "brand-accent": "#3b82f6",
+      "success": "#10b981",
+      "warning": "#f59e0b",
+      "error": "#ef4444",
+      "badge-orange": "#fb923c",
+      "badge-pink": "#ec4899",
+      "badge-violet": "#8b5cf6",
+      "badge-emerald": "#34d399"
     },
     "tokens": {
       "colors": {
         "canvas": "#ffffff",
-        "surface": "#f9f9f9",
+        "surface": "#ffffff",
         "text": "#111111",
         "primary": "#111111",
         "onPrimary": "#ffffff",
@@ -480,36 +1325,137 @@ export const vendorEntries: VendorEntry[] = [
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
+        "displaySize": 64,
         "bodySize": 16,
-        "lineHeight": 1.6
+        "lineHeight": 1.5
       },
       "spacing": [
         4,
         8,
+        12,
         16,
         24,
-        40,
-        64
+        32,
+        48,
+        96
       ],
-      "radius": 6,
+      "radius": 16,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#111111",
+        "primary-active": "#242424",
+        "primary-disabled": "#e5e7eb",
+        "ink": "#111111",
+        "body": "#374151",
+        "muted": "#6b7280",
+        "muted-soft": "#898989",
+        "hairline": "#e5e7eb",
+        "hairline-soft": "#f3f4f6",
+        "canvas": "#ffffff",
+        "surface-soft": "#f8f9fa",
+        "surface-card": "#f5f5f5",
+        "surface-strong": "#e5e7eb",
+        "surface-dark": "#101010",
+        "surface-dark-elevated": "#1a1a1a",
+        "on-primary": "#ffffff",
+        "on-dark": "#ffffff",
+        "on-dark-soft": "#a1a1aa",
+        "brand-accent": "#3b82f6",
+        "success": "#10b981",
+        "warning": "#f59e0b",
+        "error": "#ef4444",
+        "badge-orange": "#fb923c",
+        "badge-pink": "#ec4899",
+        "badge-violet": "#8b5cf6",
+        "badge-emerald": "#34d399"
+      },
+      "typography": {
+        "display-xl": {
+          "fontFamily": "Cal Sans, Inter, sans-serif",
+          "fontSize": "64px",
+          "fontWeight": 600,
+          "lineHeight": 1.05,
+          "letterSpacing": "-2px",
+          "declaredFamily": "Cal Sans, Inter, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-md": {
+          "fontFamily": "Inter, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": 400,
+          "lineHeight": 1.5,
+          "letterSpacing": 0,
+          "declaredFamily": "Inter, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "4px",
+        "xs": "8px",
+        "sm": "12px",
+        "md": "16px",
+        "lg": "24px",
+        "xl": "32px",
+        "xxl": "48px",
+        "section": "96px"
+      },
+      "radius": {
+        "xs": "4px",
+        "sm": "6px",
+        "md": "8px",
+        "lg": "12px",
+        "xl": "16px",
+        "pill": "9999px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#111111",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": 600,
+            "lineHeight": 1,
+            "letterSpacing": 0
+          },
+          "rounded": "8px",
+          "padding": "12px 20px",
+          "height": "40px"
+        },
+        "hero-app-mockup-card": {
+          "backgroundColor": "#ffffff",
+          "textColor": "#111111",
+          "rounded": "16px"
+        }
+      },
+      "layout": "product",
+      "traits": "A clean, calendar-software-first interface anchored on white canvas with black primary CTAs and custom Cal Sans display typography. The system reads as friendly modern SaaS — generous whitespace, soft-rounded cards (~12px), product UI fragments shown directly inside cards, and a dark navy footer that visually closes long-scroll pages. Brand voltage comes from the Cal Sans display headline (a custom geometric face) and from product UI artifacts shown in-card rather than from accent colors.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Cal.com"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "A clean, calendar-software-first interface anchored on white canvas with black primary CTAs and custom Cal Sans display typography. The system reads as friendly modern SaaS — generous whitespace, soft-rounded cards (~12px), product UI fragments shown directly inside cards, and a dark navy footer that visually closes long-scroll pages. Brand voltage comes from the Cal Sans display headline (a custom geometric face) and from product UI artifacts shown in-card rather than from accent colors.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "claude",
     "name": "Claude",
-    "description": "A warm-canvas editorial interface for Anthropic's Claude product. The system anchors on a tinted cream canvas with serif display headlines, warm coral CTAs, and dark navy product surfaces (code editor",
+    "description": "A warm-canvas editorial interface for Anthropic's Claude product.",
     "category": "AI & LLM",
     "subcategory": "Brand Design",
     "tags": [
       "claude",
       "ai",
-      "editorial",
-      "dark"
+      "editorial"
     ],
     "upstreamPath": "design-md/claude/DESIGN.md",
     "upstreamCommit": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
@@ -526,49 +1472,162 @@ export const vendorEntries: VendorEntry[] = [
       "hairline": "#e6dfd8",
       "hairline-soft": "#ebe6df",
       "canvas": "#faf9f5",
-      "surface-soft": "#f5f0e8"
+      "surface-soft": "#f5f0e8",
+      "surface-card": "#efe9de",
+      "surface-cream-strong": "#e8e0d2",
+      "surface-dark": "#181715",
+      "surface-dark-elevated": "#252320",
+      "surface-dark-soft": "#1f1e1b",
+      "on-primary": "#ffffff",
+      "on-dark": "#faf9f5",
+      "on-dark-soft": "#a09d96",
+      "accent-teal": "#5db8a6",
+      "accent-amber": "#e8a55a",
+      "success": "#5db872",
+      "warning": "#d4a017",
+      "error": "#c64545"
     },
     "tokens": {
       "colors": {
         "canvas": "#faf9f5",
-        "surface": "#f9f9f9",
+        "surface": "#faf9f5",
         "text": "#141413",
         "primary": "#cc785c",
         "onPrimary": "#ffffff",
         "border": "#e6dfd8"
       },
       "typography": {
-        "display": "system-ui, sans-serif",
+        "display": "serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
+        "displaySize": 64,
         "bodySize": 16,
-        "lineHeight": 1.6
+        "lineHeight": 1.55
       },
       "spacing": [
         4,
         8,
+        12,
         16,
         24,
-        40,
-        64
+        32,
+        48,
+        96
       ],
-      "radius": 6,
+      "radius": 16,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#cc785c",
+        "primary-active": "#a9583e",
+        "primary-disabled": "#e6dfd8",
+        "ink": "#141413",
+        "body": "#3d3d3a",
+        "body-strong": "#252523",
+        "muted": "#6c6a64",
+        "muted-soft": "#8e8b82",
+        "hairline": "#e6dfd8",
+        "hairline-soft": "#ebe6df",
+        "canvas": "#faf9f5",
+        "surface-soft": "#f5f0e8",
+        "surface-card": "#efe9de",
+        "surface-cream-strong": "#e8e0d2",
+        "surface-dark": "#181715",
+        "surface-dark-elevated": "#252320",
+        "surface-dark-soft": "#1f1e1b",
+        "on-primary": "#ffffff",
+        "on-dark": "#faf9f5",
+        "on-dark-soft": "#a09d96",
+        "accent-teal": "#5db8a6",
+        "accent-amber": "#e8a55a",
+        "success": "#5db872",
+        "warning": "#d4a017",
+        "error": "#c64545"
+      },
+      "typography": {
+        "display-xl": {
+          "fontFamily": "Copernicus, Tiempos Headline, serif",
+          "fontSize": "64px",
+          "fontWeight": 400,
+          "lineHeight": 1.05,
+          "letterSpacing": "-1.5px",
+          "declaredFamily": "Copernicus, Tiempos Headline, serif",
+          "renderFallback": "serif"
+        },
+        "body-md": {
+          "fontFamily": "StyreneB, Inter, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": 400,
+          "lineHeight": 1.55,
+          "letterSpacing": 0,
+          "declaredFamily": "StyreneB, Inter, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "4px",
+        "xs": "8px",
+        "sm": "12px",
+        "md": "16px",
+        "lg": "24px",
+        "xl": "32px",
+        "xxl": "48px",
+        "section": "96px"
+      },
+      "radius": {
+        "xs": "4px",
+        "sm": "6px",
+        "md": "8px",
+        "lg": "12px",
+        "xl": "16px",
+        "pill": "9999px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#cc785c",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "StyreneB, Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": 500,
+            "lineHeight": 1,
+            "letterSpacing": 0
+          },
+          "rounded": "8px",
+          "padding": "12px 20px",
+          "height": "40px"
+        },
+        "hero-illustration-card": {
+          "backgroundColor": "#faf9f5",
+          "textColor": "#141413",
+          "rounded": "16px"
+        }
+      },
+      "layout": "editorial",
+      "traits": "A warm-canvas editorial interface for Anthropic's Claude product. The system anchors on a tinted cream canvas with serif display headlines, warm coral CTAs, and dark navy product surfaces (code editor mockups, model showcase cards). Brand voltage comes from the cream/coral pairing — deliberately warm and humanist where most AI brands use cool blue + slate. Type voice runs a slab-serif display (\"Copernicus\" / Tiempos Headline) for h1/h2 and a humanist sans for body. The signature Anthropic black-radial-spike mark anchors the wordmark.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Claude"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "A warm-canvas editorial interface for Anthropic's Claude product. The system anchors on a tinted cream canvas with serif display headlines, warm coral CTAs, and dark navy product surfaces (code editor mockups, model showcase cards). Brand voltage comes from the cream/coral pairing — deliberately warm and humanist where most AI brands use cool blue + slate. Type voice runs a slab-serif display (\"Copernicus\" / Tiempos Headline) for h1/h2 and a humanist sans for body. The signature Anthropic black-radial-spike mark anchors the wordmark.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "clay",
     "name": "Clay",
-    "description": "A vibrant claymation-meets-data interface for Clay.com (GTM data-orchestration platform). Anchors on white canvas with dark-navy primary CTAs, custom rounded display type, and saturated single-color f",
+    "description": "A vibrant claymation-meets-data interface for Clay.com (GTM data-orchestration platform).",
     "category": "Design Tools",
     "subcategory": "Brand Design",
     "tags": [
       "clay",
-      "design",
-      "dark"
+      "design"
     ],
     "upstreamPath": "design-md/clay/DESIGN.md",
     "upstreamCommit": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
@@ -585,12 +1644,29 @@ export const vendorEntries: VendorEntry[] = [
       "hairline": "#e5e5e5",
       "hairline-soft": "#f0f0f0",
       "canvas": "#fffaf0",
-      "surface-soft": "#faf5e8"
+      "surface-soft": "#faf5e8",
+      "surface-card": "#f5f0e0",
+      "surface-strong": "#ebe6d6",
+      "surface-dark": "#0a1a1a",
+      "surface-dark-elevated": "#1a2a2a",
+      "on-primary": "#ffffff",
+      "on-dark": "#ffffff",
+      "on-dark-soft": "#a0a0a0",
+      "brand-pink": "#ff4d8b",
+      "brand-teal": "#1a3a3a",
+      "brand-lavender": "#b8a4ed",
+      "brand-peach": "#ffb084",
+      "brand-ochre": "#e8b94a",
+      "brand-mint": "#a4d4c5",
+      "brand-coral": "#ff6b5a",
+      "success": "#22c55e",
+      "warning": "#f59e0b",
+      "error": "#ef4444"
     },
     "tokens": {
       "colors": {
         "canvas": "#fffaf0",
-        "surface": "#f9f9f9",
+        "surface": "#fffaf0",
         "text": "#0a0a0a",
         "primary": "#0a0a0a",
         "onPrimary": "#ffffff",
@@ -599,29 +1675,134 @@ export const vendorEntries: VendorEntry[] = [
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
+        "displaySize": 72,
         "bodySize": 16,
-        "lineHeight": 1.6
+        "lineHeight": 1.55
       },
       "spacing": [
         4,
         8,
+        12,
         16,
         24,
-        40,
-        64
+        32,
+        48,
+        96
       ],
-      "radius": 6,
+      "radius": 24,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#0a0a0a",
+        "primary-active": "#1f1f1f",
+        "primary-disabled": "#e5e5e5",
+        "ink": "#0a0a0a",
+        "body": "#3a3a3a",
+        "body-strong": "#1a1a1a",
+        "muted": "#6a6a6a",
+        "muted-soft": "#9a9a9a",
+        "hairline": "#e5e5e5",
+        "hairline-soft": "#f0f0f0",
+        "canvas": "#fffaf0",
+        "surface-soft": "#faf5e8",
+        "surface-card": "#f5f0e0",
+        "surface-strong": "#ebe6d6",
+        "surface-dark": "#0a1a1a",
+        "surface-dark-elevated": "#1a2a2a",
+        "on-primary": "#ffffff",
+        "on-dark": "#ffffff",
+        "on-dark-soft": "#a0a0a0",
+        "brand-pink": "#ff4d8b",
+        "brand-teal": "#1a3a3a",
+        "brand-lavender": "#b8a4ed",
+        "brand-peach": "#ffb084",
+        "brand-ochre": "#e8b94a",
+        "brand-mint": "#a4d4c5",
+        "brand-coral": "#ff6b5a",
+        "success": "#22c55e",
+        "warning": "#f59e0b",
+        "error": "#ef4444"
+      },
+      "typography": {
+        "display-xl": {
+          "fontFamily": "Plain Black, Inter, sans-serif",
+          "fontSize": "72px",
+          "fontWeight": 500,
+          "lineHeight": 1,
+          "letterSpacing": "-2.5px",
+          "declaredFamily": "Plain Black, Inter, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-md": {
+          "fontFamily": "Inter, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": 400,
+          "lineHeight": 1.55,
+          "letterSpacing": 0,
+          "declaredFamily": "Inter, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "4px",
+        "xs": "8px",
+        "sm": "12px",
+        "md": "16px",
+        "lg": "24px",
+        "xl": "32px",
+        "xxl": "48px",
+        "section": "96px"
+      },
+      "radius": {
+        "xs": "6px",
+        "sm": "8px",
+        "md": "12px",
+        "lg": "16px",
+        "xl": "24px",
+        "pill": "9999px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#0a0a0a",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": 600,
+            "lineHeight": 1,
+            "letterSpacing": 0
+          },
+          "rounded": "12px",
+          "padding": "12px 20px",
+          "height": "44px"
+        },
+        "hero-illustration-card": {
+          "backgroundColor": "#faf5e8",
+          "textColor": "#0a0a0a",
+          "rounded": "24px"
+        }
+      },
+      "layout": "product",
+      "traits": "A vibrant claymation-meets-data interface for Clay.com (GTM data-orchestration platform). Anchors on white canvas with dark-navy primary CTAs, custom rounded display type, and saturated single-color feature cards — hot pink, deep teal, lavender, peach, ochre — that punctuate long-scroll explainer pages. Brand voltage comes from 3D-rendered claymation illustrations (mountains, characters, mascots) used as full-bleed hero artifacts and the bright multi-color card surfaces showing product UI fragments.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Clay"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "A vibrant claymation-meets-data interface for Clay.com (GTM data-orchestration platform). Anchors on white canvas with dark-navy primary CTAs, custom rounded display type, and saturated single-color feature cards — hot pink, deep teal, lavender, peach, ochre — that punctuate long-scroll explainer pages. Brand voltage comes from 3D-rendered claymation illustrations (mountains, characters, mascots) used as full-bleed hero artifacts and the bright multi-color card surfaces showing product UI fragments.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "clickhouse",
-    "name": "Clickhouse",
-    "description": "A high-performance database interface anchored on near-pure black canvas with electric yellow as the brand voltage. White typography in confident sans, yellow CTAs, and yellow-text stat numbers carry ",
+    "name": "ClickHouse",
+    "description": "A high-performance database interface anchored on near-pure black canvas with electric yellow as the brand voltage.",
     "category": "Backend & DevOps",
     "subcategory": "Brand Design",
     "tags": [
@@ -643,43 +1824,160 @@ export const vendorEntries: VendorEntry[] = [
       "hairline": "#2a2a2a",
       "hairline-strong": "#3a3a3a",
       "canvas": "#0a0a0a",
-      "surface-soft": "#121212"
+      "surface-soft": "#121212",
+      "surface-card": "#1a1a1a",
+      "surface-elevated": "#242424",
+      "surface-yellow-band": "#faff69",
+      "on-primary": "#0a0a0a",
+      "on-dark": "#ffffff",
+      "on-yellow": "#0a0a0a",
+      "accent-emerald": "#22c55e",
+      "accent-rose": "#ef4444",
+      "accent-blue": "#3b82f6",
+      "success": "#22c55e",
+      "warning": "#f59e0b",
+      "error": "#ef4444"
     },
     "tokens": {
       "colors": {
         "canvas": "#0a0a0a",
-        "surface": "#f9f9f9",
+        "surface": "#0a0a0a",
         "text": "#ffffff",
         "primary": "#faff69",
-        "onPrimary": "#ffffff",
+        "onPrimary": "#0a0a0a",
         "border": "#2a2a2a"
       },
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
+        "displaySize": 72,
         "bodySize": 16,
-        "lineHeight": 1.6
+        "lineHeight": 1.55
       },
       "spacing": [
         4,
         8,
+        12,
         16,
         24,
-        40,
-        64
+        32,
+        48,
+        96
       ],
-      "radius": 6,
+      "radius": 8,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#faff69",
+        "primary-active": "#e6eb52",
+        "primary-disabled": "#3a3a1f",
+        "ink": "#ffffff",
+        "body": "#cccccc",
+        "body-strong": "#e6e6e6",
+        "muted": "#888888",
+        "muted-soft": "#5a5a5a",
+        "hairline": "#2a2a2a",
+        "hairline-strong": "#3a3a3a",
+        "canvas": "#0a0a0a",
+        "surface-soft": "#121212",
+        "surface-card": "#1a1a1a",
+        "surface-elevated": "#242424",
+        "surface-yellow-band": "#faff69",
+        "on-primary": "#0a0a0a",
+        "on-dark": "#ffffff",
+        "on-yellow": "#0a0a0a",
+        "accent-emerald": "#22c55e",
+        "accent-rose": "#ef4444",
+        "accent-blue": "#3b82f6",
+        "success": "#22c55e",
+        "warning": "#f59e0b",
+        "error": "#ef4444"
+      },
+      "typography": {
+        "display-xl": {
+          "fontFamily": "Inter, sans-serif",
+          "fontSize": "72px",
+          "fontWeight": 700,
+          "lineHeight": 1.05,
+          "letterSpacing": "-2.5px",
+          "declaredFamily": "Inter, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-md": {
+          "fontFamily": "Inter, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": 400,
+          "lineHeight": 1.55,
+          "letterSpacing": 0,
+          "declaredFamily": "Inter, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "4px",
+        "xs": "8px",
+        "sm": "12px",
+        "md": "16px",
+        "lg": "24px",
+        "xl": "32px",
+        "xxl": "48px",
+        "section": "96px"
+      },
+      "radius": {
+        "xs": "4px",
+        "sm": "6px",
+        "md": "8px",
+        "lg": "12px",
+        "pill": "9999px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#faff69",
+          "textColor": "#0a0a0a",
+          "typography": {
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": 600,
+            "lineHeight": 1,
+            "letterSpacing": 0
+          },
+          "rounded": "8px",
+          "padding": "12px 20px",
+          "height": "40px"
+        },
+        "hero-stat-card": {
+          "backgroundColor": "#0a0a0a",
+          "textColor": "#faff69",
+          "typography": {
+            "fontFamily": "Inter, sans-serif",
+            "fontSize": "56px",
+            "fontWeight": 700,
+            "lineHeight": 1,
+            "letterSpacing": "-1.5px"
+          }
+        }
+      },
+      "layout": "product",
+      "traits": "A high-performance database interface anchored on near-pure black canvas with electric yellow as the brand voltage. White typography in confident sans, yellow CTAs, and yellow-text stat numbers carry the brand voice across every page. Code blocks and product UI fragments embed directly in dark cards. The yellow + black pairing (and yellow used scarcely as accent) is the system's signature — brand identity without atmospheric decoration.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "ClickHouse"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "A high-performance database interface anchored on near-pure black canvas with electric yellow as the brand voltage. White typography in confident sans, yellow CTAs, and yellow-text stat numbers carry the brand voice across every page. Code blocks and product UI fragments embed directly in dark cards. The yellow + black pairing (and yellow used scarcely as accent) is the system's signature — brand identity without atmospheric decoration.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "cohere",
     "name": "Cohere",
-    "description": "Cohere's 2026 web system is a controlled enterprise AI interface built from stark white editorial space, deep green-black product bands, soft mineral surfaces, rounded media cards, and a distinctive t",
+    "description": "Cohere's 2026 web system is a controlled enterprise AI interface built from stark white editorial space, deep green-black product bands, soft mineral surfaces, rounded media cards, and a distinctive type split between monospaced-feeling display headlines and precise Unica77 UI text.",
     "category": "AI & LLM",
     "subcategory": "Brand Design",
     "tags": [
@@ -702,12 +2000,23 @@ export const vendorEntries: VendorEntry[] = [
       "pale-blue": "#f1f5ff",
       "hairline": "#d9d9dd",
       "border-light": "#e5e7eb",
-      "card-border": "#f2f2f2"
+      "card-border": "#f2f2f2",
+      "muted": "#93939f",
+      "slate": "#75758a",
+      "body-muted": "#616161",
+      "action-blue": "#1863dc",
+      "focus-blue": "#4c6ee6",
+      "coral": "#ff7759",
+      "coral-soft": "#ffad9b",
+      "form-focus": "#9b60aa",
+      "on-primary": "#ffffff",
+      "on-dark": "#ffffff",
+      "error": "#b30000"
     },
     "tokens": {
       "colors": {
         "canvas": "#ffffff",
-        "surface": "#f9f9f9",
+        "surface": "#ffffff",
         "text": "#212121",
         "primary": "#17171c",
         "onPrimary": "#ffffff",
@@ -716,29 +2025,126 @@ export const vendorEntries: VendorEntry[] = [
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
+        "displaySize": 96,
         "bodySize": 16,
-        "lineHeight": 1.6
+        "lineHeight": 1.5
       },
       "spacing": [
-        4,
+        2,
+        6,
         8,
+        12,
         16,
         24,
-        40,
-        64
+        32,
+        80
       ],
-      "radius": 6,
+      "radius": 22,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#17171c",
+        "cohere-black": "#000000",
+        "ink": "#212121",
+        "deep-green": "#003c33",
+        "dark-navy": "#071829",
+        "canvas": "#ffffff",
+        "soft-stone": "#eeece7",
+        "pale-green": "#edfce9",
+        "pale-blue": "#f1f5ff",
+        "hairline": "#d9d9dd",
+        "border-light": "#e5e7eb",
+        "card-border": "#f2f2f2",
+        "muted": "#93939f",
+        "slate": "#75758a",
+        "body-muted": "#616161",
+        "action-blue": "#1863dc",
+        "focus-blue": "#4c6ee6",
+        "coral": "#ff7759",
+        "coral-soft": "#ffad9b",
+        "form-focus": "#9b60aa",
+        "on-primary": "#ffffff",
+        "on-dark": "#ffffff",
+        "error": "#b30000"
+      },
+      "typography": {
+        "hero-display": {
+          "fontFamily": "CohereText",
+          "fontSize": "96px",
+          "fontWeight": 400,
+          "lineHeight": 1,
+          "letterSpacing": "-1.92px",
+          "declaredFamily": "CohereText",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body": {
+          "fontFamily": "Unica77 Cohere Web",
+          "fontSize": "16px",
+          "fontWeight": 400,
+          "lineHeight": 1.5,
+          "letterSpacing": 0,
+          "declaredFamily": "Unica77 Cohere Web",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "2px",
+        "xs": "6px",
+        "sm": "8px",
+        "md": "12px",
+        "lg": "16px",
+        "xl": "24px",
+        "xxl": "32px",
+        "section": "80px"
+      },
+      "radius": {
+        "xs": "4px",
+        "sm": "8px",
+        "md": "16px",
+        "lg": "22px",
+        "xl": "30px",
+        "pill": "32px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#17171c",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "Unica77 Cohere Web",
+            "fontSize": "14px",
+            "fontWeight": 500,
+            "lineHeight": 1.71,
+            "letterSpacing": 0
+          },
+          "rounded": "32px",
+          "padding": "12px 24px"
+        },
+        "hero-photo-card": {
+          "backgroundColor": "#ffffff",
+          "rounded": "22px"
+        }
+      },
+      "layout": "editorial",
+      "traits": "Cohere's 2026 web system is a controlled enterprise AI interface built from stark white editorial space, deep green-black product bands, soft mineral surfaces, rounded media cards, and a distinctive type split between monospaced-feeling display headlines and precise Unica77 UI text.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Cohere"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "Cohere's 2026 web system is a controlled enterprise AI interface built from stark white editorial space, deep green-black product bands, soft mineral surfaces, rounded media cards, and a distinctive type split between monospaced-feeling display headlines and precise Unica77 UI text.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "coinbase",
     "name": "Coinbase",
-    "description": "An institutional-grade crypto exchange whose marketing surfaces read like a quietly-confident financial-services brand. The base canvas is pure white; Coinbase Blue (`#0052ff`) is the single brand vol",
+    "description": "An institutional-grade crypto exchange whose marketing surfaces read like a quietly-confident financial-services brand.",
     "category": "Fintech & Crypto",
     "subcategory": "Brand Design",
     "tags": [
@@ -760,12 +2166,22 @@ export const vendorEntries: VendorEntry[] = [
       "hairline": "#dee1e6",
       "hairline-soft": "#eef0f3",
       "canvas": "#ffffff",
-      "surface-soft": "#f7f7f7"
+      "surface-soft": "#f7f7f7",
+      "surface-card": "#ffffff",
+      "surface-strong": "#eef0f3",
+      "surface-dark": "#0a0b0d",
+      "surface-dark-elevated": "#16181c",
+      "on-primary": "#ffffff",
+      "on-dark": "#ffffff",
+      "on-dark-soft": "#a8acb3",
+      "semantic-up": "#05b169",
+      "semantic-down": "#cf202f",
+      "accent-yellow": "#f4b000"
     },
     "tokens": {
       "colors": {
         "canvas": "#ffffff",
-        "surface": "#f9f9f9",
+        "surface": "#ffffff",
         "text": "#0a0b0d",
         "primary": "#0052ff",
         "onPrimary": "#ffffff",
@@ -774,29 +2190,131 @@ export const vendorEntries: VendorEntry[] = [
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
+        "displaySize": 80,
         "bodySize": 16,
-        "lineHeight": 1.6
+        "lineHeight": 1.5
       },
       "spacing": [
         4,
         8,
+        12,
         16,
+        20,
         24,
-        40,
-        64
+        32,
+        48,
+        96
       ],
-      "radius": 6,
+      "radius": 24,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#0052ff",
+        "primary-active": "#003ecc",
+        "primary-disabled": "#a8b8cc",
+        "ink": "#0a0b0d",
+        "body": "#5b616e",
+        "body-strong": "#0a0b0d",
+        "muted": "#7c828a",
+        "muted-soft": "#a8acb3",
+        "hairline": "#dee1e6",
+        "hairline-soft": "#eef0f3",
+        "canvas": "#ffffff",
+        "surface-soft": "#f7f7f7",
+        "surface-card": "#ffffff",
+        "surface-strong": "#eef0f3",
+        "surface-dark": "#0a0b0d",
+        "surface-dark-elevated": "#16181c",
+        "on-primary": "#ffffff",
+        "on-dark": "#ffffff",
+        "on-dark-soft": "#a8acb3",
+        "semantic-up": "#05b169",
+        "semantic-down": "#cf202f",
+        "accent-yellow": "#f4b000"
+      },
+      "typography": {
+        "display-mega": {
+          "fontFamily": "'Coinbase Display', -apple-system, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
+          "fontSize": "80px",
+          "fontWeight": 400,
+          "lineHeight": 1,
+          "letterSpacing": "-2px",
+          "declaredFamily": "'Coinbase Display', -apple-system, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-md": {
+          "fontFamily": "'Coinbase Sans', sans-serif",
+          "fontSize": "16px",
+          "fontWeight": 400,
+          "lineHeight": 1.5,
+          "letterSpacing": 0,
+          "declaredFamily": "'Coinbase Sans', sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "4px",
+        "xs": "8px",
+        "sm": "12px",
+        "base": "16px",
+        "md": "20px",
+        "lg": "24px",
+        "xl": "32px",
+        "xxl": "48px",
+        "section": "96px"
+      },
+      "radius": {
+        "none": "0px",
+        "xs": "4px",
+        "sm": "8px",
+        "md": "12px",
+        "lg": "16px",
+        "xl": "24px",
+        "pill": "100px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#0052ff",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "'Coinbase Sans', sans-serif",
+            "fontSize": "16px",
+            "fontWeight": 600,
+            "lineHeight": 1.15,
+            "letterSpacing": 0
+          },
+          "rounded": "100px",
+          "padding": "12px 20px",
+          "height": "44px"
+        },
+        "product-ui-card-dark": {
+          "backgroundColor": "#16181c",
+          "textColor": "#ffffff",
+          "rounded": "24px",
+          "padding": "32px"
+        }
+      },
+      "layout": "utility",
+      "traits": "An institutional-grade crypto exchange whose marketing surfaces read like a quietly-confident financial-services brand. The base canvas is pure white; Coinbase Blue (`#0052ff`) is the single brand voltage, used scarcely on primary CTAs, signature glyphs, and inline accent moments. Type runs Coinbase's licensed CoinbaseDisplay (display) and CoinbaseSans (body) at modest weights — display sits at weight 400 not 700, signaling editorial calm rather than fintech-bombastic. Page rhythm rotates between bright white sections, soft gray elevation bands, and full-bleed dark editorial heroes (`#0a0b0d`) carrying product-ui mockup cards. Iconography is geometric and minimal; depth comes from card-on-card layering, never decorative shadows.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Coinbase"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "An institutional-grade crypto exchange whose marketing surfaces read like a quietly-confident financial-services brand. The base canvas is pure white; Coinbase Blue (`#0052ff`) is the single brand voltage, used scarcely on primary CTAs, signature glyphs, and inline accent moments. Type runs Coinbase's licensed CoinbaseDisplay (display) and CoinbaseSans (body) at modest weights — display sits at weight 400 not 700, signaling editorial calm rather than fintech-bombastic. Page rhythm rotates between bright white sections, soft gray elevation bands, and full-bleed dark editorial heroes (`#0a0b0d`) carrying product-ui mockup cards. Iconography is geometric and minimal; depth comes from card-on-card layering, never decorative shadows.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "composio",
     "name": "Composio",
-    "description": "A developer-tools brand for AI-agent tool integration whose marketing surfaces lean into a dark, technical aesthetic with a single deep-electric-blue voltage (`#0007cd`). The page floor is near-black ",
+    "description": "A developer-tools brand for AI-agent tool integration whose marketing surfaces lean into a dark, technical aesthetic with a single deep-electric-blue voltage (#0007cd).",
     "category": "Backend & DevOps",
     "subcategory": "Brand Design",
     "tags": [
@@ -821,12 +2339,22 @@ export const vendorEntries: VendorEntry[] = [
       "hairline": "#222222",
       "hairline-soft": "#1a1a1a",
       "hairline-strong": "#333333",
-      "canvas": "#0f0f0f"
+      "canvas": "#0f0f0f",
+      "canvas-deep": "#000000",
+      "surface-card": "#181818",
+      "surface-card-elevated": "#222222",
+      "surface-strong": "#2a2a2a",
+      "on-primary": "#ffffff",
+      "on-dark": "#ffffff",
+      "accent-cyan": "#00d4ff",
+      "accent-violet": "#7b3aed",
+      "semantic-error": "#ff4d4d",
+      "semantic-success": "#33d17a"
     },
     "tokens": {
       "colors": {
         "canvas": "#0f0f0f",
-        "surface": "#f9f9f9",
+        "surface": "#0f0f0f",
         "text": "#ffffff",
         "primary": "#0007cd",
         "onPrimary": "#ffffff",
@@ -835,29 +2363,138 @@ export const vendorEntries: VendorEntry[] = [
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
+        "displaySize": 72,
         "bodySize": 16,
-        "lineHeight": 1.6
+        "lineHeight": 1.5
       },
       "spacing": [
         4,
         8,
+        12,
         16,
+        20,
         24,
-        40,
-        64
+        32,
+        48,
+        96
       ],
-      "radius": 6,
+      "radius": 16,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#0007cd",
+        "primary-active": "#0005a3",
+        "primary-glow": "#1a26ff",
+        "ink": "#ffffff",
+        "body": "#a8a8a8",
+        "body-strong": "#ffffff",
+        "muted": "#888888",
+        "muted-soft": "#666666",
+        "hairline": "#222222",
+        "hairline-soft": "#1a1a1a",
+        "hairline-strong": "#333333",
+        "canvas": "#0f0f0f",
+        "canvas-deep": "#000000",
+        "surface-card": "#181818",
+        "surface-card-elevated": "#222222",
+        "surface-strong": "#2a2a2a",
+        "on-primary": "#ffffff",
+        "on-dark": "#ffffff",
+        "accent-cyan": "#00d4ff",
+        "accent-violet": "#7b3aed",
+        "semantic-error": "#ff4d4d",
+        "semantic-success": "#33d17a"
+      },
+      "typography": {
+        "display-mega": {
+          "fontFamily": "'abcDiatype', ui-sans-serif, system-ui, sans-serif",
+          "fontSize": "72px",
+          "fontWeight": 500,
+          "lineHeight": 1.05,
+          "letterSpacing": "-2.16px",
+          "declaredFamily": "'abcDiatype', ui-sans-serif, system-ui, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-md": {
+          "fontFamily": "'abcDiatype', ui-sans-serif, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": 400,
+          "lineHeight": 1.5,
+          "letterSpacing": 0,
+          "declaredFamily": "'abcDiatype', ui-sans-serif, system-ui, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "4px",
+        "xs": "8px",
+        "sm": "12px",
+        "base": "16px",
+        "md": "20px",
+        "lg": "24px",
+        "xl": "32px",
+        "xxl": "48px",
+        "section": "96px"
+      },
+      "radius": {
+        "none": "0px",
+        "xs": "4px",
+        "sm": "6px",
+        "md": "8px",
+        "lg": "12px",
+        "xl": "16px",
+        "pill": "9999px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#0007cd",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "'abcDiatype', ui-sans-serif, system-ui, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": 500,
+            "lineHeight": 1,
+            "letterSpacing": 0
+          },
+          "rounded": "8px",
+          "padding": "10px 18px",
+          "height": "40px"
+        },
+        "feature-card": {
+          "backgroundColor": "#181818",
+          "textColor": "#a8a8a8",
+          "typography": {
+            "fontFamily": "'abcDiatype', ui-sans-serif, system-ui, sans-serif",
+            "fontSize": "18px",
+            "fontWeight": 600,
+            "lineHeight": 1.4,
+            "letterSpacing": 0
+          },
+          "rounded": "16px",
+          "padding": "28px"
+        }
+      },
+      "layout": "product",
+      "traits": "A developer-tools brand for AI-agent tool integration whose marketing surfaces lean into a dark, technical aesthetic with a single deep-electric-blue voltage (`#0007cd`). The page floor is near-black (`#0f0f0f`); cards float above on subtle gray-tinted surfaces. abcDiatype carries display and body in a single sans family with weights 400-600. The brand's strongest visual signature is a four-pane terminal-style mockup (a 2×2 grid of dark code/output panels) with a central blue spotlight glow — used as the homepage hero anchor.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Composio"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "A developer-tools brand for AI-agent tool integration whose marketing surfaces lean into a dark, technical aesthetic with a single deep-electric-blue voltage (`#0007cd`). The page floor is near-black (`#0f0f0f`); cards float above on subtle gray-tinted surfaces. abcDiatype carries display and body in a single sans family with weights 400-600. The brand's strongest visual signature is a four-pane terminal-style mockup (a 2×2 grid of dark code/output panels) with a central blue spotlight glow — used as the homepage hero anchor.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "cursor",
     "name": "Cursor",
-    "description": "An AI-first code editor whose marketing site reads like a quietly-confident developer-tools brand with a warm-cream editorial canvas (`#f7f7f4`) instead of the typical dark IDE atmosphere. Near-black ",
+    "description": "An AI-first code editor whose marketing site reads like a quietly-confident developer-tools brand with a warm-cream editorial canvas (#f7f7f4) instead of the typical dark IDE atmosphere.",
     "category": "Developer Tools",
     "subcategory": "Brand Design",
     "tags": [
@@ -882,7 +2519,17 @@ export const vendorEntries: VendorEntry[] = [
       "hairline-soft": "#efeee8",
       "hairline-strong": "#cfcdc4",
       "canvas": "#f7f7f4",
-      "canvas-soft": "#fafaf7"
+      "canvas-soft": "#fafaf7",
+      "surface-card": "#ffffff",
+      "surface-strong": "#e6e5e0",
+      "on-primary": "#ffffff",
+      "timeline-thinking": "#dfa88f",
+      "timeline-grep": "#9fc9a2",
+      "timeline-read": "#9fbbe0",
+      "timeline-edit": "#c0a8dd",
+      "timeline-done": "#c08532",
+      "semantic-error": "#cf2d56",
+      "semantic-success": "#1f8a65"
     },
     "tokens": {
       "colors": {
@@ -896,29 +2543,131 @@ export const vendorEntries: VendorEntry[] = [
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
+        "displaySize": 72,
         "bodySize": 16,
-        "lineHeight": 1.6
+        "lineHeight": 1.5
       },
       "spacing": [
         4,
         8,
+        12,
         16,
+        20,
         24,
-        40,
-        64
+        32,
+        48,
+        80
       ],
-      "radius": 6,
+      "radius": 12,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#f54e00",
+        "primary-active": "#d04200",
+        "ink": "#26251e",
+        "body": "#5a5852",
+        "body-strong": "#26251e",
+        "muted": "#807d72",
+        "muted-soft": "#a09c92",
+        "hairline": "#e6e5e0",
+        "hairline-soft": "#efeee8",
+        "hairline-strong": "#cfcdc4",
+        "canvas": "#f7f7f4",
+        "canvas-soft": "#fafaf7",
+        "surface-card": "#ffffff",
+        "surface-strong": "#e6e5e0",
+        "on-primary": "#ffffff",
+        "timeline-thinking": "#dfa88f",
+        "timeline-grep": "#9fc9a2",
+        "timeline-read": "#9fbbe0",
+        "timeline-edit": "#c0a8dd",
+        "timeline-done": "#c08532",
+        "semantic-error": "#cf2d56",
+        "semantic-success": "#1f8a65"
+      },
+      "typography": {
+        "display-mega": {
+          "fontFamily": "'CursorGothic', system-ui, 'Helvetica Neue', Helvetica, Arial, sans-serif",
+          "fontSize": "72px",
+          "fontWeight": 400,
+          "lineHeight": 1.1,
+          "letterSpacing": "-2.16px",
+          "declaredFamily": "'CursorGothic', system-ui, 'Helvetica Neue', Helvetica, Arial, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-md": {
+          "fontFamily": "'CursorGothic', sans-serif",
+          "fontSize": "16px",
+          "fontWeight": 400,
+          "lineHeight": 1.5,
+          "letterSpacing": 0,
+          "declaredFamily": "'CursorGothic', sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "4px",
+        "xs": "8px",
+        "sm": "12px",
+        "base": "16px",
+        "md": "20px",
+        "lg": "24px",
+        "xl": "32px",
+        "xxl": "48px",
+        "section": "80px"
+      },
+      "radius": {
+        "none": "0px",
+        "xs": "4px",
+        "sm": "6px",
+        "md": "8px",
+        "lg": "12px",
+        "xl": "16px",
+        "pill": "9999px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#f54e00",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "'CursorGothic', sans-serif",
+            "fontSize": "14px",
+            "fontWeight": 500,
+            "lineHeight": 1,
+            "letterSpacing": 0
+          },
+          "rounded": "8px",
+          "padding": "10px 18px",
+          "height": "40px"
+        },
+        "ide-mockup-card": {
+          "backgroundColor": "#ffffff",
+          "textColor": "#26251e",
+          "rounded": "12px",
+          "padding": 0
+        }
+      },
+      "layout": "editorial",
+      "traits": "An AI-first code editor whose marketing site reads like a quietly-confident developer-tools brand with a warm-cream editorial canvas (`#f7f7f4`) instead of the typical dark IDE atmosphere. Near-black warm ink (`#26251e`) carries body and display alike — display sits at weight 400 with negative letter-spacing for a magazine feel rather than a bold tech voice. The single brand voltage is **Cursor Orange** (`#f54e00`) reserved for primary CTAs and the wordmark. A signature pastel timeline palette (peach, mint, blue, lavender, gold) marks AI-action stages (Thinking / Reading / Editing / Grepping / Done) — only inside in-product timeline visualizations. Cards use minimal hairlines, no shadows, generous 80px section rhythm. CursorGothic for display/body, JetBrains Mono on every code surface (which is roughly half the page).",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Cursor"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "An AI-first code editor whose marketing site reads like a quietly-confident developer-tools brand with a warm-cream editorial canvas (`#f7f7f4`) instead of the typical dark IDE atmosphere. Near-black warm ink (`#26251e`) carries body and display alike — display sits at weight 400 with negative letter-spacing for a magazine feel rather than a bold tech voice. The single brand voltage is **Cursor Orange** (`#f54e00`) reserved for primary CTAs and the wordmark. A signature pastel timeline palette (peach, mint, blue, lavender, gold) marks AI-action stages (Thinking / Reading / Editing / Grepping / Done) — only inside in-product timeline visualizations. Cards use minimal hairlines, no shadows, generous 80px section rhythm. CursorGothic for display/body, JetBrains Mono on every code surface (which is roughly half the page).",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "dell-1996",
-    "name": "Dell 1996",
-    "description": "An inspired interpretation of Dell.com's 1996 design language — a catalog-era enterprise web design built around a literal black page frame, vivid flat color-block \"ribbon cards\" tinted in sage, salmo",
+    "name": "Dell 1996 Inspired",
+    "description": "An inspired interpretation of Dell.com's 1996 design language — a catalog-era enterprise web design built around a literal black page frame, vivid flat color-block \"ribbon cards\" tinted in sage, salmon, periwinkle, sky, peach and lime, chunky Helvetica-Black display titles, Times Roman body copy, and an entire visual vocabulary of pre-Photoshop hand-cut GIF stickers (NEW!",
     "category": "Retro Web",
     "subcategory": "Brand Design",
     "tags": [
@@ -940,7 +2689,12 @@ export const vendorEntries: VendorEntry[] = [
       "link": "#0000ee",
       "tint-olive": "#8e8a25",
       "tint-sage": "#b3bd95",
-      "tint-salmon": "#d77a7a"
+      "tint-salmon": "#d77a7a",
+      "tint-peach": "#e6915d",
+      "tint-lime": "#c0d4a7",
+      "tint-sky": "#9ab6c8",
+      "tint-steel": "#a5b8c0",
+      "tint-periwinkle": "#8c9ae0"
     },
     "tokens": {
       "colors": {
@@ -949,34 +2703,139 @@ export const vendorEntries: VendorEntry[] = [
         "text": "#000000",
         "primary": "#e91d2a",
         "onPrimary": "#ffffff",
-        "border": "#e0e0e0"
+        "border": "currentColor"
       },
       "typography": {
         "display": "system-ui, sans-serif",
-        "body": "system-ui, sans-serif",
-        "displaySize": 48,
-        "bodySize": 16,
-        "lineHeight": 1.6
+        "body": "serif",
+        "displaySize": 36,
+        "bodySize": 14,
+        "lineHeight": 1.4
       },
       "spacing": [
+        2,
         4,
+        6,
         8,
+        10,
+        12,
         16,
+        20,
         24,
+        32,
         40,
-        64
+        48
       ],
-      "radius": 6,
+      "radius": 0,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#e91d2a",
+        "on-primary": "#ffffff",
+        "canvas": "#ffffff",
+        "surface": "#ffffff",
+        "ink": "#000000",
+        "frame-ink": "#000000",
+        "yellow-sticker": "#fcc20f",
+        "purple-stripe": "#6a26a4",
+        "link": "#0000ee",
+        "tint-olive": "#8e8a25",
+        "tint-sage": "#b3bd95",
+        "tint-salmon": "#d77a7a",
+        "tint-peach": "#e6915d",
+        "tint-lime": "#c0d4a7",
+        "tint-sky": "#9ab6c8",
+        "tint-steel": "#a5b8c0",
+        "tint-periwinkle": "#8c9ae0"
+      },
+      "typography": {
+        "display": {
+          "fontFamily": "Arial Black",
+          "fontSize": "36px",
+          "fontWeight": 900,
+          "lineHeight": 1,
+          "letterSpacing": 0,
+          "declaredFamily": "Arial Black",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body": {
+          "fontFamily": "Times New Roman",
+          "fontSize": "14px",
+          "fontWeight": 400,
+          "lineHeight": 1.4,
+          "letterSpacing": 0,
+          "declaredFamily": "Times New Roman",
+          "renderFallback": "serif"
+        }
+      },
+      "spacing": {
+        "xxs": "2px",
+        "xs": "4px",
+        "s": "6px",
+        "sm": "8px",
+        "m": "10px",
+        "md": "12px",
+        "lg": "16px",
+        "xl": "20px",
+        "xxl": "24px",
+        "section-sm": "32px",
+        "section": "40px",
+        "section-lg": "48px"
+      },
+      "radius": {
+        "none": "0px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#000000",
+          "textColor": "#ffffff",
+          "borderColor": "#000000",
+          "typography": {
+            "fontFamily": "Helvetica",
+            "fontSize": "12px",
+            "fontWeight": 700,
+            "lineHeight": 1,
+            "letterSpacing": 0
+          },
+          "rounded": "0px",
+          "padding": "6px 16px"
+        },
+        "ribbon-card-title": {
+          "backgroundColor": "#ffffff",
+          "textColor": "#000000",
+          "borderColor": "#000000",
+          "typography": {
+            "fontFamily": "Helvetica",
+            "fontSize": "14px",
+            "fontWeight": 700,
+            "lineHeight": 1.2,
+            "letterSpacing": 0
+          },
+          "rounded": "0px",
+          "padding": "6px 12px"
+        }
+      },
+      "layout": "retro",
+      "traits": "An inspired interpretation of Dell.com's 1996 design language — a catalog-era enterprise web design built around a literal black page frame, vivid flat color-block \"ribbon cards\" tinted in sage, salmon, periwinkle, sky, peach and lime, chunky Helvetica-Black display titles, Times Roman body copy, and an entire visual vocabulary of pre-Photoshop hand-cut GIF stickers (NEW! bursts, award seals, beveled product photos).",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Dell 1996 Inspired"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "An inspired interpretation of Dell.com's 1996 design language — a catalog-era enterprise web design built around a literal black page frame, vivid flat color-block \"ribbon cards\" tinted in sage, salmon, periwinkle, sky, peach and lime, chunky Helvetica-Black display titles, Times Roman body copy, and an entire visual vocabulary of pre-Photoshop hand-cut GIF stickers (NEW! bursts, award seals, beveled product photos).",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "elevenlabs",
-    "name": "Elevenlabs",
-    "description": "A voice-AI brand whose marketing surfaces read like a quietly editorial print magazine. The base canvas is off-white (`#f5f5f5`) holding warm near-black ink (`#292524`); the brand voltage is photograp",
+    "name": "ElevenLabs",
+    "description": "A voice-AI brand whose marketing surfaces read like a quietly editorial print magazine.",
     "category": "AI & LLM",
     "subcategory": "Brand Design",
     "tags": [
@@ -999,7 +2858,22 @@ export const vendorEntries: VendorEntry[] = [
       "hairline-soft": "#f0efed",
       "hairline-strong": "#d6d3d1",
       "canvas": "#f5f5f5",
-      "canvas-soft": "#fafafa"
+      "canvas-soft": "#fafafa",
+      "canvas-deep": "#0c0a09",
+      "surface-card": "#ffffff",
+      "surface-strong": "#f0efed",
+      "surface-dark": "#0c0a09",
+      "surface-dark-elevated": "#1c1917",
+      "on-primary": "#ffffff",
+      "on-dark": "#ffffff",
+      "on-dark-soft": "#a8a29e",
+      "gradient-mint": "#a7e5d3",
+      "gradient-peach": "#f4c5a8",
+      "gradient-lavender": "#c8b8e0",
+      "gradient-sky": "#a8c8e8",
+      "gradient-rose": "#e8b8c4",
+      "semantic-error": "#dc2626",
+      "semantic-success": "#16a34a"
     },
     "tokens": {
       "colors": {
@@ -1011,37 +2885,144 @@ export const vendorEntries: VendorEntry[] = [
         "border": "#e7e5e4"
       },
       "typography": {
-        "display": "system-ui, sans-serif",
+        "display": "serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
+        "displaySize": 64,
         "bodySize": 16,
-        "lineHeight": 1.6
+        "lineHeight": 1.5
       },
       "spacing": [
         4,
         8,
+        12,
         16,
+        20,
         24,
-        40,
-        64
+        32,
+        48,
+        96
       ],
-      "radius": 6,
+      "radius": 24,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#292524",
+        "primary-active": "#0c0a09",
+        "ink": "#0c0a09",
+        "body": "#4e4e4e",
+        "body-strong": "#292524",
+        "muted": "#777169",
+        "muted-soft": "#a8a29e",
+        "hairline": "#e7e5e4",
+        "hairline-soft": "#f0efed",
+        "hairline-strong": "#d6d3d1",
+        "canvas": "#f5f5f5",
+        "canvas-soft": "#fafafa",
+        "canvas-deep": "#0c0a09",
+        "surface-card": "#ffffff",
+        "surface-strong": "#f0efed",
+        "surface-dark": "#0c0a09",
+        "surface-dark-elevated": "#1c1917",
+        "on-primary": "#ffffff",
+        "on-dark": "#ffffff",
+        "on-dark-soft": "#a8a29e",
+        "gradient-mint": "#a7e5d3",
+        "gradient-peach": "#f4c5a8",
+        "gradient-lavender": "#c8b8e0",
+        "gradient-sky": "#a8c8e8",
+        "gradient-rose": "#e8b8c4",
+        "semantic-error": "#dc2626",
+        "semantic-success": "#16a34a"
+      },
+      "typography": {
+        "display-mega": {
+          "fontFamily": "'Waldenburg', 'Times New Roman', serif",
+          "fontSize": "64px",
+          "fontWeight": 300,
+          "lineHeight": 1.05,
+          "letterSpacing": "-1.92px",
+          "declaredFamily": "'Waldenburg', 'Times New Roman', serif",
+          "renderFallback": "serif"
+        },
+        "body-md": {
+          "fontFamily": "'Inter', sans-serif",
+          "fontSize": "16px",
+          "fontWeight": 400,
+          "lineHeight": 1.5,
+          "letterSpacing": "0.16px",
+          "declaredFamily": "'Inter', sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "4px",
+        "xs": "8px",
+        "sm": "12px",
+        "base": "16px",
+        "md": "20px",
+        "lg": "24px",
+        "xl": "32px",
+        "xxl": "48px",
+        "section": "96px"
+      },
+      "radius": {
+        "none": "0px",
+        "xs": "4px",
+        "sm": "6px",
+        "md": "8px",
+        "lg": "12px",
+        "xl": "16px",
+        "xxl": "24px",
+        "pill": "9999px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#292524",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "'Inter', sans-serif",
+            "fontSize": "15px",
+            "fontWeight": 500,
+            "lineHeight": 1,
+            "letterSpacing": 0
+          },
+          "rounded": "9999px",
+          "padding": "10px 20px",
+          "height": "40px"
+        },
+        "gradient-orb-card": {
+          "backgroundColor": "#fafafa",
+          "textColor": "#0c0a09",
+          "rounded": "24px",
+          "padding": "32px"
+        }
+      },
+      "layout": "gallery",
+      "traits": "A voice-AI brand whose marketing surfaces read like a quietly editorial print magazine. The base canvas is off-white (`#f5f5f5`) holding warm near-black ink (`#292524`); the brand voltage is photographic, not chromatic — soft pastel atmospheric gradient orbs (mint → peach → lavender → sky) drift through the page as the only \"color\" moments. Display runs Waldenburg Light at weight 300 — the editorial signature. Inter carries body, navigation, captions. CTAs are subtle: a near-black ink pill is the primary, a transparent outline is the secondary. The brand trusts atmospheric photography and modest type weights to do all of the brand work; there is no neon accent, no saturated CTA color, no developer-tools dark canvas.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "ElevenLabs"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "A voice-AI brand whose marketing surfaces read like a quietly editorial print magazine. The base canvas is off-white (`#f5f5f5`) holding warm near-black ink (`#292524`); the brand voltage is photographic, not chromatic — soft pastel atmospheric gradient orbs (mint → peach → lavender → sky) drift through the page as the only \"color\" moments. Display runs Waldenburg Light at weight 300 — the editorial signature. Inter carries body, navigation, captions. CTAs are subtle: a near-black ink pill is the primary, a transparent outline is the secondary. The brand trusts atmospheric photography and modest type weights to do all of the brand work; there is no neon accent, no saturated CTA color, no developer-tools dark canvas.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "expo",
     "name": "Expo",
-    "description": "A React Native developer-platform whose marketing site reads like a quietly-confident infrastructure brand. The base canvas is pure white with a soft sky-blue gradient atmospheric wash behind the hero",
+    "description": "A React Native developer-platform whose marketing site reads like a quietly-confident infrastructure brand.",
     "category": "Developer Tools",
     "subcategory": "Brand Design",
     "tags": [
       "expo",
-      "developer",
-      "gradient"
+      "developer"
     ],
     "upstreamPath": "design-md/expo/DESIGN.md",
     "upstreamCommit": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
@@ -1058,12 +3039,28 @@ export const vendorEntries: VendorEntry[] = [
       "muted-soft": "#cccccc",
       "hairline": "#f0f0f3",
       "hairline-soft": "#f5f5f7",
-      "hairline-strong": "#dcdee0"
+      "hairline-strong": "#dcdee0",
+      "canvas": "#ffffff",
+      "canvas-soft": "#fafafa",
+      "surface-card": "#ffffff",
+      "surface-strong": "#f0f0f3",
+      "surface-dark": "#171717",
+      "surface-dark-elevated": "#1a1a1a",
+      "on-primary": "#ffffff",
+      "on-dark": "#ffffff",
+      "on-dark-soft": "#b0b4ba",
+      "gradient-sky-light": "#cfe7ff",
+      "gradient-sky-mid": "#a8c8e8",
+      "accent-warning": "#ab6400",
+      "accent-preview": "#8145b5",
+      "accent-link-bright": "#47c2ff",
+      "semantic-error": "#eb8e90",
+      "semantic-success": "#16a34a"
     },
     "tokens": {
       "colors": {
         "canvas": "#ffffff",
-        "surface": "#f9f9f9",
+        "surface": "#fafafa",
         "text": "#171717",
         "primary": "#000000",
         "onPrimary": "#ffffff",
@@ -1072,29 +3069,138 @@ export const vendorEntries: VendorEntry[] = [
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
+        "displaySize": 64,
         "bodySize": 16,
-        "lineHeight": 1.6
+        "lineHeight": 1.5
       },
       "spacing": [
         4,
         8,
+        12,
         16,
+        20,
         24,
-        40,
-        64
+        32,
+        48,
+        96
       ],
-      "radius": 6,
+      "radius": 16,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#000000",
+        "primary-active": "#1a1a1a",
+        "text-link": "#0d74ce",
+        "text-link-secondary": "#476cff",
+        "ink": "#171717",
+        "body": "#60646c",
+        "body-strong": "#171717",
+        "muted": "#999999",
+        "muted-soft": "#cccccc",
+        "hairline": "#f0f0f3",
+        "hairline-soft": "#f5f5f7",
+        "hairline-strong": "#dcdee0",
+        "canvas": "#ffffff",
+        "canvas-soft": "#fafafa",
+        "surface-card": "#ffffff",
+        "surface-strong": "#f0f0f3",
+        "surface-dark": "#171717",
+        "surface-dark-elevated": "#1a1a1a",
+        "on-primary": "#ffffff",
+        "on-dark": "#ffffff",
+        "on-dark-soft": "#b0b4ba",
+        "gradient-sky-light": "#cfe7ff",
+        "gradient-sky-mid": "#a8c8e8",
+        "accent-warning": "#ab6400",
+        "accent-preview": "#8145b5",
+        "accent-link-bright": "#47c2ff",
+        "semantic-error": "#eb8e90",
+        "semantic-success": "#16a34a"
+      },
+      "typography": {
+        "display-mega": {
+          "fontFamily": "'Inter', -apple-system, system-ui, sans-serif",
+          "fontSize": "64px",
+          "fontWeight": 600,
+          "lineHeight": 1.05,
+          "letterSpacing": "-1.92px",
+          "declaredFamily": "'Inter', -apple-system, system-ui, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-md": {
+          "fontFamily": "'Inter', sans-serif",
+          "fontSize": "16px",
+          "fontWeight": 400,
+          "lineHeight": 1.5,
+          "letterSpacing": 0,
+          "declaredFamily": "'Inter', sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "4px",
+        "xs": "8px",
+        "sm": "12px",
+        "base": "16px",
+        "md": "20px",
+        "lg": "24px",
+        "xl": "32px",
+        "xxl": "48px",
+        "section": "96px"
+      },
+      "radius": {
+        "none": "0px",
+        "xs": "4px",
+        "sm": "6px",
+        "md": "8px",
+        "lg": "12px",
+        "xl": "16px",
+        "xxl": "24px",
+        "pill": "9999px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#000000",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "'Inter', sans-serif",
+            "fontSize": "14px",
+            "fontWeight": 500,
+            "lineHeight": 1,
+            "letterSpacing": 0
+          },
+          "rounded": "8px",
+          "padding": "10px 18px",
+          "height": "40px"
+        },
+        "device-mockup-card": {
+          "backgroundColor": "#ffffff",
+          "textColor": "#171717",
+          "rounded": "16px",
+          "padding": 0
+        }
+      },
+      "layout": "editorial",
+      "traits": "A React Native developer-platform whose marketing site reads like a quietly-confident infrastructure brand. The base canvas is pure white with a soft sky-blue gradient atmospheric wash behind the hero; near-black ink (`#171717`) carries body and display alike. The single brand voltage is **pure black** (`#000000`) for primary CTAs — minimal and editorial-feeling, paired with a small blue text-link accent (`#0d74ce`) reserved for inline body links. Type pairs Inter at modest weights (display 600, body 400) with JetBrains Mono on every code surface. The brand's strongest visual signature is the **device-mockup hero** — a centered MacBook + iPhone composite showing real Expo dev surfaces — over the gradient sky wash.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Expo"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "A React Native developer-platform whose marketing site reads like a quietly-confident infrastructure brand. The base canvas is pure white with a soft sky-blue gradient atmospheric wash behind the hero; near-black ink (`#171717`) carries body and display alike. The single brand voltage is **pure black** (`#000000`) for primary CTAs — minimal and editorial-feeling, paired with a small blue text-link accent (`#0d74ce`) reserved for inline body links. Type pairs Inter at modest weights (display 600, body 400) with JetBrains Mono on every code surface. The brand's strongest visual signature is the **device-mockup hero** — a centered MacBook + iPhone composite showing real Expo dev surfaces — over the gradient sky wash.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "ferrari",
     "name": "Ferrari",
-    "description": "A luxury-automotive brand whose marketing surfaces read as cinematic editorial. The base canvas is **near-black** (`#181818`) holding pure white display type; white-canvas bands appear only inside spe",
+    "description": "A luxury-automotive brand whose marketing surfaces read as cinematic editorial.",
     "category": "Automotive",
     "subcategory": "Brand Design",
     "tags": [
@@ -1118,12 +3224,26 @@ export const vendorEntries: VendorEntry[] = [
       "muted-soft": "#8f8f8f",
       "hairline": "#303030",
       "hairline-on-light": "#d2d2d2",
-      "hairline-soft": "#ebebeb"
+      "hairline-soft": "#ebebeb",
+      "canvas": "#181818",
+      "canvas-elevated": "#303030",
+      "canvas-light": "#ffffff",
+      "surface-card": "#303030",
+      "surface-soft-light": "#f7f7f7",
+      "surface-strong-light": "#ebebeb",
+      "on-primary": "#ffffff",
+      "on-dark": "#ffffff",
+      "on-light": "#181818",
+      "accent-yellow-hypersail": "#fff200",
+      "accent-yellow": "#f6e500",
+      "semantic-info": "#4c98b9",
+      "semantic-success": "#03904a",
+      "semantic-warning": "#f13a2c"
     },
     "tokens": {
       "colors": {
-        "canvas": "#ffffff",
-        "surface": "#f9f9f9",
+        "canvas": "#181818",
+        "surface": "#303030",
         "text": "#ffffff",
         "primary": "#da291c",
         "onPrimary": "#ffffff",
@@ -1132,29 +3252,142 @@ export const vendorEntries: VendorEntry[] = [
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
-        "bodySize": 16,
-        "lineHeight": 1.6
+        "displaySize": 80,
+        "bodySize": 14,
+        "lineHeight": 1.5
       },
       "spacing": [
         4,
         8,
         16,
         24,
-        40,
-        64
+        32,
+        48,
+        64,
+        96,
+        128
       ],
-      "radius": 6,
+      "radius": 0,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#da291c",
+        "primary-active": "#b01e0a",
+        "primary-hover": "#9d2211",
+        "ink": "#ffffff",
+        "body": "#969696",
+        "body-strong": "#ffffff",
+        "body-on-light": "#181818",
+        "muted": "#666666",
+        "muted-soft": "#8f8f8f",
+        "hairline": "#303030",
+        "hairline-on-light": "#d2d2d2",
+        "hairline-soft": "#ebebeb",
+        "canvas": "#181818",
+        "canvas-elevated": "#303030",
+        "canvas-light": "#ffffff",
+        "surface-card": "#303030",
+        "surface-soft-light": "#f7f7f7",
+        "surface-strong-light": "#ebebeb",
+        "on-primary": "#ffffff",
+        "on-dark": "#ffffff",
+        "on-light": "#181818",
+        "accent-yellow-hypersail": "#fff200",
+        "accent-yellow": "#f6e500",
+        "semantic-info": "#4c98b9",
+        "semantic-success": "#03904a",
+        "semantic-warning": "#f13a2c"
+      },
+      "typography": {
+        "display-mega": {
+          "fontFamily": "'FerrariSans', -apple-system, system-ui, sans-serif",
+          "fontSize": "80px",
+          "fontWeight": 500,
+          "lineHeight": 1.05,
+          "letterSpacing": "-1.6px",
+          "declaredFamily": "'FerrariSans', -apple-system, system-ui, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-md": {
+          "fontFamily": "'FerrariSans', sans-serif",
+          "fontSize": "14px",
+          "fontWeight": 400,
+          "lineHeight": 1.5,
+          "letterSpacing": 0,
+          "declaredFamily": "'FerrariSans', sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxxs": "4px",
+        "xxs": "8px",
+        "xs": "16px",
+        "sm": "24px",
+        "md": "32px",
+        "lg": "48px",
+        "xl": "64px",
+        "xxl": "96px",
+        "super": "128px"
+      },
+      "radius": {
+        "none": "0px",
+        "xs": "2px",
+        "sm": "4px",
+        "md": "6px",
+        "lg": "8px",
+        "xl": "12px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#da291c",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "'FerrariSans', sans-serif",
+            "fontSize": "14px",
+            "fontWeight": 700,
+            "lineHeight": 1,
+            "letterSpacing": "1.4px",
+            "textTransform": "uppercase"
+          },
+          "rounded": "0px",
+          "padding": "14px 32px",
+          "height": "48px"
+        },
+        "feature-card-photo": {
+          "backgroundColor": "#181818",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "'FerrariSans', sans-serif",
+            "fontSize": "18px",
+            "fontWeight": 700,
+            "lineHeight": 1.2,
+            "letterSpacing": 0
+          },
+          "rounded": "0px",
+          "padding": 0
+        }
+      },
+      "layout": "cinematic",
+      "traits": "A luxury-automotive brand whose marketing surfaces read as cinematic editorial. The base canvas is **near-black** (`#181818`) holding pure white display type; white-canvas bands appear only inside specific editorial contexts (preowned listings, pricing tables). The single brand voltage is **Rosso Corsa** (`#da291c`) — the iconic Ferrari racing red — used scarcely on primary CTAs, the Cavallino mark, and Formula 1 race-position highlights. Type runs **FerrariSans** at modest weights (display 500, body 400) — never bombastic. Spacing follows an explicit 8px token ladder (`xxxs` 4px through `super` 128px); generous editorial pacing throughout. The brand's strongest visual signature is the **full-bleed cinematic hero photograph** that fills the viewport top with car photography, model details, or trackside livery — followed by a tighter editorial body layout below.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Ferrari"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "A luxury-automotive brand whose marketing surfaces read as cinematic editorial. The base canvas is **near-black** (`#181818`) holding pure white display type; white-canvas bands appear only inside specific editorial contexts (preowned listings, pricing tables). The single brand voltage is **Rosso Corsa** (`#da291c`) — the iconic Ferrari racing red — used scarcely on primary CTAs, the Cavallino mark, and Formula 1 race-position highlights. Type runs **FerrariSans** at modest weights (display 500, body 400) — never bombastic. Spacing follows an explicit 8px token ladder (`xxxs` 4px through `super` 128px); generous editorial pacing throughout. The brand's strongest visual signature is the **full-bleed cinematic hero photograph** that fills the viewport top with car photography, model details, or trackside livery — followed by a tighter editorial body layout below.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "figma",
     "name": "Figma",
-    "description": "A confident black-and-white editorial frame interrupted by oversized, hand-cut pastel color blocks. The marketing canvas is rigorously monochrome — figmaSans variable type, pure white surfaces, pure b",
+    "description": "A confident black-and-white editorial frame interrupted by oversized, hand-cut pastel color blocks.",
     "category": "SaaS & Productivity",
     "subcategory": "Brand Design",
     "tags": [
@@ -1177,12 +3410,20 @@ export const vendorEntries: VendorEntry[] = [
       "hairline-soft": "#f1f1f1",
       "surface-soft": "#f7f7f5",
       "block-lime": "#dceeb1",
-      "block-lilac": "#c5b0f4"
+      "block-lilac": "#c5b0f4",
+      "block-cream": "#f4ecd6",
+      "block-pink": "#efd4d4",
+      "block-mint": "#c8e6cd",
+      "block-coral": "#f3c9b6",
+      "block-navy": "#1f1d3d",
+      "accent-magenta": "#ff3d8b",
+      "semantic-success": "#1ea64a",
+      "overlay-scrim": "#000000"
     },
     "tokens": {
       "colors": {
         "canvas": "#ffffff",
-        "surface": "#f9f9f9",
+        "surface": "#ffffff",
         "text": "#000000",
         "primary": "#000000",
         "onPrimary": "#ffffff",
@@ -1191,29 +3432,138 @@ export const vendorEntries: VendorEntry[] = [
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
-        "bodySize": 16,
-        "lineHeight": 1.6
+        "displaySize": 86,
+        "bodySize": 18,
+        "lineHeight": 1.45
       },
       "spacing": [
+        1,
         4,
         8,
+        12,
         16,
         24,
-        40,
-        64
+        32,
+        48,
+        96
       ],
-      "radius": 6,
+      "radius": 24,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#000000",
+        "on-primary": "#ffffff",
+        "ink": "#000000",
+        "canvas": "#ffffff",
+        "inverse-canvas": "#000000",
+        "inverse-ink": "#ffffff",
+        "on-inverse-soft": "#ffffff",
+        "hairline": "#e6e6e6",
+        "hairline-soft": "#f1f1f1",
+        "surface-soft": "#f7f7f5",
+        "block-lime": "#dceeb1",
+        "block-lilac": "#c5b0f4",
+        "block-cream": "#f4ecd6",
+        "block-pink": "#efd4d4",
+        "block-mint": "#c8e6cd",
+        "block-coral": "#f3c9b6",
+        "block-navy": "#1f1d3d",
+        "accent-magenta": "#ff3d8b",
+        "semantic-success": "#1ea64a",
+        "overlay-scrim": "#000000"
+      },
+      "typography": {
+        "display-xl": {
+          "fontFamily": "figmaSans",
+          "fontSize": "86px",
+          "fontWeight": 340,
+          "lineHeight": 1,
+          "letterSpacing": "-1.72px",
+          "fontFeature": "kern",
+          "declaredFamily": "figmaSans",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body": {
+          "fontFamily": "figmaSans",
+          "fontSize": "18px",
+          "fontWeight": 320,
+          "lineHeight": 1.45,
+          "letterSpacing": "-0.26px",
+          "fontFeature": "kern",
+          "declaredFamily": "figmaSans",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "hair": "1px",
+        "xxs": "4px",
+        "xs": "8px",
+        "sm": "12px",
+        "md": "16px",
+        "lg": "24px",
+        "xl": "32px",
+        "xxl": "48px",
+        "section": "96px"
+      },
+      "radius": {
+        "xs": "2px",
+        "sm": "6px",
+        "md": "8px",
+        "lg": "24px",
+        "xl": "32px",
+        "pill": "50px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#000000",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "figmaSans",
+            "fontSize": "20px",
+            "fontWeight": 480,
+            "lineHeight": 1.4,
+            "letterSpacing": "-0.10px",
+            "fontFeature": "kern"
+          },
+          "rounded": "50px",
+          "padding": "10px 20px"
+        },
+        "pricing-card": {
+          "backgroundColor": "#ffffff",
+          "textColor": "#000000",
+          "typography": {
+            "fontFamily": "figmaSans",
+            "fontSize": "18px",
+            "fontWeight": 320,
+            "lineHeight": 1.45,
+            "letterSpacing": "-0.26px",
+            "fontFeature": "kern"
+          },
+          "rounded": "24px",
+          "padding": "24px"
+        }
+      },
+      "layout": "editorial",
+      "traits": "A confident black-and-white editorial frame interrupted by oversized, hand-cut pastel color blocks. The marketing canvas is rigorously monochrome — figmaSans variable type, pure white surfaces, pure black ink, pill-shaped CTAs — while each story section drops the page into a saturated lime, lavender, cream, mint, or pink panel that reads like a sticky note placed on a clean desk. The result is a design system that feels both technical and joyful — a tool for serious work, made by people who like color.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Figma"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "A confident black-and-white editorial frame interrupted by oversized, hand-cut pastel color blocks. The marketing canvas is rigorously monochrome — figmaSans variable type, pure white surfaces, pure black ink, pill-shaped CTAs — while each story section drops the page into a saturated lime, lavender, cream, mint, or pink panel that reads like a sticky note placed on a clean desk. The result is a design system that feels both technical and joyful — a tool for serious work, made by people who like color.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "framer",
     "name": "Framer",
-    "description": "A confident dark-canvas builder marketing site that treats the page like a working artboard — pure black surfaces, white display type set in GT Walsheim Medium with aggressive negative tracking, and a",
+    "description": "A confident dark-canvas builder marketing site that treats the page like a working artboard — pure black surfaces, white display type set in GT Walsheim Medium with aggressive negative tracking, and a single confident blue (#0099ff) reserved for hyperlinks and selection states.",
     "category": "SaaS & Productivity",
     "subcategory": "Brand Design",
     "tags": [
@@ -1236,12 +3586,17 @@ export const vendorEntries: VendorEntry[] = [
       "hairline": "#262626",
       "hairline-soft": "#1a1a1a",
       "inverse-canvas": "#ffffff",
-      "inverse-ink": "#000000"
+      "inverse-ink": "#000000",
+      "gradient-magenta": "#d44df0",
+      "gradient-violet": "#6a4cf5",
+      "gradient-orange": "#ff7a3d",
+      "gradient-coral": "#ff5577",
+      "semantic-success": "#22c55e"
     },
     "tokens": {
       "colors": {
         "canvas": "#090909",
-        "surface": "#f9f9f9",
+        "surface": "#090909",
         "text": "#ffffff",
         "primary": "#ffffff",
         "onPrimary": "#000000",
@@ -1250,29 +3605,135 @@ export const vendorEntries: VendorEntry[] = [
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
-        "bodySize": 16,
-        "lineHeight": 1.6
+        "displaySize": 110,
+        "bodySize": 15,
+        "lineHeight": 1.3
       },
       "spacing": [
+        1,
         4,
         8,
-        16,
-        24,
+        12,
+        15,
+        20,
+        30,
         40,
-        64
+        96
       ],
-      "radius": 6,
+      "radius": 20,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#ffffff",
+        "on-primary": "#000000",
+        "accent-blue": "#0099ff",
+        "ink": "#ffffff",
+        "ink-muted": "#999999",
+        "canvas": "#090909",
+        "surface-1": "#141414",
+        "surface-2": "#1c1c1c",
+        "hairline": "#262626",
+        "hairline-soft": "#1a1a1a",
+        "inverse-canvas": "#ffffff",
+        "inverse-ink": "#000000",
+        "gradient-magenta": "#d44df0",
+        "gradient-violet": "#6a4cf5",
+        "gradient-orange": "#ff7a3d",
+        "gradient-coral": "#ff5577",
+        "semantic-success": "#22c55e"
+      },
+      "typography": {
+        "display-xxl": {
+          "fontFamily": "GT Walsheim Framer Medium",
+          "fontSize": "110px",
+          "fontWeight": 500,
+          "lineHeight": 0.85,
+          "letterSpacing": "-5.5px",
+          "declaredFamily": "GT Walsheim Framer Medium",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body": {
+          "fontFamily": "Inter Variable",
+          "fontSize": "15px",
+          "fontWeight": 400,
+          "lineHeight": 1.3,
+          "letterSpacing": "-0.15px",
+          "fontFeature": "cv11",
+          "declaredFamily": "Inter Variable",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "hair": "1px",
+        "xxs": "4px",
+        "xs": "8px",
+        "sm": "12px",
+        "md": "15px",
+        "lg": "20px",
+        "xl": "30px",
+        "xxl": "40px",
+        "section": "96px"
+      },
+      "radius": {
+        "xs": "4px",
+        "sm": "6px",
+        "md": "10px",
+        "lg": "15px",
+        "xl": "20px",
+        "xxl": "30px",
+        "pill": "100px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#ffffff",
+          "textColor": "#000000",
+          "typography": {
+            "fontFamily": "Inter Variable",
+            "fontSize": "14px",
+            "fontWeight": 500,
+            "lineHeight": 1,
+            "letterSpacing": "-0.14px",
+            "fontFeature": "cv11"
+          },
+          "rounded": "100px",
+          "padding": "10px 15px"
+        },
+        "pricing-card": {
+          "backgroundColor": "#141414",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "Inter Variable",
+            "fontSize": "15px",
+            "fontWeight": 400,
+            "lineHeight": 1.3,
+            "letterSpacing": "-0.15px",
+            "fontFeature": "cv11"
+          },
+          "rounded": "20px",
+          "padding": "24px"
+        }
+      },
+      "layout": "product",
+      "traits": "A confident dark-canvas builder marketing site that treats the page like a working artboard — pure black surfaces, white display type set in GT Walsheim Medium with aggressive negative tracking, and a single confident blue (#0099ff) reserved for hyperlinks and selection states. The page rhythm is broken by oversized vibrant gradient atmosphere panels — magenta, violet, orange spotlights — that act as living showcase tiles, not decoration. Every CTA is a white pill on dark; every card is a translucent or charcoal surface; every section title pulls letter-spacing tight enough to feel like a poster.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Framer"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "A confident dark-canvas builder marketing site that treats the page like a working artboard — pure black surfaces, white display type set in GT Walsheim Medium with aggressive negative tracking, and a single confident blue (#0099ff) reserved for hyperlinks and selection states. The page rhythm is broken by oversized vibrant gradient atmosphere panels — magenta, violet, orange spotlights — that act as living showcase tiles, not decoration. Every CTA is a white pill on dark; every card is a translucent or charcoal surface; every section title pulls letter-spacing tight enough to feel like a poster.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "hashicorp",
-    "name": "Hashicorp",
-    "description": "An enterprise-infrastructure marketing canvas built around a near-black ground (#000000) and a system of per-product accent colors — Terraform purple, Vault yellow, Consul pink, Waypoint cyan, Vagrant",
+    "name": "HashiCorp",
+    "description": "An enterprise-infrastructure marketing canvas built around a near-black ground (#000000) and a system of per-product accent colors — Terraform purple, Vault yellow, Consul pink, Waypoint cyan, Vagrant blue — that act as identity tokens rather than decorative palette.",
     "category": "Backend & DevOps",
     "subcategory": "Brand Design",
     "tags": [
@@ -1294,12 +3755,30 @@ export const vendorEntries: VendorEntry[] = [
       "surface-2": "#1f232b",
       "surface-3": "#3b3d45",
       "hairline": "#3b3d45",
-      "hairline-soft": "#252830"
+      "hairline-soft": "#252830",
+      "inverse-canvas": "#ffffff",
+      "inverse-ink": "#000000",
+      "product-terraform": "#7b42bc",
+      "product-terraform-bright": "#911ced",
+      "product-vault": "#ffcf25",
+      "product-consul": "#e62b1e",
+      "product-waypoint": "#14c6cb",
+      "product-waypoint-deep": "#12b6bb",
+      "product-vagrant": "#1868f2",
+      "product-nomad": "#00ca8e",
+      "product-boundary": "#f24c53",
+      "amber-100": "#fbeabf",
+      "amber-200": "#bb5a00",
+      "blue-7": "#101a59",
+      "semantic-success": "#00ca8e",
+      "semantic-warning": "#ffcf25",
+      "semantic-error": "#e62b1e",
+      "semantic-visited": "#a737ff"
     },
     "tokens": {
       "colors": {
         "canvas": "#000000",
-        "surface": "#f9f9f9",
+        "surface": "#000000",
         "text": "#ffffff",
         "primary": "#000000",
         "onPrimary": "#ffffff",
@@ -1308,29 +3787,145 @@ export const vendorEntries: VendorEntry[] = [
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
+        "displaySize": 80,
         "bodySize": 16,
-        "lineHeight": 1.6
+        "lineHeight": 1.5
       },
       "spacing": [
+        1,
         4,
         8,
+        12,
         16,
         24,
-        40,
-        64
+        32,
+        48,
+        96
       ],
-      "radius": 6,
+      "radius": 12,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#000000",
+        "on-primary": "#ffffff",
+        "accent-blue": "#2b89ff",
+        "ink": "#ffffff",
+        "ink-muted": "#b2b6bd",
+        "ink-subtle": "#656a76",
+        "canvas": "#000000",
+        "surface-1": "#15181e",
+        "surface-2": "#1f232b",
+        "surface-3": "#3b3d45",
+        "hairline": "#3b3d45",
+        "hairline-soft": "#252830",
+        "inverse-canvas": "#ffffff",
+        "inverse-ink": "#000000",
+        "product-terraform": "#7b42bc",
+        "product-terraform-bright": "#911ced",
+        "product-vault": "#ffcf25",
+        "product-consul": "#e62b1e",
+        "product-waypoint": "#14c6cb",
+        "product-waypoint-deep": "#12b6bb",
+        "product-vagrant": "#1868f2",
+        "product-nomad": "#00ca8e",
+        "product-boundary": "#f24c53",
+        "amber-100": "#fbeabf",
+        "amber-200": "#bb5a00",
+        "blue-7": "#101a59",
+        "semantic-success": "#00ca8e",
+        "semantic-warning": "#ffcf25",
+        "semantic-error": "#e62b1e",
+        "semantic-visited": "#a737ff"
+      },
+      "typography": {
+        "display-xl": {
+          "fontFamily": "hashicorpSans",
+          "fontSize": "80px",
+          "fontWeight": 700,
+          "lineHeight": 1.17,
+          "letterSpacing": "-2.5px",
+          "declaredFamily": "hashicorpSans",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body": {
+          "fontFamily": "hashicorpSans",
+          "fontSize": "16px",
+          "fontWeight": 500,
+          "lineHeight": 1.5,
+          "letterSpacing": 0,
+          "declaredFamily": "hashicorpSans",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "hair": "1px",
+        "xxs": "4px",
+        "xs": "8px",
+        "sm": "12px",
+        "md": "16px",
+        "lg": "24px",
+        "xl": "32px",
+        "xxl": "48px",
+        "section": "96px"
+      },
+      "radius": {
+        "xs": "4px",
+        "sm": "6px",
+        "md": "8px",
+        "lg": "12px",
+        "xl": "16px",
+        "xxl": "24px",
+        "pill": "9999px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#ffffff",
+          "textColor": "#000000",
+          "typography": {
+            "fontFamily": "hashicorpSans",
+            "fontSize": "14px",
+            "fontWeight": 600,
+            "lineHeight": 1.29,
+            "letterSpacing": 0
+          },
+          "rounded": "8px",
+          "padding": "10px 18px"
+        },
+        "pricing-card": {
+          "backgroundColor": "#15181e",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "hashicorpSans",
+            "fontSize": "16px",
+            "fontWeight": 500,
+            "lineHeight": 1.5,
+            "letterSpacing": 0
+          },
+          "rounded": "12px",
+          "padding": "32px"
+        }
+      },
+      "layout": "product",
+      "traits": "An enterprise-infrastructure marketing canvas built around a near-black ground (#000000) and a system of per-product accent colors — Terraform purple, Vault yellow, Consul pink, Waypoint cyan, Vagrant blue — that act as identity tokens rather than decorative palette. Display type is hashicorpSans set in 600/700 with tight 1.17–1.21 line-heights; body type runs the same family at 500 weight with relaxed 1.50–1.71 line-heights. Cards live as charcoal surfaces with 1px translucent gray borders; product showcase cards lift into per-product chromatic gradients. The system reads as confident, technical, and intentionally multi-product — every section quietly signals which HashiCorp tool it represents.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "HashiCorp"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "An enterprise-infrastructure marketing canvas built around a near-black ground (#000000) and a system of per-product accent colors — Terraform purple, Vault yellow, Consul pink, Waypoint cyan, Vagrant blue — that act as identity tokens rather than decorative palette. Display type is hashicorpSans set in 600/700 with tight 1.17–1.21 line-heights; body type runs the same family at 500 weight with relaxed 1.50–1.71 line-heights. Cards live as charcoal surfaces with 1px translucent gray borders; product showcase cards lift into per-product chromatic gradients. The system reads as confident, technical, and intentionally multi-product — every section quietly signals which HashiCorp tool it represents.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "hp",
     "name": "HP",
-    "description": "An inspired interpretation of HP's design language — a white-paper enterprise-consumer system anchored by HP Electric Blue (`#024ad8`) as the lone signal CTA, near-black ink (`#1a1a1a`) for headlines,",
+    "description": "An inspired interpretation of HP's design language — a white-paper enterprise-consumer system anchored by HP Electric Blue (#024ad8) as the lone signal CTA, near-black ink (#1a1a1a) for headlines, geometric Forma-DJR sans throughout, and angular blue-chevron decorations that nod to the HP wordmark's slashes.",
     "category": "Big Tech",
     "subcategory": "Brand Design",
     "tags": [
@@ -1352,43 +3947,166 @@ export const vendorEntries: VendorEntry[] = [
       "on-ink": "#ffffff",
       "canvas": "#ffffff",
       "paper": "#ffffff",
-      "cloud": "#f7f7f7"
+      "cloud": "#f7f7f7",
+      "fog": "#e8e8e8",
+      "steel": "#c2c2c2",
+      "graphite": "#636363",
+      "charcoal": "#3d3d3d",
+      "hairline": "#e8e8e8",
+      "hairline-strong": "#c2c2c2",
+      "link": "#024ad8",
+      "link-pressed": "#0e3191",
+      "bloom-coral": "#ff5050",
+      "bloom-rose": "#f9d4d2",
+      "bloom-deep": "#b3262b",
+      "bloom-wine": "#5a1313",
+      "storm-mist": "#8ebdce",
+      "storm-sea": "#7fadbe",
+      "storm-deep": "#356373",
+      "error": "#b3262b"
     },
     "tokens": {
       "colors": {
         "canvas": "#ffffff",
-        "surface": "#f9f9f9",
+        "surface": "#ffffff",
         "text": "#1a1a1a",
         "primary": "#024ad8",
         "onPrimary": "#ffffff",
-        "border": "#e0e0e0"
+        "border": "#e8e8e8"
       },
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
-        "bodySize": 16,
-        "lineHeight": 1.6
+        "displaySize": 72,
+        "bodySize": 18,
+        "lineHeight": 1.33
       },
       "spacing": [
         4,
         8,
+        12,
         16,
+        20,
         24,
-        40,
-        64
+        32,
+        80
       ],
-      "radius": 6,
+      "radius": 16,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#024ad8",
+        "primary-bright": "#296ef9",
+        "primary-deep": "#0e3191",
+        "primary-soft": "#c9e0fc",
+        "on-primary": "#ffffff",
+        "ink": "#1a1a1a",
+        "ink-deep": "#000000",
+        "ink-soft": "#292929",
+        "on-ink": "#ffffff",
+        "canvas": "#ffffff",
+        "paper": "#ffffff",
+        "cloud": "#f7f7f7",
+        "fog": "#e8e8e8",
+        "steel": "#c2c2c2",
+        "graphite": "#636363",
+        "charcoal": "#3d3d3d",
+        "hairline": "#e8e8e8",
+        "hairline-strong": "#c2c2c2",
+        "link": "#024ad8",
+        "link-pressed": "#0e3191",
+        "bloom-coral": "#ff5050",
+        "bloom-rose": "#f9d4d2",
+        "bloom-deep": "#b3262b",
+        "bloom-wine": "#5a1313",
+        "storm-mist": "#8ebdce",
+        "storm-sea": "#7fadbe",
+        "storm-deep": "#356373",
+        "error": "#b3262b"
+      },
+      "typography": {
+        "display-xxl": {
+          "fontFamily": "Forma DJR Micro",
+          "fontSize": "72px",
+          "fontWeight": 500,
+          "lineHeight": 1,
+          "letterSpacing": 0,
+          "declaredFamily": "Forma DJR Micro",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-lg": {
+          "fontFamily": "Forma DJR Micro",
+          "fontSize": "18px",
+          "fontWeight": 400,
+          "lineHeight": 1.33,
+          "letterSpacing": 0,
+          "declaredFamily": "Forma DJR Micro",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "4px",
+        "xs": "8px",
+        "sm": "12px",
+        "md": "16px",
+        "lg": "20px",
+        "xl": "24px",
+        "xxl": "32px",
+        "section": "80px"
+      },
+      "radius": {
+        "none": "0px",
+        "xs": "2px",
+        "sm": "3px",
+        "md": "4px",
+        "lg": "8px",
+        "xl": "16px",
+        "pill": "9999px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#024ad8",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "Forma DJR Micro",
+            "fontSize": "14px",
+            "fontWeight": 600,
+            "lineHeight": 1.4,
+            "letterSpacing": "0.7px",
+            "textTransform": "uppercase"
+          },
+          "rounded": "4px",
+          "padding": "12px 24px",
+          "height": "44px"
+        },
+        "hero-promo-card": {
+          "backgroundColor": "#ffffff",
+          "textColor": "#1a1a1a",
+          "rounded": "16px",
+          "padding": "32px"
+        }
+      },
+      "layout": "product",
+      "traits": "An inspired interpretation of HP's design language — a white-paper enterprise-consumer system anchored by HP Electric Blue (`#024ad8`) as the lone signal CTA, near-black ink (`#1a1a1a`) for headlines, geometric Forma-DJR sans throughout, and angular blue-chevron decorations that nod to the HP wordmark's slashes. Cards round at 8–16px, photos sit in soft 16px frames, and dark navy slabs anchor the customer-story and \"how can we help\" closing bands.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "HP"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "An inspired interpretation of HP's design language — a white-paper enterprise-consumer system anchored by HP Electric Blue (`#024ad8`) as the lone signal CTA, near-black ink (`#1a1a1a`) for headlines, geometric Forma-DJR sans throughout, and angular blue-chevron decorations that nod to the HP wordmark's slashes. Cards round at 8–16px, photos sit in soft 16px frames, and dark navy slabs anchor the customer-story and \"how can we help\" closing bands.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "ibm",
     "name": "IBM",
-    "description": "An enterprise-marketing canvas faithful to Carbon Design System: white surfaces, charcoal type, IBM Blue (#0f62fe) as the single confident accent, and a deliberately flat-square aesthetic where corner",
+    "description": "An enterprise-marketing canvas faithful to Carbon Design System: white surfaces, charcoal type, IBM Blue (#0f62fe) as the single confident accent, and a deliberately flat-square aesthetic where corners stay at 0–4px.",
     "category": "Big Tech",
     "subcategory": "Brand Design",
     "tags": [
@@ -1410,12 +4128,21 @@ export const vendorEntries: VendorEntry[] = [
       "inverse-canvas": "#161616",
       "inverse-surface-1": "#262626",
       "inverse-ink": "#ffffff",
-      "inverse-ink-muted": "#c6c6c6"
+      "inverse-ink-muted": "#c6c6c6",
+      "hairline": "#e0e0e0",
+      "hairline-strong": "#161616",
+      "blue-60": "#0043ce",
+      "blue-80": "#002d9c",
+      "blue-hover": "#0050e6",
+      "semantic-success": "#24a148",
+      "semantic-warning": "#f1c21b",
+      "semantic-error": "#da1e28",
+      "semantic-info": "#0f62fe"
     },
     "tokens": {
       "colors": {
         "canvas": "#ffffff",
-        "surface": "#f9f9f9",
+        "surface": "#ffffff",
         "text": "#161616",
         "primary": "#0f62fe",
         "onPrimary": "#ffffff",
@@ -1424,35 +4151,140 @@ export const vendorEntries: VendorEntry[] = [
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
+        "displaySize": 76,
         "bodySize": 16,
-        "lineHeight": 1.6
+        "lineHeight": 1.5
       },
       "spacing": [
         4,
         8,
+        12,
         16,
         24,
-        40,
-        64
+        32,
+        48,
+        96
       ],
-      "radius": 6,
+      "radius": 0,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#0f62fe",
+        "on-primary": "#ffffff",
+        "ink": "#161616",
+        "ink-muted": "#525252",
+        "ink-subtle": "#8c8c8c",
+        "canvas": "#ffffff",
+        "surface-1": "#f4f4f4",
+        "surface-2": "#e0e0e0",
+        "inverse-canvas": "#161616",
+        "inverse-surface-1": "#262626",
+        "inverse-ink": "#ffffff",
+        "inverse-ink-muted": "#c6c6c6",
+        "hairline": "#e0e0e0",
+        "hairline-strong": "#161616",
+        "blue-60": "#0043ce",
+        "blue-80": "#002d9c",
+        "blue-hover": "#0050e6",
+        "semantic-success": "#24a148",
+        "semantic-warning": "#f1c21b",
+        "semantic-error": "#da1e28",
+        "semantic-info": "#0f62fe"
+      },
+      "typography": {
+        "display-xl": {
+          "fontFamily": "IBM Plex Sans",
+          "fontSize": "76px",
+          "fontWeight": 300,
+          "lineHeight": 1.17,
+          "letterSpacing": "-0.5px",
+          "declaredFamily": "IBM Plex Sans",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body": {
+          "fontFamily": "IBM Plex Sans",
+          "fontSize": "16px",
+          "fontWeight": 400,
+          "lineHeight": 1.5,
+          "letterSpacing": "0.16px",
+          "declaredFamily": "IBM Plex Sans",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "4px",
+        "xs": "8px",
+        "sm": "12px",
+        "md": "16px",
+        "lg": "24px",
+        "xl": "32px",
+        "xxl": "48px",
+        "section": "96px"
+      },
+      "radius": {
+        "none": "0px",
+        "xs": "2px",
+        "sm": "4px",
+        "md": "6px",
+        "lg": "8px",
+        "pill": "9999px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#0f62fe",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "IBM Plex Sans",
+            "fontSize": "14px",
+            "fontWeight": 400,
+            "lineHeight": 1.29,
+            "letterSpacing": "0.16px"
+          },
+          "rounded": "0px",
+          "padding": "12px 16px"
+        },
+        "feature-card": {
+          "backgroundColor": "#ffffff",
+          "textColor": "#161616",
+          "typography": {
+            "fontFamily": "IBM Plex Sans",
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "lineHeight": 1.5,
+            "letterSpacing": "0.16px"
+          },
+          "rounded": "0px",
+          "padding": "24px"
+        }
+      },
+      "layout": "product",
+      "traits": "An enterprise-marketing canvas faithful to Carbon Design System: white surfaces, charcoal type, IBM Blue (#0f62fe) as the single confident accent, and a deliberately flat-square aesthetic where corners stay at 0–4px. Type runs IBM Plex Sans at light weight 300 for display sizes (a brand signature) and 400/600 for body and emphasis. Cards live as thin-bordered tiles with no shadow; sections separate via subtle gray rows. The chrome is square, the typography is light, and the only color in the system is one assertive blue — the result reads as old-world enterprise gravitas reframed for the cloud era.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "IBM"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "An enterprise-marketing canvas faithful to Carbon Design System: white surfaces, charcoal type, IBM Blue (#0f62fe) as the single confident accent, and a deliberately flat-square aesthetic where corners stay at 0–4px. Type runs IBM Plex Sans at light weight 300 for display sizes (a brand signature) and 400/600 for body and emphasis. Cards live as thin-bordered tiles with no shadow; sections separate via subtle gray rows. The chrome is square, the typography is light, and the only color in the system is one assertive blue — the result reads as old-world enterprise gravitas reframed for the cloud era.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "intercom",
     "name": "Intercom",
-    "description": "An editorial customer-service marketing canvas built around a soft cream-white ground, charcoal type set in Saans (Intercom's proprietary geometric sans), and a single confident Fin Orange (#ff5600) r",
+    "description": "An editorial customer-service marketing canvas built around a soft cream-white ground, charcoal type set in Saans (Intercom's proprietary geometric sans), and a single confident Fin Orange (#ff5600) reserved for the Fin AI brand.",
     "category": "SaaS & Productivity",
     "subcategory": "Brand Design",
     "tags": [
       "intercom",
       "saas",
-      "editorial"
+      "editorial",
+      "ai"
     ],
     "upstreamPath": "design-md/intercom/DESIGN.md",
     "upstreamCommit": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
@@ -1469,88 +4301,304 @@ export const vendorEntries: VendorEntry[] = [
       "surface-2": "#ebe7e1",
       "inverse-canvas": "#000000",
       "inverse-surface-1": "#313130",
-      "inverse-ink": "#ffffff"
+      "inverse-ink": "#ffffff",
+      "inverse-ink-muted": "#9c9fa5",
+      "hairline": "#d3cec6",
+      "hairline-soft": "#ebe7e1",
+      "fin-orange": "#ff5600",
+      "report-orange": "#fe4c02",
+      "report-blue": "#65b5ff",
+      "report-green": "#0bdf50",
+      "report-pink": "#ff2067",
+      "report-lime": "#b3e01c",
+      "report-cyan": "#03b2cb",
+      "brand-blue": "#0007cb",
+      "semantic-error": "#c41c1c",
+      "semantic-success": "#0bdf50"
     },
     "tokens": {
       "colors": {
         "canvas": "#f5f1ec",
-        "surface": "#f9f9f9",
+        "surface": "#f5f1ec",
         "text": "#111111",
         "primary": "#111111",
         "onPrimary": "#ffffff",
-        "border": "#e0e0e0"
+        "border": "#d3cec6"
       },
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
+        "displaySize": 72,
         "bodySize": 16,
-        "lineHeight": 1.6
+        "lineHeight": 1.5
       },
       "spacing": [
         4,
         8,
+        12,
         16,
         24,
-        40,
-        64
+        32,
+        48,
+        96
       ],
-      "radius": 6,
+      "radius": 12,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#111111",
+        "on-primary": "#ffffff",
+        "ink": "#111111",
+        "ink-muted": "#626260",
+        "ink-subtle": "#7b7b78",
+        "ink-tertiary": "#9c9fa5",
+        "canvas": "#f5f1ec",
+        "surface-1": "#ffffff",
+        "surface-2": "#ebe7e1",
+        "inverse-canvas": "#000000",
+        "inverse-surface-1": "#313130",
+        "inverse-ink": "#ffffff",
+        "inverse-ink-muted": "#9c9fa5",
+        "hairline": "#d3cec6",
+        "hairline-soft": "#ebe7e1",
+        "fin-orange": "#ff5600",
+        "report-orange": "#fe4c02",
+        "report-blue": "#65b5ff",
+        "report-green": "#0bdf50",
+        "report-pink": "#ff2067",
+        "report-lime": "#b3e01c",
+        "report-cyan": "#03b2cb",
+        "brand-blue": "#0007cb",
+        "semantic-error": "#c41c1c",
+        "semantic-success": "#0bdf50"
+      },
+      "typography": {
+        "display-xl": {
+          "fontFamily": "Saans",
+          "fontSize": "72px",
+          "fontWeight": 500,
+          "lineHeight": 1.05,
+          "letterSpacing": "-2.0px",
+          "declaredFamily": "Saans",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body": {
+          "fontFamily": "Saans",
+          "fontSize": "16px",
+          "fontWeight": 400,
+          "lineHeight": 1.5,
+          "letterSpacing": 0,
+          "declaredFamily": "Saans",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "4px",
+        "xs": "8px",
+        "sm": "12px",
+        "md": "16px",
+        "lg": "24px",
+        "xl": "32px",
+        "xxl": "48px",
+        "section": "96px"
+      },
+      "radius": {
+        "xs": "4px",
+        "sm": "6px",
+        "md": "8px",
+        "lg": "12px",
+        "xl": "16px",
+        "xxl": "24px",
+        "pill": "9999px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#111111",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "Saans",
+            "fontSize": "15px",
+            "fontWeight": 500,
+            "lineHeight": 1.2,
+            "letterSpacing": 0
+          },
+          "rounded": "8px",
+          "padding": "10px 18px"
+        },
+        "pricing-card": {
+          "backgroundColor": "#ffffff",
+          "textColor": "#111111",
+          "typography": {
+            "fontFamily": "Saans",
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "lineHeight": 1.5,
+            "letterSpacing": 0
+          },
+          "rounded": "12px",
+          "padding": "24px"
+        }
+      },
+      "layout": "editorial",
+      "traits": "An editorial customer-service marketing canvas built around a soft cream-white ground, charcoal type set in Saans (Intercom's proprietary geometric sans), and a single confident Fin Orange (#ff5600) reserved for the Fin AI brand. Cards live as floating white tiles with thin hairline borders and minimal radii (8–16px). Display headlines run Saans at weight 500 with measured negative tracking. The system reads as a careful, product-led publication: product screenshots dominate, ornament is rare, and the only place chromatic energy enters is the Fin Orange CTA.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Intercom"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "An editorial customer-service marketing canvas built around a soft cream-white ground, charcoal type set in Saans (Intercom's proprietary geometric sans), and a single confident Fin Orange (#ff5600) reserved for the Fin AI brand. Cards live as floating white tiles with thin hairline borders and minimal radii (8–16px). Display headlines run Saans at weight 500 with measured negative tracking. The system reads as a careful, product-led publication: product screenshots dominate, ornament is rare, and the only place chromatic energy enters is the Fin Orange CTA.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "kraken",
     "name": "Kraken",
-    "description": "",
+    "description": "Kraken's website is a clean, trustworthy crypto exchange that uses purple as its commanding brand color.",
     "category": "Fintech & Crypto",
     "subcategory": "Brand Design",
     "tags": [
       "kraken",
-      "fintech"
+      "fintech",
+      "clean"
     ],
     "upstreamPath": "design-md/kraken/DESIGN.md",
     "upstreamCommit": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
     "importedAt": "2026-09-08",
-    "colors": {},
+    "colors": {
+      "kraken-purple": "#7132f5",
+      "purple-dark": "#5741d8",
+      "purple-deep": "#5b1ecf",
+      "purple-subtle": "rgba(133,91,251,0.16)",
+      "near-black": "#101114",
+      "cool-gray": "#686b82",
+      "silver-blue": "#9497a9",
+      "white": "#ffffff",
+      "border-gray": "#dedee5",
+      "green": "#149e61",
+      "green-dark": "#026b3f",
+      "primary": "#7132f5",
+      "canvas": "#ffffff",
+      "ink": "#101114",
+      "body": "#101114",
+      "hairline": "#5741d8"
+    },
     "tokens": {
       "colors": {
         "canvas": "#ffffff",
-        "surface": "#f9f9f9",
-        "text": "#111111",
-        "primary": "#333",
+        "surface": "#ffffff",
+        "text": "#101114",
+        "primary": "#7132f5",
         "onPrimary": "#ffffff",
-        "border": "#e0e0e0"
+        "border": "#5741d8"
       },
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
         "displaySize": 48,
         "bodySize": 16,
-        "lineHeight": 1.6
+        "lineHeight": 1.38
       },
       "spacing": [
-        4,
-        8,
-        16,
-        24,
-        40,
-        64
+        16
       ],
-      "radius": 6,
+      "radius": 12,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "kraken-purple": "#7132f5",
+        "purple-dark": "#5741d8",
+        "purple-deep": "#5b1ecf",
+        "purple-subtle": "rgba(133,91,251,0.16)",
+        "near-black": "#101114",
+        "cool-gray": "#686b82",
+        "silver-blue": "#9497a9",
+        "white": "#ffffff",
+        "border-gray": "#dedee5",
+        "green": "#149e61",
+        "green-dark": "#026b3f",
+        "primary": "#7132f5",
+        "canvas": "#ffffff",
+        "ink": "#101114",
+        "body": "#101114",
+        "hairline": "#5741d8"
+      },
+      "typography": {
+        "display-hero": {
+          "fontFamily": "Kraken-Brand",
+          "fontSize": "48px",
+          "fontWeight": "700",
+          "lineHeight": "1.17",
+          "letterSpacing": "-1px",
+          "sourceCells": [
+            "Display Hero",
+            "Kraken-Brand",
+            "48px",
+            "700",
+            "1.17",
+            "-1px"
+          ],
+          "declaredFamily": "Kraken-Brand",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body": {
+          "fontFamily": "Kraken-Product",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "1.38",
+          "letterSpacing": "normal",
+          "sourceCells": [
+            "Body",
+            "Kraken-Product",
+            "16px",
+            "400",
+            "1.38",
+            "normal"
+          ],
+          "declaredFamily": "Kraken-Product",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {},
+      "radius": {
+        "primary-purple": "12px",
+        "white-button": "10px"
+      },
+      "border": {
+        "purple-outlined": "1px solid #5741d8"
+      },
+      "components": {
+        "primary-purple": {
+          "backgroundColor": "#7132f5",
+          "textColor": "#ffffff",
+          "padding": "13px 16px",
+          "rounded": "12px"
+        }
+      },
+      "layout": "utility",
+      "traits": "Kraken's website is a clean, trustworthy crypto exchange that uses purple as its commanding brand color. The design operates on white backgrounds with Kraken Purple (`#7132f5`, `#5741d8`, `#5b1ecf`) creating a distinctive, professional crypto identity. The proprietary Kraken-Brand font handles display headings with bold (700) weight and negative tracking, while Kraken-Product (with IBM Plex Sans fallback) serves as the UI workhorse.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Kraken"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "Kraken's website is a clean, trustworthy crypto exchange that uses purple as its commanding brand color. The design operates on white backgrounds with Kraken Purple (`#7132f5`, `#5741d8`, `#5b1ecf`) creating a distinctive, professional crypto identity. The proprietary Kraken-Brand font handles display headings with bold (700) weight and negative tracking, while Kraken-Product (with IBM Plex Sans fallback) serves as the UI workhorse.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "lamborghini",
     "name": "Lamborghini",
-    "description": "",
+    "description": "Lamborghini's website is a cathedral of darkness — a digital stage where jet-black surfaces stretch infinitely and every element emerges from the void like a machine under a spotlight.",
     "category": "Automotive",
     "subcategory": "Brand Design",
     "tags": [
@@ -1560,42 +4608,184 @@ export const vendorEntries: VendorEntry[] = [
     "upstreamPath": "design-md/lamborghini/DESIGN.md",
     "upstreamCommit": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
     "importedAt": "2026-09-08",
-    "colors": {},
+    "colors": {
+      "lamborghini-gold": "#FFC000",
+      "pure-white": "#FFFFFF",
+      "dark-gold": "#917300",
+      "gold-text": "#FFCE3E",
+      "cyan-pulse": "#29ABE2",
+      "link-blue": "#3860BE",
+      "absolute-black": "#000000",
+      "charcoal": "#202020",
+      "dark-iron": "#181818",
+      "overlay-black": "rgba(0,0,0,0.7)",
+      "near-white": "#F8F8F8",
+      "mist": "#E6E6E6",
+      "smoke": "#F5F5F5",
+      "graphite": "#494949",
+      "ash": "#7D7D7D",
+      "steel": "#969696",
+      "slate": "#666666",
+      "iron": "#555555",
+      "shadow": "#313131",
+      "teal-action": "#1EAEDB",
+      "badge-tag": "#969696",
+      "primary": "#FFC000",
+      "canvas": "#000000",
+      "ink": "#FFFFFF",
+      "body": "#FFFFFF"
+    },
     "tokens": {
       "colors": {
-        "canvas": "#ffffff",
-        "surface": "#f9f9f9",
-        "text": "#111111",
-        "primary": "#333",
-        "onPrimary": "#ffffff",
-        "border": "#e0e0e0"
+        "canvas": "#000000",
+        "surface": "#000000",
+        "text": "#FFFFFF",
+        "primary": "#FFC000",
+        "onPrimary": "#111111",
+        "border": "currentColor"
       },
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
-        "bodySize": 16,
-        "lineHeight": 1.6
+        "displaySize": 120,
+        "bodySize": 18,
+        "lineHeight": 1.56
       },
       "spacing": [
+        2,
         4,
+        5,
         8,
+        10,
+        12,
+        15,
         16,
+        20,
         24,
+        32,
         40,
-        64
+        48,
+        56
       ],
-      "radius": 6,
-      "borderWidth": 1,
-      "duration": 200
+      "radius": 0,
+      "borderWidth": 0,
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "lamborghini-gold": "#FFC000",
+        "pure-white": "#FFFFFF",
+        "dark-gold": "#917300",
+        "gold-text": "#FFCE3E",
+        "cyan-pulse": "#29ABE2",
+        "link-blue": "#3860BE",
+        "absolute-black": "#000000",
+        "charcoal": "#202020",
+        "dark-iron": "#181818",
+        "overlay-black": "rgba(0,0,0,0.7)",
+        "near-white": "#F8F8F8",
+        "mist": "#E6E6E6",
+        "smoke": "#F5F5F5",
+        "graphite": "#494949",
+        "ash": "#7D7D7D",
+        "steel": "#969696",
+        "slate": "#666666",
+        "iron": "#555555",
+        "shadow": "#313131",
+        "teal-action": "#1EAEDB",
+        "badge-tag": "#969696",
+        "primary": "#FFC000",
+        "canvas": "#000000",
+        "ink": "#FFFFFF",
+        "body": "#FFFFFF"
+      },
+      "typography": {
+        "hero-display": {
+          "fontFamily": null,
+          "fontSize": "120px",
+          "fontWeight": "400",
+          "lineHeight": "0.92",
+          "letterSpacing": "normal",
+          "sourceCells": [
+            "Hero Display",
+            "120px (7.50rem)",
+            "400",
+            "0.92",
+            "normal",
+            "LamboType, uppercase, maximum impact"
+          ],
+          "declaredFamily": null,
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-large": {
+          "fontFamily": null,
+          "fontSize": "18px",
+          "fontWeight": "400",
+          "lineHeight": "1.56",
+          "letterSpacing": "normal",
+          "sourceCells": [
+            "Body Large",
+            "18px (1.13rem)",
+            "400",
+            "1.56",
+            "normal",
+            "LamboType, mixed case and uppercase variants"
+          ],
+          "declaredFamily": null,
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "observed-8": "8px",
+        "observed-2": "2px",
+        "observed-4": "4px",
+        "observed-5": "5px",
+        "observed-10": "10px",
+        "observed-12": "12px",
+        "observed-15": "15px",
+        "observed-16": "16px",
+        "observed-20": "20px",
+        "observed-24": "24px",
+        "observed-32": "32px",
+        "observed-40": "40px",
+        "observed-48": "48px",
+        "observed-56": "56px"
+      },
+      "radius": {
+        "gold-accent-cta": "0px",
+        "inputs-forms": "20px",
+        "default-for-everything-buttons-cards-containers-images": "0px",
+        "subtle-span-elements": "1px",
+        "badges-close-buttons-cookie-elements-barely-perceptible": "2px",
+        "toggle-switches-only-the-sole-rounded-element": "20px"
+      },
+      "border": {
+        "cards-containers": "0px 1px solid #202020"
+      },
+      "components": {
+        "cards-containers": {
+          "backgroundColor": "#202020",
+          "border": "0px 1px solid #202020",
+          "rounded": "0px"
+        }
+      },
+      "layout": "product",
+      "traits": "Lamborghini's website is a cathedral of darkness — a digital stage where jet-black surfaces stretch infinitely and every element emerges from the void like a machine under a spotlight. The page is almost entirely black. Not dark gray, not near-black — true, uncompromising black (`#000000`) that saturates the viewport and refuses to yield. Into this abyss, white type and Lamborghini Gold (`#FFC000`) are deployed with surgical precision, creating a visual language that feels like walking through a nighttime motorsport event where every surface absorbs light except the things that matter.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Lamborghini"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "Lamborghini's website is a cathedral of darkness — a digital stage where jet-black surfaces stretch infinitely and every element emerges from the void like a machine under a spotlight. The page is almost entirely black. Not dark gray, not near-black — true, uncompromising black (`#000000`) that saturates the viewport and refuses to yield. Into this abyss, white type and Lamborghini Gold (`#FFC000`) are deployed with surgical precision, creating a visual language that feels like walking through a nighttime motorsport event where every surface absorbs light except the things that matter.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "linear.app",
-    "name": "Linear App",
-    "description": "A near-black product-focused marketing canvas built around #010102 (the deepest dark surface of any tool in this collection), light gray text (#f7f8f8), and the signature Linear lavender-blue (#5e6ad2",
+    "name": "Linear",
+    "description": "A near-black product-focused marketing canvas built around #010102 (the deepest dark surface of any tool in this collection), light gray text (#f7f8f8), and the signature Linear lavender-blue (#5e6ad2) used as the single chromatic accent.",
     "category": "SaaS & Productivity",
     "subcategory": "Brand Design",
     "tags": [
@@ -1619,43 +4809,161 @@ export const vendorEntries: VendorEntry[] = [
       "canvas": "#010102",
       "surface-1": "#0f1011",
       "surface-2": "#141516",
-      "surface-3": "#18191a"
+      "surface-3": "#18191a",
+      "surface-4": "#191a1b",
+      "hairline": "#23252a",
+      "hairline-strong": "#34343a",
+      "hairline-tertiary": "#3e3e44",
+      "inverse-canvas": "#ffffff",
+      "inverse-surface-1": "#f5f6f6",
+      "inverse-surface-2": "#f6f7f7",
+      "inverse-ink": "#000000",
+      "brand-secure": "#7a7fad",
+      "semantic-success": "#27a644",
+      "semantic-overlay": "#000000"
     },
     "tokens": {
       "colors": {
         "canvas": "#010102",
-        "surface": "#f9f9f9",
+        "surface": "#010102",
         "text": "#f7f8f8",
         "primary": "#5e6ad2",
         "onPrimary": "#ffffff",
-        "border": "#e0e0e0"
+        "border": "#23252a"
       },
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
+        "displaySize": 80,
         "bodySize": 16,
-        "lineHeight": 1.6
+        "lineHeight": 1.5
       },
       "spacing": [
         4,
         8,
+        12,
         16,
         24,
-        40,
-        64
+        32,
+        48,
+        96
       ],
-      "radius": 6,
+      "radius": 12,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#5e6ad2",
+        "on-primary": "#ffffff",
+        "primary-hover": "#828fff",
+        "primary-focus": "#5e69d1",
+        "ink": "#f7f8f8",
+        "ink-muted": "#d0d6e0",
+        "ink-subtle": "#8a8f98",
+        "ink-tertiary": "#62666d",
+        "canvas": "#010102",
+        "surface-1": "#0f1011",
+        "surface-2": "#141516",
+        "surface-3": "#18191a",
+        "surface-4": "#191a1b",
+        "hairline": "#23252a",
+        "hairline-strong": "#34343a",
+        "hairline-tertiary": "#3e3e44",
+        "inverse-canvas": "#ffffff",
+        "inverse-surface-1": "#f5f6f6",
+        "inverse-surface-2": "#f6f7f7",
+        "inverse-ink": "#000000",
+        "brand-secure": "#7a7fad",
+        "semantic-success": "#27a644",
+        "semantic-overlay": "#000000"
+      },
+      "typography": {
+        "display-xl": {
+          "fontFamily": "Linear Display",
+          "fontSize": "80px",
+          "fontWeight": 600,
+          "lineHeight": 1.05,
+          "letterSpacing": "-3.0px",
+          "declaredFamily": "Linear Display",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body": {
+          "fontFamily": "Linear Text",
+          "fontSize": "16px",
+          "fontWeight": 400,
+          "lineHeight": 1.5,
+          "letterSpacing": "-0.05px",
+          "declaredFamily": "Linear Text",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "4px",
+        "xs": "8px",
+        "sm": "12px",
+        "md": "16px",
+        "lg": "24px",
+        "xl": "32px",
+        "xxl": "48px",
+        "section": "96px"
+      },
+      "radius": {
+        "xs": "4px",
+        "sm": "6px",
+        "md": "8px",
+        "lg": "12px",
+        "xl": "16px",
+        "xxl": "24px",
+        "pill": "9999px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#5e6ad2",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "Linear Text",
+            "fontSize": "14px",
+            "fontWeight": 500,
+            "lineHeight": 1.2,
+            "letterSpacing": 0
+          },
+          "rounded": "8px",
+          "padding": "8px 14px"
+        },
+        "pricing-card": {
+          "backgroundColor": "#0f1011",
+          "textColor": "#f7f8f8",
+          "typography": {
+            "fontFamily": "Linear Text",
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "lineHeight": 1.5,
+            "letterSpacing": "-0.05px"
+          },
+          "rounded": "12px",
+          "padding": "24px"
+        }
+      },
+      "layout": "product",
+      "traits": "A near-black product-focused marketing canvas built around #010102 (the deepest dark surface of any tool in this collection), light gray text (#f7f8f8), and the signature Linear lavender-blue (#5e6ad2) used as the single chromatic accent. The system reads as software-craft documentation: dense, technical, and quietly luxurious. Display type is set in the Linear custom sans (SF Pro Display fallback) at 500–700 with measured negative tracking. Cards live as charcoal panels (#0f1011) with hairline borders. The accent lavender appears on the brand mark, focus rings, and a few intentional CTAs — never decoratively. Page rhythm leans on product UI screenshots framed in dark panels rather than atmospheric color.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Linear"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "A near-black product-focused marketing canvas built around #010102 (the deepest dark surface of any tool in this collection), light gray text (#f7f8f8), and the signature Linear lavender-blue (#5e6ad2) used as the single chromatic accent. The system reads as software-craft documentation: dense, technical, and quietly luxurious. Display type is set in the Linear custom sans (SF Pro Display fallback) at 500–700 with measured negative tracking. Cards live as charcoal panels (#0f1011) with hairline borders. The accent lavender appears on the brand mark, focus rings, and a few intentional CTAs — never decoratively. Page rhythm leans on product UI screenshots framed in dark panels rather than atmospheric color.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "lovable",
     "name": "Lovable",
-    "description": "",
+    "description": "Lovable's website radiates warmth through restraint.",
     "category": "Developer Tools",
     "subcategory": "Brand Design",
     "tags": [
@@ -1665,87 +4973,349 @@ export const vendorEntries: VendorEntry[] = [
     "upstreamPath": "design-md/lovable/DESIGN.md",
     "upstreamCommit": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
     "importedAt": "2026-09-08",
-    "colors": {},
+    "colors": {
+      "cream": "#f7f4ed",
+      "charcoal": "#1c1c1c",
+      "off-white": "#fcfbf8",
+      "charcoal-100": "#1c1c1c",
+      "charcoal-83": "rgba(28,28,28,0.83)",
+      "charcoal-82": "rgba(28,28,28,0.82)",
+      "muted-gray": "#5f5f5d",
+      "charcoal-40": "rgba(28,28,28,0.4)",
+      "charcoal-4": "rgba(28,28,28,0.04)",
+      "charcoal-3": "rgba(28,28,28,0.03)",
+      "light-cream": "#eceae4",
+      "cream-surface": "#f7f4ed",
+      "ring-blue": "#3b82f6",
+      "focus-shadow": "rgba(0,0,0,0.1)",
+      "button-inset": "rgba(255,255,255,0.2)",
+      "section-separation": "#eceae4",
+      "primary": "#1c1c1c",
+      "canvas": "#f7f4ed",
+      "ink": "#1c1c1c",
+      "body": "#1c1c1c"
+    },
     "tokens": {
       "colors": {
-        "canvas": "#ffffff",
-        "surface": "#f9f9f9",
-        "text": "#111111",
-        "primary": "#333",
+        "canvas": "#f7f4ed",
+        "surface": "#f7f4ed",
+        "text": "#1c1c1c",
+        "primary": "#1c1c1c",
         "onPrimary": "#ffffff",
-        "border": "#e0e0e0"
+        "border": "currentColor"
       },
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
+        "displaySize": 60,
         "bodySize": 16,
-        "lineHeight": 1.6
+        "lineHeight": 1.5
       },
       "spacing": [
-        4,
         8,
+        10,
+        12,
         16,
         24,
+        32,
         40,
-        64
+        56,
+        80,
+        96,
+        128,
+        176,
+        192,
+        208
       ],
-      "radius": 6,
+      "radius": 12,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "cream": "#f7f4ed",
+        "charcoal": "#1c1c1c",
+        "off-white": "#fcfbf8",
+        "charcoal-100": "#1c1c1c",
+        "charcoal-83": "rgba(28,28,28,0.83)",
+        "charcoal-82": "rgba(28,28,28,0.82)",
+        "muted-gray": "#5f5f5d",
+        "charcoal-40": "rgba(28,28,28,0.4)",
+        "charcoal-4": "rgba(28,28,28,0.04)",
+        "charcoal-3": "rgba(28,28,28,0.03)",
+        "light-cream": "#eceae4",
+        "cream-surface": "#f7f4ed",
+        "ring-blue": "#3b82f6",
+        "focus-shadow": "rgba(0,0,0,0.1)",
+        "button-inset": "rgba(255,255,255,0.2)",
+        "section-separation": "#eceae4",
+        "primary": "#1c1c1c",
+        "canvas": "#f7f4ed",
+        "ink": "#1c1c1c",
+        "body": "#1c1c1c"
+      },
+      "typography": {
+        "display-hero": {
+          "fontFamily": "Camera Plain Variable",
+          "fontSize": "60px",
+          "fontWeight": "600",
+          "lineHeight": "1.00",
+          "letterSpacing": "-1.5px",
+          "sourceCells": [
+            "Display Hero",
+            "Camera Plain Variable",
+            "60px (3.75rem)",
+            "600",
+            "1.00–1.10 (tight)",
+            "-1.5px",
+            "Maximum impact, editorial"
+          ],
+          "declaredFamily": "Camera Plain Variable",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body": {
+          "fontFamily": "Camera Plain Variable",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "1.50",
+          "letterSpacing": "normal",
+          "sourceCells": [
+            "Body",
+            "Camera Plain Variable",
+            "16px (1.00rem)",
+            "400",
+            "1.50",
+            "normal",
+            "Standard reading text"
+          ],
+          "declaredFamily": "Camera Plain Variable",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "observed-8": "8px",
+        "observed-10": "10px",
+        "observed-12": "12px",
+        "observed-16": "16px",
+        "observed-24": "24px",
+        "observed-32": "32px",
+        "observed-40": "40px",
+        "observed-56": "56px",
+        "observed-80": "80px",
+        "observed-96": "96px",
+        "observed-128": "128px",
+        "observed-176": "176px",
+        "observed-192": "192px",
+        "observed-208": "208px"
+      },
+      "radius": {
+        "primary-dark-inset-shadow": "6px",
+        "pill-icon-button": "9999px",
+        "cards-containers": "12px",
+        "observed-4": "4px",
+        "observed-6": "6px",
+        "observed-8": "8px",
+        "observed-12": "12px",
+        "observed-16": "16px",
+        "observed-9999": "9999px"
+      },
+      "border": {
+        "ghost-outline": "1px solid rgba(28,28,28,0.4)",
+        "cards-containers": "1px solid #eceae4",
+        "inputs-forms": "1px solid #eceae4"
+      },
+      "components": {
+        "primary-dark-inset-shadow": {
+          "backgroundColor": "#1c1c1c",
+          "textColor": "#fcfbf8",
+          "padding": "8px 16px",
+          "rounded": "6px",
+          "boxShadow": "rgba(0,0,0,0) 0px 0px 0px 0px, rgba(0,0,0,0) 0px 0px 0px 0px, rgba(255,255,255,0.2) 0px 0.5px 0px 0px inset, rgba(0,0,0,0.2) 0px 0px 0px 0.5px inset, rgba(0,0,0,0.05) 0px 1px 2px 0px"
+        },
+        "cards-containers": {
+          "backgroundColor": "#f7f4ed",
+          "border": "1px solid #eceae4",
+          "rounded": "12px"
+        }
+      },
+      "layout": "product",
+      "traits": "Lovable's website radiates warmth through restraint. The entire page sits on a creamy, parchment-toned background (`#f7f4ed`) that immediately separates it from the cold-white conventions of most developer tool sites. This isn't minimalism for minimalism's sake — it's a deliberate choice to feel approachable, almost analog, like a well-crafted notebook. The near-black text (`#1c1c1c`) against this warm cream creates a contrast ratio that's easy on the eyes while maintaining sharp readability.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Lovable"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "Lovable's website radiates warmth through restraint. The entire page sits on a creamy, parchment-toned background (`#f7f4ed`) that immediately separates it from the cold-white conventions of most developer tool sites. This isn't minimalism for minimalism's sake — it's a deliberate choice to feel approachable, almost analog, like a well-crafted notebook. The near-black text (`#1c1c1c`) against this warm cream creates a contrast ratio that's easy on the eyes while maintaining sharp readability.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "mastercard",
     "name": "Mastercard",
-    "description": "",
+    "description": "Mastercard's experience reads like a warm, editorial magazine built from soft stone and signal orange.",
     "category": "Fintech & Crypto",
     "subcategory": "Brand Design",
     "tags": [
       "mastercard",
-      "fintech"
+      "fintech",
+      "editorial"
     ],
     "upstreamPath": "design-md/mastercard/DESIGN.md",
     "upstreamCommit": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
     "importedAt": "2026-09-08",
-    "colors": {},
+    "colors": {
+      "mastercard-red": "#EB001B",
+      "mastercard-yellow": "#F79E1B",
+      "ink-black": "#141413",
+      "signal-orange": "#CF4500",
+      "light-signal-orange": "#F37338",
+      "clay-brown": "#9A3A0A",
+      "canvas-cream": "#F3F0EE",
+      "lifted-cream": "#FCFBFA",
+      "white": "#FFFFFF",
+      "soft-bone": "#F4F4F4",
+      "charcoal": "#262627",
+      "slate-gray": "#696969",
+      "granite": "#555555",
+      "dust-taupe": "#D1CDC7",
+      "link-blue": "#3860BE",
+      "deep-card-shadows": "rgba(0,0,0,0.08)",
+      "primary": "#141413",
+      "canvas": "#F3F0EE",
+      "ink": "#141413"
+    },
     "tokens": {
       "colors": {
-        "canvas": "#ffffff",
-        "surface": "#f9f9f9",
-        "text": "#111111",
-        "primary": "#333",
+        "canvas": "#F3F0EE",
+        "surface": "#F3F0EE",
+        "text": "#141413",
+        "primary": "#141413",
         "onPrimary": "#ffffff",
-        "border": "#e0e0e0"
+        "border": "currentColor"
       },
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
         "displaySize": 48,
         "bodySize": 16,
-        "lineHeight": 1.6
+        "lineHeight": 1.4
       },
       "spacing": [
-        4,
         8,
-        16,
         24,
         40,
-        64
+        64,
+        128
       ],
-      "radius": 6,
+      "radius": 20,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "mastercard-red": "#EB001B",
+        "mastercard-yellow": "#F79E1B",
+        "ink-black": "#141413",
+        "signal-orange": "#CF4500",
+        "light-signal-orange": "#F37338",
+        "clay-brown": "#9A3A0A",
+        "canvas-cream": "#F3F0EE",
+        "lifted-cream": "#FCFBFA",
+        "white": "#FFFFFF",
+        "soft-bone": "#F4F4F4",
+        "charcoal": "#262627",
+        "slate-gray": "#696969",
+        "granite": "#555555",
+        "dust-taupe": "#D1CDC7",
+        "link-blue": "#3860BE",
+        "deep-card-shadows": "rgba(0,0,0,0.08)",
+        "primary": "#141413",
+        "canvas": "#F3F0EE",
+        "ink": "#141413"
+      },
+      "typography": {
+        "h1-hero": {
+          "fontFamily": null,
+          "fontSize": "64px",
+          "fontWeight": "500",
+          "lineHeight": "64px",
+          "letterSpacing": "-1.28px",
+          "sourceCells": [
+            "H1 (hero)",
+            "64px",
+            "500",
+            "64px",
+            "-1.28px (-2%)",
+            "Set to 1:1 line-height for very tight vertical rhythm on multi-line hero"
+          ],
+          "declaredFamily": null,
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-paragraph": {
+          "fontFamily": null,
+          "fontSize": "16px",
+          "fontWeight": "450",
+          "lineHeight": "22.4px",
+          "letterSpacing": "normal",
+          "sourceCells": [
+            "Body paragraph",
+            "16px",
+            "450",
+            "22.4px (1.4)",
+            "normal",
+            "The half-step 450 weight is MarkForMC's signature — softer than 500, firmer than 400"
+          ],
+          "declaredFamily": null,
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "observed-8": "8px",
+        "observed-128": "128px",
+        "observed-64": "64px",
+        "observed-40": "40px",
+        "observed-24": "24px"
+      },
+      "radius": {
+        "primary-ink-pill": "20px",
+        "consent-signal-orange-pill": "24px",
+        "satellite-circular-micro-cta": "50%",
+        "hero-media-frame-stadium": "40px",
+        "pill-carousel-card": "1000px",
+        "inputs-forms": "999px",
+        "primary-and-secondary-body-ctas-the-signature-button-radius": "20px",
+        "consent-orange-pill-buttons-modal-inner-chips": "24px",
+        "hero-media-frames-large-section-container-corners-h2-pill-labels": "40px",
+        "circular-portraits-icon-only-buttons-satellite-ctas": "50%",
+        "full-pill-shapes-navigation-carousel-cards-footer-country-selector-primary-inline-chips": "99px / 999px / 1000px"
+      },
+      "border": {},
+      "components": {
+        "primary-ink-pill": {
+          "rounded": "20px",
+          "padding": "6px 24px"
+        },
+        "cards-containers": {}
+      },
+      "layout": "editorial",
+      "traits": "Mastercard's experience reads like a warm, editorial magazine built from soft stone and signal orange. The canvas is a muted putty-cream (`#F3F0EE`) — not white, not gray, but a color that feels like the paper of a premium annual report. On top of that canvas, everything that matters is shaped like a stadium, a pill, or a perfect circle. The dominant visual gesture is the **oversized radius**: heroes carry 40-point corners, cards go fully pill-shaped, service images are cropped into circular orbits, and buttons either complete the pill or fit snugly at 20 points. There are almost no sharp corners anywhere on the page.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Mastercard"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "Mastercard's experience reads like a warm, editorial magazine built from soft stone and signal orange. The canvas is a muted putty-cream (`#F3F0EE`) — not white, not gray, but a color that feels like the paper of a premium annual report. On top of that canvas, everything that matters is shaped like a stadium, a pill, or a perfect circle. The dominant visual gesture is the **oversized radius**: heroes carry 40-point corners, cards go fully pill-shaped, service images are cropped into circular orbits, and buttons either complete the pill or fit snugly at 20 points. There are almost no sharp corners anywhere on the page.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "meta",
     "name": "Meta",
-    "description": "Meta's design system spans hardware commerce (Quest VR, Ray-Ban Meta AI glasses) and brand surfaces with a confident product-merchandising voice. The system pairs a stark white canvas with full-bleed ",
+    "description": "Meta's design system spans hardware commerce (Quest VR, Ray-Ban Meta AI glasses) and brand surfaces with a confident product-merchandising voice.",
     "category": "Big Tech",
     "subcategory": "Brand Design",
     "tags": [
@@ -1768,43 +5338,207 @@ export const vendorEntries: VendorEntry[] = [
       "oculus-purple": "#a121ce",
       "success": "#31a24c",
       "success-bg": "#24e400",
-      "attention": "#f2a918"
+      "attention": "#f2a918",
+      "warning": "#f7b928",
+      "warning-bg": "#ffe200",
+      "critical": "#e41e3f",
+      "critical-strong": "#f0284a",
+      "canvas": "#ffffff",
+      "surface-soft": "#f1f4f7",
+      "ink-deep": "#0a1317",
+      "ink": "#1c1e21",
+      "charcoal": "#444950",
+      "slate": "#4b4c4f",
+      "steel": "#5d6c7b",
+      "stone": "#8595a4",
+      "hairline": "#ced0d4",
+      "hairline-soft": "#dee3e9",
+      "disabled-text": "#bcc0c4"
     },
     "tokens": {
       "colors": {
         "canvas": "#ffffff",
-        "surface": "#f9f9f9",
-        "text": "#111111",
+        "surface": "#ffffff",
+        "text": "#1c1e21",
         "primary": "#0064e0",
         "onPrimary": "#ffffff",
-        "border": "#e0e0e0"
+        "border": "#ced0d4"
       },
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
+        "displaySize": 64,
         "bodySize": 16,
-        "lineHeight": 1.6
+        "lineHeight": 1.5
       },
       "spacing": [
         4,
         8,
+        10,
+        12,
         16,
+        20,
         24,
+        32,
         40,
-        64
+        48,
+        64,
+        80,
+        120
       ],
-      "radius": 6,
+      "radius": 32,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 250
     },
+    "spec": {
+      "colors": {
+        "primary": "#0064e0",
+        "primary-deep": "#0457cb",
+        "primary-soft": "#0091ff",
+        "on-primary": "#ffffff",
+        "ink-button": "#000000",
+        "on-ink-button": "#ffffff",
+        "fb-blue": "#1876f2",
+        "meta-link": "#385898",
+        "oculus-purple": "#a121ce",
+        "success": "#31a24c",
+        "success-bg": "#24e400",
+        "attention": "#f2a918",
+        "warning": "#f7b928",
+        "warning-bg": "#ffe200",
+        "critical": "#e41e3f",
+        "critical-strong": "#f0284a",
+        "canvas": "#ffffff",
+        "surface-soft": "#f1f4f7",
+        "ink-deep": "#0a1317",
+        "ink": "#1c1e21",
+        "charcoal": "#444950",
+        "slate": "#4b4c4f",
+        "steel": "#5d6c7b",
+        "stone": "#8595a4",
+        "hairline": "#ced0d4",
+        "hairline-soft": "#dee3e9",
+        "disabled-text": "#bcc0c4"
+      },
+      "typography": {
+        "hero-display": {
+          "fontFamily": "Optimistic VF",
+          "fontSize": "64px",
+          "fontWeight": 500,
+          "lineHeight": 1.16,
+          "fontFeature": "ss01, ss02",
+          "declaredFamily": "Optimistic VF",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-md-bold": {
+          "fontFamily": "Optimistic VF",
+          "fontSize": "16px",
+          "fontWeight": 700,
+          "lineHeight": 1.5,
+          "letterSpacing": "-0.16px",
+          "declaredFamily": "Optimistic VF",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "4px",
+        "xs": "8px",
+        "sm": "10px",
+        "md": "12px",
+        "base": "16px",
+        "lg": "20px",
+        "xl": "24px",
+        "xxl": "32px",
+        "xxxl": "40px",
+        "section-sm": "48px",
+        "section": "64px",
+        "section-lg": "80px",
+        "hero": "120px"
+      },
+      "radius": {
+        "xs": "2px",
+        "sm": "4px",
+        "md": "6px",
+        "lg": "8px",
+        "xl": "16px",
+        "xxl": "24px",
+        "xxxl": "32px",
+        "feature": "40px",
+        "full": "100px",
+        "circle": "9999px"
+      },
+      "border": {
+        "button-secondary": "2px solid #0a1317",
+        "button-ghost": "2px solid rgba(10, 19, 23, 0.12)",
+        "button-pill-tab": "1px solid #ced0d4",
+        "card-product-feature": "1px solid #dee3e9",
+        "card-feature-photo": "none",
+        "card-checkout-summary": "1px solid #dee3e9",
+        "text-input": "1px solid #ced0d4",
+        "text-input-focused": "2px solid #1876f2",
+        "text-input-error": "1px solid #f0284a",
+        "radio-option": "1px solid rgba(10, 19, 23, 0.12)",
+        "radio-option-selected": "2px solid #0143b5",
+        "color-swatch-circle": "2px solid #ffffff",
+        "faq-accordion-item": "1px solid #dee3e9",
+        "why-buy-tile": "1px solid #dee3e9",
+        "footer-region": "1px solid #dee3e9",
+        "feature-icon-row": "1px solid #dee3e9",
+        "tech-specs-table": "1px solid #dee3e9",
+        "testimonial-customer-card": "1px solid #dee3e9"
+      },
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#000000",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "Optimistic VF",
+            "fontSize": "14px",
+            "fontWeight": 700,
+            "lineHeight": 1.43,
+            "letterSpacing": "-0.14px"
+          },
+          "rounded": "100px",
+          "padding": "14px 30px"
+        },
+        "card-product-feature": {
+          "backgroundColor": "#ffffff",
+          "rounded": "32px",
+          "padding": "32px",
+          "border": "1px solid #dee3e9"
+        },
+        "search-pill": {
+          "backgroundColor": "#f1f4f7",
+          "textColor": "#5d6c7b",
+          "typography": {
+            "fontFamily": "Optimistic VF",
+            "fontSize": "14px",
+            "fontWeight": 400,
+            "lineHeight": 1.43,
+            "letterSpacing": "-0.14px"
+          },
+          "rounded": "100px",
+          "padding": "12px 20px",
+          "height": "40px"
+        }
+      },
+      "layout": "gallery",
+      "traits": "Meta's design system spans hardware commerce (Quest VR, Ray-Ban Meta AI glasses) and brand surfaces with a confident product-merchandising voice. The system pairs a stark white canvas with full-bleed photographic product cards, a confident Optimistic VF wordmark/headline face, dual-CTA hero patterns (black primary + outlined secondary), and a saturated cobalt blue (#0064E0) for in-product purchase actions. Pill-shaped 100px-radius buttons, generous 24-32px card rounding, and tight three-tier text hierarchy carry across homepage, product detail (PDP), buy-now configurator, and accessory subpages.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Meta"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "Meta's design system spans hardware commerce (Quest VR, Ray-Ban Meta AI glasses) and brand surfaces with a confident product-merchandising voice. The system pairs a stark white canvas with full-bleed photographic product cards, a confident Optimistic VF wordmark/headline face, dual-CTA hero patterns (black primary + outlined secondary), and a saturated cobalt blue (#0064E0) for in-product purchase actions. Pill-shaped 100px-radius buttons, generous 24-32px card rounding, and tight three-tier text hierarchy carry across homepage, product detail (PDP), buy-now configurator, and accessory subpages.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "minimax",
-    "name": "Minimax",
-    "description": "MiniMax presents itself as a premium AI infrastructure brand through a striking duality — bold black-pill CTAs and stark white canvas for marketing, paired with vibrant gradient product cards (orange-",
+    "name": "MiniMax",
+    "description": "MiniMax presents itself as a premium AI infrastructure brand through a striking duality — bold black-pill CTAs and stark white canvas for marketing, paired with vibrant gradient product cards (orange-red, magenta-pink, purple, blue) that turn each model release into a distinctive visual identity.",
     "category": "AI & LLM",
     "subcategory": "Brand Design",
     "tags": [
@@ -1828,49 +5562,211 @@ export const vendorEntries: VendorEntry[] = [
       "brand-blue-700": "#17437d",
       "brand-cyan": "#3daeff",
       "brand-blue-200": "#bfdbfe",
-      "brand-purple": "#a855f7"
+      "brand-purple": "#a855f7",
+      "canvas": "#ffffff",
+      "surface": "#f7f8fa",
+      "surface-soft": "#f2f3f5",
+      "hairline": "#e5e7eb",
+      "hairline-soft": "#eaecf0",
+      "ink": "#0a0a0a",
+      "ink-strong": "#000000",
+      "charcoal": "#222222",
+      "slate": "#45515e",
+      "steel": "#5f5f5f",
+      "stone": "#8e8e93",
+      "muted": "#a8aab2",
+      "success-bg": "#e8ffea",
+      "success-text": "#1ba673",
+      "on-dark": "#ffffff",
+      "footer-bg": "#0a0a0a"
     },
     "tokens": {
       "colors": {
         "canvas": "#ffffff",
-        "surface": "#f9f9f9",
-        "text": "#111111",
+        "surface": "#f7f8fa",
+        "text": "#0a0a0a",
         "primary": "#0a0a0a",
         "onPrimary": "#ffffff",
-        "border": "#e0e0e0"
+        "border": "#e5e7eb"
       },
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
+        "displaySize": 80,
         "bodySize": 16,
-        "lineHeight": 1.6
+        "lineHeight": 1.5
       },
       "spacing": [
         4,
         8,
+        12,
         16,
+        20,
         24,
+        32,
         40,
-        64
+        48,
+        64,
+        80,
+        96
       ],
-      "radius": 6,
+      "radius": 16,
       "borderWidth": 1,
       "duration": 200
     },
+    "spec": {
+      "colors": {
+        "primary": "#0a0a0a",
+        "on-primary": "#ffffff",
+        "primary-soft": "#181e25",
+        "brand-coral": "#ff5530",
+        "brand-magenta": "#ea5ec1",
+        "brand-blue": "#1456f0",
+        "brand-blue-mid": "#3b82f6",
+        "brand-blue-deep": "#1d4ed8",
+        "brand-blue-700": "#17437d",
+        "brand-cyan": "#3daeff",
+        "brand-blue-200": "#bfdbfe",
+        "brand-purple": "#a855f7",
+        "canvas": "#ffffff",
+        "surface": "#f7f8fa",
+        "surface-soft": "#f2f3f5",
+        "hairline": "#e5e7eb",
+        "hairline-soft": "#eaecf0",
+        "ink": "#0a0a0a",
+        "ink-strong": "#000000",
+        "charcoal": "#222222",
+        "slate": "#45515e",
+        "steel": "#5f5f5f",
+        "stone": "#8e8e93",
+        "muted": "#a8aab2",
+        "success-bg": "#e8ffea",
+        "success-text": "#1ba673",
+        "on-dark": "#ffffff",
+        "footer-bg": "#0a0a0a"
+      },
+      "typography": {
+        "hero-display": {
+          "fontFamily": "DM Sans",
+          "fontSize": "80px",
+          "fontWeight": 600,
+          "lineHeight": 1.1,
+          "letterSpacing": "-2px",
+          "declaredFamily": "DM Sans",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-md": {
+          "fontFamily": "DM Sans",
+          "fontSize": "16px",
+          "fontWeight": 400,
+          "lineHeight": 1.5,
+          "declaredFamily": "DM Sans",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "4px",
+        "xs": "8px",
+        "sm": "12px",
+        "md": "16px",
+        "lg": "20px",
+        "xl": "24px",
+        "xxl": "32px",
+        "xxxl": "40px",
+        "section-sm": "48px",
+        "section": "64px",
+        "section-lg": "80px",
+        "hero": "96px"
+      },
+      "radius": {
+        "xs": "4px",
+        "sm": "6px",
+        "md": "8px",
+        "lg": "12px",
+        "xl": "16px",
+        "xxl": "20px",
+        "xxxl": "24px",
+        "hero": "32px",
+        "full": "9999px"
+      },
+      "border": {
+        "button-secondary": "1px solid #0a0a0a",
+        "button-tertiary": "1px solid #e5e7eb",
+        "button-icon-circular": "1px solid #e5e7eb",
+        "card-base": "1px solid #e5e7eb",
+        "card-recommendation": "1px solid #e5e7eb",
+        "text-input": "1px solid #e5e7eb",
+        "text-input-focused": "2px solid #1d4ed8",
+        "text-input-error": "1px solid #d45656",
+        "search-pill": "1px solid #e5e7eb",
+        "segmented-tab": "0 0 2px transparent solid",
+        "segmented-tab-active": "0 0 2px #0a0a0a solid",
+        "pill-tab": "1px solid #e5e7eb",
+        "pill-tab-active": "1px solid #0a0a0a",
+        "data-table": "1px solid #e5e7eb",
+        "data-table-row": "0 0 1px #eaecf0 solid",
+        "ai-product-tile": "1px solid #e5e7eb",
+        "ai-product-matrix": "1px solid #e5e7eb",
+        "models-comparison-table": "1px solid #e5e7eb"
+      },
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#0a0a0a",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "DM Sans",
+            "fontSize": "14px",
+            "fontWeight": 600,
+            "lineHeight": 1.4
+          },
+          "rounded": "9999px",
+          "padding": "11px 24px"
+        },
+        "card-base": {
+          "backgroundColor": "#ffffff",
+          "rounded": "16px",
+          "padding": "24px",
+          "border": "1px solid #e5e7eb"
+        },
+        "search-pill": {
+          "backgroundColor": "#f7f8fa",
+          "textColor": "#5f5f5f",
+          "typography": {
+            "fontFamily": "DM Sans",
+            "fontSize": "14px",
+            "fontWeight": 400,
+            "lineHeight": 1.5
+          },
+          "rounded": "8px",
+          "padding": "8px 16px",
+          "height": "36px",
+          "border": "1px solid #e5e7eb"
+        }
+      },
+      "layout": "product",
+      "traits": "MiniMax presents itself as a premium AI infrastructure brand through a striking duality — bold black-pill CTAs and stark white canvas for marketing, paired with vibrant gradient product cards (orange-red, magenta-pink, purple, blue) that turn each model release into a distinctive visual identity. The system uses DM Sans across all surfaces, employs an oversized 80px hero display, anchors major actions in deep near-black pills, and layers content density via a 3-column documentation grid with sidebar nav, prose body, and TOC. Coverage spans the marketing homepage, model showcase pages, developer documentation, and platform pricing surfaces.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "MiniMax"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "MiniMax presents itself as a premium AI infrastructure brand through a striking duality — bold black-pill CTAs and stark white canvas for marketing, paired with vibrant gradient product cards (orange-red, magenta-pink, purple, blue) that turn each model release into a distinctive visual identity. The system uses DM Sans across all surfaces, employs an oversized 80px hero display, anchors major actions in deep near-black pills, and layers content density via a 3-column documentation grid with sidebar nav, prose body, and TOC. Coverage spans the marketing homepage, model showcase pages, developer documentation, and platform pricing surfaces.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "mintlify",
     "name": "Mintlify",
-    "description": "Mintlify presents documentation infrastructure with a dual-mode aesthetic — atmospheric sky-gradient marketing heroes (cloud illustration backdrops, soft cream-to-blue washes) paired with dense develo",
+    "description": "Mintlify presents documentation infrastructure with a dual-mode aesthetic — atmospheric sky-gradient marketing heroes (cloud illustration backdrops, soft cream-to-blue washes) paired with dense developer-grade documentation surfaces.",
     "category": "SaaS & Productivity",
     "subcategory": "Brand Design",
     "tags": [
       "mintlify",
       "saas",
-      "gradient"
+      "gradient",
+      "developer"
     ],
     "upstreamPath": "design-md/mintlify/DESIGN.md",
     "upstreamCommit": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
@@ -1887,43 +5783,217 @@ export const vendorEntries: VendorEntry[] = [
       "brand-error": "#d45656",
       "brand-cursor": "#888888",
       "hero-sky-from": "#87a8c8",
-      "hero-sky-to": "#f5e9d8"
+      "hero-sky-to": "#f5e9d8",
+      "hero-dark-from": "#1a3d4a",
+      "hero-dark-to": "#2d5a4f",
+      "testimonial-orange": "#f55a3c",
+      "testimonial-orange-deep": "#cc3a1f",
+      "canvas": "#ffffff",
+      "canvas-dark": "#0a0a0a",
+      "surface": "#f7f7f7",
+      "surface-soft": "#fafafa",
+      "surface-code": "#1c1c1e",
+      "hairline": "#e5e5e5",
+      "hairline-soft": "#ededed",
+      "hairline-dark": "#1f1f1f",
+      "ink": "#0a0a0a",
+      "charcoal": "#1c1c1e",
+      "slate": "#3a3a3c",
+      "steel": "#5a5a5c",
+      "stone": "#888888",
+      "muted": "#a8a8aa",
+      "on-dark": "#ffffff",
+      "on-dark-muted": "#b3b3b3"
     },
     "tokens": {
       "colors": {
         "canvas": "#ffffff",
-        "surface": "#f9f9f9",
-        "text": "#111111",
+        "surface": "#f7f7f7",
+        "text": "#0a0a0a",
         "primary": "#0a0a0a",
         "onPrimary": "#ffffff",
-        "border": "#e0e0e0"
+        "border": "#e5e5e5"
       },
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
+        "displaySize": 72,
         "bodySize": 16,
-        "lineHeight": 1.6
+        "lineHeight": 1.5
       },
       "spacing": [
         4,
         8,
+        12,
         16,
+        20,
         24,
+        32,
         40,
-        64
+        48,
+        64,
+        96,
+        120
       ],
-      "radius": 6,
+      "radius": 12,
       "borderWidth": 1,
       "duration": 200
     },
+    "spec": {
+      "colors": {
+        "primary": "#0a0a0a",
+        "on-primary": "#ffffff",
+        "brand-green": "#00d4a4",
+        "brand-green-deep": "#00b48a",
+        "brand-green-soft": "#7cebcb",
+        "brand-tag": "#3772cf",
+        "brand-warn": "#c37d0d",
+        "brand-annotate": "#1ba673",
+        "brand-error": "#d45656",
+        "brand-cursor": "#888888",
+        "hero-sky-from": "#87a8c8",
+        "hero-sky-to": "#f5e9d8",
+        "hero-dark-from": "#1a3d4a",
+        "hero-dark-to": "#2d5a4f",
+        "testimonial-orange": "#f55a3c",
+        "testimonial-orange-deep": "#cc3a1f",
+        "canvas": "#ffffff",
+        "canvas-dark": "#0a0a0a",
+        "surface": "#f7f7f7",
+        "surface-soft": "#fafafa",
+        "surface-code": "#1c1c1e",
+        "hairline": "#e5e5e5",
+        "hairline-soft": "#ededed",
+        "hairline-dark": "#1f1f1f",
+        "ink": "#0a0a0a",
+        "charcoal": "#1c1c1e",
+        "slate": "#3a3a3c",
+        "steel": "#5a5a5c",
+        "stone": "#888888",
+        "muted": "#a8a8aa",
+        "on-dark": "#ffffff",
+        "on-dark-muted": "#b3b3b3"
+      },
+      "typography": {
+        "hero-display": {
+          "fontFamily": "Inter",
+          "fontSize": "72px",
+          "fontWeight": 600,
+          "lineHeight": 1.05,
+          "letterSpacing": "-2px",
+          "declaredFamily": "Inter",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-md": {
+          "fontFamily": "Inter",
+          "fontSize": "16px",
+          "fontWeight": 400,
+          "lineHeight": 1.5,
+          "declaredFamily": "Inter",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "4px",
+        "xs": "8px",
+        "sm": "12px",
+        "md": "16px",
+        "lg": "20px",
+        "xl": "24px",
+        "xxl": "32px",
+        "xxxl": "40px",
+        "section-sm": "48px",
+        "section": "64px",
+        "section-lg": "96px",
+        "hero": "120px"
+      },
+      "radius": {
+        "xs": "4px",
+        "sm": "6px",
+        "md": "8px",
+        "lg": "12px",
+        "xl": "16px",
+        "xxl": "24px",
+        "full": "9999px"
+      },
+      "border": {
+        "button-secondary": "1px solid #e5e5e5",
+        "button-icon-circular": "1px solid #e5e5e5",
+        "card-base": "1px solid #e5e5e5",
+        "card-help": "1px solid #e5e5e5",
+        "card-startup-perk": "1px solid #e5e5e5",
+        "pricing-card": "1px solid #e5e5e5",
+        "pricing-card-featured": "2px solid #00d4a4",
+        "testimonial-card-quote": "1px solid #e5e5e5",
+        "text-input": "1px solid #e5e5e5",
+        "text-input-focused": "2px solid #00d4a4",
+        "search-pill": "1px solid #e5e5e5",
+        "segmented-tab": "0 0 2px transparent solid",
+        "segmented-tab-active": "0 0 2px #0a0a0a solid",
+        "pill-tab": "1px solid #e5e5e5",
+        "pill-tab-active": "1px solid #0a0a0a",
+        "code-block-header": "0 0 1px #1f1f1f solid",
+        "code-inline": "1px solid #e5e5e5",
+        "property-row": "0 0 1px #ededed solid",
+        "feature-comparison-table": "1px solid #e5e5e5",
+        "feature-comparison-row": "0 0 1px #ededed solid",
+        "copy-code-button": "1px solid #1f1f1f",
+        "hero-product-mockup": "1px solid #ededed",
+        "faq-accordion-item": "1px solid #ededed",
+        "footer-region": "1px solid #e5e5e5",
+        "startup-program-card": "1px solid #e5e5e5"
+      },
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#0a0a0a",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": "14px",
+            "fontWeight": 500,
+            "lineHeight": 1.3
+          },
+          "rounded": "9999px",
+          "padding": "10px 20px"
+        },
+        "card-base": {
+          "backgroundColor": "#ffffff",
+          "rounded": "12px",
+          "padding": "24px",
+          "border": "1px solid #e5e5e5"
+        },
+        "search-pill": {
+          "backgroundColor": "#f7f7f7",
+          "textColor": "#5a5a5c",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": "14px",
+            "fontWeight": 400,
+            "lineHeight": 1.5
+          },
+          "rounded": "8px",
+          "padding": "8px 16px",
+          "height": "36px",
+          "border": "1px solid #e5e5e5"
+        }
+      },
+      "layout": "product",
+      "traits": "Mintlify presents documentation infrastructure with a dual-mode aesthetic — atmospheric sky-gradient marketing heroes (cloud illustration backdrops, soft cream-to-blue washes) paired with dense developer-grade documentation surfaces. The system uses Inter for UI prose, Geist Mono for code, and a signature Mintlify green ({colors.brand-green}) reserved for accent CTAs and active states. Black-pill primary buttons dominate marketing, white-on-dark inversions appear on dark hero bands, and a 3-column documentation layout (sidebar / prose / TOC) anchors the developer experience. Coverage spans homepage, startups program, pricing comparison, and the live tabs documentation page.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Mintlify"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "Mintlify presents documentation infrastructure with a dual-mode aesthetic — atmospheric sky-gradient marketing heroes (cloud illustration backdrops, soft cream-to-blue washes) paired with dense developer-grade documentation surfaces. The system uses Inter for UI prose, Geist Mono for code, and a signature Mintlify green ({colors.brand-green}) reserved for accent CTAs and active states. Black-pill primary buttons dominate marketing, white-on-dark inversions appear on dark hero bands, and a 3-column documentation layout (sidebar / prose / TOC) anchors the developer experience. Coverage spans homepage, startups program, pricing comparison, and the live tabs documentation page.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "miro",
     "name": "Miro",
-    "description": "Miro presents itself as the AI-powered visual workspace through a confident, almost playful brand voice — anchored by its signature canary yellow ({colors.brand-yellow}) wordmark over white canvas, br",
+    "description": "Miro presents itself as the AI-powered visual workspace through a confident, almost playful brand voice — anchored by its signature canary yellow ({colors.brand-yellow}) wordmark over white canvas, broken open by colorful pastel feature tints (rose, teal, coral, orange, mint) that echo the actual sticky-note color palette used on the live whiteboard.",
     "category": "SaaS & Productivity",
     "subcategory": "Brand Design",
     "tags": [
@@ -1946,43 +6016,230 @@ export const vendorEntries: VendorEntry[] = [
       "blue-pressed": "#2a41b6",
       "brand-coral": "#ff9999",
       "coral-light": "#ffc6c6",
-      "coral-dark": "#600000"
+      "coral-dark": "#600000",
+      "brand-rose": "#ffd8f4",
+      "rose-light": "#fde0f0",
+      "brand-pink": "#fde0f0",
+      "brand-teal": "#0fbcb0",
+      "teal-light": "#c3faf5",
+      "moss-dark": "#187574",
+      "brand-orange-light": "#ffe6cd",
+      "brand-red": "#fbd4d4",
+      "brand-red-dark": "#e3c5c5",
+      "success-accent": "#00b473",
+      "canvas": "#ffffff",
+      "surface": "#f7f8fa",
+      "surface-soft": "#fafbfc",
+      "surface-yellow": "#fff8e0",
+      "surface-pricing-featured": "#f5f3ff",
+      "hairline": "#e0e2e8",
+      "hairline-soft": "#eef0f3",
+      "hairline-strong": "#c7cad5",
+      "ink-deep": "#050038",
+      "ink": "#1c1c1e",
+      "charcoal": "#2c2c34",
+      "slate": "#555a6a",
+      "steel": "#6b6f7e",
+      "stone": "#8e91a0",
+      "muted": "#a5a8b5",
+      "on-dark": "#ffffff",
+      "on-dark-muted": "#a5a8b5",
+      "footer-bg": "#1c1c1e"
     },
     "tokens": {
       "colors": {
         "canvas": "#ffffff",
-        "surface": "#f9f9f9",
-        "text": "#111111",
+        "surface": "#f7f8fa",
+        "text": "#1c1c1e",
         "primary": "#1c1c1e",
         "onPrimary": "#ffffff",
-        "border": "#e0e0e0"
+        "border": "#e0e2e8"
       },
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
+        "displaySize": 80,
         "bodySize": 16,
-        "lineHeight": 1.6
+        "lineHeight": 1.5
       },
       "spacing": [
         4,
         8,
+        12,
         16,
+        20,
         24,
+        32,
         40,
-        64
+        48,
+        64,
+        96,
+        120
       ],
-      "radius": 6,
+      "radius": 16,
       "borderWidth": 1,
       "duration": 200
     },
+    "spec": {
+      "colors": {
+        "primary": "#1c1c1e",
+        "on-primary": "#ffffff",
+        "brand-yellow": "#ffd02f",
+        "brand-yellow-deep": "#fcb900",
+        "yellow-light": "#fff4c4",
+        "yellow-dark": "#746019",
+        "brand-blue": "#4262ff",
+        "blue-450": "#5b76fe",
+        "blue-pressed": "#2a41b6",
+        "brand-coral": "#ff9999",
+        "coral-light": "#ffc6c6",
+        "coral-dark": "#600000",
+        "brand-rose": "#ffd8f4",
+        "rose-light": "#fde0f0",
+        "brand-pink": "#fde0f0",
+        "brand-teal": "#0fbcb0",
+        "teal-light": "#c3faf5",
+        "moss-dark": "#187574",
+        "brand-orange-light": "#ffe6cd",
+        "brand-red": "#fbd4d4",
+        "brand-red-dark": "#e3c5c5",
+        "success-accent": "#00b473",
+        "canvas": "#ffffff",
+        "surface": "#f7f8fa",
+        "surface-soft": "#fafbfc",
+        "surface-yellow": "#fff8e0",
+        "surface-pricing-featured": "#f5f3ff",
+        "hairline": "#e0e2e8",
+        "hairline-soft": "#eef0f3",
+        "hairline-strong": "#c7cad5",
+        "ink-deep": "#050038",
+        "ink": "#1c1c1e",
+        "charcoal": "#2c2c34",
+        "slate": "#555a6a",
+        "steel": "#6b6f7e",
+        "stone": "#8e91a0",
+        "muted": "#a5a8b5",
+        "on-dark": "#ffffff",
+        "on-dark-muted": "#a5a8b5",
+        "footer-bg": "#1c1c1e"
+      },
+      "typography": {
+        "hero-display": {
+          "fontFamily": "Roobert PRO",
+          "fontSize": "80px",
+          "fontWeight": 500,
+          "lineHeight": 1.05,
+          "letterSpacing": "-2px",
+          "declaredFamily": "Roobert PRO",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-md": {
+          "fontFamily": "Roobert PRO",
+          "fontSize": "16px",
+          "fontWeight": 400,
+          "lineHeight": 1.5,
+          "declaredFamily": "Roobert PRO",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "4px",
+        "xs": "8px",
+        "sm": "12px",
+        "md": "16px",
+        "lg": "20px",
+        "xl": "24px",
+        "xxl": "32px",
+        "xxxl": "40px",
+        "section-sm": "48px",
+        "section": "64px",
+        "section-lg": "96px",
+        "hero": "120px"
+      },
+      "radius": {
+        "xs": "4px",
+        "sm": "6px",
+        "md": "8px",
+        "lg": "12px",
+        "xl": "16px",
+        "xxl": "20px",
+        "xxxl": "28px",
+        "feature": "32px",
+        "full": "9999px"
+      },
+      "border": {
+        "button-secondary": "1px solid #c7cad5",
+        "button-icon-circular": "1px solid #e0e2e8",
+        "card-base": "1px solid #eef0f3",
+        "card-feature": "1px solid #eef0f3",
+        "card-customer-story": "1px solid #eef0f3",
+        "pricing-card": "1px solid #e0e2e8",
+        "pricing-card-featured": "2px solid #4262ff",
+        "text-input": "1px solid #c7cad5",
+        "text-input-focused": "2px solid #4262ff",
+        "search-pill": "1px solid #e0e2e8",
+        "filter-dropdown": "1px solid #c7cad5",
+        "pill-tab": "1px solid #e0e2e8",
+        "pill-tab-active": "1px solid #1c1c1e",
+        "comparison-table": "1px solid #e0e2e8",
+        "comparison-row": "0 0 1px #eef0f3 solid",
+        "template-card": "1px solid #e0e2e8",
+        "whiteboard-mockup": "1px solid #eef0f3",
+        "faq-accordion-item": "0 0 1px #e0e2e8 solid",
+        "industry-tile": "1px solid #eef0f3",
+        "capterra-badge": "1px solid #e0e2e8"
+      },
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#1c1c1e",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "Roobert PRO",
+            "fontSize": "14px",
+            "fontWeight": 500,
+            "lineHeight": 1.3
+          },
+          "rounded": "9999px",
+          "padding": "12px 24px"
+        },
+        "card-base": {
+          "backgroundColor": "#ffffff",
+          "rounded": "16px",
+          "padding": "24px",
+          "border": "1px solid #eef0f3"
+        },
+        "search-pill": {
+          "backgroundColor": "#f7f8fa",
+          "textColor": "#6b6f7e",
+          "typography": {
+            "fontFamily": "Roobert PRO",
+            "fontSize": "14px",
+            "fontWeight": 400,
+            "lineHeight": 1.5
+          },
+          "rounded": "8px",
+          "padding": "8px 16px",
+          "height": "40px",
+          "border": "1px solid #e0e2e8"
+        }
+      },
+      "layout": "product",
+      "traits": "Miro presents itself as the AI-powered visual workspace through a confident, almost playful brand voice — anchored by its signature canary yellow ({colors.brand-yellow}) wordmark over white canvas, broken open by colorful pastel feature tints (rose, teal, coral, orange, mint) that echo the actual sticky-note color palette used on the live whiteboard. Black-pill primary buttons dominate marketing, real Miro-board mockups serve as feature illustrations, and a 4-tier pricing grid leads into a dense comparison table. Roobert PRO carries display headlines; the system supports homepage, pricing, AI Workflows product page, agile vertical, and customer stories surfaces.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Miro"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "Miro presents itself as the AI-powered visual workspace through a confident, almost playful brand voice — anchored by its signature canary yellow ({colors.brand-yellow}) wordmark over white canvas, broken open by colorful pastel feature tints (rose, teal, coral, orange, mint) that echo the actual sticky-note color palette used on the live whiteboard. Black-pill primary buttons dominate marketing, real Miro-board mockups serve as feature illustrations, and a 4-tier pricing grid leads into a dense comparison table. Roobert PRO carries display headlines; the system supports homepage, pricing, AI Workflows product page, agile vertical, and customer stories surfaces.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "mistral.ai",
-    "name": "Mistral AI",
-    "description": "Mistral AI brands itself with a singular signature — atmospheric sunset gradients (mustard, orange, deep red) layered over photography of mountains, plus a horizontal \"sunset stripe\" bar that closes e",
+    "name": "Mistral-AI",
+    "description": "Mistral AI brands itself with a singular signature — atmospheric sunset gradients (mustard, orange, deep red) layered over photography of mountains, plus a horizontal \"sunset stripe\" bar that closes every page.",
     "category": "AI & LLM",
     "subcategory": "Brand Design",
     "tags": [
@@ -2004,43 +6261,208 @@ export const vendorEntries: VendorEntry[] = [
       "yellow-saturated": "#ffd900",
       "cream": "#fff8e0",
       "cream-light": "#fffaeb",
-      "cream-deeper": "#fff0c2"
+      "cream-deeper": "#fff0c2",
+      "beige-deep": "#e6d5a8",
+      "block-5": "#ffe295",
+      "block-6": "#ffd900",
+      "block-7": "#ff8105",
+      "ink": "#1f1f1f",
+      "ink-tint": "#3d3d3d",
+      "charcoal": "#2c2c2c",
+      "slate": "#4a4a4a",
+      "steel": "#6a6a6a",
+      "stone": "#8a8a8a",
+      "muted": "#a8a8a8",
+      "hairline": "#e5e5e5",
+      "hairline-soft": "#ededed",
+      "hairline-strong": "#c7c7c7",
+      "canvas": "#ffffff",
+      "surface": "#fafafa",
+      "surface-cream": "#fff8e0",
+      "surface-cream-soft": "#fffaeb",
+      "surface-code": "#1c1c1e",
+      "on-dark": "#ffffff",
+      "on-dark-muted": "#a8a8a8",
+      "on-cream": "#1f1f1f",
+      "footer-cream": "#fff8e0",
+      "link": "#fa520f"
     },
     "tokens": {
       "colors": {
         "canvas": "#ffffff",
-        "surface": "#f9f9f9",
-        "text": "#111111",
+        "surface": "#fafafa",
+        "text": "#1f1f1f",
         "primary": "#fa520f",
         "onPrimary": "#ffffff",
-        "border": "#e0e0e0"
+        "border": "#e5e5e5"
       },
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
+        "displaySize": 84,
         "bodySize": 16,
-        "lineHeight": 1.6
+        "lineHeight": 1.55
       },
       "spacing": [
         4,
         8,
+        12,
         16,
+        20,
         24,
+        32,
         40,
-        64
+        48,
+        64,
+        96,
+        120
       ],
-      "radius": 6,
+      "radius": 12,
       "borderWidth": 1,
       "duration": 200
     },
+    "spec": {
+      "colors": {
+        "primary": "#fa520f",
+        "primary-deep": "#cc3a05",
+        "on-primary": "#ffffff",
+        "sunshine-300": "#ffd06a",
+        "sunshine-500": "#ffb83e",
+        "sunshine-700": "#ffa110",
+        "sunshine-800": "#ff8105",
+        "sunshine-900": "#ff8a00",
+        "yellow-saturated": "#ffd900",
+        "cream": "#fff8e0",
+        "cream-light": "#fffaeb",
+        "cream-deeper": "#fff0c2",
+        "beige-deep": "#e6d5a8",
+        "block-5": "#ffe295",
+        "block-6": "#ffd900",
+        "block-7": "#ff8105",
+        "ink": "#1f1f1f",
+        "ink-tint": "#3d3d3d",
+        "charcoal": "#2c2c2c",
+        "slate": "#4a4a4a",
+        "steel": "#6a6a6a",
+        "stone": "#8a8a8a",
+        "muted": "#a8a8a8",
+        "hairline": "#e5e5e5",
+        "hairline-soft": "#ededed",
+        "hairline-strong": "#c7c7c7",
+        "canvas": "#ffffff",
+        "surface": "#fafafa",
+        "surface-cream": "#fff8e0",
+        "surface-cream-soft": "#fffaeb",
+        "surface-code": "#1c1c1e",
+        "on-dark": "#ffffff",
+        "on-dark-muted": "#a8a8a8",
+        "on-cream": "#1f1f1f",
+        "footer-cream": "#fff8e0",
+        "link": "#fa520f"
+      },
+      "typography": {
+        "hero-display": {
+          "fontFamily": "PP Editorial Old",
+          "fontSize": "84px",
+          "fontWeight": 400,
+          "lineHeight": 1.05,
+          "letterSpacing": "-1.5px",
+          "declaredFamily": "PP Editorial Old",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-md": {
+          "fontFamily": "Inter",
+          "fontSize": "16px",
+          "fontWeight": 400,
+          "lineHeight": 1.55,
+          "declaredFamily": "Inter",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "4px",
+        "xs": "8px",
+        "sm": "12px",
+        "md": "16px",
+        "lg": "20px",
+        "xl": "24px",
+        "xxl": "32px",
+        "xxxl": "40px",
+        "section-sm": "48px",
+        "section": "64px",
+        "section-lg": "96px",
+        "hero": "120px"
+      },
+      "radius": {
+        "xs": "4px",
+        "sm": "6px",
+        "md": "8px",
+        "lg": "12px",
+        "xl": "16px",
+        "xxl": "20px",
+        "full": "9999px"
+      },
+      "border": {
+        "button-cream": "1px solid #e6d5a8",
+        "button-secondary": "1px solid #c7c7c7",
+        "button-on-cream": "1px solid #e6d5a8",
+        "card-base": "1px solid #ededed",
+        "card-feature": "1px solid #ededed",
+        "card-cream": "1px solid #e6d5a8",
+        "card-feature-product": "1px solid #ededed",
+        "pricing-card": "1px solid #ededed",
+        "pricing-card-featured": "2px solid #fa520f",
+        "text-input": "1px solid #c7c7c7",
+        "text-input-focused": "2px solid #fa520f",
+        "text-area": "1px solid #c7c7c7",
+        "contact-form-panel": "1px solid #e6d5a8",
+        "pill-tab": "1px solid #e5e5e5",
+        "pill-tab-active": "1px solid #1f1f1f",
+        "segmented-tab": "0 0 2px transparent solid",
+        "segmented-tab-active": "0 0 2px #fa520f solid",
+        "code-block-header": "0 0 1px rgba(255,255,255,0.08) solid",
+        "feature-icon-tile": "1px solid #e6d5a8",
+        "industry-tile": "1px solid #ededed",
+        "customer-testimonial-card": "1px solid #ededed",
+        "faq-accordion-item": "0 0 1px #e5e5e5 solid"
+      },
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#fa520f",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": "14px",
+            "fontWeight": 500,
+            "lineHeight": 1.3
+          },
+          "rounded": "8px",
+          "padding": "10px 20px"
+        },
+        "card-base": {
+          "backgroundColor": "#ffffff",
+          "rounded": "12px",
+          "padding": "24px",
+          "border": "1px solid #ededed"
+        }
+      },
+      "layout": "gallery",
+      "traits": "Mistral AI brands itself with a singular signature — atmospheric sunset gradients (mustard, orange, deep red) layered over photography of mountains, plus a horizontal \"sunset stripe\" bar that closes every page. The system pairs warm cream-yellow surfaces ({colors.cream}) with a saturated orange primary CTA ({colors.primary}) and uses an elegant near-serif voice for hero displays. Coverage spans homepage (Frontier AI hero), Le Studio product page, Coding solutions, news article surfaces, contact form, and services tier page — all anchored by the signature gradient closing band.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Mistral-AI"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "Mistral AI brands itself with a singular signature — atmospheric sunset gradients (mustard, orange, deep red) layered over photography of mountains, plus a horizontal \"sunset stripe\" bar that closes every page. The system pairs warm cream-yellow surfaces ({colors.cream}) with a saturated orange primary CTA ({colors.primary}) and uses an elegant near-serif voice for hero displays. Coverage spans homepage (Frontier AI hero), Le Studio product page, Coding solutions, news article surfaces, contact form, and services tier page — all anchored by the signature gradient closing band.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "mongodb",
-    "name": "Mongodb",
-    "description": "MongoDB carries a strong dual-mode visual identity — dark deep-teal hero bands with bright MongoDB green ({colors.brand-green}) CTAs paired with stark white documentation surfaces. The signature green",
+    "name": "MongoDB",
+    "description": "MongoDB carries a strong dual-mode visual identity — dark deep-teal hero bands with bright MongoDB green ({colors.brand-green}) CTAs paired with stark white documentation surfaces.",
     "category": "Backend & DevOps",
     "subcategory": "Brand Design",
     "tags": [
@@ -2063,48 +6485,224 @@ export const vendorEntries: VendorEntry[] = [
       "brand-teal-deep": "#001e2b",
       "brand-teal": "#003d4f",
       "brand-teal-mid": "#00684a",
-      "accent-purple": "#7b3ff2"
+      "accent-purple": "#7b3ff2",
+      "accent-orange": "#fa6e39",
+      "accent-pink": "#f06bb8",
+      "accent-blue": "#3d4f9f",
+      "semantic-warning-bg": "#fff8e0",
+      "semantic-warning-text": "#946f3f",
+      "canvas": "#ffffff",
+      "canvas-dark": "#001e2b",
+      "surface": "#f9fbfa",
+      "surface-soft": "#f4f7f6",
+      "surface-feature": "#e3fcef",
+      "hairline": "#e1e5e8",
+      "hairline-soft": "#eceff1",
+      "hairline-strong": "#c1ccd6",
+      "hairline-dark": "#1c2d38",
+      "ink": "#001e2b",
+      "charcoal": "#1c2d38",
+      "slate": "#3d4f5b",
+      "steel": "#5c6c7a",
+      "stone": "#7c8c9a",
+      "muted": "#a8b3bc",
+      "on-dark": "#ffffff",
+      "on-dark-muted": "#a8b3bc"
     },
     "tokens": {
       "colors": {
         "canvas": "#ffffff",
-        "surface": "#f9f9f9",
-        "text": "#111111",
+        "surface": "#f9fbfa",
+        "text": "#001e2b",
         "primary": "#00ed64",
         "onPrimary": "#001e2b",
-        "border": "#e0e0e0"
+        "border": "#e1e5e8"
       },
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
+        "displaySize": 72,
         "bodySize": 16,
-        "lineHeight": 1.6
+        "lineHeight": 1.55
       },
       "spacing": [
         4,
         8,
+        12,
         16,
+        20,
         24,
+        32,
         40,
-        64
+        48,
+        64,
+        96,
+        120
       ],
-      "radius": 6,
+      "radius": 12,
       "borderWidth": 1,
       "duration": 200
     },
+    "spec": {
+      "colors": {
+        "primary": "#00ed64",
+        "primary-deep": "#00b545",
+        "primary-pressed": "#008c34",
+        "on-primary": "#001e2b",
+        "brand-green": "#00ed64",
+        "brand-green-dark": "#00684a",
+        "brand-green-mid": "#00a35c",
+        "brand-green-soft": "#c3f0d2",
+        "brand-teal-deep": "#001e2b",
+        "brand-teal": "#003d4f",
+        "brand-teal-mid": "#00684a",
+        "accent-purple": "#7b3ff2",
+        "accent-orange": "#fa6e39",
+        "accent-pink": "#f06bb8",
+        "accent-blue": "#3d4f9f",
+        "semantic-warning-bg": "#fff8e0",
+        "semantic-warning-text": "#946f3f",
+        "canvas": "#ffffff",
+        "canvas-dark": "#001e2b",
+        "surface": "#f9fbfa",
+        "surface-soft": "#f4f7f6",
+        "surface-feature": "#e3fcef",
+        "hairline": "#e1e5e8",
+        "hairline-soft": "#eceff1",
+        "hairline-strong": "#c1ccd6",
+        "hairline-dark": "#1c2d38",
+        "ink": "#001e2b",
+        "charcoal": "#1c2d38",
+        "slate": "#3d4f5b",
+        "steel": "#5c6c7a",
+        "stone": "#7c8c9a",
+        "muted": "#a8b3bc",
+        "on-dark": "#ffffff",
+        "on-dark-muted": "#a8b3bc"
+      },
+      "typography": {
+        "hero-display": {
+          "fontFamily": "Euclid Circular A",
+          "fontSize": "72px",
+          "fontWeight": 500,
+          "lineHeight": 1.1,
+          "letterSpacing": "-1.5px",
+          "declaredFamily": "Euclid Circular A",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-md": {
+          "fontFamily": "Euclid Circular A",
+          "fontSize": "16px",
+          "fontWeight": 400,
+          "lineHeight": 1.55,
+          "declaredFamily": "Euclid Circular A",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "4px",
+        "xs": "8px",
+        "sm": "12px",
+        "md": "16px",
+        "lg": "20px",
+        "xl": "24px",
+        "xxl": "32px",
+        "xxxl": "40px",
+        "section-sm": "48px",
+        "section": "64px",
+        "section-lg": "96px",
+        "hero": "120px"
+      },
+      "radius": {
+        "xs": "4px",
+        "sm": "6px",
+        "md": "8px",
+        "lg": "12px",
+        "xl": "16px",
+        "xxl": "24px",
+        "full": "9999px"
+      },
+      "border": {
+        "button-secondary": "1px solid #c1ccd6",
+        "button-secondary-on-dark": "1px solid #1c2d38",
+        "card-base": "1px solid #e1e5e8",
+        "card-feature": "1px solid #e1e5e8",
+        "card-product-deploy": "1px solid #e1e5e8",
+        "card-course": "1px solid #e1e5e8",
+        "card-cert": "1px solid #e1e5e8",
+        "pricing-card": "1px solid #e1e5e8",
+        "pricing-card-featured": "2px solid #00ed64",
+        "text-input": "1px solid #c1ccd6",
+        "text-input-focused": "2px solid #00684a",
+        "search-pill": "1px solid #c1ccd6",
+        "search-pill-large": "1px solid #c1ccd6",
+        "pill-tab": "1px solid #e1e5e8",
+        "pill-tab-active": "1px solid #001e2b",
+        "segmented-tab": "0 0 2px transparent solid",
+        "segmented-tab-active": "0 0 2px #00684a solid",
+        "comparison-table": "1px solid #e1e5e8",
+        "comparison-row": "0 0 1px #eceff1 solid",
+        "service-tile": "1px solid #e1e5e8",
+        "customer-testimonial-card": "1px solid #e1e5e8",
+        "faq-accordion-item": "0 0 1px #e1e5e8 solid"
+      },
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#00ed64",
+          "textColor": "#001e2b",
+          "typography": {
+            "fontFamily": "Euclid Circular A",
+            "fontSize": "14px",
+            "fontWeight": 600,
+            "lineHeight": 1.3
+          },
+          "rounded": "9999px",
+          "padding": "10px 22px"
+        },
+        "card-base": {
+          "backgroundColor": "#ffffff",
+          "rounded": "12px",
+          "padding": "24px",
+          "border": "1px solid #e1e5e8"
+        },
+        "search-pill": {
+          "backgroundColor": "#f9fbfa",
+          "textColor": "#5c6c7a",
+          "typography": {
+            "fontFamily": "Euclid Circular A",
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "lineHeight": 1.55
+          },
+          "rounded": "8px",
+          "padding": "12px 16px",
+          "height": "44px",
+          "border": "1px solid #c1ccd6"
+        }
+      },
+      "layout": "product",
+      "traits": "MongoDB carries a strong dual-mode visual identity — dark deep-teal hero bands with bright MongoDB green ({colors.brand-green}) CTAs paired with stark white documentation surfaces. The signature green pill button is unmistakable across product, pricing, learning, and AI use-case surfaces. The system uses Euclid Circular A as its display face, anchors a 3-tier pricing comparison (Free / Flex / Dedicated), and presents extensive course catalogs in card grids with colored category tags. Coverage spans homepage, Atlas product page, Community Edition, MongoDB University, AI use cases, and pricing.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "MongoDB"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "MongoDB carries a strong dual-mode visual identity — dark deep-teal hero bands with bright MongoDB green ({colors.brand-green}) CTAs paired with stark white documentation surfaces. The signature green pill button is unmistakable across product, pricing, learning, and AI use-case surfaces. The system uses Euclid Circular A as its display face, anchors a 3-tier pricing comparison (Free / Flex / Dedicated), and presents extensive course catalogs in card grids with colored category tags. Coverage spans homepage, Atlas product page, Community Edition, MongoDB University, AI use cases, and pricing.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "nike",
     "name": "Nike",
-    "description": "|",
+    "description": "A photography-first commerce system built on extreme typographic contrast — towering uppercase Futura display lockups burned into editorial campaign imagery, sitting above a dense, neutral, near-monochrome retail chrome of pill-shaped black CTAs, gray search and tag pills, and tight 8px-grid product cards.",
     "category": "E-commerce & Consumer",
     "subcategory": "Brand Design",
     "tags": [
       "nike",
-      "e-commerce"
+      "e-commerce",
+      "editorial"
     ],
     "upstreamPath": "design-md/nike/DESIGN.md",
     "upstreamCommit": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
@@ -2121,12 +6719,23 @@ export const vendorEntries: VendorEntry[] = [
       "stone": "#9e9ea0",
       "hairline": "#cacacb",
       "hairline-soft": "#e5e5e5",
-      "sale": "#d30005"
+      "sale": "#d30005",
+      "sale-deep": "#780700",
+      "success": "#007d48",
+      "success-bright": "#1eaa52",
+      "info": "#1151ff",
+      "info-deep": "#0034e3",
+      "accent-pink": "#ed1aa0",
+      "accent-pink-soft": "#ffb0dd",
+      "accent-purple-soft": "#beaffd",
+      "accent-purple-pale": "#d6d1ff",
+      "accent-teal": "#0a7281",
+      "accent-pink-deep": "#4c012d"
     },
     "tokens": {
       "colors": {
         "canvas": "#ffffff",
-        "surface": "#f9f9f9",
+        "surface": "#ffffff",
         "text": "#111111",
         "primary": "#111111",
         "onPrimary": "#ffffff",
@@ -2135,74 +6744,322 @@ export const vendorEntries: VendorEntry[] = [
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
+        "displaySize": 96,
         "bodySize": 16,
-        "lineHeight": 1.6
+        "lineHeight": 1.5
       },
       "spacing": [
+        2,
         4,
         8,
-        16,
+        12,
+        18,
         24,
-        40,
-        64
+        30,
+        48
       ],
-      "radius": 6,
+      "radius": 0,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#111111",
+        "on-primary": "#ffffff",
+        "canvas": "#ffffff",
+        "soft-cloud": "#f5f5f5",
+        "ink": "#111111",
+        "charcoal": "#39393b",
+        "ash": "#4b4b4d",
+        "mute": "#707072",
+        "stone": "#9e9ea0",
+        "hairline": "#cacacb",
+        "hairline-soft": "#e5e5e5",
+        "sale": "#d30005",
+        "sale-deep": "#780700",
+        "success": "#007d48",
+        "success-bright": "#1eaa52",
+        "info": "#1151ff",
+        "info-deep": "#0034e3",
+        "accent-pink": "#ed1aa0",
+        "accent-pink-soft": "#ffb0dd",
+        "accent-purple-soft": "#beaffd",
+        "accent-purple-pale": "#d6d1ff",
+        "accent-teal": "#0a7281",
+        "accent-pink-deep": "#4c012d"
+      },
+      "typography": {
+        "display-campaign": {
+          "fontFamily": "Nike Futura ND",
+          "fontSize": "96px",
+          "fontWeight": 500,
+          "lineHeight": 0.9,
+          "letterSpacing": 0,
+          "textTransform": "uppercase",
+          "declaredFamily": "Nike Futura ND",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-md": {
+          "fontFamily": "Helvetica Now Text",
+          "fontSize": "16px",
+          "fontWeight": 400,
+          "lineHeight": 1.5,
+          "letterSpacing": 0,
+          "declaredFamily": "Helvetica Now Text",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "2px",
+        "xs": "4px",
+        "sm": "8px",
+        "md": "12px",
+        "lg": "18px",
+        "xl": "24px",
+        "xxl": "30px",
+        "section": "48px"
+      },
+      "radius": {
+        "none": "0px",
+        "sm": "18px",
+        "md": "24px",
+        "lg": "30px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#111111",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "Helvetica Now Text Medium",
+            "fontSize": "16px",
+            "fontWeight": 500,
+            "lineHeight": 1.5,
+            "letterSpacing": 0
+          },
+          "rounded": "9999px",
+          "padding": "16px 32px",
+          "height": "48px"
+        },
+        "product-card": {
+          "backgroundColor": "#ffffff",
+          "textColor": "#111111",
+          "typography": {
+            "fontFamily": "Helvetica Now Text Medium",
+            "fontSize": "16px",
+            "fontWeight": 500,
+            "lineHeight": 1.5,
+            "letterSpacing": 0
+          },
+          "rounded": "0px",
+          "padding": "0px"
+        },
+        "search-pill": {
+          "backgroundColor": "#f5f5f5",
+          "textColor": "#111111",
+          "typography": {
+            "fontFamily": "Helvetica Now Text",
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "lineHeight": 1.5,
+            "letterSpacing": 0
+          },
+          "rounded": "24px",
+          "padding": "8px 16px",
+          "height": "40px"
+        }
+      },
+      "layout": "gallery",
+      "traits": "A photography-first commerce system built on extreme typographic contrast — towering uppercase Futura display lockups burned into editorial campaign imagery, sitting above a dense, neutral, near-monochrome retail chrome of pill-shaped black CTAs, gray search and tag pills, and tight 8px-grid product cards. The brand's voice is athletic, kinetic, and absolute: pure black, pure white, a single soft surface gray, and a deliberately small set of semantic accents (sale red, success green, restrained category tints) — every chromatic moment is reserved for editorial photography or pricing signal, never decorative chrome.\n",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Nike"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "A photography-first commerce system built on extreme typographic contrast — towering uppercase Futura display lockups burned into editorial campaign imagery, sitting above a dense, neutral, near-monochrome retail chrome of pill-shaped black CTAs, gray search and tag pills, and tight 8px-grid product cards. The brand's voice is athletic, kinetic, and absolute: pure black, pure white, a single soft surface gray, and a deliberately small set of semantic accents (sale red, success green, restrained category tints) — every chromatic moment is reserved for editorial photography or pricing signal, never decorative chrome.\n",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "nintendo-2001",
-    "name": "Nintendo 2001",
-    "description": "An analysis of Nintendo.com's 2001 design language — a brushed-periwinkle \"console chrome\" interface where every panel is a beveled metal plate, navigation glows amber over a halftone-dotted carbon ba",
+    "name": "Nintendo.com (2001)",
+    "description": "An analysis of Nintendo.com's 2001 design language — a brushed-periwinkle \"console chrome\" interface where every panel is a beveled metal plate, navigation glows amber over a halftone-dotted carbon bar, and bold outlined display type sits on circuit-board hero fields.",
     "category": "Retro Web",
     "subcategory": "Brand Design",
     "tags": [
       "nintendo",
-      "retro"
+      "retro",
+      "bold"
     ],
     "upstreamPath": "design-md/nintendo-2001/DESIGN.md",
     "upstreamCommit": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
     "importedAt": "2026-09-08",
-    "colors": {},
+    "colors": {
+      "primary": "#e60012",
+      "signal": "#f68d1f",
+      "amber": "#ecab37",
+      "nav-gold": "#e48600",
+      "canvas": "#7a8aba",
+      "canvas-soft": "#9fbee7",
+      "sky": "#9fbee7",
+      "lavender": "#acace7",
+      "ice": "#c0d5e6",
+      "periwinkle": "#8ba1d4",
+      "chrome-indigo": "#3d4f97",
+      "muted-indigo": "#60619c",
+      "platinum": "#dedede",
+      "surface": "#ffffff",
+      "carbon": "#21242e",
+      "hairline": "#5a5f8c",
+      "ink": "#21242e",
+      "ink-soft": "#3d4f97",
+      "on-primary": "#ffffff",
+      "systems-teal": "#206479",
+      "games-red": "#a7282b",
+      "error": "#e60012"
+    },
     "tokens": {
       "colors": {
-        "canvas": "#ffffff",
-        "surface": "#f9f9f9",
-        "text": "#111111",
-        "primary": "#333",
+        "canvas": "#7a8aba",
+        "surface": "#9fbee7",
+        "text": "#21242e",
+        "primary": "#e60012",
         "onPrimary": "#ffffff",
-        "border": "#e0e0e0"
+        "border": "#5a5f8c"
       },
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
-        "bodySize": 16,
-        "lineHeight": 1.6
+        "displaySize": 44,
+        "bodySize": 12,
+        "lineHeight": 1.4
       },
       "spacing": [
+        2,
         4,
         8,
+        12,
         16,
         24,
-        40,
-        64
+        32,
+        48
       ],
-      "radius": 6,
+      "radius": 4,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#e60012",
+        "signal": "#f68d1f",
+        "amber": "#ecab37",
+        "nav-gold": "#e48600",
+        "canvas": "#7a8aba",
+        "canvas-soft": "#9fbee7",
+        "sky": "#9fbee7",
+        "lavender": "#acace7",
+        "ice": "#c0d5e6",
+        "periwinkle": "#8ba1d4",
+        "chrome-indigo": "#3d4f97",
+        "muted-indigo": "#60619c",
+        "platinum": "#dedede",
+        "surface": "#ffffff",
+        "carbon": "#21242e",
+        "hairline": "#5a5f8c",
+        "ink": "#21242e",
+        "ink-soft": "#3d4f97",
+        "on-primary": "#ffffff",
+        "systems-teal": "#206479",
+        "games-red": "#a7282b",
+        "error": "#e60012"
+      },
+      "typography": {
+        "display": {
+          "fontFamily": "Arial Black",
+          "fontSize": "44px",
+          "fontWeight": 900,
+          "lineHeight": 1,
+          "letterSpacing": 0,
+          "declaredFamily": "Arial Black",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body": {
+          "fontFamily": "Arial",
+          "fontSize": "12px",
+          "fontWeight": 400,
+          "lineHeight": 1.4,
+          "letterSpacing": 0,
+          "declaredFamily": "Arial",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "2px",
+        "xs": "4px",
+        "sm": "8px",
+        "md": "12px",
+        "lg": "16px",
+        "xl": "24px",
+        "xxl": "32px",
+        "section": "48px"
+      },
+      "radius": {
+        "none": "0px",
+        "xs": "2px",
+        "sm": "4px",
+        "md": "6px",
+        "lg": "10px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#ecab37",
+          "textColor": "#21242e",
+          "typography": {
+            "fontFamily": "Arial",
+            "fontSize": "11px",
+            "fontWeight": 700,
+            "lineHeight": 1.1,
+            "letterSpacing": "0.5px"
+          },
+          "rounded": "2px",
+          "padding": "12px"
+        },
+        "promo-card": {
+          "backgroundColor": "#acace7",
+          "textColor": "#21242e",
+          "typography": {
+            "fontFamily": "Arial Black",
+            "fontSize": "44px",
+            "fontWeight": 900,
+            "lineHeight": 1,
+            "letterSpacing": 0
+          },
+          "rounded": "4px",
+          "padding": "12px"
+        }
+      },
+      "layout": "retro",
+      "traits": "An analysis of Nintendo.com's 2001 design language — a brushed-periwinkle \"console chrome\" interface where every panel is a beveled metal plate, navigation glows amber over a halftone-dotted carbon bar, and bold outlined display type sits on circuit-board hero fields. A Y2K hardware aesthetic that treats the web page like the faceplate of a game system.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Nintendo.com (2001)"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "An analysis of Nintendo.com's 2001 design language — a brushed-periwinkle \"console chrome\" interface where every panel is a beveled metal plate, navigation glows amber over a halftone-dotted carbon bar, and bold outlined display type sits on circuit-board hero fields. A Y2K hardware aesthetic that treats the web page like the faceplate of a game system.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "notion",
     "name": "Notion",
-    "description": "Notion presents itself as the all-in-one workspace through a confident, illustration-rich brand voice — anchored by a deep navy hero band ({colors.brand-navy}) decorated with brand-colored sticky-note",
+    "description": "Notion presents itself as the all-in-one workspace through a confident, illustration-rich brand voice — anchored by a deep navy hero band ({colors.brand-navy}) decorated with brand-colored sticky-note dots and mesh wire illustrations, a signature purple pill primary CTA ({colors.primary}), and a rich palette of pastel-tinted feature cards that echo the colorful database properties of the live product.",
     "category": "SaaS & Productivity",
     "subcategory": "Brand Design",
     "tags": [
@@ -2224,43 +7081,245 @@ export const vendorEntries: VendorEntry[] = [
       "link-blue-pressed": "#005bab",
       "brand-orange": "#dd5b00",
       "brand-orange-deep": "#793400",
-      "brand-pink": "#ff64c8"
+      "brand-pink": "#ff64c8",
+      "brand-pink-deep": "#a02e6d",
+      "brand-purple": "#7b3ff2",
+      "brand-purple-300": "#d6b6f6",
+      "brand-purple-800": "#391c57",
+      "brand-teal": "#2a9d99",
+      "brand-green": "#1aae39",
+      "brand-yellow": "#f5d75e",
+      "brand-brown": "#523410",
+      "card-tint-peach": "#ffe8d4",
+      "card-tint-rose": "#fde0ec",
+      "card-tint-mint": "#d9f3e1",
+      "card-tint-lavender": "#e6e0f5",
+      "card-tint-sky": "#dcecfa",
+      "card-tint-yellow": "#fef7d6",
+      "card-tint-yellow-bold": "#f9e79f",
+      "card-tint-cream": "#f8f5e8",
+      "card-tint-gray": "#f0eeec",
+      "canvas": "#ffffff",
+      "surface": "#f6f5f4",
+      "surface-soft": "#fafaf9",
+      "hairline": "#e5e3df",
+      "hairline-soft": "#ede9e4",
+      "hairline-strong": "#c8c4be",
+      "ink-deep": "#000000",
+      "ink": "#1a1a1a",
+      "charcoal": "#37352f",
+      "slate": "#5d5b54",
+      "steel": "#787671",
+      "stone": "#a4a097",
+      "muted": "#bbb8b1",
+      "on-dark": "#ffffff",
+      "on-dark-muted": "#a4a097",
+      "semantic-success": "#1aae39",
+      "semantic-warning": "#dd5b00",
+      "semantic-error": "#e03131"
     },
     "tokens": {
       "colors": {
         "canvas": "#ffffff",
-        "surface": "#f9f9f9",
-        "text": "#111111",
+        "surface": "#f6f5f4",
+        "text": "#1a1a1a",
         "primary": "#5645d4",
         "onPrimary": "#ffffff",
-        "border": "#e0e0e0"
+        "border": "#e5e3df"
       },
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
+        "displaySize": 80,
         "bodySize": 16,
-        "lineHeight": 1.6
+        "lineHeight": 1.55
       },
       "spacing": [
         4,
         8,
+        12,
         16,
+        20,
         24,
+        32,
         40,
-        64
+        48,
+        64,
+        96,
+        120
       ],
-      "radius": 6,
+      "radius": 12,
       "borderWidth": 1,
       "duration": 200
     },
+    "spec": {
+      "colors": {
+        "primary": "#5645d4",
+        "primary-pressed": "#4534b3",
+        "primary-deep": "#3a2a99",
+        "on-primary": "#ffffff",
+        "brand-navy": "#0a1530",
+        "brand-navy-deep": "#070f24",
+        "brand-navy-mid": "#1a2a52",
+        "link-blue": "#0075de",
+        "link-blue-pressed": "#005bab",
+        "brand-orange": "#dd5b00",
+        "brand-orange-deep": "#793400",
+        "brand-pink": "#ff64c8",
+        "brand-pink-deep": "#a02e6d",
+        "brand-purple": "#7b3ff2",
+        "brand-purple-300": "#d6b6f6",
+        "brand-purple-800": "#391c57",
+        "brand-teal": "#2a9d99",
+        "brand-green": "#1aae39",
+        "brand-yellow": "#f5d75e",
+        "brand-brown": "#523410",
+        "card-tint-peach": "#ffe8d4",
+        "card-tint-rose": "#fde0ec",
+        "card-tint-mint": "#d9f3e1",
+        "card-tint-lavender": "#e6e0f5",
+        "card-tint-sky": "#dcecfa",
+        "card-tint-yellow": "#fef7d6",
+        "card-tint-yellow-bold": "#f9e79f",
+        "card-tint-cream": "#f8f5e8",
+        "card-tint-gray": "#f0eeec",
+        "canvas": "#ffffff",
+        "surface": "#f6f5f4",
+        "surface-soft": "#fafaf9",
+        "hairline": "#e5e3df",
+        "hairline-soft": "#ede9e4",
+        "hairline-strong": "#c8c4be",
+        "ink-deep": "#000000",
+        "ink": "#1a1a1a",
+        "charcoal": "#37352f",
+        "slate": "#5d5b54",
+        "steel": "#787671",
+        "stone": "#a4a097",
+        "muted": "#bbb8b1",
+        "on-dark": "#ffffff",
+        "on-dark-muted": "#a4a097",
+        "semantic-success": "#1aae39",
+        "semantic-warning": "#dd5b00",
+        "semantic-error": "#e03131"
+      },
+      "typography": {
+        "hero-display": {
+          "fontFamily": "Notion Sans",
+          "fontSize": "80px",
+          "fontWeight": 600,
+          "lineHeight": 1.05,
+          "letterSpacing": "-2px",
+          "declaredFamily": "Notion Sans",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-md": {
+          "fontFamily": "Notion Sans",
+          "fontSize": "16px",
+          "fontWeight": 400,
+          "lineHeight": 1.55,
+          "declaredFamily": "Notion Sans",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "4px",
+        "xs": "8px",
+        "sm": "12px",
+        "md": "16px",
+        "lg": "20px",
+        "xl": "24px",
+        "xxl": "32px",
+        "xxxl": "40px",
+        "section-sm": "48px",
+        "section": "64px",
+        "section-lg": "96px",
+        "hero": "120px"
+      },
+      "radius": {
+        "xs": "4px",
+        "sm": "6px",
+        "md": "8px",
+        "lg": "12px",
+        "xl": "16px",
+        "xxl": "20px",
+        "xxxl": "24px",
+        "full": "9999px"
+      },
+      "border": {
+        "button-secondary": "1px solid #c8c4be",
+        "button-secondary-on-dark": "1px solid #a4a097",
+        "card-base": "1px solid #e5e3df",
+        "card-feature": "1px solid #e5e3df",
+        "card-agent-tile": "1px solid #e5e3df",
+        "card-template": "1px solid #e5e3df",
+        "card-startup-perk": "1px solid #e5e3df",
+        "pricing-card": "1px solid #e5e3df",
+        "pricing-card-featured": "2px solid #5645d4",
+        "text-input": "1px solid #c8c4be",
+        "text-input-focused": "2px solid #5645d4",
+        "search-pill": "1px solid #e5e3df",
+        "pill-tab": "1px solid #e5e3df",
+        "pill-tab-active": "1px solid #000000",
+        "segmented-tab": "0 0 2px transparent solid",
+        "segmented-tab-active": "0 0 2px #1a1a1a solid",
+        "workspace-mockup-card": "1px solid #e5e3df",
+        "comparison-table": "1px solid #e5e3df",
+        "comparison-row": "0 0 1px #ede9e4 solid",
+        "testimonial-card": "1px solid #e5e3df",
+        "faq-accordion-item": "0 0 1px #e5e3df solid",
+        "footer-region": "1px solid #e5e3df"
+      },
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#5645d4",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "Notion Sans",
+            "fontSize": "14px",
+            "fontWeight": 500,
+            "lineHeight": 1.3
+          },
+          "rounded": "8px",
+          "padding": "10px 18px"
+        },
+        "card-base": {
+          "backgroundColor": "#ffffff",
+          "rounded": "12px",
+          "padding": "24px",
+          "border": "1px solid #e5e3df"
+        },
+        "search-pill": {
+          "backgroundColor": "#f6f5f4",
+          "textColor": "#787671",
+          "typography": {
+            "fontFamily": "Notion Sans",
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "lineHeight": 1.55
+          },
+          "rounded": "8px",
+          "padding": "12px 16px",
+          "height": "44px",
+          "border": "1px solid #e5e3df"
+        }
+      },
+      "layout": "product",
+      "traits": "Notion presents itself as the all-in-one workspace through a confident, illustration-rich brand voice — anchored by a deep navy hero band ({colors.brand-navy}) decorated with brand-colored sticky-note dots and mesh wire illustrations, a signature purple pill primary CTA ({colors.primary}), and a rich palette of pastel-tinted feature cards that echo the colorful database properties of the live product. The system uses a Notion-Sans (Inter-based) typeface across every UI surface, anchors a 4-tier pricing comparison (Free / Plus / Business / Enterprise), and presents the live workspace UI mockup directly inside the hero band. Coverage spans homepage, Enterprise, Product AI, Product Agents, Startups, and Pricing surfaces.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Notion"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "Notion presents itself as the all-in-one workspace through a confident, illustration-rich brand voice — anchored by a deep navy hero band ({colors.brand-navy}) decorated with brand-colored sticky-note dots and mesh wire illustrations, a signature purple pill primary CTA ({colors.primary}), and a rich palette of pastel-tinted feature cards that echo the colorful database properties of the live product. The system uses a Notion-Sans (Inter-based) typeface across every UI surface, anchors a 4-tier pricing comparison (Free / Plus / Business / Enterprise), and presents the live workspace UI mockup directly inside the hero band. Coverage spans homepage, Enterprise, Product AI, Product Agents, Startups, and Pricing surfaces.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "nvidia",
-    "name": "Nvidia",
-    "description": "|",
+    "name": "NVIDIA",
+    "description": "An engineering-grade marketing system organized around two surface modes — a deep black canvas for hero and footer chapters and a flat paper-white canvas for body content — connected by a single, almost violently saturated NVIDIA Green accent that carries every CTA, every active tab, and the small decorative corner squares that mark out cards.",
     "category": "Big Tech",
     "subcategory": "Brand Design",
     "tags": [
@@ -2282,12 +7341,28 @@ export const vendorEntries: VendorEntry[] = [
       "hairline": "#cccccc",
       "hairline-strong": "#5e5e5e",
       "body": "#1a1a1a",
-      "mute": "#757575"
+      "mute": "#757575",
+      "stone": "#898989",
+      "ash": "#a7a7a7",
+      "on-dark": "#ffffff",
+      "on-dark-mute": "rgba(255,255,255,0.7)",
+      "link-blue": "#0046a4",
+      "blue-700": "#0046a4",
+      "error": "#e52020",
+      "error-deep": "#650b0b",
+      "warning": "#df6500",
+      "warning-bright": "#ef9100",
+      "success-deep": "#3f8500",
+      "accent-yellow-pale": "#feeeb2",
+      "accent-purple": "#952fc6",
+      "accent-purple-deep": "#4d1368",
+      "accent-purple-pale": "#f9d4ff",
+      "accent-green-pale": "#bff230"
     },
     "tokens": {
       "colors": {
         "canvas": "#ffffff",
-        "surface": "#f9f9f9",
+        "surface": "#ffffff",
         "text": "#000000",
         "primary": "#76b900",
         "onPrimary": "#000000",
@@ -2298,32 +7373,143 @@ export const vendorEntries: VendorEntry[] = [
         "body": "system-ui, sans-serif",
         "displaySize": 48,
         "bodySize": 16,
-        "lineHeight": 1.6
+        "lineHeight": 1.5
       },
       "spacing": [
+        2,
         4,
         8,
+        12,
         16,
         24,
-        40,
+        32,
         64
       ],
-      "radius": 6,
+      "radius": 2,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#76b900",
+        "on-primary": "#000000",
+        "primary-dark": "#5a8d00",
+        "ink": "#000000",
+        "canvas": "#ffffff",
+        "surface-dark": "#000000",
+        "surface-soft": "#f7f7f7",
+        "surface-elevated": "#1a1a1a",
+        "hairline": "#cccccc",
+        "hairline-strong": "#5e5e5e",
+        "body": "#1a1a1a",
+        "mute": "#757575",
+        "stone": "#898989",
+        "ash": "#a7a7a7",
+        "on-dark": "#ffffff",
+        "on-dark-mute": "rgba(255,255,255,0.7)",
+        "link-blue": "#0046a4",
+        "blue-700": "#0046a4",
+        "error": "#e52020",
+        "error-deep": "#650b0b",
+        "warning": "#df6500",
+        "warning-bright": "#ef9100",
+        "success-deep": "#3f8500",
+        "accent-yellow-pale": "#feeeb2",
+        "accent-purple": "#952fc6",
+        "accent-purple-deep": "#4d1368",
+        "accent-purple-pale": "#f9d4ff",
+        "accent-green-pale": "#bff230"
+      },
+      "typography": {
+        "display-xl": {
+          "fontFamily": "NVIDIA-EMEA",
+          "fontSize": "48px",
+          "fontWeight": 700,
+          "lineHeight": 1.25,
+          "letterSpacing": 0,
+          "declaredFamily": "NVIDIA-EMEA",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-md": {
+          "fontFamily": "NVIDIA-EMEA",
+          "fontSize": "16px",
+          "fontWeight": 400,
+          "lineHeight": 1.5,
+          "letterSpacing": 0,
+          "declaredFamily": "NVIDIA-EMEA",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "2px",
+        "xs": "4px",
+        "sm": "8px",
+        "md": "12px",
+        "lg": "16px",
+        "xl": "24px",
+        "xxl": "32px",
+        "section": "64px"
+      },
+      "radius": {
+        "none": "0px",
+        "xs": "1px",
+        "sm": "2px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#76b900",
+          "textColor": "#000000",
+          "typography": {
+            "fontFamily": "NVIDIA-EMEA",
+            "fontSize": "16px",
+            "fontWeight": 700,
+            "lineHeight": 1.25,
+            "letterSpacing": 0
+          },
+          "rounded": "2px",
+          "padding": "11px 24px",
+          "height": "44px"
+        },
+        "product-card": {
+          "backgroundColor": "#ffffff",
+          "textColor": "#000000",
+          "typography": {
+            "fontFamily": "NVIDIA-EMEA",
+            "fontSize": "17px",
+            "fontWeight": 700,
+            "lineHeight": 1.47,
+            "letterSpacing": 0
+          },
+          "rounded": "2px",
+          "padding": "24px"
+        }
+      },
+      "layout": "editorial",
+      "traits": "An engineering-grade marketing system organized around two surface modes — a deep black canvas for hero and footer chapters and a flat paper-white canvas for body content — connected by a single, almost violently saturated NVIDIA Green accent that carries every CTA, every active tab, and the small decorative corner squares that mark out cards. The system is unapologetically angular: 2px radius across every surface, tight bold sans-serif typography in NVIDIA's proprietary EMEA cut, and a hairline gray rule that separates dense multi-column technical content. There is no decorative gradient, no atmospheric mesh, no soft drop shadow — just black, white, gray, and green stacked into a structured editorial grid that scales from product cards to massive industry landing pages without bending its rules.\n",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "NVIDIA"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "An engineering-grade marketing system organized around two surface modes — a deep black canvas for hero and footer chapters and a flat paper-white canvas for body content — connected by a single, almost violently saturated NVIDIA Green accent that carries every CTA, every active tab, and the small decorative corner squares that mark out cards. The system is unapologetically angular: 2px radius across every surface, tight bold sans-serif typography in NVIDIA's proprietary EMEA cut, and a hairline gray rule that separates dense multi-column technical content. There is no decorative gradient, no atmospheric mesh, no soft drop shadow — just black, white, gray, and green stacked into a structured editorial grid that scales from product cards to massive industry landing pages without bending its rules.\n",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "ollama",
     "name": "Ollama",
-    "description": "|",
+    "description": "An almost defiantly minimal documentation-first system that treats the home page like a Markdown README — paper-white canvas, 36px center-aligned heading, a single black pill CTA, an inline terminal install snippet, and a hand-drawn llama mascot as the only ornamental element.",
     "category": "AI & LLM",
     "subcategory": "Brand Design",
     "tags": [
       "ollama",
-      "ai"
+      "ai",
+      "minimal",
+      "terminal"
     ],
     "upstreamPath": "design-md/ollama/DESIGN.md",
     "upstreamCommit": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
@@ -2340,12 +7526,21 @@ export const vendorEntries: VendorEntry[] = [
       "surface-soft": "#fafafa",
       "surface-card": "#ffffff",
       "hairline": "#e5e5e5",
-      "hairline-strong": "#d4d4d4"
+      "hairline-strong": "#d4d4d4",
+      "on-dark": "#ffffff",
+      "on-dark-mute": "rgba(255,255,255,0.7)",
+      "surface-dark": "#171717",
+      "focus-ring": "rgba(59,130,246,0.5)",
+      "link": "#000000",
+      "link-mute": "#737373",
+      "terminal-red": "#ff5f56",
+      "terminal-yellow": "#ffbd2e",
+      "terminal-green": "#27c93f"
     },
     "tokens": {
       "colors": {
         "canvas": "#ffffff",
-        "surface": "#f9f9f9",
+        "surface": "#ffffff",
         "text": "#000000",
         "primary": "#000000",
         "onPrimary": "#ffffff",
@@ -2354,34 +7549,152 @@ export const vendorEntries: VendorEntry[] = [
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
+        "displaySize": 36,
         "bodySize": 16,
-        "lineHeight": 1.6
+        "lineHeight": 1.5
       },
       "spacing": [
+        2,
         4,
         8,
+        12,
         16,
         24,
-        40,
-        64
+        32,
+        88
       ],
-      "radius": 6,
+      "radius": 12,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#000000",
+        "on-primary": "#ffffff",
+        "ink": "#000000",
+        "ink-deep": "#090909",
+        "charcoal": "#525252",
+        "body": "#737373",
+        "mute": "#a3a3a3",
+        "canvas": "#ffffff",
+        "surface-soft": "#fafafa",
+        "surface-card": "#ffffff",
+        "hairline": "#e5e5e5",
+        "hairline-strong": "#d4d4d4",
+        "on-dark": "#ffffff",
+        "on-dark-mute": "rgba(255,255,255,0.7)",
+        "surface-dark": "#171717",
+        "focus-ring": "rgba(59,130,246,0.5)",
+        "link": "#000000",
+        "link-mute": "#737373",
+        "terminal-red": "#ff5f56",
+        "terminal-yellow": "#ffbd2e",
+        "terminal-green": "#27c93f"
+      },
+      "typography": {
+        "display-xl": {
+          "fontFamily": "SF Pro Rounded",
+          "fontSize": "36px",
+          "fontWeight": 500,
+          "lineHeight": 1.11,
+          "letterSpacing": 0,
+          "declaredFamily": "SF Pro Rounded",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-md": {
+          "fontFamily": "ui-sans-serif",
+          "fontSize": "16px",
+          "fontWeight": 400,
+          "lineHeight": 1.5,
+          "letterSpacing": 0,
+          "declaredFamily": "ui-sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "2px",
+        "xs": "4px",
+        "sm": "8px",
+        "md": "12px",
+        "lg": "16px",
+        "xl": "24px",
+        "xxl": "32px",
+        "section": "88px"
+      },
+      "radius": {
+        "none": "0px",
+        "sm": "6px",
+        "md": "8px",
+        "lg": "12px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#000000",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "ui-sans-serif",
+            "fontSize": "14px",
+            "fontWeight": 500,
+            "lineHeight": 1,
+            "letterSpacing": 0
+          },
+          "rounded": "9999px",
+          "padding": "8px 20px",
+          "height": "36px"
+        },
+        "pricing-card": {
+          "backgroundColor": "#ffffff",
+          "textColor": "#000000",
+          "typography": {
+            "fontFamily": "ui-sans-serif",
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "lineHeight": 1.5,
+            "letterSpacing": 0
+          },
+          "rounded": "12px",
+          "padding": "32px"
+        },
+        "search-pill": {
+          "backgroundColor": "#fafafa",
+          "textColor": "#000000",
+          "typography": {
+            "fontFamily": "ui-sans-serif",
+            "fontSize": "14px",
+            "fontWeight": 400,
+            "lineHeight": 1.43,
+            "letterSpacing": 0
+          },
+          "rounded": "9999px",
+          "padding": "8px 16px",
+          "height": "36px"
+        }
+      },
+      "layout": "gallery",
+      "traits": "An almost defiantly minimal documentation-first system that treats the home page like a Markdown README — paper-white canvas, 36px center-aligned heading, a single black pill CTA, an inline terminal install snippet, and a hand-drawn llama mascot as the only ornamental element. No gradient, no hero photography, no marketing pyrotechnics. The chrome is a tiny utility palette of pure black, pure white, and three neutral grays; every interactive element is fully rounded into a pill (`{rounded.full}`); typography is SF Pro Rounded for headings paired with system sans for body and ui-monospace for code. Pricing tiers, FAQs, and \"your data stays yours\" guarantees all sit on the same flat canvas inside thin-border cards — the system is the documentation, and the documentation is the system.\n",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Ollama"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "An almost defiantly minimal documentation-first system that treats the home page like a Markdown README — paper-white canvas, 36px center-aligned heading, a single black pill CTA, an inline terminal install snippet, and a hand-drawn llama mascot as the only ornamental element. No gradient, no hero photography, no marketing pyrotechnics. The chrome is a tiny utility palette of pure black, pure white, and three neutral grays; every interactive element is fully rounded into a pill (`{rounded.full}`); typography is SF Pro Rounded for headings paired with system sans for body and ui-monospace for code. Pricing tiers, FAQs, and \"your data stays yours\" guarantees all sit on the same flat canvas inside thin-border cards — the system is the documentation, and the documentation is the system.\n",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "opencode.ai",
-    "name": "Opencode AI",
-    "description": "|",
+    "name": "OpenCode",
+    "description": "A terminal-native marketing system rendered entirely in Berkeley Mono — every word on the page, from the hero headline down to the footer fine print, is monospaced.",
     "category": "AI & LLM",
     "subcategory": "Brand Design",
     "tags": [
       "opencode",
-      "ai"
+      "ai",
+      "terminal"
     ],
     "upstreamPath": "design-md/opencode.ai/DESIGN.md",
     "upstreamCommit": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
@@ -2398,43 +7711,154 @@ export const vendorEntries: VendorEntry[] = [
       "ash": "#9a9898",
       "canvas": "#fdfcfc",
       "surface-soft": "#f8f7f7",
-      "surface-card": "#f1eeee"
+      "surface-card": "#f1eeee",
+      "surface-dark": "#201d1d",
+      "surface-dark-elevated": "#302c2c",
+      "hairline": "rgba(15,0,0,0.12)",
+      "hairline-strong": "#646262",
+      "on-dark": "#fdfcfc",
+      "on-dark-mute": "#9a9898",
+      "accent": "#007aff",
+      "accent-hover": "#0056b3",
+      "accent-active": "#004085",
+      "warning": "#ff9f0a",
+      "warning-hover": "#cc7f08",
+      "warning-active": "#995f06",
+      "danger": "#ff3b30",
+      "danger-hover": "#d70015",
+      "danger-active": "#a50011",
+      "success": "#30d158"
     },
     "tokens": {
       "colors": {
         "canvas": "#fdfcfc",
-        "surface": "#f9f9f9",
+        "surface": "#fdfcfc",
         "text": "#201d1d",
         "primary": "#201d1d",
         "onPrimary": "#fdfcfc",
-        "border": "#e0e0e0"
+        "border": "rgba(15,0,0,0.12)"
       },
       "typography": {
-        "display": "system-ui, sans-serif",
-        "body": "system-ui, sans-serif",
-        "displaySize": 48,
+        "display": "monospace",
+        "body": "monospace",
+        "displaySize": 38,
         "bodySize": 16,
-        "lineHeight": 1.6
+        "lineHeight": 1.5
       },
       "spacing": [
+        1,
         4,
         8,
+        12,
         16,
         24,
-        40,
-        64
+        32,
+        96
       ],
-      "radius": 6,
+      "radius": 4,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#201d1d",
+        "on-primary": "#fdfcfc",
+        "ink": "#201d1d",
+        "ink-deep": "#0f0000",
+        "charcoal": "#302c2c",
+        "body": "#424245",
+        "mute": "#646262",
+        "stone": "#6e6e73",
+        "ash": "#9a9898",
+        "canvas": "#fdfcfc",
+        "surface-soft": "#f8f7f7",
+        "surface-card": "#f1eeee",
+        "surface-dark": "#201d1d",
+        "surface-dark-elevated": "#302c2c",
+        "hairline": "rgba(15,0,0,0.12)",
+        "hairline-strong": "#646262",
+        "on-dark": "#fdfcfc",
+        "on-dark-mute": "#9a9898",
+        "accent": "#007aff",
+        "accent-hover": "#0056b3",
+        "accent-active": "#004085",
+        "warning": "#ff9f0a",
+        "warning-hover": "#cc7f08",
+        "warning-active": "#995f06",
+        "danger": "#ff3b30",
+        "danger-hover": "#d70015",
+        "danger-active": "#a50011",
+        "success": "#30d158"
+      },
+      "typography": {
+        "display-xl": {
+          "fontFamily": "Berkeley Mono",
+          "fontSize": "38px",
+          "fontWeight": 700,
+          "lineHeight": 1.5,
+          "letterSpacing": 0,
+          "declaredFamily": "Berkeley Mono",
+          "renderFallback": "monospace"
+        },
+        "body-md": {
+          "fontFamily": "Berkeley Mono",
+          "fontSize": "16px",
+          "fontWeight": 400,
+          "lineHeight": 1.5,
+          "letterSpacing": 0,
+          "declaredFamily": "Berkeley Mono",
+          "renderFallback": "monospace"
+        }
+      },
+      "spacing": {
+        "xxs": "1px",
+        "xs": "4px",
+        "sm": "8px",
+        "md": "12px",
+        "lg": "16px",
+        "xl": "24px",
+        "xxl": "32px",
+        "section": "96px"
+      },
+      "radius": {
+        "none": "0px",
+        "sm": "4px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#201d1d",
+          "textColor": "#fdfcfc",
+          "typography": {
+            "fontFamily": "Berkeley Mono",
+            "fontSize": "16px",
+            "fontWeight": 500,
+            "lineHeight": 2,
+            "letterSpacing": 0
+          },
+          "rounded": "4px",
+          "padding": "4px 20px",
+          "height": "36px"
+        }
+      },
+      "layout": "product",
+      "traits": "A terminal-native marketing system rendered entirely in Berkeley Mono — every word on the page, from the hero headline down to the footer fine print, is monospaced. The page itself reads like a manpage or a static-site README: warm cream canvas (`#fdfcfc`), nearly-black ink (`#201d1d`), 4px-radius rectangles for the few interactive elements, and bracketed `[+]`/`[-]` ASCII markers used as bullets. The brand's only \"visual moment\" is a single dark hero card that mocks up the OpenCode TUI itself — black background, monospaced terminal output, ASCII pipe characters, and a wordmark rendered as block-pixel ASCII. Every section sits as a hairline-bordered text block on the cream canvas with no shadows, no gradients, no decorative imagery, and no non-monospaced character anywhere in the system.\n",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "OpenCode"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "A terminal-native marketing system rendered entirely in Berkeley Mono — every word on the page, from the hero headline down to the footer fine print, is monospaced. The page itself reads like a manpage or a static-site README: warm cream canvas (`#fdfcfc`), nearly-black ink (`#201d1d`), 4px-radius rectangles for the few interactive elements, and bracketed `[+]`/`[-]` ASCII markers used as bullets. The brand's only \"visual moment\" is a single dark hero card that mocks up the OpenCode TUI itself — black background, monospaced terminal output, ASCII pipe characters, and a wordmark rendered as block-pixel ASCII. Every section sits as a hairline-bordered text block on the cream canvas with no shadows, no gradients, no decorative imagery, and no non-monospaced character anywhere in the system.\n",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "pinterest",
     "name": "Pinterest",
-    "description": "|",
+    "description": "A photography-first discovery system organized around the Pinterest Red CTA, the masonry pin grid, and a soft warm-cream chrome that gets out of the imagery's way.",
     "category": "E-commerce & Consumer",
     "subcategory": "Brand Design",
     "tags": [
@@ -2456,12 +7880,31 @@ export const vendorEntries: VendorEntry[] = [
       "ash": "#91918c",
       "stone": "#c8c8c1",
       "hairline": "#dadad3",
-      "hairline-soft": "#e5e5e0"
+      "hairline-soft": "#e5e5e0",
+      "on-secondary": "#000000",
+      "secondary-bg": "#e5e5e0",
+      "secondary-pressed": "#c8c8c1",
+      "canvas": "#ffffff",
+      "surface-soft": "#fbfbf9",
+      "surface-card": "#f6f6f3",
+      "surface-elevated": "#ffffff",
+      "on-dark": "#ffffff",
+      "on-dark-mute": "rgba(255,255,255,0.7)",
+      "surface-dark": "#262622",
+      "focus-outer": "#435ee5",
+      "focus-inner": "#ffffff",
+      "accent-pressed-blue": "#617bff",
+      "accent-purple": "#7e238b",
+      "accent-purple-deep": "#6845ab",
+      "success-deep": "#103c25",
+      "success-pale": "#c7f0da",
+      "error": "#9e0a0a",
+      "error-deep": "#cc001f"
     },
     "tokens": {
       "colors": {
         "canvas": "#ffffff",
-        "surface": "#f9f9f9",
+        "surface": "#ffffff",
         "text": "#000000",
         "primary": "#e60023",
         "onPrimary": "#ffffff",
@@ -2470,29 +7913,149 @@ export const vendorEntries: VendorEntry[] = [
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
+        "displaySize": 70,
         "bodySize": 16,
-        "lineHeight": 1.6
+        "lineHeight": 1.4
       },
       "spacing": [
         4,
+        6,
         8,
+        12,
         16,
         24,
-        40,
+        32,
         64
       ],
-      "radius": 6,
+      "radius": 16,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#e60023",
+        "on-primary": "#ffffff",
+        "primary-pressed": "#cc001f",
+        "ink": "#000000",
+        "ink-soft": "#211922",
+        "body": "#33332e",
+        "charcoal": "#262622",
+        "mute": "#62625b",
+        "ash": "#91918c",
+        "stone": "#c8c8c1",
+        "hairline": "#dadad3",
+        "hairline-soft": "#e5e5e0",
+        "on-secondary": "#000000",
+        "secondary-bg": "#e5e5e0",
+        "secondary-pressed": "#c8c8c1",
+        "canvas": "#ffffff",
+        "surface-soft": "#fbfbf9",
+        "surface-card": "#f6f6f3",
+        "surface-elevated": "#ffffff",
+        "on-dark": "#ffffff",
+        "on-dark-mute": "rgba(255,255,255,0.7)",
+        "surface-dark": "#262622",
+        "focus-outer": "#435ee5",
+        "focus-inner": "#ffffff",
+        "accent-pressed-blue": "#617bff",
+        "accent-purple": "#7e238b",
+        "accent-purple-deep": "#6845ab",
+        "success-deep": "#103c25",
+        "success-pale": "#c7f0da",
+        "error": "#9e0a0a",
+        "error-deep": "#cc001f"
+      },
+      "typography": {
+        "display-xl": {
+          "fontFamily": "Pin Sans",
+          "fontSize": "70px",
+          "fontWeight": 600,
+          "lineHeight": 1.1,
+          "letterSpacing": "-1.2px",
+          "declaredFamily": "Pin Sans",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-md": {
+          "fontFamily": "Pin Sans",
+          "fontSize": "16px",
+          "fontWeight": 400,
+          "lineHeight": 1.4,
+          "letterSpacing": 0,
+          "declaredFamily": "Pin Sans",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "4px",
+        "xs": "6px",
+        "sm": "8px",
+        "md": "12px",
+        "lg": "16px",
+        "xl": "24px",
+        "xxl": "32px",
+        "section": "64px"
+      },
+      "radius": {
+        "none": "0px",
+        "sm": "8px",
+        "md": "16px",
+        "lg": "32px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#e60023",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "Pin Sans",
+            "fontSize": "14px",
+            "fontWeight": 700,
+            "lineHeight": 1,
+            "letterSpacing": 0
+          },
+          "rounded": "16px",
+          "padding": "6px 14px",
+          "height": "40px"
+        },
+        "pin-card": {
+          "backgroundColor": "#f6f6f3",
+          "textColor": "#000000",
+          "rounded": "16px",
+          "padding": "0px"
+        },
+        "search-bar": {
+          "backgroundColor": "#f6f6f3",
+          "textColor": "#000000",
+          "typography": {
+            "fontFamily": "Pin Sans",
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "lineHeight": 1.4,
+            "letterSpacing": 0
+          },
+          "rounded": "9999px",
+          "padding": "11px 15px",
+          "height": "48px"
+        }
+      },
+      "layout": "gallery",
+      "traits": "A photography-first discovery system organized around the Pinterest Red CTA, the masonry pin grid, and a soft warm-cream chrome that gets out of the imagery's way. The home page is a content-discovery tool wearing the chrome of a magazine publisher: 70px display headlines, friendly Pin Sans typography, fully-rounded pill buttons (16px) on a cream-tinted neutral palette, and a sticky red \"Sign up\" CTA that anchors every viewport. Pin imagery is the system's load-bearing visual element — square, portrait, and landscape pins tile in a column-based masonry grid where each tile is a fully-rounded 16px-radius card, separated by tight 8px gutters. The chrome is otherwise quiet: warm grays, true whites, and a single saturated red — no decorative gradients, no atmospheric backgrounds, no shadows beyond a soft modal scrim.\n",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Pinterest"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "A photography-first discovery system organized around the Pinterest Red CTA, the masonry pin grid, and a soft warm-cream chrome that gets out of the imagery's way. The home page is a content-discovery tool wearing the chrome of a magazine publisher: 70px display headlines, friendly Pin Sans typography, fully-rounded pill buttons (16px) on a cream-tinted neutral palette, and a sticky red \"Sign up\" CTA that anchors every viewport. Pin imagery is the system's load-bearing visual element — square, portrait, and landscape pins tile in a column-based masonry grid where each tile is a fully-rounded 16px-radius card, separated by tight 8px gutters. The chrome is otherwise quiet: warm grays, true whites, and a single saturated red — no decorative gradients, no atmospheric backgrounds, no shadows beyond a soft modal scrim.\n",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "playstation",
-    "name": "Playstation",
-    "description": "|",
+    "name": "PlayStation",
+    "description": "A three-surface marketing system organized around alternating black, white, and PlayStation Blue chapters that scroll past the viewer like a console launch trailer.",
     "category": "Retro Web",
     "subcategory": "Brand Design",
     "tags": [
@@ -2514,48 +8077,205 @@ export const vendorEntries: VendorEntry[] = [
       "commerce-link-base": "#d63d00",
       "on-commerce": "#ffffff",
       "ink": "#000000",
-      "ink-deep": "#121314"
+      "ink-deep": "#121314",
+      "ink-elevated": "#181818",
+      "charcoal": "#1f2024",
+      "body-light": "rgba(0,0,0,0.6)",
+      "mute-light": "#6b6b6b",
+      "ash-light": "#cccccc",
+      "body-dark": "rgba(255,255,255,0.7)",
+      "mute-dark": "rgba(229,229,229,0.55)",
+      "ash-dark": "rgba(229,229,229,0.2)",
+      "canvas-light": "#ffffff",
+      "surface-soft": "#f3f3f3",
+      "surface-card": "#f5f7fa",
+      "surface-filter": "rgba(245,247,250,0.3)",
+      "canvas-dark": "#000000",
+      "surface-dark-elevated": "#121314",
+      "surface-dark-card": "#181818",
+      "hairline-light": "#f3f3f3",
+      "hairline-dark": "rgba(229,229,229,0.2)",
+      "on-dark": "#ffffff",
+      "on-dark-mute": "#cccccc",
+      "warning": "#c81b3a",
+      "ps-plus-gold-start": "#ffce21",
+      "ps-plus-gold-mid": "#f5a623",
+      "ps-plus-gold-end": "#ee8e00",
+      "marathon-yellow": "#deff20"
     },
     "tokens": {
       "colors": {
         "canvas": "#ffffff",
-        "surface": "#f9f9f9",
+        "surface": "#ffffff",
         "text": "#000000",
         "primary": "#0070d1",
         "onPrimary": "#ffffff",
-        "border": "#e0e0e0"
+        "border": "#f3f3f3"
       },
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
-        "bodySize": 16,
-        "lineHeight": 1.6
+        "displaySize": 54,
+        "bodySize": 18,
+        "lineHeight": 1.5
       },
       "spacing": [
         4,
         8,
+        12,
         16,
         24,
-        40,
-        64
+        32,
+        48,
+        96
       ],
-      "radius": 6,
+      "radius": 8,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#0070d1",
+        "primary-pressed": "#0064b7",
+        "primary-active": "#004d8d",
+        "on-primary": "#ffffff",
+        "link-light": "#0064b7",
+        "link-dark": "#53b1ff",
+        "commerce": "#d53b00",
+        "commerce-pressed": "#aa2f00",
+        "commerce-link-base": "#d63d00",
+        "on-commerce": "#ffffff",
+        "ink": "#000000",
+        "ink-deep": "#121314",
+        "ink-elevated": "#181818",
+        "charcoal": "#1f2024",
+        "body-light": "rgba(0,0,0,0.6)",
+        "mute-light": "#6b6b6b",
+        "ash-light": "#cccccc",
+        "body-dark": "rgba(255,255,255,0.7)",
+        "mute-dark": "rgba(229,229,229,0.55)",
+        "ash-dark": "rgba(229,229,229,0.2)",
+        "canvas-light": "#ffffff",
+        "surface-soft": "#f3f3f3",
+        "surface-card": "#f5f7fa",
+        "surface-filter": "rgba(245,247,250,0.3)",
+        "canvas-dark": "#000000",
+        "surface-dark-elevated": "#121314",
+        "surface-dark-card": "#181818",
+        "hairline-light": "#f3f3f3",
+        "hairline-dark": "rgba(229,229,229,0.2)",
+        "on-dark": "#ffffff",
+        "on-dark-mute": "#cccccc",
+        "warning": "#c81b3a",
+        "ps-plus-gold-start": "#ffce21",
+        "ps-plus-gold-mid": "#f5a623",
+        "ps-plus-gold-end": "#ee8e00",
+        "marathon-yellow": "#deff20"
+      },
+      "typography": {
+        "display-xl": {
+          "fontFamily": "PlayStation SST",
+          "fontSize": "54px",
+          "fontWeight": 300,
+          "lineHeight": 1.25,
+          "letterSpacing": "-0.1px",
+          "declaredFamily": "PlayStation SST",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-md": {
+          "fontFamily": "PlayStation SST",
+          "fontSize": "18px",
+          "fontWeight": 400,
+          "lineHeight": 1.5,
+          "letterSpacing": "0.1px",
+          "declaredFamily": "PlayStation SST",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "4px",
+        "xs": "8px",
+        "sm": "12px",
+        "md": "16px",
+        "lg": "24px",
+        "xl": "32px",
+        "xxl": "48px",
+        "section": "96px"
+      },
+      "radius": {
+        "none": "0px",
+        "sm": "4px",
+        "md": "8px",
+        "lg": "16px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#0070d1",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "PlayStation SST",
+            "fontSize": "18px",
+            "fontWeight": 700,
+            "lineHeight": 1.25,
+            "letterSpacing": "0.45px"
+          },
+          "rounded": "9999px",
+          "padding": "12px 28px",
+          "height": "48px"
+        },
+        "product-card": {
+          "backgroundColor": "#f5f7fa",
+          "textColor": "#000000",
+          "typography": {
+            "fontFamily": "PlayStation SST",
+            "fontSize": "18px",
+            "fontWeight": 400,
+            "lineHeight": 1.5,
+            "letterSpacing": "0.1px"
+          },
+          "rounded": "8px",
+          "padding": "24px"
+        },
+        "support-search-bar": {
+          "backgroundColor": "#ffffff",
+          "textColor": "#000000",
+          "typography": {
+            "fontFamily": "PlayStation SST",
+            "fontSize": "18px",
+            "fontWeight": 400,
+            "lineHeight": 1.5,
+            "letterSpacing": "0.1px"
+          },
+          "rounded": "9999px",
+          "padding": "12px 24px",
+          "height": "56px"
+        }
+      },
+      "layout": "gallery",
+      "traits": "A three-surface marketing system organized around alternating black, white, and PlayStation Blue chapters that scroll past the viewer like a console launch trailer. Each section has a single editorial purpose — hero photography, console product render, PS Plus tier callout, news strip — and each owns one of three full-bleed canvas modes. The chrome is unusually quiet for a gaming brand: bright PlayStation Blue (`#0070d1`) carries every primary CTA as a fully-rounded pill, the proprietary SST face renders display copy at a signature weight 300 (light) for an airy, premium feel, and a crisp 8px-radius secondary card system carries product info on either canvas mode. The system never decorates — no gradient backgrounds on chrome, no atmospheric mesh, no drop shadows beyond a faint section-divide. Imagery does all the heavy lifting: console glamour shots, game key art, and PS Plus tier illustrations occupy 60-90% of every section, with copy compressed into a small editorial slot.\n",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "PlayStation"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "A three-surface marketing system organized around alternating black, white, and PlayStation Blue chapters that scroll past the viewer like a console launch trailer. Each section has a single editorial purpose — hero photography, console product render, PS Plus tier callout, news strip — and each owns one of three full-bleed canvas modes. The chrome is unusually quiet for a gaming brand: bright PlayStation Blue (`#0070d1`) carries every primary CTA as a fully-rounded pill, the proprietary SST face renders display copy at a signature weight 300 (light) for an airy, premium feel, and a crisp 8px-radius secondary card system carries product info on either canvas mode. The system never decorates — no gradient backgrounds on chrome, no atmospheric mesh, no drop shadows beyond a faint section-divide. Imagery does all the heavy lifting: console glamour shots, game key art, and PS Plus tier illustrations occupy 60-90% of every section, with copy compressed into a small editorial slot.\n",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "posthog",
-    "name": "Posthog",
-    "description": "|",
+    "name": "PostHog",
+    "description": "A playful developer-tools system rendered on a warm cream canvas with hand-drawn hedgehog mascots dotted across every page like marginalia in a sketchbook.",
     "category": "SaaS & Productivity",
     "subcategory": "Brand Design",
     "tags": [
       "posthog",
-      "saas"
+      "saas",
+      "developer"
     ],
     "upstreamPath": "design-md/posthog/DESIGN.md",
     "upstreamCommit": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
@@ -2572,12 +8292,29 @@ export const vendorEntries: VendorEntry[] = [
       "ash": "#9b9c92",
       "stone": "#b6b7af",
       "hairline": "#bfc1b7",
-      "hairline-soft": "#dcdfd2"
+      "hairline-soft": "#dcdfd2",
+      "on-dark": "#ffffff",
+      "canvas": "#eeefe9",
+      "surface-soft": "#e5e7e0",
+      "surface-card": "#ffffff",
+      "surface-doc": "#fcfcfa",
+      "surface-dark": "#23251d",
+      "link-blue": "#1d4ed8",
+      "link-teal": "#1078a3",
+      "accent-blue": "#2c84e0",
+      "accent-blue-soft": "#dceaf6",
+      "accent-red": "#cd4239",
+      "accent-red-soft": "#f7d6d3",
+      "accent-green": "#2c8c66",
+      "accent-green-soft": "#d9eddf",
+      "accent-purple": "#7c44a6",
+      "accent-purple-soft": "#e7d8ee",
+      "focus-ring": "rgba(59,130,246,0.5)"
     },
     "tokens": {
       "colors": {
-        "canvas": "#ffffff",
-        "surface": "#f9f9f9",
+        "canvas": "#eeefe9",
+        "surface": "#eeefe9",
         "text": "#23251d",
         "primary": "#f7a501",
         "onPrimary": "#23251d",
@@ -2586,29 +8323,141 @@ export const vendorEntries: VendorEntry[] = [
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
+        "displaySize": 36,
         "bodySize": 16,
-        "lineHeight": 1.6
+        "lineHeight": 1.5
       },
       "spacing": [
+        2,
         4,
         8,
+        12,
         16,
         24,
-        40,
-        64
+        32,
+        80
       ],
       "radius": 6,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#f7a501",
+        "primary-pressed": "#dd9001",
+        "primary-active": "#b17816",
+        "on-primary": "#23251d",
+        "ink": "#23251d",
+        "body": "#4d4f46",
+        "charcoal": "#33342d",
+        "mute": "#6c6e63",
+        "ash": "#9b9c92",
+        "stone": "#b6b7af",
+        "hairline": "#bfc1b7",
+        "hairline-soft": "#dcdfd2",
+        "on-dark": "#ffffff",
+        "canvas": "#eeefe9",
+        "surface-soft": "#e5e7e0",
+        "surface-card": "#ffffff",
+        "surface-doc": "#fcfcfa",
+        "surface-dark": "#23251d",
+        "link-blue": "#1d4ed8",
+        "link-teal": "#1078a3",
+        "accent-blue": "#2c84e0",
+        "accent-blue-soft": "#dceaf6",
+        "accent-red": "#cd4239",
+        "accent-red-soft": "#f7d6d3",
+        "accent-green": "#2c8c66",
+        "accent-green-soft": "#d9eddf",
+        "accent-purple": "#7c44a6",
+        "accent-purple-soft": "#e7d8ee",
+        "focus-ring": "rgba(59,130,246,0.5)"
+      },
+      "typography": {
+        "display-xl": {
+          "fontFamily": "IBM Plex Sans Variable",
+          "fontSize": "36px",
+          "fontWeight": 700,
+          "lineHeight": 1.5,
+          "letterSpacing": 0,
+          "declaredFamily": "IBM Plex Sans Variable",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-md": {
+          "fontFamily": "IBM Plex Sans Variable",
+          "fontSize": "16px",
+          "fontWeight": 400,
+          "lineHeight": 1.5,
+          "letterSpacing": 0,
+          "declaredFamily": "IBM Plex Sans Variable",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "2px",
+        "xs": "4px",
+        "sm": "8px",
+        "md": "12px",
+        "lg": "16px",
+        "xl": "24px",
+        "xxl": "32px",
+        "section": "80px"
+      },
+      "radius": {
+        "none": "0px",
+        "xs": "2px",
+        "sm": "4px",
+        "md": "6px",
+        "lg": "8px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#f7a501",
+          "textColor": "#23251d",
+          "typography": {
+            "fontFamily": "IBM Plex Sans Variable",
+            "fontSize": "14px",
+            "fontWeight": 700,
+            "lineHeight": 1.5,
+            "letterSpacing": 0
+          },
+          "rounded": "6px",
+          "padding": "8px 16px",
+          "height": "40px"
+        },
+        "product-card": {
+          "backgroundColor": "#ffffff",
+          "textColor": "#23251d",
+          "typography": {
+            "fontFamily": "IBM Plex Sans Variable",
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "lineHeight": 1.5,
+            "letterSpacing": 0
+          },
+          "rounded": "6px",
+          "padding": "24px"
+        }
+      },
+      "layout": "product",
+      "traits": "A playful developer-tools system rendered on a warm cream canvas with hand-drawn hedgehog mascots dotted across every page like marginalia in a sketchbook. The chrome reads like a friendly engineering blog: olive-gray ink (#4d4f46) for body, deep olive-charcoal (#23251d) for headlines, IBM Plex Sans Variable typography in tight 1.43-line-height paragraphs, and a single saturated yellow-orange CTA pill (#f7a501) carrying every primary action. The system actively rejects the genre's typical somber dark-tech aesthetic in favor of a creamy, textbook-illustration sensibility — bordered cards stack on the cream canvas with 4–6px radii, doc sidebars use rounded outline-icon mini-illustrations, and the home page leans on cartoon characters (hedgehogs in lab coats, hedgehogs at terminals, hedgehogs in lounge chairs) as its signature decoration. Code samples and product analytics charts live inside white-on-cream cards with thin olive borders; the contrast between the playful illustration and the data-dense product imagery is the brand's signature voice.\n",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "PostHog"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "A playful developer-tools system rendered on a warm cream canvas with hand-drawn hedgehog mascots dotted across every page like marginalia in a sketchbook. The chrome reads like a friendly engineering blog: olive-gray ink (#4d4f46) for body, deep olive-charcoal (#23251d) for headlines, IBM Plex Sans Variable typography in tight 1.43-line-height paragraphs, and a single saturated yellow-orange CTA pill (#f7a501) carrying every primary action. The system actively rejects the genre's typical somber dark-tech aesthetic in favor of a creamy, textbook-illustration sensibility — bordered cards stack on the cream canvas with 4–6px radii, doc sidebars use rounded outline-icon mini-illustrations, and the home page leans on cartoon characters (hedgehogs in lab coats, hedgehogs at terminals, hedgehogs in lounge chairs) as its signature decoration. Code samples and product analytics charts live inside white-on-cream cards with thin olive borders; the contrast between the playful illustration and the data-dense product imagery is the brand's signature voice.\n",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "raycast",
     "name": "Raycast",
-    "description": "|",
+    "description": "Raycast's marketing system reads like an extended product screenshot.",
     "category": "Developer Tools",
     "subcategory": "Brand Design",
     "tags": [
@@ -2629,8 +8478,27 @@ export const vendorEntries: VendorEntry[] = [
       "ash": "#6a6b6c",
       "stone": "#434345",
       "on-dark": "#ffffff",
+      "on-dark-mute": "rgba(255,255,255,0.72)",
       "canvas": "#07080a",
-      "surface": "#0d0d0d"
+      "surface": "#0d0d0d",
+      "surface-elevated": "#101111",
+      "surface-card": "#121212",
+      "button-fg": "#18191a",
+      "hairline": "#242728",
+      "hairline-soft": "rgba(255,255,255,0.08)",
+      "hairline-strong": "rgba(255,255,255,0.16)",
+      "accent-blue": "#57c1ff",
+      "accent-blue-soft": "rgba(87,193,255,0.15)",
+      "accent-red": "#ff6161",
+      "accent-red-soft": "rgba(255,97,97,0.15)",
+      "accent-green": "#59d499",
+      "accent-green-soft": "rgba(89,212,153,0.15)",
+      "accent-yellow": "#ffc533",
+      "accent-yellow-soft": "rgba(255,197,51,0.15)",
+      "hero-stripe-start": "#ff5757",
+      "hero-stripe-end": "#a1131a",
+      "key-bg-start": "#121212",
+      "key-bg-end": "#0d0d0d"
     },
     "tokens": {
       "colors": {
@@ -2639,34 +8507,168 @@ export const vendorEntries: VendorEntry[] = [
         "text": "#f4f4f6",
         "primary": "#ffffff",
         "onPrimary": "#000000",
-        "border": "#e0e0e0"
+        "border": "#242728"
       },
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
-        "bodySize": 16,
+        "displaySize": 64,
+        "bodySize": 18,
         "lineHeight": 1.6
       },
       "spacing": [
+        2,
         4,
         8,
+        12,
         16,
         24,
-        40,
-        64
+        32,
+        96
       ],
-      "radius": 6,
+      "radius": 10,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#ffffff",
+        "primary-pressed": "#e8e8e8",
+        "on-primary": "#000000",
+        "ink": "#f4f4f6",
+        "body": "#cdcdcd",
+        "charcoal": "#d3d3d4",
+        "mute": "#9c9c9d",
+        "ash": "#6a6b6c",
+        "stone": "#434345",
+        "on-dark": "#ffffff",
+        "on-dark-mute": "rgba(255,255,255,0.72)",
+        "canvas": "#07080a",
+        "surface": "#0d0d0d",
+        "surface-elevated": "#101111",
+        "surface-card": "#121212",
+        "button-fg": "#18191a",
+        "hairline": "#242728",
+        "hairline-soft": "rgba(255,255,255,0.08)",
+        "hairline-strong": "rgba(255,255,255,0.16)",
+        "accent-blue": "#57c1ff",
+        "accent-blue-soft": "rgba(87,193,255,0.15)",
+        "accent-red": "#ff6161",
+        "accent-red-soft": "rgba(255,97,97,0.15)",
+        "accent-green": "#59d499",
+        "accent-green-soft": "rgba(89,212,153,0.15)",
+        "accent-yellow": "#ffc533",
+        "accent-yellow-soft": "rgba(255,197,51,0.15)",
+        "hero-stripe-start": "#ff5757",
+        "hero-stripe-end": "#a1131a",
+        "key-bg-start": "#121212",
+        "key-bg-end": "#0d0d0d"
+      },
+      "typography": {
+        "display-xl": {
+          "fontFamily": "Inter",
+          "fontSize": "64px",
+          "fontWeight": 600,
+          "lineHeight": 1.1,
+          "letterSpacing": 0,
+          "fontFeature": "\"calt\", \"kern\", \"liga\", \"ss03\"",
+          "declaredFamily": "Inter",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-lg": {
+          "fontFamily": "Inter",
+          "fontSize": "18px",
+          "fontWeight": 400,
+          "lineHeight": 1.6,
+          "letterSpacing": 0,
+          "fontFeature": "\"calt\", \"kern\", \"liga\", \"ss03\"",
+          "declaredFamily": "Inter",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "2px",
+        "xs": "4px",
+        "sm": "8px",
+        "md": "12px",
+        "lg": "16px",
+        "xl": "24px",
+        "xxl": "32px",
+        "section": "96px"
+      },
+      "radius": {
+        "none": "0px",
+        "xs": "4px",
+        "sm": "6px",
+        "md": "8px",
+        "lg": "10px",
+        "xl": "16px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#ffffff",
+          "textColor": "#000000",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": "14px",
+            "fontWeight": 500,
+            "lineHeight": 1.6,
+            "letterSpacing": "0.2px",
+            "fontFeature": "\"calt\", \"kern\", \"liga\", \"ss03\""
+          },
+          "rounded": "8px",
+          "padding": "8px 16px",
+          "height": "36px"
+        },
+        "command-palette-card": {
+          "backgroundColor": "#0d0d0d",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "lineHeight": 1.6,
+            "letterSpacing": 0,
+            "fontFeature": "\"calt\", \"kern\", \"liga\", \"ss03\""
+          },
+          "rounded": "10px",
+          "padding": "0px"
+        },
+        "store-search-bar": {
+          "backgroundColor": "#101111",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "lineHeight": 1.6,
+            "letterSpacing": 0,
+            "fontFeature": "\"calt\", \"kern\", \"liga\", \"ss03\""
+          },
+          "rounded": "8px",
+          "padding": "10px 16px",
+          "height": "44px"
+        }
+      },
+      "layout": "product",
+      "traits": "Raycast's marketing system reads like an extended product screenshot. The chrome IS the in-product chrome at marketing scale: pure-near-black canvas, hairline 1px borders, command-palette-style cards, Inter typography with the ss03 stylistic set enabled site-wide, white CTA pill, and a small set of saturated category accent colors (yellow / red / green / blue) reserved for extension and feature illustrations. Section rhythm is generous (~96px) but the page never breaks tonal continuity — the whole site sits in one continuous dark mode.\n",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Raycast"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "Raycast's marketing system reads like an extended product screenshot. The chrome IS the in-product chrome at marketing scale: pure-near-black canvas, hairline 1px borders, command-palette-style cards, Inter typography with the ss03 stylistic set enabled site-wide, white CTA pill, and a small set of saturated category accent colors (yellow / red / green / blue) reserved for extension and feature illustrations. Section rhythm is generous (~96px) but the page never breaks tonal continuity — the whole site sits in one continuous dark mode.\n",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "renault",
     "name": "Renault",
-    "description": "|",
+    "description": "Renault's web presence pairs the freshly-modernised Renault diamond",
     "category": "Automotive",
     "subcategory": "Brand Design",
     "tags": [
@@ -2687,49 +8689,166 @@ export const vendorEntries: VendorEntry[] = [
       "ash": "#8a8a8a",
       "stone": "#c4c4c4",
       "on-dark": "#ffffff",
+      "on-dark-mute": "rgba(255,255,255,0.72)",
       "canvas": "#ffffff",
-      "surface-soft": "#f7f7f7"
+      "surface-soft": "#f7f7f7",
+      "surface-card": "#ffffff",
+      "surface-dark": "#000000",
+      "surface-deep": "#111111",
+      "hairline": "#f2f2f2",
+      "hairline-strong": "#000000",
+      "divider-dark": "rgba(255,255,255,0.16)",
+      "badge-new": "#ffed00",
+      "link": "#0000ee",
+      "error": "#be6464",
+      "warning": "#f0ad4e",
+      "success": "#8dc572",
+      "info": "#337ab7"
     },
     "tokens": {
       "colors": {
         "canvas": "#ffffff",
-        "surface": "#f9f9f9",
+        "surface": "#ffffff",
         "text": "#000000",
         "primary": "#ffed00",
         "onPrimary": "#000000",
-        "border": "#e0e0e0"
+        "border": "#f2f2f2"
       },
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
-        "bodySize": 16,
-        "lineHeight": 1.6
+        "displaySize": 56,
+        "bodySize": 18,
+        "lineHeight": 1.5
       },
       "spacing": [
         4,
         8,
+        12,
         16,
+        20,
         24,
+        32,
         40,
-        64
+        80
       ],
-      "radius": 6,
+      "radius": 0,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#ffed00",
+        "primary-deep": "#e6d200",
+        "on-primary": "#000000",
+        "ink": "#000000",
+        "body": "#222222",
+        "charcoal": "#333333",
+        "mute": "#666666",
+        "ash": "#8a8a8a",
+        "stone": "#c4c4c4",
+        "on-dark": "#ffffff",
+        "on-dark-mute": "rgba(255,255,255,0.72)",
+        "canvas": "#ffffff",
+        "surface-soft": "#f7f7f7",
+        "surface-card": "#ffffff",
+        "surface-dark": "#000000",
+        "surface-deep": "#111111",
+        "hairline": "#f2f2f2",
+        "hairline-strong": "#000000",
+        "divider-dark": "rgba(255,255,255,0.16)",
+        "badge-new": "#ffed00",
+        "link": "#0000ee",
+        "error": "#be6464",
+        "warning": "#f0ad4e",
+        "success": "#8dc572",
+        "info": "#337ab7"
+      },
+      "typography": {
+        "display-xl": {
+          "fontFamily": "NouvelR",
+          "fontSize": "56px",
+          "fontWeight": 700,
+          "lineHeight": 0.95,
+          "letterSpacing": 0,
+          "declaredFamily": "NouvelR",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-lg": {
+          "fontFamily": "NouvelR",
+          "fontSize": "18px",
+          "fontWeight": 400,
+          "lineHeight": 1.5,
+          "letterSpacing": 0,
+          "declaredFamily": "NouvelR",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "4px",
+        "xs": "8px",
+        "sm": "12px",
+        "md": "16px",
+        "lg": "20px",
+        "xl": "24px",
+        "xxl": "32px",
+        "xxxl": "40px",
+        "section": "80px"
+      },
+      "radius": {
+        "none": "0px",
+        "xs": "2px",
+        "sm": "3px",
+        "md": "4px",
+        "pill": "46px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#ffed00",
+          "textColor": "#000000",
+          "typography": {
+            "fontFamily": "NouvelR",
+            "fontSize": "14.4px",
+            "fontWeight": 700,
+            "lineHeight": 1,
+            "letterSpacing": "0.144px"
+          },
+          "rounded": "2px",
+          "padding": "14px 24px",
+          "height": "48px"
+        },
+        "vehicle-card": {
+          "backgroundColor": "#ffffff",
+          "textColor": "#000000",
+          "rounded": "0px",
+          "padding": 0
+        }
+      },
+      "layout": "gallery",
+      "traits": "Renault's web presence pairs the freshly-modernised Renault diamond\n(the 2021 flat-line rhombus mark) with a stark black-and-white canvas, a\nsignature Sunlight Yellow accent, and the proprietary NouvelR display\ntypeface. The system reads as confident, photography-first automotive — large\nhero cars on neutral or atmospheric backdrops, square-edged or barely-rounded\ncontainers, and a small disciplined palette where every coloured element is\nintentional. Tile grids, full-bleed banners, and a recurring \"configurator\"\nsurface (white card, yellow accent dots, neutral product chrome) carry the\nmass-market dealership tone without crossing into luxury.\n",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Renault"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "Renault's web presence pairs the freshly-modernised Renault diamond\n(the 2021 flat-line rhombus mark) with a stark black-and-white canvas, a\nsignature Sunlight Yellow accent, and the proprietary NouvelR display\ntypeface. The system reads as confident, photography-first automotive — large\nhero cars on neutral or atmospheric backdrops, square-edged or barely-rounded\ncontainers, and a small disciplined palette where every coloured element is\nintentional. Tile grids, full-bleed banners, and a recurring \"configurator\"\nsurface (white card, yellow accent dots, neutral product chrome) carry the\nmass-market dealership tone without crossing into luxury.\n",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "replicate",
     "name": "Replicate",
-    "description": "|",
+    "description": "Replicate's marketing surfaces pair the warm-cream developer-tools aesthetic",
     "category": "AI & LLM",
     "subcategory": "Brand Design",
     "tags": [
       "replicate",
-      "ai"
+      "ai",
+      "developer"
     ],
     "upstreamPath": "design-md/replicate/DESIGN.md",
     "upstreamCommit": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
@@ -2745,44 +8864,171 @@ export const vendorEntries: VendorEntry[] = [
       "ash": "#8d8d8d",
       "stone": "#bbbbbb",
       "on-dark": "#fcfcfc",
+      "on-dark-mute": "rgba(252,252,252,0.72)",
       "canvas": "#f9f7f3",
-      "surface-bone": "#f3f0e8"
+      "surface-bone": "#f3f0e8",
+      "surface-card": "#ffffff",
+      "surface-dark": "#202020",
+      "surface-deep": "#000000",
+      "hairline": "rgba(32,32,32,0.12)",
+      "hairline-strong": "#202020",
+      "divider-dark": "rgba(255,255,255,0.2)",
+      "hero-warm": "#ea2804",
+      "hero-glow": "#ff6a3d",
+      "hero-pink": "#f4a8a0",
+      "badge-success": "#2b9a66",
+      "link": "#ea2804",
+      "ring-focus": "rgba(59,130,246,0.5)",
+      "github-dark": "#24292e"
     },
     "tokens": {
       "colors": {
         "canvas": "#f9f7f3",
-        "surface": "#f9f9f9",
+        "surface": "#f9f7f3",
         "text": "#202020",
         "primary": "#ea2804",
         "onPrimary": "#ffffff",
-        "border": "#e0e0e0"
+        "border": "rgba(32,32,32,0.12)"
       },
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
-        "bodySize": 16,
-        "lineHeight": 1.6
+        "displaySize": 128,
+        "bodySize": 18,
+        "lineHeight": 1.56
       },
       "spacing": [
+        2,
         4,
         8,
+        12,
         16,
         24,
-        40,
-        64
+        32,
+        48,
+        96,
+        160
       ],
-      "radius": 6,
+      "radius": 10,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#ea2804",
+        "primary-deep": "#c01f00",
+        "on-primary": "#ffffff",
+        "ink": "#202020",
+        "body": "#3a3a3a",
+        "charcoal": "#575757",
+        "mute": "#646464",
+        "ash": "#8d8d8d",
+        "stone": "#bbbbbb",
+        "on-dark": "#fcfcfc",
+        "on-dark-mute": "rgba(252,252,252,0.72)",
+        "canvas": "#f9f7f3",
+        "surface-bone": "#f3f0e8",
+        "surface-card": "#ffffff",
+        "surface-dark": "#202020",
+        "surface-deep": "#000000",
+        "hairline": "rgba(32,32,32,0.12)",
+        "hairline-strong": "#202020",
+        "divider-dark": "rgba(255,255,255,0.2)",
+        "hero-warm": "#ea2804",
+        "hero-glow": "#ff6a3d",
+        "hero-pink": "#f4a8a0",
+        "badge-success": "#2b9a66",
+        "link": "#ea2804",
+        "ring-focus": "rgba(59,130,246,0.5)",
+        "github-dark": "#24292e"
+      },
+      "typography": {
+        "display-xxl": {
+          "fontFamily": "rb-freigeist-neue",
+          "fontSize": "128px",
+          "fontWeight": 700,
+          "lineHeight": 1,
+          "letterSpacing": "-3px",
+          "declaredFamily": "rb-freigeist-neue",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-lg": {
+          "fontFamily": "basier-square",
+          "fontSize": "18px",
+          "fontWeight": 400,
+          "lineHeight": 1.56,
+          "letterSpacing": 0,
+          "declaredFamily": "basier-square",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "2px",
+        "xs": "4px",
+        "sm": "8px",
+        "md": "12px",
+        "lg": "16px",
+        "xl": "24px",
+        "xxl": "32px",
+        "xxxl": "48px",
+        "section": "96px",
+        "band": "160px"
+      },
+      "radius": {
+        "none": "0px",
+        "xs": "4px",
+        "sm": "6px",
+        "md": "10px",
+        "lg": "16px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#ea2804",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "basier-square",
+            "fontSize": "16px",
+            "fontWeight": 600,
+            "lineHeight": 1,
+            "letterSpacing": 0
+          },
+          "rounded": "9999px",
+          "padding": "12px 24px",
+          "height": "44px"
+        },
+        "model-card": {
+          "backgroundColor": "#ffffff",
+          "textColor": "#202020",
+          "typography": {
+            "fontFamily": "basier-square",
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "lineHeight": 1.5,
+            "letterSpacing": 0
+          },
+          "rounded": "10px",
+          "padding": "16px"
+        }
+      },
+      "layout": "gallery",
+      "traits": "Replicate's marketing surfaces pair the warm-cream developer-tools aesthetic\nof an indie ML playground with a confident hot-orange brand accent and a\nsignature display typeface (rb-freigeist-neue) sized aggressively large at\n72px+. The system reads as \"AI lab notebook crossed with print magazine\":\ncream and bone surfaces, dark ink type, monospace code wells, irregular\nhand-drawn-feeling diagrams, and a rich orange used scarcely on the most\nconsequential CTA. Photography of contributors and example outputs is\nsquare-ish with mid-radius corners; everything else is borderless or hairline.\n",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Replicate"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "Replicate's marketing surfaces pair the warm-cream developer-tools aesthetic\nof an indie ML playground with a confident hot-orange brand accent and a\nsignature display typeface (rb-freigeist-neue) sized aggressively large at\n72px+. The system reads as \"AI lab notebook crossed with print magazine\":\ncream and bone surfaces, dark ink type, monospace code wells, irregular\nhand-drawn-feeling diagrams, and a rich orange used scarcely on the most\nconsequential CTA. Photography of contributors and example outputs is\nsquare-ish with mid-radius corners; everything else is borderless or hairline.\n",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "resend",
     "name": "Resend",
-    "description": "|",
+    "description": "Resend's marketing surfaces sit on a near-pure black canvas with off-white",
     "category": "SaaS & Productivity",
     "subcategory": "Brand Design",
     "tags": [
@@ -2796,51 +9042,183 @@ export const vendorEntries: VendorEntry[] = [
       "primary": "#fcfdff",
       "primary-on": "#000000",
       "ink": "#fcfdff",
+      "body": "rgba(252,253,255,0.86)",
+      "charcoal": "rgba(252,253,255,0.7)",
       "mute": "#a1a4a5",
       "ash": "#888e90",
       "stone": "#464a4d",
       "on-light": "#000000",
+      "on-light-mute": "rgba(0,0,51,0.7)",
       "canvas": "#000000",
       "surface-card": "#0a0a0c",
       "surface-elevated": "#101012",
       "surface-deep": "#06060a",
-      "accent-orange": "#ff801f"
+      "hairline": "rgba(255,255,255,0.06)",
+      "hairline-strong": "rgba(255,255,255,0.14)",
+      "divider-soft": "rgba(255,255,255,0.04)",
+      "accent-orange": "#ff801f",
+      "accent-orange-glow": "rgba(255,89,0,0.22)",
+      "accent-yellow": "#ffc53d",
+      "accent-blue": "#3b9eff",
+      "accent-blue-glow": "rgba(0,117,255,0.34)",
+      "accent-green": "#11ff99",
+      "accent-green-glow": "rgba(34,255,153,0.18)",
+      "accent-red": "#ff2047",
+      "accent-red-glow": "rgba(255,32,71,0.34)",
+      "link": "#3b9eff",
+      "surface-light": "#f1f7fe"
     },
     "tokens": {
       "colors": {
         "canvas": "#000000",
-        "surface": "#f9f9f9",
+        "surface": "#000000",
         "text": "#fcfdff",
         "primary": "#fcfdff",
-        "onPrimary": "#ffffff",
-        "border": "#e0e0e0"
+        "onPrimary": "#111111",
+        "border": "rgba(255,255,255,0.06)"
       },
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
-        "bodySize": 16,
-        "lineHeight": 1.6
+        "displaySize": 96,
+        "bodySize": 18,
+        "lineHeight": 1.5
       },
       "spacing": [
+        2,
         4,
         8,
+        12,
         16,
         24,
-        40,
-        64
+        32,
+        48,
+        96,
+        128
       ],
-      "radius": 6,
+      "radius": 12,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#fcfdff",
+        "primary-on": "#000000",
+        "ink": "#fcfdff",
+        "body": "rgba(252,253,255,0.86)",
+        "charcoal": "rgba(252,253,255,0.7)",
+        "mute": "#a1a4a5",
+        "ash": "#888e90",
+        "stone": "#464a4d",
+        "on-light": "#000000",
+        "on-light-mute": "rgba(0,0,51,0.7)",
+        "canvas": "#000000",
+        "surface-card": "#0a0a0c",
+        "surface-elevated": "#101012",
+        "surface-deep": "#06060a",
+        "hairline": "rgba(255,255,255,0.06)",
+        "hairline-strong": "rgba(255,255,255,0.14)",
+        "divider-soft": "rgba(255,255,255,0.04)",
+        "accent-orange": "#ff801f",
+        "accent-orange-glow": "rgba(255,89,0,0.22)",
+        "accent-yellow": "#ffc53d",
+        "accent-blue": "#3b9eff",
+        "accent-blue-glow": "rgba(0,117,255,0.34)",
+        "accent-green": "#11ff99",
+        "accent-green-glow": "rgba(34,255,153,0.18)",
+        "accent-red": "#ff2047",
+        "accent-red-glow": "rgba(255,32,71,0.34)",
+        "link": "#3b9eff",
+        "surface-light": "#f1f7fe"
+      },
+      "typography": {
+        "display-xxl": {
+          "fontFamily": "Domaine Display",
+          "fontSize": "96px",
+          "fontWeight": 400,
+          "lineHeight": 1,
+          "letterSpacing": "-0.96px",
+          "fontFeature": "ss01, ss04, ss11",
+          "declaredFamily": "Domaine Display",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-lg": {
+          "fontFamily": "Inter",
+          "fontSize": "18px",
+          "fontWeight": 400,
+          "lineHeight": 1.5,
+          "declaredFamily": "Inter",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "2px",
+        "xs": "4px",
+        "sm": "8px",
+        "md": "12px",
+        "lg": "16px",
+        "xl": "24px",
+        "xxl": "32px",
+        "xxxl": "48px",
+        "section": "96px",
+        "band": "128px"
+      },
+      "radius": {
+        "none": "0px",
+        "xs": "4px",
+        "sm": "6px",
+        "md": "8px",
+        "lg": "12px",
+        "xl": "16px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#fcfdff",
+          "textColor": "#000000",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": "14px",
+            "fontWeight": 500,
+            "lineHeight": 1.43
+          },
+          "rounded": "8px",
+          "padding": "8px 16px",
+          "height": "36px"
+        },
+        "feature-card": {
+          "backgroundColor": "#0a0a0c",
+          "textColor": "#fcfdff",
+          "typography": {
+            "fontFamily": "ABC Favorit",
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "lineHeight": 1.5,
+            "letterSpacing": "-0.8px",
+            "fontFeature": "ss01, ss04, ss11"
+          },
+          "rounded": "12px",
+          "padding": "32px"
+        }
+      },
+      "layout": "editorial",
+      "traits": "Resend's marketing surfaces sit on a near-pure black canvas with off-white\ntext and a single signature color — the deep editorial-serif Domaine\nDisplay headline mark — that gives an otherwise utilitarian developer-tool\nbrand its print-magazine confidence. The system pairs Domaine Display\n(oversized 76px–96px serif, ss01/ss04/ss11 features on) with ABC Favorit\nfor body and Inter for UI. Surfaces rely on subtle 6–9% opacity gradient\nglows, hairline 1px borders made from translucent white, and a strict\nrounded-12px container vocabulary. There is no decorative chrome — just\ntype, code, and atmospheric depth.\n",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Resend"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "Resend's marketing surfaces sit on a near-pure black canvas with off-white\ntext and a single signature color — the deep editorial-serif Domaine\nDisplay headline mark — that gives an otherwise utilitarian developer-tool\nbrand its print-magazine confidence. The system pairs Domaine Display\n(oversized 76px–96px serif, ss01/ss04/ss11 features on) with ABC Favorit\nfor body and Inter for UI. Surfaces rely on subtle 6–9% opacity gradient\nglows, hairline 1px borders made from translucent white, and a strict\nrounded-12px container vocabulary. There is no decorative chrome — just\ntype, code, and atmospheric depth.\n",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "revolut",
     "name": "Revolut",
-    "description": "|",
+    "description": "Revolut's marketing surfaces pair a stark black canvas with the brand's",
     "category": "Fintech & Crypto",
     "subcategory": "Brand Design",
     "tags": [
@@ -2862,133 +9240,551 @@ export const vendorEntries: VendorEntry[] = [
       "ash": "#5c5e60",
       "stone": "#8d969e",
       "faint": "#c9c9cd",
-      "on-dark": "#ffffff"
+      "on-dark": "#ffffff",
+      "on-dark-mute": "rgba(255,255,255,0.72)",
+      "canvas-light": "#ffffff",
+      "canvas-dark": "#000000",
+      "surface-soft": "#f4f4f4",
+      "surface-card": "#ffffff",
+      "surface-deep": "#0a0a0a",
+      "surface-elevated": "#16181a",
+      "hairline-light": "#e2e2e7",
+      "hairline-dark": "rgba(255,255,255,0.12)",
+      "hairline-strong": "#191c1f",
+      "divider-soft": "rgba(255,255,255,0.06)",
+      "accent-teal": "#00a87e",
+      "accent-blue-link": "#376cd5",
+      "accent-light-blue": "#007bc2",
+      "accent-light-green": "#428619",
+      "accent-green-text": "#006400",
+      "accent-yellow": "#b09000",
+      "accent-warning": "#ec7e00",
+      "accent-pink": "#e61e49",
+      "accent-danger": "#e23b4a",
+      "accent-deep-red": "#8b0000",
+      "accent-brown": "#936d62",
+      "link": "#376cd5"
     },
     "tokens": {
       "colors": {
-        "canvas": "#ffffff",
-        "surface": "#f9f9f9",
-        "text": "#191c1f",
+        "canvas": "#000000",
+        "surface": "#000000",
+        "text": "#ffffff",
         "primary": "#494fdf",
         "onPrimary": "#ffffff",
-        "border": "#e0e0e0"
+        "border": "rgba(255,255,255,0.12)"
       },
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
-        "bodySize": 16,
-        "lineHeight": 1.6
+        "displaySize": 136,
+        "bodySize": 18,
+        "lineHeight": 1.56
       },
       "spacing": [
         4,
+        6,
         8,
+        14,
         16,
         24,
-        40,
-        64
+        32,
+        48,
+        80,
+        88,
+        120
       ],
-      "radius": 6,
+      "radius": 20,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#494fdf",
+        "primary-bright": "#4f55f1",
+        "primary-deep": "#3a40c4",
+        "on-primary": "#ffffff",
+        "ink": "#191c1f",
+        "body": "#1f2226",
+        "charcoal": "#3a3d40",
+        "mute": "#505a63",
+        "ash": "#5c5e60",
+        "stone": "#8d969e",
+        "faint": "#c9c9cd",
+        "on-dark": "#ffffff",
+        "on-dark-mute": "rgba(255,255,255,0.72)",
+        "canvas-light": "#ffffff",
+        "canvas-dark": "#000000",
+        "surface-soft": "#f4f4f4",
+        "surface-card": "#ffffff",
+        "surface-deep": "#0a0a0a",
+        "surface-elevated": "#16181a",
+        "hairline-light": "#e2e2e7",
+        "hairline-dark": "rgba(255,255,255,0.12)",
+        "hairline-strong": "#191c1f",
+        "divider-soft": "rgba(255,255,255,0.06)",
+        "accent-teal": "#00a87e",
+        "accent-blue-link": "#376cd5",
+        "accent-light-blue": "#007bc2",
+        "accent-light-green": "#428619",
+        "accent-green-text": "#006400",
+        "accent-yellow": "#b09000",
+        "accent-warning": "#ec7e00",
+        "accent-pink": "#e61e49",
+        "accent-danger": "#e23b4a",
+        "accent-deep-red": "#8b0000",
+        "accent-brown": "#936d62",
+        "link": "#376cd5"
+      },
+      "typography": {
+        "display-xxl": {
+          "fontFamily": "Aeonik Pro",
+          "fontSize": "136px",
+          "fontWeight": 500,
+          "lineHeight": 1,
+          "letterSpacing": "-2.72px",
+          "declaredFamily": "Aeonik Pro",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-lg": {
+          "fontFamily": "Inter",
+          "fontSize": "18px",
+          "fontWeight": 400,
+          "lineHeight": 1.56,
+          "letterSpacing": "-0.09px",
+          "declaredFamily": "Inter",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "4px",
+        "xs": "6px",
+        "sm": "8px",
+        "md": "14px",
+        "lg": "16px",
+        "xl": "24px",
+        "xxl": "32px",
+        "xxxl": "48px",
+        "block": "80px",
+        "section": "88px",
+        "band": "120px"
+      },
+      "radius": {
+        "none": "0px",
+        "sm": "8px",
+        "md": "12px",
+        "lg": "20px",
+        "xl": "28px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#ffffff",
+          "textColor": "#000000",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": "16px",
+            "fontWeight": 600,
+            "lineHeight": 1.5,
+            "letterSpacing": "0.24px"
+          },
+          "rounded": "9999px",
+          "padding": "14px 28px",
+          "height": "48px"
+        },
+        "feature-card-light": {
+          "backgroundColor": "#ffffff",
+          "textColor": "#191c1f",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "lineHeight": 1.5,
+            "letterSpacing": "0.24px"
+          },
+          "rounded": "20px",
+          "padding": "32px"
+        }
+      },
+      "layout": "gallery",
+      "traits": "Revolut's marketing surfaces pair a stark black canvas with the brand's\ncobalt-violet (`#494fdf`) and a wide accent palette of deep, fully-saturated\nproduct colours — teal, light-blue, deep pink, light-green, warning orange.\nThe system reads as fintech-meets-product-brochure: oversized 80px–136px\nAeonik Pro display headlines, generous whitespace, photography-led hero\nbands, and full-width product mockups (cards, phones, terminals) shown as\nhero objects inside near-black sections. Most surfaces are either black or\noff-white; pill-shaped buttons and rounded-12/20px content cards carry the\nconsumer-financial-app feel without crossing into playful territory.\n",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Revolut"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "Revolut's marketing surfaces pair a stark black canvas with the brand's\ncobalt-violet (`#494fdf`) and a wide accent palette of deep, fully-saturated\nproduct colours — teal, light-blue, deep pink, light-green, warning orange.\nThe system reads as fintech-meets-product-brochure: oversized 80px–136px\nAeonik Pro display headlines, generous whitespace, photography-led hero\nbands, and full-width product mockups (cards, phones, terminals) shown as\nhero objects inside near-black sections. Most surfaces are either black or\noff-white; pill-shaped buttons and rounded-12/20px content cards carry the\nconsumer-financial-app feel without crossing into playful territory.\n",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "runwayml",
-    "name": "Runwayml",
-    "description": "",
+    "name": "Runway",
+    "description": "Runway's interface is a cinematic reel brought to life as a website — a dark, editorial, film-production-grade design where full-bleed photography and video ARE the primary UI elements.",
     "category": "AI & LLM",
     "subcategory": "Brand Design",
     "tags": [
       "runwayml",
-      "ai"
+      "ai",
+      "dark",
+      "editorial"
     ],
     "upstreamPath": "design-md/runwayml/DESIGN.md",
     "upstreamCommit": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
     "importedAt": "2026-09-08",
-    "colors": {},
+    "colors": {
+      "runway-black": "#000000",
+      "deep-black": "#030303",
+      "dark-surface": "#1a1a1a",
+      "pure-white": "#ffffff",
+      "near-white": "#fefefe",
+      "cool-cloud": "#e9ecf2",
+      "border-dark": "#27272a",
+      "charcoal": "#404040",
+      "near-charcoal": "#3f3f3f",
+      "cool-slate": "#767d88",
+      "mid-slate": "#7d848e",
+      "muted-gray": "#a7a7a7",
+      "cool-silver": "#c9ccd1",
+      "light-silver": "#d0d4d4",
+      "tailwind-gray": "#6b7280",
+      "dark-link": "#0c0c0c",
+      "footer-gray": "#999999",
+      "canvas": "#000000",
+      "ink": "#ffffff",
+      "body": "#ffffff",
+      "hairline": "#c9ccd1"
+    },
     "tokens": {
       "colors": {
-        "canvas": "#ffffff",
-        "surface": "#f9f9f9",
-        "text": "#111111",
-        "primary": "#333",
+        "canvas": "#000000",
+        "surface": "#000000",
+        "text": "#ffffff",
+        "primary": "#333333",
         "onPrimary": "#ffffff",
-        "border": "#e0e0e0"
+        "border": "#c9ccd1"
       },
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
         "displaySize": 48,
         "bodySize": 16,
-        "lineHeight": 1.6
+        "lineHeight": 1.3
       },
       "spacing": [
         4,
+        6,
         8,
+        12,
         16,
+        20,
         24,
-        40,
-        64
+        28,
+        32,
+        48,
+        64,
+        78
       ],
-      "radius": 6,
+      "radius": 4,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "runway-black": "#000000",
+        "deep-black": "#030303",
+        "dark-surface": "#1a1a1a",
+        "pure-white": "#ffffff",
+        "near-white": "#fefefe",
+        "cool-cloud": "#e9ecf2",
+        "border-dark": "#27272a",
+        "charcoal": "#404040",
+        "near-charcoal": "#3f3f3f",
+        "cool-slate": "#767d88",
+        "mid-slate": "#7d848e",
+        "muted-gray": "#a7a7a7",
+        "cool-silver": "#c9ccd1",
+        "light-silver": "#d0d4d4",
+        "tailwind-gray": "#6b7280",
+        "dark-link": "#0c0c0c",
+        "footer-gray": "#999999",
+        "canvas": "#000000",
+        "ink": "#ffffff",
+        "body": "#ffffff",
+        "hairline": "#c9ccd1"
+      },
+      "typography": {
+        "display-hero": {
+          "fontFamily": "abcNormal",
+          "fontSize": "48px",
+          "fontWeight": "400",
+          "lineHeight": "1.00",
+          "letterSpacing": "-1.2px",
+          "sourceCells": [
+            "Display / Hero",
+            "abcNormal",
+            "48px (3rem)",
+            "400",
+            "1.00 (tight)",
+            "-1.2px",
+            "Maximum size, film-title presence"
+          ],
+          "declaredFamily": "abcNormal",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-button": {
+          "fontFamily": "abcNormal",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "1.30",
+          "letterSpacing": "-0.16px",
+          "sourceCells": [
+            "Body / Button",
+            "abcNormal",
+            "16px (1rem)",
+            "400–600",
+            "1.30–1.50",
+            "-0.16px to normal",
+            "Standard body, nav links"
+          ],
+          "declaredFamily": "abcNormal",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "observed-8": "8px",
+        "observed-4": "4px",
+        "observed-6": "6px",
+        "observed-12": "12px",
+        "observed-16": "16px",
+        "observed-20": "20px",
+        "observed-24": "24px",
+        "observed-28": "28px",
+        "observed-32": "32px",
+        "observed-48": "48px",
+        "observed-64": "64px",
+        "observed-78": "78px"
+      },
+      "radius": {
+        "observed-4": "4px",
+        "observed-6": "6px",
+        "observed-8": "8px",
+        "observed-16": "16px"
+      },
+      "border": {
+        "cards-containers": "1px solid #27272a"
+      },
+      "components": {
+        "cards-containers": {
+          "border": "1px solid #27272a"
+        }
+      },
+      "layout": "gallery",
+      "traits": "Runway's interface is a cinematic reel brought to life as a website — a dark, editorial, film-production-grade design where full-bleed photography and video ARE the primary UI elements. This is not a typical tech product page; it's a visual manifesto for AI-powered creativity. Every section feels like a frame from a film: dramatic lighting, sweeping landscapes, and intimate human moments captured in high-quality imagery that dominates the viewport.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Runway"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "Runway's interface is a cinematic reel brought to life as a website — a dark, editorial, film-production-grade design where full-bleed photography and video ARE the primary UI elements. This is not a typical tech product page; it's a visual manifesto for AI-powered creativity. Every section feels like a frame from a film: dramatic lighting, sweeping landscapes, and intimate human moments captured in high-quality imagery that dominates the viewport.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "sanity",
     "name": "Sanity",
-    "description": "",
+    "description": "Sanity's website is a developer-content platform rendered as a nocturnal command center -- dark, precise, and deeply structured.",
     "category": "Backend & DevOps",
     "subcategory": "Brand Design",
     "tags": [
       "sanity",
-      "backend"
+      "backend",
+      "developer",
+      "dark"
     ],
     "upstreamPath": "design-md/sanity/DESIGN.md",
     "upstreamCommit": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
     "importedAt": "2026-09-08",
-    "colors": {},
+    "colors": {
+      "sanity-black": "#0b0b0b",
+      "pure-black": "#000000",
+      "sanity-red": "#f36458",
+      "electric-blue": "#0052ef",
+      "light-blue": "#55beff",
+      "neon-green": "#19d600",
+      "near-black": "#0b0b0b",
+      "dark-gray": "#212121",
+      "medium-dark": "#353535",
+      "pure-white": "#ffffff",
+      "light-gray": "#ededed",
+      "white": "#ffffff",
+      "silver": "#b9b9b9",
+      "medium-gray": "#797979",
+      "charcoal": "#212121",
+      "near-black-text": "#0b0b0b",
+      "error-red": "#dd0000",
+      "gpc-green": "#37cd84",
+      "focus-ring-blue": "#0052ef",
+      "dark-border": "#0b0b0b",
+      "subtle-border": "#212121",
+      "medium-border": "#353535",
+      "light-border": "#ffffff",
+      "primary": "#f36458",
+      "canvas": "#0b0b0b",
+      "ink": "#ffffff",
+      "body": "#ffffff"
+    },
     "tokens": {
       "colors": {
-        "canvas": "#ffffff",
-        "surface": "#f9f9f9",
-        "text": "#111111",
-        "primary": "#333",
+        "canvas": "#0b0b0b",
+        "surface": "#0b0b0b",
+        "text": "#ffffff",
+        "primary": "#f36458",
         "onPrimary": "#ffffff",
-        "border": "#e0e0e0"
+        "border": "currentColor"
       },
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
+        "displaySize": 112,
         "bodySize": 16,
-        "lineHeight": 1.6
+        "lineHeight": 1.5
       },
       "spacing": [
+        1,
+        2,
         4,
+        6,
         8,
+        12,
         16,
         24,
-        40,
+        32,
+        48,
         64
       ],
-      "radius": 6,
+      "radius": 99999,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "sanity-black": "#0b0b0b",
+        "pure-black": "#000000",
+        "sanity-red": "#f36458",
+        "electric-blue": "#0052ef",
+        "light-blue": "#55beff",
+        "neon-green": "#19d600",
+        "near-black": "#0b0b0b",
+        "dark-gray": "#212121",
+        "medium-dark": "#353535",
+        "pure-white": "#ffffff",
+        "light-gray": "#ededed",
+        "white": "#ffffff",
+        "silver": "#b9b9b9",
+        "medium-gray": "#797979",
+        "charcoal": "#212121",
+        "near-black-text": "#0b0b0b",
+        "error-red": "#dd0000",
+        "gpc-green": "#37cd84",
+        "focus-ring-blue": "#0052ef",
+        "dark-border": "#0b0b0b",
+        "subtle-border": "#212121",
+        "medium-border": "#353535",
+        "light-border": "#ffffff",
+        "primary": "#f36458",
+        "canvas": "#0b0b0b",
+        "ink": "#ffffff",
+        "body": "#ffffff"
+      },
+      "typography": {
+        "display-hero": {
+          "fontFamily": "waldenburgNormal",
+          "fontSize": "112px",
+          "fontWeight": "400",
+          "lineHeight": "1.00",
+          "letterSpacing": "-4.48px",
+          "sourceCells": [
+            "Display / Hero",
+            "waldenburgNormal",
+            "112px (7rem)",
+            "400",
+            "1.00 (tight)",
+            "-4.48px",
+            "Maximum impact, compressed tracking"
+          ],
+          "declaredFamily": "waldenburgNormal",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body": {
+          "fontFamily": "waldenburgNormal",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "1.50",
+          "letterSpacing": "normal",
+          "sourceCells": [
+            "Body",
+            "waldenburgNormal",
+            "16px (1rem)",
+            "400",
+            "1.50",
+            "normal",
+            "Standard body text"
+          ],
+          "declaredFamily": "waldenburgNormal",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "space-1": "1px",
+        "space-2": "2px",
+        "space-3": "4px",
+        "space-4": "6px",
+        "space-5": "8px",
+        "space-6": "12px",
+        "space-7": "16px",
+        "space-8": "24px",
+        "space-9": "32px",
+        "space-10": "48px",
+        "space-11": "64px"
+      },
+      "radius": {
+        "primary-cta-pill": "99999px",
+        "ghost-subtle": "5px",
+        "dark-content-card": "6px",
+        "feature-card-full-bleed": "12px",
+        "inputs": "3px"
+      },
+      "border": {},
+      "components": {
+        "primary-cta-pill": {
+          "padding": "8px 16px",
+          "rounded": "99999px"
+        },
+        "cards": {}
+      },
+      "layout": "product",
+      "traits": "Sanity's website is a developer-content platform rendered as a nocturnal command center -- dark, precise, and deeply structured. The entire experience sits on a near-black canvas (`#0b0b0b`) that reads less like a \"dark mode toggle\" and more like the natural state of a tool built for people who live in terminals. Where most CMS marketing pages reach for friendly pastels and soft illustration, Sanity leans into the gravity of its own product: structured content deserves a structured stage.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Sanity"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "Sanity's website is a developer-content platform rendered as a nocturnal command center -- dark, precise, and deeply structured. The entire experience sits on a near-black canvas (`#0b0b0b`) that reads less like a \"dark mode toggle\" and more like the natural state of a tool built for people who live in terminals. Where most CMS marketing pages reach for friendly pastels and soft illustration, Sanity leans into the gravity of its own product: structured content deserves a structured stage.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "sentry",
-    "name": "Sentry",
-    "description": "An inspired interpretation of Sentri's design language — a developer-tools brand built on a deep purple-violet midnight canvas, electric lime accents, and a slightly subversive illustrated personality",
+    "name": "Sentri-Inspired",
+    "description": "An inspired interpretation of Sentri's design language — a developer-tools brand built on a deep purple-violet midnight canvas, electric lime accents, and a slightly subversive illustrated personality.",
     "category": "Backend & DevOps",
     "subcategory": "Brand Design",
     "tags": [
@@ -3011,43 +9807,156 @@ export const vendorEntries: VendorEntry[] = [
       "surface-canvas-dark": "#1f1633",
       "surface-canvas-light": "#ffffff",
       "surface-night": "#150f23",
-      "surface-press-light": "#f0f0f0"
+      "surface-press-light": "#f0f0f0",
+      "surface-press-stronger": "#efefef",
+      "hairline-violet": "#362d59",
+      "hairline-cool": "#cfcfdb",
+      "hairline-cloud": "#e5e7eb",
+      "ink": "#1f1633",
+      "ink-press": "#1a1a1a",
+      "on-dark-muted": "#bdb8c0",
+      "on-dark-faint": "#3f3849",
+      "ring-focus": "#9dc1f5"
     },
     "tokens": {
       "colors": {
         "canvas": "#ffffff",
-        "surface": "#f9f9f9",
-        "text": "#111111",
+        "surface": "#ffffff",
+        "text": "#1f1633",
         "primary": "#150f23",
         "onPrimary": "#ffffff",
-        "border": "#e0e0e0"
+        "border": "currentColor"
       },
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
+        "displaySize": 88,
         "bodySize": 16,
-        "lineHeight": 1.6
+        "lineHeight": 2
       },
       "spacing": [
+        2,
         4,
         8,
+        12,
         16,
         24,
-        40,
-        64
+        32,
+        96
       ],
-      "radius": 6,
+      "radius": 12,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#150f23",
+        "ink-deep": "#1f1633",
+        "on-primary": "#ffffff",
+        "accent-lime": "#c2ef4e",
+        "accent-pink": "#fa7faa",
+        "accent-violet": "#6a5fc1",
+        "accent-violet-deep": "#422082",
+        "accent-violet-mid": "#79628c",
+        "surface-canvas-dark": "#1f1633",
+        "surface-canvas-light": "#ffffff",
+        "surface-night": "#150f23",
+        "surface-press-light": "#f0f0f0",
+        "surface-press-stronger": "#efefef",
+        "hairline-violet": "#362d59",
+        "hairline-cool": "#cfcfdb",
+        "hairline-cloud": "#e5e7eb",
+        "ink": "#1f1633",
+        "ink-press": "#1a1a1a",
+        "on-dark-muted": "#bdb8c0",
+        "on-dark-faint": "#3f3849",
+        "ring-focus": "#9dc1f5"
+      },
+      "typography": {
+        "display-hero": {
+          "fontFamily": "Sentri Display, Rubik, system-ui, sans-serif",
+          "fontSize": "88px",
+          "fontWeight": 700,
+          "lineHeight": 1.2,
+          "letterSpacing": 0,
+          "declaredFamily": "Sentri Display, Rubik, system-ui, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-lg": {
+          "fontFamily": "Rubik, -apple-system, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": 400,
+          "lineHeight": 2,
+          "letterSpacing": 0,
+          "declaredFamily": "Rubik, -apple-system, system-ui, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "2px",
+        "xs": "4px",
+        "sm": "8px",
+        "md": "12px",
+        "lg": "16px",
+        "xl": "24px",
+        "xxl": "32px",
+        "section": "96px"
+      },
+      "radius": {
+        "xs": "4px",
+        "sm": "6px",
+        "md": "8px",
+        "lg": "10px",
+        "xl": "12px",
+        "xxl": "18px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#150f23",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "Rubik, -apple-system, system-ui, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": 700,
+            "lineHeight": 1.14,
+            "letterSpacing": "0.2px"
+          },
+          "rounded": "8px",
+          "padding": "12px 16px"
+        },
+        "card-pricing": {
+          "backgroundColor": "#ffffff",
+          "textColor": "#1f1633",
+          "typography": {
+            "fontFamily": "Rubik, -apple-system, system-ui, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": 500,
+            "lineHeight": 1.5,
+            "letterSpacing": 0
+          },
+          "rounded": "12px",
+          "padding": "32px"
+        }
+      },
+      "layout": "product",
+      "traits": "An inspired interpretation of Sentri's design language — a developer-tools brand built on a deep purple-violet midnight canvas, electric lime accents, and a slightly subversive illustrated personality. The system pairs a custom display sans (chunky, playful, near-condensed) with the open Rubik family for UI copy and Monaco for code, then leans on dark-on-light pricing surfaces, sticker-style mascots, and a single-color CTA hierarchy where black-violet buttons read as the primary action against either polarity.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Sentri-Inspired"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "An inspired interpretation of Sentri's design language — a developer-tools brand built on a deep purple-violet midnight canvas, electric lime accents, and a slightly subversive illustrated personality. The system pairs a custom display sans (chunky, playful, near-condensed) with the open Rubik family for UI copy and Monaco for code, then leans on dark-on-light pricing surfaces, sticker-style mascots, and a single-color CTA hierarchy where black-violet buttons read as the primary action against either polarity.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "shopify",
-    "name": "Shopify",
-    "description": "An inspired interpretation of Shopifi's design language — a cinematic commerce platform that runs two parallel design tracks. The marketing-hero and product-narrative pages live on near-black canvases",
+    "name": "Shopifi-Inspired",
+    "description": "An inspired interpretation of Shopifi's design language — a cinematic commerce platform that runs two parallel design tracks.",
     "category": "E-commerce & Consumer",
     "subcategory": "Brand Design",
     "tags": [
@@ -3069,43 +9978,161 @@ export const vendorEntries: VendorEntry[] = [
       "surface-elevated-dark": "#1e2c31",
       "shade-30": "#d4d4d8",
       "shade-40": "#a1a1aa",
-      "shade-50": "#71717a"
+      "shade-50": "#71717a",
+      "shade-60": "#52525b",
+      "shade-70": "#3f3f46",
+      "hairline-light": "#e4e4e7",
+      "hairline-dark": "#1e2c31",
+      "aloe-10": "#c1fbd4",
+      "pistachio-10": "#d4f9e0",
+      "link-cool-1": "#9dabad",
+      "link-cool-2": "#9797a2",
+      "link-cool-3": "#bdbdca",
+      "link-mint": "#99b3ad"
     },
     "tokens": {
       "colors": {
         "canvas": "#ffffff",
-        "surface": "#f9f9f9",
+        "surface": "#ffffff",
         "text": "#000000",
         "primary": "#000000",
         "onPrimary": "#ffffff",
-        "border": "#e0e0e0"
+        "border": "#e4e4e7"
       },
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
-        "bodySize": 16,
-        "lineHeight": 1.6
+        "displaySize": 96,
+        "bodySize": 18,
+        "lineHeight": 1.56
       },
       "spacing": [
+        2,
         4,
         8,
+        12,
         16,
         24,
-        40,
+        32,
         64
       ],
-      "radius": 6,
+      "radius": 12,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#000000",
+        "ink": "#000000",
+        "on-primary": "#ffffff",
+        "on-dark": "#ffffff",
+        "canvas-night": "#000000",
+        "canvas-night-elevated": "#0a0a0a",
+        "canvas-light": "#ffffff",
+        "canvas-cream": "#fbfbf5",
+        "surface-elevated-dark": "#1e2c31",
+        "shade-30": "#d4d4d8",
+        "shade-40": "#a1a1aa",
+        "shade-50": "#71717a",
+        "shade-60": "#52525b",
+        "shade-70": "#3f3f46",
+        "hairline-light": "#e4e4e7",
+        "hairline-dark": "#1e2c31",
+        "aloe-10": "#c1fbd4",
+        "pistachio-10": "#d4f9e0",
+        "link-cool-1": "#9dabad",
+        "link-cool-2": "#9797a2",
+        "link-cool-3": "#bdbdca",
+        "link-mint": "#99b3ad"
+      },
+      "typography": {
+        "display-xxl": {
+          "fontFamily": "NeueHaasGrotesk Display, Helvetica, Arial, sans-serif",
+          "fontSize": "96px",
+          "fontWeight": 330,
+          "lineHeight": 1,
+          "letterSpacing": "2.4px",
+          "fontFeature": "ss03",
+          "declaredFamily": "NeueHaasGrotesk Display, Helvetica, Arial, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-lg": {
+          "fontFamily": "Inter Variable, Inter, Helvetica, Arial, sans-serif",
+          "fontSize": "18px",
+          "fontWeight": 550,
+          "lineHeight": 1.56,
+          "letterSpacing": 0,
+          "fontFeature": "ss03",
+          "declaredFamily": "Inter Variable, Inter, Helvetica, Arial, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "2px",
+        "xs": "4px",
+        "sm": "8px",
+        "md": "12px",
+        "lg": "16px",
+        "xl": "24px",
+        "xxl": "32px",
+        "huge": "64px"
+      },
+      "radius": {
+        "xs": "4px",
+        "sm": "5px",
+        "md": "8px",
+        "lg": "12px",
+        "xl": "20px",
+        "pill": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary-pill": {
+          "backgroundColor": "#000000",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "Inter Variable, Inter, Helvetica, Arial, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": 420,
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "fontFeature": "ss03"
+          },
+          "rounded": "9999px",
+          "padding": "12px 24px"
+        },
+        "card-pricing": {
+          "backgroundColor": "#ffffff",
+          "textColor": "#000000",
+          "typography": {
+            "fontFamily": "Inter Variable, Inter, Helvetica, Arial, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": 420,
+            "lineHeight": 1.5,
+            "letterSpacing": 0,
+            "fontFeature": "ss03"
+          },
+          "rounded": "12px",
+          "padding": "32px"
+        }
+      },
+      "layout": "gallery",
+      "traits": "An inspired interpretation of Shopifi's design language — a cinematic commerce platform that runs two parallel design tracks. The marketing-hero and product-narrative pages live on near-black canvases with full-bleed photography of merchants, giant Neue Haas Grotesk display type at thin weights, and a single black-pill CTA stroked in white. The transactional pages (pricing, signup, dashboards) flip to a cream-mint canvas with pastel aloe and pistachio greens, the same pill button vocabulary, and Inter for UI body. The two tracks share typographic DNA but diverge sharply in canvas polarity — and that choice is the brand.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Shopifi-Inspired"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "An inspired interpretation of Shopifi's design language — a cinematic commerce platform that runs two parallel design tracks. The marketing-hero and product-narrative pages live on near-black canvases with full-bleed photography of merchants, giant Neue Haas Grotesk display type at thin weights, and a single black-pill CTA stroked in white. The transactional pages (pricing, signup, dashboards) flip to a cream-mint canvas with pastel aloe and pistachio greens, the same pill button vocabulary, and Inter for UI body. The two tracks share typographic DNA but diverge sharply in canvas polarity — and that choice is the brand.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "slack",
-    "name": "Slack",
-    "description": "An inspired interpretation of Slacc's design language — a workplace messaging brand built on a deep aubergine primary, with cream-lavender hero gradients, blue inline links, and pill CTAs. The system ",
+    "name": "Slacc-Inspired",
+    "description": "An inspired interpretation of Slacc's design language — a workplace messaging brand built on a deep aubergine primary, with cream-lavender hero gradients, blue inline links, and pill CTAs.",
     "category": "SaaS & Productivity",
     "subcategory": "Brand Design",
     "tags": [
@@ -3127,43 +10154,150 @@ export const vendorEntries: VendorEntry[] = [
       "link-hover": "#3860be",
       "canvas": "#ffffff",
       "canvas-cream": "#f4ede4",
-      "canvas-lavender": "#f9f0ff"
+      "canvas-lavender": "#f9f0ff",
+      "surface-elev": "#ffffff",
+      "surface-aubergine": "#4a154b",
+      "hairline": "#e6e6e6",
+      "hairline-strong": "#000000",
+      "semantic-error": "#cc4117",
+      "semantic-success": "#007a5a",
+      "on-aubergine-mute": "#d9bdde"
     },
     "tokens": {
       "colors": {
         "canvas": "#ffffff",
-        "surface": "#f9f9f9",
+        "surface": "#ffffff",
         "text": "#1d1d1d",
         "primary": "#4a154b",
         "onPrimary": "#ffffff",
-        "border": "#e0e0e0"
+        "border": "#e6e6e6"
       },
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
-        "bodySize": 16,
-        "lineHeight": 1.6
+        "displaySize": 64,
+        "bodySize": 18,
+        "lineHeight": 1.55
       },
       "spacing": [
         4,
         8,
+        12,
         16,
+        20,
         24,
-        40,
-        64
+        28
       ],
-      "radius": 6,
+      "radius": 16,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#4a154b",
+        "primary-deep": "#481a54",
+        "primary-press": "#611f69",
+        "primary-tint": "#592466",
+        "on-primary": "#ffffff",
+        "ink": "#1d1d1d",
+        "ink-mute": "#696969",
+        "link-blue": "#1264a3",
+        "link-hover": "#3860be",
+        "canvas": "#ffffff",
+        "canvas-cream": "#f4ede4",
+        "canvas-lavender": "#f9f0ff",
+        "surface-elev": "#ffffff",
+        "surface-aubergine": "#4a154b",
+        "hairline": "#e6e6e6",
+        "hairline-strong": "#000000",
+        "semantic-error": "#cc4117",
+        "semantic-success": "#007a5a",
+        "on-aubergine-mute": "#d9bdde"
+      },
+      "typography": {
+        "display-xxl": {
+          "fontFamily": "Salesforce-Avant-Garde, system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+          "fontSize": "64px",
+          "fontWeight": 700,
+          "lineHeight": 1.12,
+          "letterSpacing": "-0.768px",
+          "declaredFamily": "Salesforce-Avant-Garde, system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-lg": {
+          "fontFamily": "Salesforce-Sans, system-ui, -apple-system, sans-serif",
+          "fontSize": "18px",
+          "fontWeight": 400,
+          "lineHeight": 1.55,
+          "letterSpacing": "-0.0216px",
+          "declaredFamily": "Salesforce-Sans, system-ui, -apple-system, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xs": "4px",
+        "sm": "8px",
+        "md": "12px",
+        "lg": "16px",
+        "xl": "20px",
+        "xxl": "24px",
+        "huge": "28px"
+      },
+      "radius": {
+        "xs": "2px",
+        "sm": "4px",
+        "md": "8px",
+        "lg": "12px",
+        "xl": "16px",
+        "xxl": "48px",
+        "pill": "90px"
+      },
+      "border": {},
+      "components": {
+        "button-primary-pill": {
+          "backgroundColor": "#4a154b",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "Salesforce-Sans, system-ui, -apple-system, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": 700,
+            "lineHeight": 1.38,
+            "letterSpacing": "0.2px"
+          },
+          "rounded": "90px",
+          "padding": "14px 28px"
+        },
+        "card-pricing": {
+          "backgroundColor": "#ffffff",
+          "textColor": "#1d1d1d",
+          "typography": {
+            "fontFamily": "Salesforce-Sans, system-ui, -apple-system, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "lineHeight": 1.55,
+            "letterSpacing": 0
+          },
+          "rounded": "16px",
+          "padding": "32px"
+        }
+      },
+      "layout": "product",
+      "traits": "An inspired interpretation of Slacc's design language — a workplace messaging brand built on a deep aubergine primary, with cream-lavender hero gradients, blue inline links, and pill CTAs. The system pairs a proprietary humanist sans for display with a separate utility sans for body, and stages product UI mockups inside soft pastel-mesh hero composites that act as both decoration and feature explanation.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Slacc-Inspired"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "An inspired interpretation of Slacc's design language — a workplace messaging brand built on a deep aubergine primary, with cream-lavender hero gradients, blue inline links, and pill CTAs. The system pairs a proprietary humanist sans for display with a separate utility sans for body, and stages product UI mockups inside soft pastel-mesh hero composites that act as both decoration and feature explanation.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "spacex",
-    "name": "Spacex",
-    "description": "An inspired interpretation of Spasex's design language — a mission-oriented aerospace brand built on pure black canvas, full-bleed photographic and video heroes of rockets and Mars landscapes, and upp",
+    "name": "Spacex-Inspired",
+    "description": "An inspired interpretation of Spasex's design language — a mission-oriented aerospace brand built on pure black canvas, full-bleed photographic and video heroes of rockets and Mars landscapes, and uppercase D-DIN display type set in tight vertical leading.",
     "category": "Automotive & Space",
     "subcategory": "Brand Design",
     "tags": [
@@ -3185,88 +10319,330 @@ export const vendorEntries: VendorEntry[] = [
       "hairline-on-dark": "#3a3a3f",
       "hairline-on-light": "#e0e0e8",
       "link-on-dark": "#ffffff",
-      "link-blue-fallback": "#0000ee"
+      "link-blue-fallback": "#0000ee",
+      "ink-mute": "#5a5a5f"
     },
     "tokens": {
       "colors": {
         "canvas": "#ffffff",
-        "surface": "#f9f9f9",
+        "surface": "#ffffff",
         "text": "#000000",
         "primary": "#000000",
         "onPrimary": "#ffffff",
-        "border": "#e0e0e0"
+        "border": "currentColor"
       },
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
+        "displaySize": 80,
         "bodySize": 16,
-        "lineHeight": 1.6
+        "lineHeight": 1.7
       },
       "spacing": [
         4,
         8,
+        12,
         16,
+        18,
         24,
-        40,
-        64
+        32,
+        48
       ],
-      "radius": 6,
+      "radius": 4,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#000000",
+        "ink": "#000000",
+        "on-primary": "#ffffff",
+        "on-primary-mute": "#f0f0fa",
+        "canvas-night": "#000000",
+        "canvas-night-soft": "#0a0a0a",
+        "canvas-light": "#ffffff",
+        "canvas-cool": "#f0f0fa",
+        "hairline-on-dark": "#3a3a3f",
+        "hairline-on-light": "#e0e0e8",
+        "link-on-dark": "#ffffff",
+        "link-blue-fallback": "#0000ee",
+        "ink-mute": "#5a5a5f"
+      },
+      "typography": {
+        "display-xxl": {
+          "fontFamily": "D-DIN-Bold, Arial Narrow, Arial, Verdana, sans-serif",
+          "fontSize": "80px",
+          "fontWeight": 700,
+          "lineHeight": 0.95,
+          "letterSpacing": "1.6px",
+          "declaredFamily": "D-DIN-Bold, Arial Narrow, Arial, Verdana, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-lg": {
+          "fontFamily": "D-DIN, Arial, Verdana, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": 400,
+          "lineHeight": 1.7,
+          "letterSpacing": "0.32px",
+          "declaredFamily": "D-DIN, Arial, Verdana, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "4px",
+        "xs": "8px",
+        "sm": "12px",
+        "md": "16px",
+        "lg": "18px",
+        "xl": "24px",
+        "xxl": "32px",
+        "huge": "48px"
+      },
+      "radius": {
+        "xs": "4px",
+        "sm": "8px",
+        "md": "16px",
+        "pill": "32px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "card-photo-band": {
+          "backgroundColor": "#000000",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "D-DIN, Arial, Verdana, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "lineHeight": 1.5,
+            "letterSpacing": "0.32px"
+          },
+          "rounded": "4px",
+          "padding": "0px"
+        }
+      },
+      "layout": "gallery",
+      "traits": "An inspired interpretation of Spasex's design language — a mission-oriented aerospace brand built on pure black canvas, full-bleed photographic and video heroes of rockets and Mars landscapes, and uppercase D-DIN display type set in tight vertical leading. UI chrome is intentionally minimal a single ghost outlined pill button per band, all-caps eyebrow microtext, and a fixed top nav over photography. The system is unapologetically austere — black, white, and the imagery itself.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Spacex-Inspired"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "An inspired interpretation of Spasex's design language — a mission-oriented aerospace brand built on pure black canvas, full-bleed photographic and video heroes of rockets and Mars landscapes, and uppercase D-DIN display type set in tight vertical leading. UI chrome is intentionally minimal a single ghost outlined pill button per band, all-caps eyebrow microtext, and a fixed top nav over photography. The system is unapologetically austere — black, white, and the imagery itself.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "spotify",
     "name": "Spotify",
-    "description": "",
+    "description": "Spotify's web interface is a dark, immersive music player that wraps listeners in a near-black cocoon (#121212, #181818, #1f1f1f) where album art and content become the primary source of color.",
     "category": "E-commerce & Consumer",
     "subcategory": "Brand Design",
     "tags": [
       "spotify",
-      "e-commerce"
+      "e-commerce",
+      "dark"
     ],
     "upstreamPath": "design-md/spotify/DESIGN.md",
     "upstreamCommit": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
     "importedAt": "2026-09-08",
-    "colors": {},
+    "colors": {
+      "spotify-green": "#1ed760",
+      "near-black": "#121212",
+      "dark-surface": "#181818",
+      "mid-dark": "#1f1f1f",
+      "white": "#ffffff",
+      "silver": "#b3b3b3",
+      "near-white": "#cbcbcb",
+      "light": "#fdfdfd",
+      "negative-red": "#f3727f",
+      "warning-orange": "#ffa42b",
+      "announcement-blue": "#539df5",
+      "dark-card": "#252525",
+      "mid-card": "#272727",
+      "border-gray": "#4d4d4d",
+      "light-border": "#7c7c7c",
+      "separator": "#b3b3b3",
+      "light-surface": "#eeeeee",
+      "spotify-green-border": "#1db954",
+      "heavy": "rgba(0,0,0,0.5)",
+      "medium": "rgba(0,0,0,0.3)",
+      "inset-border": "rgb(18,18,18)",
+      "primary": "#1ed760",
+      "canvas": "#121212",
+      "ink": "#ffffff",
+      "body": "#ffffff",
+      "surface": "#181818",
+      "hairline": "#4d4d4d"
+    },
     "tokens": {
       "colors": {
-        "canvas": "#ffffff",
-        "surface": "#f9f9f9",
-        "text": "#111111",
-        "primary": "#333",
+        "canvas": "#121212",
+        "surface": "#181818",
+        "text": "#ffffff",
+        "primary": "#1ed760",
         "onPrimary": "#ffffff",
-        "border": "#e0e0e0"
+        "border": "#4d4d4d"
       },
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
+        "displaySize": 24,
         "bodySize": 16,
-        "lineHeight": 1.6
+        "lineHeight": 1.5
       },
       "spacing": [
+        1,
+        2,
+        3,
         4,
+        5,
+        6,
         8,
+        10,
+        12,
+        14,
+        15,
         16,
-        24,
-        40,
-        64
+        20
       ],
       "radius": 6,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "spotify-green": "#1ed760",
+        "near-black": "#121212",
+        "dark-surface": "#181818",
+        "mid-dark": "#1f1f1f",
+        "white": "#ffffff",
+        "silver": "#b3b3b3",
+        "near-white": "#cbcbcb",
+        "light": "#fdfdfd",
+        "negative-red": "#f3727f",
+        "warning-orange": "#ffa42b",
+        "announcement-blue": "#539df5",
+        "dark-card": "#252525",
+        "mid-card": "#272727",
+        "border-gray": "#4d4d4d",
+        "light-border": "#7c7c7c",
+        "separator": "#b3b3b3",
+        "light-surface": "#eeeeee",
+        "spotify-green-border": "#1db954",
+        "heavy": "rgba(0,0,0,0.5)",
+        "medium": "rgba(0,0,0,0.3)",
+        "inset-border": "rgb(18,18,18)",
+        "primary": "#1ed760",
+        "canvas": "#121212",
+        "ink": "#ffffff",
+        "body": "#ffffff",
+        "surface": "#181818",
+        "hairline": "#4d4d4d"
+      },
+      "typography": {
+        "section-title": {
+          "fontFamily": "SpotifyMixUITitle",
+          "fontSize": "24px",
+          "fontWeight": "700",
+          "lineHeight": "normal",
+          "letterSpacing": "normal",
+          "sourceCells": [
+            "Section Title",
+            "SpotifyMixUITitle",
+            "24px (1.50rem)",
+            "700",
+            "normal",
+            "normal",
+            "Bold title weight"
+          ],
+          "declaredFamily": "SpotifyMixUITitle",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body": {
+          "fontFamily": "SpotifyMixUI",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "normal",
+          "letterSpacing": "normal",
+          "sourceCells": [
+            "Body",
+            "SpotifyMixUI",
+            "16px (1.00rem)",
+            "400",
+            "normal",
+            "normal",
+            "Standard body"
+          ],
+          "declaredFamily": "SpotifyMixUI",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "observed-8": "8px",
+        "observed-1": "1px",
+        "observed-2": "2px",
+        "observed-3": "3px",
+        "observed-4": "4px",
+        "observed-5": "5px",
+        "observed-6": "6px",
+        "observed-10": "10px",
+        "observed-12": "12px",
+        "observed-14": "14px",
+        "observed-15": "15px",
+        "observed-16": "16px",
+        "observed-20": "20px"
+      },
+      "radius": {
+        "dark-pill": "9999px",
+        "dark-large-pill": "500px",
+        "circular-play": "50%",
+        "cards-containers": "6px",
+        "observed-2": "2px",
+        "observed-4": "4px",
+        "observed-6": "6px",
+        "observed-8": "8px",
+        "observed-10": "10px",
+        "observed-20": "20px",
+        "observed-100": "100px",
+        "observed-500": "500px",
+        "observed-9999": "9999px"
+      },
+      "border": {
+        "outlined-pill": "1px solid #7c7c7c"
+      },
+      "components": {
+        "dark-pill": {
+          "backgroundColor": "#1f1f1f",
+          "textColor": "#ffffff",
+          "padding": "8px 16px",
+          "rounded": "9999px"
+        },
+        "cards-containers": {
+          "backgroundColor": "#181818",
+          "rounded": "6px",
+          "boxShadow": "rgba(0,0,0,0.3) 0px 8px 8px"
+        }
+      },
+      "layout": "product",
+      "traits": "Spotify's web interface is a dark, immersive music player that wraps listeners in a near-black cocoon (`#121212`, `#181818`, `#1f1f1f`) where album art and content become the primary source of color. The design philosophy is \"content-first darkness\" — the UI recedes into shadow so that music, podcasts, and playlists can glow. Every surface is a shade of charcoal, creating a theater-like environment where the only true color comes from the iconic Spotify Green (`#1ed760`) and the album artwork itself.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Spotify"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "Spotify's web interface is a dark, immersive music player that wraps listeners in a near-black cocoon (`#121212`, `#181818`, `#1f1f1f`) where album art and content become the primary source of color. The design philosophy is \"content-first darkness\" — the UI recedes into shadow so that music, podcasts, and playlists can glow. Every surface is a shade of charcoal, creating a theater-like environment where the only true color comes from the iconic Spotify Green (`#1ed760`) and the album artwork itself.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "starbucks",
     "name": "Starbucks",
-    "description": "",
+    "description": "Starbucks' design system is a warm, confident retail flagship wearing the green of their storefront apron across every surface.",
     "category": "E-commerce & Consumer",
     "subcategory": "Brand Design",
     "tags": [
@@ -3276,42 +10652,188 @@ export const vendorEntries: VendorEntry[] = [
     "upstreamPath": "design-md/starbucks/DESIGN.md",
     "upstreamCommit": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
     "importedAt": "2026-09-08",
-    "colors": {},
+    "colors": {
+      "starbucks-green": "#006241",
+      "green-accent": "#00754A",
+      "house-green": "#1E3932",
+      "green-uplift": "#2b5148",
+      "green-light": "#d4e9e2",
+      "gold": "#cba258",
+      "gold-light": "#dfc49d",
+      "gold-lightest": "#faf6ee",
+      "white": "#ffffff",
+      "neutral-cool": "#f9f9f9",
+      "neutral-warm": "#f2f0eb",
+      "ceramic": "#edebe9",
+      "black": "#000000",
+      "text-black": "rgba(0, 0, 0, 0.87)",
+      "text-black-soft": "rgba(0, 0, 0, 0.58)",
+      "text-white": "rgba(255, 255, 255, 1)",
+      "text-white-soft": "rgba(255, 255, 255, 0.70)",
+      "rewards-green": "#33433d",
+      "red": "#c82014",
+      "yellow": "#fbbc05",
+      "red-tint": "hsl(4 82% 43% / 5%)",
+      "body-text-never-goes-pure-black": "rgba(0,0,0,0.87)",
+      "primary": "#006241",
+      "canvas": "#f2f0eb",
+      "ink": "rgba(0, 0, 0, 0.87)"
+    },
     "tokens": {
       "colors": {
-        "canvas": "#ffffff",
-        "surface": "#f9f9f9",
-        "text": "#111111",
-        "primary": "#333",
+        "canvas": "#f2f0eb",
+        "surface": "#f2f0eb",
+        "text": "rgba(0, 0, 0, 0.87)",
+        "primary": "#006241",
         "onPrimary": "#ffffff",
-        "border": "#e0e0e0"
+        "border": "currentColor"
       },
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
-        "bodySize": 16,
-        "lineHeight": 1.6
+        "displaySize": 80,
+        "bodySize": 19,
+        "lineHeight": 1.75
       },
       "spacing": [
         4,
         8,
         16,
         24,
+        32,
         40,
+        48,
+        56,
         64
       ],
-      "radius": 6,
+      "radius": 50,
       "borderWidth": 1,
       "duration": 200
     },
+    "spec": {
+      "colors": {
+        "starbucks-green": "#006241",
+        "green-accent": "#00754A",
+        "house-green": "#1E3932",
+        "green-uplift": "#2b5148",
+        "green-light": "#d4e9e2",
+        "gold": "#cba258",
+        "gold-light": "#dfc49d",
+        "gold-lightest": "#faf6ee",
+        "white": "#ffffff",
+        "neutral-cool": "#f9f9f9",
+        "neutral-warm": "#f2f0eb",
+        "ceramic": "#edebe9",
+        "black": "#000000",
+        "text-black": "rgba(0, 0, 0, 0.87)",
+        "text-black-soft": "rgba(0, 0, 0, 0.58)",
+        "text-white": "rgba(255, 255, 255, 1)",
+        "text-white-soft": "rgba(255, 255, 255, 0.70)",
+        "rewards-green": "#33433d",
+        "red": "#c82014",
+        "yellow": "#fbbc05",
+        "red-tint": "hsl(4 82% 43% / 5%)",
+        "body-text-never-goes-pure-black": "rgba(0,0,0,0.87)",
+        "primary": "#006241",
+        "canvas": "#f2f0eb",
+        "ink": "rgba(0, 0, 0, 0.87)"
+      },
+      "typography": {
+        "display-text-10": {
+          "fontFamily": null,
+          "fontSize": "80px",
+          "fontWeight": "400",
+          "lineHeight": "1.2",
+          "letterSpacing": "-0.16px",
+          "sourceCells": [
+            "Display (text-10)",
+            "5.0rem / 80px",
+            "400–600",
+            "1.2",
+            "-0.16px",
+            "Largest Rewards/hero display"
+          ],
+          "declaredFamily": null,
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-large": {
+          "fontFamily": null,
+          "fontSize": "19px",
+          "fontWeight": "400",
+          "lineHeight": "33.25px",
+          "letterSpacing": "-0.16px",
+          "sourceCells": [
+            "Body Large",
+            "19px",
+            "400–600",
+            "33.25px (~1.75)",
+            "-0.16px",
+            "Hero intro copy, feature-band body"
+          ],
+          "declaredFamily": null,
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "space-1": "4px",
+        "space-2": "8px",
+        "space-3": "16px",
+        "space-4": "24px",
+        "space-5": "32px",
+        "space-6": "40px",
+        "space-7": "48px",
+        "space-8": "56px",
+        "space-9": "64px",
+        "observed-16": "16px"
+      },
+      "radius": {
+        "1-primary-filled-explore-our-afternoon-menu-sign-up-for-free": "50px",
+        "8-frap-floating-circular-order-button": "50%",
+        "9-full-width-feedback-tab-provide-feedback": "12px",
+        "add-in-milk-select-outlined-rectangle": "4px",
+        "cards-modals-menu-item-tiles-cardborderradius": "12px",
+        "full-width-feedback-tab-top-rounded-only": "12px 12px 0 0",
+        "all-buttons-full-pill-radius-buttonborderradius": "50px",
+        "circular-icons-frap-floating-button-avatar-thumbnails": "50%"
+      },
+      "border": {
+        "1-primary-filled-explore-our-afternoon-menu-sign-up-for-free": "1px solid #00754A",
+        "2-primary-outlined-give-them-a-try-start-an-order": "1px solid #00754A",
+        "3-black-filled-join-now": "1px solid #000000",
+        "4-dark-outlined-sign-in": "1px solid rgba(0, 0, 0, 0.87)",
+        "5-green-on-green-inverted-see-the-spring-menu": "1px solid #ffffff",
+        "6-outlined-on-dark-learn-more-order-now": "1px solid #ffffff",
+        "add-in-milk-select-outlined-rectangle": "1px solid #d6dbde",
+        "customize-button": "1.5px solid #00754A",
+        "rewards-cost-pill-200-item": "1px solid #cba258"
+      },
+      "components": {
+        "1-primary-filled-explore-our-afternoon-menu-sign-up-for-free": {
+          "backgroundColor": "#00754A",
+          "textColor": "#ffffff",
+          "border": "1px solid #00754A",
+          "rounded": "50px",
+          "padding": "7px 16px"
+        },
+        "cards-containers": {}
+      },
+      "layout": "product",
+      "traits": "Starbucks' design system is a **warm, confident retail flagship** wearing the green of their storefront apron across every surface. The canvas alternates between a neutral-warm cream (`#f2f0eb`) and a ceramic off-white (`#edebe9`) — colors that reference actual store materials: the paper napkins, the café walls, the wood finishes — while the signature **Starbucks Green** (`#006241`) anchors the brand moment on hero bands, CTAs, and the Rewards experience. The greens come in four calibrated shades (Starbucks, Accent, House, Uplift) each mapped to a specific surface role, and gold (`#cba258`) appears only around Rewards-status ceremony — not as a general accent.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Starbucks"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "Starbucks' design system is a **warm, confident retail flagship** wearing the green of their storefront apron across every surface. The canvas alternates between a neutral-warm cream (`#f2f0eb`) and a ceramic off-white (`#edebe9`) — colors that reference actual store materials: the paper napkins, the café walls, the wood finishes — while the signature **Starbucks Green** (`#006241`) anchors the brand moment on hero bands, CTAs, and the Rewards experience. The greens come in four calibrated shades (Starbucks, Accent, House, Uplift) each mapped to a specific surface role, and gold (`#cba258`) appears only around Rewards-status ceremony — not as a general accent.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "stripe",
-    "name": "Stripe",
-    "description": "An inspired interpretation of Stripi's design language — a financial-infrastructure brand built on a deep navy ink, an electric indigo primary, and a recurring atmospheric gradient mesh that occupies ",
+    "name": "Stripi-Inspired",
+    "description": "An inspired interpretation of Stripi's design language — a financial-infrastructure brand built on a deep navy ink, an electric indigo primary, and a recurring atmospheric gradient mesh that occupies the upper third of nearly every marketing page.",
     "category": "Fintech & Crypto",
     "subcategory": "Brand Design",
     "tags": [
@@ -3334,43 +10856,157 @@ export const vendorEntries: VendorEntry[] = [
       "ink-mute": "#64748d",
       "ink-mute-2": "#61718a",
       "on-primary": "#ffffff",
-      "canvas": "#ffffff"
+      "canvas": "#ffffff",
+      "canvas-soft": "#f6f9fc",
+      "canvas-cream": "#f5e9d4",
+      "hairline": "#e3e8ee",
+      "hairline-input": "#a8c3de",
+      "ruby": "#ea2261",
+      "magenta": "#f96bee",
+      "lemon": "#9b6829",
+      "shadow-blue": "#003770"
     },
     "tokens": {
       "colors": {
         "canvas": "#ffffff",
-        "surface": "#f9f9f9",
+        "surface": "#f6f9fc",
         "text": "#0d253d",
         "primary": "#533afd",
         "onPrimary": "#ffffff",
-        "border": "#e0e0e0"
+        "border": "#e3e8ee"
       },
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
+        "displaySize": 56,
         "bodySize": 16,
-        "lineHeight": 1.6
+        "lineHeight": 1.4
       },
       "spacing": [
+        2,
         4,
         8,
+        12,
         16,
         24,
-        40,
+        32,
         64
       ],
-      "radius": 6,
+      "radius": 12,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#533afd",
+        "primary-deep": "#4434d4",
+        "primary-press": "#2e2b8c",
+        "primary-soft": "#665efd",
+        "primary-bg-subdued-hover": "#b9b9f9",
+        "brand-dark-900": "#1c1e54",
+        "ink": "#0d253d",
+        "ink-secondary": "#273951",
+        "ink-mute": "#64748d",
+        "ink-mute-2": "#61718a",
+        "on-primary": "#ffffff",
+        "canvas": "#ffffff",
+        "canvas-soft": "#f6f9fc",
+        "canvas-cream": "#f5e9d4",
+        "hairline": "#e3e8ee",
+        "hairline-input": "#a8c3de",
+        "ruby": "#ea2261",
+        "magenta": "#f96bee",
+        "lemon": "#9b6829",
+        "shadow-blue": "#003770"
+      },
+      "typography": {
+        "display-xxl": {
+          "fontFamily": "sohne-var, 'SF Pro Display', system-ui, -apple-system, sans-serif",
+          "fontSize": "56px",
+          "fontWeight": 300,
+          "lineHeight": 1.03,
+          "letterSpacing": "-1.4px",
+          "fontFeature": "ss01",
+          "declaredFamily": "sohne-var, 'SF Pro Display', system-ui, -apple-system, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-lg": {
+          "fontFamily": "sohne-var, 'SF Pro Display', system-ui, -apple-system, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": 300,
+          "lineHeight": 1.4,
+          "letterSpacing": 0,
+          "fontFeature": "ss01",
+          "declaredFamily": "sohne-var, 'SF Pro Display', system-ui, -apple-system, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "2px",
+        "xs": "4px",
+        "sm": "8px",
+        "md": "12px",
+        "lg": "16px",
+        "xl": "24px",
+        "xxl": "32px",
+        "huge": "64px"
+      },
+      "radius": {
+        "xs": "4px",
+        "sm": "6px",
+        "md": "8px",
+        "lg": "12px",
+        "xl": "16px",
+        "pill": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary-pill": {
+          "backgroundColor": "#533afd",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "sohne-var, 'SF Pro Display', system-ui, -apple-system, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "lineHeight": 1,
+            "letterSpacing": 0,
+            "fontFeature": "ss01"
+          },
+          "rounded": "9999px",
+          "padding": "8px 16px"
+        },
+        "card-feature-light": {
+          "backgroundColor": "#ffffff",
+          "textColor": "#0d253d",
+          "typography": {
+            "fontFamily": "sohne-var, 'SF Pro Display', system-ui, -apple-system, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": 300,
+            "lineHeight": 1.4,
+            "letterSpacing": 0,
+            "fontFeature": "ss01"
+          },
+          "rounded": "12px",
+          "padding": "32px"
+        }
+      },
+      "layout": "editorial",
+      "traits": "An inspired interpretation of Stripi's design language — a financial-infrastructure brand built on a deep navy ink, an electric indigo primary, and a recurring atmospheric gradient mesh that occupies the upper third of nearly every marketing page. The system pairs the proprietary Sohne family at thin (300) weights with negative letter-spacing for editorial-density display headlines, and uses tabular-figure body type where money and numerics matter. Buttons are tight-radius pills, cards live on near-white surfaces, and the dashboard track flips polarity to a familiar dark-app shell.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Stripi-Inspired"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "An inspired interpretation of Stripi's design language — a financial-infrastructure brand built on a deep navy ink, an electric indigo primary, and a recurring atmospheric gradient mesh that occupies the upper third of nearly every marketing page. The system pairs the proprietary Sohne family at thin (300) weights with negative letter-spacing for editorial-density display headlines, and uses tabular-figure body type where money and numerics matter. Buttons are tight-radius pills, cards live on near-white surfaces, and the dashboard track flips polarity to a familiar dark-app shell.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "supabase",
-    "name": "Supabase",
-    "description": "An inspired interpretation of Supabaze's design language — an open-source database platform built on a clean white-and-near-black system with a single signature emerald-green CTA, a custom humanist sa",
+    "name": "Supabaze-Inspired",
+    "description": "An inspired interpretation of Supabaze's design language — an open-source database platform built on a clean white-and-near-black system with a single signature emerald-green CTA, a custom humanist sans display tier, and dense product UI mockups composited above the hero.",
     "category": "Backend & DevOps",
     "subcategory": "Brand Design",
     "tags": [
@@ -3393,7 +11029,22 @@ export const vendorEntries: VendorEntry[] = [
       "on-primary": "#171717",
       "on-dark": "#ffffff",
       "canvas": "#ffffff",
-      "canvas-soft": "#fafafa"
+      "canvas-soft": "#fafafa",
+      "canvas-night": "#1c1c1c",
+      "canvas-night-soft": "#202020",
+      "hairline": "#dfdfdf",
+      "hairline-strong": "#c7c7c7",
+      "hairline-cool": "#ededed",
+      "hairline-cool-2": "#efefef",
+      "hairline-cool-3": "#d4d4d4",
+      "accent-purple": "#6b01c2",
+      "accent-violet": "#644fc1",
+      "accent-purple-soft": "#eddbf9",
+      "accent-yellow": "#ffdb13",
+      "accent-tomato": "#ff2201",
+      "accent-pink": "#c7007e",
+      "accent-indigo": "#054cff",
+      "accent-crimson": "#e2005a"
     },
     "tokens": {
       "colors": {
@@ -3402,34 +11053,143 @@ export const vendorEntries: VendorEntry[] = [
         "text": "#171717",
         "primary": "#3ecf8e",
         "onPrimary": "#171717",
-        "border": "#e0e0e0"
+        "border": "#dfdfdf"
       },
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
-        "bodySize": 16,
-        "lineHeight": 1.6
+        "displaySize": 64,
+        "bodySize": 18,
+        "lineHeight": 1.55
       },
       "spacing": [
+        2,
         4,
         8,
+        12,
         16,
         24,
-        40,
+        32,
         64
       ],
-      "radius": 6,
+      "radius": 12,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#3ecf8e",
+        "primary-deep": "#24b47e",
+        "primary-soft": "#4ade80",
+        "ink": "#171717",
+        "ink-secondary": "#212121",
+        "ink-mute": "#707070",
+        "ink-mute-2": "#9a9a9a",
+        "ink-faint": "#b2b2b2",
+        "on-primary": "#171717",
+        "on-dark": "#ffffff",
+        "canvas": "#ffffff",
+        "canvas-soft": "#fafafa",
+        "canvas-night": "#1c1c1c",
+        "canvas-night-soft": "#202020",
+        "hairline": "#dfdfdf",
+        "hairline-strong": "#c7c7c7",
+        "hairline-cool": "#ededed",
+        "hairline-cool-2": "#efefef",
+        "hairline-cool-3": "#d4d4d4",
+        "accent-purple": "#6b01c2",
+        "accent-violet": "#644fc1",
+        "accent-purple-soft": "#eddbf9",
+        "accent-yellow": "#ffdb13",
+        "accent-tomato": "#ff2201",
+        "accent-pink": "#c7007e",
+        "accent-indigo": "#054cff",
+        "accent-crimson": "#e2005a"
+      },
+      "typography": {
+        "display-xxl": {
+          "fontFamily": "Circular, 'Helvetica Neue', Helvetica, Arial, sans-serif",
+          "fontSize": "64px",
+          "fontWeight": 500,
+          "lineHeight": 1.1,
+          "letterSpacing": "-1.92px",
+          "declaredFamily": "Circular, 'Helvetica Neue', Helvetica, Arial, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-lg": {
+          "fontFamily": "Circular, 'Helvetica Neue', Helvetica, Arial, sans-serif",
+          "fontSize": "18px",
+          "fontWeight": 400,
+          "lineHeight": 1.55,
+          "letterSpacing": 0,
+          "declaredFamily": "Circular, 'Helvetica Neue', Helvetica, Arial, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "2px",
+        "xs": "4px",
+        "sm": "8px",
+        "md": "12px",
+        "lg": "16px",
+        "xl": "24px",
+        "xxl": "32px",
+        "huge": "64px"
+      },
+      "radius": {
+        "xs": "4px",
+        "sm": "6px",
+        "md": "8px",
+        "lg": "12px",
+        "xl": "16px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary-green": {
+          "backgroundColor": "#3ecf8e",
+          "textColor": "#171717",
+          "typography": {
+            "fontFamily": "Circular, 'Helvetica Neue', Helvetica, Arial, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": 500,
+            "lineHeight": 1,
+            "letterSpacing": 0
+          },
+          "rounded": "6px",
+          "padding": "8px 16px"
+        },
+        "card-feature-light": {
+          "backgroundColor": "#ffffff",
+          "textColor": "#171717",
+          "typography": {
+            "fontFamily": "Circular, 'Helvetica Neue', Helvetica, Arial, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "lineHeight": 1.5,
+            "letterSpacing": 0
+          },
+          "rounded": "12px",
+          "padding": "32px"
+        }
+      },
+      "layout": "product",
+      "traits": "An inspired interpretation of Supabaze's design language — an open-source database platform built on a clean white-and-near-black system with a single signature emerald-green CTA, a custom humanist sans display tier, and dense product UI mockups composited above the hero. The brand reads as quietly technical: minimal chrome, a near-monochrome palette, and the green primary acting as the only chromatic event on the page.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Supabaze-Inspired"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "An inspired interpretation of Supabaze's design language — an open-source database platform built on a clean white-and-near-black system with a single signature emerald-green CTA, a custom humanist sans display tier, and dense product UI mockups composited above the hero. The brand reads as quietly technical: minimal chrome, a near-monochrome palette, and the green primary acting as the only chromatic event on the page.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "superhuman",
-    "name": "Superhuman",
-    "description": "An inspired interpretation of Superhumon's design language — a fast-email productivity brand split between an editorial dark hero (deep indigo navy with violet-sky atmospheric backdrop and a portrait ",
+    "name": "Superhumon-Inspired",
+    "description": "An inspired interpretation of Superhumon's design language — a fast-email productivity brand split between an editorial dark hero (deep indigo navy with violet-sky atmospheric backdrop and a portrait subject) and a quiet white content body with off-warm-grey ink.",
     "category": "Developer Tools",
     "subcategory": "Brand Design",
     "tags": [
@@ -3453,7 +11213,10 @@ export const vendorEntries: VendorEntry[] = [
       "surface-violet-soft": "#c9b4fa",
       "surface-teal-deep": "#0e3030",
       "surface-teal-mid": "#155555",
-      "hairline": "#e8e4dd"
+      "hairline": "#e8e4dd",
+      "hairline-dark": "#3f3a52",
+      "on-dark-mute": "#bcbac9",
+      "on-dark-faint": "#5a5772"
     },
     "tokens": {
       "colors": {
@@ -3467,29 +11230,126 @@ export const vendorEntries: VendorEntry[] = [
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
-        "bodySize": 16,
-        "lineHeight": 1.6
+        "displaySize": 64,
+        "bodySize": 18,
+        "lineHeight": 1.5
       },
       "spacing": [
+        2,
         4,
         8,
+        12,
         16,
         24,
-        40,
+        32,
         64
       ],
-      "radius": 6,
+      "radius": 12,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#1b1938",
+        "primary-deep": "#0e0c1f",
+        "on-primary": "#ffffff",
+        "ink": "#292827",
+        "ink-mute": "#73706d",
+        "ink-faint": "#9a9794",
+        "canvas": "#ffffff",
+        "canvas-soft": "#fafaf8",
+        "surface-violet-soft": "#c9b4fa",
+        "surface-teal-deep": "#0e3030",
+        "surface-teal-mid": "#155555",
+        "hairline": "#e8e4dd",
+        "hairline-dark": "#3f3a52",
+        "on-dark-mute": "#bcbac9",
+        "on-dark-faint": "#5a5772"
+      },
+      "typography": {
+        "display-xxl": {
+          "fontFamily": "'Super Sans VF', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
+          "fontSize": "64px",
+          "fontWeight": 540,
+          "lineHeight": 0.96,
+          "letterSpacing": 0,
+          "declaredFamily": "'Super Sans VF', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-lg": {
+          "fontFamily": "'Super Sans VF', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
+          "fontSize": "18px",
+          "fontWeight": 540,
+          "lineHeight": 1.5,
+          "letterSpacing": "-0.135px",
+          "declaredFamily": "'Super Sans VF', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "2px",
+        "xs": "4px",
+        "sm": "8px",
+        "md": "12px",
+        "lg": "16px",
+        "xl": "24px",
+        "xxl": "32px",
+        "huge": "64px"
+      },
+      "radius": {
+        "xs": "4px",
+        "sm": "6px",
+        "md": "8px",
+        "lg": "12px",
+        "xl": "16px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary-dark": {
+          "backgroundColor": "#1b1938",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "'Super Sans VF', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": 700,
+            "lineHeight": 1,
+            "letterSpacing": 0
+          },
+          "rounded": "8px",
+          "padding": "12px 20px"
+        },
+        "card-feature-light": {
+          "backgroundColor": "#ffffff",
+          "textColor": "#292827",
+          "typography": {
+            "fontFamily": "'Super Sans VF', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": 460,
+            "lineHeight": 1.5,
+            "letterSpacing": 0
+          },
+          "rounded": "12px",
+          "padding": "32px"
+        }
+      },
+      "layout": "editorial",
+      "traits": "An inspired interpretation of Superhumon's design language — a fast-email productivity brand split between an editorial dark hero (deep indigo navy with violet-sky atmospheric backdrop and a portrait subject) and a quiet white content body with off-warm-grey ink. The system uses a single proprietary variable display sans, heavy weight 460–540 with tight tracking, and a deep-teal closing CTA band that breaks the indigo/white rhythm with a warm dark interlude. Buttons are tight rounded rectangles, pricing is sober and dense, and the brand reads more like a high-end newsletter than a SaaS app.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Superhumon-Inspired"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "An inspired interpretation of Superhumon's design language — a fast-email productivity brand split between an editorial dark hero (deep indigo navy with violet-sky atmospheric backdrop and a portrait subject) and a quiet white content body with off-warm-grey ink. The system uses a single proprietary variable display sans, heavy weight 460–540 with tight tracking, and a deep-teal closing CTA band that breaks the indigo/white rhythm with a warm dark interlude. Buttons are tight rounded rectangles, pricing is sober and dense, and the brand reads more like a high-end newsletter than a SaaS app.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "tesla",
     "name": "Tesla",
-    "description": "",
+    "description": "Tesla's website is an exercise in radical subtraction — a digital showroom where the product is everything and the interface is almost nothing.",
     "category": "Automotive",
     "subcategory": "Brand Design",
     "tags": [
@@ -3499,42 +11359,151 @@ export const vendorEntries: VendorEntry[] = [
     "upstreamPath": "design-md/tesla/DESIGN.md",
     "upstreamCommit": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
     "importedAt": "2026-09-08",
-    "colors": {},
+    "colors": {
+      "electric-blue": "#3E6AE1",
+      "pure-white": "#FFFFFF",
+      "promo-blue": "#3E6AE1",
+      "white-canvas": "#FFFFFF",
+      "light-ash": "#F4F4F4",
+      "carbon-dark": "#171A20",
+      "frosted-glass": "rgba(255, 255, 255, 0.75)",
+      "graphite": "#393C41",
+      "pewter": "#5C5E62",
+      "silver-fog": "#8E8E8E",
+      "cloud-gray": "#EEEEEE",
+      "pale-silver": "#D0D1D2",
+      "primary": "#3E6AE1",
+      "canvas": "#FFFFFF",
+      "ink": "#171A20",
+      "body": "#393C41",
+      "surface": "#F4F4F4",
+      "hairline": "#EEEEEE"
+    },
     "tokens": {
       "colors": {
-        "canvas": "#ffffff",
-        "surface": "#f9f9f9",
-        "text": "#111111",
-        "primary": "#333",
+        "canvas": "#FFFFFF",
+        "surface": "#F4F4F4",
+        "text": "#171A20",
+        "primary": "#3E6AE1",
         "onPrimary": "#ffffff",
-        "border": "#e0e0e0"
+        "border": "#EEEEEE"
       },
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
-        "bodySize": 16,
-        "lineHeight": 1.6
+        "displaySize": 40,
+        "bodySize": 14,
+        "lineHeight": 1.4285714285714286
       },
       "spacing": [
         4,
         8,
         16,
-        24,
-        40,
-        64
+        21.44
       ],
-      "radius": 6,
+      "radius": 4,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 330
     },
+    "spec": {
+      "colors": {
+        "electric-blue": "#3E6AE1",
+        "pure-white": "#FFFFFF",
+        "promo-blue": "#3E6AE1",
+        "white-canvas": "#FFFFFF",
+        "light-ash": "#F4F4F4",
+        "carbon-dark": "#171A20",
+        "frosted-glass": "rgba(255, 255, 255, 0.75)",
+        "graphite": "#393C41",
+        "pewter": "#5C5E62",
+        "silver-fog": "#8E8E8E",
+        "cloud-gray": "#EEEEEE",
+        "pale-silver": "#D0D1D2",
+        "primary": "#3E6AE1",
+        "canvas": "#FFFFFF",
+        "ink": "#171A20",
+        "body": "#393C41",
+        "surface": "#F4F4F4",
+        "hairline": "#EEEEEE"
+      },
+      "typography": {
+        "hero-title": {
+          "fontFamily": "Universal Sans Display",
+          "fontSize": "40px",
+          "fontWeight": "500",
+          "lineHeight": "48px",
+          "letterSpacing": "normal",
+          "sourceCells": [
+            "Hero Title",
+            "40px (2.50rem)",
+            "500",
+            "48px (1.20)",
+            "normal",
+            "Universal Sans Display, white on dark hero imagery"
+          ],
+          "declaredFamily": "Universal Sans Display",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-text": {
+          "fontFamily": "Universal Sans Text",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "lineHeight": "20px",
+          "letterSpacing": "normal",
+          "sourceCells": [
+            "Body Text",
+            "14px (0.88rem)",
+            "400",
+            "20px (1.43)",
+            "normal",
+            "Universal Sans Text, paragraph and descriptive content"
+          ],
+          "declaredFamily": "Universal Sans Text",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "observed-8": "8px",
+        "observed-16": "16px",
+        "observed-21.44": "21.44px",
+        "observed-4": "4px"
+      },
+      "radius": {
+        "primary-cta": "4px",
+        "most-elements-sharp-edges-are-the-default": "0px",
+        "buttons-primary-secondary-nav-items-barely-perceptible-rounding": "4px",
+        "category-cards-noticeable-but-restrained-rounding-on-larger-surfaces": "12px",
+        "carousel-dot-indicators-perfect-circles": "50%"
+      },
+      "border": {},
+      "components": {
+        "primary-cta": {
+          "backgroundColor": "#3E6AE1",
+          "textColor": "#FFFFFF",
+          "rounded": "4px",
+          "padding": "4px",
+          "height": "40px",
+          "boxShadow": "rgba(0,0,0,0) 0px 0px 0px 2px inset"
+        },
+        "cards-containers": {}
+      },
+      "layout": "gallery",
+      "traits": "Tesla's website is an exercise in radical subtraction — a digital showroom where the product is everything and the interface is almost nothing. The page opens with a full-viewport hero that fills the entire screen with cinematic car photography: three vehicles arranged on polished concrete against a hazy cityscape sky, with a single model name floating above in translucent white type. There are no decorative borders, no gradients, no patterns, no shadows. The UI exists only to provide just enough navigational structure to get out of the way. Every pixel that isn't product imagery is white space, and that restraint is the design system's most powerful statement.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Tesla"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "Tesla's website is an exercise in radical subtraction — a digital showroom where the product is everything and the interface is almost nothing. The page opens with a full-viewport hero that fills the entire screen with cinematic car photography: three vehicles arranged on polished concrete against a hazy cityscape sky, with a single model name floating above in translucent white type. There are no decorative borders, no gradients, no patterns, no shadows. The UI exists only to provide just enough navigational structure to get out of the way. Every pixel that isn't product imagery is white space, and that restraint is the design system's most powerful statement.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "theverge",
-    "name": "Theverge",
-    "description": "",
+    "name": "The Verge",
+    "description": "The Verge's 2024 redesign feels like somebody wired a Condé Nast magazine to a chiptune soundboard.",
     "category": "Brand Design",
     "subcategory": "Brand Design",
     "tags": [
@@ -3544,47 +11513,219 @@ export const vendorEntries: VendorEntry[] = [
     "upstreamPath": "design-md/theverge/DESIGN.md",
     "upstreamCommit": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
     "importedAt": "2026-09-08",
-    "colors": {},
+    "colors": {
+      "jelly-mint": "#3cffd0",
+      "verge-ultraviolet": "#5200ff",
+      "console-mint-border": "#309875",
+      "deep-link-blue": "#3860be",
+      "focus-cyan": "#1eaedb",
+      "purple-rule": "#3d00bf",
+      "canvas-black": "#131313",
+      "surface-slate": "#2d2d2d",
+      "image-frame": "#313131",
+      "hazard-white": "#ffffff",
+      "absolute-black": "#000000",
+      "primary-text": "#ffffff",
+      "secondary-text": "#949494",
+      "muted-text": "#e9e9e9",
+      "inverted-text": "#131313",
+      "focus-ring": "#1eaedb",
+      "overlay-black": "rgba(0, 0, 0, 0.33)",
+      "dim-gray": "#8c8c8c",
+      "default": "#131313",
+      "focus": "#3cffd0",
+      "error": "#5200ff",
+      "top-nav": "#131313",
+      "hover": "#ffffff",
+      "active-section": "#3cffd0",
+      "frame": "#313131",
+      "do": "#3d00bf",
+      "don-t": "#3cffd0",
+      "primary-cta": "#3cffd0",
+      "background-canvas": "#131313",
+      "accent-secondary-hazard": "#5200ff",
+      "heading-text": "#ffffff",
+      "body-text": "#ffffff",
+      "secondary-text-metadata": "#949494",
+      "card-border": "#ffffff",
+      "link-hover": "#3860be",
+      "primary": "#3cffd0",
+      "canvas": "#131313",
+      "ink": "#ffffff",
+      "body": "#ffffff",
+      "surface": "#2d2d2d",
+      "hairline": "#309875"
+    },
     "tokens": {
       "colors": {
-        "canvas": "#ffffff",
-        "surface": "#f9f9f9",
-        "text": "#111111",
-        "primary": "#333",
-        "onPrimary": "#ffffff",
-        "border": "#e0e0e0"
+        "canvas": "#131313",
+        "surface": "#2d2d2d",
+        "text": "#ffffff",
+        "primary": "#3cffd0",
+        "onPrimary": "#111111",
+        "border": "#309875"
       },
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
+        "displaySize": 107,
         "bodySize": 16,
         "lineHeight": 1.6
       },
       "spacing": [
-        4,
         8,
+        10,
         16,
-        24,
-        40,
+        25,
+        32,
+        48,
         64
       ],
-      "radius": 6,
+      "radius": 24,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 180
     },
+    "spec": {
+      "colors": {
+        "jelly-mint": "#3cffd0",
+        "verge-ultraviolet": "#5200ff",
+        "console-mint-border": "#309875",
+        "deep-link-blue": "#3860be",
+        "focus-cyan": "#1eaedb",
+        "purple-rule": "#3d00bf",
+        "canvas-black": "#131313",
+        "surface-slate": "#2d2d2d",
+        "image-frame": "#313131",
+        "hazard-white": "#ffffff",
+        "absolute-black": "#000000",
+        "primary-text": "#ffffff",
+        "secondary-text": "#949494",
+        "muted-text": "#e9e9e9",
+        "inverted-text": "#131313",
+        "focus-ring": "#1eaedb",
+        "overlay-black": "rgba(0, 0, 0, 0.33)",
+        "dim-gray": "#8c8c8c",
+        "default": "#131313",
+        "focus": "#3cffd0",
+        "error": "#5200ff",
+        "top-nav": "#131313",
+        "hover": "#ffffff",
+        "active-section": "#3cffd0",
+        "frame": "#313131",
+        "do": "#3d00bf",
+        "don-t": "#3cffd0",
+        "primary-cta": "#3cffd0",
+        "background-canvas": "#131313",
+        "accent-secondary-hazard": "#5200ff",
+        "heading-text": "#ffffff",
+        "body-text": "#ffffff",
+        "secondary-text-metadata": "#949494",
+        "card-border": "#ffffff",
+        "link-hover": "#3860be",
+        "primary": "#3cffd0",
+        "canvas": "#131313",
+        "ink": "#ffffff",
+        "body": "#ffffff",
+        "surface": "#2d2d2d",
+        "hairline": "#309875"
+      },
+      "typography": {
+        "hero-wordmark-display": {
+          "fontFamily": "Manuka",
+          "fontSize": "107px",
+          "fontWeight": "900",
+          "lineHeight": "0.80",
+          "letterSpacing": "1.07px",
+          "sourceCells": [
+            "Hero Wordmark / Display",
+            "Manuka",
+            "107px / 6.69rem",
+            "900",
+            "0.80",
+            "1.07px",
+            "The top-of-page \"The Verge\" logo and feature headlines"
+          ],
+          "declaredFamily": "Manuka",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-relaxed": {
+          "fontFamily": "PolySans",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "lineHeight": "1.60",
+          "letterSpacing": null,
+          "sourceCells": [
+            "Body Relaxed",
+            "PolySans",
+            "16px / 1.00rem",
+            "500",
+            "1.60",
+            "—",
+            "Long-form reading body"
+          ],
+          "declaredFamily": "PolySans",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "observed-8": "8px",
+        "observed-25": "25px",
+        "observed-64": "64px",
+        "observed-16": "16px",
+        "observed-32": "32px",
+        "observed-48": "48px",
+        "observed-10": "10px"
+      },
+      "radius": {
+        "primary-jelly-mint-pill": "24px",
+        "tertiary-outlined-mint": "40px",
+        "outlined-ultraviolet-promotional": "30px",
+        "pill-tag-non-interactive": "20px",
+        "observed-2": "2px",
+        "observed-3": "3px",
+        "observed-4": "4px",
+        "observed-20": "20px",
+        "observed-24": "24px",
+        "observed-30": "30px",
+        "observed-40": "40px"
+      },
+      "border": {
+        "tertiary-outlined-mint": "1px solid #3cffd0",
+        "outlined-ultraviolet-promotional": "1px solid #5200ff",
+        "storystream-tile": "1px solid #ffffff"
+      },
+      "components": {
+        "primary-jelly-mint-pill": {
+          "backgroundColor": "#3cffd0",
+          "textColor": "#000000",
+          "rounded": "24px",
+          "padding": "10px 24px"
+        },
+        "cards-containers": {}
+      },
+      "layout": "editorial",
+      "traits": "The Verge's 2024 redesign feels like somebody wired a Condé Nast magazine to a chiptune soundboard. The canvas is almost-black (`#131313`), the headlines are built from a brutally heavy display face (Manuka) that runs up to 107px, and the whole page is peppered with acid-mint `#3cffd0` and ultraviolet `#5200ff` that behave less like brand colors and more like hazard tape. Story tiles are not quiet gray cards — they're saturated, full-bleed color blocks (yellow, pink, orange, blue, purple) that feel like pasted-up rave flyers arranged into a timeline. The mood is \"developer console meets club night meets tech tabloid\": serious enough to cover a congressional hearing, loud enough to review a synthesizer.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "The Verge"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "The Verge's 2024 redesign feels like somebody wired a Condé Nast magazine to a chiptune soundboard. The canvas is almost-black (`#131313`), the headlines are built from a brutally heavy display face (Manuka) that runs up to 107px, and the whole page is peppered with acid-mint `#3cffd0` and ultraviolet `#5200ff` that behave less like brand colors and more like hazard tape. Story tiles are not quiet gray cards — they're saturated, full-bleed color blocks (yellow, pink, orange, blue, purple) that feel like pasted-up rave flyers arranged into a timeline. The mood is \"developer console meets club night meets tech tabloid\": serious enough to cover a congressional hearing, loud enough to review a synthesizer.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "together.ai",
-    "name": "Together AI",
-    "description": "An inspired interpretation of Together AI's design language — an AI infrastructure platform whose surface alternates between near-black hero bands (with a three-color orange-magenta-periwinkle gradien",
+    "name": "Together-AI-Inspired",
+    "description": "An inspired interpretation of Together AI's design language — an AI infrastructure platform whose surface alternates between near-black hero bands (with a three-color orange-magenta-periwinkle gradient as the single piece of brand chrome) and bright white research / pricing / docs bands, knit together by a custom display sans and an uppercase mono eyebrow face.",
     "category": "AI & LLM",
     "subcategory": "Brand Design",
     "tags": [
       "together",
-      "ai"
+      "ai",
+      "gradient"
     ],
     "upstreamPath": "design-md/together.ai/DESIGN.md",
     "upstreamCommit": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
@@ -3601,12 +11742,13 @@ export const vendorEntries: VendorEntry[] = [
       "on-dark": "#ffffff",
       "accent-orange": "#fc4c02",
       "accent-magenta": "#ef2cc1",
-      "accent-periwinkle": "#bdbbff"
+      "accent-periwinkle": "#bdbbff",
+      "accent-mint": "#c8f6f9"
     },
     "tokens": {
       "colors": {
         "canvas": "#ffffff",
-        "surface": "#f9f9f9",
+        "surface": "#ffffff",
         "text": "#000000",
         "primary": "#000000",
         "onPrimary": "#ffffff",
@@ -3615,34 +11757,137 @@ export const vendorEntries: VendorEntry[] = [
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
-        "bodySize": 16,
-        "lineHeight": 1.6
+        "displaySize": 64,
+        "bodySize": 18,
+        "lineHeight": 1.2999999999999998
       },
       "spacing": [
+        2,
         4,
         8,
+        12,
         16,
+        20,
         24,
-        40,
-        64
+        32,
+        44,
+        48,
+        55.2,
+        80
       ],
-      "radius": 6,
+      "radius": 4,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#000000",
+        "on-primary": "#ffffff",
+        "ink": "#000000",
+        "body": "#959494",
+        "hairline": "#959494",
+        "canvas": "#ffffff",
+        "canvas-dark": "#010120",
+        "surface-dark-soft": "#313641",
+        "on-dark": "#ffffff",
+        "accent-orange": "#fc4c02",
+        "accent-magenta": "#ef2cc1",
+        "accent-periwinkle": "#bdbbff",
+        "accent-mint": "#c8f6f9"
+      },
+      "typography": {
+        "display-xxl": {
+          "fontFamily": "The Future, Inter, Helvetica Neue, Arial, sans-serif",
+          "fontSize": "64px",
+          "fontWeight": 500,
+          "lineHeight": "70.4px",
+          "letterSpacing": "-1.92px",
+          "declaredFamily": "The Future, Inter, Helvetica Neue, Arial, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-lg": {
+          "fontFamily": "The Future, Inter, Helvetica Neue, Arial, sans-serif",
+          "fontSize": "18px",
+          "fontWeight": 400,
+          "lineHeight": "23.4px",
+          "letterSpacing": "-0.18px",
+          "declaredFamily": "The Future, Inter, Helvetica Neue, Arial, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "2px",
+        "xs": "4px",
+        "sm": "8px",
+        "md": "12px",
+        "lg": "16px",
+        "xl": "20px",
+        "2xl": "24px",
+        "3xl": "32px",
+        "4xl": "44px",
+        "5xl": "48px",
+        "6xl": "55.2px",
+        "section": "80px"
+      },
+      "radius": {
+        "none": "0px",
+        "xs": "3.25px",
+        "sm": "4px",
+        "md": "8px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#000000",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "PP Neue Montreal Mono, ui-monospace, SF Mono, Menlo, monospace",
+            "fontSize": "16px",
+            "fontWeight": 500,
+            "lineHeight": "16px",
+            "letterSpacing": "0.08px"
+          },
+          "rounded": "4px",
+          "padding": "4px 24px"
+        },
+        "stats-card-tinted": {
+          "backgroundColor": "#c8f6f9",
+          "textColor": "#000000",
+          "typography": {
+            "fontFamily": "The Future, Inter, Helvetica Neue, Arial, sans-serif",
+            "fontSize": "40px",
+            "fontWeight": 500,
+            "lineHeight": "48px",
+            "letterSpacing": "-0.8px"
+          },
+          "rounded": "4px",
+          "padding": "32px"
+        }
+      },
+      "layout": "product",
+      "traits": "An inspired interpretation of Together AI's design language — an AI infrastructure platform whose surface alternates between near-black hero bands (with a three-color orange-magenta-periwinkle gradient as the single piece of brand chrome) and bright white research / pricing / docs bands, knit together by a custom display sans and an uppercase mono eyebrow face.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Together-AI-Inspired"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "An inspired interpretation of Together AI's design language — an AI infrastructure platform whose surface alternates between near-black hero bands (with a three-color orange-magenta-periwinkle gradient as the single piece of brand chrome) and bright white research / pricing / docs bands, knit together by a custom display sans and an uppercase mono eyebrow face.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "uber",
-    "name": "Uber",
-    "description": "An inspired interpretation of Uber's design language — a transportation-and-delivery super-app brand whose web surface is a black-and-white duet, framed by a custom geometric display sans, accented by",
+    "name": "Uber-Inspired",
+    "description": "An inspired interpretation of Uber's design language — a transportation-and-delivery super-app brand whose web surface is a black-and-white duet, framed by a custom geometric display sans, accented by a single signature pill shape (radius 999px) on every interactive element, and decorated only by editorial 4:3 illustrations of riders, drivers, and city objects.",
     "category": "Brand Design",
     "subcategory": "Brand Design",
     "tags": [
       "uber",
-      "brand"
+      "brand",
+      "editorial"
     ],
     "upstreamPath": "design-md/uber/DESIGN.md",
     "upstreamCommit": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
@@ -3659,7 +11904,8 @@ export const vendorEntries: VendorEntry[] = [
       "canvas-softer": "#f3f3f3",
       "surface-pressed": "#e2e2e2",
       "link": "#0000ee",
-      "on-dark": "#ffffff"
+      "on-dark": "#ffffff",
+      "black-elevated": "#282828"
     },
     "tokens": {
       "colors": {
@@ -3668,39 +11914,132 @@ export const vendorEntries: VendorEntry[] = [
         "text": "#000000",
         "primary": "#000000",
         "onPrimary": "#ffffff",
-        "border": "#e0e0e0"
+        "border": "currentColor"
       },
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
-        "bodySize": 16,
-        "lineHeight": 1.6
+        "displaySize": 52,
+        "bodySize": 18,
+        "lineHeight": 1.3333333333333333
       },
       "spacing": [
         4,
+        6,
         8,
+        12,
         16,
+        20,
         24,
-        40,
-        64
+        32
       ],
-      "radius": 6,
+      "radius": 16,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#000000",
+        "on-primary": "#ffffff",
+        "ink": "#000000",
+        "body": "#5e5e5e",
+        "mute": "#afafaf",
+        "hairline-mid": "#4b4b4b",
+        "canvas": "#ffffff",
+        "canvas-soft": "#efefef",
+        "canvas-softer": "#f3f3f3",
+        "surface-pressed": "#e2e2e2",
+        "link": "#0000ee",
+        "on-dark": "#ffffff",
+        "black-elevated": "#282828"
+      },
+      "typography": {
+        "display-xxl": {
+          "fontFamily": "UberMove, UberMoveText, system-ui, Helvetica Neue, Arial, sans-serif",
+          "fontSize": "52px",
+          "fontWeight": 700,
+          "lineHeight": "64px",
+          "declaredFamily": "UberMove, UberMoveText, system-ui, Helvetica Neue, Arial, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-lg": {
+          "fontFamily": "UberMoveText, system-ui, Helvetica Neue, Arial, sans-serif",
+          "fontSize": "18px",
+          "fontWeight": 500,
+          "lineHeight": "24px",
+          "declaredFamily": "UberMoveText, system-ui, Helvetica Neue, Arial, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "4px",
+        "xs": "6px",
+        "sm": "8px",
+        "md": "12px",
+        "lg": "16px",
+        "xl": "20px",
+        "2xl": "24px",
+        "3xl": "32px"
+      },
+      "radius": {
+        "none": "0px",
+        "md": "8px",
+        "lg": "12px",
+        "xl": "16px",
+        "pill": "999px",
+        "pill-tab": "36px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#000000",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "UberMoveText, system-ui, Helvetica Neue, Arial, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": 500,
+            "lineHeight": "20px"
+          },
+          "rounded": "999px",
+          "padding": "12px 12px"
+        },
+        "promo-card-illustrated": {
+          "backgroundColor": "#ffffff",
+          "textColor": "#000000",
+          "typography": {
+            "fontFamily": "UberMove, UberMoveText, system-ui, Helvetica Neue, Arial, sans-serif",
+            "fontSize": "24px",
+            "fontWeight": 700,
+            "lineHeight": "32px"
+          },
+          "rounded": "16px",
+          "padding": "24px"
+        }
+      },
+      "layout": "editorial",
+      "traits": "An inspired interpretation of Uber's design language — a transportation-and-delivery super-app brand whose web surface is a black-and-white duet, framed by a custom geometric display sans, accented by a single signature pill shape (radius 999px) on every interactive element, and decorated only by editorial 4:3 illustrations of riders, drivers, and city objects.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Uber-Inspired"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "An inspired interpretation of Uber's design language — a transportation-and-delivery super-app brand whose web surface is a black-and-white duet, framed by a custom geometric display sans, accented by a single signature pill shape (radius 999px) on every interactive element, and decorated only by editorial 4:3 illustrations of riders, drivers, and city objects.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "vercel",
-    "name": "Vercel",
-    "description": "An inspired interpretation of Vercel's design language — a developer-platform brand whose surface is a stark black-and-ink duet on near-white canvas, broken at hero scale by a multi-color mesh gradien",
+    "name": "Vercel-Inspired",
+    "description": "An inspired interpretation of Vercel's design language — a developer-platform brand whose surface is a stark black-and-ink duet on near-white canvas, broken at hero scale by a multi-color mesh gradient (cyan / blue / magenta / amber) that acts as the entire decorative system, paired with a custom geometric sans for headlines and a monospaced caption face for technical labels.",
     "category": "Developer Tools",
     "subcategory": "Brand Design",
     "tags": [
       "vercel",
-      "developer"
+      "developer",
+      "gradient"
     ],
     "upstreamPath": "design-md/vercel/DESIGN.md",
     "upstreamCommit": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
@@ -3717,7 +12056,31 @@ export const vendorEntries: VendorEntry[] = [
       "canvas-soft": "#fafafa",
       "canvas-soft-2": "#f5f5f5",
       "link": "#0070f3",
-      "link-deep": "#0761d1"
+      "link-deep": "#0761d1",
+      "link-bg-soft": "#d3e5ff",
+      "success": "#0070f3",
+      "error": "#ee0000",
+      "error-soft": "#f7d4d6",
+      "error-deep": "#c50000",
+      "warning": "#f5a623",
+      "warning-soft": "#ffefcf",
+      "warning-deep": "#ab570a",
+      "violet": "#7928ca",
+      "violet-soft": "#d8ccf1",
+      "violet-deep": "#4c2889",
+      "cyan": "#50e3c2",
+      "cyan-soft": "#aaffec",
+      "cyan-deep": "#29bc9b",
+      "highlight-pink": "#ff0080",
+      "highlight-magenta": "#eb367f",
+      "gradient-develop-start": "#007cf0",
+      "gradient-develop-end": "#00dfd8",
+      "gradient-preview-start": "#7928ca",
+      "gradient-preview-end": "#ff0080",
+      "gradient-ship-start": "#ff4d4d",
+      "gradient-ship-end": "#f9cb28",
+      "selection-bg": "#171717",
+      "selection-fg": "#f2f2f2"
     },
     "tokens": {
       "colors": {
@@ -3732,34 +12095,162 @@ export const vendorEntries: VendorEntry[] = [
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
         "displaySize": 48,
-        "bodySize": 16,
-        "lineHeight": 1.6
+        "bodySize": 18,
+        "lineHeight": 1.5555555555555556
       },
       "spacing": [
         4,
         8,
+        12,
         16,
         24,
+        32,
         40,
-        64
+        48,
+        64,
+        96,
+        128,
+        192
       ],
-      "radius": 6,
+      "radius": 12,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#171717",
+        "on-primary": "#ffffff",
+        "ink": "#171717",
+        "body": "#4d4d4d",
+        "mute": "#888888",
+        "hairline": "#ebebeb",
+        "hairline-strong": "#a1a1a1",
+        "canvas": "#ffffff",
+        "canvas-soft": "#fafafa",
+        "canvas-soft-2": "#f5f5f5",
+        "link": "#0070f3",
+        "link-deep": "#0761d1",
+        "link-bg-soft": "#d3e5ff",
+        "success": "#0070f3",
+        "error": "#ee0000",
+        "error-soft": "#f7d4d6",
+        "error-deep": "#c50000",
+        "warning": "#f5a623",
+        "warning-soft": "#ffefcf",
+        "warning-deep": "#ab570a",
+        "violet": "#7928ca",
+        "violet-soft": "#d8ccf1",
+        "violet-deep": "#4c2889",
+        "cyan": "#50e3c2",
+        "cyan-soft": "#aaffec",
+        "cyan-deep": "#29bc9b",
+        "highlight-pink": "#ff0080",
+        "highlight-magenta": "#eb367f",
+        "gradient-develop-start": "#007cf0",
+        "gradient-develop-end": "#00dfd8",
+        "gradient-preview-start": "#7928ca",
+        "gradient-preview-end": "#ff0080",
+        "gradient-ship-start": "#ff4d4d",
+        "gradient-ship-end": "#f9cb28",
+        "selection-bg": "#171717",
+        "selection-fg": "#f2f2f2"
+      },
+      "typography": {
+        "display-xl": {
+          "fontFamily": "Geist, Inter, system-ui, -apple-system, sans-serif",
+          "fontSize": "48px",
+          "fontWeight": 600,
+          "lineHeight": "48px",
+          "letterSpacing": "-2.4px",
+          "declaredFamily": "Geist, Inter, system-ui, -apple-system, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-lg": {
+          "fontFamily": "Geist, Inter, system-ui, -apple-system, sans-serif",
+          "fontSize": "18px",
+          "fontWeight": 400,
+          "lineHeight": "28px",
+          "letterSpacing": "0px",
+          "declaredFamily": "Geist, Inter, system-ui, -apple-system, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "4px",
+        "xs": "8px",
+        "sm": "12px",
+        "md": "16px",
+        "lg": "24px",
+        "xl": "32px",
+        "2xl": "40px",
+        "3xl": "48px",
+        "4xl": "64px",
+        "5xl": "96px",
+        "6xl": "128px",
+        "section": "192px"
+      },
+      "radius": {
+        "none": "0px",
+        "xs": "4px",
+        "sm": "6px",
+        "md": "8px",
+        "lg": "12px",
+        "xl": "16px",
+        "pill-sm": "64px",
+        "pill": "100px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#171717",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "Geist, Inter, system-ui, -apple-system, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": 500,
+            "lineHeight": "24px"
+          },
+          "rounded": "100px",
+          "padding": "0px 12px"
+        },
+        "pricing-card": {
+          "backgroundColor": "#ffffff",
+          "textColor": "#171717",
+          "typography": {
+            "fontFamily": "Geist, Inter, system-ui, -apple-system, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "lineHeight": "24px"
+          },
+          "rounded": "12px",
+          "padding": "32px"
+        }
+      },
+      "layout": "product",
+      "traits": "An inspired interpretation of Vercel's design language — a developer-platform brand whose surface is a stark black-and-ink duet on near-white canvas, broken at hero scale by a multi-color mesh gradient (cyan / blue / magenta / amber) that acts as the entire decorative system, paired with a custom geometric sans for headlines and a monospaced caption face for technical labels.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Vercel-Inspired"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "An inspired interpretation of Vercel's design language — a developer-platform brand whose surface is a stark black-and-ink duet on near-white canvas, broken at hero scale by a multi-color mesh gradient (cyan / blue / magenta / amber) that acts as the entire decorative system, paired with a custom geometric sans for headlines and a monospaced caption face for technical labels.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "vodafone",
-    "name": "Vodafone",
-    "description": "An inspired interpretation of Vodafone's design language — a telecom super-brand whose web surface alternates between editorial photography hero bands with massive uppercase display headlines and clea",
+    "name": "Vodafone-Inspired",
+    "description": "An inspired interpretation of Vodafone's design language — a telecom super-brand whose web surface alternates between editorial photography hero bands with massive uppercase display headlines and clean white content bands, anchored by the company's signature scarlet red CTA and the proprietary Vodafone display sans set at impossibly heavy 800 weight.",
     "category": "Brand Design",
     "subcategory": "Brand Design",
     "tags": [
       "vodafone",
       "brand",
-      "editorial"
+      "editorial",
+      "clean"
     ],
     "upstreamPath": "design-md/vodafone/DESIGN.md",
     "upstreamCommit": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
@@ -3781,40 +12272,130 @@ export const vendorEntries: VendorEntry[] = [
         "text": "#25282b",
         "primary": "#e60000",
         "onPrimary": "#ffffff",
-        "border": "#e0e0e0"
+        "border": "currentColor"
       },
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
-        "bodySize": 16,
-        "lineHeight": 1.6
+        "displaySize": 144,
+        "bodySize": 22,
+        "lineHeight": 1.0909090909090908
       },
       "spacing": [
+        2,
         4,
         8,
+        12,
         16,
+        20,
         24,
-        40,
-        64
+        32
       ],
       "radius": 6,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#e60000",
+        "on-primary": "#ffffff",
+        "ink": "#25282b",
+        "body": "#7e7e7e",
+        "mute": "#bebebe",
+        "canvas": "#ffffff",
+        "canvas-soft": "#f2f2f2",
+        "on-dark": "#ffffff"
+      },
+      "typography": {
+        "display-hero": {
+          "fontFamily": "Vodafone, Vodafone Rg, Helvetica Neue, Arial, sans-serif",
+          "fontSize": "144px",
+          "fontWeight": 800,
+          "lineHeight": "114px",
+          "letterSpacing": "-1px",
+          "declaredFamily": "Vodafone, Vodafone Rg, Helvetica Neue, Arial, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-lg": {
+          "fontFamily": "Vodafone, Vodafone Rg, Helvetica Neue, Arial, sans-serif",
+          "fontSize": "22px",
+          "fontWeight": 400,
+          "lineHeight": "24px",
+          "declaredFamily": "Vodafone, Vodafone Rg, Helvetica Neue, Arial, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "2px",
+        "xs": "4px",
+        "sm": "8px",
+        "md": "12px",
+        "lg": "16px",
+        "xl": "20px",
+        "2xl": "24px",
+        "3xl": "32px"
+      },
+      "radius": {
+        "none": "0px",
+        "xs": "1px",
+        "sm": "6px",
+        "card": "6px",
+        "pill-md": "32px",
+        "pill-lg": "60px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#e60000",
+          "textColor": "#ffffff",
+          "borderColor": "#e60000",
+          "typography": {
+            "fontFamily": "Vodafone, Vodafone Rg, Helvetica Neue, Arial, sans-serif",
+            "fontSize": "18px",
+            "fontWeight": 400,
+            "lineHeight": "28px"
+          },
+          "rounded": "60px",
+          "padding": "12px 24px"
+        },
+        "card-content": {
+          "backgroundColor": "#ffffff",
+          "textColor": "#25282b",
+          "typography": {
+            "fontFamily": "Vodafone, Vodafone Rg, Helvetica Neue, Arial, sans-serif",
+            "fontSize": "18px",
+            "fontWeight": 400,
+            "lineHeight": "28px"
+          },
+          "rounded": "6px",
+          "padding": "16px"
+        }
+      },
+      "layout": "gallery",
+      "traits": "An inspired interpretation of Vodafone's design language — a telecom super-brand whose web surface alternates between editorial photography hero bands with massive uppercase display headlines and clean white content bands, anchored by the company's signature scarlet red CTA and the proprietary Vodafone display sans set at impossibly heavy 800 weight.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Vodafone-Inspired"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "An inspired interpretation of Vodafone's design language — a telecom super-brand whose web surface alternates between editorial photography hero bands with massive uppercase display headlines and clean white content bands, anchored by the company's signature scarlet red CTA and the proprietary Vodafone display sans set at impossibly heavy 800 weight.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "voltagent",
-    "name": "Voltagent",
-    "description": "An inspired interpretation of Voltagent's design language — a developer-focused AI agent engineering platform whose surface is an unrelenting near-black canvas broken only by a single electric-green b",
+    "name": "Voltagent-Inspired",
+    "description": "An inspired interpretation of Voltagent's design language — a developer-focused AI agent engineering platform whose surface is an unrelenting near-black canvas broken only by a single electric-green brand accent, code-editor mockups inside the hero, and a precise grid of dark feature cards that read like a documentation site dressed as marketing.",
     "category": "AI & LLM",
     "subcategory": "Brand Design",
     "tags": [
       "voltagent",
       "ai",
-      "developer"
+      "developer",
+      "dark"
     ],
     "upstreamPath": "design-md/voltagent/DESIGN.md",
     "upstreamCommit": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
@@ -3831,12 +12412,13 @@ export const vendorEntries: VendorEntry[] = [
       "hairline": "#3d3a39",
       "hairline-soft": "#b8b3b0",
       "canvas": "#101010",
-      "canvas-soft": "#1a1a1a"
+      "canvas-soft": "#1a1a1a",
+      "canvas-text-soft": "#f5f6f7"
     },
     "tokens": {
       "colors": {
         "canvas": "#101010",
-        "surface": "#1a1a1a",
+        "surface": "#101010",
         "text": "#f2f2f2",
         "primary": "#00d992",
         "onPrimary": "#101010",
@@ -3845,35 +12427,135 @@ export const vendorEntries: VendorEntry[] = [
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
-        "bodySize": 16,
-        "lineHeight": 1.6
+        "displaySize": 60,
+        "bodySize": 18,
+        "lineHeight": 1.5555555555555556
       },
       "spacing": [
+        2,
         4,
         8,
+        12,
         16,
+        20,
         24,
+        32,
         40,
+        48,
         64
       ],
-      "radius": 6,
+      "radius": 8,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#00d992",
+        "primary-soft": "#2fd6a1",
+        "primary-deep": "#10b981",
+        "on-primary": "#101010",
+        "ink": "#f2f2f2",
+        "ink-strong": "#ffffff",
+        "body": "#bdbdbd",
+        "mute": "#8b949e",
+        "hairline": "#3d3a39",
+        "hairline-soft": "#b8b3b0",
+        "canvas": "#101010",
+        "canvas-soft": "#1a1a1a",
+        "canvas-text-soft": "#f5f6f7"
+      },
+      "typography": {
+        "display-xl": {
+          "fontFamily": "Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif",
+          "fontSize": "60px",
+          "fontWeight": 400,
+          "lineHeight": "60px",
+          "letterSpacing": "-0.65px",
+          "declaredFamily": "Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-lg": {
+          "fontFamily": "Inter, system-ui, -apple-system, sans-serif",
+          "fontSize": "18px",
+          "fontWeight": 400,
+          "lineHeight": "28px",
+          "declaredFamily": "Inter, system-ui, -apple-system, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "2px",
+        "xs": "4px",
+        "sm": "8px",
+        "md": "12px",
+        "lg": "16px",
+        "xl": "20px",
+        "2xl": "24px",
+        "3xl": "32px",
+        "4xl": "40px",
+        "5xl": "48px",
+        "6xl": "64px"
+      },
+      "radius": {
+        "none": "0px",
+        "xs": "4px",
+        "sm": "6px",
+        "md": "8px",
+        "pill": "9999px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#00d992",
+          "textColor": "#101010",
+          "typography": {
+            "fontFamily": "Inter, system-ui, -apple-system, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": 600,
+            "lineHeight": "24px"
+          },
+          "rounded": "6px",
+          "padding": "12px 16px"
+        },
+        "card-feature": {
+          "backgroundColor": "#101010",
+          "textColor": "#f2f2f2",
+          "borderColor": "#3d3a39",
+          "typography": {
+            "fontFamily": "Inter, system-ui, -apple-system, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "lineHeight": "26px"
+          },
+          "rounded": "8px",
+          "padding": "24px"
+        }
+      },
+      "layout": "product",
+      "traits": "An inspired interpretation of Voltagent's design language — a developer-focused AI agent engineering platform whose surface is an unrelenting near-black canvas broken only by a single electric-green brand accent, code-editor mockups inside the hero, and a precise grid of dark feature cards that read like a documentation site dressed as marketing.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Voltagent-Inspired"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "An inspired interpretation of Voltagent's design language — a developer-focused AI agent engineering platform whose surface is an unrelenting near-black canvas broken only by a single electric-green brand accent, code-editor mockups inside the hero, and a precise grid of dark feature cards that read like a documentation site dressed as marketing.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "warp",
-    "name": "Warp",
-    "description": "An inspired interpretation of Warp's design language — an agentic terminal-and-development-environment brand whose surface is a warm near-charcoal canvas (a tint warmer than pure black), broken only b",
+    "name": "Warp-Inspired",
+    "description": "An inspired interpretation of Warp's design language — an agentic terminal-and-development-environment brand whose surface is a warm near-charcoal canvas (a tint warmer than pure black), broken only by clean Inter typography, the occasional Instrument Serif italic moment, and dense terminal-mockup imagery; CTAs are unusually understated, with shape geometry running tighter than most marketing sites.",
     "category": "Developer Tools",
     "subcategory": "Brand Design",
     "tags": [
       "warp",
       "developer",
-      "terminal"
+      "terminal",
+      "clean"
     ],
     "upstreamPath": "design-md/warp/DESIGN.md",
     "upstreamCommit": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
@@ -3892,7 +12574,7 @@ export const vendorEntries: VendorEntry[] = [
     "tokens": {
       "colors": {
         "canvas": "#2b2622",
-        "surface": "#383330",
+        "surface": "#2b2622",
         "text": "#f7f5f0",
         "primary": "#f7f5f0",
         "onPrimary": "#2b2622",
@@ -3901,29 +12583,124 @@ export const vendorEntries: VendorEntry[] = [
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
-        "bodySize": 16,
-        "lineHeight": 1.6
+        "displaySize": 64,
+        "bodySize": 18,
+        "lineHeight": 1.5555555555555556
       },
       "spacing": [
+        2,
         4,
         8,
+        10,
         16,
         24,
-        40,
-        64
+        32,
+        48,
+        64,
+        96
       ],
-      "radius": 6,
+      "radius": 4,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#f7f5f0",
+        "on-primary": "#2b2622",
+        "ink": "#f7f5f0",
+        "body": "#c9c0ad",
+        "body-strong": "#dad2c1",
+        "mute": "#aea69c",
+        "canvas": "#2b2622",
+        "canvas-soft": "#383330",
+        "hairline": "#3f3a36"
+      },
+      "typography": {
+        "display-xl": {
+          "fontFamily": "Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif",
+          "fontSize": "64px",
+          "fontWeight": 400,
+          "lineHeight": "70.4px",
+          "letterSpacing": "-1.6px",
+          "declaredFamily": "Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-lg": {
+          "fontFamily": "Inter, system-ui, -apple-system, sans-serif",
+          "fontSize": "18px",
+          "fontWeight": 400,
+          "lineHeight": "28px",
+          "declaredFamily": "Inter, system-ui, -apple-system, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "2px",
+        "xs": "4px",
+        "sm": "8px",
+        "md": "10px",
+        "lg": "16px",
+        "xl": "24px",
+        "2xl": "32px",
+        "3xl": "48px",
+        "4xl": "64px",
+        "5xl": "96px"
+      },
+      "radius": {
+        "none": "0px",
+        "xxs": "1px",
+        "xs": "2px",
+        "sm": "3px",
+        "md": "4px",
+        "lg": "6px",
+        "pill": "9999px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#f7f5f0",
+          "textColor": "#2b2622",
+          "typography": {
+            "fontFamily": "Inter, system-ui, -apple-system, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": 500,
+            "lineHeight": "20px"
+          },
+          "rounded": "3px",
+          "padding": "8px 16px"
+        },
+        "card-content": {
+          "backgroundColor": "#383330",
+          "textColor": "#f7f5f0",
+          "borderColor": "#3f3a36",
+          "typography": {
+            "fontFamily": "Inter, system-ui, -apple-system, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "lineHeight": "24px"
+          },
+          "rounded": "4px",
+          "padding": "24px"
+        }
+      },
+      "layout": "product",
+      "traits": "An inspired interpretation of Warp's design language — an agentic terminal-and-development-environment brand whose surface is a warm near-charcoal canvas (a tint warmer than pure black), broken only by clean Inter typography, the occasional Instrument Serif italic moment, and dense terminal-mockup imagery; CTAs are unusually understated, with shape geometry running tighter than most marketing sites.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Warp-Inspired"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "An inspired interpretation of Warp's design language — an agentic terminal-and-development-environment brand whose surface is a warm near-charcoal canvas (a tint warmer than pure black), broken only by clean Inter typography, the occasional Instrument Serif italic moment, and dense terminal-mockup imagery; CTAs are unusually understated, with shape geometry running tighter than most marketing sites.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "webflow",
-    "name": "Webflow",
-    "description": "An inspired interpretation of Webflow's design language — a visual web development platform whose surface contrasts a deep near-black `#080808` primary against a generous white canvas, broken by a fiv",
+    "name": "Webflow-Inspired",
+    "description": "An inspired interpretation of Webflow's design language — a visual web development platform whose surface contrasts a deep near-black #080808 primary against a generous white canvas, broken by a five-stop chromatic accent system (purple / pink / blue / orange / green) that maps to the brand's product categories, and anchored by the proprietary WF Visual Sans family used at restrained 500 / 600 weights with negative tracking.",
     "category": "Brand Design",
     "subcategory": "Brand Design",
     "tags": [
@@ -3945,12 +12722,19 @@ export const vendorEntries: VendorEntry[] = [
       "hairline": "#d8d8d8",
       "canvas": "#ffffff",
       "accent-purple": "#7a3dff",
-      "accent-pink": "#ed52cb"
+      "accent-pink": "#ed52cb",
+      "accent-blue": "#3b89ff",
+      "accent-blue-deep": "#006acc",
+      "accent-blue-info": "#146ef5",
+      "accent-orange": "#ff6b00",
+      "accent-green": "#00d722",
+      "accent-yellow": "#ffae13",
+      "accent-red": "#ee1d36"
     },
     "tokens": {
       "colors": {
         "canvas": "#ffffff",
-        "surface": "#f9f9f9",
+        "surface": "#ffffff",
         "text": "#080808",
         "primary": "#080808",
         "onPrimary": "#ffffff",
@@ -3959,35 +12743,137 @@ export const vendorEntries: VendorEntry[] = [
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
-        "bodySize": 16,
-        "lineHeight": 1.6
+        "displaySize": 80,
+        "bodySize": 28.8,
+        "lineHeight": 1.5999999999999999
       },
       "spacing": [
+        2,
         4,
         8,
+        12,
         16,
+        20,
         24,
-        40,
-        64
+        32
       ],
-      "radius": 6,
+      "radius": 8,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#080808",
+        "on-primary": "#ffffff",
+        "ink": "#080808",
+        "ink-strong": "#222222",
+        "body": "#363636",
+        "body-mid": "#5a5a5a",
+        "mute": "#898989",
+        "mute-soft": "#ababab",
+        "hairline": "#d8d8d8",
+        "canvas": "#ffffff",
+        "accent-purple": "#7a3dff",
+        "accent-pink": "#ed52cb",
+        "accent-blue": "#3b89ff",
+        "accent-blue-deep": "#006acc",
+        "accent-blue-info": "#146ef5",
+        "accent-orange": "#ff6b00",
+        "accent-green": "#00d722",
+        "accent-yellow": "#ffae13",
+        "accent-red": "#ee1d36"
+      },
+      "typography": {
+        "display-xxl": {
+          "fontFamily": "WF Visual Sans Variable, Inter, system-ui, -apple-system, sans-serif",
+          "fontSize": "80px",
+          "fontWeight": 600,
+          "lineHeight": "83.2px",
+          "letterSpacing": "-0.8px",
+          "declaredFamily": "WF Visual Sans Variable, Inter, system-ui, -apple-system, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-lg": {
+          "fontFamily": "WF Visual Sans Variable, Inter, system-ui, sans-serif",
+          "fontSize": "28.8px",
+          "fontWeight": 400,
+          "lineHeight": "46.08px",
+          "letterSpacing": "-0.288px",
+          "declaredFamily": "WF Visual Sans Variable, Inter, system-ui, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "2px",
+        "xs": "4px",
+        "sm": "8px",
+        "md": "12px",
+        "lg": "16px",
+        "xl": "20px",
+        "2xl": "24px",
+        "3xl": "32px"
+      },
+      "radius": {
+        "none": "0px",
+        "xs": "2px",
+        "sm": "4px",
+        "md": "8px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#080808",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "WF Visual Sans Variable, Inter, system-ui, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": 500,
+            "lineHeight": "25.6px",
+            "letterSpacing": "-0.16px"
+          },
+          "rounded": "4px",
+          "padding": "12px 20px"
+        },
+        "card-feature": {
+          "backgroundColor": "#ffffff",
+          "textColor": "#080808",
+          "borderColor": "#d8d8d8",
+          "typography": {
+            "fontFamily": "WF Visual Sans Variable, Inter, system-ui, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "lineHeight": "25.6px",
+            "letterSpacing": "-0.16px"
+          },
+          "rounded": "8px",
+          "padding": "32px"
+        }
+      },
+      "layout": "product",
+      "traits": "An inspired interpretation of Webflow's design language — a visual web development platform whose surface contrasts a deep near-black `#080808` primary against a generous white canvas, broken by a five-stop chromatic accent system (purple / pink / blue / orange / green) that maps to the brand's product categories, and anchored by the proprietary WF Visual Sans family used at restrained 500 / 600 weights with negative tracking.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Webflow-Inspired"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "An inspired interpretation of Webflow's design language — a visual web development platform whose surface contrasts a deep near-black `#080808` primary against a generous white canvas, broken by a five-stop chromatic accent system (purple / pink / blue / orange / green) that maps to the brand's product categories, and anchored by the proprietary WF Visual Sans family used at restrained 500 / 600 weights with negative tracking.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "wired",
-    "name": "Wired",
-    "description": "An inspired interpretation of Wired's design language — a flagship technology-magazine brand whose surface is a strict editorial duet of stark black wordmark on white canvas, anchored by a tall narrow",
+    "name": "Wired-Inspired",
+    "description": "An inspired interpretation of Wired's design language — a flagship technology-magazine brand whose surface is a strict editorial duet of stark black wordmark on white canvas, anchored by a tall narrow custom display serif for hero headlines, a humanist serif body face for long-form reading, and a clean sans face for metadata; layout reads like a printed magazine ported to the web with very little marketing chrome.",
     "category": "Brand Design",
     "subcategory": "Brand Design",
     "tags": [
       "wired",
       "brand",
-      "editorial"
+      "editorial",
+      "clean"
     ],
     "upstreamPath": "design-md/wired/DESIGN.md",
     "upstreamCommit": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
@@ -4013,36 +12899,125 @@ export const vendorEntries: VendorEntry[] = [
         "border": "#e0e0e0"
       },
       "typography": {
-        "display": "system-ui, sans-serif",
-        "body": "system-ui, sans-serif",
-        "displaySize": 48,
-        "bodySize": 16,
-        "lineHeight": 1.6
+        "display": "serif",
+        "body": "serif",
+        "displaySize": 64,
+        "bodySize": 19,
+        "lineHeight": 1.47
       },
       "spacing": [
+        2,
         4,
         8,
+        12,
         16,
+        20,
         24,
-        40,
-        64
+        32,
+        48
       ],
-      "radius": 6,
+      "radius": 0,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#000000",
+        "on-primary": "#ffffff",
+        "ink": "#000000",
+        "ink-soft": "#1a1a1a",
+        "body": "#757575",
+        "hairline": "#e0e0e0",
+        "canvas": "#ffffff",
+        "canvas-soft": "#f5f5f5",
+        "link": "#057dbc"
+      },
+      "typography": {
+        "display-hero": {
+          "fontFamily": "WiredDisplay, \"Times New Roman\", Georgia, serif",
+          "fontSize": "64px",
+          "fontWeight": 400,
+          "lineHeight": "59.52px",
+          "letterSpacing": "-0.5px",
+          "declaredFamily": "WiredDisplay, \"Times New Roman\", Georgia, serif",
+          "renderFallback": "serif"
+        },
+        "body-serif-lg": {
+          "fontFamily": "BreveText, Georgia, \"Times New Roman\", serif",
+          "fontSize": "19px",
+          "fontWeight": 400,
+          "lineHeight": "27.93px",
+          "letterSpacing": "0.108px",
+          "declaredFamily": "BreveText, Georgia, \"Times New Roman\", serif",
+          "renderFallback": "serif"
+        }
+      },
+      "spacing": {
+        "xxs": "2px",
+        "xs": "4px",
+        "sm": "8px",
+        "md": "12px",
+        "lg": "16px",
+        "xl": "20px",
+        "2xl": "24px",
+        "3xl": "32px",
+        "4xl": "48px"
+      },
+      "radius": {
+        "none": "0px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#000000",
+          "textColor": "#ffffff",
+          "typography": {
+            "fontFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": 700,
+            "lineHeight": "20px",
+            "letterSpacing": "0.3px"
+          },
+          "rounded": "0px",
+          "padding": "12px 20px"
+        },
+        "story-card-large": {
+          "backgroundColor": "#ffffff",
+          "textColor": "#000000",
+          "typography": {
+            "fontFamily": "WiredDisplay, \"Times New Roman\", Georgia, serif",
+            "fontSize": "32px",
+            "fontWeight": 400,
+            "lineHeight": "35.2px",
+            "letterSpacing": "-0.3px"
+          },
+          "padding": "16px"
+        }
+      },
+      "layout": "editorial",
+      "traits": "An inspired interpretation of Wired's design language — a flagship technology-magazine brand whose surface is a strict editorial duet of stark black wordmark on white canvas, anchored by a tall narrow custom display serif for hero headlines, a humanist serif body face for long-form reading, and a clean sans face for metadata; layout reads like a printed magazine ported to the web with very little marketing chrome.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Wired-Inspired"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "An inspired interpretation of Wired's design language — a flagship technology-magazine brand whose surface is a strict editorial duet of stark black wordmark on white canvas, anchored by a tall narrow custom display serif for hero headlines, a humanist serif body face for long-form reading, and a clean sans face for metadata; layout reads like a printed magazine ported to the web with very little marketing chrome.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "wise",
-    "name": "Wise",
-    "description": "An inspired interpretation of Wise's design language — a global money-transfer brand whose surface combines an unusually heavy near-black display sans (weight 900 at 64–126 px) with a vivid lime-green",
+    "name": "Wise-Inspired",
+    "description": "An inspired interpretation of Wise's design language — a global money-transfer brand whose surface combines an unusually heavy near-black display sans (weight 900 at 64–126 px) with a vivid lime-green brand accent, sage-tinted surface neutrals, and rounded white cards on a pale green-tinted canvas; the whole system reads more like a Scandinavian fintech magazine than a bank.",
     "category": "Brand Design",
     "subcategory": "Brand Design",
     "tags": [
       "wise",
-      "brand"
+      "brand",
+      "fintech"
     ],
     "upstreamPath": "design-md/wise/DESIGN.md",
     "upstreamCommit": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
@@ -4059,7 +13034,17 @@ export const vendorEntries: VendorEntry[] = [
       "mute": "#868685",
       "canvas": "#ffffff",
       "canvas-soft": "#e8ebe6",
-      "positive": "#2ead4b"
+      "positive": "#2ead4b",
+      "positive-deep": "#054d28",
+      "warning": "#ffd11a",
+      "warning-deep": "#b86700",
+      "warning-content": "#4a3b1c",
+      "negative": "#d03238",
+      "negative-deep": "#a72027",
+      "negative-darkest": "#a7000d",
+      "negative-bg": "#320707",
+      "accent-orange": "#ffc091",
+      "accent-cyan": "#38c8ff"
     },
     "tokens": {
       "colors": {
@@ -4068,39 +13053,142 @@ export const vendorEntries: VendorEntry[] = [
         "text": "#0e0f0c",
         "primary": "#9fe870",
         "onPrimary": "#0e0f0c",
-        "border": "#e0e0e0"
+        "border": "currentColor"
       },
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
-        "bodySize": 16,
-        "lineHeight": 1.6
+        "displaySize": 126,
+        "bodySize": 20,
+        "lineHeight": 1.5
       },
       "spacing": [
+        2,
         4,
         8,
+        12,
         16,
         24,
-        40,
-        64
+        32,
+        48
       ],
-      "radius": 6,
+      "radius": 24,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#9fe870",
+        "on-primary": "#0e0f0c",
+        "primary-active": "#cdffad",
+        "primary-neutral": "#c5edab",
+        "primary-pale": "#e2f6d5",
+        "ink": "#0e0f0c",
+        "ink-deep": "#163300",
+        "body": "#454745",
+        "mute": "#868685",
+        "canvas": "#ffffff",
+        "canvas-soft": "#e8ebe6",
+        "positive": "#2ead4b",
+        "positive-deep": "#054d28",
+        "warning": "#ffd11a",
+        "warning-deep": "#b86700",
+        "warning-content": "#4a3b1c",
+        "negative": "#d03238",
+        "negative-deep": "#a72027",
+        "negative-darkest": "#a7000d",
+        "negative-bg": "#320707",
+        "accent-orange": "#ffc091",
+        "accent-cyan": "#38c8ff"
+      },
+      "typography": {
+        "display-mega": {
+          "fontFamily": "Wise Sans, Inter, system-ui, -apple-system, sans-serif",
+          "fontSize": "126px",
+          "fontWeight": 900,
+          "lineHeight": "107.1px",
+          "declaredFamily": "Wise Sans, Inter, system-ui, -apple-system, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-lg": {
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": 400,
+          "lineHeight": "30px",
+          "declaredFamily": "Inter, system-ui, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "2px",
+        "xs": "4px",
+        "sm": "8px",
+        "md": "12px",
+        "lg": "16px",
+        "xl": "24px",
+        "2xl": "32px",
+        "3xl": "48px"
+      },
+      "radius": {
+        "none": "0px",
+        "sm": "8px",
+        "md": "12px",
+        "lg": "16px",
+        "xl": "24px",
+        "pill": "9999px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#9fe870",
+          "textColor": "#0e0f0c",
+          "typography": {
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": 600,
+            "lineHeight": "24px"
+          },
+          "rounded": "24px",
+          "padding": "12px 24px"
+        },
+        "card-content": {
+          "backgroundColor": "#ffffff",
+          "textColor": "#0e0f0c",
+          "typography": {
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "lineHeight": "24px"
+          },
+          "rounded": "24px",
+          "padding": "24px"
+        }
+      },
+      "layout": "editorial",
+      "traits": "An inspired interpretation of Wise's design language — a global money-transfer brand whose surface combines an unusually heavy near-black display sans (weight 900 at 64–126 px) with a vivid lime-green brand accent, sage-tinted surface neutrals, and rounded white cards on a pale green-tinted canvas; the whole system reads more like a Scandinavian fintech magazine than a bank.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Wise-Inspired"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "An inspired interpretation of Wise's design language — a global money-transfer brand whose surface combines an unusually heavy near-black display sans (weight 900 at 64–126 px) with a vivid lime-green brand accent, sage-tinted surface neutrals, and rounded white cards on a pale green-tinted canvas; the whole system reads more like a Scandinavian fintech magazine than a bank.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "x.ai",
-    "name": "X AI",
-    "description": "An inspired interpretation of xAI's design language — Elon Musk's frontier-AI company whose web surface is a strict near-black canvas broken only by white pill outlines, occasional warm sunset / dusk ",
+    "name": "xAI-Inspired",
+    "description": "An inspired interpretation of xAI's design language — Elon Musk's frontier-AI company whose web surface is a strict near-black canvas broken only by white pill outlines, occasional warm sunset / dusk gradient accents, a custom geometric sans (Universal Sans) for display, and an uppercase tracked monospace caption face; the whole system reads as engineered-cosmic, unmarketed.",
     "category": "AI & LLM",
     "subcategory": "Brand Design",
     "tags": [
       "x",
-      "ai"
+      "ai",
+      "gradient",
+      "monospace"
     ],
     "upstreamPath": "design-md/x.ai/DESIGN.md",
     "upstreamCommit": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
@@ -4117,12 +13205,18 @@ export const vendorEntries: VendorEntry[] = [
       "canvas": "#0a0a0a",
       "canvas-soft": "#1a1c20",
       "canvas-card": "#191919",
-      "canvas-mid": "#363a3f"
+      "canvas-mid": "#363a3f",
+      "accent-sunset": "#ff7a17",
+      "accent-sunset-soft": "#ffc285",
+      "accent-dusk": "#7c3aed",
+      "accent-twilight": "#c4b5fd",
+      "accent-breeze": "#a0c3ec",
+      "accent-midnight": "#0d1726"
     },
     "tokens": {
       "colors": {
         "canvas": "#0a0a0a",
-        "surface": "#1a1c20",
+        "surface": "#0a0a0a",
         "text": "#ffffff",
         "primary": "#ffffff",
         "onPrimary": "#0a0a0a",
@@ -4131,29 +13225,128 @@ export const vendorEntries: VendorEntry[] = [
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
-        "bodySize": 16,
-        "lineHeight": 1.6
+        "displaySize": 96,
+        "bodySize": 18,
+        "lineHeight": 1.5555555555555556
       },
       "spacing": [
+        2,
         4,
         8,
+        12,
         16,
         24,
-        40,
+        32,
+        48,
         64
       ],
-      "radius": 6,
+      "radius": 8,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#ffffff",
+        "on-primary": "#0a0a0a",
+        "ink": "#ffffff",
+        "ink-hover": "#fafaf7",
+        "body": "#dadbdf",
+        "body-mid": "#7d8187",
+        "mute": "#7d8187",
+        "hairline": "#212327",
+        "canvas": "#0a0a0a",
+        "canvas-soft": "#1a1c20",
+        "canvas-card": "#191919",
+        "canvas-mid": "#363a3f",
+        "accent-sunset": "#ff7a17",
+        "accent-sunset-soft": "#ffc285",
+        "accent-dusk": "#7c3aed",
+        "accent-twilight": "#c4b5fd",
+        "accent-breeze": "#a0c3ec",
+        "accent-midnight": "#0d1726"
+      },
+      "typography": {
+        "display-xl": {
+          "fontFamily": "universalSans, Inter, system-ui, -apple-system, sans-serif",
+          "fontSize": "96px",
+          "fontWeight": 400,
+          "lineHeight": "96px",
+          "letterSpacing": "-2.4px",
+          "declaredFamily": "universalSans, Inter, system-ui, -apple-system, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-lg": {
+          "fontFamily": "universalSans, Inter, system-ui, sans-serif",
+          "fontSize": "18px",
+          "fontWeight": 400,
+          "lineHeight": "28px",
+          "declaredFamily": "universalSans, Inter, system-ui, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "2px",
+        "xs": "4px",
+        "sm": "8px",
+        "md": "12px",
+        "lg": "16px",
+        "xl": "24px",
+        "2xl": "32px",
+        "3xl": "48px",
+        "4xl": "64px"
+      },
+      "radius": {
+        "none": "0px",
+        "sm": "8px",
+        "pill": "9999px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#ffffff",
+          "textColor": "#0a0a0a",
+          "borderColor": "#ffffff",
+          "typography": {
+            "fontFamily": "universalSans, Inter, system-ui, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": 400,
+            "lineHeight": "20px"
+          },
+          "rounded": "9999px",
+          "padding": "4px 12px"
+        },
+        "card-content": {
+          "backgroundColor": "#191919",
+          "textColor": "#ffffff",
+          "borderColor": "#212327",
+          "typography": {
+            "fontFamily": "universalSans, Inter, system-ui, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "lineHeight": "24px"
+          },
+          "rounded": "8px",
+          "padding": "24px"
+        }
+      },
+      "layout": "product",
+      "traits": "An inspired interpretation of xAI's design language — Elon Musk's frontier-AI company whose web surface is a strict near-black canvas broken only by white pill outlines, occasional warm sunset / dusk gradient accents, a custom geometric sans (Universal Sans) for display, and an uppercase tracked monospace caption face; the whole system reads as engineered-cosmic, unmarketed.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "xAI-Inspired"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "An inspired interpretation of xAI's design language — Elon Musk's frontier-AI company whose web surface is a strict near-black canvas broken only by white pill outlines, occasional warm sunset / dusk gradient accents, a custom geometric sans (Universal Sans) for display, and an uppercase tracked monospace caption face; the whole system reads as engineered-cosmic, unmarketed.",
     "hasPreviewHtml": false,
     "externalDeps": []
   },
   {
     "slug": "zapier",
-    "name": "Zapier",
-    "description": "An inspired interpretation of Zapier's design language — a workflow-automation platform whose surface combines warm-cream neutrals (`#fffefb` canvas, `#f8f4f0` soft cream) with deep coffee ink (`#2015",
+    "name": "Zapier-Inspired",
+    "description": "An inspired interpretation of Zapier's design language — a workflow-automation platform whose surface combines warm-cream neutrals (#fffefb canvas, #f8f4f0 soft cream) with deep coffee ink (#201515) and a single saturated orange CTA accent (#ff4f00); typography pairs the proprietary Degular Display family at hero scale with Inter for sub-displays and body, giving the brand a confident-warm rather than cool-tech voice.",
     "category": "Brand Design",
     "subcategory": "Brand Design",
     "tags": [
@@ -4182,27 +13375,118 @@ export const vendorEntries: VendorEntry[] = [
         "text": "#201515",
         "primary": "#ff4f00",
         "onPrimary": "#fffefb",
-        "border": "#e0e0e0"
+        "border": "currentColor"
       },
       "typography": {
         "display": "system-ui, sans-serif",
         "body": "system-ui, sans-serif",
-        "displaySize": 48,
-        "bodySize": 16,
-        "lineHeight": 1.6
+        "displaySize": 56,
+        "bodySize": 20,
+        "lineHeight": 1.5
       },
       "spacing": [
+        2,
         4,
         8,
+        12,
         16,
         24,
-        40,
+        32,
+        48,
         64
       ],
-      "radius": 6,
+      "radius": 12,
       "borderWidth": 1,
-      "duration": 200
+      "duration": 0
     },
+    "spec": {
+      "colors": {
+        "primary": "#ff4f00",
+        "on-primary": "#fffefb",
+        "ink": "#201515",
+        "ink-soft": "#2f2a26",
+        "ink-mid": "#36342e",
+        "body": "#605d52",
+        "body-mid": "#939084",
+        "mute": "#c5c0b1",
+        "canvas": "#fffefb",
+        "canvas-soft": "#f8f4f0"
+      },
+      "typography": {
+        "display-xl": {
+          "fontFamily": "Degular Display, Inter, system-ui, -apple-system, sans-serif",
+          "fontSize": "56px",
+          "fontWeight": 500,
+          "lineHeight": "56px",
+          "declaredFamily": "Degular Display, Inter, system-ui, -apple-system, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        },
+        "body-lg": {
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": 400,
+          "lineHeight": "30px",
+          "letterSpacing": "-0.2px",
+          "declaredFamily": "Inter, system-ui, sans-serif",
+          "renderFallback": "system-ui, sans-serif"
+        }
+      },
+      "spacing": {
+        "xxs": "2px",
+        "xs": "4px",
+        "sm": "8px",
+        "md": "12px",
+        "lg": "16px",
+        "xl": "24px",
+        "2xl": "32px",
+        "3xl": "48px",
+        "4xl": "64px"
+      },
+      "radius": {
+        "none": "0px",
+        "sm": "6px",
+        "md": "12px",
+        "pill": "9999px",
+        "full": "9999px"
+      },
+      "border": {},
+      "components": {
+        "button-primary": {
+          "backgroundColor": "#ff4f00",
+          "textColor": "#fffefb",
+          "typography": {
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontSize": "18px",
+            "fontWeight": 600,
+            "lineHeight": "27px"
+          },
+          "rounded": "12px",
+          "padding": "12px 24px"
+        },
+        "pricing-card": {
+          "backgroundColor": "#fffefb",
+          "textColor": "#201515",
+          "borderColor": "#201515",
+          "typography": {
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontSize": "18px",
+            "fontWeight": 400,
+            "lineHeight": "27px"
+          },
+          "rounded": "12px",
+          "padding": "24px"
+        }
+      },
+      "layout": "product",
+      "traits": "An inspired interpretation of Zapier's design language — a workflow-automation platform whose surface combines warm-cream neutrals (`#fffefb` canvas, `#f8f4f0` soft cream) with deep coffee ink (`#201515`) and a single saturated orange CTA accent (`#ff4f00`); typography pairs the proprietary Degular Display family at hero scale with Inter for sub-displays and body, giving the brand a confident-warm rather than cool-tech voice.",
+      "brandAsset": {
+        "type": "text-wordmark",
+        "label": "Zapier-Inspired"
+      },
+      "depth": null,
+      "motion": null
+    },
+    "rawDescription": "An inspired interpretation of Zapier's design language — a workflow-automation platform whose surface combines warm-cream neutrals (`#fffefb` canvas, `#f8f4f0` soft cream) with deep coffee ink (`#201515`) and a single saturated orange CTA accent (`#ff4f00`); typography pairs the proprietary Degular Display family at hero scale with Inter for sub-displays and body, giving the brand a confident-warm rather than cool-tech voice.",
     "hasPreviewHtml": false,
     "externalDeps": []
   }

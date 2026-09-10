@@ -1,0 +1,1968 @@
+{
+  "viewports": [
+    {
+      "id": "neumorphism",
+      "viewportWidth": 1920,
+      "viewportHeight": 1080,
+      "variant": "card",
+      "width": 365,
+      "height": 218,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "specimen",
+          "width": 365,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "neumorphism",
+      "viewportWidth": 1920,
+      "viewportHeight": 1080,
+      "variant": "detail",
+      "width": 1386,
+      "height": 718,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "specimen",
+          "width": 1386,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "skeuomorphism",
+      "viewportWidth": 1920,
+      "viewportHeight": 1080,
+      "variant": "card",
+      "width": 365,
+      "height": 218,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "specimen",
+          "width": 365,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "skeuomorphism",
+      "viewportWidth": 1920,
+      "viewportHeight": 1080,
+      "variant": "detail",
+      "width": 1386,
+      "height": 718,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "specimen",
+          "width": 1386,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "bauhaus",
+      "viewportWidth": 1920,
+      "viewportHeight": 1080,
+      "variant": "card",
+      "width": 365,
+      "height": 218,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "specimen",
+          "width": 365,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "bauhaus",
+      "viewportWidth": 1920,
+      "viewportHeight": 1080,
+      "variant": "detail",
+      "width": 1386,
+      "height": 718,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "specimen",
+          "width": 1386,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "japandi",
+      "viewportWidth": 1920,
+      "viewportHeight": 1080,
+      "variant": "card",
+      "width": 365,
+      "height": 218,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "specimen",
+          "width": 365,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "japandi",
+      "viewportWidth": 1920,
+      "viewportHeight": 1080,
+      "variant": "detail",
+      "width": 1386,
+      "height": 718,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "specimen",
+          "width": 1386,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "bottom-sheet",
+      "viewportWidth": 1920,
+      "viewportHeight": 1080,
+      "variant": "card",
+      "width": 365,
+      "height": 218,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 365,
+          "overflow": false
+        },
+        {
+          "class": "sheet-content",
+          "width": 335,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "bottom-sheet",
+      "viewportWidth": 1920,
+      "viewportHeight": 1080,
+      "variant": "detail",
+      "width": 1386,
+      "height": 718,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 1386,
+          "overflow": false
+        },
+        {
+          "class": "sheet-content",
+          "width": 498,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "command-palette",
+      "viewportWidth": 1920,
+      "viewportHeight": 1080,
+      "variant": "card",
+      "width": 365,
+      "height": 218,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 365,
+          "overflow": false
+        },
+        {
+          "class": "",
+          "width": 334,
+          "overflow": false
+        },
+        {
+          "class": "",
+          "width": 334,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "command-palette",
+      "viewportWidth": 1920,
+      "viewportHeight": 1080,
+      "variant": "detail",
+      "width": 1386,
+      "height": 718,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 1386,
+          "overflow": false
+        },
+        {
+          "class": "",
+          "width": 508,
+          "overflow": false
+        },
+        {
+          "class": "",
+          "width": 508,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "toast-notification",
+      "viewportWidth": 1920,
+      "viewportHeight": 1080,
+      "variant": "card",
+      "width": 365,
+      "height": 218,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 365,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "toast-notification",
+      "viewportWidth": 1920,
+      "viewportHeight": 1080,
+      "variant": "detail",
+      "width": 1386,
+      "height": 718,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 1386,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "skeleton-loading",
+      "viewportWidth": 1920,
+      "viewportHeight": 1080,
+      "variant": "card",
+      "width": 365,
+      "height": 218,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 365,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "skeleton-loading",
+      "viewportWidth": 1920,
+      "viewportHeight": 1080,
+      "variant": "detail",
+      "width": 1386,
+      "height": 718,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 1386,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "segmented-control",
+      "viewportWidth": 1920,
+      "viewportHeight": 1080,
+      "variant": "card",
+      "width": 365,
+      "height": 218,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 365,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "segmented-control",
+      "viewportWidth": 1920,
+      "viewportHeight": 1080,
+      "variant": "detail",
+      "width": 1386,
+      "height": 718,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 1386,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "agency-landing",
+      "viewportWidth": 1920,
+      "viewportHeight": 1080,
+      "variant": "card",
+      "width": 365,
+      "height": 218,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "agency",
+          "width": 365,
+          "overflow": false
+        },
+        {
+          "class": "",
+          "width": 0,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "agency-landing",
+      "viewportWidth": 1920,
+      "viewportHeight": 1080,
+      "variant": "detail",
+      "width": 1386,
+      "height": 718,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "agency",
+          "width": 1386,
+          "overflow": false
+        },
+        {
+          "class": "",
+          "width": 0,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "neumorphism",
+      "viewportWidth": 1440,
+      "viewportHeight": 1000,
+      "variant": "card",
+      "width": 365,
+      "height": 218,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "specimen",
+          "width": 365,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "neumorphism",
+      "viewportWidth": 1440,
+      "viewportHeight": 1000,
+      "variant": "detail",
+      "width": 1026,
+      "height": 698,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "specimen",
+          "width": 1026,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "skeuomorphism",
+      "viewportWidth": 1440,
+      "viewportHeight": 1000,
+      "variant": "card",
+      "width": 365,
+      "height": 218,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "specimen",
+          "width": 365,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "skeuomorphism",
+      "viewportWidth": 1440,
+      "viewportHeight": 1000,
+      "variant": "detail",
+      "width": 1026,
+      "height": 698,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "specimen",
+          "width": 1026,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "bauhaus",
+      "viewportWidth": 1440,
+      "viewportHeight": 1000,
+      "variant": "card",
+      "width": 365,
+      "height": 218,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "specimen",
+          "width": 365,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "bauhaus",
+      "viewportWidth": 1440,
+      "viewportHeight": 1000,
+      "variant": "detail",
+      "width": 1026,
+      "height": 698,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "specimen",
+          "width": 1026,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "japandi",
+      "viewportWidth": 1440,
+      "viewportHeight": 1000,
+      "variant": "card",
+      "width": 365,
+      "height": 218,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "specimen",
+          "width": 365,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "japandi",
+      "viewportWidth": 1440,
+      "viewportHeight": 1000,
+      "variant": "detail",
+      "width": 1026,
+      "height": 698,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "specimen",
+          "width": 1026,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "bottom-sheet",
+      "viewportWidth": 1440,
+      "viewportHeight": 1000,
+      "variant": "card",
+      "width": 365,
+      "height": 218,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 365,
+          "overflow": false
+        },
+        {
+          "class": "sheet-content",
+          "width": 335,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "bottom-sheet",
+      "viewportWidth": 1440,
+      "viewportHeight": 1000,
+      "variant": "detail",
+      "width": 1026,
+      "height": 698,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 1026,
+          "overflow": false
+        },
+        {
+          "class": "sheet-content",
+          "width": 498,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "command-palette",
+      "viewportWidth": 1440,
+      "viewportHeight": 1000,
+      "variant": "card",
+      "width": 365,
+      "height": 218,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 365,
+          "overflow": false
+        },
+        {
+          "class": "",
+          "width": 334,
+          "overflow": false
+        },
+        {
+          "class": "",
+          "width": 334,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "command-palette",
+      "viewportWidth": 1440,
+      "viewportHeight": 1000,
+      "variant": "detail",
+      "width": 1026,
+      "height": 698,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 1026,
+          "overflow": false
+        },
+        {
+          "class": "",
+          "width": 508,
+          "overflow": false
+        },
+        {
+          "class": "",
+          "width": 508,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "toast-notification",
+      "viewportWidth": 1440,
+      "viewportHeight": 1000,
+      "variant": "card",
+      "width": 365,
+      "height": 218,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 365,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "toast-notification",
+      "viewportWidth": 1440,
+      "viewportHeight": 1000,
+      "variant": "detail",
+      "width": 1026,
+      "height": 698,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 1026,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "skeleton-loading",
+      "viewportWidth": 1440,
+      "viewportHeight": 1000,
+      "variant": "card",
+      "width": 365,
+      "height": 218,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 365,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "skeleton-loading",
+      "viewportWidth": 1440,
+      "viewportHeight": 1000,
+      "variant": "detail",
+      "width": 1026,
+      "height": 698,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 1026,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "segmented-control",
+      "viewportWidth": 1440,
+      "viewportHeight": 1000,
+      "variant": "card",
+      "width": 365,
+      "height": 218,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 365,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "segmented-control",
+      "viewportWidth": 1440,
+      "viewportHeight": 1000,
+      "variant": "detail",
+      "width": 1026,
+      "height": 698,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 1026,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "agency-landing",
+      "viewportWidth": 1440,
+      "viewportHeight": 1000,
+      "variant": "card",
+      "width": 365,
+      "height": 218,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "agency",
+          "width": 365,
+          "overflow": false
+        },
+        {
+          "class": "",
+          "width": 0,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "agency-landing",
+      "viewportWidth": 1440,
+      "viewportHeight": 1000,
+      "variant": "detail",
+      "width": 1026,
+      "height": 698,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "agency",
+          "width": 1026,
+          "overflow": false
+        },
+        {
+          "class": "",
+          "width": 0,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "neumorphism",
+      "viewportWidth": 1366,
+      "viewportHeight": 768,
+      "variant": "card",
+      "width": 365,
+      "height": 218,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "specimen",
+          "width": 365,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "neumorphism",
+      "viewportWidth": 1366,
+      "viewportHeight": 768,
+      "variant": "detail",
+      "width": 952,
+      "height": 536,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "specimen",
+          "width": 952,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "skeuomorphism",
+      "viewportWidth": 1366,
+      "viewportHeight": 768,
+      "variant": "card",
+      "width": 365,
+      "height": 218,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "specimen",
+          "width": 365,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "skeuomorphism",
+      "viewportWidth": 1366,
+      "viewportHeight": 768,
+      "variant": "detail",
+      "width": 952,
+      "height": 536,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "specimen",
+          "width": 952,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "bauhaus",
+      "viewportWidth": 1366,
+      "viewportHeight": 768,
+      "variant": "card",
+      "width": 365,
+      "height": 218,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "specimen",
+          "width": 365,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "bauhaus",
+      "viewportWidth": 1366,
+      "viewportHeight": 768,
+      "variant": "detail",
+      "width": 952,
+      "height": 536,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "specimen",
+          "width": 952,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "japandi",
+      "viewportWidth": 1366,
+      "viewportHeight": 768,
+      "variant": "card",
+      "width": 365,
+      "height": 218,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "specimen",
+          "width": 365,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "japandi",
+      "viewportWidth": 1366,
+      "viewportHeight": 768,
+      "variant": "detail",
+      "width": 952,
+      "height": 536,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "specimen",
+          "width": 952,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "bottom-sheet",
+      "viewportWidth": 1366,
+      "viewportHeight": 768,
+      "variant": "card",
+      "width": 365,
+      "height": 218,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 365,
+          "overflow": false
+        },
+        {
+          "class": "sheet-content",
+          "width": 335,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "bottom-sheet",
+      "viewportWidth": 1366,
+      "viewportHeight": 768,
+      "variant": "detail",
+      "width": 952,
+      "height": 536,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 952,
+          "overflow": false
+        },
+        {
+          "class": "sheet-content",
+          "width": 498,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "command-palette",
+      "viewportWidth": 1366,
+      "viewportHeight": 768,
+      "variant": "card",
+      "width": 365,
+      "height": 218,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 365,
+          "overflow": false
+        },
+        {
+          "class": "",
+          "width": 334,
+          "overflow": false
+        },
+        {
+          "class": "",
+          "width": 334,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "command-palette",
+      "viewportWidth": 1366,
+      "viewportHeight": 768,
+      "variant": "detail",
+      "width": 952,
+      "height": 536,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 952,
+          "overflow": false
+        },
+        {
+          "class": "",
+          "width": 508,
+          "overflow": false
+        },
+        {
+          "class": "",
+          "width": 508,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "toast-notification",
+      "viewportWidth": 1366,
+      "viewportHeight": 768,
+      "variant": "card",
+      "width": 365,
+      "height": 218,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 365,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "toast-notification",
+      "viewportWidth": 1366,
+      "viewportHeight": 768,
+      "variant": "detail",
+      "width": 952,
+      "height": 536,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 952,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "skeleton-loading",
+      "viewportWidth": 1366,
+      "viewportHeight": 768,
+      "variant": "card",
+      "width": 365,
+      "height": 218,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 365,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "skeleton-loading",
+      "viewportWidth": 1366,
+      "viewportHeight": 768,
+      "variant": "detail",
+      "width": 952,
+      "height": 536,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 952,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "segmented-control",
+      "viewportWidth": 1366,
+      "viewportHeight": 768,
+      "variant": "card",
+      "width": 365,
+      "height": 218,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 365,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "segmented-control",
+      "viewportWidth": 1366,
+      "viewportHeight": 768,
+      "variant": "detail",
+      "width": 952,
+      "height": 536,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 952,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "agency-landing",
+      "viewportWidth": 1366,
+      "viewportHeight": 768,
+      "variant": "card",
+      "width": 365,
+      "height": 218,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "agency",
+          "width": 365,
+          "overflow": false
+        },
+        {
+          "class": "",
+          "width": 0,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "agency-landing",
+      "viewportWidth": 1366,
+      "viewportHeight": 768,
+      "variant": "detail",
+      "width": 952,
+      "height": 536,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "agency",
+          "width": 952,
+          "overflow": false
+        },
+        {
+          "class": "",
+          "width": 0,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "neumorphism",
+      "viewportWidth": 1024,
+      "viewportHeight": 768,
+      "variant": "card",
+      "width": 365,
+      "height": 218,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "specimen",
+          "width": 365,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "neumorphism",
+      "viewportWidth": 1024,
+      "viewportHeight": 768,
+      "variant": "detail",
+      "width": 610,
+      "height": 536,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "specimen",
+          "width": 610,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "skeuomorphism",
+      "viewportWidth": 1024,
+      "viewportHeight": 768,
+      "variant": "card",
+      "width": 365,
+      "height": 218,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "specimen",
+          "width": 365,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "skeuomorphism",
+      "viewportWidth": 1024,
+      "viewportHeight": 768,
+      "variant": "detail",
+      "width": 610,
+      "height": 536,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "specimen",
+          "width": 610,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "bauhaus",
+      "viewportWidth": 1024,
+      "viewportHeight": 768,
+      "variant": "card",
+      "width": 365,
+      "height": 218,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "specimen",
+          "width": 365,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "bauhaus",
+      "viewportWidth": 1024,
+      "viewportHeight": 768,
+      "variant": "detail",
+      "width": 610,
+      "height": 536,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "specimen",
+          "width": 610,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "japandi",
+      "viewportWidth": 1024,
+      "viewportHeight": 768,
+      "variant": "card",
+      "width": 365,
+      "height": 218,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "specimen",
+          "width": 365,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "japandi",
+      "viewportWidth": 1024,
+      "viewportHeight": 768,
+      "variant": "detail",
+      "width": 610,
+      "height": 536,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "specimen",
+          "width": 610,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "bottom-sheet",
+      "viewportWidth": 1024,
+      "viewportHeight": 768,
+      "variant": "card",
+      "width": 365,
+      "height": 218,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 365,
+          "overflow": false
+        },
+        {
+          "class": "sheet-content",
+          "width": 335,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "bottom-sheet",
+      "viewportWidth": 1024,
+      "viewportHeight": 768,
+      "variant": "detail",
+      "width": 610,
+      "height": 536,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 610,
+          "overflow": false
+        },
+        {
+          "class": "sheet-content",
+          "width": 498,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "command-palette",
+      "viewportWidth": 1024,
+      "viewportHeight": 768,
+      "variant": "card",
+      "width": 365,
+      "height": 218,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 365,
+          "overflow": false
+        },
+        {
+          "class": "",
+          "width": 334,
+          "overflow": false
+        },
+        {
+          "class": "",
+          "width": 334,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "command-palette",
+      "viewportWidth": 1024,
+      "viewportHeight": 768,
+      "variant": "detail",
+      "width": 610,
+      "height": 536,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 610,
+          "overflow": false
+        },
+        {
+          "class": "",
+          "width": 508,
+          "overflow": false
+        },
+        {
+          "class": "",
+          "width": 508,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "toast-notification",
+      "viewportWidth": 1024,
+      "viewportHeight": 768,
+      "variant": "card",
+      "width": 365,
+      "height": 218,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 365,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "toast-notification",
+      "viewportWidth": 1024,
+      "viewportHeight": 768,
+      "variant": "detail",
+      "width": 610,
+      "height": 536,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 610,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "skeleton-loading",
+      "viewportWidth": 1024,
+      "viewportHeight": 768,
+      "variant": "card",
+      "width": 365,
+      "height": 218,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 365,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "skeleton-loading",
+      "viewportWidth": 1024,
+      "viewportHeight": 768,
+      "variant": "detail",
+      "width": 610,
+      "height": 536,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 610,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "segmented-control",
+      "viewportWidth": 1024,
+      "viewportHeight": 768,
+      "variant": "card",
+      "width": 365,
+      "height": 218,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 365,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "segmented-control",
+      "viewportWidth": 1024,
+      "viewportHeight": 768,
+      "variant": "detail",
+      "width": 610,
+      "height": 536,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 610,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "agency-landing",
+      "viewportWidth": 1024,
+      "viewportHeight": 768,
+      "variant": "card",
+      "width": 365,
+      "height": 218,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "agency",
+          "width": 365,
+          "overflow": false
+        },
+        {
+          "class": "",
+          "width": 0,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "agency-landing",
+      "viewportWidth": 1024,
+      "viewportHeight": 768,
+      "variant": "detail",
+      "width": 610,
+      "height": 536,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "agency",
+          "width": 610,
+          "overflow": false
+        },
+        {
+          "class": "",
+          "width": 0,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "neumorphism",
+      "viewportWidth": 390,
+      "viewportHeight": 844,
+      "variant": "card",
+      "width": 318,
+      "height": 190,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "specimen",
+          "width": 318,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "neumorphism",
+      "viewportWidth": 390,
+      "viewportHeight": 844,
+      "variant": "detail",
+      "width": 356,
+      "height": 538,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "specimen",
+          "width": 356,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "skeuomorphism",
+      "viewportWidth": 390,
+      "viewportHeight": 844,
+      "variant": "card",
+      "width": 318,
+      "height": 190,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "specimen",
+          "width": 318,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "skeuomorphism",
+      "viewportWidth": 390,
+      "viewportHeight": 844,
+      "variant": "detail",
+      "width": 356,
+      "height": 538,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "specimen",
+          "width": 356,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "bauhaus",
+      "viewportWidth": 390,
+      "viewportHeight": 844,
+      "variant": "card",
+      "width": 318,
+      "height": 190,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "specimen",
+          "width": 318,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "bauhaus",
+      "viewportWidth": 390,
+      "viewportHeight": 844,
+      "variant": "detail",
+      "width": 356,
+      "height": 538,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "specimen",
+          "width": 356,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "japandi",
+      "viewportWidth": 390,
+      "viewportHeight": 844,
+      "variant": "card",
+      "width": 318,
+      "height": 190,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "specimen",
+          "width": 318,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "japandi",
+      "viewportWidth": 390,
+      "viewportHeight": 844,
+      "variant": "detail",
+      "width": 356,
+      "height": 538,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "specimen",
+          "width": 356,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "bottom-sheet",
+      "viewportWidth": 390,
+      "viewportHeight": 844,
+      "variant": "card",
+      "width": 318,
+      "height": 190,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 318,
+          "overflow": false
+        },
+        {
+          "class": "sheet-content",
+          "width": 288,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "bottom-sheet",
+      "viewportWidth": 390,
+      "viewportHeight": 844,
+      "variant": "detail",
+      "width": 356,
+      "height": 538,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 356,
+          "overflow": false
+        },
+        {
+          "class": "sheet-content",
+          "width": 326,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "command-palette",
+      "viewportWidth": 390,
+      "viewportHeight": 844,
+      "variant": "card",
+      "width": 318,
+      "height": 190,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 318,
+          "overflow": false
+        },
+        {
+          "class": "",
+          "width": 291,
+          "overflow": false
+        },
+        {
+          "class": "",
+          "width": 291,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "command-palette",
+      "viewportWidth": 390,
+      "viewportHeight": 844,
+      "variant": "detail",
+      "width": 356,
+      "height": 538,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 356,
+          "overflow": false
+        },
+        {
+          "class": "",
+          "width": 326,
+          "overflow": false
+        },
+        {
+          "class": "",
+          "width": 326,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "toast-notification",
+      "viewportWidth": 390,
+      "viewportHeight": 844,
+      "variant": "card",
+      "width": 318,
+      "height": 190,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 318,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "toast-notification",
+      "viewportWidth": 390,
+      "viewportHeight": 844,
+      "variant": "detail",
+      "width": 356,
+      "height": 538,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 356,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "skeleton-loading",
+      "viewportWidth": 390,
+      "viewportHeight": 844,
+      "variant": "card",
+      "width": 318,
+      "height": 190,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 318,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "skeleton-loading",
+      "viewportWidth": 390,
+      "viewportHeight": 844,
+      "variant": "detail",
+      "width": 356,
+      "height": 538,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 356,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "segmented-control",
+      "viewportWidth": 390,
+      "viewportHeight": 844,
+      "variant": "card",
+      "width": 318,
+      "height": 190,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 318,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "segmented-control",
+      "viewportWidth": 390,
+      "viewportHeight": 844,
+      "variant": "detail",
+      "width": 356,
+      "height": 538,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "workspace",
+          "width": 356,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "agency-landing",
+      "viewportWidth": 390,
+      "viewportHeight": 844,
+      "variant": "card",
+      "width": 318,
+      "height": 190,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "agency",
+          "width": 318,
+          "overflow": false
+        },
+        {
+          "class": "",
+          "width": 0,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "agency-landing",
+      "viewportWidth": 390,
+      "viewportHeight": 844,
+      "variant": "detail",
+      "width": 356,
+      "height": 538,
+      "bodyOverflow": false,
+      "scrollable": [
+        {
+          "class": "agency",
+          "width": 356,
+          "overflow": false
+        },
+        {
+          "class": "",
+          "width": 0,
+          "overflow": false
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "id": "neumorphism",
+      "variant": "card",
+      "passed": true
+    },
+    {
+      "id": "skeuomorphism",
+      "variant": "card",
+      "passed": true
+    },
+    {
+      "id": "bauhaus",
+      "variant": "card",
+      "passed": true
+    },
+    {
+      "id": "japandi",
+      "variant": "card",
+      "passed": true
+    },
+    {
+      "id": "bottom-sheet",
+      "variant": "card",
+      "passed": true
+    },
+    {
+      "id": "command-palette",
+      "variant": "card",
+      "passed": true
+    },
+    {
+      "id": "toast-notification",
+      "variant": "card",
+      "passed": true
+    },
+    {
+      "id": "skeleton-loading",
+      "variant": "card",
+      "passed": true
+    },
+    {
+      "id": "segmented-control",
+      "variant": "card",
+      "passed": true
+    },
+    {
+      "id": "agency-landing",
+      "variant": "card",
+      "passed": true
+    },
+    {
+      "id": "neumorphism",
+      "variant": "detail",
+      "passed": true
+    },
+    {
+      "id": "skeuomorphism",
+      "variant": "detail",
+      "passed": true
+    },
+    {
+      "id": "bauhaus",
+      "variant": "detail",
+      "passed": true
+    },
+    {
+      "id": "japandi",
+      "variant": "detail",
+      "passed": true
+    },
+    {
+      "id": "bottom-sheet",
+      "variant": "detail",
+      "passed": true
+    },
+    {
+      "id": "command-palette",
+      "variant": "detail",
+      "passed": true
+    },
+    {
+      "id": "toast-notification",
+      "variant": "detail",
+      "passed": true
+    },
+    {
+      "id": "skeleton-loading",
+      "variant": "detail",
+      "passed": true
+    },
+    {
+      "id": "segmented-control",
+      "variant": "detail",
+      "passed": true
+    },
+    {
+      "id": "agency-landing",
+      "variant": "detail",
+      "passed": true
+    },
+    {
+      "id": "neumorphism",
+      "offline": true,
+      "reducedMotion": true,
+      "passed": true
+    },
+    {
+      "id": "skeuomorphism",
+      "offline": true,
+      "reducedMotion": true,
+      "passed": true
+    },
+    {
+      "id": "bauhaus",
+      "offline": true,
+      "reducedMotion": true,
+      "passed": true
+    },
+    {
+      "id": "japandi",
+      "offline": true,
+      "reducedMotion": true,
+      "passed": true
+    },
+    {
+      "id": "bottom-sheet",
+      "offline": true,
+      "reducedMotion": true,
+      "passed": true
+    },
+    {
+      "id": "command-palette",
+      "offline": true,
+      "reducedMotion": true,
+      "passed": true
+    },
+    {
+      "id": "toast-notification",
+      "offline": true,
+      "reducedMotion": true,
+      "passed": true
+    },
+    {
+      "id": "skeleton-loading",
+      "offline": true,
+      "reducedMotion": true,
+      "passed": true
+    },
+    {
+      "id": "segmented-control",
+      "offline": true,
+      "reducedMotion": true,
+      "passed": true
+    },
+    {
+      "id": "agency-landing",
+      "offline": true,
+      "reducedMotion": true,
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "network": []
+}

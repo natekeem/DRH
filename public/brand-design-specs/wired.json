@@ -1,0 +1,721 @@
+{
+  "colors": {
+    "primary": "#000000",
+    "on-primary": "#ffffff",
+    "ink": "#000000",
+    "ink-soft": "#1a1a1a",
+    "body": "#757575",
+    "hairline": "#e0e0e0",
+    "canvas": "#ffffff",
+    "canvas-soft": "#f5f5f5",
+    "link": "#057dbc"
+  },
+  "typography": {
+    "display-hero": {
+      "fontFamily": "WiredDisplay, \"Times New Roman\", Georgia, serif",
+      "fontSize": "64px",
+      "fontWeight": 400,
+      "lineHeight": "59.52px",
+      "letterSpacing": "-0.5px",
+      "declaredFamily": "WiredDisplay, \"Times New Roman\", Georgia, serif",
+      "renderFallback": "serif"
+    },
+    "display-lg": {
+      "fontFamily": "WiredDisplay, \"Times New Roman\", Georgia, serif",
+      "fontSize": "48px",
+      "fontWeight": 400,
+      "lineHeight": "50.4px",
+      "letterSpacing": "-0.4px",
+      "declaredFamily": "WiredDisplay, \"Times New Roman\", Georgia, serif",
+      "renderFallback": "serif"
+    },
+    "display-md": {
+      "fontFamily": "WiredDisplay, \"Times New Roman\", Georgia, serif",
+      "fontSize": "32px",
+      "fontWeight": 400,
+      "lineHeight": "35.2px",
+      "letterSpacing": "-0.3px",
+      "declaredFamily": "WiredDisplay, \"Times New Roman\", Georgia, serif",
+      "renderFallback": "serif"
+    },
+    "display-sm": {
+      "fontFamily": "WiredDisplay, \"Times New Roman\", Georgia, serif",
+      "fontSize": "26px",
+      "fontWeight": 400,
+      "lineHeight": "28.08px",
+      "declaredFamily": "WiredDisplay, \"Times New Roman\", Georgia, serif",
+      "renderFallback": "serif"
+    },
+    "display-xs": {
+      "fontFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "20px",
+      "fontWeight": 700,
+      "lineHeight": "24px",
+      "letterSpacing": "-0.28px",
+      "declaredFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "body-serif-lg": {
+      "fontFamily": "BreveText, Georgia, \"Times New Roman\", serif",
+      "fontSize": "19px",
+      "fontWeight": 400,
+      "lineHeight": "27.93px",
+      "letterSpacing": "0.108px",
+      "declaredFamily": "BreveText, Georgia, \"Times New Roman\", serif",
+      "renderFallback": "serif"
+    },
+    "body-serif-md": {
+      "fontFamily": "BreveText, Georgia, \"Times New Roman\", serif",
+      "fontSize": "16px",
+      "fontWeight": 400,
+      "lineHeight": "24px",
+      "letterSpacing": "0.09px",
+      "declaredFamily": "BreveText, Georgia, \"Times New Roman\", serif",
+      "renderFallback": "serif"
+    },
+    "body-md": {
+      "fontFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "17px",
+      "fontWeight": 400,
+      "lineHeight": "20px",
+      "declaredFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "body-md-strong": {
+      "fontFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "17px",
+      "fontWeight": 700,
+      "lineHeight": "22px",
+      "letterSpacing": "-0.144px",
+      "declaredFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "body-sm": {
+      "fontFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "fontWeight": 400,
+      "lineHeight": "18px",
+      "letterSpacing": "0.4px",
+      "declaredFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "body-sm-strong": {
+      "fontFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "fontWeight": 700,
+      "lineHeight": "18px",
+      "letterSpacing": "0.4px",
+      "declaredFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "byline": {
+      "fontFamily": "BreveText, Georgia, \"Times New Roman\", serif",
+      "fontSize": "12.73px",
+      "fontWeight": 700,
+      "lineHeight": "28px",
+      "letterSpacing": "0.108px",
+      "declaredFamily": "BreveText, Georgia, \"Times New Roman\", serif",
+      "renderFallback": "serif"
+    },
+    "caption": {
+      "fontFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "12px",
+      "fontWeight": 400,
+      "lineHeight": "16px",
+      "declaredFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "button-md": {
+      "fontFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": 700,
+      "lineHeight": "20px",
+      "letterSpacing": "0.3px",
+      "declaredFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "renderFallback": "system-ui, sans-serif"
+    }
+  },
+  "spacing": {
+    "xxs": "2px",
+    "xs": "4px",
+    "sm": "8px",
+    "md": "12px",
+    "lg": "16px",
+    "xl": "20px",
+    "2xl": "24px",
+    "3xl": "32px",
+    "4xl": "48px"
+  },
+  "radius": {
+    "none": "0px",
+    "full": "9999px"
+  },
+  "border": {},
+  "motion": {
+    "rules": []
+  },
+  "depth": {
+    "Elevation & Depth": "| Level | Treatment | Use |\n|---|---|---|\n| Level 0 — Flat | No shadow, no border. | Default — almost every surface lives at this level. |\n| Level 1 — Hairline | 1 px solid `{colors.hairline}` border. | Story-row dividers, input borders. |\n| Level 2 — Heavy Black Border | 2 px solid `{colors.ink}` border. | Subscribe CTA on certain campaign moments. |\n\nThe brand uses no drop-shadows. Surface contrast and hairline borders carry all visual hierarchy."
+  },
+  "components": {
+    "nav-bar": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#000000",
+      "typography": {
+        "fontFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 700,
+        "lineHeight": "18px",
+        "letterSpacing": "0.4px"
+      },
+      "padding": "12px 20px"
+    },
+    "nav-link": {
+      "textColor": "#000000",
+      "typography": {
+        "fontFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 700,
+        "lineHeight": "18px",
+        "letterSpacing": "0.4px"
+      }
+    },
+    "button-primary": {
+      "backgroundColor": "#000000",
+      "textColor": "#ffffff",
+      "typography": {
+        "fontFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": 700,
+        "lineHeight": "20px",
+        "letterSpacing": "0.3px"
+      },
+      "rounded": "0px",
+      "padding": "12px 20px"
+    },
+    "button-outline": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#000000",
+      "borderColor": "#000000",
+      "typography": {
+        "fontFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": 700,
+        "lineHeight": "20px",
+        "letterSpacing": "0.3px"
+      },
+      "rounded": "0px",
+      "padding": "12px 20px"
+    },
+    "button-icon-circular": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#000000",
+      "rounded": "9999px",
+      "padding": "8px"
+    },
+    "text-input": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#000000",
+      "borderColor": "#000000",
+      "typography": {
+        "fontFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+        "fontSize": "17px",
+        "fontWeight": 400,
+        "lineHeight": "20px"
+      },
+      "rounded": "0px",
+      "padding": "12px 16px"
+    },
+    "story-card-large": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#000000",
+      "typography": {
+        "fontFamily": "WiredDisplay, \"Times New Roman\", Georgia, serif",
+        "fontSize": "32px",
+        "fontWeight": 400,
+        "lineHeight": "35.2px",
+        "letterSpacing": "-0.3px"
+      },
+      "padding": "16px"
+    },
+    "story-card": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#000000",
+      "typography": {
+        "fontFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+        "fontSize": "20px",
+        "fontWeight": 700,
+        "lineHeight": "24px",
+        "letterSpacing": "-0.28px"
+      },
+      "padding": "12px"
+    },
+    "story-row": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#000000",
+      "borderColor": "#e0e0e0",
+      "typography": {
+        "fontFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+        "fontSize": "17px",
+        "fontWeight": 700,
+        "lineHeight": "22px",
+        "letterSpacing": "-0.144px"
+      },
+      "padding": "16px 0"
+    },
+    "category-eyebrow": {
+      "textColor": "#000000",
+      "typography": {
+        "fontFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 700,
+        "lineHeight": "18px",
+        "letterSpacing": "0.4px"
+      }
+    },
+    "byline-row": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#757575",
+      "typography": {
+        "fontFamily": "BreveText, Georgia, \"Times New Roman\", serif",
+        "fontSize": "12.73px",
+        "fontWeight": 700,
+        "lineHeight": "28px",
+        "letterSpacing": "0.108px"
+      }
+    },
+    "hero-band": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#000000",
+      "typography": {
+        "fontFamily": "WiredDisplay, \"Times New Roman\", Georgia, serif",
+        "fontSize": "64px",
+        "fontWeight": 400,
+        "lineHeight": "59.52px",
+        "letterSpacing": "-0.5px"
+      },
+      "padding": "48px 20px"
+    },
+    "masthead-band": {
+      "backgroundColor": "#ffffff",
+      "textColor": "#000000",
+      "typography": {
+        "fontFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+        "fontSize": "17px",
+        "fontWeight": 700,
+        "lineHeight": "22px",
+        "letterSpacing": "-0.144px"
+      },
+      "padding": "12px 20px"
+    },
+    "hairline-divider": {
+      "borderColor": "#e0e0e0"
+    },
+    "footer": {
+      "backgroundColor": "#000000",
+      "textColor": "#ffffff",
+      "typography": {
+        "fontFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": "18px",
+        "letterSpacing": "0.4px"
+      },
+      "padding": "48px 20px"
+    },
+    "ex-pricing-tier": {
+      "description": "Default Pricing tier card. Re-uses feature-card chrome with brand canvas-soft surface.",
+      "backgroundColor": "#f5f5f5",
+      "textColor": "#000000",
+      "borderColor": "#e0e0e0",
+      "rounded": "0px",
+      "padding": "16px"
+    },
+    "ex-pricing-tier-featured": {
+      "description": "Featured/highlighted tier — polarity-flipped surface (dark fill + light text in light mode, light fill + dark text in dark mode).",
+      "backgroundColor": "#000000",
+      "textColor": "#ffffff",
+      "rounded": "0px",
+      "padding": "16px"
+    },
+    "ex-product-selector": {
+      "description": "What's Included summary card — re-purposed for SaaS / B2B verticals (NOT a literal product gallery).",
+      "backgroundColor": "#f5f5f5",
+      "rounded": "0px",
+      "padding": "16px"
+    },
+    "ex-cart-drawer": {
+      "description": "Subscription summary — re-purposed for SaaS / B2B (line items per add-on, not literal cart).",
+      "backgroundColor": "#ffffff",
+      "rounded": "0px",
+      "padding": "16px",
+      "item-divider": "#e0e0e0"
+    },
+    "ex-app-shell-row": {
+      "description": "Sidebar nav row inside the App Shell example. Active state uses brand primary as the indicator.",
+      "backgroundColor": "#ffffff",
+      "activeIndicator": "#000000",
+      "rounded": "0px",
+      "padding": "12px 16px"
+    },
+    "ex-data-table-cell": {
+      "description": "Default data-table th + td chrome. Header uses mono-caps eyebrow typography; body uses body-sm.",
+      "headerBackground": "#f5f5f5",
+      "headerTypography": {
+        "fontFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+        "fontSize": "12px",
+        "fontWeight": 400,
+        "lineHeight": "16px"
+      },
+      "bodyTypography": {
+        "fontFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": "18px",
+        "letterSpacing": "0.4px"
+      },
+      "cellPadding": "12px 16px",
+      "rowBorder": "#e0e0e0"
+    },
+    "ex-auth-form-card": {
+      "description": "Sign-in / sign-up card. Re-uses feature-card chrome with text-input primitives inside.",
+      "backgroundColor": "#f5f5f5",
+      "rounded": "0px",
+      "padding": "16px"
+    },
+    "ex-modal-card": {
+      "description": "Modal dialog surface — same chrome as feature-card with elevated shadow.",
+      "backgroundColor": "#ffffff",
+      "rounded": "0px",
+      "padding": "16px"
+    },
+    "ex-empty-state-card": {
+      "description": "Empty-state illustration frame.",
+      "backgroundColor": "#f5f5f5",
+      "rounded": "0px",
+      "padding": "32px",
+      "captionTypography": {
+        "fontFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+        "fontSize": "17px",
+        "fontWeight": 400,
+        "lineHeight": "20px"
+      }
+    },
+    "ex-toast": {
+      "description": "Toast notification surface — feature-card shape + medium shadow.",
+      "backgroundColor": "#ffffff",
+      "rounded": "0px",
+      "padding": "12px 16px",
+      "typography": {
+        "fontFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": "18px",
+        "letterSpacing": "0.4px"
+      }
+    }
+  },
+  "layout": "editorial",
+  "traits": "An inspired interpretation of Wired's design language — a flagship technology-magazine brand whose surface is a strict editorial duet of stark black wordmark on white canvas, anchored by a tall narrow custom display serif for hero headlines, a humanist serif body face for long-form reading, and a clean sans face for metadata; layout reads like a printed magazine ported to the web with very little marketing chrome.",
+  "sections": {
+    "Overview": "Wired is the flagship technology-magazine brand under Condé Nast — and the web surface refuses to dress itself as a SaaS marketing site. The page is unmistakably an editorial product: a white canvas, a strict black wordmark in the brand's proprietary `WiredDisplay` (a tall, narrow, high-contrast serif used at 64 px), and stacked story cards that read as a printed magazine grid ported to the screen. There is no atmospheric gradient, no decorative chrome, no chromatic accent — the brand's only colour beyond the black-and-white duet is the small `{colors.link}` (`#057dbc`) used for inline body links inside long-form articles.\n\nType carries the entire identity. Three families ladder the system: `WiredDisplay` (the proprietary high-contrast serif) for hero / section headlines; `BreveText` (a humanist serif) for long-form body and bylines; and `Apercu` (a humanist sans) for metadata, captions, eyebrow tags, and buttons. The pairing is editorial-grade: serifs for narrative, sans for navigation and structural labels.\n\nButtons are square. The brand uses `{rounded.none}` 0 px corners across the entire UI — newsletter sign-ups, login forms, \"Read more\" CTAs all render as sharp rectangles. The only circular shape is the `button-icon-circular` used for social-share affordances. There are no soft drop-shadows; the brand uses hairline borders for elevation when needed.\n\n**Key Characteristics:**\n- A strict black-and-white duet with no chromatic accent except the inline link blue `{colors.link}`. The brand reads as a printed magazine.\n- Three-face typographic system — `WiredDisplay` serif for display, `BreveText` serif for body, `Apercu` sans for metadata and buttons.\n- Square buttons (`{rounded.none}`) — the brand never softens corners on interactive elements.\n- A magazine-style story grid: large feature card at top, two-up secondary, then a vertical stack of bylined story rows separated by `{colors.hairline}` 1 px dividers.\n- The brand's only signature decorative move is the **masthead band** — a thin black strip with the wordmark centred, no other decoration.\n- A near-black `{colors.ink}` (`#000000`) footer band, no graphics, just text columns and the wordmark repeating.",
+    "Colors": "### Brand & Accent\n- **Ink Black** (`{colors.primary}` — `#000000`): The brand's only \"accent.\" Used for wordmark, headlines, CTAs, footer fill. Pure black, never softened.\n\n### Surface\n- **Canvas** (`{colors.canvas}` — `#ffffff`): The default page background.\n- **Canvas Soft** (`{colors.canvas-soft}` — `#f5f5f5`): Rare tint used for the comment-section background and search-result row hover states (not in the main page rhythm).\n- **Hairline** (`{colors.hairline}` — `#e0e0e0`): 1 px dividers between story rows. The brand's only \"line.\"\n\n### Text\n- **Ink** (`{colors.ink}` — `#000000`): Every headline, every body paragraph in BreveText.\n- **Ink Soft** (`{colors.ink-soft}` — `#1a1a1a`): A near-black variant used for caption-strong / footer link emphasis.\n- **Body** (`{colors.body}` — `#757575`): Secondary metadata — bylines, timestamps, supporting body lines.\n\n### Semantic\nThe brand operates with one inline link colour and no separate error / success / warning palette in its marketing surface. Validation cues on form pages use the ink black + body grey hierarchy.\n\n- **Link** (`{colors.link}` — `#057dbc`): The inline body-link blue. Used only inside long-form article body copy, never on UI buttons or navigation.",
+    "Typography": "### Font Family\nThree families ladder the system:\n1. **WiredDisplay** — the proprietary tall-narrow high-contrast serif used exclusively for display headlines (64 px hero, scaling down to 26 px sub-display). The brand's most-recognisable typographic signature.\n2. **BreveText** — the proprietary humanist serif used for long-form body, bylines, and editorial captions. Used at 16 – 19 px line-height 1.45 – 1.50 for comfortable reading density.\n3. **Apercu** — a humanist sans used for nav, button labels, category eyebrows, metadata, and captions. Weights 400 / 700.\n\nInter is loaded as a fourth fallback face for embedded utility surfaces (the comment section, account pages) but does not appear on the main marketing / article surface.\n\n### Hierarchy\n\n| Token | Size | Weight | Line Height | Letter Spacing | Use |\n|---|---|---|---|---|---|\n| `{typography.display-hero}` | 64px | 400 | 59.5px | -0.5px | Cover-story headline. |\n| `{typography.display-lg}` | 48px | 400 | 50.4px | -0.4px | Major section / feature headlines. |\n| `{typography.display-md}` | 32px | 400 | 35.2px | -0.3px | Story-card large variant. |\n| `{typography.display-sm}` | 26px | 400 | 28px | 0 | Sub-display headings inside long-form articles. |\n| `{typography.display-xs}` | 20px | 700 | 24px | -0.28px | Sans (Apercu) display micro-headings for category callouts. |\n| `{typography.body-serif-lg}` | 19px | 400 | 27.93px | 0.108px | Lead paragraph of an article (BreveText). |\n| `{typography.body-serif-md}` | 16px | 400 | 24px | 0.09px | Default article body (BreveText). |\n| `{typography.body-md}` | 17px | 400 | 20px | 0 | Sans body (Apercu) for nav / metadata. |\n| `{typography.body-md-strong}` | 17px | 700 | 22px | -0.144px | Bold sans body. |\n| `{typography.body-sm}` | 14px | 400 | 18px | 0.4px | Secondary sans body. |\n| `{typography.body-sm-strong}` | 14px | 700 | 18px | 0.4px | Bold caption / nav-link. |\n| `{typography.byline}` | 12.73px | 700 | 28px | 0.108px | Article byline (BreveText). |\n| `{typography.caption}` | 12px | 400 | 16px | 0 | Fine print, image captions. |\n| `{typography.button-md}` | 16px | 700 | 20px | 0.3px | Button label. |\n\n### Principles\n- **Serif for narrative, sans for structure.** The serif faces never carry button labels or nav text; the sans face never carries article body.\n- **Display weight 400** — the proprietary WiredDisplay reads as elegant by virtue of its thin-tall-narrow design at default weight, not via weight 700+.\n- **Bylines use BreveText weight 700 with relaxed line-height 2.2.** The vertical breathing is part of the editorial signature.\n\n### Note on Font Substitutes\nThe three proprietary faces have no exact substitutes. Best open-source approximations:\n- **WiredDisplay** — *Playfair Display* weight 400 at large display sizes captures the high-contrast didone feel, though wider than the brand's tall-narrow proportions.\n- **BreveText** — *Lora* or *Source Serif Pro* at 16 – 19 px.\n- **Apercu** — *Inter* or *Manrope* weights 400 / 700.",
+    "Layout": "### Spacing System\n- **Base unit**: 4 px.\n- **Tokens**: `{spacing.xxs}` 2 px · `{spacing.xs}` 4 px · `{spacing.sm}` 8 px · `{spacing.md}` 12 px · `{spacing.lg}` 16 px · `{spacing.xl}` 20 px · `{spacing.2xl}` 24 px · `{spacing.3xl}` 32 px · `{spacing.4xl}` 48 px.\n- **Section padding**: hero / story grid use `{spacing.4xl}` 48 px top/bottom on desktop.\n- **Story row padding**: `{spacing.lg}` 16 px vertical between bylined story rows.\n\n### Grid & Container\n- Marketing content uses a wide container (~1400 px max).\n- Cover-story grid: 1 large hero + 2-up secondary stories + vertical stack.\n- Story-row stack: full-width single column with hairline dividers.\n\n### Responsive Strategy\n\n#### Breakpoints\n\n| Name | Width | Key Changes |\n|---|---|---|\n| Mobile | < 768px | Cover hero 64→40 px; all grids 1-up; hamburger nav. |\n| Tablet | 768–1023px | 2-up secondary story grid. |\n| Desktop | ≥ 1024px | Full magazine grid. |\n\n#### Touch Targets\nButton-primary renders ~44 px tall (12 vertical padding + 20 line). WCAG AAA at all widths.\n\n#### Collapsing Strategy\n- Nav: full link row + Subscribe CTA at desktop. Hamburger at mobile.\n- Magazine grid: hero stays full-width; 2-up secondary drops to 1-up at mobile.\n- Story rows: stay single-column at all viewports.\n\n#### Image Behavior\n- Cover images: full-bleed 16:9 hero / 4:3 secondary.\n- Article body images: full-width inside the article column.\n- Author avatars: small inline circular crops next to bylines.",
+    "Elevation & Depth": "| Level | Treatment | Use |\n|---|---|---|\n| Level 0 — Flat | No shadow, no border. | Default — almost every surface lives at this level. |\n| Level 1 — Hairline | 1 px solid `{colors.hairline}` border. | Story-row dividers, input borders. |\n| Level 2 — Heavy Black Border | 2 px solid `{colors.ink}` border. | Subscribe CTA on certain campaign moments. |\n\nThe brand uses no drop-shadows. Surface contrast and hairline borders carry all visual hierarchy.",
+    "Shapes": "### Border Radius Scale\n\n| Token | Value | Use |\n|---|---|---|\n| `{rounded.none}` | 0px | Every interactive shape — buttons, inputs, cards. The brand's signature square geometry. |\n| `{rounded.full}` | 9999px | Circular icon containers only (social-share, account avatar). |\n\n### Photography Geometry\n- Cover stories: 16:9 hero, edge-to-edge.\n- Secondary story cards: 4:3 thumbnails.\n- Article body images: native aspect, full column width.\n- Bylines / avatars: circular `{rounded.full}` 28 px crops.",
+    "Components": "### Buttons\n\n**`button-primary`** — the square black CTA.\n- Background `{colors.primary}`, text `{colors.on-primary}`, label `{typography.button-md}` (Apercu 16 px / 700 / 0.3 px tracking), padding `{spacing.md} {spacing.xl}`, shape `{rounded.none}` 0 px.\n\n**`button-outline`** — the white outline CTA.\n- Background `{colors.canvas}`, text `{colors.ink}`, 1 px solid `{colors.ink}` border, same typography / padding / shape.\n\n**`button-icon-circular`** — the circular share-icon button.\n- Background `{colors.canvas}`, ink icon, shape `{rounded.full}`.\n\n### Cards & Containers\n\n**`story-card-large`** — the cover-story card with `{typography.display-md}` headline.\n- Background `{colors.canvas}`, text `{colors.ink}`, padding `{spacing.lg}`. No border — the card lives on the canvas with the photo doing the work.\n\n**`story-card`** — the secondary story card.\n- Background `{colors.canvas}`, text `{colors.ink}`, padding `{spacing.md}`. Photo at top, sans display heading + body lead below.\n\n**`story-row`** — the bylined story list row.\n- Background `{colors.canvas}`, text `{colors.ink}`, 1 px solid `{colors.hairline}` bottom border, body in `{typography.body-md-strong}`, padding `{spacing.lg}` 0.\n\n### Inputs & Forms\n\n**`text-input`** — the standard text input.\n- Background `{colors.canvas}`, text `{colors.ink}`, 1 px solid `{colors.ink}` border, body in `{typography.body-md}`, padding `{spacing.md} {spacing.lg}`, shape `{rounded.none}`.\n\n### Navigation\n\n**`nav-bar`** — the top nav, light by default.\n- Background `{colors.canvas}`, text `{colors.ink}`, padding `{spacing.md} {spacing.xl}`. Layout: hamburger left, masthead centre, Subscribe right.\n\n**`nav-link`** — link items inside nav.\n- Text `{colors.ink}`, set in `{typography.body-sm-strong}` (Apercu 14 / 700).\n\n**`footer`** — the black footer band.\n- Background `{colors.primary}`, text `{colors.on-primary}`, padding `{spacing.4xl} {spacing.xl}`. Body in `{typography.body-sm}` (Apercu 14 / 400). Footer column eyebrows in `{typography.body-sm-strong}`.\n\n### Signature Components\n\n**`hero-band`** — the white hero band hosting the cover-story.\n- Background `{colors.canvas}`, text `{colors.ink}`, padding `{spacing.4xl} {spacing.xl}`. Cover headline in `{typography.display-hero}` (WiredDisplay 64 px).\n\n**`masthead-band`** — the thin top band with the wordmark.\n- Background `{colors.canvas}`, text `{colors.ink}`, padding `{spacing.md} {spacing.xl}`. The wordmark sits centred; flanked by section nav.\n\n**`category-eyebrow`** — the small uppercase category label above story headlines.\n- Text `{colors.ink}`, set in `{typography.body-sm-strong}` (Apercu 14 / 700 — though some campaigns use ALL CAPS via CSS).\n\n**`byline-row`** — the article byline strip.\n- Background `{colors.canvas}`, text `{colors.body}`, body in `{typography.byline}` (BreveText 12.73 / 700 / line-height 2.2). Includes an author avatar + name + date.\n\n**`hairline-divider`** — the 1 px line between story rows.\n- 1 px solid `{colors.hairline}`.\n\n### Examples (illustrative)\n\n> Auto-derived kit-mirror demonstration surfaces (`scripts/derive-examples-block.mjs`). Each `ex-*` entry references brand-native primitives so downstream consumers (`/preview-design`, `/generate-kit`) re-skin the same 10 surfaces consistently. `TO_FILL` markers indicate missing primitives — resolve in the LLM judgment pass.\n\n**`ex-pricing-tier`** — Default Pricing tier card. Re-uses feature-card chrome with brand canvas-soft surface.\n- Properties: `backgroundColor`, `textColor`, `borderColor`, `rounded`, `padding`\n\n**`ex-pricing-tier-featured`** — Featured/highlighted tier — polarity-flipped surface (dark fill + light text in light mode, light fill + dark text in dark mode).\n- Properties: `backgroundColor`, `textColor`, `rounded`, `padding`\n\n**`ex-product-selector`** — What's Included summary card — re-purposed for SaaS / B2B verticals (NOT a literal product gallery).\n- Properties: `backgroundColor`, `rounded`, `padding`\n\n**`ex-cart-drawer`** — Subscription summary — re-purposed for SaaS / B2B (line items per add-on, not literal cart).\n- Properties: `backgroundColor`, `rounded`, `padding`, `item-divider`\n\n**`ex-app-shell-row`** — Sidebar nav row inside the App Shell example. Active state uses brand primary as the indicator.\n- Properties: `backgroundColor`, `activeIndicator`, `rounded`, `padding`\n\n**`ex-data-table-cell`** — Default data-table th + td chrome. Header uses mono-caps eyebrow typography; body uses body-sm.\n- Properties: `headerBackground`, `headerTypography`, `bodyTypography`, `cellPadding`, `rowBorder`\n\n**`ex-auth-form-card`** — Sign-in / sign-up card. Re-uses feature-card chrome with text-input primitives inside.\n- Properties: `backgroundColor`, `rounded`, `padding`\n\n**`ex-modal-card`** — Modal dialog surface — same chrome as feature-card with elevated shadow.\n- Properties: `backgroundColor`, `rounded`, `padding`\n\n**`ex-empty-state-card`** — Empty-state illustration frame.\n- Properties: `backgroundColor`, `rounded`, `padding`, `captionTypography`\n\n**`ex-toast`** — Toast notification surface — feature-card shape + medium shadow.\n- Properties: `backgroundColor`, `rounded`, `padding`, `typography`",
+    "Do's and Don'ts": "### Do\n- Reserve `{colors.primary}` black for the wordmark, every CTA, and the footer fill. The brand IS the strict black-on-white duet.\n- Set hero headlines in `{typography.display-hero}` (WiredDisplay 64 px weight 400). The proprietary serif IS the brand's typographic signature.\n- Use `{rounded.none}` 0 px on every button and form input. The brand reads as a printed magazine — square corners are non-negotiable.\n- Pair WiredDisplay (serif display) with BreveText (serif body) and Apercu (sans labels). Three faces, three roles.\n- Render story rows with `{colors.hairline}` 1 px dividers — the brand's only elevation cue.\n\n### Don't\n- Don't introduce a chromatic brand accent. The link blue is reserved for inline body links inside articles only.\n- Don't round button corners. The brand never softens its rectangular geometry.\n- Don't drop a soft drop-shadow on cards. Surface contrast and hairlines carry elevation.\n- Don't substitute the proprietary serif faces with a generic sans for display. The serif voice is the brand.\n- Don't promote display weight beyond 400. The brand's elegance is in the typeface design, not bold weight."
+  },
+  "frontmatter": {
+    "version": "alpha",
+    "name": "Wired-Inspired-design-analysis",
+    "description": "An inspired interpretation of Wired's design language — a flagship technology-magazine brand whose surface is a strict editorial duet of stark black wordmark on white canvas, anchored by a tall narrow custom display serif for hero headlines, a humanist serif body face for long-form reading, and a clean sans face for metadata; layout reads like a printed magazine ported to the web with very little marketing chrome.",
+    "colors": {
+      "primary": "#000000",
+      "on-primary": "#ffffff",
+      "ink": "#000000",
+      "ink-soft": "#1a1a1a",
+      "body": "#757575",
+      "hairline": "#e0e0e0",
+      "canvas": "#ffffff",
+      "canvas-soft": "#f5f5f5",
+      "link": "#057dbc"
+    },
+    "typography": {
+      "display-hero": {
+        "fontFamily": "WiredDisplay, \"Times New Roman\", Georgia, serif",
+        "fontSize": "64px",
+        "fontWeight": 400,
+        "lineHeight": "59.52px",
+        "letterSpacing": "-0.5px"
+      },
+      "display-lg": {
+        "fontFamily": "WiredDisplay, \"Times New Roman\", Georgia, serif",
+        "fontSize": "48px",
+        "fontWeight": 400,
+        "lineHeight": "50.4px",
+        "letterSpacing": "-0.4px"
+      },
+      "display-md": {
+        "fontFamily": "WiredDisplay, \"Times New Roman\", Georgia, serif",
+        "fontSize": "32px",
+        "fontWeight": 400,
+        "lineHeight": "35.2px",
+        "letterSpacing": "-0.3px"
+      },
+      "display-sm": {
+        "fontFamily": "WiredDisplay, \"Times New Roman\", Georgia, serif",
+        "fontSize": "26px",
+        "fontWeight": 400,
+        "lineHeight": "28.08px"
+      },
+      "display-xs": {
+        "fontFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+        "fontSize": "20px",
+        "fontWeight": 700,
+        "lineHeight": "24px",
+        "letterSpacing": "-0.28px"
+      },
+      "body-serif-lg": {
+        "fontFamily": "BreveText, Georgia, \"Times New Roman\", serif",
+        "fontSize": "19px",
+        "fontWeight": 400,
+        "lineHeight": "27.93px",
+        "letterSpacing": "0.108px"
+      },
+      "body-serif-md": {
+        "fontFamily": "BreveText, Georgia, \"Times New Roman\", serif",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": "24px",
+        "letterSpacing": "0.09px"
+      },
+      "body-md": {
+        "fontFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+        "fontSize": "17px",
+        "fontWeight": 400,
+        "lineHeight": "20px"
+      },
+      "body-md-strong": {
+        "fontFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+        "fontSize": "17px",
+        "fontWeight": 700,
+        "lineHeight": "22px",
+        "letterSpacing": "-0.144px"
+      },
+      "body-sm": {
+        "fontFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": "18px",
+        "letterSpacing": "0.4px"
+      },
+      "body-sm-strong": {
+        "fontFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": 700,
+        "lineHeight": "18px",
+        "letterSpacing": "0.4px"
+      },
+      "byline": {
+        "fontFamily": "BreveText, Georgia, \"Times New Roman\", serif",
+        "fontSize": "12.73px",
+        "fontWeight": 700,
+        "lineHeight": "28px",
+        "letterSpacing": "0.108px"
+      },
+      "caption": {
+        "fontFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+        "fontSize": "12px",
+        "fontWeight": 400,
+        "lineHeight": "16px"
+      },
+      "button-md": {
+        "fontFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": 700,
+        "lineHeight": "20px",
+        "letterSpacing": "0.3px"
+      }
+    },
+    "rounded": {
+      "none": "0px",
+      "full": "9999px"
+    },
+    "spacing": {
+      "xxs": "2px",
+      "xs": "4px",
+      "sm": "8px",
+      "md": "12px",
+      "lg": "16px",
+      "xl": "20px",
+      "2xl": "24px",
+      "3xl": "32px",
+      "4xl": "48px"
+    },
+    "components": {
+      "nav-bar": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-sm-strong}",
+        "padding": "{spacing.md} {spacing.xl}"
+      },
+      "nav-link": {
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-sm-strong}"
+      },
+      "button-primary": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.none}",
+        "padding": "{spacing.md} {spacing.xl}"
+      },
+      "button-outline": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "borderColor": "{colors.ink}",
+        "typography": "{typography.button-md}",
+        "rounded": "{rounded.none}",
+        "padding": "{spacing.md} {spacing.xl}"
+      },
+      "button-icon-circular": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "rounded": "{rounded.full}",
+        "padding": "{spacing.sm}"
+      },
+      "text-input": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "borderColor": "{colors.ink}",
+        "typography": "{typography.body-md}",
+        "rounded": "{rounded.none}",
+        "padding": "{spacing.md} {spacing.lg}"
+      },
+      "story-card-large": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.display-md}",
+        "padding": "{spacing.lg}"
+      },
+      "story-card": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.display-xs}",
+        "padding": "{spacing.md}"
+      },
+      "story-row": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "borderColor": "{colors.hairline}",
+        "typography": "{typography.body-md-strong}",
+        "padding": "{spacing.lg} 0"
+      },
+      "category-eyebrow": {
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-sm-strong}"
+      },
+      "byline-row": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.body}",
+        "typography": "{typography.byline}"
+      },
+      "hero-band": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.display-hero}",
+        "padding": "{spacing.4xl} {spacing.xl}"
+      },
+      "masthead-band": {
+        "backgroundColor": "{colors.canvas}",
+        "textColor": "{colors.ink}",
+        "typography": "{typography.body-md-strong}",
+        "padding": "{spacing.md} {spacing.xl}"
+      },
+      "hairline-divider": {
+        "borderColor": "{colors.hairline}"
+      },
+      "footer": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.on-primary}",
+        "typography": "{typography.body-sm}",
+        "padding": "{spacing.4xl} {spacing.xl}"
+      },
+      "ex-pricing-tier": {
+        "description": "Default Pricing tier card. Re-uses feature-card chrome with brand canvas-soft surface.",
+        "backgroundColor": "{colors.canvas-soft}",
+        "textColor": "{colors.ink}",
+        "borderColor": "{colors.hairline}",
+        "rounded": "{rounded.none}",
+        "padding": "{spacing.lg}"
+      },
+      "ex-pricing-tier-featured": {
+        "description": "Featured/highlighted tier — polarity-flipped surface (dark fill + light text in light mode, light fill + dark text in dark mode).",
+        "backgroundColor": "{colors.ink}",
+        "textColor": "{colors.on-primary}",
+        "rounded": "{rounded.none}",
+        "padding": "{spacing.lg}"
+      },
+      "ex-product-selector": {
+        "description": "What's Included summary card — re-purposed for SaaS / B2B verticals (NOT a literal product gallery).",
+        "backgroundColor": "{colors.canvas-soft}",
+        "rounded": "{rounded.none}",
+        "padding": "{spacing.lg}"
+      },
+      "ex-cart-drawer": {
+        "description": "Subscription summary — re-purposed for SaaS / B2B (line items per add-on, not literal cart).",
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.none}",
+        "padding": "{spacing.lg}",
+        "item-divider": "{colors.hairline}"
+      },
+      "ex-app-shell-row": {
+        "description": "Sidebar nav row inside the App Shell example. Active state uses brand primary as the indicator.",
+        "backgroundColor": "{colors.canvas}",
+        "activeIndicator": "{colors.primary}",
+        "rounded": "{rounded.none}",
+        "padding": "{spacing.md} {spacing.lg}"
+      },
+      "ex-data-table-cell": {
+        "description": "Default data-table th + td chrome. Header uses mono-caps eyebrow typography; body uses body-sm.",
+        "headerBackground": "{colors.canvas-soft}",
+        "headerTypography": "{typography.caption}",
+        "bodyTypography": "{typography.body-sm}",
+        "cellPadding": "{spacing.md} {spacing.lg}",
+        "rowBorder": "{colors.hairline}"
+      },
+      "ex-auth-form-card": {
+        "description": "Sign-in / sign-up card. Re-uses feature-card chrome with text-input primitives inside.",
+        "backgroundColor": "{colors.canvas-soft}",
+        "rounded": "{rounded.none}",
+        "padding": "{spacing.lg}"
+      },
+      "ex-modal-card": {
+        "description": "Modal dialog surface — same chrome as feature-card with elevated shadow.",
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.none}",
+        "padding": "{spacing.lg}"
+      },
+      "ex-empty-state-card": {
+        "description": "Empty-state illustration frame.",
+        "backgroundColor": "{colors.canvas-soft}",
+        "rounded": "{rounded.none}",
+        "padding": "{spacing.3xl}",
+        "captionTypography": "{typography.body-md}"
+      },
+      "ex-toast": {
+        "description": "Toast notification surface — feature-card shape + medium shadow.",
+        "backgroundColor": "{colors.canvas}",
+        "rounded": "{rounded.none}",
+        "padding": "{spacing.md} {spacing.lg}",
+        "typography": "{typography.body-sm}"
+      }
+    }
+  },
+  "brandAsset": {
+    "type": "text-wordmark",
+    "label": "Wired-Inspired"
+  }
+}
