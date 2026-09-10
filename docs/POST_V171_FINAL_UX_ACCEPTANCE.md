@@ -6,7 +6,7 @@ This document records the acceptance criteria and resolution of the Final UX Pol
 **Status:** ALL ISSUES RESOLVED
 **Build:** Passing (Typecheck, Vite, Audit scripts)
 
-## 1. P0 — Critical UX Defects
+## 1. P0 ??Critical UX Defects
 
 ### 1.1. Hero ShaderBackdrop flash on scroll
 * **Observation:** The transition from the flat fallback div to the Three.js WebGL canvas caused a harsh black flash during shader compilation, and repeatedly remounted when scrolling.
@@ -24,7 +24,7 @@ This document records the acceptance criteria and resolution of the Final UX Pol
 * **Observation:** All 74 vendor DESIGN.md entries shared identical layout tokens (`system-ui`, `48px` headings, `16px` body, `6px` radius). Previews were largely indistinguishable aside from a primary button color.
 * **Resolution:** Upgraded `VendorDesignPreview.tsx` to read the richer per-brand `colors` palette. Added dynamic detection of dark-canvas brands (`luminance < 40`) to apply a `.ds-dark` inverse theme. Specimen layout now accurately reflects diverse brand canvases (e.g., Ferrari `#181818`, Linear `#010102`), text inks, and distinctive 6-swatch palettes.
 
-## 2. P1 — Layout & Content Usability
+## 2. P1 ??Layout & Content Usability
 
 ### 2.1. Guide Home too wide
 * **Observation:** `.guides-page` forced `max-width: none` and `width: 100%`, ignoring the global layout constraints.
@@ -50,13 +50,13 @@ This document records the acceptance criteria and resolution of the Final UX Pol
 * **Observation:** Guide hero used non-standard padding, width, and sans-serif typography for italic accents.
 * **Resolution:** Swapped `<section className="guide-intro">` for `<section className="listing-hero">` in `GuidesPage.tsx`. All main listing pages now share the exact same hero container logic, padding, eyebrow opacity, and Georgia serif italics.
 
-## 3. P2 — Sources Discoverability
+## 3. P2 ??Sources Discoverability
 
 ### 3.1. Sources filter UX & status badges
 * **Observation:** Filtering was limited to 4 hardcoded status buttons. Badges were unstyled text.
 * **Resolution:** 
   * Rebuilt `SourcesPage.tsx` filtering UI. Added `<select>` dropdowns for both Category and Status.
-  * Added active filter tracking, a "초기화" (Reset) button, and dynamic result counts.
+  * Added active filter tracking, a "초기?? (Reset) button, and dynamic result counts.
   * Added empty state UI.
   * Styled `.source-status` with visual badges (`.s-import--copy-candidate` [green], `.s-reference` [amber], `.s-restricted` [red]) to communicate hierarchy instantly.
 
