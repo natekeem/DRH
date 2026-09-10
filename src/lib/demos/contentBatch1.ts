@@ -102,7 +102,7 @@ export const contentBatch1Recipes: Record<string, DemoRecipe> = {
   <div class="bento-item action"><button>Copy &rarr;</button></div>
   <div class="bento-item visual"><div class="mock-chart"></div></div>
 </div>`,
-    css: `main { background: #f5f5f7; color: #1d1d1f; display: flex; align-items: center; justify-content: center; padding: 16px; overflow-y: auto; }
+    css: `main { background: #f5f5f7; color: #1d1d1f; display: flex; align-items: center; justify-content: center; padding: 16px; }
 .bento-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -112,8 +112,7 @@ export const contentBatch1Recipes: Record<string, DemoRecipe> = {
   aspect-ratio: 3/2;
 }
 main[data-variant="card"] .bento-grid {
-  width: 500px;
-  transform: scale(0.55);
+  zoom: 0.55;
 }
 @media (max-width: 440px) {
   main:not([data-variant="card"]) .bento-grid {
@@ -121,6 +120,7 @@ main[data-variant="card"] .bento-grid {
     flex-direction: column;
     aspect-ratio: auto;
     height: 100%;
+    overflow-y: auto;
   }
 }
 .bento-item {
@@ -164,7 +164,7 @@ main[data-variant="card"] .bento-grid {
     <button type="submit">Send Message</button>
   </form>
 </div>`,
-    css: `main { background: #0a0a0a; color: #fff; display: flex; align-items: center; justify-content: center; padding: 20px; overflow-y: auto; }
+    css: `main { background: #0a0a0a; color: #fff; display: flex; align-items: center; justify-content: center; padding: 20px; }
 .contact-split {
   display: flex;
   flex-direction: row;
@@ -172,8 +172,7 @@ main[data-variant="card"] .bento-grid {
   gap: 40px;
 }
 main[data-variant="card"] .contact-split {
-  width: 650px;
-  transform: scale(0.45);
+  zoom: 0.45;
 }
 @media (max-width: 600px) {
   main:not([data-variant="card"]) .contact-split { flex-direction: column; gap: 20px; width: 100%; }
@@ -214,14 +213,17 @@ main[data-variant="card"] .contact-split {
     <div class="mock-text" style="width:70%"></div>
     <div class="mock-text" style="width:85%"></div>
     <div class="mock-text" style="width:50%"></div>
+    <div class="mock-text" style="width:60%"></div>
+    <div class="mock-text" style="width:75%"></div>
+    <div class="mock-text" style="width:40%"></div>
   </div>
   <div class="progressive-blur-overlay"></div>
   <button class="action-btn">Read More</button>
 </div>`,
     css: `main { background: #fff; color: #111; display: flex; align-items: center; justify-content: center; }
 .blur-container { position: relative; width: min(90%, 400px); height: 300px; border: 1px solid #eee; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; background: #fafafa; }
-.content-layer { padding: 20px; display: flex; flex-direction: column; gap: 15px; }
-.mock-text { height: 12px; background: #e0e0e0; border-radius: 6px; }
+.content-layer { padding: 20px; display: flex; flex-direction: column; gap: 15px; animation: scroll-anim 4s ease-in-out infinite alternate; }
+.mock-text { height: 12px; background: #d0d0d0; border-radius: 6px; }
 .progressive-blur-overlay {
   position: absolute;
   bottom: 0; left: 0; right: 0;
@@ -238,7 +240,12 @@ main[data-variant="card"] .contact-split {
   position: absolute;
   bottom: 20px; left: 50%; transform: translateX(-50%);
   z-index: 2; padding: 10px 24px; background: #111; color: #fff; border: none; border-radius: 20px; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}`,
+}
+@keyframes scroll-anim {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-80px); }
+}
+@media (prefers-reduced-motion) { .content-layer { animation: none; } }`,
     logic: 'backdrop-filter: blur()에 CSS mask-image(linear-gradient)를 적용하여 아래로 갈수록 blur 강도가 짙어지는 효과 구현. pointer-events: none으로 아래 요소들의 클릭 방해 방지.',
     acceptance: '단순한 반투명 그라데이션이 아니라, 실제 텍스트가 점진적으로 흐려지는 효과가 보임.',
     sourceNotes: 'Hub Original implementation. CSS 마스크 기반 progressive blur.'
