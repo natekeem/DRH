@@ -55,7 +55,6 @@ export const contentBatch1Recipes: Record<string, DemoRecipe> = {
   <div class="morph-shape"></div>
   <div class="morph-content">
     <h3>Shape Morph</h3>
-    <p>Continuous easing between distinct silhouettes.</p>
   </div>
 </div>`,
     css: `main { background: #f0f4f8; color: #111; }
@@ -103,7 +102,7 @@ export const contentBatch1Recipes: Record<string, DemoRecipe> = {
   <div class="bento-item action"><button>Copy &rarr;</button></div>
   <div class="bento-item visual"><div class="mock-chart"></div></div>
 </div>`,
-    css: `main { background: #f5f5f7; color: #1d1d1f; display: flex; align-items: center; justify-content: center; padding: 16px; }
+    css: `main { background: #f5f5f7; color: #1d1d1f; display: flex; align-items: center; justify-content: center; padding: 16px; overflow-y: auto; }
 .bento-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -112,13 +111,16 @@ export const contentBatch1Recipes: Record<string, DemoRecipe> = {
   width: min(100%, 600px);
   aspect-ratio: 3/2;
 }
+main[data-variant="card"] .bento-grid {
+  width: 500px;
+  transform: scale(0.55);
+}
 @media (max-width: 440px) {
-  .bento-grid {
+  main:not([data-variant="card"]) .bento-grid {
     display: flex;
     flex-direction: column;
     aspect-ratio: auto;
     height: 100%;
-    overflow-y: auto;
   }
 }
 .bento-item {
@@ -162,15 +164,19 @@ export const contentBatch1Recipes: Record<string, DemoRecipe> = {
     <button type="submit">Send Message</button>
   </form>
 </div>`,
-    css: `main { background: #0a0a0a; color: #fff; display: flex; align-items: center; justify-content: center; padding: 20px; }
+    css: `main { background: #0a0a0a; color: #fff; display: flex; align-items: center; justify-content: center; padding: 20px; overflow-y: auto; }
 .contact-split {
   display: flex;
   flex-direction: row;
   width: min(100%, 800px);
   gap: 40px;
 }
+main[data-variant="card"] .contact-split {
+  width: 650px;
+  transform: scale(0.45);
+}
 @media (max-width: 600px) {
-  .contact-split { flex-direction: column; gap: 20px; width: 100%; }
+  main:not([data-variant="card"]) .contact-split { flex-direction: column; gap: 20px; width: 100%; }
 }
 .contact-info { flex: 1; display: flex; flex-direction: column; justify-content: center; }
 .contact-info small { color: #888; font-weight: 600; letter-spacing: 1px; margin-bottom: 10px; display: block; }
