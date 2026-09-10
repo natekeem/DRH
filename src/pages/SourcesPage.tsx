@@ -1,5 +1,5 @@
-import { ExternalLink, Github, Search, X } from 'lucide-react'
-import { useMemo, useState } from 'react'
+import { ExternalLink, Github, Search, X, ChevronDown, Check } from 'lucide-react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { sourceMap, sourceStats } from '../data/sourceMap'
 
 const safe=(url?:string)=>Boolean(url && /^https?:\/\//.test(url))
@@ -14,6 +14,12 @@ const statusOptions = [
 const categories = Array.from(new Set(sourceMap.map(s => s.category))).sort()
 
 export function SourcesPage(){
+  const categoryMenu = useRef<HTMLDetailsElement>(null)
+  useEffect(() => {
+    const close = (event: PointerEvent) => { if (!categoryMenu.current?.contains(event.target as Node)) categoryMenu.current?.removeAttribute('open') }
+    document.addEventListener('pointerdown', close)
+    return () => document.removeEventListener('pointerdown', close)
+  }, [])
   const [query,setQuery]=useState('')
   const [status,setStatus]=useState('All')
   const [category,setCategory]=useState('All')
@@ -29,17 +35,18 @@ export function SourcesPage(){
   const clearAll = () => { setQuery(''); setStatus('All'); setCategory('All') }
 
   return <main className="sources-page"><section className="listing-hero sources-hero"><span className="eyebrow">SOURCE MAP / REVIEWED 2026-09-08</span><h1>더 예쁘고 더 빨라서<br/><i>복사 가능한 것만 남깁니다.</i></h1><p>Code, Screenshot, Image, Font, Icon등 Brand Asset의 권리에서 자유로운 것만 모았습니다. Hub는 Source를 License 판단과 숨기지 않고 함께 보여줍니다.</p><div className="source-stats"><div><b>{sourceStats.count}</b><span>전체 Source</span></div><div><b>{sourceStats.statusCounts['IMPORT / COPY CANDIDATE']}</b><span>가져오기 가능</span></div><div><b>{sourceStats.statusCounts['REFERENCE']}</b><span>참고 전용</span></div><div><b>{sourceStats.statusCounts['RESTRICTED']}</b><span>제한</span></div></div></section>
-    <section className="listing-toolbar sources-tools" aria-label="출처 검색 및 필터"><label><Search size={17}/><input aria-label="출처 검색" value={query} onChange={e=>setQuery(e.target.value)} placeholder="Source, Stack, License 검색"/>{query&&<button className="sources-clear-input" aria-label="검색어 지우기" onClick={()=>setQuery('')} type="button"><X size={14}/></button>}</label>
-      <div className="sources-filters">
-        <select aria-label="Category 필터" value={category} onChange={e=>setCategory(e.target.value)}>
-          <option value="All">Category 전체</option>
-          {categories.map(c=><option key={c} value={c}>{c}</option>)}
-        </select>
-        <select aria-label="판정 필터" value={status} onChange={e=>setStatus(e.target.value)}>
-          {statusOptions.map(o=><option key={o.value} value={o.value}>{o.label}</option>)}
-        </select>
-        {hasFilters&&<button className="sources-reset" onClick={clearAll} type="button">초기화</button>}
+    <section className="listing-toolbar sources-tools" aria-label="출처 검색 및 필터">
+      <div className="view-switcher source-status-tabs" role="group" aria-label="판정 필터">
+        {statusOptions.map(o=><button type="button" key={o.value} className={status===o.value?'active':''} aria-pressed={status===o.value} onClick={()=>setStatus(o.value)}>{o.label}</button>)}
       </div>
+      <details className="source-category-menu" ref={categoryMenu} onKeyDown={e=>{if(e.key==='Escape'){categoryMenu.current?.removeAttribute('open');categoryMenu.current?.querySelector('summary')?.focus()}}}>
+        <summary aria-label={'카테고리 필터: '+(category==='All'?'전체':category)}><span>{category==='All'?'카테고리 전체':category}</span><ChevronDown size={15}/></summary>
+        <div className="source-category-options" role="group" aria-label="카테고리 선택">
+          {['All',...categories].map(c=><button type="button" key={c} aria-pressed={category===c} onClick={()=>{setCategory(c);categoryMenu.current?.removeAttribute('open');categoryMenu.current?.querySelector('summary')?.focus()}}><span>{c==='All'?'카테고리 전체':c}</span>{category===c&&<Check size={14}/>}</button>)}
+        </div>
+      </details>
+      <label className="big-search"><Search size={17}/><input aria-label="출처 검색" value={query} onChange={e=>setQuery(e.target.value)} placeholder="Source, Stack, License 검색"/>{query&&<button className="sources-clear-input" aria-label="검색어 지우기" onClick={()=>setQuery('')} type="button"><X size={14}/></button>}</label>
+      {hasFilters&&<button className="sources-reset" onClick={clearAll} type="button">초기화</button>}
     </section>
     <section className="sources-table-wrap"><div className="sources-result-count"><b>{rows.length}</b>개{hasFilters?' (필터 적용)':''}</div>
     {rows.length === 0 ? (

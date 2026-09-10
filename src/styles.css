@@ -5797,3 +5797,23 @@ pre, code, .overflow-anywhere {
 .sources-empty h2 { font-size: 20px; margin-bottom: 12px; }
 .sources-empty p { font-size: 14px; color: #666; margin-bottom: 24px; }
 .sources-empty button { height: 40px; padding: 0 20px; background: #111; color: #fff; border: none; border-radius: 8px; font-size: 12px; font-weight: 700; cursor: pointer; }
+/* Sources share Explore's segmented controls and toolbar surface. */
+.sources-tools{align-items:center;gap:12px}
+.sources-tools .source-status-tabs{flex-shrink:0;gap:0}
+.source-status-tabs button{white-space:nowrap}
+.sources-tools label.big-search{flex:1;min-width:160px;width:auto;height:42px;margin:0}
+.source-category-menu{position:relative;flex:0 0 190px;min-width:0}
+.source-category-menu summary{display:flex;align-items:center;justify-content:space-between;gap:12px;height:42px;padding:0 14px;background:#fff;border:1px solid var(--line);border-radius:12px;font-size:12px;font-weight:600;cursor:pointer;list-style:none}
+.source-category-menu summary::-webkit-details-marker{display:none}
+.source-category-menu summary span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.source-category-menu summary svg{flex-shrink:0;transition:transform .15s}
+.source-category-menu[open] summary svg{transform:rotate(180deg)}
+.source-category-menu summary:focus-visible{outline:3px solid #6742bd;outline-offset:3px}
+.source-category-options{position:absolute;top:calc(100% + 8px);left:0;z-index:2;width:max-content;min-width:100%;max-width:min(320px,calc(100vw - 48px));max-height:min(360px,50vh);overflow:auto;padding:6px;background:var(--paper);border:1px solid var(--line);border-radius:14px;box-shadow:0 12px 32px #1112}
+.source-category-options button{display:flex;align-items:center;justify-content:space-between;gap:16px;width:100%;min-height:40px;padding:10px 12px;border:0;background:transparent;text-align:left;font-size:12px;border-radius:8px;cursor:pointer}
+.source-category-options button:hover,.source-category-options button:focus-visible{background:#e8e6e1}
+.source-category-options button[aria-pressed=true]{background:#fff;font-weight:700}
+.source-category-options button svg{flex-shrink:0}
+@media(max-width:1100px){.sources-tools{flex-wrap:wrap}.sources-tools .source-status-tabs{flex-basis:100%;width:max-content;flex-grow:0}.source-status-tabs button{flex:1}}
+@media(max-width:600px){.sources-tools{flex-direction:row;gap:10px}.source-status-tabs button{padding:8px 10px;font-size:12px;min-height:36px}.source-category-menu{flex-basis:100%}.sources-tools label.big-search{width:100%;min-width:0}.source-category-options{width:100%;max-width:100%}}
+.sources-tools .sources-reset{background:#111;color:#fff;white-space:nowrap}
