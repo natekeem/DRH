@@ -1,0 +1,40 @@
+{
+  "name": "DRH_CONTENT_EXPANSION_MASTER_PACK_2026-09-09",
+  "created": "2026-09-09",
+  "supersedes_for_daily_use": [
+    "DRH_RESEARCH_PACK_2026-09-09.zip",
+    "DRH_IMPLEMENTATION_SOURCE_MAP_2026-09-09.zip"
+  ],
+  "deprecated_prompts_removed": [
+    "01_GEMINI_BATCH_A.md",
+    "02_SONNET_BATCH_B.md",
+    "03_CODEX_BATCH_C.md"
+  ],
+  "current_reference_snapshot": 167,
+  "candidate_pool": 120,
+  "implementation_mapped": 40,
+  "files": [
+    "00_START_HERE.md",
+    "MASTER_INDEX.md",
+    "RUN_COMMANDS.md",
+    "implementation/DEEP_RESEARCH_CONCLUSIONS.md",
+    "implementation/IMPLEMENTATION_SOURCE_MAP_40.json",
+    "implementation/IMPLEMENTATION_SOURCE_MAP_40.md",
+    "implementation/LICENSE_MATRIX_40.md",
+    "prompts/01_GEMINI_POST_V17_BATCH1.md",
+    "prompts/02_SONNET_POST_V17_BATCH2.md",
+    "prompts/03_CODEX_POST_V17_HIGH_FIDELITY.md",
+    "prompts/04_GEMINI_POST_V17_PAGES.md",
+    "research/CURRENT_DRH_INVENTORY.json",
+    "research/LEGAL_NOTES.md",
+    "research/NEXT_40_REFERENCES.json",
+    "research/PRODUCT_BENCHMARKS.md",
+    "research/REFERENCE_CANDIDATES_120.json",
+    "research/SOURCE_LINKS.md",
+    "research/SOURCE_PREVIEW_STRATEGY.md",
+    "research/SOURCE_REGISTRY_ADDITIONS.json",
+    "research/SOURCE_UPDATES.json"
+  ],
+  "third_party_code_included": false,
+  "third_party_screenshots_included": false
+}
