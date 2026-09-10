@@ -46,7 +46,7 @@ export function SourcesPage(){
         </div>
       </details>
       <label className="big-search"><Search size={17}/><input aria-label="출처 검색" value={query} onChange={e=>setQuery(e.target.value)} placeholder="Source, Stack, License 검색"/>{query&&<button className="sources-clear-input" aria-label="검색어 지우기" onClick={()=>setQuery('')} type="button"><X size={14}/></button>}</label>
-      {hasFilters&&<button className="sources-reset" onClick={clearAll} type="button">초기화</button>}
+      <button className="sources-reset" onClick={clearAll} type="button">초기화</button>
     </section>
     <section className="sources-table-wrap"><div className="sources-result-count"><b>{rows.length}</b>개{hasFilters?' (필터 적용)':''}</div>
     {rows.length === 0 ? (

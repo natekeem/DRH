@@ -425,7 +425,7 @@ export function mountAdvancedDemo(root, options = {}) {
       const grid=Math.max(22,Math.min(w,h)/12);
       for(let x=0;x<w;x+=grid){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,h);ctx.stroke();}
       for(let y=0;y<h;y+=grid){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(w,y);ctx.stroke();}
-      ctx.fillStyle='#183154';ctx.font=`800 ${Math.round(Math.min(w/6.5,h/5))}px system-ui`;ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText('LIQUID',w*.42,h*.42);ctx.fillText('OPTICS',w*.58,h*.62);
+      ctx.fillStyle='#183154';ctx.font=`800 ${Math.round(Math.min(w/6.5,h/5))}px system-ui`;ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText('LIQUID',w*.5,h*.44);ctx.fillText('LENS',w*.5,h*.56);
       ctx.fillStyle='#fcf7e9';ctx.fillRect(w*.1,h*.78,w*.8,h*.05);ctx.fillStyle='#183154';
       for(let i=0;i<24;i++)ctx.fillRect(w*.1+i*w*.8/24,h*.78,w*.8/48,h*.05);
       const tex=texture(w,h,null,false);g.bindTexture(g.TEXTURE_2D,tex);g.pixelStorei(g.UNPACK_FLIP_Y_WEBGL,true);g.texImage2D(g.TEXTURE_2D,0,g.RGBA,g.RGBA,g.UNSIGNED_BYTE,source);g.pixelStorei(g.UNPACK_FLIP_Y_WEBGL,false);
