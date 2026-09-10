@@ -222,36 +222,39 @@ main[data-variant="card"] .contact-split {
     <div class="mock-text" style="width:90%"></div>
   </div>
   <div class="progressive-blur-overlay"></div>
-  <span class="scroll-hint">스크롤해 보세요</span>
+  <div class="status">스크롤해 보세요</div>
 </div>`,
-    css: `main { background: #fff; color: #111; display: flex; align-items: center; justify-content: center; }
-.blur-container { position: relative; width: min(90%, 400px); height: 300px; border: 1px solid #eee; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; background: #fafafa; }
-.content-layer { padding: 20px; display: flex; flex-direction: column; gap: 18px; padding-bottom: 150px; overflow-y: auto; height: 100%; }
+    css: `main { background: #fafafa; color: #111; display: flex; align-items: stretch; justify-content: stretch; }
+.blur-container { position: relative; width: 100%; height: 100%; overflow: hidden; display: flex; flex-direction: column; background: #fafafa; }
+.content-layer { padding: 40px; display: flex; flex-direction: column; gap: 20px; padding-bottom: 200px; overflow-y: auto; height: 100%; }
 .content-layer::-webkit-scrollbar { display: none; }
 .content-layer { -ms-overflow-style: none; scrollbar-width: none; }
-.mock-text { height: 12px; background: #d0d0d0; border-radius: 6px; flex-shrink: 0; }
+.mock-text { height: 14px; background: #e0e0e0; border-radius: 7px; flex-shrink: 0; }
 .progressive-blur-overlay {
   position: absolute;
   bottom: 0; left: 0; right: 0;
-  height: 150px;
+  height: 200px;
   pointer-events: none;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   mask-image: linear-gradient(to bottom, transparent 0%, black 100%);
   -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 100%);
   z-index: 1;
 }
-.scroll-hint {
+.status {
   position: absolute;
-  top: 15px; right: 20px;
-  background: rgba(0,0,0,0.6);
-  color: #fff;
-  padding: 4px 10px;
-  border-radius: 12px;
+  z-index: 2;
+  bottom: 24px; left: 24px;
+  width: fit-content; max-width: calc(100% - 48px);
+  padding: 8px 12px;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 8px;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(4px);
+  color: #333;
   font-size: 11px;
   font-weight: 600;
   pointer-events: none;
-  z-index: 2;
 }
 `,
     logic: 'backdrop-filter: blur()에 CSS mask-image(linear-gradient)를 적용하여 아래로 갈수록 blur 강도가 짙어지는 효과 구현. pointer-events: none으로 아래 요소들의 클릭 방해 방지.',
