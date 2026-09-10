@@ -1,0 +1,1755 @@
+[
+  {
+    "order": 1,
+    "name": "Neumorphism / Soft UI",
+    "category": "Styles",
+    "priority": "P0",
+    "recommendedModel": "Gemini 3.1 Pro High",
+    "implementationDecision": "PERMISSIVE_ADAPT_OR_HUB_ORIGINAL",
+    "legalRisk": "LOW — primary implementation source is permissive, subject to normal asset/dependency checks.",
+    "canonicalAcceptance": "Raised and inset surfaces must be visibly driven by paired shadow geometry on a near-background surface; not just a gray card with one drop shadow.",
+    "primarySource": {
+      "title": "ui-neumorphism",
+      "url": "https://github.com/AKAspanion/ui-neumorphism",
+      "demo": "https://akaspanion.github.io/ui-neumorphism/",
+      "license": "MIT",
+      "scope": "CODE_OK",
+      "note": "50+ React neumorphic components; strong canonical implementation reference."
+    },
+    "secondarySources": [
+      {
+        "title": "Neumorphism.io",
+        "url": "https://github.com/adamgiebl/neumorphism",
+        "demo": "https://neumorphism.io/",
+        "license": "BSD-3-Clause",
+        "scope": "CODE_OK",
+        "note": "Very strong reference for soft-shadow geometry and parameterization."
+      }
+    ],
+    "cardPreview": "Style board using typography, surface, buttons and one illustration/content sample.",
+    "detailPreview": "Expanded design-system specimen showing type, palette, surfaces, components and layout rhythm.",
+    "interaction": "Subtle; the style itself should remain the main reference.",
+    "agentPackageRequirements": [
+      "Goal and canonical visual target",
+      "Exact interaction/state behavior",
+      "DOM/component structure",
+      "Dependencies and offline policy",
+      "Implementation logic with real values, not vague adjectives",
+      "Responsive + reduced-motion behavior",
+      "Must-not substitutions that would change the effect",
+      "Acceptance criteria tied to visible behavior",
+      "Source / repository / license / provenance"
+    ],
+    "existingDRHOverlapCheck": "Candidate was checked against the named core DRH reference inventory in the supplied snapshot.",
+    "researchStatus": "SOURCE_MAPPED"
+  },
+  {
+    "order": 2,
+    "name": "Skeuomorphism",
+    "category": "Styles",
+    "priority": "P0",
+    "recommendedModel": "Gemini 3.1 Pro High",
+    "implementationDecision": "PERMISSIVE_ADAPT_OR_HUB_ORIGINAL",
+    "legalRisk": "MEDIUM — at least one discovery/reference-only source; only use verified permissive source or clean-room implementation.",
+    "canonicalAcceptance": "Use physical material cues (gloss, bevel, inset, texture/lighting) and at least one tactile control state.",
+    "primarySource": {
+      "title": "Tactile UI",
+      "url": "https://github.com/KzqKzq/tactile-ui",
+      "demo": "https://kzqkzq.github.io/tactile-ui/",
+      "license": "MIT",
+      "scope": "CODE_OK_WITH_CAUTION",
+      "note": "30+ tactile/skeuomorphic React components. README says learning/testing only; treat as reference/adaptation with explicit provenance, not production endorsement."
+    },
+    "secondarySources": [
+      {
+        "title": "skeuomorph/ui",
+        "url": "https://github.com/krzysztoff1/ui-skeuomorph",
+        "demo": "",
+        "license": "VERIFY LICENSE FILE BEFORE COPY",
+        "scope": "REFERENCE_UNTIL_VERIFIED",
+        "note": "2000s glossy/brushed-metal/tactile shadcn-inspired system. Useful visual benchmark."
+      }
+    ],
+    "cardPreview": "Style board using typography, surface, buttons and one illustration/content sample.",
+    "detailPreview": "Expanded design-system specimen showing type, palette, surfaces, components and layout rhythm.",
+    "interaction": "Subtle; the style itself should remain the main reference.",
+    "agentPackageRequirements": [
+      "Goal and canonical visual target",
+      "Exact interaction/state behavior",
+      "DOM/component structure",
+      "Dependencies and offline policy",
+      "Implementation logic with real values, not vague adjectives",
+      "Responsive + reduced-motion behavior",
+      "Must-not substitutions that would change the effect",
+      "Acceptance criteria tied to visible behavior",
+      "Source / repository / license / provenance"
+    ],
+    "existingDRHOverlapCheck": "Candidate was checked against the named core DRH reference inventory in the supplied snapshot.",
+    "researchStatus": "SOURCE_MAPPED"
+  },
+  {
+    "order": 3,
+    "name": "Bauhaus",
+    "category": "Styles",
+    "priority": "P0",
+    "recommendedModel": "Gemini 3.1 Pro High",
+    "implementationDecision": "CLEAN_ROOM",
+    "legalRisk": "MEDIUM — at least one discovery/reference-only source; only use verified permissive source or clean-room implementation.",
+    "canonicalAcceptance": "Primary geometry, asymmetric/function-led grid, strong display type and restrained primary-color accents; avoid turning it into generic geometric minimalism.",
+    "primarySource": {
+      "title": "design-isms",
+      "url": "https://lidge-jun.github.io/design-isms/",
+      "demo": "https://lidge-jun.github.io/design-isms/",
+      "license": "Unknown/no root license verified",
+      "scope": "DISCOVERY_ONLY",
+      "note": "Taxonomy benchmark only; no code/text/image copying."
+    },
+    "secondarySources": [
+      {
+        "title": "Framer Marketplace",
+        "url": "https://www.framer.com/marketplace/templates/",
+        "demo": "https://www.framer.com/marketplace/templates/",
+        "license": "Per-item / marketplace terms",
+        "scope": "DISCOVERY_ONLY",
+        "note": "Use layout/style trend discovery only."
+      }
+    ],
+    "cardPreview": "Style board using typography, surface, buttons and one illustration/content sample.",
+    "detailPreview": "Expanded design-system specimen showing type, palette, surfaces, components and layout rhythm.",
+    "interaction": "Subtle; the style itself should remain the main reference.",
+    "agentPackageRequirements": [
+      "Goal and canonical visual target",
+      "Exact interaction/state behavior",
+      "DOM/component structure",
+      "Dependencies and offline policy",
+      "Implementation logic with real values, not vague adjectives",
+      "Responsive + reduced-motion behavior",
+      "Must-not substitutions that would change the effect",
+      "Acceptance criteria tied to visible behavior",
+      "Source / repository / license / provenance"
+    ],
+    "existingDRHOverlapCheck": "Candidate was checked against the named core DRH reference inventory in the supplied snapshot.",
+    "researchStatus": "SOURCE_MAPPED"
+  },
+  {
+    "order": 4,
+    "name": "Japandi",
+    "category": "Styles",
+    "priority": "P0",
+    "recommendedModel": "Gemini 3.1 Pro High",
+    "implementationDecision": "CLEAN_ROOM",
+    "legalRisk": "MEDIUM — at least one discovery/reference-only source; only use verified permissive source or clean-room implementation.",
+    "canonicalAcceptance": "Warm natural neutrals, restrained serif/sans pairing, natural-material impression and generous rhythm; avoid generic beige SaaS.",
+    "primarySource": {
+      "title": "Framer Marketplace",
+      "url": "https://www.framer.com/marketplace/templates/",
+      "demo": "https://www.framer.com/marketplace/templates/",
+      "license": "Per-item / marketplace terms",
+      "scope": "DISCOVERY_ONLY",
+      "note": "Use layout/style trend discovery only."
+    },
+    "secondarySources": [
+      {
+        "title": "design-isms",
+        "url": "https://lidge-jun.github.io/design-isms/",
+        "demo": "https://lidge-jun.github.io/design-isms/",
+        "license": "Unknown/no root license verified",
+        "scope": "DISCOVERY_ONLY",
+        "note": "Taxonomy benchmark only; no code/text/image copying."
+      }
+    ],
+    "cardPreview": "Style board using typography, surface, buttons and one illustration/content sample.",
+    "detailPreview": "Expanded design-system specimen showing type, palette, surfaces, components and layout rhythm.",
+    "interaction": "Subtle; the style itself should remain the main reference.",
+    "agentPackageRequirements": [
+      "Goal and canonical visual target",
+      "Exact interaction/state behavior",
+      "DOM/component structure",
+      "Dependencies and offline policy",
+      "Implementation logic with real values, not vague adjectives",
+      "Responsive + reduced-motion behavior",
+      "Must-not substitutions that would change the effect",
+      "Acceptance criteria tied to visible behavior",
+      "Source / repository / license / provenance"
+    ],
+    "existingDRHOverlapCheck": "Candidate was checked against the named core DRH reference inventory in the supplied snapshot.",
+    "researchStatus": "SOURCE_MAPPED"
+  },
+  {
+    "order": 5,
+    "name": "Boids Ecosystem",
+    "category": "Background",
+    "priority": "P0",
+    "recommendedModel": "Codex",
+    "implementationDecision": "PERMISSIVE_ADAPT_OR_HUB_ORIGINAL",
+    "legalRisk": "LOW — primary implementation source is permissive, subject to normal asset/dependency checks.",
+    "canonicalAcceptance": "Must visibly show separation + alignment + cohesion, with coherent flock turning; random particles are not boids.",
+    "primarySource": {
+      "title": "boids-js",
+      "url": "https://github.com/ercang/boids-js",
+      "demo": "https://ercang.github.io/boids-js/",
+      "license": "MIT",
+      "scope": "CODE_OK",
+      "note": "Separation/alignment/cohesion + spatial grid + worker variants."
+    },
+    "secondarySources": [
+      {
+        "title": "Ben Eater Boids",
+        "url": "https://github.com/beneater/boids",
+        "demo": "",
+        "license": "MIT",
+        "scope": "CODE_OK",
+        "note": "Small, easy-to-understand boids algorithm demonstration."
+      }
+    ],
+    "cardPreview": "Compact, immediately recognizable loop with reduced element count and low DPR.",
+    "detailPreview": "Area-aware high-density version that fills the larger preview without looking sparse.",
+    "interaction": "Pointer or ambient motion where canonical; deterministic seeded randomness for stable QA.",
+    "agentPackageRequirements": [
+      "Goal and canonical visual target",
+      "Exact interaction/state behavior",
+      "DOM/component structure",
+      "Dependencies and offline policy",
+      "Implementation logic with real values, not vague adjectives",
+      "Responsive + reduced-motion behavior",
+      "Must-not substitutions that would change the effect",
+      "Acceptance criteria tied to visible behavior",
+      "Source / repository / license / provenance"
+    ],
+    "existingDRHOverlapCheck": "Candidate was checked against the named core DRH reference inventory in the supplied snapshot.",
+    "researchStatus": "SOURCE_MAPPED"
+  },
+  {
+    "order": 6,
+    "name": "Ferrofluid Surface",
+    "category": "Background",
+    "priority": "P0",
+    "recommendedModel": "Codex",
+    "implementationDecision": "CLEAN_ROOM",
+    "legalRisk": "MEDIUM — at least one discovery/reference-only source; only use verified permissive source or clean-room implementation.",
+    "canonicalAcceptance": "Coherent magnetic field should create spikes/lobes and attraction behavior; ordinary metaballs are insufficient.",
+    "primarySource": {
+      "title": "React Bits",
+      "url": "https://www.reactbits.dev/",
+      "demo": "https://www.reactbits.dev/",
+      "license": "MIT + Commons Clause",
+      "scope": "DISCOVERY_ONLY_FOR_DRH_CATALOG",
+      "note": "Do not redistribute components as catalog items. Use concept discovery only."
+    },
+    "secondarySources": [
+      {
+        "title": "design-isms",
+        "url": "https://lidge-jun.github.io/design-isms/",
+        "demo": "https://lidge-jun.github.io/design-isms/",
+        "license": "Unknown/no root license verified",
+        "scope": "DISCOVERY_ONLY",
+        "note": "Taxonomy benchmark only; no code/text/image copying."
+      }
+    ],
+    "cardPreview": "Compact, immediately recognizable loop with reduced element count and low DPR.",
+    "detailPreview": "Area-aware high-density version that fills the larger preview without looking sparse.",
+    "interaction": "Pointer or ambient motion where canonical; deterministic seeded randomness for stable QA.",
+    "agentPackageRequirements": [
+      "Goal and canonical visual target",
+      "Exact interaction/state behavior",
+      "DOM/component structure",
+      "Dependencies and offline policy",
+      "Implementation logic with real values, not vague adjectives",
+      "Responsive + reduced-motion behavior",
+      "Must-not substitutions that would change the effect",
+      "Acceptance criteria tied to visible behavior",
+      "Source / repository / license / provenance"
+    ],
+    "existingDRHOverlapCheck": "Candidate was checked against the named core DRH reference inventory in the supplied snapshot.",
+    "researchStatus": "SOURCE_MAPPED"
+  },
+  {
+    "order": 7,
+    "name": "Liquid Chrome",
+    "category": "Background",
+    "priority": "P0",
+    "recommendedModel": "Codex",
+    "implementationDecision": "PERMISSIVE_ADAPT_OR_HUB_ORIGINAL",
+    "legalRisk": "LOW — primary implementation source is permissive, subject to normal asset/dependency checks.",
+    "canonicalAcceptance": "Reflective/chromatic moving metal bands must read as a material surface; not just a silver gradient.",
+    "primarySource": {
+      "title": "metal-fx",
+      "url": "https://github.com/Jakubantalik/metal-fx",
+      "demo": "https://metal.jakubantalik.com/",
+      "license": "MIT",
+      "scope": "CODE_OK",
+      "note": "Direct canonical animated WebGL liquid-metal border for real semantic controls."
+    },
+    "secondarySources": [
+      {
+        "title": "React Bits",
+        "url": "https://www.reactbits.dev/",
+        "demo": "https://www.reactbits.dev/",
+        "license": "MIT + Commons Clause",
+        "scope": "DISCOVERY_ONLY_FOR_DRH_CATALOG",
+        "note": "Do not redistribute components as catalog items. Use concept discovery only."
+      }
+    ],
+    "cardPreview": "Compact, immediately recognizable loop with reduced element count and low DPR.",
+    "detailPreview": "Area-aware high-density version that fills the larger preview without looking sparse.",
+    "interaction": "Pointer or ambient motion where canonical; deterministic seeded randomness for stable QA.",
+    "agentPackageRequirements": [
+      "Goal and canonical visual target",
+      "Exact interaction/state behavior",
+      "DOM/component structure",
+      "Dependencies and offline policy",
+      "Implementation logic with real values, not vague adjectives",
+      "Responsive + reduced-motion behavior",
+      "Must-not substitutions that would change the effect",
+      "Acceptance criteria tied to visible behavior",
+      "Source / repository / license / provenance"
+    ],
+    "existingDRHOverlapCheck": "Candidate was checked against the named core DRH reference inventory in the supplied snapshot.",
+    "researchStatus": "SOURCE_MAPPED"
+  },
+  {
+    "order": 8,
+    "name": "Topography Contours",
+    "category": "Background",
+    "priority": "P0",
+    "recommendedModel": "Gemini 3.1 Pro High",
+    "implementationDecision": "PERMISSIVE_ADAPT_OR_HUB_ORIGINAL",
+    "legalRisk": "LOW — primary implementation source is permissive, subject to normal asset/dependency checks.",
+    "canonicalAcceptance": "Multiple contour isolines with evolving elevation field; the lines themselves must form topographic bands.",
+    "primarySource": {
+      "title": "topolines",
+      "url": "https://github.com/idleCyrex/topolines",
+      "demo": "https://topolines.idlee.xyz",
+      "license": "MIT",
+      "scope": "CODE_OK",
+      "note": "Excellent direct match: GPU topographic contours, pointer bump, offscreen pause, reduced-motion and context recovery."
+    },
+    "secondarySources": [],
+    "cardPreview": "Compact, immediately recognizable loop with reduced element count and low DPR.",
+    "detailPreview": "Area-aware high-density version that fills the larger preview without looking sparse.",
+    "interaction": "Pointer or ambient motion where canonical; deterministic seeded randomness for stable QA.",
+    "agentPackageRequirements": [
+      "Goal and canonical visual target",
+      "Exact interaction/state behavior",
+      "DOM/component structure",
+      "Dependencies and offline policy",
+      "Implementation logic with real values, not vague adjectives",
+      "Responsive + reduced-motion behavior",
+      "Must-not substitutions that would change the effect",
+      "Acceptance criteria tied to visible behavior",
+      "Source / repository / license / provenance"
+    ],
+    "existingDRHOverlapCheck": "Candidate was checked against the named core DRH reference inventory in the supplied snapshot.",
+    "researchStatus": "SOURCE_MAPPED"
+  },
+  {
+    "order": 9,
+    "name": "Voronoi Field",
+    "category": "Background",
+    "priority": "P0",
+    "recommendedModel": "Gemini 3.1 Pro High",
+    "implementationDecision": "PERMISSIVE_ADAPT_OR_HUB_ORIGINAL",
+    "legalRisk": "LOW — primary implementation source is permissive, subject to normal asset/dependency checks.",
+    "canonicalAcceptance": "Cells must derive from nearest-site partitions and visibly react to seed movement/pointer field.",
+    "primarySource": {
+      "title": "Port80 WebGL Gallery",
+      "url": "https://github.com/kongaravinay/port80-webgl-gallery",
+      "demo": "",
+      "license": "MIT",
+      "scope": "CODE_OK",
+      "note": "Interactive WebGL Voronoi with OGL/GLSL + workers; adapt only generic field logic, not remote image assets."
+    },
+    "secondarySources": [],
+    "cardPreview": "Compact, immediately recognizable loop with reduced element count and low DPR.",
+    "detailPreview": "Area-aware high-density version that fills the larger preview without looking sparse.",
+    "interaction": "Pointer or ambient motion where canonical; deterministic seeded randomness for stable QA.",
+    "agentPackageRequirements": [
+      "Goal and canonical visual target",
+      "Exact interaction/state behavior",
+      "DOM/component structure",
+      "Dependencies and offline policy",
+      "Implementation logic with real values, not vague adjectives",
+      "Responsive + reduced-motion behavior",
+      "Must-not substitutions that would change the effect",
+      "Acceptance criteria tied to visible behavior",
+      "Source / repository / license / provenance"
+    ],
+    "existingDRHOverlapCheck": "Candidate was checked against the named core DRH reference inventory in the supplied snapshot.",
+    "researchStatus": "SOURCE_MAPPED"
+  },
+  {
+    "order": 10,
+    "name": "Caustics",
+    "category": "Background",
+    "priority": "P0",
+    "recommendedModel": "Codex",
+    "implementationDecision": "PERMISSIVE_ADAPT_OR_HUB_ORIGINAL",
+    "legalRisk": "LOW-MEDIUM — usable with explicit license/dependency/provenance checks.",
+    "canonicalAcceptance": "Moving focused light filaments must read as refracted water-light patterns, not random noise.",
+    "primarySource": {
+      "title": "webgl-water lineage / water-demo caustics",
+      "url": "https://github.com/shanecelis/water-demo",
+      "demo": "",
+      "license": "MIT lineage",
+      "scope": "CODE_OK_WITH_NOTICE",
+      "note": "Caustics shader carries explicit Evan Wallace + Shane Celis MIT provenance. Preserve both notices if adapting."
+    },
+    "secondarySources": [],
+    "cardPreview": "Compact, immediately recognizable loop with reduced element count and low DPR.",
+    "detailPreview": "Area-aware high-density version that fills the larger preview without looking sparse.",
+    "interaction": "Pointer or ambient motion where canonical; deterministic seeded randomness for stable QA.",
+    "agentPackageRequirements": [
+      "Goal and canonical visual target",
+      "Exact interaction/state behavior",
+      "DOM/component structure",
+      "Dependencies and offline policy",
+      "Implementation logic with real values, not vague adjectives",
+      "Responsive + reduced-motion behavior",
+      "Must-not substitutions that would change the effect",
+      "Acceptance criteria tied to visible behavior",
+      "Source / repository / license / provenance"
+    ],
+    "existingDRHOverlapCheck": "Candidate was checked against the named core DRH reference inventory in the supplied snapshot.",
+    "researchStatus": "SOURCE_MAPPED"
+  },
+  {
+    "order": 11,
+    "name": "Dither Field",
+    "category": "Background",
+    "priority": "P0",
+    "recommendedModel": "Gemini 3.1 Pro High",
+    "implementationDecision": "CLEAN_ROOM",
+    "legalRisk": "MEDIUM — at least one discovery/reference-only source; only use verified permissive source or clean-room implementation.",
+    "canonicalAcceptance": "Visible ordered/error-diffusion-like pixel threshold structure, not ordinary noise/grain.",
+    "primarySource": {
+      "title": "React Bits",
+      "url": "https://www.reactbits.dev/",
+      "demo": "https://www.reactbits.dev/",
+      "license": "MIT + Commons Clause",
+      "scope": "DISCOVERY_ONLY_FOR_DRH_CATALOG",
+      "note": "Do not redistribute components as catalog items. Use concept discovery only."
+    },
+    "secondarySources": [
+      {
+        "title": "design-isms",
+        "url": "https://lidge-jun.github.io/design-isms/",
+        "demo": "https://lidge-jun.github.io/design-isms/",
+        "license": "Unknown/no root license verified",
+        "scope": "DISCOVERY_ONLY",
+        "note": "Taxonomy benchmark only; no code/text/image copying."
+      }
+    ],
+    "cardPreview": "Compact, immediately recognizable loop with reduced element count and low DPR.",
+    "detailPreview": "Area-aware high-density version that fills the larger preview without looking sparse.",
+    "interaction": "Pointer or ambient motion where canonical; deterministic seeded randomness for stable QA.",
+    "agentPackageRequirements": [
+      "Goal and canonical visual target",
+      "Exact interaction/state behavior",
+      "DOM/component structure",
+      "Dependencies and offline policy",
+      "Implementation logic with real values, not vague adjectives",
+      "Responsive + reduced-motion behavior",
+      "Must-not substitutions that would change the effect",
+      "Acceptance criteria tied to visible behavior",
+      "Source / repository / license / provenance"
+    ],
+    "existingDRHOverlapCheck": "Candidate was checked against the named core DRH reference inventory in the supplied snapshot.",
+    "researchStatus": "SOURCE_MAPPED"
+  },
+  {
+    "order": 12,
+    "name": "Morphing Dialog",
+    "category": "Motion",
+    "priority": "P0",
+    "recommendedModel": "Claude Sonnet 4.6",
+    "implementationDecision": "PERMISSIVE_ADAPT_OR_HUB_ORIGINAL",
+    "legalRisk": "LOW — primary implementation source is permissive, subject to normal asset/dependency checks.",
+    "canonicalAcceptance": "Trigger and dialog share geometry/visual continuity; it must feel like the trigger becomes the dialog.",
+    "primarySource": {
+      "title": "Motion Primitives",
+      "url": "https://github.com/ibelick/motion-primitives",
+      "demo": "https://motion-primitives.com/",
+      "license": "MIT",
+      "scope": "CODE_OK",
+      "note": "Strong canonical source for Morphing Dialog, Dock, Text Morph and related motion primitives."
+    },
+    "secondarySources": [],
+    "cardPreview": "One focused control/surface showing the canonical motion in 2–4 seconds.",
+    "detailPreview": "Larger interactive composition with full enter/exit/reverse behavior and visible state changes.",
+    "interaction": "Pointer/keyboard/touch where meaningful; spring/easing values must be explicit.",
+    "agentPackageRequirements": [
+      "Goal and canonical visual target",
+      "Exact interaction/state behavior",
+      "DOM/component structure",
+      "Dependencies and offline policy",
+      "Implementation logic with real values, not vague adjectives",
+      "Responsive + reduced-motion behavior",
+      "Must-not substitutions that would change the effect",
+      "Acceptance criteria tied to visible behavior",
+      "Source / repository / license / provenance"
+    ],
+    "existingDRHOverlapCheck": "Candidate was checked against the named core DRH reference inventory in the supplied snapshot.",
+    "researchStatus": "SOURCE_MAPPED"
+  },
+  {
+    "order": 13,
+    "name": "Dynamic Island",
+    "category": "Motion",
+    "priority": "P0",
+    "recommendedModel": "Claude Sonnet 4.6",
+    "implementationDecision": "PERMISSIVE_ADAPT_OR_HUB_ORIGINAL",
+    "legalRisk": "LOW — primary implementation source is permissive, subject to normal asset/dependency checks.",
+    "canonicalAcceptance": "One pill shell changes dimensions/content across multiple live activity states with springy continuity.",
+    "primarySource": {
+      "title": "beUI Dynamic Island",
+      "url": "https://beui.dev/components/blocks/dynamic-island",
+      "demo": "https://beui.dev/components/blocks/dynamic-island",
+      "license": "MIT via repository",
+      "scope": "CODE_OK",
+      "note": "Direct canonical match with reduced-motion usage."
+    },
+    "secondarySources": [
+      {
+        "title": "beUI",
+        "url": "https://github.com/starc007/ui-components",
+        "demo": "https://beui.dev/",
+        "license": "MIT",
+        "scope": "CODE_OK",
+        "note": "Copy-own-code registry; very strong source for Dynamic Island, command palette, notification stack, masonry, etc."
+      }
+    ],
+    "cardPreview": "One focused control/surface showing the canonical motion in 2–4 seconds.",
+    "detailPreview": "Larger interactive composition with full enter/exit/reverse behavior and visible state changes.",
+    "interaction": "Pointer/keyboard/touch where meaningful; spring/easing values must be explicit.",
+    "agentPackageRequirements": [
+      "Goal and canonical visual target",
+      "Exact interaction/state behavior",
+      "DOM/component structure",
+      "Dependencies and offline policy",
+      "Implementation logic with real values, not vague adjectives",
+      "Responsive + reduced-motion behavior",
+      "Must-not substitutions that would change the effect",
+      "Acceptance criteria tied to visible behavior",
+      "Source / repository / license / provenance"
+    ],
+    "existingDRHOverlapCheck": "Candidate was checked against the named core DRH reference inventory in the supplied snapshot.",
+    "researchStatus": "SOURCE_MAPPED"
+  },
+  {
+    "order": 14,
+    "name": "Morphing Search",
+    "category": "Motion",
+    "priority": "P0",
+    "recommendedModel": "Claude Sonnet 4.6",
+    "implementationDecision": "PERMISSIVE_ADAPT_OR_HUB_ORIGINAL",
+    "legalRisk": "LOW — primary implementation source is permissive, subject to normal asset/dependency checks.",
+    "canonicalAcceptance": "A compact trigger transforms into a search surface and back, preserving spatial identity.",
+    "primarySource": {
+      "title": "goey-toast",
+      "url": "https://github.com/anl331/goey-toast",
+      "demo": "https://goey-toast.vercel.app",
+      "license": "MIT",
+      "scope": "CODE_OK",
+      "note": "Direct match; includes Agent Skill, keyboard dismiss, swipe, reduced-ish motion presets and promise states."
+    },
+    "secondarySources": [
+      {
+        "title": "Motion Primitives",
+        "url": "https://github.com/ibelick/motion-primitives",
+        "demo": "https://motion-primitives.com/",
+        "license": "MIT",
+        "scope": "CODE_OK",
+        "note": "Strong canonical source for Morphing Dialog, Dock, Text Morph and related motion primitives."
+      }
+    ],
+    "cardPreview": "One focused control/surface showing the canonical motion in 2–4 seconds.",
+    "detailPreview": "Larger interactive composition with full enter/exit/reverse behavior and visible state changes.",
+    "interaction": "Pointer/keyboard/touch where meaningful; spring/easing values must be explicit.",
+    "agentPackageRequirements": [
+      "Goal and canonical visual target",
+      "Exact interaction/state behavior",
+      "DOM/component structure",
+      "Dependencies and offline policy",
+      "Implementation logic with real values, not vague adjectives",
+      "Responsive + reduced-motion behavior",
+      "Must-not substitutions that would change the effect",
+      "Acceptance criteria tied to visible behavior",
+      "Source / repository / license / provenance"
+    ],
+    "existingDRHOverlapCheck": "Candidate was checked against the named core DRH reference inventory in the supplied snapshot.",
+    "researchStatus": "SOURCE_MAPPED"
+  },
+  {
+    "order": 15,
+    "name": "Dock Magnification",
+    "category": "Motion",
+    "priority": "P0",
+    "recommendedModel": "Claude Sonnet 4.6",
+    "implementationDecision": "PERMISSIVE_ADAPT_OR_HUB_ORIGINAL",
+    "legalRisk": "LOW — primary implementation source is permissive, subject to normal asset/dependency checks.",
+    "canonicalAcceptance": "Pointer distance affects neighboring items continuously, not only the hovered item.",
+    "primarySource": {
+      "title": "Motion Primitives Dock",
+      "url": "https://github.com/ibelick/motion-primitives/blob/main/app/docs/dock/page.mdx",
+      "demo": "https://motion-primitives.com/docs/dock",
+      "license": "MIT",
+      "scope": "CODE_OK",
+      "note": "Documents magnification/distance/spring values."
+    },
+    "secondarySources": [
+      {
+        "title": "Motion Primitives",
+        "url": "https://github.com/ibelick/motion-primitives",
+        "demo": "https://motion-primitives.com/",
+        "license": "MIT",
+        "scope": "CODE_OK",
+        "note": "Strong canonical source for Morphing Dialog, Dock, Text Morph and related motion primitives."
+      }
+    ],
+    "cardPreview": "One focused control/surface showing the canonical motion in 2–4 seconds.",
+    "detailPreview": "Larger interactive composition with full enter/exit/reverse behavior and visible state changes.",
+    "interaction": "Pointer/keyboard/touch where meaningful; spring/easing values must be explicit.",
+    "agentPackageRequirements": [
+      "Goal and canonical visual target",
+      "Exact interaction/state behavior",
+      "DOM/component structure",
+      "Dependencies and offline policy",
+      "Implementation logic with real values, not vague adjectives",
+      "Responsive + reduced-motion behavior",
+      "Must-not substitutions that would change the effect",
+      "Acceptance criteria tied to visible behavior",
+      "Source / repository / license / provenance"
+    ],
+    "existingDRHOverlapCheck": "Candidate was checked against the named core DRH reference inventory in the supplied snapshot.",
+    "researchStatus": "SOURCE_MAPPED"
+  },
+  {
+    "order": 16,
+    "name": "Card Stack",
+    "category": "Motion",
+    "priority": "P0",
+    "recommendedModel": "Claude Sonnet 4.6",
+    "implementationDecision": "PERMISSIVE_ADAPT_OR_HUB_ORIGINAL",
+    "legalRisk": "LOW — primary implementation source is permissive, subject to normal asset/dependency checks.",
+    "canonicalAcceptance": "Cards must have visible depth order and swipe/cycle/stack behavior.",
+    "primarySource": {
+      "title": "Motion Primitives",
+      "url": "https://github.com/ibelick/motion-primitives",
+      "demo": "https://motion-primitives.com/",
+      "license": "MIT",
+      "scope": "CODE_OK",
+      "note": "Strong canonical source for Morphing Dialog, Dock, Text Morph and related motion primitives."
+    },
+    "secondarySources": [
+      {
+        "title": "beUI",
+        "url": "https://github.com/starc007/ui-components",
+        "demo": "https://beui.dev/",
+        "license": "MIT",
+        "scope": "CODE_OK",
+        "note": "Copy-own-code registry; very strong source for Dynamic Island, command palette, notification stack, masonry, etc."
+      }
+    ],
+    "cardPreview": "One focused control/surface showing the canonical motion in 2–4 seconds.",
+    "detailPreview": "Larger interactive composition with full enter/exit/reverse behavior and visible state changes.",
+    "interaction": "Pointer/keyboard/touch where meaningful; spring/easing values must be explicit.",
+    "agentPackageRequirements": [
+      "Goal and canonical visual target",
+      "Exact interaction/state behavior",
+      "DOM/component structure",
+      "Dependencies and offline policy",
+      "Implementation logic with real values, not vague adjectives",
+      "Responsive + reduced-motion behavior",
+      "Must-not substitutions that would change the effect",
+      "Acceptance criteria tied to visible behavior",
+      "Source / repository / license / provenance"
+    ],
+    "existingDRHOverlapCheck": "Candidate was checked against the named core DRH reference inventory in the supplied snapshot.",
+    "researchStatus": "SOURCE_MAPPED"
+  },
+  {
+    "order": 17,
+    "name": "Stacked Sections",
+    "category": "Motion",
+    "priority": "P0",
+    "recommendedModel": "Claude Sonnet 4.6",
+    "implementationDecision": "PERMISSIVE_ADAPT_OR_HUB_ORIGINAL",
+    "legalRisk": "LOW — primary implementation source is permissive, subject to normal asset/dependency checks.",
+    "canonicalAcceptance": "Sections pin/overlap/scale as scroll progresses; ordinary reveal-on-scroll is insufficient.",
+    "primarySource": {
+      "title": "Motion Primitives",
+      "url": "https://github.com/ibelick/motion-primitives",
+      "demo": "https://motion-primitives.com/",
+      "license": "MIT",
+      "scope": "CODE_OK",
+      "note": "Strong canonical source for Morphing Dialog, Dock, Text Morph and related motion primitives."
+    },
+    "secondarySources": [
+      {
+        "title": "svelte-gsap-template",
+        "url": "https://github.com/YusufCeng1z/svelte-gsap-template",
+        "demo": "https://svelte-gsap-template.vercel.app/",
+        "license": "MIT",
+        "scope": "CODE_OK",
+        "note": "Awwwards-style agency structure; Svelte so use concept/animation logic, not React-specific copying."
+      }
+    ],
+    "cardPreview": "One focused control/surface showing the canonical motion in 2–4 seconds.",
+    "detailPreview": "Larger interactive composition with full enter/exit/reverse behavior and visible state changes.",
+    "interaction": "Pointer/keyboard/touch where meaningful; spring/easing values must be explicit.",
+    "agentPackageRequirements": [
+      "Goal and canonical visual target",
+      "Exact interaction/state behavior",
+      "DOM/component structure",
+      "Dependencies and offline policy",
+      "Implementation logic with real values, not vague adjectives",
+      "Responsive + reduced-motion behavior",
+      "Must-not substitutions that would change the effect",
+      "Acceptance criteria tied to visible behavior",
+      "Source / repository / license / provenance"
+    ],
+    "existingDRHOverlapCheck": "Candidate was checked against the named core DRH reference inventory in the supplied snapshot.",
+    "researchStatus": "SOURCE_MAPPED"
+  },
+  {
+    "order": 18,
+    "name": "Text Morph",
+    "category": "Text",
+    "priority": "P0",
+    "recommendedModel": "Claude Sonnet 4.6",
+    "implementationDecision": "PERMISSIVE_ADAPT_OR_HUB_ORIGINAL",
+    "legalRisk": "LOW — primary implementation source is permissive, subject to normal asset/dependency checks.",
+    "canonicalAcceptance": "Glyph/word transition should preserve visual continuity, not just crossfade two strings.",
+    "primarySource": {
+      "title": "Torph",
+      "url": "https://github.com/lochie/torph",
+      "demo": "https://torph.lochie.me",
+      "license": "MIT",
+      "scope": "CODE_OK",
+      "note": "Dependency-free text morph for React/Vue/Svelte/vanilla."
+    },
+    "secondarySources": [
+      {
+        "title": "Motion Primitives",
+        "url": "https://github.com/ibelick/motion-primitives",
+        "demo": "https://motion-primitives.com/",
+        "license": "MIT",
+        "scope": "CODE_OK",
+        "note": "Strong canonical source for Morphing Dialog, Dock, Text Morph and related motion primitives."
+      }
+    ],
+    "cardPreview": "Short 1–3 word specimen demonstrating the typography motion at a glance.",
+    "detailPreview": "Multiple words/sizes plus controls or pointer area so deformation remains obvious at large scale.",
+    "interaction": "Respect text selection/readability; preserve final accessible text.",
+    "agentPackageRequirements": [
+      "Goal and canonical visual target",
+      "Exact interaction/state behavior",
+      "DOM/component structure",
+      "Dependencies and offline policy",
+      "Implementation logic with real values, not vague adjectives",
+      "Responsive + reduced-motion behavior",
+      "Must-not substitutions that would change the effect",
+      "Acceptance criteria tied to visible behavior",
+      "Source / repository / license / provenance"
+    ],
+    "existingDRHOverlapCheck": "Candidate was checked against the named core DRH reference inventory in the supplied snapshot.",
+    "researchStatus": "SOURCE_MAPPED"
+  },
+  {
+    "order": 19,
+    "name": "Text Pressure",
+    "category": "Text",
+    "priority": "P0",
+    "recommendedModel": "Claude Sonnet 4.6",
+    "implementationDecision": "CLEAN_ROOM",
+    "legalRisk": "MEDIUM — at least one discovery/reference-only source; only use verified permissive source or clean-room implementation.",
+    "canonicalAcceptance": "Per-character width/weight/scale deformation responds to pointer distance or pressure-like field.",
+    "primarySource": {
+      "title": "ReactOmega",
+      "url": "https://github.com/Edwson/ReactOmega",
+      "demo": "https://edwson.github.io/ReactOmega/",
+      "license": "VERIFY LICENSE BEFORE COPY",
+      "scope": "REFERENCE_UNTIL_VERIFIED",
+      "note": "Useful discovery for variable-proximity and text-motion concepts; verify exact LICENSE before importing."
+    },
+    "secondarySources": [
+      {
+        "title": "React Bits",
+        "url": "https://www.reactbits.dev/",
+        "demo": "https://www.reactbits.dev/",
+        "license": "MIT + Commons Clause",
+        "scope": "DISCOVERY_ONLY_FOR_DRH_CATALOG",
+        "note": "Do not redistribute components as catalog items. Use concept discovery only."
+      }
+    ],
+    "cardPreview": "Short 1–3 word specimen demonstrating the typography motion at a glance.",
+    "detailPreview": "Multiple words/sizes plus controls or pointer area so deformation remains obvious at large scale.",
+    "interaction": "Respect text selection/readability; preserve final accessible text.",
+    "agentPackageRequirements": [
+      "Goal and canonical visual target",
+      "Exact interaction/state behavior",
+      "DOM/component structure",
+      "Dependencies and offline policy",
+      "Implementation logic with real values, not vague adjectives",
+      "Responsive + reduced-motion behavior",
+      "Must-not substitutions that would change the effect",
+      "Acceptance criteria tied to visible behavior",
+      "Source / repository / license / provenance"
+    ],
+    "existingDRHOverlapCheck": "Candidate was checked against the named core DRH reference inventory in the supplied snapshot.",
+    "researchStatus": "SOURCE_MAPPED"
+  },
+  {
+    "order": 20,
+    "name": "Variable Proximity",
+    "category": "Text",
+    "priority": "P0",
+    "recommendedModel": "Claude Sonnet 4.6",
+    "implementationDecision": "CLEAN_ROOM",
+    "legalRisk": "MEDIUM — at least one discovery/reference-only source; only use verified permissive source or clean-room implementation.",
+    "canonicalAcceptance": "Actual variable-font axes change by character as pointer distance changes.",
+    "primarySource": {
+      "title": "ReactOmega",
+      "url": "https://github.com/Edwson/ReactOmega",
+      "demo": "https://edwson.github.io/ReactOmega/",
+      "license": "VERIFY LICENSE BEFORE COPY",
+      "scope": "REFERENCE_UNTIL_VERIFIED",
+      "note": "Useful discovery for variable-proximity and text-motion concepts; verify exact LICENSE before importing."
+    },
+    "secondarySources": [
+      {
+        "title": "React Bits",
+        "url": "https://www.reactbits.dev/",
+        "demo": "https://www.reactbits.dev/",
+        "license": "MIT + Commons Clause",
+        "scope": "DISCOVERY_ONLY_FOR_DRH_CATALOG",
+        "note": "Do not redistribute components as catalog items. Use concept discovery only."
+      }
+    ],
+    "cardPreview": "Short 1–3 word specimen demonstrating the typography motion at a glance.",
+    "detailPreview": "Multiple words/sizes plus controls or pointer area so deformation remains obvious at large scale.",
+    "interaction": "Respect text selection/readability; preserve final accessible text.",
+    "agentPackageRequirements": [
+      "Goal and canonical visual target",
+      "Exact interaction/state behavior",
+      "DOM/component structure",
+      "Dependencies and offline policy",
+      "Implementation logic with real values, not vague adjectives",
+      "Responsive + reduced-motion behavior",
+      "Must-not substitutions that would change the effect",
+      "Acceptance criteria tied to visible behavior",
+      "Source / repository / license / provenance"
+    ],
+    "existingDRHOverlapCheck": "Candidate was checked against the named core DRH reference inventory in the supplied snapshot.",
+    "researchStatus": "SOURCE_MAPPED"
+  },
+  {
+    "order": 21,
+    "name": "Split Flap",
+    "category": "Text",
+    "priority": "P0",
+    "recommendedModel": "Claude Sonnet 4.6",
+    "implementationDecision": "PERMISSIVE_ADAPT_OR_HUB_ORIGINAL",
+    "legalRisk": "LOW — primary implementation source is permissive, subject to normal asset/dependency checks.",
+    "canonicalAcceptance": "Each slot must show top/bottom 3D flap mechanics; generic vertical text roll is insufficient.",
+    "primarySource": {
+      "title": "splitflap by Cody Shanley",
+      "url": "https://github.com/codemanshan/splitflap",
+      "demo": "https://codyshanley.com/playground/split-flap",
+      "license": "MIT",
+      "scope": "CODE_OK",
+      "note": "Copy-paste-oriented, CSS 3D, reduced-motion, aria-live."
+    },
+    "secondarySources": [
+      {
+        "title": "@daformat/react-split-flap-display",
+        "url": "https://github.com/daformat/react-split-flap-display",
+        "demo": "https://hello-mat.com/design-engineering/component/split-flap-display",
+        "license": "0BSD",
+        "scope": "CODE_OK",
+        "note": "Zero-dependency, headless compound React split-flap with Safari notes."
+      }
+    ],
+    "cardPreview": "Short 1–3 word specimen demonstrating the typography motion at a glance.",
+    "detailPreview": "Multiple words/sizes plus controls or pointer area so deformation remains obvious at large scale.",
+    "interaction": "Respect text selection/readability; preserve final accessible text.",
+    "agentPackageRequirements": [
+      "Goal and canonical visual target",
+      "Exact interaction/state behavior",
+      "DOM/component structure",
+      "Dependencies and offline policy",
+      "Implementation logic with real values, not vague adjectives",
+      "Responsive + reduced-motion behavior",
+      "Must-not substitutions that would change the effect",
+      "Acceptance criteria tied to visible behavior",
+      "Source / repository / license / provenance"
+    ],
+    "existingDRHOverlapCheck": "Candidate was checked against the named core DRH reference inventory in the supplied snapshot.",
+    "researchStatus": "SOURCE_MAPPED"
+  },
+  {
+    "order": 22,
+    "name": "Vertical Cut Reveal",
+    "category": "Text",
+    "priority": "P0",
+    "recommendedModel": "Claude Sonnet 4.6",
+    "implementationDecision": "CLEAN_ROOM",
+    "legalRisk": "MEDIUM — at least one discovery/reference-only source; only use verified permissive source or clean-room implementation.",
+    "canonicalAcceptance": "Text is segmented into visible vertical bands/slices with offset reveal timing.",
+    "primarySource": {
+      "title": "design-isms",
+      "url": "https://lidge-jun.github.io/design-isms/",
+      "demo": "https://lidge-jun.github.io/design-isms/",
+      "license": "Unknown/no root license verified",
+      "scope": "DISCOVERY_ONLY",
+      "note": "Taxonomy benchmark only; no code/text/image copying."
+    },
+    "secondarySources": [
+      {
+        "title": "Motion Primitives",
+        "url": "https://github.com/ibelick/motion-primitives",
+        "demo": "https://motion-primitives.com/",
+        "license": "MIT",
+        "scope": "CODE_OK",
+        "note": "Strong canonical source for Morphing Dialog, Dock, Text Morph and related motion primitives."
+      }
+    ],
+    "cardPreview": "Short 1–3 word specimen demonstrating the typography motion at a glance.",
+    "detailPreview": "Multiple words/sizes plus controls or pointer area so deformation remains obvious at large scale.",
+    "interaction": "Respect text selection/readability; preserve final accessible text.",
+    "agentPackageRequirements": [
+      "Goal and canonical visual target",
+      "Exact interaction/state behavior",
+      "DOM/component structure",
+      "Dependencies and offline policy",
+      "Implementation logic with real values, not vague adjectives",
+      "Responsive + reduced-motion behavior",
+      "Must-not substitutions that would change the effect",
+      "Acceptance criteria tied to visible behavior",
+      "Source / repository / license / provenance"
+    ],
+    "existingDRHOverlapCheck": "Candidate was checked against the named core DRH reference inventory in the supplied snapshot.",
+    "researchStatus": "SOURCE_MAPPED"
+  },
+  {
+    "order": 23,
+    "name": "Progressive Blur",
+    "category": "Effects",
+    "priority": "P0",
+    "recommendedModel": "Claude Sonnet 4.6",
+    "implementationDecision": "PERMISSIVE_ADAPT_OR_HUB_ORIGINAL",
+    "legalRisk": "LOW — primary implementation source is permissive, subject to normal asset/dependency checks.",
+    "canonicalAcceptance": "Blur strength must change spatially through a gradient, not use one constant backdrop-filter.",
+    "primarySource": {
+      "title": "progressive-blur",
+      "url": "https://github.com/AndrewPrifer/progressive-blur",
+      "demo": "https://progressive-blur.vercel.app",
+      "license": "MIT",
+      "scope": "CODE_OK",
+      "note": "Direct match with radial/linear progressive backdrop blur."
+    },
+    "secondarySources": [],
+    "cardPreview": "Single object with strong, cropped effect visibility.",
+    "detailPreview": "Larger surface with enough material/context for the effect to read clearly.",
+    "interaction": "Pointer interaction when it defines the effect; otherwise replayable deterministic loop.",
+    "agentPackageRequirements": [
+      "Goal and canonical visual target",
+      "Exact interaction/state behavior",
+      "DOM/component structure",
+      "Dependencies and offline policy",
+      "Implementation logic with real values, not vague adjectives",
+      "Responsive + reduced-motion behavior",
+      "Must-not substitutions that would change the effect",
+      "Acceptance criteria tied to visible behavior",
+      "Source / repository / license / provenance"
+    ],
+    "existingDRHOverlapCheck": "Candidate was checked against the named core DRH reference inventory in the supplied snapshot.",
+    "researchStatus": "SOURCE_MAPPED"
+  },
+  {
+    "order": 24,
+    "name": "Gooey Toast",
+    "category": "Effects",
+    "priority": "P0",
+    "recommendedModel": "Claude Sonnet 4.6",
+    "implementationDecision": "PERMISSIVE_ADAPT_OR_HUB_ORIGINAL",
+    "legalRisk": "LOW — primary implementation source is permissive, subject to normal asset/dependency checks.",
+    "canonicalAcceptance": "Toast shell visibly morphs pill↔blob/content while preserving notification semantics.",
+    "primarySource": {
+      "title": "goey-toast",
+      "url": "https://github.com/anl331/goey-toast",
+      "demo": "https://goey-toast.vercel.app",
+      "license": "MIT",
+      "scope": "CODE_OK",
+      "note": "Direct match; includes Agent Skill, keyboard dismiss, swipe, reduced-ish motion presets and promise states."
+    },
+    "secondarySources": [
+      {
+        "title": "gooey-react",
+        "url": "https://github.com/luukdv/gooey-react",
+        "demo": "https://gooey-react.netlify.app/",
+        "license": "MIT",
+        "scope": "CODE_OK",
+        "note": "Small crisp SVG gooey/metaball primitive; useful for clean-room compositions."
+      }
+    ],
+    "cardPreview": "Single object with strong, cropped effect visibility.",
+    "detailPreview": "Larger surface with enough material/context for the effect to read clearly.",
+    "interaction": "Pointer interaction when it defines the effect; otherwise replayable deterministic loop.",
+    "agentPackageRequirements": [
+      "Goal and canonical visual target",
+      "Exact interaction/state behavior",
+      "DOM/component structure",
+      "Dependencies and offline policy",
+      "Implementation logic with real values, not vague adjectives",
+      "Responsive + reduced-motion behavior",
+      "Must-not substitutions that would change the effect",
+      "Acceptance criteria tied to visible behavior",
+      "Source / repository / license / provenance"
+    ],
+    "existingDRHOverlapCheck": "Candidate was checked against the named core DRH reference inventory in the supplied snapshot.",
+    "researchStatus": "SOURCE_MAPPED"
+  },
+  {
+    "order": 25,
+    "name": "Cursor Reveal Mask",
+    "category": "Effects",
+    "priority": "P0",
+    "recommendedModel": "Claude Sonnet 4.6",
+    "implementationDecision": "CLEAN_ROOM",
+    "legalRisk": "LOW — primary implementation source is permissive, subject to normal asset/dependency checks.",
+    "canonicalAcceptance": "Pointer controls a mask revealing a genuine second visual layer/content state.",
+    "primarySource": {
+      "title": "Motion Primitives",
+      "url": "https://github.com/ibelick/motion-primitives",
+      "demo": "https://motion-primitives.com/",
+      "license": "MIT",
+      "scope": "CODE_OK",
+      "note": "Strong canonical source for Morphing Dialog, Dock, Text Morph and related motion primitives."
+    },
+    "secondarySources": [
+      {
+        "title": "React Bits",
+        "url": "https://www.reactbits.dev/",
+        "demo": "https://www.reactbits.dev/",
+        "license": "MIT + Commons Clause",
+        "scope": "DISCOVERY_ONLY_FOR_DRH_CATALOG",
+        "note": "Do not redistribute components as catalog items. Use concept discovery only."
+      }
+    ],
+    "cardPreview": "Single object with strong, cropped effect visibility.",
+    "detailPreview": "Larger surface with enough material/context for the effect to read clearly.",
+    "interaction": "Pointer interaction when it defines the effect; otherwise replayable deterministic loop.",
+    "agentPackageRequirements": [
+      "Goal and canonical visual target",
+      "Exact interaction/state behavior",
+      "DOM/component structure",
+      "Dependencies and offline policy",
+      "Implementation logic with real values, not vague adjectives",
+      "Responsive + reduced-motion behavior",
+      "Must-not substitutions that would change the effect",
+      "Acceptance criteria tied to visible behavior",
+      "Source / repository / license / provenance"
+    ],
+    "existingDRHOverlapCheck": "Candidate was checked against the named core DRH reference inventory in the supplied snapshot.",
+    "researchStatus": "SOURCE_MAPPED"
+  },
+  {
+    "order": 26,
+    "name": "Sticker Peel",
+    "category": "Effects",
+    "priority": "P0",
+    "recommendedModel": "Claude Sonnet 4.6",
+    "implementationDecision": "PERMISSIVE_ADAPT_OR_HUB_ORIGINAL",
+    "legalRisk": "LOW-MEDIUM — usable with explicit license/dependency/provenance checks.",
+    "canonicalAcceptance": "A corner/edge must physically peel with front/back surfaces; simple rotate/scale is insufficient.",
+    "primarySource": {
+      "title": "React Peel",
+      "url": "https://github.com/iqbal-rashed/react-peel",
+      "demo": "https://iqbal-rashed.github.io/react-peel/",
+      "license": "MIT wrapper; built on peel.js",
+      "scope": "CODE_OK_AFTER_PEELJS_LICENSE_VERIFY",
+      "note": "Excellent functional reference for peel/reveal/scratch presets; verify underlying peel.js license chain before copying internals."
+    },
+    "secondarySources": [
+      {
+        "title": "React Bits",
+        "url": "https://www.reactbits.dev/",
+        "demo": "https://www.reactbits.dev/",
+        "license": "MIT + Commons Clause",
+        "scope": "DISCOVERY_ONLY_FOR_DRH_CATALOG",
+        "note": "Do not redistribute components as catalog items. Use concept discovery only."
+      }
+    ],
+    "cardPreview": "Single object with strong, cropped effect visibility.",
+    "detailPreview": "Larger surface with enough material/context for the effect to read clearly.",
+    "interaction": "Pointer interaction when it defines the effect; otherwise replayable deterministic loop.",
+    "agentPackageRequirements": [
+      "Goal and canonical visual target",
+      "Exact interaction/state behavior",
+      "DOM/component structure",
+      "Dependencies and offline policy",
+      "Implementation logic with real values, not vague adjectives",
+      "Responsive + reduced-motion behavior",
+      "Must-not substitutions that would change the effect",
+      "Acceptance criteria tied to visible behavior",
+      "Source / repository / license / provenance"
+    ],
+    "existingDRHOverlapCheck": "Candidate was checked against the named core DRH reference inventory in the supplied snapshot.",
+    "researchStatus": "SOURCE_MAPPED"
+  },
+  {
+    "order": 27,
+    "name": "Scratch to Reveal",
+    "category": "Effects",
+    "priority": "P0",
+    "recommendedModel": "Claude Sonnet 4.6",
+    "implementationDecision": "PERMISSIVE_ADAPT_OR_HUB_ORIGINAL",
+    "legalRisk": "LOW-MEDIUM — usable with explicit license/dependency/provenance checks.",
+    "canonicalAcceptance": "Pointer erases a cover mask with cumulative progress, not a one-click reveal.",
+    "primarySource": {
+      "title": "react-scratchcard-v2",
+      "url": "https://github.com/dopey2/react-scratchcard-v2",
+      "demo": "https://dopey2.github.io/react-scratchcard-v2",
+      "license": "MIT",
+      "scope": "CODE_OK",
+      "note": "Direct scratch reveal with regions, reset, revealAll and completion threshold."
+    },
+    "secondarySources": [
+      {
+        "title": "React Peel",
+        "url": "https://github.com/iqbal-rashed/react-peel",
+        "demo": "https://iqbal-rashed.github.io/react-peel/",
+        "license": "MIT wrapper; built on peel.js",
+        "scope": "CODE_OK_AFTER_PEELJS_LICENSE_VERIFY",
+        "note": "Excellent functional reference for peel/reveal/scratch presets; verify underlying peel.js license chain before copying internals."
+      }
+    ],
+    "cardPreview": "Single object with strong, cropped effect visibility.",
+    "detailPreview": "Larger surface with enough material/context for the effect to read clearly.",
+    "interaction": "Pointer interaction when it defines the effect; otherwise replayable deterministic loop.",
+    "agentPackageRequirements": [
+      "Goal and canonical visual target",
+      "Exact interaction/state behavior",
+      "DOM/component structure",
+      "Dependencies and offline policy",
+      "Implementation logic with real values, not vague adjectives",
+      "Responsive + reduced-motion behavior",
+      "Must-not substitutions that would change the effect",
+      "Acceptance criteria tied to visible behavior",
+      "Source / repository / license / provenance"
+    ],
+    "existingDRHOverlapCheck": "Candidate was checked against the named core DRH reference inventory in the supplied snapshot.",
+    "researchStatus": "SOURCE_MAPPED"
+  },
+  {
+    "order": 28,
+    "name": "Liquid Metal Border",
+    "category": "Effects",
+    "priority": "P0",
+    "recommendedModel": "Codex",
+    "implementationDecision": "PERMISSIVE_ADAPT_OR_HUB_ORIGINAL",
+    "legalRisk": "LOW — primary implementation source is permissive, subject to normal asset/dependency checks.",
+    "canonicalAcceptance": "Real animated/reflection-like metal rim around a semantic control; not a moving CSS gradient border.",
+    "primarySource": {
+      "title": "metal-fx",
+      "url": "https://github.com/Jakubantalik/metal-fx",
+      "demo": "https://metal.jakubantalik.com/",
+      "license": "MIT",
+      "scope": "CODE_OK",
+      "note": "Direct canonical animated WebGL liquid-metal border for real semantic controls."
+    },
+    "secondarySources": [],
+    "cardPreview": "Single object with strong, cropped effect visibility.",
+    "detailPreview": "Larger surface with enough material/context for the effect to read clearly.",
+    "interaction": "Pointer interaction when it defines the effect; otherwise replayable deterministic loop.",
+    "agentPackageRequirements": [
+      "Goal and canonical visual target",
+      "Exact interaction/state behavior",
+      "DOM/component structure",
+      "Dependencies and offline policy",
+      "Implementation logic with real values, not vague adjectives",
+      "Responsive + reduced-motion behavior",
+      "Must-not substitutions that would change the effect",
+      "Acceptance criteria tied to visible behavior",
+      "Source / repository / license / provenance"
+    ],
+    "existingDRHOverlapCheck": "Candidate was checked against the named core DRH reference inventory in the supplied snapshot.",
+    "researchStatus": "SOURCE_MAPPED"
+  },
+  {
+    "order": 29,
+    "name": "Bottom Sheet",
+    "category": "UI Patterns",
+    "priority": "P0",
+    "recommendedModel": "Claude Sonnet 4.6",
+    "implementationDecision": "PERMISSIVE_ADAPT_OR_HUB_ORIGINAL",
+    "legalRisk": "LOW — primary implementation source is permissive, subject to normal asset/dependency checks.",
+    "canonicalAcceptance": "Touch drag/snap heights + modal semantics; simple bottom-aligned dialog is insufficient.",
+    "primarySource": {
+      "title": "pure-web-bottom-sheet",
+      "url": "https://github.com/viliket/pure-web-bottom-sheet",
+      "demo": "https://viliket.github.io/pure-web-bottom-sheet/",
+      "license": "MIT",
+      "scope": "CODE_OK",
+      "note": "Accessible, scroll-snap based, framework-agnostic, React wrapper, multiple snap points."
+    },
+    "secondarySources": [
+      {
+        "title": "react-modal-sheet",
+        "url": "https://github.com/Temzasse/react-modal-sheet",
+        "demo": "https://temzasse.github.io/react-modal-sheet/",
+        "license": "MIT",
+        "scope": "CODE_OK",
+        "note": "Motion-based flexible bottom sheet; accessibility requires composition with dialog/overlay primitives."
+      }
+    ],
+    "cardPreview": "Mini app mock demonstrating trigger + active state, not a decorative placeholder.",
+    "detailPreview": "Full interaction path with keyboard/touch semantics, error/close state and responsive behavior.",
+    "interaction": "Accessible semantic controls, focus management and reduced motion.",
+    "agentPackageRequirements": [
+      "Goal and canonical visual target",
+      "Exact interaction/state behavior",
+      "DOM/component structure",
+      "Dependencies and offline policy",
+      "Implementation logic with real values, not vague adjectives",
+      "Responsive + reduced-motion behavior",
+      "Must-not substitutions that would change the effect",
+      "Acceptance criteria tied to visible behavior",
+      "Source / repository / license / provenance"
+    ],
+    "existingDRHOverlapCheck": "Candidate was checked against the named core DRH reference inventory in the supplied snapshot.",
+    "researchStatus": "SOURCE_MAPPED"
+  },
+  {
+    "order": 30,
+    "name": "Command Palette",
+    "category": "UI Patterns",
+    "priority": "P0",
+    "recommendedModel": "Claude Sonnet 4.6",
+    "implementationDecision": "PERMISSIVE_ADAPT_OR_HUB_ORIGINAL",
+    "legalRisk": "LOW-MEDIUM — usable with explicit license/dependency/provenance checks.",
+    "canonicalAcceptance": "Keyboard-first searchable action surface with groups, shortcuts and active-row behavior.",
+    "primarySource": {
+      "title": "beUI Command Palette",
+      "url": "https://github.com/starc007/ui-components/blob/main/AGENTS.md",
+      "demo": "https://beui.dev/",
+      "license": "MIT",
+      "scope": "CODE_OK",
+      "note": "Repository explicitly lists a ⌘K palette with fuzzy filter and animated active row."
+    },
+    "secondarySources": [
+      {
+        "title": "shadcn Command",
+        "url": "https://ui.shadcn.com/docs/components/base/command",
+        "demo": "https://ui.shadcn.com/docs/components/base/command",
+        "license": "MIT ecosystem; check cmdk package license",
+        "scope": "CODE_OK_WITH_DEP_LICENSE",
+        "note": "Strong canonical command palette composition."
+      }
+    ],
+    "cardPreview": "Mini app mock demonstrating trigger + active state, not a decorative placeholder.",
+    "detailPreview": "Full interaction path with keyboard/touch semantics, error/close state and responsive behavior.",
+    "interaction": "Accessible semantic controls, focus management and reduced motion.",
+    "agentPackageRequirements": [
+      "Goal and canonical visual target",
+      "Exact interaction/state behavior",
+      "DOM/component structure",
+      "Dependencies and offline policy",
+      "Implementation logic with real values, not vague adjectives",
+      "Responsive + reduced-motion behavior",
+      "Must-not substitutions that would change the effect",
+      "Acceptance criteria tied to visible behavior",
+      "Source / repository / license / provenance"
+    ],
+    "existingDRHOverlapCheck": "Candidate was checked against the named core DRH reference inventory in the supplied snapshot.",
+    "researchStatus": "SOURCE_MAPPED"
+  },
+  {
+    "order": 31,
+    "name": "Toast Notification",
+    "category": "UI Patterns",
+    "priority": "P0",
+    "recommendedModel": "Claude Sonnet 4.6",
+    "implementationDecision": "PERMISSIVE_ADAPT_OR_HUB_ORIGINAL",
+    "legalRisk": "LOW — primary implementation source is permissive, subject to normal asset/dependency checks.",
+    "canonicalAcceptance": "Non-blocking live-region notification with lifecycle/stacking/dismiss behavior.",
+    "primarySource": {
+      "title": "react-hot-toast",
+      "url": "https://github.com/timolins/react-hot-toast",
+      "demo": "https://react-hot-toast.com/",
+      "license": "MIT",
+      "scope": "CODE_OK",
+      "note": "Accessible headless/customizable toast reference."
+    },
+    "secondarySources": [
+      {
+        "title": "beUI",
+        "url": "https://github.com/starc007/ui-components",
+        "demo": "https://beui.dev/",
+        "license": "MIT",
+        "scope": "CODE_OK",
+        "note": "Copy-own-code registry; very strong source for Dynamic Island, command palette, notification stack, masonry, etc."
+      }
+    ],
+    "cardPreview": "Mini app mock demonstrating trigger + active state, not a decorative placeholder.",
+    "detailPreview": "Full interaction path with keyboard/touch semantics, error/close state and responsive behavior.",
+    "interaction": "Accessible semantic controls, focus management and reduced motion.",
+    "agentPackageRequirements": [
+      "Goal and canonical visual target",
+      "Exact interaction/state behavior",
+      "DOM/component structure",
+      "Dependencies and offline policy",
+      "Implementation logic with real values, not vague adjectives",
+      "Responsive + reduced-motion behavior",
+      "Must-not substitutions that would change the effect",
+      "Acceptance criteria tied to visible behavior",
+      "Source / repository / license / provenance"
+    ],
+    "existingDRHOverlapCheck": "Candidate was checked against the named core DRH reference inventory in the supplied snapshot.",
+    "researchStatus": "SOURCE_MAPPED"
+  },
+  {
+    "order": 32,
+    "name": "Skeleton Loading",
+    "category": "UI Patterns",
+    "priority": "P0",
+    "recommendedModel": "Claude Sonnet 4.6",
+    "implementationDecision": "PERMISSIVE_ADAPT_OR_HUB_ORIGINAL",
+    "legalRisk": "LOW — primary implementation source is permissive, subject to normal asset/dependency checks.",
+    "canonicalAcceptance": "Placeholders preserve target layout and communicate loading; spinner-only is insufficient.",
+    "primarySource": {
+      "title": "react-loading-skeleton",
+      "url": "https://github.com/dvtng/react-loading-skeleton",
+      "demo": "https://www.npmjs.com/package/react-loading-skeleton",
+      "license": "MIT",
+      "scope": "CODE_OK",
+      "note": "Canonical adaptive skeleton loading implementation."
+    },
+    "secondarySources": [
+      {
+        "title": "auto-skeleton-react",
+        "url": "https://github.com/ShanukJ/auto-skeleton",
+        "demo": "https://autoskeleton.shanukj.me",
+        "license": "MIT",
+        "scope": "CODE_OK",
+        "note": "DOM-inspection approach; useful as contrast, not necessarily desired DRH canonical implementation."
+      }
+    ],
+    "cardPreview": "Mini app mock demonstrating trigger + active state, not a decorative placeholder.",
+    "detailPreview": "Full interaction path with keyboard/touch semantics, error/close state and responsive behavior.",
+    "interaction": "Accessible semantic controls, focus management and reduced motion.",
+    "agentPackageRequirements": [
+      "Goal and canonical visual target",
+      "Exact interaction/state behavior",
+      "DOM/component structure",
+      "Dependencies and offline policy",
+      "Implementation logic with real values, not vague adjectives",
+      "Responsive + reduced-motion behavior",
+      "Must-not substitutions that would change the effect",
+      "Acceptance criteria tied to visible behavior",
+      "Source / repository / license / provenance"
+    ],
+    "existingDRHOverlapCheck": "Candidate was checked against the named core DRH reference inventory in the supplied snapshot.",
+    "researchStatus": "SOURCE_MAPPED"
+  },
+  {
+    "order": 33,
+    "name": "Segmented Control",
+    "category": "UI Patterns",
+    "priority": "P0",
+    "recommendedModel": "Claude Sonnet 4.6",
+    "implementationDecision": "PERMISSIVE_ADAPT_OR_HUB_ORIGINAL",
+    "legalRisk": "LOW — primary implementation source is permissive, subject to normal asset/dependency checks.",
+    "canonicalAcceptance": "Mutually exclusive compact options with a clear active indicator and keyboard behavior.",
+    "primarySource": {
+      "title": "@rc-component/segmented",
+      "url": "https://github.com/react-component/segmented",
+      "demo": "https://react-component.github.io/segmented",
+      "license": "MIT",
+      "scope": "CODE_OK",
+      "note": "Canonical accessible segmented control with keyboard/RTL/vertical support."
+    },
+    "secondarySources": [
+      {
+        "title": "beUI",
+        "url": "https://github.com/starc007/ui-components",
+        "demo": "https://beui.dev/",
+        "license": "MIT",
+        "scope": "CODE_OK",
+        "note": "Copy-own-code registry; very strong source for Dynamic Island, command palette, notification stack, masonry, etc."
+      }
+    ],
+    "cardPreview": "Mini app mock demonstrating trigger + active state, not a decorative placeholder.",
+    "detailPreview": "Full interaction path with keyboard/touch semantics, error/close state and responsive behavior.",
+    "interaction": "Accessible semantic controls, focus management and reduced motion.",
+    "agentPackageRequirements": [
+      "Goal and canonical visual target",
+      "Exact interaction/state behavior",
+      "DOM/component structure",
+      "Dependencies and offline policy",
+      "Implementation logic with real values, not vague adjectives",
+      "Responsive + reduced-motion behavior",
+      "Must-not substitutions that would change the effect",
+      "Acceptance criteria tied to visible behavior",
+      "Source / repository / license / provenance"
+    ],
+    "existingDRHOverlapCheck": "Candidate was checked against the named core DRH reference inventory in the supplied snapshot.",
+    "researchStatus": "SOURCE_MAPPED"
+  },
+  {
+    "order": 34,
+    "name": "Interactive Hero",
+    "category": "Sections",
+    "priority": "P0",
+    "recommendedModel": "Gemini 3.1 Pro High",
+    "implementationDecision": "COMPOSE_FROM_PERMISSIVE_PATTERNS",
+    "legalRisk": "MEDIUM — at least one discovery/reference-only source; only use verified permissive source or clean-room implementation.",
+    "canonicalAcceptance": "Hero's main proof responds to pointer/scroll/input; decorative autoplay alone is insufficient.",
+    "primarySource": {
+      "title": "modern-agency",
+      "url": "https://github.com/FavourAkpasi/modern-agency",
+      "demo": "https://modern-agency-phi.vercel.app",
+      "license": "MIT",
+      "scope": "CODE_OK",
+      "note": "Neo-brutalist agency landing with GSAP hero + Motion project grid."
+    },
+    "secondarySources": [
+      {
+        "title": "Agency Website v2",
+        "url": "https://github.com/Shatlyk1011/agency-website",
+        "demo": "https://agency-website-v2.vercel.app/",
+        "license": "No license verified",
+        "scope": "REFERENCE_ONLY",
+        "note": "Use only as visual/fidelity benchmark: GSAP, Motion, Lenis, WebGL smoke cursor."
+      },
+      {
+        "title": "Framer Marketplace",
+        "url": "https://www.framer.com/marketplace/templates/",
+        "demo": "https://www.framer.com/marketplace/templates/",
+        "license": "Per-item / marketplace terms",
+        "scope": "DISCOVERY_ONLY",
+        "note": "Use layout/style trend discovery only."
+      }
+    ],
+    "cardPreview": "Scaled section composition with enough hierarchy to recognize the pattern.",
+    "detailPreview": "Near-real landing section with realistic content density and responsive layout.",
+    "interaction": "Use meaningful section interaction rather than generic hover everywhere.",
+    "agentPackageRequirements": [
+      "Goal and canonical visual target",
+      "Exact interaction/state behavior",
+      "DOM/component structure",
+      "Dependencies and offline policy",
+      "Implementation logic with real values, not vague adjectives",
+      "Responsive + reduced-motion behavior",
+      "Must-not substitutions that would change the effect",
+      "Acceptance criteria tied to visible behavior",
+      "Source / repository / license / provenance"
+    ],
+    "existingDRHOverlapCheck": "Candidate was checked against the named core DRH reference inventory in the supplied snapshot.",
+    "researchStatus": "SOURCE_MAPPED"
+  },
+  {
+    "order": 35,
+    "name": "Masonry Showcase",
+    "category": "Sections",
+    "priority": "P0",
+    "recommendedModel": "Gemini 3.1 Pro High",
+    "implementationDecision": "PERMISSIVE_ADAPT_OR_HUB_ORIGINAL",
+    "legalRisk": "MEDIUM — at least one discovery/reference-only source; only use verified permissive source or clean-room implementation.",
+    "canonicalAcceptance": "True variable-height packing/lanes; equal-height CSS grid is not masonry.",
+    "primarySource": {
+      "title": "beUI Infinite Masonry",
+      "url": "https://github.com/starc007/ui-components/blob/main/AGENTS.md",
+      "demo": "https://beui.dev/",
+      "license": "MIT",
+      "scope": "CODE_OK",
+      "note": "Repository documents measured variable-height cards, automatic lanes and virtualized infinite loading."
+    },
+    "secondarySources": [
+      {
+        "title": "Framer Marketplace",
+        "url": "https://www.framer.com/marketplace/templates/",
+        "demo": "https://www.framer.com/marketplace/templates/",
+        "license": "Per-item / marketplace terms",
+        "scope": "DISCOVERY_ONLY",
+        "note": "Use layout/style trend discovery only."
+      }
+    ],
+    "cardPreview": "Scaled section composition with enough hierarchy to recognize the pattern.",
+    "detailPreview": "Near-real landing section with realistic content density and responsive layout.",
+    "interaction": "Use meaningful section interaction rather than generic hover everywhere.",
+    "agentPackageRequirements": [
+      "Goal and canonical visual target",
+      "Exact interaction/state behavior",
+      "DOM/component structure",
+      "Dependencies and offline policy",
+      "Implementation logic with real values, not vague adjectives",
+      "Responsive + reduced-motion behavior",
+      "Must-not substitutions that would change the effect",
+      "Acceptance criteria tied to visible behavior",
+      "Source / repository / license / provenance"
+    ],
+    "existingDRHOverlapCheck": "Candidate was checked against the named core DRH reference inventory in the supplied snapshot.",
+    "researchStatus": "SOURCE_MAPPED"
+  },
+  {
+    "order": 36,
+    "name": "Animated Feature Showcase",
+    "category": "Sections",
+    "priority": "P0",
+    "recommendedModel": "Gemini 3.1 Pro High",
+    "implementationDecision": "COMPOSE_FROM_PERMISSIVE_PATTERNS",
+    "legalRisk": "MEDIUM — at least one discovery/reference-only source; only use verified permissive source or clean-room implementation.",
+    "canonicalAcceptance": "Feature copy and product visual stay synchronized as selected/scroll state changes.",
+    "primarySource": {
+      "title": "beUI",
+      "url": "https://github.com/starc007/ui-components",
+      "demo": "https://beui.dev/",
+      "license": "MIT",
+      "scope": "CODE_OK",
+      "note": "Copy-own-code registry; very strong source for Dynamic Island, command palette, notification stack, masonry, etc."
+    },
+    "secondarySources": [
+      {
+        "title": "Motion Primitives",
+        "url": "https://github.com/ibelick/motion-primitives",
+        "demo": "https://motion-primitives.com/",
+        "license": "MIT",
+        "scope": "CODE_OK",
+        "note": "Strong canonical source for Morphing Dialog, Dock, Text Morph and related motion primitives."
+      },
+      {
+        "title": "Framer Marketplace",
+        "url": "https://www.framer.com/marketplace/templates/",
+        "demo": "https://www.framer.com/marketplace/templates/",
+        "license": "Per-item / marketplace terms",
+        "scope": "DISCOVERY_ONLY",
+        "note": "Use layout/style trend discovery only."
+      }
+    ],
+    "cardPreview": "Scaled section composition with enough hierarchy to recognize the pattern.",
+    "detailPreview": "Near-real landing section with realistic content density and responsive layout.",
+    "interaction": "Use meaningful section interaction rather than generic hover everywhere.",
+    "agentPackageRequirements": [
+      "Goal and canonical visual target",
+      "Exact interaction/state behavior",
+      "DOM/component structure",
+      "Dependencies and offline policy",
+      "Implementation logic with real values, not vague adjectives",
+      "Responsive + reduced-motion behavior",
+      "Must-not substitutions that would change the effect",
+      "Acceptance criteria tied to visible behavior",
+      "Source / repository / license / provenance"
+    ],
+    "existingDRHOverlapCheck": "Candidate was checked against the named core DRH reference inventory in the supplied snapshot.",
+    "researchStatus": "SOURCE_MAPPED"
+  },
+  {
+    "order": 37,
+    "name": "Interactive Product Demo",
+    "category": "Sections",
+    "priority": "P0",
+    "recommendedModel": "Gemini 3.1 Pro High",
+    "implementationDecision": "ADAPT_ARCHITECTURE_NOT_BRAND_ASSETS",
+    "legalRisk": "LOW — primary implementation source is permissive, subject to normal asset/dependency checks.",
+    "canonicalAcceptance": "Clickable walkthrough with states/hotspots/progression, not a video or static screenshot.",
+    "primarySource": {
+      "title": "Spotlane",
+      "url": "https://github.com/headlessButSmart/spotlane",
+      "demo": "https://spotlane.dev",
+      "license": "MIT",
+      "scope": "CODE_OK",
+      "note": "Direct open-source interactive product walkthrough/editor/player reference."
+    },
+    "secondarySources": [],
+    "cardPreview": "Scaled section composition with enough hierarchy to recognize the pattern.",
+    "detailPreview": "Near-real landing section with realistic content density and responsive layout.",
+    "interaction": "Use meaningful section interaction rather than generic hover everywhere.",
+    "agentPackageRequirements": [
+      "Goal and canonical visual target",
+      "Exact interaction/state behavior",
+      "DOM/component structure",
+      "Dependencies and offline policy",
+      "Implementation logic with real values, not vague adjectives",
+      "Responsive + reduced-motion behavior",
+      "Must-not substitutions that would change the effect",
+      "Acceptance criteria tied to visible behavior",
+      "Source / repository / license / provenance"
+    ],
+    "existingDRHOverlapCheck": "Candidate was checked against the named core DRH reference inventory in the supplied snapshot.",
+    "researchStatus": "SOURCE_MAPPED"
+  },
+  {
+    "order": 38,
+    "name": "AI Chat / Agent Workspace",
+    "category": "Pages",
+    "priority": "P0",
+    "recommendedModel": "Gemini 3.1 Pro High",
+    "implementationDecision": "ADAPT_ARCHITECTURE_NOT_BRAND_ASSETS",
+    "legalRisk": "LOW-MEDIUM — usable with explicit license/dependency/provenance checks.",
+    "canonicalAcceptance": "Thread + composer + streaming + tool/reasoning/artifact/approval states in a coherent workspace.",
+    "primarySource": {
+      "title": "Vercel AI Elements",
+      "url": "https://github.com/vercel/ai-elements",
+      "demo": "https://elements.ai-sdk.dev/",
+      "license": "MIT (verify current LICENSE at import)",
+      "scope": "CODE_OK_AFTER_CURRENT_LICENSE_CHECK",
+      "note": "Excellent AI-native UI catalog: messages, conversation, code, reasoning, tool calls."
+    },
+    "secondarySources": [
+      {
+        "title": "assistant-ui",
+        "url": "https://github.com/assistant-ui/assistant-ui",
+        "demo": "https://www.assistant-ui.com/",
+        "license": "Open source; verify current repo LICENSE before copy",
+        "scope": "CODE_OK_AFTER_CURRENT_LICENSE_CHECK",
+        "note": "Production-grade chat thread/composer/streaming/accessibility benchmark."
+      },
+      {
+        "title": "assistant-ui Tool UI",
+        "url": "https://github.com/assistant-ui/tool-ui",
+        "demo": "",
+        "license": "MIT",
+        "scope": "CODE_OK",
+        "note": "Copy/paste UI for tool calls in agent chat."
+      },
+      {
+        "title": "shadcn chatbot-template",
+        "url": "https://github.com/shadcn-ui/chatbot-template",
+        "demo": "",
+        "license": "MIT",
+        "scope": "CODE_OK",
+        "note": "Strong concrete page architecture for typed streaming parts, tools, sources and question cards."
+      }
+    ],
+    "cardPreview": "Mini full-page composition showing the page's distinctive structure.",
+    "detailPreview": "Scrollable, multi-section working page preview with realistic hierarchy.",
+    "interaction": "Representative navigation/filter/CTA interaction; not every app behavior is required.",
+    "agentPackageRequirements": [
+      "Goal and canonical visual target",
+      "Exact interaction/state behavior",
+      "DOM/component structure",
+      "Dependencies and offline policy",
+      "Implementation logic with real values, not vague adjectives",
+      "Responsive + reduced-motion behavior",
+      "Must-not substitutions that would change the effect",
+      "Acceptance criteria tied to visible behavior",
+      "Source / repository / license / provenance"
+    ],
+    "existingDRHOverlapCheck": "Candidate was checked against the named core DRH reference inventory in the supplied snapshot.",
+    "researchStatus": "SOURCE_MAPPED"
+  },
+  {
+    "order": 39,
+    "name": "Agency Landing",
+    "category": "Pages",
+    "priority": "P0",
+    "recommendedModel": "Gemini 3.1 Pro High",
+    "implementationDecision": "COMPOSE_FROM_PERMISSIVE_PATTERNS",
+    "legalRisk": "MEDIUM — at least one discovery/reference-only source; only use verified permissive source or clean-room implementation.",
+    "canonicalAcceptance": "Case-study-led creative composition with strong motion language and project storytelling.",
+    "primarySource": {
+      "title": "Agency Website v2",
+      "url": "https://github.com/Shatlyk1011/agency-website",
+      "demo": "https://agency-website-v2.vercel.app/",
+      "license": "No license verified",
+      "scope": "REFERENCE_ONLY",
+      "note": "Use only as visual/fidelity benchmark: GSAP, Motion, Lenis, WebGL smoke cursor."
+    },
+    "secondarySources": [
+      {
+        "title": "modern-agency",
+        "url": "https://github.com/FavourAkpasi/modern-agency",
+        "demo": "https://modern-agency-phi.vercel.app",
+        "license": "MIT",
+        "scope": "CODE_OK",
+        "note": "Neo-brutalist agency landing with GSAP hero + Motion project grid."
+      },
+      {
+        "title": "svelte-gsap-template",
+        "url": "https://github.com/YusufCeng1z/svelte-gsap-template",
+        "demo": "https://svelte-gsap-template.vercel.app/",
+        "license": "MIT",
+        "scope": "CODE_OK",
+        "note": "Awwwards-style agency structure; Svelte so use concept/animation logic, not React-specific copying."
+      },
+      {
+        "title": "Framer Marketplace — Agency/Templates",
+        "url": "https://www.framer.com/marketplace/templates/",
+        "demo": "https://www.framer.com/marketplace/templates/",
+        "license": "Per item",
+        "scope": "DISCOVERY_ONLY",
+        "note": "Use current trend/section taxonomy, not assets/templates."
+      }
+    ],
+    "cardPreview": "Mini full-page composition showing the page's distinctive structure.",
+    "detailPreview": "Scrollable, multi-section working page preview with realistic hierarchy.",
+    "interaction": "Representative navigation/filter/CTA interaction; not every app behavior is required.",
+    "agentPackageRequirements": [
+      "Goal and canonical visual target",
+      "Exact interaction/state behavior",
+      "DOM/component structure",
+      "Dependencies and offline policy",
+      "Implementation logic with real values, not vague adjectives",
+      "Responsive + reduced-motion behavior",
+      "Must-not substitutions that would change the effect",
+      "Acceptance criteria tied to visible behavior",
+      "Source / repository / license / provenance"
+    ],
+    "existingDRHOverlapCheck": "Candidate was checked against the named core DRH reference inventory in the supplied snapshot.",
+    "researchStatus": "SOURCE_MAPPED"
+  },
+  {
+    "order": 40,
+    "name": "Ecommerce Product Landing",
+    "category": "Pages",
+    "priority": "P0",
+    "recommendedModel": "Gemini 3.1 Pro High",
+    "implementationDecision": "COMPOSE_FROM_PERMISSIVE_PATTERNS",
+    "legalRisk": "MEDIUM — at least one discovery/reference-only source; only use verified permissive source or clean-room implementation.",
+    "canonicalAcceptance": "Gallery/variants/buy controls/proof/product information must form a believable conversion path.",
+    "primarySource": {
+      "title": "E-Commerce Template",
+      "url": "https://github.com/bhaumikpatel/E-Commerce-Template",
+      "demo": "https://e-commerce-template.surge.sh/",
+      "license": "MIT code; docs CC",
+      "scope": "CODE_OK",
+      "note": "Broad ecommerce flow coverage including product detail/cart/checkout."
+    },
+    "secondarySources": [
+      {
+        "title": "Ecommerce Tailwind React template",
+        "url": "https://github.com/WindingSnow/Ecommerce-Tailwind-template",
+        "demo": "",
+        "license": "MIT",
+        "scope": "CODE_OK",
+        "note": "Simple single-page ecommerce landing with add-to-cart; useful structure source."
+      },
+      {
+        "title": "Framer Marketplace",
+        "url": "https://www.framer.com/marketplace/templates/",
+        "demo": "https://www.framer.com/marketplace/templates/",
+        "license": "Per-item / marketplace terms",
+        "scope": "DISCOVERY_ONLY",
+        "note": "Use layout/style trend discovery only."
+      }
+    ],
+    "cardPreview": "Mini full-page composition showing the page's distinctive structure.",
+    "detailPreview": "Scrollable, multi-section working page preview with realistic hierarchy.",
+    "interaction": "Representative navigation/filter/CTA interaction; not every app behavior is required.",
+    "agentPackageRequirements": [
+      "Goal and canonical visual target",
+      "Exact interaction/state behavior",
+      "DOM/component structure",
+      "Dependencies and offline policy",
+      "Implementation logic with real values, not vague adjectives",
+      "Responsive + reduced-motion behavior",
+      "Must-not substitutions that would change the effect",
+      "Acceptance criteria tied to visible behavior",
+      "Source / repository / license / provenance"
+    ],
+    "existingDRHOverlapCheck": "Candidate was checked against the named core DRH reference inventory in the supplied snapshot.",
+    "researchStatus": "SOURCE_MAPPED"
+  }
+]

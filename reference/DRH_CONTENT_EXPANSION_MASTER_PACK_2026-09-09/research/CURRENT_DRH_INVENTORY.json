@@ -1,0 +1,880 @@
+{
+  "snapshot": "DRH-main (4).zip / pre-V1.7 working snapshot supplied by user",
+  "reported_reference_count": 167,
+  "parsed_counts": {
+    "core_visual_references": 83,
+    "design_md_presets": 10,
+    "vendor_design_md": 74,
+    "total": 167
+  },
+  "core_category_counts": {
+    "Styles": 14,
+    "Background": 14,
+    "Motion": 13,
+    "Text": 10,
+    "Effects": 10,
+    "Sections": 13,
+    "Pages": 9
+  },
+  "vendor_category_counts": {
+    "E-commerce & Consumer": 6,
+    "SaaS & Productivity": 12,
+    "Big Tech": 5,
+    "Fintech & Crypto": 6,
+    "Automotive": 7,
+    "AI & LLM": 12,
+    "Design Tools": 1,
+    "Backend & DevOps": 7,
+    "Developer Tools": 7,
+    "Retro Web": 3,
+    "Automotive & Space": 1,
+    "Brand Design": 7
+  },
+  "source_registry_count": 189,
+  "source_registry_status_counts": {
+    "IMPORT / COPY CANDIDATE": 128,
+    "REFERENCE": 56,
+    "RESTRICTED": 5
+  },
+  "core_visual_references": [
+    {
+      "id": "minimalism",
+      "name": "Minimalism",
+      "category": "Styles"
+    },
+    {
+      "id": "neo-brutalism",
+      "name": "Neo-Brutalism",
+      "category": "Styles"
+    },
+    {
+      "id": "glassmorphism",
+      "name": "Glassmorphism",
+      "category": "Styles"
+    },
+    {
+      "id": "liquid-glass",
+      "name": "Liquid Glass",
+      "category": "Styles"
+    },
+    {
+      "id": "bento",
+      "name": "Bento Grid",
+      "category": "Styles"
+    },
+    {
+      "id": "editorial",
+      "name": "Editorial",
+      "category": "Styles"
+    },
+    {
+      "id": "swiss",
+      "name": "Swiss / International",
+      "category": "Styles"
+    },
+    {
+      "id": "y2k",
+      "name": "Y2K",
+      "category": "Styles"
+    },
+    {
+      "id": "frutiger-aero",
+      "name": "Frutiger Aero",
+      "category": "Styles"
+    },
+    {
+      "id": "terminal",
+      "name": "Terminal Aesthetic",
+      "category": "Styles"
+    },
+    {
+      "id": "claymorphism",
+      "name": "Claymorphism",
+      "category": "Styles"
+    },
+    {
+      "id": "cyberpunk",
+      "name": "Cyberpunk",
+      "category": "Styles"
+    },
+    {
+      "id": "luxury",
+      "name": "Luxury",
+      "category": "Styles"
+    },
+    {
+      "id": "dark-ui",
+      "name": "Dark UI",
+      "category": "Styles"
+    },
+    {
+      "id": "shader-gradient",
+      "name": "Shader Gradient",
+      "category": "Background"
+    },
+    {
+      "id": "aurora-background",
+      "name": "Aurora Background",
+      "category": "Background"
+    },
+    {
+      "id": "gradient-mesh",
+      "name": "Animated Gradient Mesh",
+      "category": "Background"
+    },
+    {
+      "id": "particles",
+      "name": "Interactive Particles",
+      "category": "Background"
+    },
+    {
+      "id": "meteors",
+      "name": "Meteors",
+      "category": "Background"
+    },
+    {
+      "id": "dot-grid",
+      "name": "Interactive Dot Grid",
+      "category": "Background"
+    },
+    {
+      "id": "retro-grid",
+      "name": "Retro Perspective Grid",
+      "category": "Background"
+    },
+    {
+      "id": "spotlight-background",
+      "name": "Pointer Spotlight",
+      "category": "Background"
+    },
+    {
+      "id": "beams",
+      "name": "Light Beams",
+      "category": "Background"
+    },
+    {
+      "id": "wave-lines",
+      "name": "Wave Lines",
+      "category": "Background"
+    },
+    {
+      "id": "noise-blobs",
+      "name": "Noise Blobs",
+      "category": "Background"
+    },
+    {
+      "id": "fluid-cursor",
+      "name": "Fluid Cursor Field",
+      "category": "Background"
+    },
+    {
+      "id": "metaballs",
+      "name": "Interactive Metaballs",
+      "category": "Background"
+    },
+    {
+      "id": "starfield",
+      "name": "Starfield",
+      "category": "Background"
+    },
+    {
+      "id": "scroll-reveal",
+      "name": "Scroll Reveal",
+      "category": "Motion"
+    },
+    {
+      "id": "parallax",
+      "name": "Mouse Parallax",
+      "category": "Motion"
+    },
+    {
+      "id": "hover-lift",
+      "name": "Hover Lift",
+      "category": "Motion"
+    },
+    {
+      "id": "magnetic-button",
+      "name": "Magnetic Button",
+      "category": "Motion"
+    },
+    {
+      "id": "card-tilt",
+      "name": "Card Tilt",
+      "category": "Motion"
+    },
+    {
+      "id": "image-trail",
+      "name": "Cursor Image Trail",
+      "category": "Motion"
+    },
+    {
+      "id": "marquee",
+      "name": "Infinite Marquee",
+      "category": "Motion"
+    },
+    {
+      "id": "sticky-story",
+      "name": "Sticky Scroll Story",
+      "category": "Motion"
+    },
+    {
+      "id": "horizontal-scroll",
+      "name": "Horizontal Scroll",
+      "category": "Motion"
+    },
+    {
+      "id": "cursor-follow",
+      "name": "Cursor Follower",
+      "category": "Motion"
+    },
+    {
+      "id": "ripple",
+      "name": "Ripple Interaction",
+      "category": "Motion"
+    },
+    {
+      "id": "morph",
+      "name": "Shape Morph",
+      "category": "Motion"
+    },
+    {
+      "id": "accordion-motion",
+      "name": "Accordion Motion",
+      "category": "Motion"
+    },
+    {
+      "id": "typewriter",
+      "name": "Typewriter",
+      "category": "Text"
+    },
+    {
+      "id": "text-reveal",
+      "name": "Text Reveal",
+      "category": "Text"
+    },
+    {
+      "id": "blur-reveal",
+      "name": "Blur Reveal",
+      "category": "Text"
+    },
+    {
+      "id": "split-text",
+      "name": "Split Text",
+      "category": "Text"
+    },
+    {
+      "id": "gradient-text",
+      "name": "Gradient Text",
+      "category": "Text"
+    },
+    {
+      "id": "shimmer-text",
+      "name": "Shimmer Text",
+      "category": "Text"
+    },
+    {
+      "id": "scramble-text",
+      "name": "Scramble Text",
+      "category": "Text"
+    },
+    {
+      "id": "rotating-words",
+      "name": "Rotating Words",
+      "category": "Text"
+    },
+    {
+      "id": "number-ticker",
+      "name": "Number Ticker",
+      "category": "Text"
+    },
+    {
+      "id": "highlight-animation",
+      "name": "Hand-drawn Highlight",
+      "category": "Text"
+    },
+    {
+      "id": "glass-card",
+      "name": "Glass Card",
+      "category": "Effects"
+    },
+    {
+      "id": "glow-card",
+      "name": "Glow Card",
+      "category": "Effects"
+    },
+    {
+      "id": "spotlight-card",
+      "name": "Spotlight Card",
+      "category": "Effects"
+    },
+    {
+      "id": "animated-border",
+      "name": "Animated Border",
+      "category": "Effects"
+    },
+    {
+      "id": "shimmer-button",
+      "name": "Shimmer Button",
+      "category": "Effects"
+    },
+    {
+      "id": "liquid-lens-effect",
+      "name": "Liquid Lens",
+      "category": "Effects"
+    },
+    {
+      "id": "rgb-lens",
+      "name": "RGB Lens Reveal",
+      "category": "Effects"
+    },
+    {
+      "id": "image-reveal",
+      "name": "Image Reveal",
+      "category": "Effects"
+    },
+    {
+      "id": "comparison-slider",
+      "name": "Image Comparison",
+      "category": "Effects"
+    },
+    {
+      "id": "confetti",
+      "name": "Confetti Burst",
+      "category": "Effects"
+    },
+    {
+      "id": "hero-section",
+      "name": "Hero Section",
+      "category": "Sections"
+    },
+    {
+      "id": "navbar-section",
+      "name": "Floating Navbar",
+      "category": "Sections"
+    },
+    {
+      "id": "bento-section",
+      "name": "Bento Feature Grid",
+      "category": "Sections"
+    },
+    {
+      "id": "logo-cloud",
+      "name": "Logo Cloud",
+      "category": "Sections"
+    },
+    {
+      "id": "stats-section",
+      "name": "Statistics",
+      "category": "Sections"
+    },
+    {
+      "id": "timeline-section",
+      "name": "Timeline",
+      "category": "Sections"
+    },
+    {
+      "id": "pricing-section",
+      "name": "Pricing Cards",
+      "category": "Sections"
+    },
+    {
+      "id": "testimonials-section",
+      "name": "Testimonials",
+      "category": "Sections"
+    },
+    {
+      "id": "comparison-section",
+      "name": "Feature Comparison",
+      "category": "Sections"
+    },
+    {
+      "id": "faq-section",
+      "name": "FAQ",
+      "category": "Sections"
+    },
+    {
+      "id": "cta-section",
+      "name": "CTA Banner",
+      "category": "Sections"
+    },
+    {
+      "id": "footer-section",
+      "name": "Footer",
+      "category": "Sections"
+    },
+    {
+      "id": "contact-section",
+      "name": "Contact Split",
+      "category": "Sections"
+    },
+    {
+      "id": "saas-page",
+      "name": "SaaS Landing",
+      "category": "Pages"
+    },
+    {
+      "id": "developer-tool-page",
+      "name": "Developer Tool",
+      "category": "Pages"
+    },
+    {
+      "id": "dashboard-page",
+      "name": "Dashboard",
+      "category": "Pages"
+    },
+    {
+      "id": "docs-page",
+      "name": "Documentation",
+      "category": "Pages"
+    },
+    {
+      "id": "portfolio-page",
+      "name": "Portfolio",
+      "category": "Pages"
+    },
+    {
+      "id": "education-page",
+      "name": "Explainer / Education",
+      "category": "Pages"
+    },
+    {
+      "id": "admin-page",
+      "name": "Internal Admin",
+      "category": "Pages"
+    },
+    {
+      "id": "login-page",
+      "name": "Login / Signup",
+      "category": "Pages"
+    },
+    {
+      "id": "event-page",
+      "name": "Event Landing",
+      "category": "Pages"
+    }
+  ],
+  "design_md_presets": [
+    {
+      "id": "minimal-saas",
+      "name": "Minimal SaaS",
+      "category": "DESIGN.md"
+    },
+    {
+      "id": "playful-brutal",
+      "name": "Playful Neo-Brutalism",
+      "category": "DESIGN.md"
+    },
+    {
+      "id": "editorial-system",
+      "name": "Editorial",
+      "category": "DESIGN.md"
+    },
+    {
+      "id": "developer-tool-system",
+      "name": "Developer Tool",
+      "category": "DESIGN.md"
+    },
+    {
+      "id": "corporate-dashboard",
+      "name": "Corporate Dashboard",
+      "category": "DESIGN.md"
+    },
+    {
+      "id": "luxury-system",
+      "name": "Luxury",
+      "category": "DESIGN.md"
+    },
+    {
+      "id": "docs-system",
+      "name": "Documentation",
+      "category": "DESIGN.md"
+    },
+    {
+      "id": "dark-futuristic",
+      "name": "Dark Futuristic",
+      "category": "DESIGN.md"
+    },
+    {
+      "id": "educational-system",
+      "name": "ELI5 / Educational",
+      "category": "DESIGN.md"
+    },
+    {
+      "id": "bento-saas-system",
+      "name": "Bento SaaS",
+      "category": "DESIGN.md"
+    }
+  ],
+  "vendor_design_md": [
+    {
+      "slug": "airbnb",
+      "name": "AIrbnb",
+      "category": "E-commerce & Consumer"
+    },
+    {
+      "slug": "airtable",
+      "name": "AIrtable",
+      "category": "SaaS & Productivity"
+    },
+    {
+      "slug": "apple",
+      "name": "Apple",
+      "category": "Big Tech"
+    },
+    {
+      "slug": "binance",
+      "name": "Binance",
+      "category": "Fintech & Crypto"
+    },
+    {
+      "slug": "bmw-m",
+      "name": "BMW M",
+      "category": "Automotive"
+    },
+    {
+      "slug": "bmw",
+      "name": "BMW",
+      "category": "Automotive"
+    },
+    {
+      "slug": "bugatti",
+      "name": "Bugatti",
+      "category": "Automotive"
+    },
+    {
+      "slug": "cal",
+      "name": "Cal",
+      "category": "SaaS & Productivity"
+    },
+    {
+      "slug": "claude",
+      "name": "Claude",
+      "category": "AI & LLM"
+    },
+    {
+      "slug": "clay",
+      "name": "Clay",
+      "category": "Design Tools"
+    },
+    {
+      "slug": "clickhouse",
+      "name": "Clickhouse",
+      "category": "Backend & DevOps"
+    },
+    {
+      "slug": "cohere",
+      "name": "Cohere",
+      "category": "AI & LLM"
+    },
+    {
+      "slug": "coinbase",
+      "name": "Coinbase",
+      "category": "Fintech & Crypto"
+    },
+    {
+      "slug": "composio",
+      "name": "Composio",
+      "category": "Backend & DevOps"
+    },
+    {
+      "slug": "cursor",
+      "name": "Cursor",
+      "category": "Developer Tools"
+    },
+    {
+      "slug": "dell-1996",
+      "name": "Dell 1996",
+      "category": "Retro Web"
+    },
+    {
+      "slug": "elevenlabs",
+      "name": "Elevenlabs",
+      "category": "AI & LLM"
+    },
+    {
+      "slug": "expo",
+      "name": "Expo",
+      "category": "Developer Tools"
+    },
+    {
+      "slug": "ferrari",
+      "name": "Ferrari",
+      "category": "Automotive"
+    },
+    {
+      "slug": "figma",
+      "name": "Figma",
+      "category": "SaaS & Productivity"
+    },
+    {
+      "slug": "framer",
+      "name": "Framer",
+      "category": "SaaS & Productivity"
+    },
+    {
+      "slug": "hashicorp",
+      "name": "Hashicorp",
+      "category": "Backend & DevOps"
+    },
+    {
+      "slug": "hp",
+      "name": "HP",
+      "category": "Big Tech"
+    },
+    {
+      "slug": "ibm",
+      "name": "IBM",
+      "category": "Big Tech"
+    },
+    {
+      "slug": "intercom",
+      "name": "Intercom",
+      "category": "SaaS & Productivity"
+    },
+    {
+      "slug": "kraken",
+      "name": "Kraken",
+      "category": "Fintech & Crypto"
+    },
+    {
+      "slug": "lamborghini",
+      "name": "Lamborghini",
+      "category": "Automotive"
+    },
+    {
+      "slug": "linear.app",
+      "name": "Linear App",
+      "category": "SaaS & Productivity"
+    },
+    {
+      "slug": "lovable",
+      "name": "Lovable",
+      "category": "Developer Tools"
+    },
+    {
+      "slug": "mastercard",
+      "name": "Mastercard",
+      "category": "Fintech & Crypto"
+    },
+    {
+      "slug": "meta",
+      "name": "Meta",
+      "category": "Big Tech"
+    },
+    {
+      "slug": "minimax",
+      "name": "Minimax",
+      "category": "AI & LLM"
+    },
+    {
+      "slug": "mintlify",
+      "name": "Mintlify",
+      "category": "SaaS & Productivity"
+    },
+    {
+      "slug": "miro",
+      "name": "Miro",
+      "category": "SaaS & Productivity"
+    },
+    {
+      "slug": "mistral.ai",
+      "name": "Mistral AI",
+      "category": "AI & LLM"
+    },
+    {
+      "slug": "mongodb",
+      "name": "Mongodb",
+      "category": "Backend & DevOps"
+    },
+    {
+      "slug": "nike",
+      "name": "Nike",
+      "category": "E-commerce & Consumer"
+    },
+    {
+      "slug": "nintendo-2001",
+      "name": "Nintendo 2001",
+      "category": "Retro Web"
+    },
+    {
+      "slug": "notion",
+      "name": "Notion",
+      "category": "SaaS & Productivity"
+    },
+    {
+      "slug": "nvidia",
+      "name": "Nvidia",
+      "category": "Big Tech"
+    },
+    {
+      "slug": "ollama",
+      "name": "Ollama",
+      "category": "AI & LLM"
+    },
+    {
+      "slug": "opencode.ai",
+      "name": "Opencode AI",
+      "category": "AI & LLM"
+    },
+    {
+      "slug": "pinterest",
+      "name": "Pinterest",
+      "category": "E-commerce & Consumer"
+    },
+    {
+      "slug": "playstation",
+      "name": "Playstation",
+      "category": "Retro Web"
+    },
+    {
+      "slug": "posthog",
+      "name": "Posthog",
+      "category": "SaaS & Productivity"
+    },
+    {
+      "slug": "raycast",
+      "name": "Raycast",
+      "category": "Developer Tools"
+    },
+    {
+      "slug": "renault",
+      "name": "Renault",
+      "category": "Automotive"
+    },
+    {
+      "slug": "replicate",
+      "name": "Replicate",
+      "category": "AI & LLM"
+    },
+    {
+      "slug": "resend",
+      "name": "Resend",
+      "category": "SaaS & Productivity"
+    },
+    {
+      "slug": "revolut",
+      "name": "Revolut",
+      "category": "Fintech & Crypto"
+    },
+    {
+      "slug": "runwayml",
+      "name": "Runwayml",
+      "category": "AI & LLM"
+    },
+    {
+      "slug": "sanity",
+      "name": "Sanity",
+      "category": "Backend & DevOps"
+    },
+    {
+      "slug": "sentry",
+      "name": "Sentry",
+      "category": "Backend & DevOps"
+    },
+    {
+      "slug": "shopify",
+      "name": "Shopify",
+      "category": "E-commerce & Consumer"
+    },
+    {
+      "slug": "slack",
+      "name": "Slack",
+      "category": "SaaS & Productivity"
+    },
+    {
+      "slug": "spacex",
+      "name": "Spacex",
+      "category": "Automotive & Space"
+    },
+    {
+      "slug": "spotify",
+      "name": "Spotify",
+      "category": "E-commerce & Consumer"
+    },
+    {
+      "slug": "starbucks",
+      "name": "Starbucks",
+      "category": "E-commerce & Consumer"
+    },
+    {
+      "slug": "stripe",
+      "name": "Stripe",
+      "category": "Fintech & Crypto"
+    },
+    {
+      "slug": "supabase",
+      "name": "Supabase",
+      "category": "Backend & DevOps"
+    },
+    {
+      "slug": "superhuman",
+      "name": "Superhuman",
+      "category": "Developer Tools"
+    },
+    {
+      "slug": "tesla",
+      "name": "Tesla",
+      "category": "Automotive"
+    },
+    {
+      "slug": "theverge",
+      "name": "Theverge",
+      "category": "Brand Design"
+    },
+    {
+      "slug": "together.ai",
+      "name": "Together AI",
+      "category": "AI & LLM"
+    },
+    {
+      "slug": "uber",
+      "name": "Uber",
+      "category": "Brand Design"
+    },
+    {
+      "slug": "vercel",
+      "name": "Vercel",
+      "category": "Developer Tools"
+    },
+    {
+      "slug": "vodafone",
+      "name": "Vodafone",
+      "category": "Brand Design"
+    },
+    {
+      "slug": "voltagent",
+      "name": "Voltagent",
+      "category": "AI & LLM"
+    },
+    {
+      "slug": "warp",
+      "name": "Warp",
+      "category": "Developer Tools"
+    },
+    {
+      "slug": "webflow",
+      "name": "Webflow",
+      "category": "Brand Design"
+    },
+    {
+      "slug": "wired",
+      "name": "Wired",
+      "category": "Brand Design"
+    },
+    {
+      "slug": "wise",
+      "name": "Wise",
+      "category": "Brand Design"
+    },
+    {
+      "slug": "x.ai",
+      "name": "X AI",
+      "category": "AI & LLM"
+    },
+    {
+      "slug": "zapier",
+      "name": "Zapier",
+      "category": "Brand Design"
+    }
+  ]
+}

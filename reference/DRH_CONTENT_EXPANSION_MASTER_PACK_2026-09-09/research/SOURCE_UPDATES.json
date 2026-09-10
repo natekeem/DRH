@@ -1,0 +1,79 @@
+[
+  {
+    "source": "Vibulary / How to Vibe UI",
+    "update": {
+      "what_it_provides": "Visual-first vocabulary/product-design learning benchmark. Current Korean page reports 559 guides across 10 topics/languages and 128 live demos, with evidence labels and a request builder.",
+      "caveat": "Use interaction/IA patterns and terminology discovery as inspiration. Do not copy proprietary guide text or illustrations."
+    },
+    "evidence": [
+      "https://howtovibeui.com/ko/"
+    ],
+    "note": "This is the clearest benchmark for DRH's 'see it before you know the name' mission."
+  },
+  {
+    "source": "design-isms",
+    "update": {
+      "what_it_provides": "Taxonomy benchmark: 49 design ISMs, 94 effect/interface candidates, Color 25, Typography 20, Layout 25, Motion 20. Their project explicitly requires a dedicated demo type per effect id rather than reusing generic seed demos.",
+      "caveat": "No root license verified. Use taxonomy/concept names only; do not copy code, prompts, images, or long descriptions."
+    },
+    "evidence": [
+      "https://github.com/lidge-jun/design-isms/blob/main/AGENTS.md",
+      "https://lidge-jun.github.io/design-isms/"
+    ],
+    "note": "The 'one canonical demo per concept' rule should become a permanent DRH audit principle."
+  },
+  {
+    "source": "Oh My Design (3x-haust)",
+    "update": {
+      "what_it_provides": "Agent-oriented DESIGN.md workflow with 440+ quality-graded company references. Current website and repository expose somewhat different skill/sub-agent counts, so counts should be treated as dynamic rather than hardcoded.",
+      "caveat": "Tool is MIT, but company reference facts/assets retain their respective rights. Preserve evidence/provenance."
+    },
+    "evidence": [
+      "https://oh-my-design.kr/",
+      "https://github.com/kwakseongjae/oh-my-design"
+    ],
+    "note": "Strong benchmark for project-owned DESIGN.md, quality grading and agent handoff."
+  },
+  {
+    "source": "Refero Styles",
+    "update": {
+      "what_it_provides": "Current site advertises 2,000+ AI-readable design systems with DESIGN.md for leading product websites.",
+      "caveat": "Individual browse/copy workflow is not verified permission for bulk redistribution into DRH."
+    },
+    "evidence": [
+      "https://styles.refero.design/"
+    ]
+  },
+  {
+    "source": "MotionSites",
+    "update": {
+      "what_it_provides": "Current MCP page advertises 500+ premium website design prompts and 3 free prompts for free accounts.",
+      "caveat": "Discovery only; do not mirror premium prompt text."
+    },
+    "evidence": [
+      "https://motionsites.ai/mcp"
+    ]
+  },
+  {
+    "source": "GetLayers",
+    "update": {
+      "what_it_provides": "Current library groups cinematic layers into templates, 3D scenes, sections, backgrounds and interactive gradients. Public pages currently show 243 catalog items on one index snapshot, with weekly growth.",
+      "caveat": "Terms restrict copying/redistributing prompt/source-template library. Generic concept discovery only."
+    },
+    "evidence": [
+      "https://www.getlayers.ai/",
+      "https://www.getlayers.ai/layer/tentacle-star"
+    ]
+  },
+  {
+    "source": "Framer Marketplace",
+    "update": {
+      "what_it_provides": "Useful trend/discovery taxonomy across Portfolio, Software/AI/Fintech/SaaS, Agency, Ecommerce, Services, Health, Publishing, Real Estate, Hospitality and Events; style facets include Modern, Minimal, Animated, Dark, Colorful, Grid, Large Type and Black & White.",
+      "caveat": "Free Marketplace content is not automatically safe to mirror as a competing/internal catalog. Use discovery only unless item terms explicitly permit redistribution."
+    },
+    "evidence": [
+      "https://www.framer.com/marketplace/templates/",
+      "https://www.framer.com/community/marketplace/templates/categories/"
+    ]
+  }
+]
