@@ -179,7 +179,7 @@ main[data-variant="card"] .contact-split {
 }
 .contact-info { flex: 1; display: flex; flex-direction: column; justify-content: center; }
 .contact-info small { color: #888; font-weight: 600; letter-spacing: 1px; margin-bottom: 10px; display: block; }
-.contact-info h2 { font-size: clamp(28px, 6vw, 48px); margin: 0; line-height: 1.1; }
+.contact-info h2 { font-size: clamp(40px, 8vw, 64px); margin: 0; line-height: 1.05; letter-spacing: -1px; }
 .contact-form { flex: 1; background: #161616; padding: 30px; border-radius: 16px; display: flex; flex-direction: column; gap: 20px; }
 .input-group { position: relative; }
 .input-group input { 
@@ -204,7 +204,7 @@ main[data-variant="card"] .contact-split {
     sourceNotes: 'Hub Original implementation. CSS-only floating labels.'
   },
   'progressive-blur': {
-    html: `<div class="blur-container">
+    html: `<div class="blur-container" tabindex="0">
   <div class="content-layer">
     <div class="mock-text" style="width:80%"></div>
     <div class="mock-text" style="width:60%"></div>
@@ -216,36 +216,44 @@ main[data-variant="card"] .contact-split {
     <div class="mock-text" style="width:60%"></div>
     <div class="mock-text" style="width:75%"></div>
     <div class="mock-text" style="width:40%"></div>
+    <div class="mock-text" style="width:80%"></div>
+    <div class="mock-text" style="width:65%"></div>
+    <div class="mock-text" style="width:55%"></div>
+    <div class="mock-text" style="width:90%"></div>
   </div>
   <div class="progressive-blur-overlay"></div>
-  <button class="action-btn">Read More</button>
+  <span class="scroll-hint">스크롤해 보세요</span>
 </div>`,
     css: `main { background: #fff; color: #111; display: flex; align-items: center; justify-content: center; }
 .blur-container { position: relative; width: min(90%, 400px); height: 300px; border: 1px solid #eee; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; background: #fafafa; }
-.content-layer { padding: 20px; display: flex; flex-direction: column; gap: 15px; animation: scroll-anim 4s ease-in-out infinite alternate; }
-.mock-text { height: 12px; background: #d0d0d0; border-radius: 6px; }
+.content-layer { padding: 20px; display: flex; flex-direction: column; gap: 18px; padding-bottom: 150px; overflow-y: auto; height: 100%; }
+.content-layer::-webkit-scrollbar { display: none; }
+.content-layer { -ms-overflow-style: none; scrollbar-width: none; }
+.mock-text { height: 12px; background: #d0d0d0; border-radius: 6px; flex-shrink: 0; }
 .progressive-blur-overlay {
   position: absolute;
   bottom: 0; left: 0; right: 0;
   height: 150px;
   pointer-events: none;
-  /* CSS mask with backdrop-filter creates a progressive blur */
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   mask-image: linear-gradient(to bottom, transparent 0%, black 100%);
   -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 100%);
   z-index: 1;
 }
-.action-btn {
+.scroll-hint {
   position: absolute;
-  bottom: 20px; left: 50%; transform: translateX(-50%);
-  z-index: 2; padding: 10px 24px; background: #111; color: #fff; border: none; border-radius: 20px; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  top: 15px; right: 20px;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  pointer-events: none;
+  z-index: 2;
 }
-@keyframes scroll-anim {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-80px); }
-}
-@media (prefers-reduced-motion) { .content-layer { animation: none; } }`,
+`,
     logic: 'backdrop-filter: blur()에 CSS mask-image(linear-gradient)를 적용하여 아래로 갈수록 blur 강도가 짙어지는 효과 구현. pointer-events: none으로 아래 요소들의 클릭 방해 방지.',
     acceptance: '단순한 반투명 그라데이션이 아니라, 실제 텍스트가 점진적으로 흐려지는 효과가 보임.',
     sourceNotes: 'Hub Original implementation. CSS 마스크 기반 progressive blur.'
