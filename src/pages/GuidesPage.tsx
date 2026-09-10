@@ -4,7 +4,7 @@ import { guides, guideSources } from '../content/guides'
 import { GuideMarkdown } from '../components/GuideMarkdown'
 import { guideHeadings } from '../lib/guideHeadings'
 
-export function GuidesPage(){return <main className="guides-page"><section className="guide-intro"><span className="eyebrow">FIELD GUIDE / 01</span><h1>좋은 Reference를<br/><i>작동하는 화면으로.</i></h1><p>보고 고른 디자인을 구체적인 규칙으로 전달하세요.<br/>Coding Agent와 함께 만드는 과정을 정리했습니다.</p></section><section className="guide-library" aria-label="Guide library">{guides.map(g=><Link className="guide-card" to={`/guides/${g.slug}`} key={g.slug}><span className="eyebrow">{g.category} · {g.readingTime}</span><h2>{g.title} ↗</h2><p>{g.description}</p><div className="tag-list">{g.tags.map(t=><span key={t}>{t}</span>)}</div><small>Updated {g.updatedAt}</small></Link>)}</section></main>}
+export function GuidesPage(){return <main className="guides-page"><section className="listing-hero"><span className="eyebrow">FIELD GUIDE / {guides.length} GUIDES</span><h1>좋은 Reference를<br/><i>작동하는 화면으로.</i></h1><p>보고 고른 디자인을 구체적인 규칙으로 전달하세요.<br/>Coding Agent와 함께 만드는 과정을 정리했습니다.</p></section><section className="guide-library" aria-label="Guide library">{guides.map(g=><Link className="guide-card" to={`/guides/${g.slug}`} key={g.slug}><span className="eyebrow">{g.category} · {g.readingTime}</span><h2>{g.title} ↗</h2><p>{g.description}</p><div className="tag-list">{g.tags.map(t=><span key={t}>{t}</span>)}</div><small>Updated {g.updatedAt}</small></Link>)}</section></main>}
 export function GuideArticle(){
   const {slug}=useParams(),guide=guides.find(g=>g.slug===slug)
   const [content,setContent]=useState<{slug:string;text:string;error?:boolean}>()

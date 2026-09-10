@@ -14,7 +14,7 @@ export function ReferenceCard({ item, large=false }:{item:ReferenceItem;large?:b
   const maturity=demoMaturity(item)
   const statusBelowPreview=Boolean(recipes[item.demo]?.sourceNotes)
   return <article className={`reference-card ${large?'large':''}`}>
-    <div className="card-demo">{item.designSystem?<DesignSystemPreview tokens={item.designSystem} compact/>:<DemoRenderer kind={item.demo}/>}<div className={`live-chip maturity-${maturity.kind}`} hidden={statusBelowPreview}><i/> {maturity.label}</div></div>
+    <div className="card-demo">{item.designSystem?<DesignSystemPreview tokens={item.designSystem} compact/>:<DemoRenderer kind={item.demo} detail={large}/>}<div className={`live-chip maturity-${maturity.kind}`} hidden={statusBelowPreview}><i/> {maturity.label}</div></div>
     <Link className="reference-card-link" state={{fromExplore:location.pathname==='/explore'}} to={`/reference/${item.id}`} aria-label={`${item.name} 상세 보기`}>
       <div className="card-meta">
         <div><span className="eyebrow">{item.category} · {categoryKo[item.category]} / {item.subcategory}</span><h3>{item.name}</h3></div>

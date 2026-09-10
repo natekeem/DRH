@@ -17,7 +17,7 @@ export function advancedHtml(kind: AdvancedDemoKind, options: AdvancedHtmlOption
 <html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${title} · DRH</title>
 <style>${commonCss}\n${css}
 body{margin:0;padding:24px;background:#080b16;color:#eef4ff;font:14px/1.6 system-ui,sans-serif}main{max-width:1000px;margin:auto}h1{font-size:24px}details{margin-top:24px;color:#aab9ce}pre{white-space:pre-wrap;font:12px/1.6 monospace}a{color:#9eeade}@media(max-width:599px){body{padding:16px}}</style></head>
-<body><main><h1>${title}</h1><div class="standalone-preview" style="height:${options.variant === 'card' ? '220' : '480'}px"><div id="demo" class="drh-advanced drh-advanced--${options.variant === 'card' ? 'card' : 'detail'}" tabindex="0" role="group" aria-label="${title} interactive demo"></div></div>
+<body><main><h1>${title}</h1><div id="demo" class="drh-advanced drh-advanced--${options.variant === 'card' ? 'card' : 'detail'}" tabindex="0" role="group" aria-label="${title} interactive demo"></div>
 <p>포인터와 터치로 조작하세요. 키보드: 방향키 · Space · R 초기화. 동작 줄이기 설정에서는 정적 미리보기를 표시합니다.</p>
 <details><summary>Source / MIT License</summary><p>Original DRH JavaScript, GLSL and generated artwork. No adapted upstream code or external runtime dependencies.</p>${kind === 'fluid' ? '<p>Numerical background only: Mark J. Harris, <a href="https://developer.nvidia.com/gpugems/gpugems/part-vi-beyond-triangles/chapter-38-fast-fluid-dynamics-simulation-gpu">GPU Gems, Chapter 38</a>. No NVIDIA code included.</p>' : ''}<pre>${escape(license)}</pre></details></main>
 <script>${source}\nmountAdvancedDemo(document.getElementById('demo'),${config});</script></body></html>`

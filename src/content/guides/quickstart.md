@@ -19,7 +19,7 @@ DRH(Design Reference Hub)는 잘 만들어진 화면의 디자인 규칙과 코�
 
 ---
 
-## Step 1. 탐색에서 마음에 드는 Reference 찾기
+## Step 1. 탐색에서 원하는 Reference 찾기
 
 **지금 할 일:** [Explore](#/explore) 페이지를 엽니다. 카드를 스크롤하면서 "이 느낌이 좋다"는 Reference를 하나 고르세요.
 
