@@ -11,7 +11,7 @@ import { categories, collections, references } from '../data/references'
 import { categoryDescriptionKo, categoryKo } from '../data/ko'
 
 export function HomePage(){
-  const spotlight=['shader-gradient','liquid-lens-effect','image-trail','neo-brutalism','bento-section','text-reveal'].map(id=>references.find(r=>r.id===id)!).filter(Boolean)
+  const spotlight=['liquid-lens-effect','image-trail','neo-brutalism','bento-section','text-reveal'].map(id=>references.find(r=>r.id===id)!).filter(Boolean)
   return <>
     <LandingHero/>
     <PresetGallery/>
