@@ -1,14 +1,9 @@
-import { ArrowDown, ArrowUp, Github, Library, Sparkles } from 'lucide-react'
+import { Github, Library, Sparkles } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { ShaderBackdrop } from '../ShaderBackdrop'
-import { shaderPresets } from '../../data/shaderPresets'
 
 export function LandingHero(){
-  const [index,setIndex]=useState(0)
   const [scroll,setScroll]=useState(0)
-  const preset=shaderPresets[index]
-  const step=(delta:number)=>setIndex((index+delta+shaderPresets.length)%shaderPresets.length)
 
   useEffect(()=>{
     let raf=0
@@ -17,20 +12,11 @@ export function LandingHero(){
     return()=>{cancelAnimationFrame(raf);window.removeEventListener('scroll',update);window.removeEventListener('resize',update)}
   },[])
 
-  return <section className={`sg-hero ${preset.ink==='dark'?'dark-ink':'light-ink'}`} aria-label="Design Reference Hub 소개">
-    <ShaderBackdrop preset={preset} lazyLoad/>
+  return <section className="sg-hero" aria-label="Design Reference Hub 소개">
     <div className="sg-hero-overlay"/>
     <Link className="sg-hero-logo" to="/">Design Reference Hub</Link>
 
     <div className="sg-hero-content" style={{opacity:String(1-scroll*.64),transform:`translateY(${scroll*-36}px)`}}>
-      <div className="sg-cycler" aria-live="polite">
-        <span className="sg-index">{String(index).padStart(2,'0')}</span>
-        <span className="sg-preset-name">{preset.title}</span>
-        <span className="sg-cycler-buttons">
-          <button type="button" onClick={()=>step(1)} aria-label="다음 프리셋"><ArrowDown size={19}/></button>
-          <button type="button" onClick={()=>step(-1)} aria-label="이전 프리셋"><ArrowUp size={19}/></button>
-        </span>
-      </div>
       <div className="sg-tagline">
         <p className="sg-tagline-big">Make your references alive.</p>
         <p>디자인 이름을 몰라도, 움직이는 예제를 먼저 보고 찾습니다.</p>
