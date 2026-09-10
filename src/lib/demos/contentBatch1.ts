@@ -204,7 +204,7 @@ main[data-variant="card"] .contact-split {
     sourceNotes: 'Hub Original implementation. CSS-only floating labels.'
   },
   'progressive-blur': {
-    html: `<div class="blur-container" tabindex="0">
+    html: `<div class="blur-container">
   <div class="content-layer">
     <div class="mock-text" style="width:80%"></div>
     <div class="mock-text" style="width:60%"></div>
@@ -222,11 +222,21 @@ main[data-variant="card"] .contact-split {
     <div class="mock-text" style="width:90%"></div>
   </div>
   <div class="progressive-blur-overlay"></div>
-  <div class="status">스크롤해 보세요</div>
+  <span class="drh-advanced__status" role="status">스크롤해 보세요</span>
 </div>`,
     css: `main { background: #fafafa; color: #111; display: flex; align-items: stretch; justify-content: stretch; }
 .blur-container { position: relative; width: 100%; height: 100%; overflow: hidden; display: flex; flex-direction: column; background: #fafafa; }
-.content-layer { padding: 40px; display: flex; flex-direction: column; gap: 20px; padding-bottom: 200px; overflow-y: auto; height: 100%; }
+.content-layer { padding: 40px; display: flex; flex-direction: column; gap: 20px; padding-bottom: 200px; height: 100%; }
+
+main:not([data-variant="card"]) .content-layer { overflow-y: auto; }
+main[data-variant="card"] .drh-advanced__status { display: none; }
+main[data-variant="card"] .content-layer { overflow: hidden; animation: scroll-anim 4s ease-in-out infinite alternate; pointer-events: none; }
+
+@keyframes scroll-anim {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-120px); }
+}
+
 .content-layer::-webkit-scrollbar { display: none; }
 .content-layer { -ms-overflow-style: none; scrollbar-width: none; }
 .mock-text { height: 14px; background: #e0e0e0; border-radius: 7px; flex-shrink: 0; }
@@ -241,21 +251,9 @@ main[data-variant="card"] .contact-split {
   -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 100%);
   z-index: 1;
 }
-.status {
-  position: absolute;
-  z-index: 2;
-  bottom: 24px; left: 24px;
-  width: fit-content; max-width: calc(100% - 48px);
-  padding: 8px 12px;
-  border: 1px solid rgba(0,0,0,0.1);
-  border-radius: 8px;
-  background: rgba(255,255,255,0.85);
-  backdrop-filter: blur(4px);
-  color: #333;
-  font-size: 11px;
-  font-weight: 600;
-  pointer-events: none;
-}
+
+.drh-advanced__status{position:absolute;z-index:1;bottom:12px;left:12px;right:12px;width:fit-content;max-width:calc(100% - 24px);padding:6px 9px;border:1px solid #ffffff28;border-radius:7px;background:#080b1bdb;color:#edf6ff;font:11px/1.5 system-ui,sans-serif;pointer-events:none}
+@media (prefers-reduced-motion) { .content-layer { animation: none !important; } }
 `,
     logic: 'backdrop-filter: blur()에 CSS mask-image(linear-gradient)를 적용하여 아래로 갈수록 blur 강도가 짙어지는 효과 구현. pointer-events: none으로 아래 요소들의 클릭 방해 방지.',
     acceptance: '단순한 반투명 그라데이션이 아니라, 실제 텍스트가 점진적으로 흐려지는 효과가 보임.',
