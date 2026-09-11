@@ -61,3 +61,7 @@ If the duration, behavior, or dependencies in the Agent Package differ from the 
 * **`copy-ok`**: Requires verified permissive exact source (e.g., MIT, Apache-2.0, Hub Original).
 * **`reference` / `restricted`**: If redistribution is unclear or restricted, do not copy the source. Use Hub Original for generic concepts or only provide links.
 * Publicly visible on GitHub does not automatically mean `copy-ok`.
+
+## 5. Vendor DESIGN.md previews
+
+Vendor previews additionally follow [Brand DESIGN.md Preview Standard](BRAND_DESIGN_PREVIEW_STANDARD.md) for source-driven compositions, identifiers, sync preservation and Card/Detail browser acceptance. The maturity, provenance and artifact rules above continue to apply.

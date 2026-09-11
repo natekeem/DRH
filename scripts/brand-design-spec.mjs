@@ -70,7 +70,7 @@ function parseMarkdown(raw) {
 }
 
 export const extractColors=p=>Object.fromEntries(Object.entries(p.colors||{}).filter(([,v])=>typeof v==='string'&&/^(?:#[\da-f]{3,8}|(?:rgba?|hsla?)\([^)]*\))$/i.test(v)))
-export function brandSpec(p,raw){
+export function brandSpec(p,raw,slug='Unknown'){
  // Normalize derived evidence line endings; never rewrite the source file.
  raw=raw.replace(/\r\n/g,'\n')
  const resolve=v=>{
@@ -83,8 +83,8 @@ export function brandSpec(p,raw){
  const sections=Object.fromEntries([...raw.matchAll(/^##\s+(.+)\r?\n([\s\S]*?)(?=^##\s|$(?![\s\S]))/gm)].map(m=>[m[1],m[2].trim()]))
  const components=Object.fromEntries(Object.entries(p.components||{}).map(([k,v])=>[k,Object.fromEntries(Object.entries(v||{}).map(([a,b])=>[a,resolve(b)]))]))
  const traits=String(p.description||'')
- const layout=/bevel|Y2K|retro|console chrome/i.test(traits)?'retro':/trading|financial-platform|crypto exchange/i.test(traits)?'utility':/marketplace|booking|search-bar|search bar/i.test(traits)?'marketplace':/cinematic editorial|luxury-automotive/i.test(traits)?'cinematic':/photograph|photo-first/i.test(traits)?'gallery':/editorial|news|magazine|productivity/i.test(traits)?'editorial':'product'
- return {colors:extractColors(p),typography,spacing:p.spacing||{},radius:p.rounded||{},border:p.border||p.borders||Object.fromEntries(Object.entries(components).filter(([,v])=>v.border).map(([k,v])=>[k,v.border])),motion:p.motion||{rules:raw.split(/\r?\n/).filter(line=>/transition|duration|easing|cubic-bezier/i.test(line))},depth:p.shadows||p.elevation||Object.fromEntries(Object.entries(sections).filter(([k])=>/depth|elevation/i.test(k))),components,layout,traits,sections,frontmatter:p,brandAsset:{type:'text-wordmark',label:brandName(p,'Unknown')}}
+ const layout=/music player|playlists|podcasts/i.test(traits)?'media':/developer-platform|developer tool|terminal|command.line/i.test(traits)?'developer':/bevel|Y2K|retro|console chrome/i.test(traits)?'retro':/trading|financial-platform|crypto exchange/i.test(traits)?'utility':/marketplace|booking|search-bar|search bar/i.test(traits)?'marketplace':/cinematic editorial|luxury-automotive/i.test(traits)?'cinematic':/photograph|photo-first/i.test(traits)?'gallery':/editorial|news|magazine|productivity/i.test(traits)?'editorial':'product'
+ return {colors:extractColors(p),typography,spacing:p.spacing||{},radius:p.rounded||{},border:p.border||p.borders||Object.fromEntries(Object.entries(components).filter(([,v])=>v.border).map(([k,v])=>[k,v.border])),motion:p.motion||{rules:raw.split(/\r?\n/).filter(line=>/transition|duration|easing|cubic-bezier/i.test(line))},depth:p.shadows||p.elevation||Object.fromEntries(Object.entries(sections).filter(([k])=>/depth|elevation/i.test(k))),components,layout,traits,sections,frontmatter:p,brandAsset:{type:'text-wordmark',label:brandName(p,slug)}}
 }
 export function normalisedTokens(p,raw=''){
  const s=brandSpec(p,''),c=s.colors,dark=!c.canvas&&/dark theme|near-black|dark-first|dark canvas/i.test(s.traits),canvas=c.canvas||(dark?c['canvas-dark']:c['canvas-light'])||'#ffffff',isDark=parseInt(canvas.slice(1,3),16)<100
@@ -99,7 +99,7 @@ export function normalisedTokens(p,raw=''){
  const durationMs=duration?Number(duration[1])*(duration[2]==='s'?1000:1):0
  return {colors:{canvas,surface:c[isDark?'surface-card-dark':'canvas-soft']||c['canvas-parchment']||c['canvas-elevated']||c['surface-raised']||c.surface||canvas,text,primary:c.primary||'#333333',onPrimary:c['on-primary']||((parseInt((c.primary||'#333333').slice(1,3),16)*.299+parseInt((c.primary||'#333333').slice(3,5),16)*.587+parseInt((c.primary||'#333333').slice(5,7),16)*.114)>150?'#111111':'#ffffff'),border:c[isDark?'hairline-on-dark':'hairline']||c[isDark?'hairline-dark':'hairline-light']||c.hairline||c.border||'currentColor'},typography:{display:display.renderFallback||'system-ui, sans-serif',body:body.renderFallback||'system-ui, sans-serif',displaySize:number(display.fontSize)??48,bodySize:number(body.fontSize)??16,lineHeight:typeof body.lineHeight==='string'&&body.lineHeight.endsWith('px')?(number(body.lineHeight)/(number(body.fontSize)||16)):(number(body.lineHeight)??1.5)},spacing:spacing.length?spacing:[16],radius:number(card.rounded)??number(s.radius.md)??number(s.radius.sm)??number(Object.values(s.radius)[0])??0,borderWidth,duration:durationMs}
 }
-export function brandName(p,slug){return String(p.name||slug).replace(/-design-analysis$/i,'').replace(/\s+Analysis$/i,'')}
+export function brandName(p,slug){return String(/inspired/i.test(p.name||'')&&slug!=='Unknown'?slug.replace(/(^|[-.])([a-z])/g,(_,sep,c)=>(sep?' ':'')+c.toUpperCase()):(p.name||slug)).replace(/-design-analysis$/i,'').replace(/\s+Analysis$/i,'')}
 export function summary(text){text=text.replace(/\*\*|`/g,'');return new Intl.Segmenter('en',{granularity:'sentence'}).segment(text)[Symbol.iterator]().next().value?.segment.trim()||text}
 
 export function compactBrandSpec(full) {
@@ -110,5 +110,5 @@ export function compactBrandSpec(full) {
  const primary=components.find(([key])=>key==='button-primary')??components.find(([key])=>key==='primary-cta')??components.find(([key])=>/primary|dark-pill/.test(key))
  const surface=components.find(([key])=>/feature-card-photo|property-card|card-base|promo-card|pricing-card/.test(key))??components.find(([key])=>/card/.test(key))
  const search=components.find(([key])=>/search-bar|search-pill/.test(key))
- return {...compact, typography:Object.fromEntries([display,body].filter(Boolean)), components:Object.fromEntries([primary,surface,search].filter(Boolean)), depth:null, motion:null}
+ return {...compact, typography:Object.fromEntries([display,body].filter(Boolean)), components:Object.fromEntries([...new Map([primary,surface,search,...components.filter(([key])=>/nav-bar|top-nav|global-nav|hero-band|card-feature|circular-play|text-input/.test(key)).slice(0,5)].filter(Boolean)).entries()]), depth, motion}
 }

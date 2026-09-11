@@ -1,0 +1,3447 @@
+{
+  "cards": [
+    {
+      "viewportWidth": 1920,
+      "brand": "apple",
+      "layout": "gallery",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355,
+      "children": [
+        {
+          "tag": "brand-identifier",
+          "rect": {
+            "x": 48.59375,
+            "y": 156.75,
+            "width": 323.609375,
+            "height": 18,
+            "top": 156.75,
+            "right": 372.203125,
+            "bottom": 174.75,
+            "left": 48.59375
+          }
+        },
+        {
+          "tag": "",
+          "rect": {
+            "x": 48.59375,
+            "y": 187.75,
+            "width": 323.609375,
+            "height": 25.859375,
+            "top": 187.75,
+            "right": 372.203125,
+            "bottom": 213.609375,
+            "left": 48.59375
+          }
+        },
+        {
+          "tag": "brand-gallery",
+          "rect": {
+            "x": 48.59375,
+            "y": 221.609375,
+            "width": 323.609375,
+            "height": 82.03125,
+            "top": 221.609375,
+            "right": 372.203125,
+            "bottom": 303.640625,
+            "left": 48.59375
+          }
+        },
+        {
+          "tag": "brand-controls",
+          "rect": {
+            "x": 48.59375,
+            "y": 311.640625,
+            "width": 323.609375,
+            "height": 26,
+            "top": 311.640625,
+            "right": 372.203125,
+            "bottom": 337.640625,
+            "left": 48.59375
+          }
+        }
+      ],
+      "box": {
+        "x": 33,
+        "y": 141.15625,
+        "width": 354.796875,
+        "height": 212.078125,
+        "top": 141.15625,
+        "right": 387.796875,
+        "bottom": 353.234375,
+        "left": 33
+      }
+    },
+    {
+      "viewportWidth": 1920,
+      "brand": "airbnb",
+      "layout": "marketplace",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355,
+      "children": [
+        {
+          "tag": "brand-identifier",
+          "rect": {
+            "x": 423.390625,
+            "y": 156.75,
+            "width": 323.609375,
+            "height": 18,
+            "top": 156.75,
+            "right": 747,
+            "bottom": 174.75,
+            "left": 423.390625
+          }
+        },
+        {
+          "tag": "",
+          "rect": {
+            "x": 423.390625,
+            "y": 182.75,
+            "width": 323.609375,
+            "height": 19.796875,
+            "top": 182.75,
+            "right": 747,
+            "bottom": 202.546875,
+            "left": 423.390625
+          }
+        },
+        {
+          "tag": "brand-search",
+          "rect": {
+            "x": 423.390625,
+            "y": 227.578125,
+            "width": 323.609375,
+            "height": 42,
+            "top": 227.578125,
+            "right": 747,
+            "bottom": 269.578125,
+            "left": 423.390625
+          }
+        },
+        {
+          "tag": "brand-controls",
+          "rect": {
+            "x": 423.390625,
+            "y": 311.640625,
+            "width": 323.609375,
+            "height": 26,
+            "top": 311.640625,
+            "right": 747,
+            "bottom": 337.640625,
+            "left": 423.390625
+          }
+        }
+      ],
+      "box": {
+        "x": 407.796875,
+        "y": 141.15625,
+        "width": 354.796875,
+        "height": 212.078125,
+        "top": 141.15625,
+        "right": 762.59375,
+        "bottom": 353.234375,
+        "left": 407.796875
+      }
+    },
+    {
+      "viewportWidth": 1920,
+      "brand": "notion",
+      "layout": "product",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355,
+      "children": [
+        {
+          "tag": "brand-identifier",
+          "rect": {
+            "x": 798.1875,
+            "y": 156.75,
+            "width": 323.609375,
+            "height": 18,
+            "top": 156.75,
+            "right": 1121.796875,
+            "bottom": 174.75,
+            "left": 798.1875
+          }
+        },
+        {
+          "tag": "",
+          "rect": {
+            "x": 798.1875,
+            "y": 182.75,
+            "width": 323.609375,
+            "height": 36.953125,
+            "top": 182.75,
+            "right": 1121.796875,
+            "bottom": 219.703125,
+            "left": 798.1875
+          }
+        },
+        {
+          "tag": "brand-product brand-product-tiles",
+          "rect": {
+            "x": 798.1875,
+            "y": 227.703125,
+            "width": 323.609375,
+            "height": 75.9375,
+            "top": 227.703125,
+            "right": 1121.796875,
+            "bottom": 303.640625,
+            "left": 798.1875
+          }
+        },
+        {
+          "tag": "brand-controls",
+          "rect": {
+            "x": 798.1875,
+            "y": 311.640625,
+            "width": 323.609375,
+            "height": 26,
+            "top": 311.640625,
+            "right": 1121.796875,
+            "bottom": 337.640625,
+            "left": 798.1875
+          }
+        }
+      ],
+      "box": {
+        "x": 782.59375,
+        "y": 141.15625,
+        "width": 354.796875,
+        "height": 212.078125,
+        "top": 141.15625,
+        "right": 1137.390625,
+        "bottom": 353.234375,
+        "left": 782.59375
+      }
+    },
+    {
+      "viewportWidth": 1920,
+      "brand": "linear.app",
+      "layout": "product",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355,
+      "children": [
+        {
+          "tag": "brand-identifier",
+          "rect": {
+            "x": 1172.984375,
+            "y": 156.75,
+            "width": 323.609375,
+            "height": 18,
+            "top": 156.75,
+            "right": 1496.59375,
+            "bottom": 174.75,
+            "left": 1172.984375
+          }
+        },
+        {
+          "tag": "",
+          "rect": {
+            "x": 1172.984375,
+            "y": 182.75,
+            "width": 323.609375,
+            "height": 36.953125,
+            "top": 182.75,
+            "right": 1496.59375,
+            "bottom": 219.703125,
+            "left": 1172.984375
+          }
+        },
+        {
+          "tag": "brand-product ",
+          "rect": {
+            "x": 1172.984375,
+            "y": 227.703125,
+            "width": 323.609375,
+            "height": 75.9375,
+            "top": 227.703125,
+            "right": 1496.59375,
+            "bottom": 303.640625,
+            "left": 1172.984375
+          }
+        },
+        {
+          "tag": "brand-controls",
+          "rect": {
+            "x": 1172.984375,
+            "y": 311.640625,
+            "width": 323.609375,
+            "height": 26,
+            "top": 311.640625,
+            "right": 1496.59375,
+            "bottom": 337.640625,
+            "left": 1172.984375
+          }
+        }
+      ],
+      "box": {
+        "x": 1157.390625,
+        "y": 141.15625,
+        "width": 354.796875,
+        "height": 212.078125,
+        "top": 141.15625,
+        "right": 1512.1875,
+        "bottom": 353.234375,
+        "left": 1157.390625
+      }
+    },
+    {
+      "viewportWidth": 1920,
+      "brand": "stripe",
+      "layout": "editorial",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355,
+      "children": [
+        {
+          "tag": "brand-identifier",
+          "rect": {
+            "x": 1547.78125,
+            "y": 156.75,
+            "width": 323.609375,
+            "height": 18,
+            "top": 156.75,
+            "right": 1871.390625,
+            "bottom": 174.75,
+            "left": 1547.78125
+          }
+        },
+        {
+          "tag": "",
+          "rect": {
+            "x": 1547.78125,
+            "y": 218.546875,
+            "width": 165.3125,
+            "height": 49.28125,
+            "top": 218.546875,
+            "right": 1713.09375,
+            "bottom": 267.828125,
+            "left": 1547.78125
+          }
+        },
+        {
+          "tag": "brand-editorial",
+          "rect": {
+            "x": 1721.09375,
+            "y": 182.75,
+            "width": 150.296875,
+            "height": 120.890625,
+            "top": 182.75,
+            "right": 1871.390625,
+            "bottom": 303.640625,
+            "left": 1721.09375
+          }
+        },
+        {
+          "tag": "brand-controls",
+          "rect": {
+            "x": 1547.78125,
+            "y": 311.640625,
+            "width": 323.609375,
+            "height": 26,
+            "top": 311.640625,
+            "right": 1871.390625,
+            "bottom": 337.640625,
+            "left": 1547.78125
+          }
+        }
+      ],
+      "box": {
+        "x": 1532.1875,
+        "y": 141.15625,
+        "width": 354.796875,
+        "height": 212.078125,
+        "top": 141.15625,
+        "right": 1886.984375,
+        "bottom": 353.234375,
+        "left": 1532.1875
+      }
+    },
+    {
+      "viewportWidth": 1920,
+      "brand": "vercel",
+      "layout": "developer",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355,
+      "children": [
+        {
+          "tag": "brand-identifier",
+          "rect": {
+            "x": 48.59375,
+            "y": 574.828125,
+            "width": 323.609375,
+            "height": 18,
+            "top": 574.828125,
+            "right": 372.203125,
+            "bottom": 592.828125,
+            "left": 48.59375
+          }
+        },
+        {
+          "tag": "",
+          "rect": {
+            "x": 48.59375,
+            "y": 600.828125,
+            "width": 323.609375,
+            "height": 22.171875,
+            "top": 600.828125,
+            "right": 372.203125,
+            "bottom": 623,
+            "left": 48.59375
+          }
+        },
+        {
+          "tag": "brand-developer",
+          "rect": {
+            "x": 48.59375,
+            "y": 631,
+            "width": 323.609375,
+            "height": 90.71875,
+            "top": 631,
+            "right": 372.203125,
+            "bottom": 721.71875,
+            "left": 48.59375
+          }
+        },
+        {
+          "tag": "brand-controls",
+          "rect": {
+            "x": 48.59375,
+            "y": 729.71875,
+            "width": 323.609375,
+            "height": 26,
+            "top": 729.71875,
+            "right": 372.203125,
+            "bottom": 755.71875,
+            "left": 48.59375
+          }
+        }
+      ],
+      "box": {
+        "x": 33,
+        "y": 559.234375,
+        "width": 354.796875,
+        "height": 212.078125,
+        "top": 559.234375,
+        "right": 387.796875,
+        "bottom": 771.3125,
+        "left": 33
+      }
+    },
+    {
+      "viewportWidth": 1920,
+      "brand": "spotify",
+      "layout": "media",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355,
+      "children": [
+        {
+          "tag": "brand-identifier",
+          "rect": {
+            "x": 420.796875,
+            "y": 572.234375,
+            "width": 328.796875,
+            "height": 18,
+            "top": 572.234375,
+            "right": 749.59375,
+            "bottom": 590.234375,
+            "left": 420.796875
+          }
+        },
+        {
+          "tag": "",
+          "rect": {
+            "x": 420.796875,
+            "y": 598.234375,
+            "width": 328.796875,
+            "height": 19.796875,
+            "top": 598.234375,
+            "right": 749.59375,
+            "bottom": 618.03125,
+            "left": 420.796875
+          }
+        },
+        {
+          "tag": "brand-media",
+          "rect": {
+            "x": 420.796875,
+            "y": 626.03125,
+            "width": 328.796875,
+            "height": 98.28125,
+            "top": 626.03125,
+            "right": 749.59375,
+            "bottom": 724.3125,
+            "left": 420.796875
+          }
+        },
+        {
+          "tag": "brand-controls",
+          "rect": {
+            "x": 420.796875,
+            "y": 732.3125,
+            "width": 328.796875,
+            "height": 26,
+            "top": 732.3125,
+            "right": 749.59375,
+            "bottom": 758.3125,
+            "left": 420.796875
+          }
+        }
+      ],
+      "box": {
+        "x": 407.796875,
+        "y": 559.234375,
+        "width": 354.796875,
+        "height": 212.078125,
+        "top": 559.234375,
+        "right": 762.59375,
+        "bottom": 771.3125,
+        "left": 407.796875
+      }
+    },
+    {
+      "viewportWidth": 1920,
+      "brand": "ferrari",
+      "layout": "cinematic",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355,
+      "children": [
+        {
+          "tag": "brand-identifier",
+          "rect": {
+            "x": 798.1875,
+            "y": 574.828125,
+            "width": 323.609375,
+            "height": 18,
+            "top": 574.828125,
+            "right": 1121.796875,
+            "bottom": 592.828125,
+            "left": 798.1875
+          }
+        },
+        {
+          "tag": "",
+          "rect": {
+            "x": 798.1875,
+            "y": 600.828125,
+            "width": 323.609375,
+            "height": 36.953125,
+            "top": 600.828125,
+            "right": 1121.796875,
+            "bottom": 637.78125,
+            "left": 798.1875
+          }
+        },
+        {
+          "tag": "brand-image-space",
+          "rect": {
+            "x": 798.1875,
+            "y": 645.78125,
+            "width": 323.609375,
+            "height": 75.9375,
+            "top": 645.78125,
+            "right": 1121.796875,
+            "bottom": 721.71875,
+            "left": 798.1875
+          }
+        },
+        {
+          "tag": "brand-controls",
+          "rect": {
+            "x": 798.1875,
+            "y": 729.71875,
+            "width": 323.609375,
+            "height": 26,
+            "top": 729.71875,
+            "right": 1121.796875,
+            "bottom": 755.71875,
+            "left": 798.1875
+          }
+        }
+      ],
+      "box": {
+        "x": 782.59375,
+        "y": 559.234375,
+        "width": 354.796875,
+        "height": 212.078125,
+        "top": 559.234375,
+        "right": 1137.390625,
+        "bottom": 771.3125,
+        "left": 782.59375
+      }
+    },
+    {
+      "viewportWidth": 1920,
+      "brand": "nintendo-2001",
+      "layout": "retro",
+      "height": 212,
+      "content": 206,
+      "width": 355,
+      "scrollWidth": 355,
+      "children": [
+        {
+          "tag": "brand-identifier",
+          "rect": {
+            "x": 1175.984375,
+            "y": 577.828125,
+            "width": 317.609375,
+            "height": 18,
+            "top": 577.828125,
+            "right": 1493.59375,
+            "bottom": 595.828125,
+            "left": 1175.984375
+          }
+        },
+        {
+          "tag": "",
+          "rect": {
+            "x": 1175.984375,
+            "y": 603.828125,
+            "width": 317.609375,
+            "height": 20.328125,
+            "top": 603.828125,
+            "right": 1493.59375,
+            "bottom": 624.15625,
+            "left": 1175.984375
+          }
+        },
+        {
+          "tag": "brand-retro-panel",
+          "rect": {
+            "x": 1175.984375,
+            "y": 632.15625,
+            "width": 317.609375,
+            "height": 83.5625,
+            "top": 632.15625,
+            "right": 1493.59375,
+            "bottom": 715.71875,
+            "left": 1175.984375
+          }
+        },
+        {
+          "tag": "brand-controls",
+          "rect": {
+            "x": 1175.984375,
+            "y": 723.71875,
+            "width": 317.609375,
+            "height": 29,
+            "top": 723.71875,
+            "right": 1493.59375,
+            "bottom": 752.71875,
+            "left": 1175.984375
+          }
+        }
+      ],
+      "box": {
+        "x": 1157.390625,
+        "y": 559.234375,
+        "width": 354.796875,
+        "height": 212.078125,
+        "top": 559.234375,
+        "right": 1512.1875,
+        "bottom": 771.3125,
+        "left": 1157.390625
+      }
+    },
+    {
+      "viewportWidth": 1920,
+      "brand": "binance",
+      "layout": "utility",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355,
+      "children": [
+        {
+          "tag": "brand-identifier",
+          "rect": {
+            "x": 1547.78125,
+            "y": 574.828125,
+            "width": 323.609375,
+            "height": 18,
+            "top": 574.828125,
+            "right": 1871.390625,
+            "bottom": 592.828125,
+            "left": 1547.78125
+          }
+        },
+        {
+          "tag": "",
+          "rect": {
+            "x": 1547.78125,
+            "y": 600.828125,
+            "width": 323.609375,
+            "height": 29.5625,
+            "top": 600.828125,
+            "right": 1871.390625,
+            "bottom": 630.390625,
+            "left": 1547.78125
+          }
+        },
+        {
+          "tag": "brand-utility",
+          "rect": {
+            "x": 1547.78125,
+            "y": 638.390625,
+            "width": 323.609375,
+            "height": 83.328125,
+            "top": 638.390625,
+            "right": 1871.390625,
+            "bottom": 721.71875,
+            "left": 1547.78125
+          }
+        },
+        {
+          "tag": "brand-controls",
+          "rect": {
+            "x": 1547.78125,
+            "y": 729.71875,
+            "width": 323.609375,
+            "height": 26,
+            "top": 729.71875,
+            "right": 1871.390625,
+            "bottom": 755.71875,
+            "left": 1547.78125
+          }
+        }
+      ],
+      "box": {
+        "x": 1532.1875,
+        "y": 559.234375,
+        "width": 354.796875,
+        "height": 212.078125,
+        "top": 559.234375,
+        "right": 1886.984375,
+        "bottom": 771.3125,
+        "left": 1532.1875
+      }
+    },
+    {
+      "viewportWidth": 1920,
+      "brand": "tesla",
+      "layout": "gallery",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355,
+      "children": [
+        {
+          "tag": "brand-identifier",
+          "rect": {
+            "x": 46.921875,
+            "y": 716.234375,
+            "width": 326.953125,
+            "height": 18,
+            "top": 716.234375,
+            "right": 373.875,
+            "bottom": 734.234375,
+            "left": 46.921875
+          }
+        },
+        {
+          "tag": "",
+          "rect": {
+            "x": 46.921875,
+            "y": 747.234375,
+            "width": 326.953125,
+            "height": 19.796875,
+            "top": 747.234375,
+            "right": 373.875,
+            "bottom": 767.03125,
+            "left": 46.921875
+          }
+        },
+        {
+          "tag": "brand-gallery",
+          "rect": {
+            "x": 46.921875,
+            "y": 775.03125,
+            "width": 326.953125,
+            "height": 91.4375,
+            "top": 775.03125,
+            "right": 373.875,
+            "bottom": 866.46875,
+            "left": 46.921875
+          }
+        },
+        {
+          "tag": "brand-controls",
+          "rect": {
+            "x": 46.921875,
+            "y": 874.46875,
+            "width": 326.953125,
+            "height": 26,
+            "top": 874.46875,
+            "right": 373.875,
+            "bottom": 900.46875,
+            "left": 46.921875
+          }
+        }
+      ],
+      "box": {
+        "x": 33,
+        "y": 702.3125,
+        "width": 354.796875,
+        "height": 212.078125,
+        "top": 702.3125,
+        "right": 387.796875,
+        "bottom": 914.390625,
+        "left": 33
+      }
+    },
+    {
+      "viewportWidth": 1920,
+      "brand": "figma",
+      "layout": "editorial",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355,
+      "children": [
+        {
+          "tag": "brand-identifier",
+          "rect": {
+            "x": 423.390625,
+            "y": 717.90625,
+            "width": 323.609375,
+            "height": 18,
+            "top": 717.90625,
+            "right": 747,
+            "bottom": 735.90625,
+            "left": 423.390625
+          }
+        },
+        {
+          "tag": "",
+          "rect": {
+            "x": 423.390625,
+            "y": 771.34375,
+            "width": 165.3125,
+            "height": 66,
+            "top": 771.34375,
+            "right": 588.703125,
+            "bottom": 837.34375,
+            "left": 423.390625
+          }
+        },
+        {
+          "tag": "brand-editorial",
+          "rect": {
+            "x": 596.703125,
+            "y": 743.90625,
+            "width": 150.296875,
+            "height": 120.890625,
+            "top": 743.90625,
+            "right": 747,
+            "bottom": 864.796875,
+            "left": 596.703125
+          }
+        },
+        {
+          "tag": "brand-controls",
+          "rect": {
+            "x": 423.390625,
+            "y": 872.796875,
+            "width": 323.609375,
+            "height": 26,
+            "top": 872.796875,
+            "right": 747,
+            "bottom": 898.796875,
+            "left": 423.390625
+          }
+        }
+      ],
+      "box": {
+        "x": 407.796875,
+        "y": 702.3125,
+        "width": 354.796875,
+        "height": 212.078125,
+        "top": 702.3125,
+        "right": 762.59375,
+        "bottom": 914.390625,
+        "left": 407.796875
+      }
+    },
+    {
+      "viewportWidth": 1440,
+      "brand": "apple",
+      "layout": "gallery",
+      "height": 266,
+      "content": 266,
+      "width": 445,
+      "scrollWidth": 445,
+      "children": [
+        {
+          "tag": "brand-identifier",
+          "rect": {
+            "x": 48.59375,
+            "y": 156.75,
+            "width": 413.46875,
+            "height": 18,
+            "top": 156.75,
+            "right": 462.0625,
+            "bottom": 174.75,
+            "left": 48.59375
+          }
+        },
+        {
+          "tag": "",
+          "rect": {
+            "x": 48.59375,
+            "y": 187.75,
+            "width": 413.46875,
+            "height": 25.859375,
+            "top": 187.75,
+            "right": 462.0625,
+            "bottom": 213.609375,
+            "left": 48.59375
+          }
+        },
+        {
+          "tag": "brand-gallery",
+          "rect": {
+            "x": 48.59375,
+            "y": 221.609375,
+            "width": 413.46875,
+            "height": 135.9375,
+            "top": 221.609375,
+            "right": 462.0625,
+            "bottom": 357.546875,
+            "left": 48.59375
+          }
+        },
+        {
+          "tag": "brand-controls",
+          "rect": {
+            "x": 48.59375,
+            "y": 365.546875,
+            "width": 413.46875,
+            "height": 26,
+            "top": 365.546875,
+            "right": 462.0625,
+            "bottom": 391.546875,
+            "left": 48.59375
+          }
+        }
+      ],
+      "box": {
+        "x": 33,
+        "y": 141.15625,
+        "width": 444.65625,
+        "height": 265.984375,
+        "top": 141.15625,
+        "right": 477.65625,
+        "bottom": 407.140625,
+        "left": 33
+      }
+    },
+    {
+      "viewportWidth": 1440,
+      "brand": "airbnb",
+      "layout": "marketplace",
+      "height": 266,
+      "content": 266,
+      "width": 445,
+      "scrollWidth": 445,
+      "children": [
+        {
+          "tag": "brand-identifier",
+          "rect": {
+            "x": 513.25,
+            "y": 156.75,
+            "width": 413.484375,
+            "height": 18,
+            "top": 156.75,
+            "right": 926.734375,
+            "bottom": 174.75,
+            "left": 513.25
+          }
+        },
+        {
+          "tag": "",
+          "rect": {
+            "x": 513.25,
+            "y": 182.75,
+            "width": 413.484375,
+            "height": 19.796875,
+            "top": 182.75,
+            "right": 926.734375,
+            "bottom": 202.546875,
+            "left": 513.25
+          }
+        },
+        {
+          "tag": "brand-search",
+          "rect": {
+            "x": 513.25,
+            "y": 245.546875,
+            "width": 413.484375,
+            "height": 42,
+            "top": 245.546875,
+            "right": 926.734375,
+            "bottom": 287.546875,
+            "left": 513.25
+          }
+        },
+        {
+          "tag": "brand-controls",
+          "rect": {
+            "x": 513.25,
+            "y": 365.5625,
+            "width": 413.484375,
+            "height": 26,
+            "top": 365.5625,
+            "right": 926.734375,
+            "bottom": 391.5625,
+            "left": 513.25
+          }
+        }
+      ],
+      "box": {
+        "x": 497.65625,
+        "y": 141.15625,
+        "width": 444.671875,
+        "height": 266,
+        "top": 141.15625,
+        "right": 942.328125,
+        "bottom": 407.15625,
+        "left": 497.65625
+      }
+    },
+    {
+      "viewportWidth": 1440,
+      "brand": "notion",
+      "layout": "product",
+      "height": 266,
+      "content": 266,
+      "width": 445,
+      "scrollWidth": 445,
+      "children": [
+        {
+          "tag": "brand-identifier",
+          "rect": {
+            "x": 977.921875,
+            "y": 156.75,
+            "width": 413.46875,
+            "height": 18,
+            "top": 156.75,
+            "right": 1391.390625,
+            "bottom": 174.75,
+            "left": 977.921875
+          }
+        },
+        {
+          "tag": "",
+          "rect": {
+            "x": 977.921875,
+            "y": 182.75,
+            "width": 413.46875,
+            "height": 36.953125,
+            "top": 182.75,
+            "right": 1391.390625,
+            "bottom": 219.703125,
+            "left": 977.921875
+          }
+        },
+        {
+          "tag": "brand-product brand-product-tiles",
+          "rect": {
+            "x": 977.921875,
+            "y": 227.703125,
+            "width": 413.46875,
+            "height": 129.84375,
+            "top": 227.703125,
+            "right": 1391.390625,
+            "bottom": 357.546875,
+            "left": 977.921875
+          }
+        },
+        {
+          "tag": "brand-controls",
+          "rect": {
+            "x": 977.921875,
+            "y": 365.546875,
+            "width": 413.46875,
+            "height": 26,
+            "top": 365.546875,
+            "right": 1391.390625,
+            "bottom": 391.546875,
+            "left": 977.921875
+          }
+        }
+      ],
+      "box": {
+        "x": 962.328125,
+        "y": 141.15625,
+        "width": 444.65625,
+        "height": 265.984375,
+        "top": 141.15625,
+        "right": 1406.984375,
+        "bottom": 407.140625,
+        "left": 962.328125
+      }
+    },
+    {
+      "viewportWidth": 1440,
+      "brand": "linear.app",
+      "layout": "product",
+      "height": 266,
+      "content": 266,
+      "width": 445,
+      "scrollWidth": 445,
+      "children": [
+        {
+          "tag": "brand-identifier",
+          "rect": {
+            "x": 48.59375,
+            "y": 583.75,
+            "width": 413.46875,
+            "height": 18,
+            "top": 583.75,
+            "right": 462.0625,
+            "bottom": 601.75,
+            "left": 48.59375
+          }
+        },
+        {
+          "tag": "",
+          "rect": {
+            "x": 48.59375,
+            "y": 609.75,
+            "width": 413.46875,
+            "height": 36.953125,
+            "top": 609.75,
+            "right": 462.0625,
+            "bottom": 646.703125,
+            "left": 48.59375
+          }
+        },
+        {
+          "tag": "brand-product ",
+          "rect": {
+            "x": 48.59375,
+            "y": 654.703125,
+            "width": 413.46875,
+            "height": 129.84375,
+            "top": 654.703125,
+            "right": 462.0625,
+            "bottom": 784.546875,
+            "left": 48.59375
+          }
+        },
+        {
+          "tag": "brand-controls",
+          "rect": {
+            "x": 48.59375,
+            "y": 792.546875,
+            "width": 413.46875,
+            "height": 26,
+            "top": 792.546875,
+            "right": 462.0625,
+            "bottom": 818.546875,
+            "left": 48.59375
+          }
+        }
+      ],
+      "box": {
+        "x": 33,
+        "y": 568.15625,
+        "width": 444.65625,
+        "height": 265.984375,
+        "top": 568.15625,
+        "right": 477.65625,
+        "bottom": 834.140625,
+        "left": 33
+      }
+    },
+    {
+      "viewportWidth": 1440,
+      "brand": "stripe",
+      "layout": "editorial",
+      "height": 266,
+      "content": 266,
+      "width": 445,
+      "scrollWidth": 445,
+      "children": [
+        {
+          "tag": "brand-identifier",
+          "rect": {
+            "x": 513.25,
+            "y": 583.75,
+            "width": 413.484375,
+            "height": 18,
+            "top": 583.75,
+            "right": 926.734375,
+            "bottom": 601.75,
+            "left": 513.25
+          }
+        },
+        {
+          "tag": "",
+          "rect": {
+            "x": 513.25,
+            "y": 684.828125,
+            "width": 212.390625,
+            "height": 24.640625,
+            "top": 684.828125,
+            "right": 725.640625,
+            "bottom": 709.46875,
+            "left": 513.25
+          }
+        },
+        {
+          "tag": "brand-editorial",
+          "rect": {
+            "x": 733.640625,
+            "y": 609.75,
+            "width": 193.09375,
+            "height": 174.8125,
+            "top": 609.75,
+            "right": 926.734375,
+            "bottom": 784.5625,
+            "left": 733.640625
+          }
+        },
+        {
+          "tag": "brand-controls",
+          "rect": {
+            "x": 513.25,
+            "y": 792.5625,
+            "width": 413.484375,
+            "height": 26,
+            "top": 792.5625,
+            "right": 926.734375,
+            "bottom": 818.5625,
+            "left": 513.25
+          }
+        }
+      ],
+      "box": {
+        "x": 497.65625,
+        "y": 568.15625,
+        "width": 444.671875,
+        "height": 266,
+        "top": 568.15625,
+        "right": 942.328125,
+        "bottom": 834.15625,
+        "left": 497.65625
+      }
+    },
+    {
+      "viewportWidth": 1440,
+      "brand": "vercel",
+      "layout": "developer",
+      "height": 266,
+      "content": 266,
+      "width": 445,
+      "scrollWidth": 445,
+      "children": [
+        {
+          "tag": "brand-identifier",
+          "rect": {
+            "x": 977.921875,
+            "y": 583.75,
+            "width": 413.46875,
+            "height": 18,
+            "top": 583.75,
+            "right": 1391.390625,
+            "bottom": 601.75,
+            "left": 977.921875
+          }
+        },
+        {
+          "tag": "",
+          "rect": {
+            "x": 977.921875,
+            "y": 609.75,
+            "width": 413.46875,
+            "height": 22.171875,
+            "top": 609.75,
+            "right": 1391.390625,
+            "bottom": 631.921875,
+            "left": 977.921875
+          }
+        },
+        {
+          "tag": "brand-developer",
+          "rect": {
+            "x": 977.921875,
+            "y": 639.921875,
+            "width": 413.46875,
+            "height": 144.625,
+            "top": 639.921875,
+            "right": 1391.390625,
+            "bottom": 784.546875,
+            "left": 977.921875
+          }
+        },
+        {
+          "tag": "brand-controls",
+          "rect": {
+            "x": 977.921875,
+            "y": 792.546875,
+            "width": 413.46875,
+            "height": 26,
+            "top": 792.546875,
+            "right": 1391.390625,
+            "bottom": 818.546875,
+            "left": 977.921875
+          }
+        }
+      ],
+      "box": {
+        "x": 962.328125,
+        "y": 568.15625,
+        "width": 444.65625,
+        "height": 265.984375,
+        "top": 568.15625,
+        "right": 1406.984375,
+        "bottom": 834.140625,
+        "left": 962.328125
+      }
+    },
+    {
+      "viewportWidth": 1440,
+      "brand": "spotify",
+      "layout": "media",
+      "height": 266,
+      "content": 266,
+      "width": 445,
+      "scrollWidth": 445,
+      "children": [
+        {
+          "tag": "brand-identifier",
+          "rect": {
+            "x": 46,
+            "y": 342.140625,
+            "width": 418.65625,
+            "height": 18,
+            "top": 342.140625,
+            "right": 464.65625,
+            "bottom": 360.140625,
+            "left": 46
+          }
+        },
+        {
+          "tag": "",
+          "rect": {
+            "x": 46,
+            "y": 368.140625,
+            "width": 418.65625,
+            "height": 19.796875,
+            "top": 368.140625,
+            "right": 464.65625,
+            "bottom": 387.9375,
+            "left": 46
+          }
+        },
+        {
+          "tag": "brand-media",
+          "rect": {
+            "x": 46,
+            "y": 395.9375,
+            "width": 418.65625,
+            "height": 152.1875,
+            "top": 395.9375,
+            "right": 464.65625,
+            "bottom": 548.125,
+            "left": 46
+          }
+        },
+        {
+          "tag": "brand-controls",
+          "rect": {
+            "x": 46,
+            "y": 556.125,
+            "width": 418.65625,
+            "height": 26,
+            "top": 556.125,
+            "right": 464.65625,
+            "bottom": 582.125,
+            "left": 46
+          }
+        }
+      ],
+      "box": {
+        "x": 33,
+        "y": 329.140625,
+        "width": 444.65625,
+        "height": 265.984375,
+        "top": 329.140625,
+        "right": 477.65625,
+        "bottom": 595.125,
+        "left": 33
+      }
+    },
+    {
+      "viewportWidth": 1440,
+      "brand": "ferrari",
+      "layout": "cinematic",
+      "height": 266,
+      "content": 266,
+      "width": 445,
+      "scrollWidth": 445,
+      "children": [
+        {
+          "tag": "brand-identifier",
+          "rect": {
+            "x": 513.25,
+            "y": 344.734375,
+            "width": 413.484375,
+            "height": 18,
+            "top": 344.734375,
+            "right": 926.734375,
+            "bottom": 362.734375,
+            "left": 513.25
+          }
+        },
+        {
+          "tag": "",
+          "rect": {
+            "x": 513.25,
+            "y": 370.734375,
+            "width": 413.484375,
+            "height": 36.953125,
+            "top": 370.734375,
+            "right": 926.734375,
+            "bottom": 407.6875,
+            "left": 513.25
+          }
+        },
+        {
+          "tag": "brand-image-space",
+          "rect": {
+            "x": 513.25,
+            "y": 415.6875,
+            "width": 413.484375,
+            "height": 129.859375,
+            "top": 415.6875,
+            "right": 926.734375,
+            "bottom": 545.546875,
+            "left": 513.25
+          }
+        },
+        {
+          "tag": "brand-controls",
+          "rect": {
+            "x": 513.25,
+            "y": 553.546875,
+            "width": 413.484375,
+            "height": 26,
+            "top": 553.546875,
+            "right": 926.734375,
+            "bottom": 579.546875,
+            "left": 513.25
+          }
+        }
+      ],
+      "box": {
+        "x": 497.65625,
+        "y": 329.140625,
+        "width": 444.671875,
+        "height": 266,
+        "top": 329.140625,
+        "right": 942.328125,
+        "bottom": 595.140625,
+        "left": 497.65625
+      }
+    },
+    {
+      "viewportWidth": 1440,
+      "brand": "nintendo-2001",
+      "layout": "retro",
+      "height": 266,
+      "content": 260,
+      "width": 445,
+      "scrollWidth": 445,
+      "children": [
+        {
+          "tag": "brand-identifier",
+          "rect": {
+            "x": 980.921875,
+            "y": 347.734375,
+            "width": 407.46875,
+            "height": 18,
+            "top": 347.734375,
+            "right": 1388.390625,
+            "bottom": 365.734375,
+            "left": 980.921875
+          }
+        },
+        {
+          "tag": "",
+          "rect": {
+            "x": 980.921875,
+            "y": 373.734375,
+            "width": 407.46875,
+            "height": 20.328125,
+            "top": 373.734375,
+            "right": 1388.390625,
+            "bottom": 394.0625,
+            "left": 980.921875
+          }
+        },
+        {
+          "tag": "brand-retro-panel",
+          "rect": {
+            "x": 980.921875,
+            "y": 402.0625,
+            "width": 407.46875,
+            "height": 137.46875,
+            "top": 402.0625,
+            "right": 1388.390625,
+            "bottom": 539.53125,
+            "left": 980.921875
+          }
+        },
+        {
+          "tag": "brand-controls",
+          "rect": {
+            "x": 980.921875,
+            "y": 547.53125,
+            "width": 407.46875,
+            "height": 29,
+            "top": 547.53125,
+            "right": 1388.390625,
+            "bottom": 576.53125,
+            "left": 980.921875
+          }
+        }
+      ],
+      "box": {
+        "x": 962.328125,
+        "y": 329.140625,
+        "width": 444.65625,
+        "height": 265.984375,
+        "top": 329.140625,
+        "right": 1406.984375,
+        "bottom": 595.125,
+        "left": 962.328125
+      }
+    },
+    {
+      "viewportWidth": 1440,
+      "brand": "binance",
+      "layout": "utility",
+      "height": 266,
+      "content": 266,
+      "width": 445,
+      "scrollWidth": 445,
+      "children": [
+        {
+          "tag": "brand-identifier",
+          "rect": {
+            "x": 48.59375,
+            "y": 583.71875,
+            "width": 413.46875,
+            "height": 18,
+            "top": 583.71875,
+            "right": 462.0625,
+            "bottom": 601.71875,
+            "left": 48.59375
+          }
+        },
+        {
+          "tag": "",
+          "rect": {
+            "x": 48.59375,
+            "y": 609.71875,
+            "width": 413.46875,
+            "height": 29.5625,
+            "top": 609.71875,
+            "right": 462.0625,
+            "bottom": 639.28125,
+            "left": 48.59375
+          }
+        },
+        {
+          "tag": "brand-utility",
+          "rect": {
+            "x": 48.59375,
+            "y": 647.28125,
+            "width": 413.46875,
+            "height": 137.234375,
+            "top": 647.28125,
+            "right": 462.0625,
+            "bottom": 784.515625,
+            "left": 48.59375
+          }
+        },
+        {
+          "tag": "brand-controls",
+          "rect": {
+            "x": 48.59375,
+            "y": 792.515625,
+            "width": 413.46875,
+            "height": 26,
+            "top": 792.515625,
+            "right": 462.0625,
+            "bottom": 818.515625,
+            "left": 48.59375
+          }
+        }
+      ],
+      "box": {
+        "x": 33,
+        "y": 568.125,
+        "width": 444.65625,
+        "height": 265.984375,
+        "top": 568.125,
+        "right": 477.65625,
+        "bottom": 834.109375,
+        "left": 33
+      }
+    },
+    {
+      "viewportWidth": 1440,
+      "brand": "tesla",
+      "layout": "gallery",
+      "height": 266,
+      "content": 266,
+      "width": 445,
+      "scrollWidth": 445,
+      "children": [
+        {
+          "tag": "brand-identifier",
+          "rect": {
+            "x": 511.578125,
+            "y": 582.03125,
+            "width": 416.828125,
+            "height": 18,
+            "top": 582.03125,
+            "right": 928.40625,
+            "bottom": 600.03125,
+            "left": 511.578125
+          }
+        },
+        {
+          "tag": "",
+          "rect": {
+            "x": 511.578125,
+            "y": 613.03125,
+            "width": 416.828125,
+            "height": 19.796875,
+            "top": 613.03125,
+            "right": 928.40625,
+            "bottom": 632.828125,
+            "left": 511.578125
+          }
+        },
+        {
+          "tag": "brand-gallery",
+          "rect": {
+            "x": 511.578125,
+            "y": 640.828125,
+            "width": 416.828125,
+            "height": 145.359375,
+            "top": 640.828125,
+            "right": 928.40625,
+            "bottom": 786.1875,
+            "left": 511.578125
+          }
+        },
+        {
+          "tag": "brand-controls",
+          "rect": {
+            "x": 511.578125,
+            "y": 794.1875,
+            "width": 416.828125,
+            "height": 26,
+            "top": 794.1875,
+            "right": 928.40625,
+            "bottom": 820.1875,
+            "left": 511.578125
+          }
+        }
+      ],
+      "box": {
+        "x": 497.65625,
+        "y": 568.109375,
+        "width": 444.671875,
+        "height": 266,
+        "top": 568.109375,
+        "right": 942.328125,
+        "bottom": 834.109375,
+        "left": 497.65625
+      }
+    },
+    {
+      "viewportWidth": 1440,
+      "brand": "figma",
+      "layout": "editorial",
+      "height": 266,
+      "content": 266,
+      "width": 445,
+      "scrollWidth": 445,
+      "children": [
+        {
+          "tag": "brand-identifier",
+          "rect": {
+            "x": 977.921875,
+            "y": 583.703125,
+            "width": 413.46875,
+            "height": 18,
+            "top": 583.703125,
+            "right": 1391.390625,
+            "bottom": 601.703125,
+            "left": 977.921875
+          }
+        },
+        {
+          "tag": "",
+          "rect": {
+            "x": 977.921875,
+            "y": 664.09375,
+            "width": 212.375,
+            "height": 66,
+            "top": 664.09375,
+            "right": 1190.296875,
+            "bottom": 730.09375,
+            "left": 977.921875
+          }
+        },
+        {
+          "tag": "brand-editorial",
+          "rect": {
+            "x": 1198.296875,
+            "y": 609.703125,
+            "width": 193.09375,
+            "height": 174.796875,
+            "top": 609.703125,
+            "right": 1391.390625,
+            "bottom": 784.5,
+            "left": 1198.296875
+          }
+        },
+        {
+          "tag": "brand-controls",
+          "rect": {
+            "x": 977.921875,
+            "y": 792.5,
+            "width": 413.46875,
+            "height": 26,
+            "top": 792.5,
+            "right": 1391.390625,
+            "bottom": 818.5,
+            "left": 977.921875
+          }
+        }
+      ],
+      "box": {
+        "x": 962.328125,
+        "y": 568.109375,
+        "width": 444.65625,
+        "height": 265.984375,
+        "top": 568.109375,
+        "right": 1406.984375,
+        "bottom": 834.09375,
+        "left": 962.328125
+      }
+    },
+    {
+      "viewportWidth": 390,
+      "brand": "apple",
+      "layout": "gallery",
+      "height": 208,
+      "content": 208,
+      "width": 348,
+      "scrollWidth": 348,
+      "children": [
+        {
+          "tag": "brand-identifier",
+          "rect": {
+            "x": 36.59375,
+            "y": 192.75,
+            "width": 316.8125,
+            "height": 18,
+            "top": 192.75,
+            "right": 353.40625,
+            "bottom": 210.75,
+            "left": 36.59375
+          }
+        },
+        {
+          "tag": "",
+          "rect": {
+            "x": 36.59375,
+            "y": 223.75,
+            "width": 316.8125,
+            "height": 25.859375,
+            "top": 223.75,
+            "right": 353.40625,
+            "bottom": 249.609375,
+            "left": 36.59375
+          }
+        },
+        {
+          "tag": "brand-gallery",
+          "rect": {
+            "x": 36.59375,
+            "y": 257.609375,
+            "width": 316.8125,
+            "height": 77.953125,
+            "top": 257.609375,
+            "right": 353.40625,
+            "bottom": 335.5625,
+            "left": 36.59375
+          }
+        },
+        {
+          "tag": "brand-controls",
+          "rect": {
+            "x": 36.59375,
+            "y": 343.5625,
+            "width": 316.8125,
+            "height": 26,
+            "top": 343.5625,
+            "right": 353.40625,
+            "bottom": 369.5625,
+            "left": 36.59375
+          }
+        }
+      ],
+      "box": {
+        "x": 21,
+        "y": 177.15625,
+        "width": 348,
+        "height": 208,
+        "top": 177.15625,
+        "right": 369,
+        "bottom": 385.15625,
+        "left": 21
+      }
+    },
+    {
+      "viewportWidth": 390,
+      "brand": "airbnb",
+      "layout": "marketplace",
+      "height": 208,
+      "content": 208,
+      "width": 348,
+      "scrollWidth": 348,
+      "children": [
+        {
+          "tag": "brand-identifier",
+          "rect": {
+            "x": 36.59375,
+            "y": 464.75,
+            "width": 316.8125,
+            "height": 18,
+            "top": 464.75,
+            "right": 353.40625,
+            "bottom": 482.75,
+            "left": 36.59375
+          }
+        },
+        {
+          "tag": "",
+          "rect": {
+            "x": 36.59375,
+            "y": 490.75,
+            "width": 316.8125,
+            "height": 19.796875,
+            "top": 490.75,
+            "right": 353.40625,
+            "bottom": 510.546875,
+            "left": 36.59375
+          }
+        },
+        {
+          "tag": "brand-search",
+          "rect": {
+            "x": 36.59375,
+            "y": 534.21875,
+            "width": 316.8125,
+            "height": 42,
+            "top": 534.21875,
+            "right": 353.40625,
+            "bottom": 576.21875,
+            "left": 36.59375
+          }
+        },
+        {
+          "tag": "brand-controls",
+          "rect": {
+            "x": 36.59375,
+            "y": 615.5625,
+            "width": 316.8125,
+            "height": 26,
+            "top": 615.5625,
+            "right": 353.40625,
+            "bottom": 641.5625,
+            "left": 36.59375
+          }
+        }
+      ],
+      "box": {
+        "x": 21,
+        "y": 449.15625,
+        "width": 348,
+        "height": 208,
+        "top": 449.15625,
+        "right": 369,
+        "bottom": 657.15625,
+        "left": 21
+      }
+    },
+    {
+      "viewportWidth": 390,
+      "brand": "notion",
+      "layout": "product",
+      "height": 208,
+      "content": 208,
+      "width": 348,
+      "scrollWidth": 348,
+      "children": [
+        {
+          "tag": "brand-identifier",
+          "rect": {
+            "x": 36.59375,
+            "y": 232.75,
+            "width": 316.8125,
+            "height": 18,
+            "top": 232.75,
+            "right": 353.40625,
+            "bottom": 250.75,
+            "left": 36.59375
+          }
+        },
+        {
+          "tag": "",
+          "rect": {
+            "x": 36.59375,
+            "y": 258.75,
+            "width": 316.8125,
+            "height": 36.953125,
+            "top": 258.75,
+            "right": 353.40625,
+            "bottom": 295.703125,
+            "left": 36.59375
+          }
+        },
+        {
+          "tag": "brand-product brand-product-tiles",
+          "rect": {
+            "x": 36.59375,
+            "y": 303.703125,
+            "width": 316.8125,
+            "height": 71.859375,
+            "top": 303.703125,
+            "right": 353.40625,
+            "bottom": 375.5625,
+            "left": 36.59375
+          }
+        },
+        {
+          "tag": "brand-controls",
+          "rect": {
+            "x": 36.59375,
+            "y": 383.5625,
+            "width": 316.8125,
+            "height": 26,
+            "top": 383.5625,
+            "right": 353.40625,
+            "bottom": 409.5625,
+            "left": 36.59375
+          }
+        }
+      ],
+      "box": {
+        "x": 21,
+        "y": 217.15625,
+        "width": 348,
+        "height": 208,
+        "top": 217.15625,
+        "right": 369,
+        "bottom": 425.15625,
+        "left": 21
+      }
+    },
+    {
+      "viewportWidth": 390,
+      "brand": "linear.app",
+      "layout": "product",
+      "height": 208,
+      "content": 208,
+      "width": 348,
+      "scrollWidth": 348,
+      "children": [
+        {
+          "tag": "brand-identifier",
+          "rect": {
+            "x": 36.59375,
+            "y": 485.75,
+            "width": 316.8125,
+            "height": 18,
+            "top": 485.75,
+            "right": 353.40625,
+            "bottom": 503.75,
+            "left": 36.59375
+          }
+        },
+        {
+          "tag": "",
+          "rect": {
+            "x": 36.59375,
+            "y": 511.75,
+            "width": 316.8125,
+            "height": 36.953125,
+            "top": 511.75,
+            "right": 353.40625,
+            "bottom": 548.703125,
+            "left": 36.59375
+          }
+        },
+        {
+          "tag": "brand-product ",
+          "rect": {
+            "x": 36.59375,
+            "y": 556.703125,
+            "width": 316.8125,
+            "height": 71.859375,
+            "top": 556.703125,
+            "right": 353.40625,
+            "bottom": 628.5625,
+            "left": 36.59375
+          }
+        },
+        {
+          "tag": "brand-controls",
+          "rect": {
+            "x": 36.59375,
+            "y": 636.5625,
+            "width": 316.8125,
+            "height": 26,
+            "top": 636.5625,
+            "right": 353.40625,
+            "bottom": 662.5625,
+            "left": 36.59375
+          }
+        }
+      ],
+      "box": {
+        "x": 21,
+        "y": 470.15625,
+        "width": 348,
+        "height": 208,
+        "top": 470.15625,
+        "right": 369,
+        "bottom": 678.15625,
+        "left": 21
+      }
+    },
+    {
+      "viewportWidth": 390,
+      "brand": "stripe",
+      "layout": "editorial",
+      "height": 208,
+      "content": 208,
+      "width": 348,
+      "scrollWidth": 348,
+      "children": [
+        {
+          "tag": "brand-identifier",
+          "rect": {
+            "x": 36.59375,
+            "y": 304.75,
+            "width": 316.8125,
+            "height": 18,
+            "top": 304.75,
+            "right": 353.40625,
+            "bottom": 322.75,
+            "left": 36.59375
+          }
+        },
+        {
+          "tag": "",
+          "rect": {
+            "x": 36.59375,
+            "y": 364.515625,
+            "width": 161.75,
+            "height": 49.28125,
+            "top": 364.515625,
+            "right": 198.34375,
+            "bottom": 413.796875,
+            "left": 36.59375
+          }
+        },
+        {
+          "tag": "brand-editorial",
+          "rect": {
+            "x": 206.34375,
+            "y": 330.75,
+            "width": 147.0625,
+            "height": 116.8125,
+            "top": 330.75,
+            "right": 353.40625,
+            "bottom": 447.5625,
+            "left": 206.34375
+          }
+        },
+        {
+          "tag": "brand-controls",
+          "rect": {
+            "x": 36.59375,
+            "y": 455.5625,
+            "width": 316.8125,
+            "height": 26,
+            "top": 455.5625,
+            "right": 353.40625,
+            "bottom": 481.5625,
+            "left": 36.59375
+          }
+        }
+      ],
+      "box": {
+        "x": 21,
+        "y": 289.15625,
+        "width": 348,
+        "height": 208,
+        "top": 289.15625,
+        "right": 369,
+        "bottom": 497.15625,
+        "left": 21
+      }
+    },
+    {
+      "viewportWidth": 390,
+      "brand": "vercel",
+      "layout": "developer",
+      "height": 208,
+      "content": 208,
+      "width": 348,
+      "scrollWidth": 348,
+      "children": [
+        {
+          "tag": "brand-identifier",
+          "rect": {
+            "x": 36.59375,
+            "y": 485.75,
+            "width": 316.8125,
+            "height": 18,
+            "top": 485.75,
+            "right": 353.40625,
+            "bottom": 503.75,
+            "left": 36.59375
+          }
+        },
+        {
+          "tag": "",
+          "rect": {
+            "x": 36.59375,
+            "y": 511.75,
+            "width": 316.8125,
+            "height": 22.171875,
+            "top": 511.75,
+            "right": 353.40625,
+            "bottom": 533.921875,
+            "left": 36.59375
+          }
+        },
+        {
+          "tag": "brand-developer",
+          "rect": {
+            "x": 36.59375,
+            "y": 541.921875,
+            "width": 316.8125,
+            "height": 86.640625,
+            "top": 541.921875,
+            "right": 353.40625,
+            "bottom": 628.5625,
+            "left": 36.59375
+          }
+        },
+        {
+          "tag": "brand-controls",
+          "rect": {
+            "x": 36.59375,
+            "y": 636.5625,
+            "width": 316.8125,
+            "height": 26,
+            "top": 636.5625,
+            "right": 353.40625,
+            "bottom": 662.5625,
+            "left": 36.59375
+          }
+        }
+      ],
+      "box": {
+        "x": 21,
+        "y": 470.15625,
+        "width": 348,
+        "height": 208,
+        "top": 470.15625,
+        "right": 369,
+        "bottom": 678.15625,
+        "left": 21
+      }
+    },
+    {
+      "viewportWidth": 390,
+      "brand": "spotify",
+      "layout": "media",
+      "height": 208,
+      "content": 208,
+      "width": 348,
+      "scrollWidth": 348,
+      "children": [
+        {
+          "tag": "brand-identifier",
+          "rect": {
+            "x": 34,
+            "y": 265.15625,
+            "width": 322,
+            "height": 18,
+            "top": 265.15625,
+            "right": 356,
+            "bottom": 283.15625,
+            "left": 34
+          }
+        },
+        {
+          "tag": "",
+          "rect": {
+            "x": 34,
+            "y": 291.15625,
+            "width": 322,
+            "height": 19.796875,
+            "top": 291.15625,
+            "right": 356,
+            "bottom": 310.953125,
+            "left": 34
+          }
+        },
+        {
+          "tag": "brand-media",
+          "rect": {
+            "x": 34,
+            "y": 318.953125,
+            "width": 322,
+            "height": 94.203125,
+            "top": 318.953125,
+            "right": 356,
+            "bottom": 413.15625,
+            "left": 34
+          }
+        },
+        {
+          "tag": "brand-controls",
+          "rect": {
+            "x": 34,
+            "y": 421.15625,
+            "width": 322,
+            "height": 26,
+            "top": 421.15625,
+            "right": 356,
+            "bottom": 447.15625,
+            "left": 34
+          }
+        }
+      ],
+      "box": {
+        "x": 21,
+        "y": 252.15625,
+        "width": 348,
+        "height": 208,
+        "top": 252.15625,
+        "right": 369,
+        "bottom": 460.15625,
+        "left": 21
+      }
+    },
+    {
+      "viewportWidth": 390,
+      "brand": "ferrari",
+      "layout": "cinematic",
+      "height": 208,
+      "content": 208,
+      "width": 348,
+      "scrollWidth": 348,
+      "children": [
+        {
+          "tag": "brand-identifier",
+          "rect": {
+            "x": 36.59375,
+            "y": 503.75,
+            "width": 316.8125,
+            "height": 18,
+            "top": 503.75,
+            "right": 353.40625,
+            "bottom": 521.75,
+            "left": 36.59375
+          }
+        },
+        {
+          "tag": "",
+          "rect": {
+            "x": 36.59375,
+            "y": 529.75,
+            "width": 316.8125,
+            "height": 36.953125,
+            "top": 529.75,
+            "right": 353.40625,
+            "bottom": 566.703125,
+            "left": 36.59375
+          }
+        },
+        {
+          "tag": "brand-image-space",
+          "rect": {
+            "x": 36.59375,
+            "y": 574.703125,
+            "width": 316.8125,
+            "height": 71.859375,
+            "top": 574.703125,
+            "right": 353.40625,
+            "bottom": 646.5625,
+            "left": 36.59375
+          }
+        },
+        {
+          "tag": "brand-controls",
+          "rect": {
+            "x": 36.59375,
+            "y": 654.5625,
+            "width": 316.8125,
+            "height": 26,
+            "top": 654.5625,
+            "right": 353.40625,
+            "bottom": 680.5625,
+            "left": 36.59375
+          }
+        }
+      ],
+      "box": {
+        "x": 21,
+        "y": 488.15625,
+        "width": 348,
+        "height": 208,
+        "top": 488.15625,
+        "right": 369,
+        "bottom": 696.15625,
+        "left": 21
+      }
+    },
+    {
+      "viewportWidth": 390,
+      "brand": "nintendo-2001",
+      "layout": "retro",
+      "height": 208,
+      "content": 202,
+      "width": 348,
+      "scrollWidth": 348,
+      "children": [
+        {
+          "tag": "brand-identifier",
+          "rect": {
+            "x": 39.59375,
+            "y": 253.75,
+            "width": 310.8125,
+            "height": 18,
+            "top": 253.75,
+            "right": 350.40625,
+            "bottom": 271.75,
+            "left": 39.59375
+          }
+        },
+        {
+          "tag": "",
+          "rect": {
+            "x": 39.59375,
+            "y": 279.75,
+            "width": 310.8125,
+            "height": 20.328125,
+            "top": 279.75,
+            "right": 350.40625,
+            "bottom": 300.078125,
+            "left": 39.59375
+          }
+        },
+        {
+          "tag": "brand-retro-panel",
+          "rect": {
+            "x": 39.59375,
+            "y": 308.078125,
+            "width": 310.8125,
+            "height": 79.484375,
+            "top": 308.078125,
+            "right": 350.40625,
+            "bottom": 387.5625,
+            "left": 39.59375
+          }
+        },
+        {
+          "tag": "brand-controls",
+          "rect": {
+            "x": 39.59375,
+            "y": 395.5625,
+            "width": 310.8125,
+            "height": 29,
+            "top": 395.5625,
+            "right": 350.40625,
+            "bottom": 424.5625,
+            "left": 39.59375
+          }
+        }
+      ],
+      "box": {
+        "x": 21,
+        "y": 235.15625,
+        "width": 348,
+        "height": 208,
+        "top": 235.15625,
+        "right": 369,
+        "bottom": 443.15625,
+        "left": 21
+      }
+    },
+    {
+      "viewportWidth": 390,
+      "brand": "binance",
+      "layout": "utility",
+      "height": 208,
+      "content": 208,
+      "width": 348,
+      "scrollWidth": 348,
+      "children": [
+        {
+          "tag": "brand-identifier",
+          "rect": {
+            "x": 36.59375,
+            "y": 485.75,
+            "width": 316.8125,
+            "height": 18,
+            "top": 485.75,
+            "right": 353.40625,
+            "bottom": 503.75,
+            "left": 36.59375
+          }
+        },
+        {
+          "tag": "",
+          "rect": {
+            "x": 36.59375,
+            "y": 511.75,
+            "width": 316.8125,
+            "height": 29.5625,
+            "top": 511.75,
+            "right": 353.40625,
+            "bottom": 541.3125,
+            "left": 36.59375
+          }
+        },
+        {
+          "tag": "brand-utility",
+          "rect": {
+            "x": 36.59375,
+            "y": 549.3125,
+            "width": 316.8125,
+            "height": 79.25,
+            "top": 549.3125,
+            "right": 353.40625,
+            "bottom": 628.5625,
+            "left": 36.59375
+          }
+        },
+        {
+          "tag": "brand-controls",
+          "rect": {
+            "x": 36.59375,
+            "y": 636.5625,
+            "width": 316.8125,
+            "height": 26,
+            "top": 636.5625,
+            "right": 353.40625,
+            "bottom": 662.5625,
+            "left": 36.59375
+          }
+        }
+      ],
+      "box": {
+        "x": 21,
+        "y": 470.15625,
+        "width": 348,
+        "height": 208,
+        "top": 470.15625,
+        "right": 369,
+        "bottom": 678.15625,
+        "left": 21
+      }
+    },
+    {
+      "viewportWidth": 390,
+      "brand": "tesla",
+      "layout": "gallery",
+      "height": 208,
+      "content": 208,
+      "width": 348,
+      "scrollWidth": 348,
+      "children": [
+        {
+          "tag": "brand-identifier",
+          "rect": {
+            "x": 34.921875,
+            "y": 285.078125,
+            "width": 320.15625,
+            "height": 18,
+            "top": 285.078125,
+            "right": 355.078125,
+            "bottom": 303.078125,
+            "left": 34.921875
+          }
+        },
+        {
+          "tag": "",
+          "rect": {
+            "x": 34.921875,
+            "y": 316.078125,
+            "width": 320.15625,
+            "height": 19.796875,
+            "top": 316.078125,
+            "right": 355.078125,
+            "bottom": 335.875,
+            "left": 34.921875
+          }
+        },
+        {
+          "tag": "brand-gallery",
+          "rect": {
+            "x": 34.921875,
+            "y": 343.875,
+            "width": 320.15625,
+            "height": 87.359375,
+            "top": 343.875,
+            "right": 355.078125,
+            "bottom": 431.234375,
+            "left": 34.921875
+          }
+        },
+        {
+          "tag": "brand-controls",
+          "rect": {
+            "x": 34.921875,
+            "y": 439.234375,
+            "width": 320.15625,
+            "height": 26,
+            "top": 439.234375,
+            "right": 355.078125,
+            "bottom": 465.234375,
+            "left": 34.921875
+          }
+        }
+      ],
+      "box": {
+        "x": 21,
+        "y": 271.15625,
+        "width": 348,
+        "height": 208,
+        "top": 271.15625,
+        "right": 369,
+        "bottom": 479.15625,
+        "left": 21
+      }
+    },
+    {
+      "viewportWidth": 390,
+      "brand": "figma",
+      "layout": "editorial",
+      "height": 208,
+      "content": 208,
+      "width": 348,
+      "scrollWidth": 348,
+      "children": [
+        {
+          "tag": "brand-identifier",
+          "rect": {
+            "x": 36.59375,
+            "y": 503.75,
+            "width": 316.8125,
+            "height": 18,
+            "top": 503.75,
+            "right": 353.40625,
+            "bottom": 521.75,
+            "left": 36.59375
+          }
+        },
+        {
+          "tag": "",
+          "rect": {
+            "x": 36.59375,
+            "y": 555.15625,
+            "width": 161.75,
+            "height": 66,
+            "top": 555.15625,
+            "right": 198.34375,
+            "bottom": 621.15625,
+            "left": 36.59375
+          }
+        },
+        {
+          "tag": "brand-editorial",
+          "rect": {
+            "x": 206.34375,
+            "y": 529.75,
+            "width": 147.0625,
+            "height": 116.8125,
+            "top": 529.75,
+            "right": 353.40625,
+            "bottom": 646.5625,
+            "left": 206.34375
+          }
+        },
+        {
+          "tag": "brand-controls",
+          "rect": {
+            "x": 36.59375,
+            "y": 654.5625,
+            "width": 316.8125,
+            "height": 26,
+            "top": 654.5625,
+            "right": 353.40625,
+            "bottom": 680.5625,
+            "left": 36.59375
+          }
+        }
+      ],
+      "box": {
+        "x": 21,
+        "y": 488.15625,
+        "width": 348,
+        "height": 208,
+        "top": 488.15625,
+        "right": 369,
+        "bottom": 696.15625,
+        "left": 21
+      }
+    }
+  ],
+  "details": [
+    {
+      "slug": "apple",
+      "viewportWidth": 1920,
+      "width": 1001,
+      "scrollWidth": 1001,
+      "height": 3506,
+      "keyboard": true
+    },
+    {
+      "slug": "airbnb",
+      "viewportWidth": 1920,
+      "width": 1001,
+      "scrollWidth": 1001,
+      "height": 4161,
+      "keyboard": true
+    },
+    {
+      "slug": "notion",
+      "viewportWidth": 1920,
+      "width": 1001,
+      "scrollWidth": 1001,
+      "height": 5129,
+      "keyboard": true
+    },
+    {
+      "slug": "linear.app",
+      "viewportWidth": 1920,
+      "width": 1001,
+      "scrollWidth": 1001,
+      "height": 3266,
+      "keyboard": true
+    },
+    {
+      "slug": "stripe",
+      "viewportWidth": 1920,
+      "width": 1001,
+      "scrollWidth": 1001,
+      "height": 2916,
+      "keyboard": true
+    },
+    {
+      "slug": "vercel",
+      "viewportWidth": 1920,
+      "width": 1001,
+      "scrollWidth": 1001,
+      "height": 4226,
+      "keyboard": true
+    },
+    {
+      "slug": "spotify",
+      "viewportWidth": 1920,
+      "width": 1001,
+      "scrollWidth": 1001,
+      "height": 2917,
+      "keyboard": true
+    },
+    {
+      "slug": "ferrari",
+      "viewportWidth": 1920,
+      "width": 1001,
+      "scrollWidth": 1001,
+      "height": 3391,
+      "keyboard": true
+    },
+    {
+      "slug": "nintendo-2001",
+      "viewportWidth": 1920,
+      "width": 1001,
+      "scrollWidth": 1001,
+      "height": 3502,
+      "keyboard": true
+    },
+    {
+      "slug": "binance",
+      "viewportWidth": 1920,
+      "width": 1001,
+      "scrollWidth": 1001,
+      "height": 3983,
+      "keyboard": true
+    },
+    {
+      "slug": "tesla",
+      "viewportWidth": 1920,
+      "width": 1001,
+      "scrollWidth": 1001,
+      "height": 2085,
+      "keyboard": true
+    },
+    {
+      "slug": "figma",
+      "viewportWidth": 1920,
+      "width": 1001,
+      "scrollWidth": 1001,
+      "height": 3199,
+      "keyboard": true
+    },
+    {
+      "slug": "apple",
+      "viewportWidth": 1440,
+      "width": 737,
+      "scrollWidth": 737,
+      "height": 3593,
+      "keyboard": true
+    },
+    {
+      "slug": "airbnb",
+      "viewportWidth": 1440,
+      "width": 737,
+      "scrollWidth": 737,
+      "height": 4204,
+      "keyboard": true
+    },
+    {
+      "slug": "notion",
+      "viewportWidth": 1440,
+      "width": 737,
+      "scrollWidth": 737,
+      "height": 5259,
+      "keyboard": true
+    },
+    {
+      "slug": "linear.app",
+      "viewportWidth": 1440,
+      "width": 737,
+      "scrollWidth": 737,
+      "height": 3309,
+      "keyboard": true
+    },
+    {
+      "slug": "stripe",
+      "viewportWidth": 1440,
+      "width": 737,
+      "scrollWidth": 737,
+      "height": 2959,
+      "keyboard": true
+    },
+    {
+      "slug": "vercel",
+      "viewportWidth": 1440,
+      "width": 737,
+      "scrollWidth": 737,
+      "height": 4329,
+      "keyboard": true
+    },
+    {
+      "slug": "spotify",
+      "viewportWidth": 1440,
+      "width": 737,
+      "scrollWidth": 737,
+      "height": 2916,
+      "keyboard": true
+    },
+    {
+      "slug": "ferrari",
+      "viewportWidth": 1440,
+      "width": 737,
+      "scrollWidth": 737,
+      "height": 3542,
+      "keyboard": true
+    },
+    {
+      "slug": "nintendo-2001",
+      "viewportWidth": 1440,
+      "width": 737,
+      "scrollWidth": 737,
+      "height": 3546,
+      "keyboard": true
+    },
+    {
+      "slug": "binance",
+      "viewportWidth": 1440,
+      "width": 737,
+      "scrollWidth": 737,
+      "height": 4043,
+      "keyboard": true
+    },
+    {
+      "slug": "tesla",
+      "viewportWidth": 1440,
+      "width": 737,
+      "scrollWidth": 737,
+      "height": 2226,
+      "keyboard": true
+    },
+    {
+      "slug": "figma",
+      "viewportWidth": 1440,
+      "width": 737,
+      "scrollWidth": 737,
+      "height": 3242,
+      "keyboard": true
+    },
+    {
+      "slug": "apple",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 3968,
+      "keyboard": true
+    },
+    {
+      "slug": "airbnb",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 4610,
+      "keyboard": true
+    },
+    {
+      "slug": "notion",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 6044,
+      "keyboard": true
+    },
+    {
+      "slug": "linear.app",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 3727,
+      "keyboard": true
+    },
+    {
+      "slug": "stripe",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 3370,
+      "keyboard": true
+    },
+    {
+      "slug": "vercel",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 5093,
+      "keyboard": true
+    },
+    {
+      "slug": "spotify",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 3401,
+      "keyboard": true
+    },
+    {
+      "slug": "ferrari",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 3996,
+      "keyboard": true
+    },
+    {
+      "slug": "nintendo-2001",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 4035,
+      "keyboard": true
+    },
+    {
+      "slug": "binance",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 4454,
+      "keyboard": true
+    },
+    {
+      "slug": "tesla",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 2602,
+      "keyboard": true
+    },
+    {
+      "slug": "figma",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 3706,
+      "keyboard": true
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "allBrandGeometry": [
+    {
+      "slug": "airbnb",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "airtable",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "apple",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "binance",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "bmw",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "bmw-m",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "bugatti",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "cal",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "claude",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "clay",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "clickhouse",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "cohere",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "coinbase",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "composio",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "cursor",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "dell-1996",
+      "height": 212,
+      "content": 206,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "elevenlabs",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "expo",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "ferrari",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "figma",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "framer",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "hashicorp",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "hp",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "ibm",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "intercom",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "kraken",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "lamborghini",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "linear.app",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "lovable",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "mastercard",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "meta",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "minimax",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "mintlify",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "miro",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "mistral.ai",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "mongodb",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "nike",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "nintendo-2001",
+      "height": 212,
+      "content": 206,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "notion",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "nvidia",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "ollama",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "opencode.ai",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "pinterest",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "playstation",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "posthog",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "raycast",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "renault",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "replicate",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "resend",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "revolut",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "runwayml",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "sanity",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "sentry",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "shopify",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "slack",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "spacex",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "spotify",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "starbucks",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "stripe",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "supabase",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "superhuman",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "tesla",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "theverge",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "together.ai",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "uber",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "vercel",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "vodafone",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "voltagent",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "warp",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "webflow",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "wired",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "wise",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "x.ai",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    },
+    {
+      "slug": "zapier",
+      "height": 212,
+      "content": 212,
+      "width": 355,
+      "scrollWidth": 355
+    }
+  ],
+  "offscreen": true,
+  "offline": true,
+  "reducedMotion": true
+}

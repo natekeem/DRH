@@ -1,0 +1,7 @@
+{
+  "vendors": 74,
+  "offline": true,
+  "onlinePinned": true,
+  "idempotent": true,
+  "partialImportRejected": true
+}
