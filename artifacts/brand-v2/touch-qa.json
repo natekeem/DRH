@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "apple",
+    "pressed": true,
+    "closed": true
+  },
+  {
+    "slug": "airbnb",
+    "pressed": true,
+    "closed": true
+  },
+  {
+    "slug": "notion",
+    "pressed": true,
+    "closed": true
+  },
+  {
+    "slug": "linear.app",
+    "pressed": true,
+    "closed": true
+  },
+  {
+    "slug": "stripe",
+    "pressed": true,
+    "closed": true
+  },
+  {
+    "slug": "vercel",
+    "pressed": true,
+    "closed": true
+  },
+  {
+    "slug": "spotify",
+    "pressed": true,
+    "closed": true
+  },
+  {
+    "slug": "ferrari",
+    "pressed": true,
+    "closed": true
+  },
+  {
+    "slug": "nintendo-2001",
+    "pressed": true,
+    "closed": true
+  },
+  {
+    "slug": "binance",
+    "pressed": true,
+    "closed": true
+  },
+  {
+    "slug": "tesla",
+    "pressed": true,
+    "closed": true
+  },
+  {
+    "slug": "figma",
+    "pressed": true,
+    "closed": true
+  }
+]

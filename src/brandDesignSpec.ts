@@ -31,3 +31,13 @@ export type BrandDesignSpec = {
     evidenceUrl?: string
   }
 }
+
+export type OfficialBrandResource = {
+ type: 'brand-guidelines' | 'design-system' | 'developer-design-guide' | 'typography' | 'components' | 'assets' | 'other'
+ label: string
+ url: string
+ source: 'official'
+ checkedAt: string
+ description: string
+ evidence: { url: string; title: string; method: string }
+}

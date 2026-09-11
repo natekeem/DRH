@@ -1,0 +1,29 @@
+import { lazy, Suspense, Fragment, type CSSProperties } from 'react'
+import { componentStyle, length, numeric, scalar, typeStyle, type BrandCatalog as Catalog, type BrandTheme } from '../../lib/brandCatalog'
+import { BrandComponentSample } from './BrandComponentSample'
+
+const BrandSourceNotes=lazy(()=>import('./BrandSourceNotes'))
+
+export function catalogStyle(theme:BrandTheme):CSSProperties{return {'--bc-canvas':theme.colors.canvas,'--bc-surface':theme.colors.surface,'--bc-ink':theme.colors.text,'--bc-muted':theme.colors.muted,'--bc-border':theme.colors.border} as CSSProperties}
+export function BrandCatalog({catalog,theme,expanded=false}:{catalog:Catalog;theme:BrandTheme;expanded?:boolean}){
+ const {spec,entry}=catalog
+ const featuredRoles=[catalog.roles.find(([k])=>/display|hero/.test(k)),catalog.roles.find(([k])=>/heading|headline|title/.test(k)),catalog.roles.find(([k])=>/body|paragraph/.test(k)),catalog.roles.find(([k])=>/caption|small|label/.test(k))].filter((r):r is NonNullable<typeof r>=>!!r)
+ const preferred=[...new Map(featuredRoles.map(r=>[r[0],r])).values()]
+ const roles=expanded?catalog.roles:[...preferred,...catalog.roles.filter(([k])=>!preferred.some(([key])=>key===k))]
+ const items=(nodes:React.ReactNode[],limit:number)=>expanded||nodes.length<=limit?nodes:<>{nodes.slice(0,limit)}<details className="bc-more"><summary>모두 보기 · {nodes.length}개</summary><div className="bc-grid">{nodes.slice(limit)}</div></details></>
+ return <div className="bc-content">
+  <p className="bc-note">DESIGN.md 기반 DRH 카탈로그 · 문구와 데이터는 예시입니다. 전용 폰트는 시스템 대체 글꼴로 표시합니다.</p>
+  {catalog.sections.map(section=><section key={section.id} data-section={section.id} className={'bc-section bc-section-'+section.type}>
+   <h4>{section.label}{section.count!==undefined&&<small>{section.count}</small>}</h4>
+   {section.type==='overview'&&<div className="bc-dna">{catalog.dna.map(d=><span key={d.label} title={d.evidence}>{d.label}</span>)}</div>}
+   {section.type==='overview'&&<div className="bc-overview-samples"><div className="bc-type-scroll"><span style={{...typeStyle(catalog.roles.find(([k])=>/heading|headline|title/.test(k))?.[1]||catalog.roles[0]?.[1]||{}),fontSize:'clamp(24px,3vw,40px)'}}>Aa — Design</span></div>{catalog.components.find(c=>c.kind==='buttons')&&<span className="bc-overview-button" style={componentStyle(catalog.components.find(c=>c.kind==='buttons')!.values,catalog,theme)}>Continue →</span>}</div>}
+   {section.type==='official-resources'&&(catalog.officialResources.length?<div className="bc-resources">{catalog.officialResources.map(r=><a key={r.url} href={r.url} target="_blank" rel="noreferrer"><b>{r.label} ↗</b><small>{r.type}</small><span>{r.description}</span></a>)}</div>:<p className="bc-note">검증하여 등록한 공식 디자인 리소스가 없습니다.</p>)}
+   {section.type==='colors'&&<div className="bc-grid bc-colors">{items(catalog.colors.map(([key,value])=><div key={key} className="bc-color"><i style={{background:value}}/><span>{key}<code>{value}</code></span></div>),8)}</div>}
+   {section.type==='typography'&&<div className="bc-type-list">{items(roles.map(([key,role])=><div key={key} className="bc-type"><small>{key} · {scalar(role.fontSize,'—')} / {scalar(role.fontWeight,'—')} / leading {scalar(role.lineHeight,'normal')} / tracking {scalar(role.letterSpacing,'normal')}</small><div className="bc-type-scroll"><span className={/body|paragraph|caption|small|label/.test(key)?'bc-type-readable':undefined} style={{...typeStyle(role),'--bc-role-size':length(role.fontSize)||'16px'} as CSSProperties}>{/body|paragraph/.test(key)?'A short paragraph for readable everyday text.':/caption|small|label/.test(key)?'Supporting metadata':'Aa — Design'}</span></div><small>Declared: {role.declaredFamily||'미지정'}<br/>Fallback: {role.renderFallback}</small></div>),4)}</div>}
+   {section.type==='components'&&<div className="bc-grid">{items(catalog.components.filter(c=>c.kind===section.kind).map(c=><BrandComponentSample key={c.key} component={c} catalog={catalog} theme={theme}/>),3)}</div>}
+   {section.type==='geometry'&&<><div className="bc-grid">{[spec.spacing,spec.radius].map((scale,i)=><div key={i}><h5>{i?'Radius':'Spacing'}</h5>{Object.entries(scale).map(([key,value])=><div className="bc-scale" key={key}><i style={i?{width:36,height:36,borderRadius:length(value)}:{width:Math.min(numeric(value),240),height:8}}/><code>{key}: {value}</code></div>)}</div>)}</div><div className="bc-grid bc-depth-samples">{catalog.components.filter(c=>c.values.border||c.values.boxShadow||c.values.shadow).slice(0,6).map(c=><div key={c.key}><h5>{c.key}</h5><div className="bc-depth" style={{...componentStyle(c.values,catalog,theme),padding:16,height:80,fontSize:12}}>Border / depth</div></div>)}</div><div className="bc-grid">{[['Border',spec.border],['Depth',spec.depth],['Motion',spec.motion]].filter(([,v])=>v&&JSON.stringify(v)!=='{}').map(([label,value])=><div key={String(label)}><h5>{String(label)}</h5><Suspense fallback={<p className="bc-note">원본 설명을 불러오는 중…</p>}><BrandSourceNotes value={value}/></Suspense></div>)}</div></>}
+   {section.type==='layout'&&<><div className="bc-layout" data-layout={spec.layout} aria-label={spec.layout+' layout schematic'}>{['Navigation','Primary region','Supporting content','Supporting content'].map((v,i)=><div key={i}>{v}</div>)}</div><p className="bc-note">{spec.layout} · 원본 특성을 요약한 구성도</p><details><summary>Source traits</summary><p>{spec.traits}</p></details></>}
+   {section.type==='source'&&<><p className="bc-note">VoltAgent / awesome-design-md · MIT · {entry.upstreamCommit.slice(0,12)}<br/>공식 리소스 링크와 별개인 DESIGN.md 수집 출처입니다.</p><a href={import.meta.env.BASE_URL+'vendor/awesome-design-md/'+entry.slug+'/DESIGN.md'} target="_blank" rel="noreferrer">원본 DESIGN.md ↗</a><details><summary>Full source sections</summary>{Object.entries(spec.sections||{}).map(([k,v])=><Fragment key={k}><h5>{k}</h5><pre>{v}</pre></Fragment>)}</details></>}
+  </section>)}
+ </div>
+}

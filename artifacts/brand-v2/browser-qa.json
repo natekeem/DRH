@@ -1,0 +1,1093 @@
+{
+  "cards": [
+    {
+      "slug": "apple",
+      "viewportWidth": 1920,
+      "width": 355,
+      "scrollWidth": 355,
+      "height": 212,
+      "scrollHeight": 212
+    },
+    {
+      "slug": "airbnb",
+      "viewportWidth": 1920,
+      "width": 355,
+      "scrollWidth": 355,
+      "height": 212,
+      "scrollHeight": 212
+    },
+    {
+      "slug": "notion",
+      "viewportWidth": 1920,
+      "width": 355,
+      "scrollWidth": 355,
+      "height": 212,
+      "scrollHeight": 212
+    },
+    {
+      "slug": "linear.app",
+      "viewportWidth": 1920,
+      "width": 355,
+      "scrollWidth": 355,
+      "height": 212,
+      "scrollHeight": 212
+    },
+    {
+      "slug": "stripe",
+      "viewportWidth": 1920,
+      "width": 355,
+      "scrollWidth": 355,
+      "height": 212,
+      "scrollHeight": 212
+    },
+    {
+      "slug": "vercel",
+      "viewportWidth": 1920,
+      "width": 355,
+      "scrollWidth": 355,
+      "height": 212,
+      "scrollHeight": 212
+    },
+    {
+      "slug": "spotify",
+      "viewportWidth": 1920,
+      "width": 355,
+      "scrollWidth": 355,
+      "height": 212,
+      "scrollHeight": 212
+    },
+    {
+      "slug": "ferrari",
+      "viewportWidth": 1920,
+      "width": 355,
+      "scrollWidth": 355,
+      "height": 212,
+      "scrollHeight": 212
+    },
+    {
+      "slug": "nintendo-2001",
+      "viewportWidth": 1920,
+      "width": 355,
+      "scrollWidth": 355,
+      "height": 212,
+      "scrollHeight": 212
+    },
+    {
+      "slug": "binance",
+      "viewportWidth": 1920,
+      "width": 355,
+      "scrollWidth": 355,
+      "height": 212,
+      "scrollHeight": 212
+    },
+    {
+      "slug": "tesla",
+      "viewportWidth": 1920,
+      "width": 355,
+      "scrollWidth": 355,
+      "height": 212,
+      "scrollHeight": 212
+    },
+    {
+      "slug": "figma",
+      "viewportWidth": 1920,
+      "width": 355,
+      "scrollWidth": 355,
+      "height": 212,
+      "scrollHeight": 212
+    },
+    {
+      "slug": "apple",
+      "viewportWidth": 1440,
+      "width": 445,
+      "scrollWidth": 445,
+      "height": 266,
+      "scrollHeight": 266
+    },
+    {
+      "slug": "airbnb",
+      "viewportWidth": 1440,
+      "width": 445,
+      "scrollWidth": 445,
+      "height": 266,
+      "scrollHeight": 266
+    },
+    {
+      "slug": "notion",
+      "viewportWidth": 1440,
+      "width": 445,
+      "scrollWidth": 445,
+      "height": 266,
+      "scrollHeight": 266
+    },
+    {
+      "slug": "linear.app",
+      "viewportWidth": 1440,
+      "width": 445,
+      "scrollWidth": 445,
+      "height": 266,
+      "scrollHeight": 266
+    },
+    {
+      "slug": "stripe",
+      "viewportWidth": 1440,
+      "width": 445,
+      "scrollWidth": 445,
+      "height": 266,
+      "scrollHeight": 266
+    },
+    {
+      "slug": "vercel",
+      "viewportWidth": 1440,
+      "width": 445,
+      "scrollWidth": 445,
+      "height": 266,
+      "scrollHeight": 266
+    },
+    {
+      "slug": "spotify",
+      "viewportWidth": 1440,
+      "width": 445,
+      "scrollWidth": 445,
+      "height": 266,
+      "scrollHeight": 266
+    },
+    {
+      "slug": "ferrari",
+      "viewportWidth": 1440,
+      "width": 445,
+      "scrollWidth": 445,
+      "height": 266,
+      "scrollHeight": 266
+    },
+    {
+      "slug": "nintendo-2001",
+      "viewportWidth": 1440,
+      "width": 445,
+      "scrollWidth": 445,
+      "height": 266,
+      "scrollHeight": 266
+    },
+    {
+      "slug": "binance",
+      "viewportWidth": 1440,
+      "width": 445,
+      "scrollWidth": 445,
+      "height": 266,
+      "scrollHeight": 266
+    },
+    {
+      "slug": "tesla",
+      "viewportWidth": 1440,
+      "width": 445,
+      "scrollWidth": 445,
+      "height": 266,
+      "scrollHeight": 266
+    },
+    {
+      "slug": "figma",
+      "viewportWidth": 1440,
+      "width": 445,
+      "scrollWidth": 445,
+      "height": 266,
+      "scrollHeight": 266
+    },
+    {
+      "slug": "apple",
+      "viewportWidth": 390,
+      "width": 348,
+      "scrollWidth": 348,
+      "height": 208,
+      "scrollHeight": 208
+    },
+    {
+      "slug": "airbnb",
+      "viewportWidth": 390,
+      "width": 348,
+      "scrollWidth": 348,
+      "height": 208,
+      "scrollHeight": 208
+    },
+    {
+      "slug": "notion",
+      "viewportWidth": 390,
+      "width": 348,
+      "scrollWidth": 348,
+      "height": 208,
+      "scrollHeight": 208
+    },
+    {
+      "slug": "linear.app",
+      "viewportWidth": 390,
+      "width": 348,
+      "scrollWidth": 348,
+      "height": 208,
+      "scrollHeight": 208
+    },
+    {
+      "slug": "stripe",
+      "viewportWidth": 390,
+      "width": 348,
+      "scrollWidth": 348,
+      "height": 208,
+      "scrollHeight": 208
+    },
+    {
+      "slug": "vercel",
+      "viewportWidth": 390,
+      "width": 348,
+      "scrollWidth": 348,
+      "height": 208,
+      "scrollHeight": 208
+    },
+    {
+      "slug": "spotify",
+      "viewportWidth": 390,
+      "width": 348,
+      "scrollWidth": 348,
+      "height": 208,
+      "scrollHeight": 208
+    },
+    {
+      "slug": "ferrari",
+      "viewportWidth": 390,
+      "width": 348,
+      "scrollWidth": 348,
+      "height": 208,
+      "scrollHeight": 208
+    },
+    {
+      "slug": "nintendo-2001",
+      "viewportWidth": 390,
+      "width": 348,
+      "scrollWidth": 348,
+      "height": 208,
+      "scrollHeight": 208
+    },
+    {
+      "slug": "binance",
+      "viewportWidth": 390,
+      "width": 348,
+      "scrollWidth": 348,
+      "height": 208,
+      "scrollHeight": 208
+    },
+    {
+      "slug": "tesla",
+      "viewportWidth": 390,
+      "width": 348,
+      "scrollWidth": 348,
+      "height": 208,
+      "scrollHeight": 208
+    },
+    {
+      "slug": "figma",
+      "viewportWidth": 390,
+      "width": 348,
+      "scrollWidth": 348,
+      "height": 208,
+      "scrollHeight": 208
+    }
+  ],
+  "details": [
+    {
+      "slug": "apple",
+      "viewportWidth": 1920,
+      "width": 986,
+      "scrollWidth": 986,
+      "height": 680,
+      "scrollHeight": 5010,
+      "officialLinks": 1
+    },
+    {
+      "slug": "airbnb",
+      "viewportWidth": 1920,
+      "width": 986,
+      "scrollWidth": 986,
+      "height": 680,
+      "scrollHeight": 6309,
+      "officialLinks": 1
+    },
+    {
+      "slug": "notion",
+      "viewportWidth": 1920,
+      "width": 986,
+      "scrollWidth": 986,
+      "height": 680,
+      "scrollHeight": 7509,
+      "officialLinks": 0
+    },
+    {
+      "slug": "linear.app",
+      "viewportWidth": 1920,
+      "width": 986,
+      "scrollWidth": 986,
+      "height": 680,
+      "scrollHeight": 5627,
+      "officialLinks": 1
+    },
+    {
+      "slug": "stripe",
+      "viewportWidth": 1920,
+      "width": 986,
+      "scrollWidth": 986,
+      "height": 680,
+      "scrollHeight": 4804,
+      "officialLinks": 1
+    },
+    {
+      "slug": "vercel",
+      "viewportWidth": 1920,
+      "width": 986,
+      "scrollWidth": 986,
+      "height": 680,
+      "scrollHeight": 6651,
+      "officialLinks": 2
+    },
+    {
+      "slug": "spotify",
+      "viewportWidth": 1920,
+      "width": 986,
+      "scrollWidth": 986,
+      "height": 680,
+      "scrollHeight": 4203,
+      "officialLinks": 1
+    },
+    {
+      "slug": "ferrari",
+      "viewportWidth": 1920,
+      "width": 986,
+      "scrollWidth": 986,
+      "height": 680,
+      "scrollHeight": 6628,
+      "officialLinks": 0
+    },
+    {
+      "slug": "nintendo-2001",
+      "viewportWidth": 1920,
+      "width": 986,
+      "scrollWidth": 986,
+      "height": 680,
+      "scrollHeight": 6733,
+      "officialLinks": 0
+    },
+    {
+      "slug": "binance",
+      "viewportWidth": 1920,
+      "width": 986,
+      "scrollWidth": 986,
+      "height": 680,
+      "scrollHeight": 6255,
+      "officialLinks": 0
+    },
+    {
+      "slug": "tesla",
+      "viewportWidth": 1920,
+      "width": 986,
+      "scrollWidth": 986,
+      "height": 680,
+      "scrollHeight": 4140,
+      "officialLinks": 0
+    },
+    {
+      "slug": "figma",
+      "viewportWidth": 1920,
+      "width": 986,
+      "scrollWidth": 986,
+      "height": 680,
+      "scrollHeight": 5776,
+      "officialLinks": 1
+    },
+    {
+      "slug": "apple",
+      "viewportWidth": 1440,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 680,
+      "scrollHeight": 5098,
+      "officialLinks": 1
+    },
+    {
+      "slug": "airbnb",
+      "viewportWidth": 1440,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 680,
+      "scrollHeight": 6359,
+      "officialLinks": 1
+    },
+    {
+      "slug": "notion",
+      "viewportWidth": 1440,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 680,
+      "scrollHeight": 7569,
+      "officialLinks": 0
+    },
+    {
+      "slug": "linear.app",
+      "viewportWidth": 1440,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 680,
+      "scrollHeight": 5627,
+      "officialLinks": 1
+    },
+    {
+      "slug": "stripe",
+      "viewportWidth": 1440,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 680,
+      "scrollHeight": 4804,
+      "officialLinks": 1
+    },
+    {
+      "slug": "vercel",
+      "viewportWidth": 1440,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 680,
+      "scrollHeight": 6699,
+      "officialLinks": 2
+    },
+    {
+      "slug": "spotify",
+      "viewportWidth": 1440,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 680,
+      "scrollHeight": 4203,
+      "officialLinks": 1
+    },
+    {
+      "slug": "ferrari",
+      "viewportWidth": 1440,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 680,
+      "scrollHeight": 6628,
+      "officialLinks": 0
+    },
+    {
+      "slug": "nintendo-2001",
+      "viewportWidth": 1440,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 680,
+      "scrollHeight": 6793,
+      "officialLinks": 0
+    },
+    {
+      "slug": "binance",
+      "viewportWidth": 1440,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 680,
+      "scrollHeight": 6294,
+      "officialLinks": 0
+    },
+    {
+      "slug": "tesla",
+      "viewportWidth": 1440,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 680,
+      "scrollHeight": 4140,
+      "officialLinks": 0
+    },
+    {
+      "slug": "figma",
+      "viewportWidth": 1440,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 680,
+      "scrollHeight": 5776,
+      "officialLinks": 1
+    },
+    {
+      "slug": "apple",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 620,
+      "scrollHeight": 6349,
+      "officialLinks": 1
+    },
+    {
+      "slug": "airbnb",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 620,
+      "scrollHeight": 8110,
+      "officialLinks": 1
+    },
+    {
+      "slug": "notion",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 620,
+      "scrollHeight": 10184,
+      "officialLinks": 0
+    },
+    {
+      "slug": "linear.app",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 620,
+      "scrollHeight": 6865,
+      "officialLinks": 1
+    },
+    {
+      "slug": "stripe",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 620,
+      "scrollHeight": 5984,
+      "officialLinks": 1
+    },
+    {
+      "slug": "vercel",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 620,
+      "scrollHeight": 8774,
+      "officialLinks": 2
+    },
+    {
+      "slug": "spotify",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 620,
+      "scrollHeight": 4971,
+      "officialLinks": 1
+    },
+    {
+      "slug": "ferrari",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 620,
+      "scrollHeight": 8210,
+      "officialLinks": 0
+    },
+    {
+      "slug": "nintendo-2001",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 620,
+      "scrollHeight": 8652,
+      "officialLinks": 0
+    },
+    {
+      "slug": "binance",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 620,
+      "scrollHeight": 7972,
+      "officialLinks": 0
+    },
+    {
+      "slug": "tesla",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 620,
+      "scrollHeight": 5039,
+      "officialLinks": 0
+    },
+    {
+      "slug": "figma",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 620,
+      "scrollHeight": 7294,
+      "officialLinks": 1
+    }
+  ],
+  "expanded": [
+    {
+      "slug": "apple",
+      "viewportWidth": 1920,
+      "width": 1905,
+      "scrollWidth": 1905,
+      "height": 1080,
+      "scrollHeight": 6005,
+      "components": 24,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "airbnb",
+      "viewportWidth": 1920,
+      "width": 1905,
+      "scrollWidth": 1905,
+      "height": 1080,
+      "scrollHeight": 6750,
+      "components": 33,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "notion",
+      "viewportWidth": 1920,
+      "width": 1905,
+      "scrollWidth": 1905,
+      "height": 1080,
+      "scrollHeight": 8624,
+      "components": 50,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "linear.app",
+      "viewportWidth": 1920,
+      "width": 1905,
+      "scrollWidth": 1905,
+      "height": 1080,
+      "scrollHeight": 5790,
+      "components": 21,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 2
+    },
+    {
+      "slug": "stripe",
+      "viewportWidth": 1920,
+      "width": 1905,
+      "scrollWidth": 1905,
+      "height": 1080,
+      "scrollHeight": 4707,
+      "components": 15,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "vercel",
+      "viewportWidth": 1920,
+      "width": 1905,
+      "scrollWidth": 1905,
+      "height": 1080,
+      "scrollHeight": 8036,
+      "components": 40,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "spotify",
+      "viewportWidth": 1920,
+      "width": 1905,
+      "scrollWidth": 1905,
+      "height": 1080,
+      "scrollHeight": 4334,
+      "components": 7,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "ferrari",
+      "viewportWidth": 1920,
+      "width": 1905,
+      "scrollWidth": 1905,
+      "height": 1080,
+      "scrollHeight": 6350,
+      "components": 24,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 2
+    },
+    {
+      "slug": "nintendo-2001",
+      "viewportWidth": 1920,
+      "width": 1905,
+      "scrollWidth": 1905,
+      "height": 1080,
+      "scrollHeight": 6737,
+      "components": 41,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "binance",
+      "viewportWidth": 1920,
+      "width": 1905,
+      "scrollWidth": 1905,
+      "height": 1080,
+      "scrollHeight": 7361,
+      "components": 35,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 2
+    },
+    {
+      "slug": "tesla",
+      "viewportWidth": 1920,
+      "width": 1905,
+      "scrollWidth": 1905,
+      "height": 1080,
+      "scrollHeight": 3634,
+      "components": 8,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "figma",
+      "viewportWidth": 1920,
+      "width": 1905,
+      "scrollWidth": 1905,
+      "height": 1080,
+      "scrollHeight": 5533,
+      "components": 23,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 2
+    },
+    {
+      "slug": "apple",
+      "viewportWidth": 1440,
+      "width": 1425,
+      "scrollWidth": 1425,
+      "height": 1000,
+      "scrollHeight": 6024,
+      "components": 24,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "airbnb",
+      "viewportWidth": 1440,
+      "width": 1425,
+      "scrollWidth": 1425,
+      "height": 1000,
+      "scrollHeight": 6790,
+      "components": 33,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "notion",
+      "viewportWidth": 1440,
+      "width": 1425,
+      "scrollWidth": 1425,
+      "height": 1000,
+      "scrollHeight": 8624,
+      "components": 50,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "linear.app",
+      "viewportWidth": 1440,
+      "width": 1425,
+      "scrollWidth": 1425,
+      "height": 1000,
+      "scrollHeight": 5810,
+      "components": 21,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 2
+    },
+    {
+      "slug": "stripe",
+      "viewportWidth": 1440,
+      "width": 1425,
+      "scrollWidth": 1425,
+      "height": 1000,
+      "scrollHeight": 4727,
+      "components": 15,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "vercel",
+      "viewportWidth": 1440,
+      "width": 1425,
+      "scrollWidth": 1425,
+      "height": 1000,
+      "scrollHeight": 8056,
+      "components": 40,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "spotify",
+      "viewportWidth": 1440,
+      "width": 1425,
+      "scrollWidth": 1425,
+      "height": 1000,
+      "scrollHeight": 4334,
+      "components": 7,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "ferrari",
+      "viewportWidth": 1440,
+      "width": 1425,
+      "scrollWidth": 1425,
+      "height": 1000,
+      "scrollHeight": 6393,
+      "components": 24,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 2
+    },
+    {
+      "slug": "nintendo-2001",
+      "viewportWidth": 1440,
+      "width": 1425,
+      "scrollWidth": 1425,
+      "height": 1000,
+      "scrollHeight": 6737,
+      "components": 41,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "binance",
+      "viewportWidth": 1440,
+      "width": 1425,
+      "scrollWidth": 1425,
+      "height": 1000,
+      "scrollHeight": 7361,
+      "components": 35,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 2
+    },
+    {
+      "slug": "tesla",
+      "viewportWidth": 1440,
+      "width": 1425,
+      "scrollWidth": 1425,
+      "height": 1000,
+      "scrollHeight": 3634,
+      "components": 8,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "figma",
+      "viewportWidth": 1440,
+      "width": 1425,
+      "scrollWidth": 1425,
+      "height": 1000,
+      "scrollHeight": 5533,
+      "components": 23,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 2
+    },
+    {
+      "slug": "apple",
+      "viewportWidth": 390,
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 844,
+      "scrollHeight": 11285,
+      "components": 24,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "airbnb",
+      "viewportWidth": 390,
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 844,
+      "scrollHeight": 12963,
+      "components": 33,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "notion",
+      "viewportWidth": 390,
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 844,
+      "scrollHeight": 19363,
+      "components": 50,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "linear.app",
+      "viewportWidth": 390,
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 844,
+      "scrollHeight": 10046,
+      "components": 21,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 2
+    },
+    {
+      "slug": "stripe",
+      "viewportWidth": 390,
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 844,
+      "scrollHeight": 8497,
+      "components": 15,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "vercel",
+      "viewportWidth": 390,
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 844,
+      "scrollHeight": 15714,
+      "components": 40,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "spotify",
+      "viewportWidth": 390,
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 844,
+      "scrollHeight": 7571,
+      "components": 7,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "ferrari",
+      "viewportWidth": 390,
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 844,
+      "scrollHeight": 11379,
+      "components": 24,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 2
+    },
+    {
+      "slug": "nintendo-2001",
+      "viewportWidth": 390,
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 844,
+      "scrollHeight": 12977,
+      "components": 41,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "binance",
+      "viewportWidth": 390,
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 844,
+      "scrollHeight": 13906,
+      "components": 35,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 2
+    },
+    {
+      "slug": "tesla",
+      "viewportWidth": 390,
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 844,
+      "scrollHeight": 6093,
+      "components": 8,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "figma",
+      "viewportWidth": 390,
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 844,
+      "scrollHeight": 10218,
+      "components": 23,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 2
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "offline": true,
+  "focusTrap": true,
+  "reducedMotion": true
+}

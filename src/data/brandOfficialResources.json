@@ -1,0 +1,120 @@
+{
+  "apple": [
+    {
+      "type": "design-system",
+      "label": "Human Interface Guidelines",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/",
+      "source": "official",
+      "checkedAt": "2026-09-12",
+      "description": "Apple 플랫폼의 인터페이스 원칙과 컴포넌트 가이드입니다.",
+      "evidence": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/",
+        "title": "Human Interface Guidelines | Apple Developer Documentation",
+        "method": "Official domain, rendered heading and page content reviewed on 2026-09-12"
+      }
+    }
+  ],
+  "linear.app": [
+    {
+      "type": "brand-guidelines",
+      "label": "Linear Brand Guidelines",
+      "url": "https://linear.app/brand",
+      "source": "official",
+      "checkedAt": "2026-09-12",
+      "description": "이름, 로고 사용과 브랜드 색상 규칙입니다.",
+      "evidence": {
+        "url": "https://linear.app/brand",
+        "title": "Brand Guidelines – Linear",
+        "method": "Official domain, rendered heading and page content reviewed on 2026-09-12"
+      }
+    }
+  ],
+  "vercel": [
+    {
+      "type": "design-system",
+      "label": "Geist Design System",
+      "url": "https://vercel.com/geist/introduction",
+      "source": "official",
+      "checkedAt": "2026-09-12",
+      "description": "Vercel의 색상·타입·컴포넌트 시스템입니다.",
+      "evidence": {
+        "url": "https://vercel.com/geist/introduction",
+        "title": "Geist",
+        "method": "Official domain, rendered heading and page content reviewed on 2026-09-12"
+      }
+    },
+    {
+      "type": "typography",
+      "label": "Geist Typography",
+      "url": "https://vercel.com/geist/typography",
+      "source": "official",
+      "checkedAt": "2026-09-12",
+      "description": "Geist의 타이포그래피 역할과 크기 규칙입니다.",
+      "evidence": {
+        "url": "https://vercel.com/geist/typography",
+        "title": "Typography",
+        "method": "Official domain, rendered heading and page content reviewed on 2026-09-12"
+      }
+    }
+  ],
+  "airbnb": [
+    {
+      "type": "assets",
+      "label": "Airbnb Media Assets",
+      "url": "https://news.airbnb.com/media-assets",
+      "source": "official",
+      "checkedAt": "2026-09-12",
+      "description": "공식 미디어 자료와 사용 조건을 확인할 수 있습니다.",
+      "evidence": {
+        "url": "https://news.airbnb.com/media-assets",
+        "title": "Media assets - Airbnb Newsroom",
+        "method": "Official domain, rendered heading and page content reviewed on 2026-09-12"
+      }
+    }
+  ],
+  "stripe": [
+    {
+      "type": "assets",
+      "label": "Stripe Media Assets",
+      "url": "https://stripe.com/newsroom/information",
+      "source": "official",
+      "checkedAt": "2026-09-12",
+      "description": "공식 로고·배지와 브랜드 사용 조건입니다.",
+      "evidence": {
+        "url": "https://stripe.com/newsroom/information",
+        "title": "Stripe Newsroom | Information and assets",
+        "method": "Official domain, rendered heading and page content reviewed on 2026-09-12"
+      }
+    }
+  ],
+  "spotify": [
+    {
+      "type": "developer-design-guide",
+      "label": "Spotify Design & Branding",
+      "url": "https://developer.spotify.com/documentation/design",
+      "source": "official",
+      "checkedAt": "2026-09-12",
+      "description": "Spotify 연동 화면의 콘텐츠·브랜드 표시 가이드입니다.",
+      "evidence": {
+        "url": "https://developer.spotify.com/documentation/design",
+        "title": "Design & Branding Guidelines | Spotify for Developers",
+        "method": "Official domain, rendered heading and page content reviewed on 2026-09-12"
+      }
+    }
+  ],
+  "figma": [
+    {
+      "type": "brand-guidelines",
+      "label": "Figma Brand Guidelines",
+      "url": "https://www.figma.com/es-la/using-the-figma-brand/",
+      "source": "official",
+      "checkedAt": "2026-09-12",
+      "description": "Figma 브랜드와 로고 사용 가이드입니다.",
+      "evidence": {
+        "url": "https://www.figma.com/es-la/using-the-figma-brand/",
+        "title": "Pautas de uso de la marca y el logotipo de Figma | Figma",
+        "method": "Official domain, rendered heading and page content reviewed on 2026-09-12"
+      }
+    }
+  ]
+}

@@ -1,0 +1,718 @@
+{
+  "checkedAt": "2026-09-12",
+  "repository": "VoltAgent/awesome-design-md",
+  "pinnedCommit": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+  "pinnedPreviewCount": 0,
+  "historicalCommit": "1ebace0eeadc6428435cca1608f1dc4a8396e9cd",
+  "historicalPreviewCount": 116,
+  "matchingDesigns": 0,
+  "designFiles": [
+    {
+      "path": "design-md/airbnb/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/airtable/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/apple/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/bmw/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/cal/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/claude/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/clay/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/clickhouse/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/cohere/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/coinbase/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/composio/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/cursor/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/elevenlabs/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/expo/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/ferrari/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/figma/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/framer/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/hashicorp/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/ibm/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/intercom/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/kraken/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/lamborghini/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/linear.app/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/lovable/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/minimax/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/mintlify/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/miro/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/mistral.ai/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/mongodb/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/notion/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/nvidia/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/ollama/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/opencode.ai/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/pinterest/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/posthog/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/raycast/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/renault/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/replicate/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/resend/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/revolut/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/runwayml/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/sanity/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/sentry/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/spacex/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/spotify/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/stripe/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/supabase/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/superhuman/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/tesla/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/together.ai/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/uber/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/vercel/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/voltagent/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/warp/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/webflow/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/wise/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/x.ai/DESIGN.md",
+      "same": false
+    },
+    {
+      "path": "design-md/zapier/DESIGN.md",
+      "same": false
+    }
+  ],
+  "previewPaths": [
+    {
+      "path": "design-md/airbnb/preview-dark.html",
+      "sha": "2eb9c34672b61d9eac3e8e2f36cc68c8f3a0a9b3"
+    },
+    {
+      "path": "design-md/airbnb/preview.html",
+      "sha": "3156601826ccab2987b9afe19fe7cd9d74c44e57"
+    },
+    {
+      "path": "design-md/airtable/preview-dark.html",
+      "sha": "1c9b8c2e793c6bf44a6bf1c6ac2f74c1ca95cfb2"
+    },
+    {
+      "path": "design-md/airtable/preview.html",
+      "sha": "792de825b5a02357730a88316535dc31a612a287"
+    },
+    {
+      "path": "design-md/apple/preview-dark.html",
+      "sha": "3153da2ab98f22833501f1595b58bd9fab5dc5c1"
+    },
+    {
+      "path": "design-md/apple/preview.html",
+      "sha": "df6a92b990c0103cdd992c9176c3446427742422"
+    },
+    {
+      "path": "design-md/bmw/preview-dark.html",
+      "sha": "d573b8e87ffb42cb476a459686aff8016c1217c3"
+    },
+    {
+      "path": "design-md/bmw/preview.html",
+      "sha": "0925e1a05b38bae654836ab41a03448ed6279e59"
+    },
+    {
+      "path": "design-md/cal/preview-dark.html",
+      "sha": "5447bed788f74a915bb720c0189774c1c41c8d71"
+    },
+    {
+      "path": "design-md/cal/preview.html",
+      "sha": "aebc57c9fe930dc7df9583c5406b1d18e404c0e0"
+    },
+    {
+      "path": "design-md/claude/preview-dark.html",
+      "sha": "3292527ce837ad3991c2cd1de322960493694f26"
+    },
+    {
+      "path": "design-md/claude/preview.html",
+      "sha": "1fae4c1bd149bc5bc74660ad377fb5b67f9528e6"
+    },
+    {
+      "path": "design-md/clay/preview-dark.html",
+      "sha": "d9612b1fcf7c5a7969eb82e8d507952d4dc35ee8"
+    },
+    {
+      "path": "design-md/clay/preview.html",
+      "sha": "73a14af858a9179ae86a5a98c72b77316b9c6289"
+    },
+    {
+      "path": "design-md/clickhouse/preview-dark.html",
+      "sha": "27b0279fe4a5e9faa9ffbf8f9acd2e941fc33bd6"
+    },
+    {
+      "path": "design-md/clickhouse/preview.html",
+      "sha": "cd46c4b76a831dbe459b0ef9c4ca9c8b58432e62"
+    },
+    {
+      "path": "design-md/cohere/preview-dark.html",
+      "sha": "e43cd781e27d2ae1a1e61dafa87b48f2bcb28c6e"
+    },
+    {
+      "path": "design-md/cohere/preview.html",
+      "sha": "ac6996ab20bbebbb8e7f5abd30b52e0afd633f64"
+    },
+    {
+      "path": "design-md/coinbase/preview-dark.html",
+      "sha": "6f66859403d641a157ccf831900fc315ff0194b7"
+    },
+    {
+      "path": "design-md/coinbase/preview.html",
+      "sha": "8925e51db4f8f9cf5c6e3161c12d348f35621a06"
+    },
+    {
+      "path": "design-md/composio/preview-dark.html",
+      "sha": "5caa82d285317d601864f86b8c14385c6f8a9e00"
+    },
+    {
+      "path": "design-md/composio/preview.html",
+      "sha": "3cc5cb263077ed748a14709161cc35c586f0d8a2"
+    },
+    {
+      "path": "design-md/cursor/preview-dark.html",
+      "sha": "f7b4404f141e1f67c8aaa0e5af35867c9765517d"
+    },
+    {
+      "path": "design-md/cursor/preview.html",
+      "sha": "96be05a34e82787f22908808df54f937b624ec5f"
+    },
+    {
+      "path": "design-md/elevenlabs/preview-dark.html",
+      "sha": "257e3ec21984e3ef2bd677185fc34f5764a99fc5"
+    },
+    {
+      "path": "design-md/elevenlabs/preview.html",
+      "sha": "52192fefd7134262601112623aa8bafbfdc49aa9"
+    },
+    {
+      "path": "design-md/expo/preview-dark.html",
+      "sha": "9ec5c5825fcf4c9c9c14628d98918f33140f2444"
+    },
+    {
+      "path": "design-md/expo/preview.html",
+      "sha": "727897fd224c4ffeea9c026c42ae64308111a11a"
+    },
+    {
+      "path": "design-md/ferrari/preview-dark.html",
+      "sha": "2d8fa06139c06ac9062f1bfb6585e8c07f581f6c"
+    },
+    {
+      "path": "design-md/ferrari/preview.html",
+      "sha": "d019f26258ab0ae5512c45ef198d9033b6429f15"
+    },
+    {
+      "path": "design-md/figma/preview-dark.html",
+      "sha": "58d2df3e05617ab4e954fcbfa659877bb9927467"
+    },
+    {
+      "path": "design-md/figma/preview.html",
+      "sha": "b82aab52caf1d2d57a86e5d0b552ee058bcf21ff"
+    },
+    {
+      "path": "design-md/framer/preview-dark.html",
+      "sha": "e07ae221e147a3e242167b468efa2b9e5c64158c"
+    },
+    {
+      "path": "design-md/framer/preview.html",
+      "sha": "3c0b92da6c866e0177a6371b4ec218c2a7ef6281"
+    },
+    {
+      "path": "design-md/hashicorp/preview-dark.html",
+      "sha": "b89d5bfee678cf0868dbadb034469f03c3d36bd2"
+    },
+    {
+      "path": "design-md/hashicorp/preview.html",
+      "sha": "80986bfd4ae233c14081c78392e6d92e43692e15"
+    },
+    {
+      "path": "design-md/ibm/preview-dark.html",
+      "sha": "93e3627d5b32d154e8021b3f08f677c00cb9a3f3"
+    },
+    {
+      "path": "design-md/ibm/preview.html",
+      "sha": "e696b3a89afc44b82f77e614912ed05cd4070c89"
+    },
+    {
+      "path": "design-md/intercom/preview-dark.html",
+      "sha": "29322ab789c38c7677d258c3e03b710ddeb1c89e"
+    },
+    {
+      "path": "design-md/intercom/preview.html",
+      "sha": "f4560d92d9ced3ee37868f925a48ef4f9e0604b8"
+    },
+    {
+      "path": "design-md/kraken/preview-dark.html",
+      "sha": "00745f76e9169ce199972e76838d1aae8fb38bcb"
+    },
+    {
+      "path": "design-md/kraken/preview.html",
+      "sha": "8a518cea1c1f85215d7a1a6ca357c6a0160e0518"
+    },
+    {
+      "path": "design-md/lamborghini/preview-dark.html",
+      "sha": "1d4960539afc72527267b64da89a056b1552989c"
+    },
+    {
+      "path": "design-md/lamborghini/preview.html",
+      "sha": "01e1178edb220011b63162d56b3ddc7868255126"
+    },
+    {
+      "path": "design-md/linear.app/preview-dark.html",
+      "sha": "4b51696f525152ce28d5436e6a159cef5a6bfc05"
+    },
+    {
+      "path": "design-md/linear.app/preview.html",
+      "sha": "8e561fcf477e4ec291be89675db7e92810752036"
+    },
+    {
+      "path": "design-md/lovable/preview-dark.html",
+      "sha": "ddc66f889031f3494e9a678daa3a0e8e1e7958b0"
+    },
+    {
+      "path": "design-md/lovable/preview.html",
+      "sha": "944be92b212e80ac6d2e30017db4192fb21fedc9"
+    },
+    {
+      "path": "design-md/minimax/preview-dark.html",
+      "sha": "7046f72ba26c74e45ec2483146585935ec33aa1a"
+    },
+    {
+      "path": "design-md/minimax/preview.html",
+      "sha": "6b068596e63af05f087c2917dd440bd9b39d2659"
+    },
+    {
+      "path": "design-md/mintlify/preview-dark.html",
+      "sha": "906f49e9dc98d1ae808b49dc59e5dc5ce9c39686"
+    },
+    {
+      "path": "design-md/mintlify/preview.html",
+      "sha": "572afa5545c4d7b8ee7005b4f779ff6886493365"
+    },
+    {
+      "path": "design-md/miro/preview-dark.html",
+      "sha": "9a6aecea37ccd2e29e1a1a1e7a6fe4deff30a94a"
+    },
+    {
+      "path": "design-md/miro/preview.html",
+      "sha": "3d1a8cf6240c508609eb12050db2b28ed32241f1"
+    },
+    {
+      "path": "design-md/mistral.ai/preview-dark.html",
+      "sha": "47a8843abc536feff23ae462ed332fa11c9d9958"
+    },
+    {
+      "path": "design-md/mistral.ai/preview.html",
+      "sha": "ef85e3ceeb7391ebaaed7f4db86962722b740511"
+    },
+    {
+      "path": "design-md/mongodb/preview-dark.html",
+      "sha": "ec4a6987733476fc7ec3e2737bd20b1558c25eaa"
+    },
+    {
+      "path": "design-md/mongodb/preview.html",
+      "sha": "7bcef785c2ae459d7a3159db460f98a795598bb4"
+    },
+    {
+      "path": "design-md/notion/preview-dark.html",
+      "sha": "5e0421e64d4d9f18c45e8c73815b144e743d13f0"
+    },
+    {
+      "path": "design-md/notion/preview.html",
+      "sha": "ead51eaa5f486bf6e1240341f9cf0ca25c481dfd"
+    },
+    {
+      "path": "design-md/nvidia/preview-dark.html",
+      "sha": "28eff52323db81c0c433d3c09711782911e9d514"
+    },
+    {
+      "path": "design-md/nvidia/preview.html",
+      "sha": "4a27d55c8e448ffd50cfe4e9ec9f53e06d3cd4e6"
+    },
+    {
+      "path": "design-md/ollama/preview-dark.html",
+      "sha": "8de75e004f547d473d8e04682a38bc72f24050d8"
+    },
+    {
+      "path": "design-md/ollama/preview.html",
+      "sha": "b83a385c32cbd2eefa68d7dbcb48439ee17e6098"
+    },
+    {
+      "path": "design-md/opencode.ai/preview-dark.html",
+      "sha": "fc8bf6a841c429e0ecd4c32b8bf10dbb302f729c"
+    },
+    {
+      "path": "design-md/opencode.ai/preview.html",
+      "sha": "1bc8c15ab6cbbb3d7cdf62aa99e5fa77a1fbc4b4"
+    },
+    {
+      "path": "design-md/pinterest/preview-dark.html",
+      "sha": "41cc9aa21e969c207b1d9dd3d0057b9cb19bd706"
+    },
+    {
+      "path": "design-md/pinterest/preview.html",
+      "sha": "16b57dfde43d1fd0616ac18f6596ee3703bd34bc"
+    },
+    {
+      "path": "design-md/posthog/preview-dark.html",
+      "sha": "ed2aff1a2d0416d9e2f0e1c4072e1173cbb2ffe5"
+    },
+    {
+      "path": "design-md/posthog/preview.html",
+      "sha": "943cb0258a005b3787bd76e665b6b252222ad8e4"
+    },
+    {
+      "path": "design-md/raycast/preview-dark.html",
+      "sha": "0220d4f85a8d0f18e35d9e84c7d350af1fa7e678"
+    },
+    {
+      "path": "design-md/raycast/preview.html",
+      "sha": "5afd424176dfe34030cbc35004199eb7878f697d"
+    },
+    {
+      "path": "design-md/renault/preview-dark.html",
+      "sha": "5958f2d7bc69291fc500ab9d9166d6ac611997ea"
+    },
+    {
+      "path": "design-md/renault/preview.html",
+      "sha": "e770f6707339a84e339f49f9c77d5ce53a6ea5a8"
+    },
+    {
+      "path": "design-md/replicate/preview-dark.html",
+      "sha": "6fb64299ce7e7d0df19ecfabe428aab69a7c5717"
+    },
+    {
+      "path": "design-md/replicate/preview.html",
+      "sha": "6b111e284894668c67e3ce9aeceb88032a75bd6e"
+    },
+    {
+      "path": "design-md/resend/preview-dark.html",
+      "sha": "c8ec74d3e33d42dad040f9e92259ef14f8fbe1f3"
+    },
+    {
+      "path": "design-md/resend/preview.html",
+      "sha": "f95de79940d34d8ba6d1159d3b0a98389c2d678b"
+    },
+    {
+      "path": "design-md/revolut/preview-dark.html",
+      "sha": "f3197f4052084b3e46802390aea728c799686f85"
+    },
+    {
+      "path": "design-md/revolut/preview.html",
+      "sha": "1523a53162dc659b5da465dccd048fb88590ae6c"
+    },
+    {
+      "path": "design-md/runwayml/preview-dark.html",
+      "sha": "2bd16a3dbfa5d79f6d46e08087faa70ef7d4ff0f"
+    },
+    {
+      "path": "design-md/runwayml/preview.html",
+      "sha": "3803826714f6ee58beb80ef17d24a946c1868367"
+    },
+    {
+      "path": "design-md/sanity/preview-dark.html",
+      "sha": "6fccbc4075ffde74e7468dd4f2f931403198ce05"
+    },
+    {
+      "path": "design-md/sanity/preview.html",
+      "sha": "f1e9b454a04db755468f66cb0be82656cb8a1f76"
+    },
+    {
+      "path": "design-md/sentry/preview-dark.html",
+      "sha": "0f487c07beec9cb4f5ad3a49ce3c038ac5c0c652"
+    },
+    {
+      "path": "design-md/sentry/preview.html",
+      "sha": "3d6d271f54557a311fdc6d271a414e3368bb07c5"
+    },
+    {
+      "path": "design-md/spacex/preview-dark.html",
+      "sha": "0413e375b14c2997a8150b66393be389f08a65c9"
+    },
+    {
+      "path": "design-md/spacex/preview.html",
+      "sha": "8c6f297be46845f75ef8d72ec461efd5d20c36d4"
+    },
+    {
+      "path": "design-md/spotify/preview-dark.html",
+      "sha": "9240a3a9163b705dc4f36c8f17c1831015807c14"
+    },
+    {
+      "path": "design-md/spotify/preview.html",
+      "sha": "815089371190192abeda43249991f49b8d2db6d3"
+    },
+    {
+      "path": "design-md/stripe/preview-dark.html",
+      "sha": "11dc46f55b75b644ef357fd189e17aaec017f7c7"
+    },
+    {
+      "path": "design-md/stripe/preview.html",
+      "sha": "674db9220315407562bc8ec176d07cf0b26635e3"
+    },
+    {
+      "path": "design-md/supabase/preview-dark.html",
+      "sha": "8baa07b25a2ee64da3a2993f7ad3060740cbc0a9"
+    },
+    {
+      "path": "design-md/supabase/preview.html",
+      "sha": "c3e3013d1ab94b3b6873afbe9c9d5ae30770e6aa"
+    },
+    {
+      "path": "design-md/superhuman/preview-dark.html",
+      "sha": "a9b0c16d1e14c76b57eb099573231780b319a84d"
+    },
+    {
+      "path": "design-md/superhuman/preview.html",
+      "sha": "31ee3bba8c672d29054136f03262d797d1fceaeb"
+    },
+    {
+      "path": "design-md/tesla/preview-dark.html",
+      "sha": "d36e62072dc779522d22740ffc69e320b4692a21"
+    },
+    {
+      "path": "design-md/tesla/preview.html",
+      "sha": "d36ce4484ecdaaf61583772a9f05c138996f85d3"
+    },
+    {
+      "path": "design-md/together.ai/preview-dark.html",
+      "sha": "4b10f07f711f944453e4b0a1a0c4833ea6d1b9ed"
+    },
+    {
+      "path": "design-md/together.ai/preview.html",
+      "sha": "a712507964667d5452a68d5145148f0da2e3ac0d"
+    },
+    {
+      "path": "design-md/uber/preview-dark.html",
+      "sha": "25d3e8cc0563ce5c4df6484de8a4b4a8acfabb2e"
+    },
+    {
+      "path": "design-md/uber/preview.html",
+      "sha": "d1075cd21ac0ad6bebd90d520a0ee9f3dfa513c7"
+    },
+    {
+      "path": "design-md/vercel/preview-dark.html",
+      "sha": "e04db017bae1505cadf88937bd137768c1e4dad0"
+    },
+    {
+      "path": "design-md/vercel/preview.html",
+      "sha": "ffd034b6a1405bd9f924c0b718a3619f9270120a"
+    },
+    {
+      "path": "design-md/voltagent/preview-dark.html",
+      "sha": "379eda67b466a6e09d0370d1f329550cc0edc1bd"
+    },
+    {
+      "path": "design-md/voltagent/preview.html",
+      "sha": "60bc6eeb8badb77a6393c0a7760d5b66526dcba3"
+    },
+    {
+      "path": "design-md/warp/preview-dark.html",
+      "sha": "7a06ffc482ea730a90d53a788199ab24e96c7485"
+    },
+    {
+      "path": "design-md/warp/preview.html",
+      "sha": "377169a58563c44eff28870b23f342a40dce73d0"
+    },
+    {
+      "path": "design-md/webflow/preview-dark.html",
+      "sha": "ce79d50de67b071bed389c33296ca33727e1580f"
+    },
+    {
+      "path": "design-md/webflow/preview.html",
+      "sha": "08f0839c2973c868151bcd84bb7facb0bafb0169"
+    },
+    {
+      "path": "design-md/wise/preview-dark.html",
+      "sha": "616080617555e9929890e7365510dced22d0219a"
+    },
+    {
+      "path": "design-md/wise/preview.html",
+      "sha": "cc452789a2c8576d19302531b5fd93d9f924cbf9"
+    },
+    {
+      "path": "design-md/x.ai/preview-dark.html",
+      "sha": "d0e343fbbf4f632240e04111eccd35c6fc590db8"
+    },
+    {
+      "path": "design-md/x.ai/preview.html",
+      "sha": "de0ce9961b12e45f3a4a3abea56c0a16f14aa524"
+    },
+    {
+      "path": "design-md/zapier/preview-dark.html",
+      "sha": "d1b8e807eb24115db4c54b453b93781a0c81e9e8"
+    },
+    {
+      "path": "design-md/zapier/preview.html",
+      "sha": "1bdd572116e35309ea68fd545b3249e3c22a01f6"
+    }
+  ],
+  "licenseUrl": "https://github.com/VoltAgent/awesome-design-md/blob/1ebace0eeadc6428435cca1608f1dc4a8396e9cd/LICENSE",
+  "license": "MIT License\n\nCopyright (c) 2026 VoltAgent\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+  "exampleExternal": [
+    "https://fonts.googleapis.com",
+    "https://fonts.gstatic.com",
+    "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap",
+    "https://github.com/VoltAgent/voltagent",
+    "https://github.com/VoltAgent.png?size=32"
+  ]
+}

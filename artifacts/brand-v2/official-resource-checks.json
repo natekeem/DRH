@@ -1,0 +1,99 @@
+[
+  {
+    "slug": "apple",
+    "url": "https://developer.apple.com/design/human-interface-guidelines/",
+    "finalUrl": "https://developer.apple.com/design/human-interface-guidelines/",
+    "status": 200,
+    "title": "Human Interface Guidelines | Apple Developer Documentation",
+    "heading": [
+      "Human Interface Guidelines"
+    ],
+    "checkedAt": "2026-09-12",
+    "method": "Official domain plus page content, not status alone"
+  },
+  {
+    "slug": "linear.app",
+    "url": "https://linear.app/brand",
+    "finalUrl": "https://linear.app/brand",
+    "status": 200,
+    "title": "Brand Guidelines – Linear",
+    "heading": [
+      "Linear Brand Guidelines"
+    ],
+    "checkedAt": "2026-09-12",
+    "method": "Official domain plus page content, not status alone"
+  },
+  {
+    "slug": "vercel",
+    "url": "https://vercel.com/geist/introduction",
+    "finalUrl": "https://vercel.com/geist/introduction",
+    "status": 200,
+    "title": "Geist",
+    "heading": [
+      "Geist Design System"
+    ],
+    "checkedAt": "2026-09-12",
+    "method": "Official domain plus page content, not status alone"
+  },
+  {
+    "slug": "vercel",
+    "url": "https://vercel.com/geist/typography",
+    "finalUrl": "https://vercel.com/geist/typography",
+    "status": 200,
+    "title": "Typography",
+    "heading": [
+      "Typography"
+    ],
+    "checkedAt": "2026-09-12",
+    "method": "Official domain plus page content, not status alone"
+  },
+  {
+    "slug": "airbnb",
+    "url": "https://news.airbnb.com/media-assets",
+    "finalUrl": "https://news.airbnb.com/media-assets",
+    "status": 200,
+    "title": "Media assets - Airbnb Newsroom",
+    "heading": [
+      "Media assets"
+    ],
+    "checkedAt": "2026-09-12",
+    "method": "Official domain plus page content, not status alone"
+  },
+  {
+    "slug": "stripe",
+    "url": "https://stripe.com/newsroom/information",
+    "finalUrl": "https://stripe.com/newsroom/information",
+    "status": 200,
+    "title": "Stripe Newsroom | Information and assets",
+    "heading": [
+      "Media assets",
+      "The Stripe logo"
+    ],
+    "checkedAt": "2026-09-12",
+    "method": "Official domain plus page content, not status alone"
+  },
+  {
+    "slug": "spotify",
+    "url": "https://developer.spotify.com/documentation/design",
+    "finalUrl": "https://developer.spotify.com/documentation/design",
+    "status": 200,
+    "title": "Design & Branding Guidelines | Spotify for Developers",
+    "heading": [
+      "Design & Branding Guidelines"
+    ],
+    "checkedAt": "2026-09-12",
+    "method": "Official domain plus page content, not status alone"
+  },
+  {
+    "slug": "figma",
+    "url": "https://www.figma.com/es-la/using-the-figma-brand/",
+    "finalUrl": "https://www.figma.com/es-la/using-the-figma-brand/",
+    "status": 200,
+    "title": "Pautas de uso de la marca y el logotipo de Figma | Figma",
+    "heading": [
+      "Pautas de marca de Figma"
+    ],
+    "checkedAt": "2026-09-12",
+    "method": "Official domain plus page content, not status alone"
+  }
+]

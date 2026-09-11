@@ -1,0 +1,43 @@
+[
+  {
+    "name": "getdesign",
+    "url": "https://getdesign.md/linear.app/design-md",
+    "title": "Design System Analysis: Linear",
+    "headings": [
+      "Design System Analysis: Linear",
+      "Usage",
+      "Preview"
+    ]
+  },
+  {
+    "name": "starterkit",
+    "url": "https://starterkit.getdesign.md/",
+    "title": "Build Web Apps with Your AI Coding Tool — Website Starter Kit",
+    "headings": [
+      "Build your web appfrom the first prompt.",
+      "In 2026, everybody builds with AI, even non-coders. The hard part is not the prompt. It is giving your AI coding tool the right stack and integration points, so it can build something real instead of guessing.",
+      "Do not let sign-in slow down your launch.",
+      "Bring your AI coding tool. Website Starter Kit gives it the project.",
+      "Publish content and get found.",
+      "Start taking payments without starting from scratch.",
+      "Email flows, already part of the product.",
+      "Email your users",
+      "Newsletter & subscribers",
+      "Contact form",
+      "AI product surfaces, already in place.",
+      "The last mile is already in place.",
+      "Uploads that already belong in the product.",
+      "Pay once, lifetime access.",
+      "Skip months of boilerplate.",
+      "FAQ"
+    ]
+  },
+  {
+    "name": "oh-my-design",
+    "url": "https://oh-my-design.kr/builder",
+    "title": "Design System Builder — oh-my-design",
+    "headings": [
+      "Choose a reference"
+    ]
+  }
+]

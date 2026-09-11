@@ -67,7 +67,7 @@ assert.equal(bySlug['nintendo-2001'].spec.typography.display.fontWeight, 900)
 const renderer = await readFile('src/components/demos/VendorDesignPreview.tsx', 'utf8')
 assert(!/https?:\/\//.test(renderer), 'Brand renderer must not fetch external resources')
 assert(!/fonts\.googleapis|@import\s+url/.test(await readFile('src/components/demos/vendorDesignPreview.css', 'utf8')))
-assert(renderer.includes('entry.spec') && renderer.includes('s.typography') && renderer.includes('s.components'))
+assert(renderer.includes('entry.spec') && renderer.includes('buildBrandCatalog') && renderer.includes('loaded.spec'))
 assert((await readFile('src/components/demos/DemoRenderer.tsx','utf8')).includes('entry={entry} detail={detail}'))
 const canaries = ["apple","airbnb","notion","linear.app","stripe","vercel","spotify","ferrari","nintendo-2001","binance","tesla","figma"]
 assert(new Set(canaries.map(slug=>bySlug[slug].spec.layout)).size >= 8, 'Canary composition collapse')
