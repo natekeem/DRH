@@ -13,3 +13,114 @@
 .bc-type-scroll .bc-type-readable{white-space:normal;width:auto}
 
 .bc-source-warning{font-size:11px;line-height:1.5;padding:10px 12px;border-top:1px solid var(--bc-border)}
+
+/* The catalog owns scrolling; its workspace wrapper only supplies the height. */
+.workspace-demo:has(.bc-detail) { overflow: hidden; }
+@media (min-width: 1200px) {
+  .workspace-demo .bc-detail { height: 100%; max-height: none; }
+}
+
+.bc-jump-menu { position: relative; }
+.bc-jump-menu summary { list-style: none; user-select: none; display: flex; align-items: center; justify-content: center; gap: 4px; }
+.bc-jump-menu summary::-webkit-details-marker { display: none; }
+.bc-jump-options { 
+  position: absolute; 
+  top: calc(100% + 4px); 
+  right: 0;
+  display: flex; 
+  flex-direction: column;
+  background: var(--bc-canvas); 
+  border: 1px solid var(--bc-border); 
+  border-radius: 6px; 
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+  z-index: 10;
+  min-width: max-content;
+  max-height: 50vh;
+  overflow: auto;
+  padding: 4px;
+}
+.bc-jump-options button {
+  background: transparent;
+  border: none;
+  color: var(--bc-ink);
+  padding: 8px 12px;
+  text-align: left;
+  font: 12px/1.4 system-ui,sans-serif;
+  white-space: nowrap;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.bc-jump-options button:hover, .bc-jump-options button:focus-visible {
+  background: var(--bc-surface);
+  outline: none;
+}
+
+.bc-jump-menu { position: relative; }
+.bc-jump-menu summary { list-style: none; user-select: none; display: flex; align-items: center; justify-content: center; gap: 4px; }
+.bc-jump-menu summary::-webkit-details-marker { display: none; }
+.bc-jump-options { 
+  position: absolute; 
+  top: calc(100% + 4px); 
+  right: 0;
+  display: flex; 
+  flex-direction: column;
+  background: var(--bc-canvas); 
+  border: 1px solid var(--bc-border); 
+  border-radius: 6px; 
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+  z-index: 10;
+  min-width: max-content;
+  max-height: 50vh;
+  overflow: auto;
+  padding: 4px;
+}
+.bc-jump-options button {
+  background: transparent;
+  border: none;
+  color: var(--bc-ink);
+  padding: 8px 12px;
+  text-align: left;
+  font: 12px/1.4 system-ui,sans-serif;
+  white-space: nowrap;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.bc-jump-options button:hover, .bc-jump-options button:focus-visible {
+  background: var(--bc-surface);
+  outline: none;
+}
+
+.bc-jump-menu { position: relative; }
+.bc-jump-menu summary { list-style: none; user-select: none; display: flex; align-items: center; justify-content: center; gap: 4px; }
+.bc-jump-menu summary::-webkit-details-marker { display: none; }
+.bc-jump-options { 
+  position: absolute; 
+  top: calc(100% + 4px); 
+  right: 0;
+  display: flex; 
+  flex-direction: column;
+  background: var(--bc-canvas); 
+  border: 1px solid var(--bc-border); 
+  border-radius: 6px; 
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+  z-index: 10;
+  min-width: max-content;
+  max-height: 50vh;
+  overflow: auto;
+  padding: 4px;
+}
+.bc-jump-options button {
+  background: transparent;
+  border: none;
+  color: var(--bc-ink);
+  padding: 8px 12px;
+  text-align: left;
+  font: 12px/1.4 system-ui,sans-serif;
+  white-space: nowrap;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.bc-jump-options button:hover, .bc-jump-options button:focus-visible {
+  background: var(--bc-surface);
+  outline: none;
+}
