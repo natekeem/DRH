@@ -1,0 +1,1275 @@
+{
+  "coverage": {
+    "totalBrands": 74,
+    "primaryFont": {
+      "open-font": 10,
+      "system-font": 4,
+      "proprietary": 57,
+      "unspecified": 3
+    },
+    "brandsWithDeclaredOpenFont": 27,
+    "brandAsset": {
+      "verified-svg": 2,
+      "verified-image": 0,
+      "text-wordmark": 72
+    },
+    "brandsWithResources": 13,
+    "resourceTypes": {
+      "assets": 7,
+      "design-system": 4,
+      "brand-guidelines": 4,
+      "typography": 2,
+      "developer-design-guide": 1
+    },
+    "responsive": 61,
+    "motion": {
+      "defined": 4,
+      "not-in-scope": 9,
+      "not-specified": 61
+    }
+  },
+  "fontAssets": [
+    {
+      "family": "Inter",
+      "kind": "open-font",
+      "localFamily": "Inter",
+      "src": "fonts/brand/inter/font.ttf",
+      "sourceUrl": "https://raw.githubusercontent.com/google/fonts/809e4d8b8d7e9364a914909bb777679606c178b8/ofl/inter/Inter%5Bopsz%2Cwght%5D.ttf",
+      "license": "SIL OFL 1.1",
+      "evidenceUrl": "https://raw.githubusercontent.com/google/fonts/809e4d8b8d7e9364a914909bb777679606c178b8/ofl/inter/OFL.txt",
+      "licensePath": "fonts/brand/inter/OFL.txt",
+      "commit": "809e4d8b8d7e9364a914909bb777679606c178b8",
+      "sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+      "variable": true
+    },
+    {
+      "family": "Geist",
+      "kind": "open-font",
+      "localFamily": "Geist",
+      "src": "fonts/brand/geist/font.ttf",
+      "sourceUrl": "https://raw.githubusercontent.com/google/fonts/809e4d8b8d7e9364a914909bb777679606c178b8/ofl/geist/Geist%5Bwght%5D.ttf",
+      "license": "SIL OFL 1.1",
+      "evidenceUrl": "https://raw.githubusercontent.com/google/fonts/809e4d8b8d7e9364a914909bb777679606c178b8/ofl/geist/OFL.txt",
+      "licensePath": "fonts/brand/geist/OFL.txt",
+      "commit": "809e4d8b8d7e9364a914909bb777679606c178b8",
+      "sha256": "73894e0448cae90a92b6c2f8732b7bb9acb7b94c418bff559dad4a18e1de9659",
+      "variable": true
+    },
+    {
+      "family": "Geist Mono",
+      "kind": "open-font",
+      "localFamily": "Geist Mono",
+      "src": "fonts/brand/geistmono/font.ttf",
+      "sourceUrl": "https://raw.githubusercontent.com/google/fonts/809e4d8b8d7e9364a914909bb777679606c178b8/ofl/geistmono/GeistMono%5Bwght%5D.ttf",
+      "license": "SIL OFL 1.1",
+      "evidenceUrl": "https://raw.githubusercontent.com/google/fonts/809e4d8b8d7e9364a914909bb777679606c178b8/ofl/geistmono/OFL.txt",
+      "licensePath": "fonts/brand/geistmono/OFL.txt",
+      "commit": "809e4d8b8d7e9364a914909bb777679606c178b8",
+      "sha256": "d00e590b8eb3a59acc329b2d044fd143ae935090b7da33199ebee27cc7de8196",
+      "variable": true
+    },
+    {
+      "family": "IBM Plex Sans",
+      "kind": "open-font",
+      "localFamily": "IBM Plex Sans",
+      "src": "fonts/brand/ibmplexsans/font.ttf",
+      "sourceUrl": "https://raw.githubusercontent.com/google/fonts/809e4d8b8d7e9364a914909bb777679606c178b8/ofl/ibmplexsans/IBMPlexSans%5Bwdth%2Cwght%5D.ttf",
+      "license": "SIL OFL 1.1",
+      "evidenceUrl": "https://raw.githubusercontent.com/google/fonts/809e4d8b8d7e9364a914909bb777679606c178b8/ofl/ibmplexsans/OFL.txt",
+      "licensePath": "fonts/brand/ibmplexsans/OFL.txt",
+      "commit": "809e4d8b8d7e9364a914909bb777679606c178b8",
+      "sha256": "3b031aa4216174205bd8471f88a49b91f093169e9e87bd5262242bc5967fe2e3",
+      "variable": true
+    },
+    {
+      "family": "IBM Plex Mono",
+      "kind": "open-font",
+      "localFamily": "IBM Plex Mono",
+      "src": "fonts/brand/ibmplexmono/font.ttf",
+      "sourceUrl": "https://raw.githubusercontent.com/google/fonts/809e4d8b8d7e9364a914909bb777679606c178b8/ofl/ibmplexmono/IBMPlexMono-Regular.ttf",
+      "license": "SIL OFL 1.1",
+      "evidenceUrl": "https://raw.githubusercontent.com/google/fonts/809e4d8b8d7e9364a914909bb777679606c178b8/ofl/ibmplexmono/OFL.txt",
+      "licensePath": "fonts/brand/ibmplexmono/OFL.txt",
+      "commit": "809e4d8b8d7e9364a914909bb777679606c178b8",
+      "sha256": "6a3412f058c7d8dfd9170c41e85ade48e5156ecb89356110ca57a0a27734af46",
+      "variable": false
+    },
+    {
+      "family": "JetBrains Mono",
+      "kind": "open-font",
+      "localFamily": "JetBrains Mono",
+      "src": "fonts/brand/jetbrainsmono/font.ttf",
+      "sourceUrl": "https://raw.githubusercontent.com/google/fonts/809e4d8b8d7e9364a914909bb777679606c178b8/ofl/jetbrainsmono/JetBrainsMono%5Bwght%5D.ttf",
+      "license": "SIL OFL 1.1",
+      "evidenceUrl": "https://raw.githubusercontent.com/google/fonts/809e4d8b8d7e9364a914909bb777679606c178b8/ofl/jetbrainsmono/OFL.txt",
+      "licensePath": "fonts/brand/jetbrainsmono/OFL.txt",
+      "commit": "809e4d8b8d7e9364a914909bb777679606c178b8",
+      "sha256": "48715a42ec242c21e9f02692891e147d022299a52e48d5e413e1a942193ffeda",
+      "variable": true
+    },
+    {
+      "family": "DM Sans",
+      "kind": "open-font",
+      "localFamily": "DM Sans",
+      "src": "fonts/brand/dmsans/font.ttf",
+      "sourceUrl": "https://raw.githubusercontent.com/google/fonts/809e4d8b8d7e9364a914909bb777679606c178b8/ofl/dmsans/DMSans%5Bopsz%2Cwght%5D.ttf",
+      "license": "SIL OFL 1.1",
+      "evidenceUrl": "https://raw.githubusercontent.com/google/fonts/809e4d8b8d7e9364a914909bb777679606c178b8/ofl/dmsans/OFL.txt",
+      "licensePath": "fonts/brand/dmsans/OFL.txt",
+      "commit": "809e4d8b8d7e9364a914909bb777679606c178b8",
+      "sha256": "8cd08d97e89c24d0aa92edd2f0f4c8ee6195eee9b7c9f154865a58b02f0c1c0d",
+      "variable": true
+    },
+    {
+      "family": "Instrument Serif",
+      "kind": "open-font",
+      "localFamily": "Instrument Serif",
+      "src": "fonts/brand/instrumentserif/font.ttf",
+      "sourceUrl": "https://raw.githubusercontent.com/google/fonts/809e4d8b8d7e9364a914909bb777679606c178b8/ofl/instrumentserif/InstrumentSerif-Regular.ttf",
+      "license": "SIL OFL 1.1",
+      "evidenceUrl": "https://raw.githubusercontent.com/google/fonts/809e4d8b8d7e9364a914909bb777679606c178b8/ofl/instrumentserif/OFL.txt",
+      "licensePath": "fonts/brand/instrumentserif/OFL.txt",
+      "commit": "809e4d8b8d7e9364a914909bb777679606c178b8",
+      "sha256": "498efd461f6ddfcb7a111bf9a565709d2085d48201d501ead960d93e84ffbb88",
+      "variable": false
+    }
+  ],
+  "brands": [
+    {
+      "slug": "airbnb",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 23,
+      "detailRoles": 5,
+      "fullRoles": 18
+    },
+    {
+      "slug": "airtable",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary",
+        "open-font"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-in-scope",
+      "detailColors": 8,
+      "fullColors": 28,
+      "detailRoles": 5,
+      "fullRoles": 14
+    },
+    {
+      "slug": "apple",
+      "primaryFont": "system-font",
+      "rendered": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+      "fontKinds": [
+        "system-font"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 21,
+      "detailRoles": 5,
+      "fullRoles": 16
+    },
+    {
+      "slug": "binance",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-in-scope",
+      "detailColors": 8,
+      "fullColors": 24,
+      "detailRoles": 5,
+      "fullRoles": 15
+    },
+    {
+      "slug": "bmw",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-in-scope",
+      "detailColors": 8,
+      "fullColors": 25,
+      "detailRoles": 5,
+      "fullRoles": 13
+    },
+    {
+      "slug": "bmw-m",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-in-scope",
+      "detailColors": 8,
+      "fullColors": 21,
+      "detailRoles": 5,
+      "fullRoles": 13
+    },
+    {
+      "slug": "bugatti",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-in-scope",
+      "detailColors": 8,
+      "fullColors": 18,
+      "detailRoles": 5,
+      "fullRoles": 12
+    },
+    {
+      "slug": "cal",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary",
+        "open-font"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-in-scope",
+      "detailColors": 8,
+      "fullColors": 26,
+      "detailRoles": 5,
+      "fullRoles": 13
+    },
+    {
+      "slug": "claude",
+      "primaryFont": "proprietary",
+      "rendered": "Georgia",
+      "fontKinds": [
+        "proprietary",
+        "open-font"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-in-scope",
+      "detailColors": 8,
+      "fullColors": 25,
+      "detailRoles": 5,
+      "fullRoles": 14
+    },
+    {
+      "slug": "clay",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary",
+        "open-font"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-in-scope",
+      "detailColors": 8,
+      "fullColors": 29,
+      "detailRoles": 5,
+      "fullRoles": 13
+    },
+    {
+      "slug": "clickhouse",
+      "primaryFont": "open-font",
+      "rendered": "Inter",
+      "fontKinds": [
+        "open-font"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-in-scope",
+      "detailColors": 8,
+      "fullColors": 24,
+      "detailRoles": 5,
+      "fullRoles": 15
+    },
+    {
+      "slug": "cohere",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 23,
+      "detailRoles": 5,
+      "fullRoles": 12
+    },
+    {
+      "slug": "coinbase",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 22,
+      "detailRoles": 5,
+      "fullRoles": 16
+    },
+    {
+      "slug": "composio",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary",
+        "open-font"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 22,
+      "detailRoles": 5,
+      "fullRoles": 14
+    },
+    {
+      "slug": "cursor",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary",
+        "open-font"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 22,
+      "detailRoles": 5,
+      "fullRoles": 14
+    },
+    {
+      "slug": "dell-1996",
+      "primaryFont": "system-font",
+      "rendered": "Arial Black, sans-serif",
+      "fontKinds": [
+        "system-font"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": false,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 17,
+      "detailRoles": 5,
+      "fullRoles": 10
+    },
+    {
+      "slug": "elevenlabs",
+      "primaryFont": "proprietary",
+      "rendered": "Georgia",
+      "fontKinds": [
+        "proprietary",
+        "open-font"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 27,
+      "detailRoles": 5,
+      "fullRoles": 14
+    },
+    {
+      "slug": "expo",
+      "primaryFont": "open-font",
+      "rendered": "Inter",
+      "fontKinds": [
+        "open-font"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 28,
+      "detailRoles": 5,
+      "fullRoles": 14
+    },
+    {
+      "slug": "ferrari",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 26,
+      "detailRoles": 5,
+      "fullRoles": 13
+    },
+    {
+      "slug": "figma",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 20,
+      "detailRoles": 5,
+      "fullRoles": 12
+    },
+    {
+      "slug": "framer",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary",
+        "open-font"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 17,
+      "detailRoles": 5,
+      "fullRoles": 12
+    },
+    {
+      "slug": "hashicorp",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 30,
+      "detailRoles": 5,
+      "fullRoles": 12
+    },
+    {
+      "slug": "hp",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 28,
+      "detailRoles": 5,
+      "fullRoles": 16
+    },
+    {
+      "slug": "ibm",
+      "primaryFont": "open-font",
+      "rendered": "IBM Plex Sans",
+      "fontKinds": [
+        "open-font"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 21,
+      "detailRoles": 5,
+      "fullRoles": 13
+    },
+    {
+      "slug": "intercom",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 25,
+      "detailRoles": 5,
+      "fullRoles": 13
+    },
+    {
+      "slug": "kraken",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 16,
+      "detailRoles": 5,
+      "fullRoles": 10
+    },
+    {
+      "slug": "lamborghini",
+      "primaryFont": "unspecified",
+      "rendered": "Inter",
+      "fontKinds": [
+        "unspecified"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 25,
+      "detailRoles": 5,
+      "fullRoles": 14
+    },
+    {
+      "slug": "linear.app",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 23,
+      "detailRoles": 5,
+      "fullRoles": 13
+    },
+    {
+      "slug": "lovable",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 20,
+      "detailRoles": 5,
+      "fullRoles": 12
+    },
+    {
+      "slug": "mastercard",
+      "primaryFont": "unspecified",
+      "rendered": "Inter",
+      "fontKinds": [
+        "unspecified"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "defined",
+      "detailColors": 8,
+      "fullColors": 19,
+      "detailRoles": 5,
+      "fullRoles": 9
+    },
+    {
+      "slug": "meta",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 27,
+      "detailRoles": 5,
+      "fullRoles": 15
+    },
+    {
+      "slug": "minimax",
+      "primaryFont": "open-font",
+      "rendered": "DM Sans",
+      "fontKinds": [
+        "open-font"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 28,
+      "detailRoles": 5,
+      "fullRoles": 15
+    },
+    {
+      "slug": "mintlify",
+      "primaryFont": "open-font",
+      "rendered": "Inter",
+      "fontKinds": [
+        "open-font"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 32,
+      "detailRoles": 5,
+      "fullRoles": 20
+    },
+    {
+      "slug": "miro",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 40,
+      "detailRoles": 5,
+      "fullRoles": 18
+    },
+    {
+      "slug": "mistral.ai",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary",
+        "open-font"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 36,
+      "detailRoles": 5,
+      "fullRoles": 19
+    },
+    {
+      "slug": "mongodb",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 34,
+      "detailRoles": 5,
+      "fullRoles": 18
+    },
+    {
+      "slug": "nike",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary",
+        "system-font"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 23,
+      "detailRoles": 5,
+      "fullRoles": 13
+    },
+    {
+      "slug": "nintendo-2001",
+      "primaryFont": "system-font",
+      "rendered": "Arial, sans-serif",
+      "fontKinds": [
+        "system-font"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": false,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 22,
+      "detailRoles": 5,
+      "fullRoles": 7
+    },
+    {
+      "slug": "notion",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 47,
+      "detailRoles": 5,
+      "fullRoles": 17
+    },
+    {
+      "slug": "nvidia",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 28,
+      "detailRoles": 5,
+      "fullRoles": 18
+    },
+    {
+      "slug": "ollama",
+      "primaryFont": "system-font",
+      "rendered": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+      "fontKinds": [
+        "system-font"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 21,
+      "detailRoles": 5,
+      "fullRoles": 13
+    },
+    {
+      "slug": "opencode.ai",
+      "primaryFont": "proprietary",
+      "rendered": "Geist Mono",
+      "fontKinds": [
+        "proprietary"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 28,
+      "detailRoles": 5,
+      "fullRoles": 8
+    },
+    {
+      "slug": "pinterest",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 31,
+      "detailRoles": 5,
+      "fullRoles": 14
+    },
+    {
+      "slug": "playstation",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 36,
+      "detailRoles": 5,
+      "fullRoles": 14
+    },
+    {
+      "slug": "posthog",
+      "primaryFont": "open-font",
+      "rendered": "IBM Plex Sans",
+      "fontKinds": [
+        "open-font",
+        "system-font",
+        "proprietary"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 29,
+      "detailRoles": 5,
+      "fullRoles": 20
+    },
+    {
+      "slug": "raycast",
+      "primaryFont": "open-font",
+      "rendered": "Inter",
+      "fontKinds": [
+        "open-font"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 31,
+      "detailRoles": 5,
+      "fullRoles": 15
+    },
+    {
+      "slug": "renault",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 25,
+      "detailRoles": 5,
+      "fullRoles": 15
+    },
+    {
+      "slug": "replicate",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary",
+        "open-font"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 26,
+      "detailRoles": 5,
+      "fullRoles": 17
+    },
+    {
+      "slug": "resend",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary",
+        "open-font",
+        "system-font"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 28,
+      "detailRoles": 5,
+      "fullRoles": 14
+    },
+    {
+      "slug": "revolut",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary",
+        "open-font"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 35,
+      "detailRoles": 5,
+      "fullRoles": 16
+    },
+    {
+      "slug": "runwayml",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 21,
+      "detailRoles": 5,
+      "fullRoles": 9
+    },
+    {
+      "slug": "sanity",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary",
+        "open-font"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 27,
+      "detailRoles": 5,
+      "fullRoles": 16
+    },
+    {
+      "slug": "sentry",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary",
+        "system-font"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 21,
+      "detailRoles": 5,
+      "fullRoles": 16
+    },
+    {
+      "slug": "shopify",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary",
+        "open-font",
+        "system-font"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 22,
+      "detailRoles": 5,
+      "fullRoles": 15
+    },
+    {
+      "slug": "slack",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 19,
+      "detailRoles": 5,
+      "fullRoles": 15
+    },
+    {
+      "slug": "spacex",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 13,
+      "detailRoles": 5,
+      "fullRoles": 8
+    },
+    {
+      "slug": "spotify",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 27,
+      "detailRoles": 5,
+      "fullRoles": 14
+    },
+    {
+      "slug": "starbucks",
+      "primaryFont": "unspecified",
+      "rendered": "Inter",
+      "fontKinds": [
+        "unspecified"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "defined",
+      "detailColors": 8,
+      "fullColors": 25,
+      "detailRoles": 5,
+      "fullRoles": 10
+    },
+    {
+      "slug": "stripe",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 20,
+      "detailRoles": 5,
+      "fullRoles": 15
+    },
+    {
+      "slug": "supabase",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary",
+        "system-font"
+      ],
+      "brandAsset": "verified-svg",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 27,
+      "detailRoles": 5,
+      "fullRoles": 12
+    },
+    {
+      "slug": "superhuman",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 15,
+      "detailRoles": 5,
+      "fullRoles": 12
+    },
+    {
+      "slug": "tesla",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "defined",
+      "detailColors": 8,
+      "fullColors": 18,
+      "detailRoles": 5,
+      "fullRoles": 8
+    },
+    {
+      "slug": "theverge",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": true,
+      "motion": "defined",
+      "detailColors": 8,
+      "fullColors": 41,
+      "detailRoles": 5,
+      "fullRoles": 21
+    },
+    {
+      "slug": "together.ai",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": false,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 13,
+      "detailRoles": 5,
+      "fullRoles": 14
+    },
+    {
+      "slug": "uber",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": false,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 13,
+      "detailRoles": 5,
+      "fullRoles": 13
+    },
+    {
+      "slug": "vercel",
+      "primaryFont": "open-font",
+      "rendered": "Geist",
+      "fontKinds": [
+        "open-font"
+      ],
+      "brandAsset": "verified-svg",
+      "responsive": false,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 36,
+      "detailRoles": 5,
+      "fullRoles": 14
+    },
+    {
+      "slug": "vodafone",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": false,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 8,
+      "detailRoles": 5,
+      "fullRoles": 17
+    },
+    {
+      "slug": "voltagent",
+      "primaryFont": "open-font",
+      "rendered": "Inter",
+      "fontKinds": [
+        "open-font",
+        "system-font"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": false,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 13,
+      "detailRoles": 5,
+      "fullRoles": 16
+    },
+    {
+      "slug": "warp",
+      "primaryFont": "open-font",
+      "rendered": "Inter",
+      "fontKinds": [
+        "open-font",
+        "proprietary"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": false,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 9,
+      "detailRoles": 5,
+      "fullRoles": 14
+    },
+    {
+      "slug": "webflow",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": false,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 19,
+      "detailRoles": 5,
+      "fullRoles": 16
+    },
+    {
+      "slug": "wired",
+      "primaryFont": "proprietary",
+      "rendered": "Georgia",
+      "fontKinds": [
+        "proprietary"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": false,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 9,
+      "detailRoles": 5,
+      "fullRoles": 14
+    },
+    {
+      "slug": "wise",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary",
+        "open-font"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": false,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 22,
+      "detailRoles": 5,
+      "fullRoles": 14
+    },
+    {
+      "slug": "x.ai",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary",
+        "open-font"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": false,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 18,
+      "detailRoles": 5,
+      "fullRoles": 11
+    },
+    {
+      "slug": "zapier",
+      "primaryFont": "proprietary",
+      "rendered": "Inter",
+      "fontKinds": [
+        "proprietary",
+        "open-font"
+      ],
+      "brandAsset": "text-wordmark",
+      "responsive": false,
+      "motion": "not-specified",
+      "detailColors": 8,
+      "fullColors": 10,
+      "detailRoles": 5,
+      "fullRoles": 16
+    }
+  ]
+}

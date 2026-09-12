@@ -82,9 +82,15 @@ console.log('Compatibility defaults remain presentation fallbacks; absent fields
 
 const artifactBundle=await build({stdin:{contents:"export {resolveArtifacts} from './src/lib/artifacts'",resolveDir:process.cwd()},bundle:true,write:false,format:'esm',platform:'node',plugins:[{name:'raw',setup(b){b.onResolve({filter:/\?raw$/},a=>({path:resolve(a.resolveDir,a.path.replace('?raw','')),namespace:'raw'}));b.onLoad({filter:/.*/,namespace:'raw'},async a=>({contents:await readFile(a.path,'utf8'),loader:'text'}))}}]})
 const {resolveArtifacts}=await import('data:text/javascript;base64,'+Buffer.from(artifactBundle.outputFiles[0].text).toString('base64'))
+const fontAssets=JSON.parse(await readFile('src/data/brandFontAssets.json','utf8'))
+const verifiedAssets=JSON.parse(await readFile('src/data/brandVerifiedAssets.json','utf8'))
 for(const entry of vendorEntries){
  const output=resolveArtifacts(references.find(r=>r.id==='admd-'+entry.slug))
  assert.deepEqual(JSON.parse(output.tokens.json).brandSpec,entry.spec,entry.slug+': token spec parity')
+ const token=JSON.parse(output.tokens.json),asset=verifiedAssets[entry.slug]||entry.spec.brandAsset
+ assert.deepEqual(token.fontAssets,fontAssets,entry.slug+': font registry parity')
+ assert.deepEqual(token.brandAsset,asset,entry.slug+': verified identifier parity')
+ for(const form of ['extended','compact'])assert(output.agent[form].includes(JSON.stringify(asset,null,2))&&output.agent[form].includes(JSON.stringify(fontAssets,null,2)),entry.slug+': Agent identity and font policy parity')
  for(const form of ['extended','compact'])assert(output.agent[form].includes(JSON.stringify(entry.spec,null,2))&&output.agent[form].includes('VendorDesignPreview.tsx'))
  assert(!output.react&&!output.html&&!output.css,'Do not invent standalone brand exports')
 }

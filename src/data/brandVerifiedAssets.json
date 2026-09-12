@@ -1,0 +1,27 @@
+{
+  "vercel": {
+    "type": "verified-svg",
+    "label": "Vercel",
+    "src": "brand-assets/vercel/logo.svg",
+    "darkSrc": "brand-assets/vercel/logo-dark.svg",
+    "format": "logotype",
+    "sourceUrl": "https://k2mkucxia43oc7fa.public.blob.vercel-storage.com/front/press/vercel-assets.zip",
+    "license": "Vercel trademark guidelines — truthful descriptive identification only; not an MIT asset",
+    "evidenceUrl": "https://vercel.com/geist/brands",
+    "attribution": "Vercel, the Vercel design, Next.js and related marks, designs and logos are trademarks or registered trademarks of Vercel, Inc. or its affiliates in the US and other countries.",
+    "checkedAt": "2026-09-12",
+    "sha256": "786da5791c12ea611eeab60f200d31b67422a73720abaa55338723e9086a0faf",
+    "darkSha256": "d405c07e0feb79a56140143ea6fa07555a996d8f8e7e228c55be6ec40226277c"
+  },
+  "supabase": {
+    "type": "verified-svg",
+    "label": "Supabase",
+    "src": "brand-assets/supabase/logo.svg",
+    "sourceUrl": "https://supabase.com/brand-assets.zip",
+    "license": "Supabase brand guidelines — unmodified identification of Supabase Inc. only; not an MIT asset",
+    "evidenceUrl": "https://supabase.com/brand-assets",
+    "attribution": "Supabase logo is a trademark of Supabase Inc. Used unmodified to identify the brand.",
+    "checkedAt": "2026-09-12",
+    "sha256": "eb9ffcd100ad26228a578100ba7cbfc5b383e4995338d122abdc6a3b4d210ed3"
+  }
+}

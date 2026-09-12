@@ -95,5 +95,95 @@
     ],
     "checkedAt": "2026-09-12",
     "method": "Official domain plus page content, not status alone"
+  },
+  {
+    "slug": "ibm",
+    "url": "https://carbondesignsystem.com/",
+    "status": 200,
+    "title": "Carbon Design System",
+    "heading": "Carbon Design System",
+    "finalUrl": "https://carbondesignsystem.com/",
+    "checkedAt": "2026-09-12"
+  },
+  {
+    "slug": "ibm",
+    "url": "https://www.ibm.com/plex/",
+    "status": 200,
+    "title": "Introduction | IBM Plex",
+    "heading": "IBM Plex",
+    "finalUrl": "https://www.ibm.com/plex/",
+    "checkedAt": "2026-09-12"
+  },
+  {
+    "slug": "ibm",
+    "url": "https://www.ibm.com/design/language/",
+    "status": 200,
+    "title": "IBM Design Language",
+    "heading": "IBM Design Language",
+    "finalUrl": "https://www.ibm.com/design/language/",
+    "checkedAt": "2026-09-12"
+  },
+  {
+    "slug": "shopify",
+    "url": "https://shopify.dev/docs/api/polaris",
+    "status": 200,
+    "title": "Polaris references",
+    "heading": "Polaris references",
+    "finalUrl": "https://shopify.dev/docs/api/polaris",
+    "checkedAt": "2026-09-12"
+  },
+  {
+    "slug": "shopify",
+    "url": "https://www.shopify.com/brand-assets",
+    "status": 200,
+    "title": "Using our brand - Shopify",
+    "heading": "Using our brand",
+    "finalUrl": "https://www.shopify.com/brand-assets",
+    "checkedAt": "2026-09-12"
+  },
+  {
+    "slug": "supabase",
+    "url": "https://supabase.com/brand-assets",
+    "status": 200,
+    "title": "Branding | Supabase",
+    "heading": "Brand assets",
+    "finalUrl": "https://supabase.com/brand-assets",
+    "checkedAt": "2026-09-12"
+  },
+  {
+    "slug": "mongodb",
+    "url": "https://www.mongodb.com/company/newsroom/brand-resources",
+    "status": 200,
+    "title": "MongoDB Brand Resources | MongoDB",
+    "heading": "Brand Resources",
+    "finalUrl": "https://www.mongodb.com/company/newsroom/brand-resources",
+    "checkedAt": "2026-09-12"
+  },
+  {
+    "slug": "raycast",
+    "url": "https://www.raycast.com/press",
+    "status": 200,
+    "title": "Raycast Press & Media Kit",
+    "heading": "Press &amp; Media Kit",
+    "finalUrl": "https://www.raycast.com/press",
+    "checkedAt": "2026-09-12"
+  },
+  {
+    "slug": "sentry",
+    "url": "https://sentry.io/branding/",
+    "status": 200,
+    "title": "Get the Sentry Logo | Sentry",
+    "heading": "Need our logo?",
+    "finalUrl": "https://sentry.io/branding/",
+    "checkedAt": "2026-09-12"
+  },
+  {
+    "slug": "vercel",
+    "url": "https://vercel.com/geist/brands",
+    "status": 200,
+    "title": "Brands",
+    "heading": "Brands",
+    "finalUrl": "https://vercel.com/geist/brands",
+    "checkedAt": "2026-09-12"
   }
 ]

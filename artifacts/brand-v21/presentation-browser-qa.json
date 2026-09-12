@@ -1,0 +1,881 @@
+{
+  "brands": [
+    {
+      "slug": "airbnb",
+      "sectionCount": 16,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5493,
+      "nested": []
+    },
+    {
+      "slug": "airtable",
+      "sectionCount": 15,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5697,
+      "nested": []
+    },
+    {
+      "slug": "apple",
+      "sectionCount": 14,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5453,
+      "nested": []
+    },
+    {
+      "slug": "binance",
+      "sectionCount": 15,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5567,
+      "nested": []
+    },
+    {
+      "slug": "bmw",
+      "sectionCount": 16,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5634,
+      "nested": []
+    },
+    {
+      "slug": "bmw-m",
+      "sectionCount": 15,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5296,
+      "nested": []
+    },
+    {
+      "slug": "bugatti",
+      "sectionCount": 15,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5037,
+      "nested": []
+    },
+    {
+      "slug": "cal",
+      "sectionCount": 15,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5565,
+      "nested": []
+    },
+    {
+      "slug": "claude",
+      "sectionCount": 15,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5527,
+      "nested": []
+    },
+    {
+      "slug": "clay",
+      "sectionCount": 15,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5505,
+      "nested": []
+    },
+    {
+      "slug": "clickhouse",
+      "sectionCount": 15,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5362,
+      "nested": []
+    },
+    {
+      "slug": "cohere",
+      "sectionCount": 13,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5058,
+      "nested": []
+    },
+    {
+      "slug": "coinbase",
+      "sectionCount": 14,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5319,
+      "nested": []
+    },
+    {
+      "slug": "composio",
+      "sectionCount": 13,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5183,
+      "nested": []
+    },
+    {
+      "slug": "cursor",
+      "sectionCount": 13,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5024,
+      "nested": []
+    },
+    {
+      "slug": "dell-1996",
+      "sectionCount": 14,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 4847,
+      "nested": []
+    },
+    {
+      "slug": "elevenlabs",
+      "sectionCount": 14,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5519,
+      "nested": []
+    },
+    {
+      "slug": "expo",
+      "sectionCount": 13,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5239,
+      "nested": []
+    },
+    {
+      "slug": "ferrari",
+      "sectionCount": 14,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5394,
+      "nested": []
+    },
+    {
+      "slug": "figma",
+      "sectionCount": 15,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5652,
+      "nested": []
+    },
+    {
+      "slug": "framer",
+      "sectionCount": 14,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5313,
+      "nested": []
+    },
+    {
+      "slug": "hashicorp",
+      "sectionCount": 13,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5229,
+      "nested": []
+    },
+    {
+      "slug": "hp",
+      "sectionCount": 15,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5805,
+      "nested": []
+    },
+    {
+      "slug": "ibm",
+      "sectionCount": 14,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5356,
+      "nested": []
+    },
+    {
+      "slug": "intercom",
+      "sectionCount": 14,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5378,
+      "nested": []
+    },
+    {
+      "slug": "kraken",
+      "sectionCount": 9,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 2761,
+      "nested": []
+    },
+    {
+      "slug": "lamborghini",
+      "sectionCount": 11,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 4360,
+      "nested": []
+    },
+    {
+      "slug": "linear.app",
+      "sectionCount": 16,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5946,
+      "nested": []
+    },
+    {
+      "slug": "lovable",
+      "sectionCount": 11,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 4492,
+      "nested": []
+    },
+    {
+      "slug": "mastercard",
+      "sectionCount": 12,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 4459,
+      "nested": []
+    },
+    {
+      "slug": "meta",
+      "sectionCount": 15,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 6015,
+      "nested": []
+    },
+    {
+      "slug": "minimax",
+      "sectionCount": 15,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 6066,
+      "nested": []
+    },
+    {
+      "slug": "mintlify",
+      "sectionCount": 15,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 6013,
+      "nested": []
+    },
+    {
+      "slug": "miro",
+      "sectionCount": 15,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 6007,
+      "nested": []
+    },
+    {
+      "slug": "mistral.ai",
+      "sectionCount": 15,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5957,
+      "nested": []
+    },
+    {
+      "slug": "mongodb",
+      "sectionCount": 16,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 6082,
+      "nested": []
+    },
+    {
+      "slug": "nike",
+      "sectionCount": 14,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5343,
+      "nested": []
+    },
+    {
+      "slug": "nintendo-2001",
+      "sectionCount": 15,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5332,
+      "nested": []
+    },
+    {
+      "slug": "notion",
+      "sectionCount": 15,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5987,
+      "nested": []
+    },
+    {
+      "slug": "nvidia",
+      "sectionCount": 14,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5337,
+      "nested": []
+    },
+    {
+      "slug": "ollama",
+      "sectionCount": 14,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5416,
+      "nested": []
+    },
+    {
+      "slug": "opencode.ai",
+      "sectionCount": 15,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5556,
+      "nested": []
+    },
+    {
+      "slug": "pinterest",
+      "sectionCount": 14,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5347,
+      "nested": []
+    },
+    {
+      "slug": "playstation",
+      "sectionCount": 14,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5442,
+      "nested": []
+    },
+    {
+      "slug": "posthog",
+      "sectionCount": 14,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5429,
+      "nested": []
+    },
+    {
+      "slug": "raycast",
+      "sectionCount": 16,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 6029,
+      "nested": []
+    },
+    {
+      "slug": "renault",
+      "sectionCount": 14,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5390,
+      "nested": []
+    },
+    {
+      "slug": "replicate",
+      "sectionCount": 14,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5481,
+      "nested": []
+    },
+    {
+      "slug": "resend",
+      "sectionCount": 14,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5566,
+      "nested": []
+    },
+    {
+      "slug": "revolut",
+      "sectionCount": 13,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5218,
+      "nested": []
+    },
+    {
+      "slug": "runwayml",
+      "sectionCount": 10,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 3825,
+      "nested": []
+    },
+    {
+      "slug": "sanity",
+      "sectionCount": 11,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 4229,
+      "nested": []
+    },
+    {
+      "slug": "sentry",
+      "sectionCount": 14,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5517,
+      "nested": []
+    },
+    {
+      "slug": "shopify",
+      "sectionCount": 14,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5252,
+      "nested": []
+    },
+    {
+      "slug": "slack",
+      "sectionCount": 12,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 4826,
+      "nested": []
+    },
+    {
+      "slug": "spacex",
+      "sectionCount": 12,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 4500,
+      "nested": []
+    },
+    {
+      "slug": "spotify",
+      "sectionCount": 12,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 4730,
+      "nested": []
+    },
+    {
+      "slug": "starbucks",
+      "sectionCount": 16,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 6080,
+      "nested": []
+    },
+    {
+      "slug": "stripe",
+      "sectionCount": 14,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 4990,
+      "nested": []
+    },
+    {
+      "slug": "supabase",
+      "sectionCount": 14,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5014,
+      "nested": []
+    },
+    {
+      "slug": "superhuman",
+      "sectionCount": 14,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5130,
+      "nested": []
+    },
+    {
+      "slug": "tesla",
+      "sectionCount": 13,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 4670,
+      "nested": []
+    },
+    {
+      "slug": "theverge",
+      "sectionCount": 12,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 4726,
+      "nested": []
+    },
+    {
+      "slug": "together.ai",
+      "sectionCount": 15,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5541,
+      "nested": []
+    },
+    {
+      "slug": "uber",
+      "sectionCount": 15,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5408,
+      "nested": []
+    },
+    {
+      "slug": "vercel",
+      "sectionCount": 16,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5784,
+      "nested": []
+    },
+    {
+      "slug": "vodafone",
+      "sectionCount": 14,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 4992,
+      "nested": []
+    },
+    {
+      "slug": "voltagent",
+      "sectionCount": 14,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 4979,
+      "nested": []
+    },
+    {
+      "slug": "warp",
+      "sectionCount": 14,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5108,
+      "nested": []
+    },
+    {
+      "slug": "webflow",
+      "sectionCount": 14,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5231,
+      "nested": []
+    },
+    {
+      "slug": "wired",
+      "sectionCount": 14,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 4972,
+      "nested": []
+    },
+    {
+      "slug": "wise",
+      "sectionCount": 14,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5064,
+      "nested": []
+    },
+    {
+      "slug": "x.ai",
+      "sectionCount": 14,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 4784,
+      "nested": []
+    },
+    {
+      "slug": "zapier",
+      "sectionCount": 14,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "parentHeight": 590,
+      "scrollHeight": 5007,
+      "nested": []
+    }
+  ],
+  "fonts": [
+    {
+      "slug": "apple",
+      "fonts": [
+        {
+          "familyName": "Segoe UI Semibold",
+          "postScriptName": "SegoeUI-Semibold",
+          "isCustomFont": false,
+          "glyphCount": 11
+        }
+      ]
+    },
+    {
+      "slug": "binance",
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-28pt-Bold",
+          "isCustomFont": true,
+          "glyphCount": 11
+        }
+      ]
+    },
+    {
+      "slug": "ferrari",
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-28pt-Medium",
+          "isCustomFont": true,
+          "glyphCount": 11
+        }
+      ]
+    },
+    {
+      "slug": "figma",
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-28pt-Light",
+          "isCustomFont": true,
+          "glyphCount": 11
+        }
+      ]
+    },
+    {
+      "slug": "ibm",
+      "fonts": [
+        {
+          "familyName": "IBM Plex Sans",
+          "postScriptName": "IBMPlexSansRoman-Light",
+          "isCustomFont": true,
+          "glyphCount": 11
+        }
+      ]
+    },
+    {
+      "slug": "linear.app",
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-28pt-SemiBold",
+          "isCustomFont": true,
+          "glyphCount": 11
+        }
+      ]
+    },
+    {
+      "slug": "nintendo-2001",
+      "fonts": [
+        {
+          "familyName": "Arial Black",
+          "postScriptName": "Arial-Black",
+          "isCustomFont": false,
+          "glyphCount": 11
+        }
+      ]
+    },
+    {
+      "slug": "notion",
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-28pt-SemiBold",
+          "isCustomFont": true,
+          "glyphCount": 11
+        }
+      ]
+    },
+    {
+      "slug": "spotify",
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-24pt-Bold",
+          "isCustomFont": true,
+          "glyphCount": 11
+        }
+      ]
+    },
+    {
+      "slug": "stripe",
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-28pt-Light",
+          "isCustomFont": true,
+          "glyphCount": 11
+        }
+      ]
+    },
+    {
+      "slug": "supabase",
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-28pt-Medium",
+          "isCustomFont": true,
+          "glyphCount": 11
+        }
+      ]
+    },
+    {
+      "slug": "vercel",
+      "fonts": [
+        {
+          "familyName": "Geist",
+          "postScriptName": "Geist-SemiBold",
+          "isCustomFont": true,
+          "glyphCount": 11
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "failedAssets": [],
+  "mode": "normal-motion"
+}

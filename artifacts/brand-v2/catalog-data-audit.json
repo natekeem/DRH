@@ -1,15 +1,15 @@
 {
   "coverage": {
     "totalBrands": 74,
-    "brandsWithResources": 7,
-    "totalLinks": 8,
+    "brandsWithResources": 13,
+    "totalLinks": 18,
     "types": {
-      "brand-guidelines": 2,
-      "design-system": 2,
+      "brand-guidelines": 4,
+      "design-system": 4,
       "developer-design-guide": 1,
-      "typography": 1,
+      "typography": 2,
       "components": 0,
-      "assets": 2,
+      "assets": 7,
       "other": 0
     }
   },
@@ -20,15 +20,15 @@
       "roles": 18,
       "sections": [
         {
-          "type": "overview",
-          "id": "overview",
-          "label": "Overview"
-        },
-        {
           "type": "official-resources",
           "id": "official",
-          "label": "Official Resources",
+          "label": "Official Resources · 공식 가이드",
           "count": 1
+        },
+        {
+          "type": "overview",
+          "id": "overview",
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -45,63 +45,73 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 8
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 4
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 7
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 4
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 2
         },
         {
           "type": "components",
           "id": "tabs",
-          "label": "Tabs",
+          "label": "Tabs · 탭",
           "kind": "tabs",
           "count": 3
         },
         {
           "type": "components",
           "id": "tables",
-          "label": "Tables & Rows",
+          "label": "Tables · 표",
           "kind": "tables",
           "count": 1
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 4
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 4
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -154,13 +164,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -177,56 +181,71 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 7
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 2
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 8
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 2
+        },
+        {
+          "type": "components",
           "id": "tabs",
-          "label": "Tabs",
+          "label": "Tabs · 탭",
           "kind": "tabs",
           "count": 1
         },
         {
           "type": "components",
           "id": "tables",
-          "label": "Tables & Rows",
+          "label": "Tables · 표",
           "kind": "tables",
           "count": 1
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 3
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 4
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "motion",
+          "id": "motion",
+          "label": "Motion · 움직임"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -263,15 +282,15 @@
       "roles": 16,
       "sections": [
         {
-          "type": "overview",
-          "id": "overview",
-          "label": "Overview"
-        },
-        {
           "type": "official-resources",
           "id": "official",
-          "label": "Official Resources",
+          "label": "Official Resources · 공식 가이드",
           "count": 1
+        },
+        {
+          "type": "overview",
+          "id": "overview",
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -288,49 +307,59 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 8
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 1
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 7
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 1
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 2
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 5
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 1
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -383,13 +412,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -406,56 +429,71 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 10
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 2
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 7
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 2
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 1
         },
         {
           "type": "components",
           "id": "tables",
-          "label": "Tables & Rows",
+          "label": "Tables · 표",
           "kind": "tables",
           "count": 7
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 4
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 4
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "motion",
+          "id": "motion",
+          "label": "Motion · 움직임"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -512,13 +550,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -535,63 +567,78 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 6
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 1
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 7
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 1
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 2
         },
         {
           "type": "components",
           "id": "tabs",
-          "label": "Tabs",
+          "label": "Tabs · 탭",
           "kind": "tabs",
           "count": 2
         },
         {
           "type": "components",
           "id": "tables",
-          "label": "Tables & Rows",
+          "label": "Tables · 표",
           "kind": "tables",
           "count": 1
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 3
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 4
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "motion",
+          "id": "motion",
+          "label": "Motion · 움직임"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -630,13 +677,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -653,56 +694,71 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 4
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 1
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 5
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 1
+        },
+        {
+          "type": "components",
           "id": "tabs",
-          "label": "Tabs",
+          "label": "Tabs · 탭",
           "kind": "tabs",
           "count": 2
         },
         {
           "type": "components",
           "id": "tables",
-          "label": "Tables & Rows",
+          "label": "Tables · 표",
           "kind": "tables",
           "count": 1
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 3
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 5
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "motion",
+          "id": "motion",
+          "label": "Motion · 움직임"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -741,13 +797,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -764,56 +814,71 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 2
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 1
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 3
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 1
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 1
         },
         {
           "type": "components",
           "id": "tables",
-          "label": "Tables & Rows",
+          "label": "Tables · 표",
           "kind": "tables",
           "count": 2
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 3
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 5
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "motion",
+          "id": "motion",
+          "label": "Motion · 움직임"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -852,13 +917,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -875,56 +934,71 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 6
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 2
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 7
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 2
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 1
         },
         {
           "type": "components",
           "id": "tabs",
-          "label": "Tabs",
+          "label": "Tabs · 탭",
           "kind": "tabs",
           "count": 2
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 4
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 4
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "motion",
+          "id": "motion",
+          "label": "Motion · 움직임"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -963,13 +1037,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -986,56 +1054,71 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 7
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 2
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 10
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 2
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 2
         },
         {
           "type": "components",
           "id": "tabs",
-          "label": "Tabs",
+          "label": "Tabs · 탭",
           "kind": "tabs",
           "count": 2
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 3
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 3
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "motion",
+          "id": "motion",
+          "label": "Motion · 움직임"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -1074,13 +1157,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -1097,56 +1174,71 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 6
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 2
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 12
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 2
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 1
         },
         {
           "type": "components",
           "id": "tabs",
-          "label": "Tabs",
+          "label": "Tabs · 탭",
           "kind": "tabs",
           "count": 2
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 3
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 2
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "motion",
+          "id": "motion",
+          "label": "Motion · 움직임"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -1185,13 +1277,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -1208,56 +1294,71 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 6
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 2
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 8
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 2
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 2
         },
         {
           "type": "components",
           "id": "tabs",
-          "label": "Tabs",
+          "label": "Tabs · 탭",
           "kind": "tabs",
           "count": 2
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 3
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 4
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "motion",
+          "id": "motion",
+          "label": "Motion · 움직임"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -1296,13 +1397,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -1319,49 +1414,59 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 3
         },
         {
           "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 5
         },
         {
           "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 1
         },
         {
           "type": "components",
           "id": "tables",
-          "label": "Tables & Rows",
+          "label": "Tables · 표",
           "kind": "tables",
           "count": 1
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 1
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 3
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -1400,13 +1505,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -1423,56 +1522,66 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 8
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 2
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 4
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 2
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 1
         },
         {
           "type": "components",
           "id": "tables",
-          "label": "Tables & Rows",
+          "label": "Tables · 표",
           "kind": "tables",
           "count": 3
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 4
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 6
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -1511,13 +1620,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -1534,49 +1637,59 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 5
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 2
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 4
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 2
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 1
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 3
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 6
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -1615,13 +1728,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -1638,49 +1745,59 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 5
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 1
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 5
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 1
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 1
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 3
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 10
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -1719,13 +1836,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -1742,63 +1853,68 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 3
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 2
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 9
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 2
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 1
         },
         {
           "type": "components",
           "id": "dialogs",
-          "label": "Dialogs",
+          "label": "Dialogs · 대화상자",
           "kind": "dialogs",
           "count": 2
         },
         {
           "type": "components",
           "id": "tables",
-          "label": "Tables & Rows",
+          "label": "Tables · 표",
           "kind": "tables",
           "count": 2
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 2
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 12
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
         },
         {
           "type": "layout",
@@ -1837,13 +1953,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -1860,56 +1970,66 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 4
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 1
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 6
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 1
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 1
         },
         {
           "type": "components",
           "id": "tables",
-          "label": "Tables & Rows",
+          "label": "Tables · 표",
           "kind": "tables",
           "count": 1
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 3
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 4
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -1948,13 +2068,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -1971,49 +2085,59 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 4
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 1
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 8
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 1
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 1
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 3
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 5
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -2052,13 +2176,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -2075,56 +2193,66 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 5
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 3
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 4
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 3
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 1
         },
         {
           "type": "components",
           "id": "tables",
-          "label": "Tables & Rows",
+          "label": "Tables · 표",
           "kind": "tables",
           "count": 3
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 4
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 4
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -2182,15 +2310,15 @@
       "roles": 12,
       "sections": [
         {
-          "type": "overview",
-          "id": "overview",
-          "label": "Overview"
-        },
-        {
           "type": "official-resources",
           "id": "official",
-          "label": "Official Resources",
+          "label": "Official Resources · 공식 가이드",
           "count": 1
+        },
+        {
+          "type": "overview",
+          "id": "overview",
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -2207,56 +2335,66 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 7
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 2
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 3
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 2
+        },
+        {
+          "type": "components",
           "id": "tabs",
-          "label": "Tabs",
+          "label": "Tabs · 탭",
           "kind": "tabs",
           "count": 2
         },
         {
           "type": "components",
           "id": "tables",
-          "label": "Tables & Rows",
+          "label": "Tables · 표",
           "kind": "tables",
           "count": 1
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 3
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 5
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -2330,13 +2468,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -2353,49 +2485,59 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 5
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 2
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 7
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 2
+        },
+        {
+          "type": "components",
           "id": "tabs",
-          "label": "Tabs",
+          "label": "Tabs · 탭",
           "kind": "tabs",
           "count": 2
         },
         {
           "type": "components",
           "id": "tables",
-          "label": "Tables & Rows",
+          "label": "Tables · 표",
           "kind": "tables",
           "count": 3
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 2
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -2452,13 +2594,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -2475,49 +2611,59 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 7
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 2
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 8
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 2
+        },
+        {
+          "type": "components",
           "id": "tables",
-          "label": "Tables & Rows",
+          "label": "Tables · 표",
           "kind": "tables",
           "count": 1
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 2
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 2
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -2575,13 +2721,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -2598,63 +2738,73 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 7
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 3
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 8
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 3
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 3
         },
         {
           "type": "components",
           "id": "tabs",
-          "label": "Tabs",
+          "label": "Tabs · 탭",
           "kind": "tabs",
           "count": 2
         },
         {
           "type": "components",
           "id": "tables",
-          "label": "Tables & Rows",
+          "label": "Tables · 표",
           "kind": "tables",
           "count": 1
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 3
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 4
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -2691,15 +2841,15 @@
       "roles": 13,
       "sections": [
         {
-          "type": "overview",
-          "id": "overview",
-          "label": "Overview"
-        },
-        {
           "type": "official-resources",
           "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Official Resources · 공식 가이드",
+          "count": 3
+        },
+        {
+          "type": "overview",
+          "id": "overview",
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -2716,49 +2866,59 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 6
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 4
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 6
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 4
+        },
+        {
+          "type": "components",
           "id": "tabs",
-          "label": "Tabs",
+          "label": "Tabs · 탭",
           "kind": "tabs",
           "count": 2
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 2
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 2
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -2806,7 +2966,47 @@
           ]
         }
       ],
-      "officialResources": []
+      "officialResources": [
+        {
+          "type": "design-system",
+          "label": "Carbon Design System",
+          "url": "https://carbondesignsystem.com/",
+          "source": "official",
+          "checkedAt": "2026-09-12",
+          "description": "IBM의 제품·디지털 경험을 위한 디자인 시스템입니다.",
+          "evidence": {
+            "url": "https://carbondesignsystem.com/",
+            "title": "Carbon Design System",
+            "method": "Official ownership and page content reviewed with web.open; HTTP response independently checked 2026-09-12"
+          }
+        },
+        {
+          "type": "typography",
+          "label": "IBM Plex",
+          "url": "https://www.ibm.com/plex/",
+          "source": "official",
+          "checkedAt": "2026-09-12",
+          "description": "IBM Plex 글꼴의 구성과 공식 배포 정보를 확인합니다.",
+          "evidence": {
+            "url": "https://www.ibm.com/plex/",
+            "title": "Introduction | IBM Plex",
+            "method": "Official ownership and page content reviewed with web.open; HTTP response independently checked 2026-09-12"
+          }
+        },
+        {
+          "type": "brand-guidelines",
+          "label": "IBM Design Language",
+          "url": "https://www.ibm.com/design/language/",
+          "source": "official",
+          "checkedAt": "2026-09-12",
+          "description": "타입·색상·그리드·로고의 공식 디자인 원칙입니다.",
+          "evidence": {
+            "url": "https://www.ibm.com/design/language/",
+            "title": "IBM Design Language",
+            "method": "Official ownership and page content reviewed with web.open; HTTP response independently checked 2026-09-12"
+          }
+        }
+      ]
     },
     {
       "slug": "intercom",
@@ -2816,13 +3016,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -2839,56 +3033,66 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 5
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 2
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 7
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 2
+        },
+        {
+          "type": "components",
           "id": "tabs",
-          "label": "Tabs",
+          "label": "Tabs · 탭",
           "kind": "tabs",
           "count": 2
         },
         {
           "type": "components",
           "id": "tables",
-          "label": "Tables & Rows",
+          "label": "Tables · 표",
           "kind": "tables",
           "count": 1
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 2
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 1
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -2944,13 +3148,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -2967,21 +3165,31 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 1
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 4
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -3020,13 +3228,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -3043,35 +3245,45 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 1
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 1
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 1
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 1
+        },
+        {
+          "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 4
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -3108,15 +3320,15 @@
       "roles": 13,
       "sections": [
         {
-          "type": "overview",
-          "id": "overview",
-          "label": "Overview"
-        },
-        {
           "type": "official-resources",
           "id": "official",
-          "label": "Official Resources",
+          "label": "Official Resources · 공식 가이드",
           "count": 1
+        },
+        {
+          "type": "overview",
+          "id": "overview",
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -3133,63 +3345,73 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 6
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 2
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 6
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 2
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 1
         },
         {
           "type": "components",
           "id": "tabs",
-          "label": "Tabs",
+          "label": "Tabs · 탭",
           "kind": "tabs",
           "count": 2
         },
         {
           "type": "components",
           "id": "tables",
-          "label": "Tables & Rows",
+          "label": "Tables · 표",
           "kind": "tables",
           "count": 1
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 2
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 1
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -3259,13 +3481,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -3282,35 +3498,45 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 1
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 2
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 1
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 2
+        },
+        {
+          "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 5
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -3349,13 +3575,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -3372,35 +3592,50 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 2
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 1
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 3
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 1
+        },
+        {
+          "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 5
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "motion",
+          "id": "motion",
+          "label": "Motion · 움직임"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -3439,13 +3674,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -3462,63 +3691,73 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 8
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 6
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 8
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 6
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 4
         },
         {
           "type": "components",
           "id": "tabs",
-          "label": "Tabs",
+          "label": "Tabs · 탭",
           "kind": "tabs",
           "count": 2
         },
         {
           "type": "components",
           "id": "tables",
-          "label": "Tables & Rows",
+          "label": "Tables · 표",
           "kind": "tables",
           "count": 3
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 1
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 6
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -3557,13 +3796,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -3580,63 +3813,73 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 7
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 4
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 10
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 4
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 4
         },
         {
           "type": "components",
           "id": "tabs",
-          "label": "Tabs",
+          "label": "Tabs · 탭",
           "kind": "tabs",
           "count": 4
         },
         {
           "type": "components",
           "id": "tables",
-          "label": "Tables & Rows",
+          "label": "Tables · 표",
           "kind": "tables",
           "count": 5
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 4
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 6
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -3675,13 +3918,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -3698,63 +3935,73 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 10
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 3
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 10
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 3
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 4
         },
         {
           "type": "components",
           "id": "tabs",
-          "label": "Tabs",
+          "label": "Tabs · 탭",
           "kind": "tabs",
           "count": 4
         },
         {
           "type": "components",
           "id": "tables",
-          "label": "Tables & Rows",
+          "label": "Tables · 표",
           "kind": "tables",
           "count": 3
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 4
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 13
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -3812,13 +4059,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -3835,63 +4076,73 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 10
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 3
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 13
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 3
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 8
         },
         {
           "type": "components",
           "id": "tabs",
-          "label": "Tabs",
+          "label": "Tabs · 탭",
           "kind": "tabs",
           "count": 2
         },
         {
           "type": "components",
           "id": "tables",
-          "label": "Tables & Rows",
+          "label": "Tables · 표",
           "kind": "tables",
           "count": 2
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 2
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 8
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -3930,13 +4181,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -3953,63 +4198,73 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 8
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 3
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 11
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 3
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 4
         },
         {
           "type": "components",
           "id": "tabs",
-          "label": "Tabs",
+          "label": "Tabs · 탭",
           "kind": "tabs",
           "count": 4
         },
         {
           "type": "components",
           "id": "tables",
-          "label": "Tables & Rows",
+          "label": "Tables · 표",
           "kind": "tables",
           "count": 1
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 2
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 9
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -4046,15 +4301,15 @@
       "roles": 18,
       "sections": [
         {
-          "type": "overview",
-          "id": "overview",
-          "label": "Overview"
-        },
-        {
           "type": "official-resources",
           "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Official Resources · 공식 가이드",
+          "count": 1
+        },
+        {
+          "type": "overview",
+          "id": "overview",
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -4071,63 +4326,73 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 8
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 4
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 13
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 4
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 5
         },
         {
           "type": "components",
           "id": "tabs",
-          "label": "Tabs",
+          "label": "Tabs · 탭",
           "kind": "tabs",
           "count": 4
         },
         {
           "type": "components",
           "id": "tables",
-          "label": "Tables & Rows",
+          "label": "Tables · 표",
           "kind": "tables",
           "count": 2
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 2
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 6
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -4175,7 +4440,21 @@
           ]
         }
       ],
-      "officialResources": []
+      "officialResources": [
+        {
+          "type": "brand-guidelines",
+          "label": "MongoDB Brand Resources",
+          "url": "https://www.mongodb.com/company/newsroom/brand-resources",
+          "source": "official",
+          "checkedAt": "2026-09-12",
+          "description": "브랜드 아이덴티티·로고·색상과 사용 지침입니다.",
+          "evidence": {
+            "url": "https://www.mongodb.com/company/newsroom/brand-resources",
+            "title": "MongoDB Brand Resources | MongoDB",
+            "method": "Official ownership and page content reviewed with web.open; HTTP response independently checked 2026-09-12"
+          }
+        }
+      ]
     },
     {
       "slug": "nike",
@@ -4185,13 +4464,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -4208,56 +4481,66 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 5
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 2
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 5
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 2
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 4
         },
         {
           "type": "components",
           "id": "tables",
-          "label": "Tables & Rows",
+          "label": "Tables · 표",
           "kind": "tables",
           "count": 2
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 2
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 4
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -4296,13 +4579,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -4319,70 +4596,75 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 5
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 6
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 7
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 6
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 3
         },
         {
           "type": "components",
           "id": "tabs",
-          "label": "Tabs",
+          "label": "Tabs · 탭",
           "kind": "tabs",
           "count": 1
         },
         {
           "type": "components",
           "id": "dialogs",
-          "label": "Dialogs",
+          "label": "Dialogs · 대화상자",
           "kind": "dialogs",
           "count": 2
         },
         {
           "type": "components",
           "id": "tables",
-          "label": "Tables & Rows",
+          "label": "Tables · 표",
           "kind": "tables",
           "count": 4
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 3
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 10
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
         },
         {
           "type": "layout",
@@ -4421,13 +4703,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -4444,63 +4720,73 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 9
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 3
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 17
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 3
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 7
         },
         {
           "type": "components",
           "id": "tabs",
-          "label": "Tabs",
+          "label": "Tabs · 탭",
           "kind": "tabs",
           "count": 4
         },
         {
           "type": "components",
           "id": "tables",
-          "label": "Tables & Rows",
+          "label": "Tables · 표",
           "kind": "tables",
           "count": 3
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 2
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 5
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -4539,13 +4825,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -4562,56 +4842,66 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 6
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 3
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 4
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 3
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 1
         },
         {
           "type": "components",
           "id": "tabs",
-          "label": "Tabs",
+          "label": "Tabs · 탭",
           "kind": "tabs",
           "count": 2
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 4
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 5
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -4650,13 +4940,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -4673,56 +4957,66 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 5
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 4
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 3
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 4
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 1
         },
         {
           "type": "components",
           "id": "tables",
-          "label": "Tables & Rows",
+          "label": "Tables · 표",
           "kind": "tables",
           "count": 1
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 4
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 4
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -4761,13 +5055,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -4784,63 +5072,73 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 4
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 2
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 1
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 2
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 2
         },
         {
           "type": "components",
           "id": "tabs",
-          "label": "Tabs",
+          "label": "Tabs · 탭",
           "kind": "tabs",
           "count": 2
         },
         {
           "type": "components",
           "id": "tables",
-          "label": "Tables & Rows",
+          "label": "Tables · 표",
           "kind": "tables",
           "count": 4
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 3
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 3
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -4879,13 +5177,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -4902,56 +5194,66 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 8
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 4
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 5
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 4
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 2
         },
         {
           "type": "components",
           "id": "dialogs",
-          "label": "Dialogs",
+          "label": "Dialogs · 대화상자",
           "kind": "dialogs",
           "count": 1
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 3
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 2
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -4990,13 +5292,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -5013,56 +5309,66 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 7
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 3
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 4
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 3
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 1
         },
         {
           "type": "components",
           "id": "tables",
-          "label": "Tables & Rows",
+          "label": "Tables · 표",
           "kind": "tables",
           "count": 1
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 4
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 9
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -5120,13 +5426,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -5143,56 +5443,66 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 5
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 3
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 5
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 3
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 2
         },
         {
           "type": "components",
           "id": "tabs",
-          "label": "Tabs",
+          "label": "Tabs · 탭",
           "kind": "tabs",
           "count": 4
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 4
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 7
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -5229,15 +5539,15 @@
       "roles": 15,
       "sections": [
         {
-          "type": "overview",
-          "id": "overview",
-          "label": "Overview"
-        },
-        {
           "type": "official-resources",
           "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Official Resources · 공식 가이드",
+          "count": 1
+        },
+        {
+          "type": "overview",
+          "id": "overview",
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -5254,63 +5564,73 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 6
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 3
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 8
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 3
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 2
         },
         {
           "type": "components",
           "id": "tabs",
-          "label": "Tabs",
+          "label": "Tabs · 탭",
           "kind": "tabs",
           "count": 2
         },
         {
           "type": "components",
           "id": "tables",
-          "label": "Tables & Rows",
+          "label": "Tables · 표",
           "kind": "tables",
           "count": 2
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 3
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 2
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -5339,7 +5659,21 @@
           ]
         }
       ],
-      "officialResources": []
+      "officialResources": [
+        {
+          "type": "assets",
+          "label": "Raycast Press & Media Kit",
+          "url": "https://www.raycast.com/press",
+          "source": "official",
+          "checkedAt": "2026-09-12",
+          "description": "Raycast의 공식 미디어 키트와 브랜드 자료입니다.",
+          "evidence": {
+            "url": "https://www.raycast.com/press",
+            "title": "Raycast Press & Media Kit",
+            "method": "Official ownership and page content reviewed with web.open; HTTP response independently checked 2026-09-12"
+          }
+        }
+      ]
     },
     {
       "slug": "renault",
@@ -5349,13 +5683,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -5372,56 +5700,66 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 7
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 1
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 4
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 1
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 1
         },
         {
           "type": "components",
           "id": "tables",
-          "label": "Tables & Rows",
+          "label": "Tables · 표",
           "kind": "tables",
           "count": 1
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 3
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 2
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -5460,13 +5798,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -5483,56 +5815,66 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 6
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 1
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 2
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 1
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 2
         },
         {
           "type": "components",
           "id": "tabs",
-          "label": "Tabs",
+          "label": "Tabs · 탭",
           "kind": "tabs",
           "count": 1
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 3
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 5
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -5571,13 +5913,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -5594,56 +5930,66 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 4
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 1
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 2
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 1
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 1
         },
         {
           "type": "components",
           "id": "tabs",
-          "label": "Tabs",
+          "label": "Tabs · 탭",
           "kind": "tabs",
           "count": 1
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 3
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 7
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -5682,13 +6028,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -5705,49 +6045,59 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 7
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 1
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 5
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 1
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 2
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 3
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 3
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -5786,13 +6136,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -5808,29 +6152,39 @@
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 1
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 1
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 1
+        },
+        {
+          "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 3
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -5869,13 +6223,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -5892,35 +6240,45 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 2
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 1
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 3
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 1
+        },
+        {
+          "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 3
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -5957,15 +6315,15 @@
       "roles": 16,
       "sections": [
         {
-          "type": "overview",
-          "id": "overview",
-          "label": "Overview"
-        },
-        {
           "type": "official-resources",
           "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Official Resources · 공식 가이드",
+          "count": 1
+        },
+        {
+          "type": "overview",
+          "id": "overview",
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -5982,49 +6340,59 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 7
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 2
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 4
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 2
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 1
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 4
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 3
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -6053,7 +6421,21 @@
           ]
         }
       ],
-      "officialResources": []
+      "officialResources": [
+        {
+          "type": "assets",
+          "label": "Sentry Branding",
+          "url": "https://sentry.io/branding/",
+          "source": "official",
+          "checkedAt": "2026-09-12",
+          "description": "공식 로고 자료와 사용 조건입니다.",
+          "evidence": {
+            "url": "https://sentry.io/branding/",
+            "title": "Get the Sentry Logo | Sentry",
+            "method": "Official ownership and page content reviewed with web.open; HTTP response independently checked 2026-09-12"
+          }
+        }
+      ]
     },
     {
       "slug": "shopify",
@@ -6061,15 +6443,15 @@
       "roles": 15,
       "sections": [
         {
-          "type": "overview",
-          "id": "overview",
-          "label": "Overview"
-        },
-        {
           "type": "official-resources",
           "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Official Resources · 공식 가이드",
+          "count": 2
+        },
+        {
+          "type": "overview",
+          "id": "overview",
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -6086,42 +6468,52 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 5
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 1
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 5
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 1
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 2
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 5
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -6150,7 +6542,34 @@
           ]
         }
       ],
-      "officialResources": []
+      "officialResources": [
+        {
+          "type": "design-system",
+          "label": "Polaris",
+          "url": "https://shopify.dev/docs/api/polaris",
+          "source": "official",
+          "checkedAt": "2026-09-12",
+          "description": "Shopify 앱 표면별 UI 구성요소와 가이드입니다.",
+          "evidence": {
+            "url": "https://shopify.dev/docs/api/polaris",
+            "title": "Polaris references",
+            "method": "Official ownership and page content reviewed with web.open; HTTP response independently checked 2026-09-12"
+          }
+        },
+        {
+          "type": "assets",
+          "label": "Shopify Brand Assets",
+          "url": "https://www.shopify.com/brand-assets",
+          "source": "official",
+          "checkedAt": "2026-09-12",
+          "description": "공식 로고 배포 자료와 사용 조건을 확인합니다.",
+          "evidence": {
+            "url": "https://www.shopify.com/brand-assets",
+            "title": "Using our brand - Shopify",
+            "method": "Official ownership and page content reviewed with web.open; HTTP response independently checked 2026-09-12"
+          }
+        }
+      ]
     },
     {
       "slug": "slack",
@@ -6160,13 +6579,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -6183,42 +6596,52 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 5
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 1
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 5
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 1
+        },
+        {
+          "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 4
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 1
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -6257,13 +6680,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -6280,35 +6697,45 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 3
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 1
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 2
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 1
+        },
+        {
+          "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 4
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -6345,15 +6772,15 @@
       "roles": 14,
       "sections": [
         {
-          "type": "overview",
-          "id": "overview",
-          "label": "Overview"
-        },
-        {
           "type": "official-resources",
           "id": "official",
-          "label": "Official Resources",
+          "label": "Official Resources · 공식 가이드",
           "count": 1
+        },
+        {
+          "type": "overview",
+          "id": "overview",
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -6370,28 +6797,38 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 5
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
+          "id": "cards",
+          "label": "Cards · 카드",
+          "kind": "cards",
           "count": 1
         },
         {
           "type": "components",
-          "id": "cards",
-          "label": "Cards & Surfaces",
-          "kind": "cards",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
           "count": 1
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -6444,13 +6881,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -6467,63 +6898,78 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 3
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 1
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 5
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 1
+        },
+        {
+          "type": "components",
           "id": "tabs",
-          "label": "Tabs",
+          "label": "Tabs · 탭",
           "kind": "tabs",
           "count": 1
         },
         {
           "type": "components",
           "id": "dialogs",
-          "label": "Dialogs",
+          "label": "Dialogs · 대화상자",
           "kind": "dialogs",
           "count": 1
         },
         {
           "type": "components",
           "id": "tables",
-          "label": "Tables & Rows",
+          "label": "Tables · 표",
           "kind": "tables",
           "count": 1
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 2
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 14
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "motion",
+          "id": "motion",
+          "label": "Motion · 움직임"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -6560,15 +7006,15 @@
       "roles": 15,
       "sections": [
         {
-          "type": "overview",
-          "id": "overview",
-          "label": "Overview"
-        },
-        {
           "type": "official-resources",
           "id": "official",
-          "label": "Official Resources",
+          "label": "Official Resources · 공식 가이드",
           "count": 1
+        },
+        {
+          "type": "overview",
+          "id": "overview",
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -6585,42 +7031,52 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 4
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 2
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 5
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 2
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 1
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 3
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -6671,15 +7127,15 @@
       "roles": 12,
       "sections": [
         {
-          "type": "overview",
-          "id": "overview",
-          "label": "Overview"
-        },
-        {
           "type": "official-resources",
           "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Official Resources · 공식 가이드",
+          "count": 1
+        },
+        {
+          "type": "overview",
+          "id": "overview",
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -6696,49 +7152,59 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 5
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 1
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 4
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 1
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 2
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 3
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 1
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -6767,7 +7233,21 @@
           ]
         }
       ],
-      "officialResources": []
+      "officialResources": [
+        {
+          "type": "assets",
+          "label": "Supabase Brand Assets",
+          "url": "https://supabase.com/brand-assets",
+          "source": "official",
+          "checkedAt": "2026-09-12",
+          "description": "공식 로고 키트와 브랜드 표시 조건입니다.",
+          "evidence": {
+            "url": "https://supabase.com/brand-assets",
+            "title": "Branding | Supabase",
+            "method": "Official ownership and page content reviewed with web.open; HTTP response independently checked 2026-09-12"
+          }
+        }
+      ]
     },
     {
       "slug": "superhuman",
@@ -6777,13 +7257,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -6800,49 +7274,59 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 5
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 1
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 4
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 1
+        },
+        {
+          "type": "components",
           "id": "tabs",
-          "label": "Tabs",
+          "label": "Tabs · 탭",
           "kind": "tabs",
           "count": 1
         },
         {
           "type": "components",
           "id": "tables",
-          "label": "Tables & Rows",
+          "label": "Tables · 표",
           "kind": "tables",
           "count": 1
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 4
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -6881,13 +7365,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -6904,35 +7382,50 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 3
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 1
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 3
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 1
+        },
+        {
+          "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 1
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "motion",
+          "id": "motion",
+          "label": "Motion · 움직임"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -6971,13 +7464,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -6993,36 +7480,51 @@
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 1
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 3
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 1
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 1
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 5
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "motion",
+          "id": "motion",
+          "label": "Motion · 움직임"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
         },
         {
           "type": "layout",
@@ -7061,13 +7563,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -7084,70 +7580,75 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 6
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 4
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 4
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 4
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 3
         },
         {
           "type": "components",
           "id": "tabs",
-          "label": "Tabs",
+          "label": "Tabs · 탭",
           "kind": "tabs",
           "count": 2
         },
         {
           "type": "components",
           "id": "dialogs",
-          "label": "Dialogs",
+          "label": "Dialogs · 대화상자",
           "kind": "dialogs",
           "count": 2
         },
         {
           "type": "components",
           "id": "tables",
-          "label": "Tables & Rows",
+          "label": "Tables · 표",
           "kind": "tables",
           "count": 4
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 4
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 6
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
         },
         {
           "type": "layout",
@@ -7203,13 +7704,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -7226,70 +7721,75 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 7
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 3
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 8
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 3
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 1
         },
         {
           "type": "components",
           "id": "tabs",
-          "label": "Tabs",
+          "label": "Tabs · 탭",
           "kind": "tabs",
           "count": 1
         },
         {
           "type": "components",
           "id": "dialogs",
-          "label": "Dialogs",
+          "label": "Dialogs · 대화상자",
           "kind": "dialogs",
           "count": 2
         },
         {
           "type": "components",
           "id": "tables",
-          "label": "Tables & Rows",
+          "label": "Tables · 표",
           "kind": "tables",
           "count": 4
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 7
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 6
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
         },
         {
           "type": "layout",
@@ -7326,15 +7826,15 @@
       "roles": 14,
       "sections": [
         {
-          "type": "overview",
-          "id": "overview",
-          "label": "Overview"
-        },
-        {
           "type": "official-resources",
           "id": "official",
-          "label": "Official Resources",
-          "count": 2
+          "label": "Official Resources · 공식 가이드",
+          "count": 3
+        },
+        {
+          "type": "overview",
+          "id": "overview",
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -7351,70 +7851,75 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 5
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 4
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 7
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 4
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 2
         },
         {
           "type": "components",
           "id": "tabs",
-          "label": "Tabs",
+          "label": "Tabs · 탭",
           "kind": "tabs",
           "count": 1
         },
         {
           "type": "components",
           "id": "dialogs",
-          "label": "Dialogs",
+          "label": "Dialogs · 대화상자",
           "kind": "dialogs",
           "count": 2
         },
         {
           "type": "components",
           "id": "tables",
-          "label": "Tables & Rows",
+          "label": "Tables · 표",
           "kind": "tables",
           "count": 2
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 7
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 10
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
         },
         {
           "type": "layout",
@@ -7469,6 +7974,19 @@
             "title": "Typography",
             "method": "Official domain, rendered heading and page content reviewed on 2026-09-12"
           }
+        },
+        {
+          "type": "assets",
+          "label": "Vercel Brand Assets",
+          "url": "https://vercel.com/geist/brands",
+          "source": "official",
+          "checkedAt": "2026-09-12",
+          "description": "공식 브랜드 에셋과 식별 목적의 사용 조건입니다.",
+          "evidence": {
+            "url": "https://vercel.com/geist/brands",
+            "title": "Brands",
+            "method": "Official ownership and page content reviewed with web.open; HTTP response independently checked 2026-09-12"
+          }
         }
       ]
     },
@@ -7480,13 +7998,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -7503,63 +8015,68 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 4
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 2
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 3
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 2
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 2
         },
         {
           "type": "components",
           "id": "dialogs",
-          "label": "Dialogs",
+          "label": "Dialogs · 대화상자",
           "kind": "dialogs",
           "count": 2
         },
         {
           "type": "components",
           "id": "tables",
-          "label": "Tables & Rows",
+          "label": "Tables · 표",
           "kind": "tables",
           "count": 2
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 3
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 8
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
         },
         {
           "type": "layout",
@@ -7598,13 +8115,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -7621,63 +8132,68 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 3
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 2
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 3
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 2
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 3
         },
         {
           "type": "components",
           "id": "dialogs",
-          "label": "Dialogs",
+          "label": "Dialogs · 대화상자",
           "kind": "dialogs",
           "count": 2
         },
         {
           "type": "components",
           "id": "tables",
-          "label": "Tables & Rows",
+          "label": "Tables · 표",
           "kind": "tables",
           "count": 2
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 3
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 7
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
         },
         {
           "type": "layout",
@@ -7716,13 +8232,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -7739,63 +8249,68 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 3
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 2
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 6
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 2
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 1
         },
         {
           "type": "components",
           "id": "dialogs",
-          "label": "Dialogs",
+          "label": "Dialogs · 대화상자",
           "kind": "dialogs",
           "count": 2
         },
         {
           "type": "components",
           "id": "tables",
-          "label": "Tables & Rows",
+          "label": "Tables · 표",
           "kind": "tables",
           "count": 4
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 3
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 5
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
         },
         {
           "type": "layout",
@@ -7834,13 +8349,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -7857,63 +8366,68 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 4
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 2
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 9
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 2
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 3
         },
         {
           "type": "components",
           "id": "dialogs",
-          "label": "Dialogs",
+          "label": "Dialogs · 대화상자",
           "kind": "dialogs",
           "count": 2
         },
         {
           "type": "components",
           "id": "tables",
-          "label": "Tables & Rows",
+          "label": "Tables · 표",
           "kind": "tables",
           "count": 2
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 3
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 6
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
         },
         {
           "type": "layout",
@@ -7952,13 +8466,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -7975,63 +8483,68 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 3
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 2
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 3
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 2
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 1
         },
         {
           "type": "components",
           "id": "dialogs",
-          "label": "Dialogs",
+          "label": "Dialogs · 대화상자",
           "kind": "dialogs",
           "count": 2
         },
         {
           "type": "components",
           "id": "tables",
-          "label": "Tables & Rows",
+          "label": "Tables · 표",
           "kind": "tables",
           "count": 4
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 3
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 7
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
         },
         {
           "type": "layout",
@@ -8070,13 +8583,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -8093,63 +8600,68 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 4
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 2
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 6
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 2
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 3
         },
         {
           "type": "components",
           "id": "dialogs",
-          "label": "Dialogs",
+          "label": "Dialogs · 대화상자",
           "kind": "dialogs",
           "count": 2
         },
         {
           "type": "components",
           "id": "tables",
-          "label": "Tables & Rows",
+          "label": "Tables · 표",
           "kind": "tables",
           "count": 2
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 3
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 6
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
         },
         {
           "type": "layout",
@@ -8188,13 +8700,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -8211,63 +8717,68 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 3
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 2
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 3
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 2
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 1
         },
         {
           "type": "components",
           "id": "dialogs",
-          "label": "Dialogs",
+          "label": "Dialogs · 대화상자",
           "kind": "dialogs",
           "count": 2
         },
         {
           "type": "components",
           "id": "tables",
-          "label": "Tables & Rows",
+          "label": "Tables · 표",
           "kind": "tables",
           "count": 2
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 3
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 7
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
         },
         {
           "type": "layout",
@@ -8306,13 +8817,7 @@
         {
           "type": "overview",
           "id": "overview",
-          "label": "Overview"
-        },
-        {
-          "type": "official-resources",
-          "id": "official",
-          "label": "Official Resources",
-          "count": 0
+          "label": "Overview · 브랜드 특징"
         },
         {
           "type": "colors",
@@ -8329,63 +8834,68 @@
         {
           "type": "components",
           "id": "buttons",
-          "label": "Buttons",
+          "label": "Buttons · 버튼",
           "kind": "buttons",
           "count": 4
         },
         {
           "type": "components",
-          "id": "inputs",
-          "label": "Inputs & Forms",
-          "kind": "inputs",
-          "count": 2
-        },
-        {
-          "type": "components",
           "id": "cards",
-          "label": "Cards & Surfaces",
+          "label": "Cards · 카드",
           "kind": "cards",
           "count": 6
         },
         {
           "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 2
+        },
+        {
+          "type": "components",
           "id": "badges",
-          "label": "Badges",
+          "label": "Badges · 배지",
           "kind": "badges",
           "count": 2
         },
         {
           "type": "components",
           "id": "dialogs",
-          "label": "Dialogs",
+          "label": "Dialogs · 대화상자",
           "kind": "dialogs",
           "count": 2
         },
         {
           "type": "components",
           "id": "tables",
-          "label": "Tables & Rows",
+          "label": "Tables · 표",
           "kind": "tables",
           "count": 2
         },
         {
           "type": "components",
           "id": "navigation",
-          "label": "Navigation",
+          "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 3
         },
         {
           "type": "components",
           "id": "other",
-          "label": "Additional definitions",
+          "label": "기타 구성요소",
           "kind": "other",
           "count": 8
         },
         {
           "type": "geometry",
           "id": "geometry",
-          "label": "Spacing / Radius / Depth"
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
         },
         {
           "type": "layout",

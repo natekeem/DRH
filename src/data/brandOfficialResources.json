@@ -55,6 +55,19 @@
         "title": "Typography",
         "method": "Official domain, rendered heading and page content reviewed on 2026-09-12"
       }
+    },
+    {
+      "type": "assets",
+      "label": "Vercel Brand Assets",
+      "url": "https://vercel.com/geist/brands",
+      "source": "official",
+      "checkedAt": "2026-09-12",
+      "description": "공식 브랜드 에셋과 식별 목적의 사용 조건입니다.",
+      "evidence": {
+        "url": "https://vercel.com/geist/brands",
+        "title": "Brands",
+        "method": "Official ownership and page content reviewed with web.open; HTTP response independently checked 2026-09-12"
+      }
     }
   ],
   "airbnb": [
@@ -114,6 +127,135 @@
         "url": "https://www.figma.com/es-la/using-the-figma-brand/",
         "title": "Pautas de uso de la marca y el logotipo de Figma | Figma",
         "method": "Official domain, rendered heading and page content reviewed on 2026-09-12"
+      }
+    }
+  ],
+  "ibm": [
+    {
+      "type": "design-system",
+      "label": "Carbon Design System",
+      "url": "https://carbondesignsystem.com/",
+      "source": "official",
+      "checkedAt": "2026-09-12",
+      "description": "IBM의 제품·디지털 경험을 위한 디자인 시스템입니다.",
+      "evidence": {
+        "url": "https://carbondesignsystem.com/",
+        "title": "Carbon Design System",
+        "method": "Official ownership and page content reviewed with web.open; HTTP response independently checked 2026-09-12"
+      }
+    },
+    {
+      "type": "typography",
+      "label": "IBM Plex",
+      "url": "https://www.ibm.com/plex/",
+      "source": "official",
+      "checkedAt": "2026-09-12",
+      "description": "IBM Plex 글꼴의 구성과 공식 배포 정보를 확인합니다.",
+      "evidence": {
+        "url": "https://www.ibm.com/plex/",
+        "title": "Introduction | IBM Plex",
+        "method": "Official ownership and page content reviewed with web.open; HTTP response independently checked 2026-09-12"
+      }
+    },
+    {
+      "type": "brand-guidelines",
+      "label": "IBM Design Language",
+      "url": "https://www.ibm.com/design/language/",
+      "source": "official",
+      "checkedAt": "2026-09-12",
+      "description": "타입·색상·그리드·로고의 공식 디자인 원칙입니다.",
+      "evidence": {
+        "url": "https://www.ibm.com/design/language/",
+        "title": "IBM Design Language",
+        "method": "Official ownership and page content reviewed with web.open; HTTP response independently checked 2026-09-12"
+      }
+    }
+  ],
+  "shopify": [
+    {
+      "type": "design-system",
+      "label": "Polaris",
+      "url": "https://shopify.dev/docs/api/polaris",
+      "source": "official",
+      "checkedAt": "2026-09-12",
+      "description": "Shopify 앱 표면별 UI 구성요소와 가이드입니다.",
+      "evidence": {
+        "url": "https://shopify.dev/docs/api/polaris",
+        "title": "Polaris references",
+        "method": "Official ownership and page content reviewed with web.open; HTTP response independently checked 2026-09-12"
+      }
+    },
+    {
+      "type": "assets",
+      "label": "Shopify Brand Assets",
+      "url": "https://www.shopify.com/brand-assets",
+      "source": "official",
+      "checkedAt": "2026-09-12",
+      "description": "공식 로고 배포 자료와 사용 조건을 확인합니다.",
+      "evidence": {
+        "url": "https://www.shopify.com/brand-assets",
+        "title": "Using our brand - Shopify",
+        "method": "Official ownership and page content reviewed with web.open; HTTP response independently checked 2026-09-12"
+      }
+    }
+  ],
+  "supabase": [
+    {
+      "type": "assets",
+      "label": "Supabase Brand Assets",
+      "url": "https://supabase.com/brand-assets",
+      "source": "official",
+      "checkedAt": "2026-09-12",
+      "description": "공식 로고 키트와 브랜드 표시 조건입니다.",
+      "evidence": {
+        "url": "https://supabase.com/brand-assets",
+        "title": "Branding | Supabase",
+        "method": "Official ownership and page content reviewed with web.open; HTTP response independently checked 2026-09-12"
+      }
+    }
+  ],
+  "mongodb": [
+    {
+      "type": "brand-guidelines",
+      "label": "MongoDB Brand Resources",
+      "url": "https://www.mongodb.com/company/newsroom/brand-resources",
+      "source": "official",
+      "checkedAt": "2026-09-12",
+      "description": "브랜드 아이덴티티·로고·색상과 사용 지침입니다.",
+      "evidence": {
+        "url": "https://www.mongodb.com/company/newsroom/brand-resources",
+        "title": "MongoDB Brand Resources | MongoDB",
+        "method": "Official ownership and page content reviewed with web.open; HTTP response independently checked 2026-09-12"
+      }
+    }
+  ],
+  "raycast": [
+    {
+      "type": "assets",
+      "label": "Raycast Press & Media Kit",
+      "url": "https://www.raycast.com/press",
+      "source": "official",
+      "checkedAt": "2026-09-12",
+      "description": "Raycast의 공식 미디어 키트와 브랜드 자료입니다.",
+      "evidence": {
+        "url": "https://www.raycast.com/press",
+        "title": "Raycast Press & Media Kit",
+        "method": "Official ownership and page content reviewed with web.open; HTTP response independently checked 2026-09-12"
+      }
+    }
+  ],
+  "sentry": [
+    {
+      "type": "assets",
+      "label": "Sentry Branding",
+      "url": "https://sentry.io/branding/",
+      "source": "official",
+      "checkedAt": "2026-09-12",
+      "description": "공식 로고 자료와 사용 조건입니다.",
+      "evidence": {
+        "url": "https://sentry.io/branding/",
+        "title": "Get the Sentry Logo | Sentry",
+        "method": "Official ownership and page content reviewed with web.open; HTTP response independently checked 2026-09-12"
       }
     }
   ]

@@ -2,13 +2,14 @@ import type { CSSProperties } from 'react'
 import type { BrandDesignSpec, BrandTypeRole, OfficialBrandResource } from '../brandDesignSpec'
 import type { VendorEntry } from '../data/awesomeDesignMd'
 import resourceRegistry from '../data/brandOfficialResources.json'
+import { motionEvidence, responsiveEvidence, resolveBrandFont, sourceLines } from './brandPresentation'
 
 export type ComponentKind = 'buttons'|'inputs'|'cards'|'badges'|'tabs'|'dialogs'|'tables'|'navigation'|'other'
 export type CatalogComponent = { key:string; kind:ComponentKind; values:Record<string,unknown> }
-export type BrandCatalogSection = { type:'overview'|'official-resources'|'colors'|'typography'|'components'|'geometry'|'layout'|'source'; id:string; label:string; count?:number; kind?:ComponentKind }
+export type BrandCatalogSection = { type:'overview'|'official-resources'|'colors'|'typography'|'components'|'geometry'|'elevation'|'motion'|'responsive'|'layout'|'source'; id:string; label:string; count?:number; kind?:ComponentKind }
 export type BrandTheme = {id:'light'|'dark';label:string;colors:{canvas:string;surface:string;text:string;muted:string;border:string};evidence:string[]}
 export type BrandCatalog = {entry:VendorEntry;spec:BrandDesignSpec;dna:{label:string;evidence:string}[];colors:[string,string][];roles:[string,BrandTypeRole][];components:CatalogComponent[];sections:BrandCatalogSection[];themes:BrandTheme[];officialResources:OfficialBrandResource[]}
-export const componentLabels:Record<ComponentKind,string>={buttons:'Buttons',inputs:'Inputs & Forms',cards:'Cards & Surfaces',badges:'Badges',tabs:'Tabs',dialogs:'Dialogs',tables:'Tables & Rows',navigation:'Navigation',other:'Additional definitions'}
+export const componentLabels:Record<ComponentKind,string>={buttons:'Buttons · 버튼',cards:'Cards · 카드',inputs:'Forms · 입력',badges:'Badges · 배지',tabs:'Tabs · 탭',dialogs:'Dialogs · 대화상자',tables:'Tables · 표',navigation:'Navigation · 탐색',other:'기타 구성요소'}
 export const scalar=(v:unknown,fallback='')=>typeof v==='string'||typeof v==='number'?String(v):fallback
 export const numeric=(v:unknown,fallback=0)=>Number.isFinite(parseFloat(String(v)))?parseFloat(String(v)):fallback
 export const length=(v:unknown)=>typeof v==='number'?v+'px':scalar(v)||undefined
@@ -37,17 +38,22 @@ export function buildBrandCatalog(entry:VendorEntry,spec:BrandDesignSpec=entry.s
  const ink=c[alternate==='light'?'body-on-light':'body-on-dark']||c['inverse-ink']||c['on-'+alternate]
  if(canvas&&ink&&canvas!==base.canvas&&isDark(canvas)===(alternate==='dark')&&isDark(ink)!==isDark(canvas))themes.push({id:alternate,label:alternate==='dark'?'Dark':'Light',colors:{canvas,surface:c[alternate==='light'?'surface-soft-light':'surface-card-dark']||c['inverse-surface-1']||canvas,text:ink,muted:ink,border:c['hairline-on-'+alternate]||c['hairline-'+alternate]||c['inverse-hairline']||ink},evidence:Object.entries(c).filter(([,v])=>v===canvas||v===ink).map(([k])=>'colors.'+k)})
  const officialResources=(resourceRegistry as Record<string,OfficialBrandResource[]>)[entry.slug]||[]
- const sections:BrandCatalogSection[]=[{type:'overview',id:'overview',label:'Overview'},{type:'official-resources',id:'official',label:'Official Resources',count:officialResources.length}]
+ const sections:BrandCatalogSection[]=[]
+ if(officialResources.length)sections.push({type:'official-resources',id:'official',label:'Official Resources · 공식 가이드',count:officialResources.length})
+ sections.push({type:'overview',id:'overview',label:'Overview · 브랜드 특징'})
  if(colors.length)sections.push({type:'colors',id:'colors',label:'Colors',count:colors.length})
  if(roles.length)sections.push({type:'typography',id:'typography',label:'Typography',count:roles.length})
  for(const kind of Object.keys(componentLabels) as ComponentKind[]){const count=components.filter(c=>c.kind===kind).length;if(count)sections.push({type:'components',id:kind,label:componentLabels[kind],kind,count})}
- if(Object.keys(spec.spacing).length||Object.keys(spec.radius).length||spec.border||spec.depth)sections.push({type:'geometry',id:'geometry',label:'Spacing / Radius / Depth'})
+ if(Object.keys(spec.spacing).length||Object.keys(spec.radius).length)sections.push({type:'geometry',id:'geometry',label:'Spacing & Radius · 간격과 모서리'})
+ if(sourceLines(spec.depth).length||sourceLines(spec.border).length)sections.push({type:'elevation',id:'elevation',label:'Elevation · 깊이와 경계'})
+ if(motionEvidence(spec).state!=='not-specified')sections.push({type:'motion',id:'motion',label:'Motion · 움직임'})
+ if(sourceLines(responsiveEvidence(spec)).length)sections.push({type:'responsive',id:'responsive',label:'Responsive · 반응형'})
  sections.push({type:'layout',id:'layout',label:'Layout DNA'},{type:'source',id:'source',label:'Source notes'})
  return {entry,spec,dna:dna.slice(0,4),colors,roles,components,sections,themes,officialResources}
 }
 export function typeStyle(role:Partial<BrandTypeRole>):CSSProperties{
  const size=numeric(role.fontSize,16),leading=scalar(role.lineHeight)
- return {fontFamily:role.renderFallback||(/mono/i.test(scalar(role.fontFamily))?'monospace':/serif/i.test(scalar(role.fontFamily))&&!/sans/i.test(scalar(role.fontFamily))?'serif':'system-ui, sans-serif'),fontSize:length(role.fontSize),fontWeight:role.fontWeight as CSSProperties['fontWeight'],lineHeight:leading.endsWith('px')?numeric(leading)/size:leading||undefined,letterSpacing:length(role.letterSpacing),textTransform:role.textTransform as CSSProperties['textTransform']}
+ return {fontFamily:resolveBrandFont(role).stack,fontSize:length(role.fontSize),fontWeight:role.fontWeight as CSSProperties['fontWeight'],lineHeight:leading.endsWith('px')?numeric(leading)/size:leading||undefined,letterSpacing:length(role.letterSpacing),textTransform:role.textTransform as CSSProperties['textTransform']}
 }
 export function componentStyle(values:Record<string,unknown>,catalog:BrandCatalog,theme:BrandTheme):CSSProperties{
  const base=catalog.themes[0].colors

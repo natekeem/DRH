@@ -1,0 +1,5 @@
+# Preserve the exact upstream bytes of verified assets and font license notices.
+# Upstream OFL files include intentional trailing spaces; keep their text intact.
+public/brand-assets/**/*.svg -text
+public/fonts/brand/**/*.ttf -text
+public/fonts/brand/**/OFL.txt -text -whitespace

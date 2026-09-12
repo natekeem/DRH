@@ -1,0 +1,415 @@
+{
+  "cases": [
+    {
+      "slug": "linear.app",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "fonts": [
+        {
+          "family": "Inter",
+          "faces": 1
+        },
+        {
+          "family": "Geist",
+          "faces": 1
+        },
+        {
+          "family": "Geist Mono",
+          "faces": 1
+        },
+        {
+          "family": "IBM Plex Sans",
+          "faces": 1
+        },
+        {
+          "family": "IBM Plex Mono",
+          "faces": 1
+        },
+        {
+          "family": "JetBrains Mono",
+          "faces": 1
+        },
+        {
+          "family": "DM Sans",
+          "faces": 1
+        },
+        {
+          "family": "Instrument Serif",
+          "faces": 1
+        }
+      ]
+    },
+    {
+      "slug": "ibm",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "fonts": [
+        {
+          "family": "Inter",
+          "faces": 1
+        },
+        {
+          "family": "Geist",
+          "faces": 1
+        },
+        {
+          "family": "Geist Mono",
+          "faces": 1
+        },
+        {
+          "family": "IBM Plex Sans",
+          "faces": 1
+        },
+        {
+          "family": "IBM Plex Mono",
+          "faces": 1
+        },
+        {
+          "family": "JetBrains Mono",
+          "faces": 1
+        },
+        {
+          "family": "DM Sans",
+          "faces": 1
+        },
+        {
+          "family": "Instrument Serif",
+          "faces": 1
+        }
+      ]
+    },
+    {
+      "slug": "vercel",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "fonts": [
+        {
+          "family": "Inter",
+          "faces": 1
+        },
+        {
+          "family": "Geist",
+          "faces": 1
+        },
+        {
+          "family": "Geist Mono",
+          "faces": 1
+        },
+        {
+          "family": "IBM Plex Sans",
+          "faces": 1
+        },
+        {
+          "family": "IBM Plex Mono",
+          "faces": 1
+        },
+        {
+          "family": "JetBrains Mono",
+          "faces": 1
+        },
+        {
+          "family": "DM Sans",
+          "faces": 1
+        },
+        {
+          "family": "Instrument Serif",
+          "faces": 1
+        }
+      ]
+    },
+    {
+      "slug": "supabase",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "fonts": [
+        {
+          "family": "Inter",
+          "faces": 1
+        },
+        {
+          "family": "Geist",
+          "faces": 1
+        },
+        {
+          "family": "Geist Mono",
+          "faces": 1
+        },
+        {
+          "family": "IBM Plex Sans",
+          "faces": 1
+        },
+        {
+          "family": "IBM Plex Mono",
+          "faces": 1
+        },
+        {
+          "family": "JetBrains Mono",
+          "faces": 1
+        },
+        {
+          "family": "DM Sans",
+          "faces": 1
+        },
+        {
+          "family": "Instrument Serif",
+          "faces": 1
+        }
+      ]
+    },
+    {
+      "slug": "linear.app",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "fonts": [
+        {
+          "family": "Inter",
+          "faces": 1
+        },
+        {
+          "family": "Geist",
+          "faces": 1
+        },
+        {
+          "family": "Geist Mono",
+          "faces": 1
+        },
+        {
+          "family": "IBM Plex Sans",
+          "faces": 1
+        },
+        {
+          "family": "IBM Plex Mono",
+          "faces": 1
+        },
+        {
+          "family": "JetBrains Mono",
+          "faces": 1
+        },
+        {
+          "family": "DM Sans",
+          "faces": 1
+        },
+        {
+          "family": "Instrument Serif",
+          "faces": 1
+        }
+      ]
+    },
+    {
+      "slug": "ibm",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "fonts": [
+        {
+          "family": "Inter",
+          "faces": 1
+        },
+        {
+          "family": "Geist",
+          "faces": 1
+        },
+        {
+          "family": "Geist Mono",
+          "faces": 1
+        },
+        {
+          "family": "IBM Plex Sans",
+          "faces": 1
+        },
+        {
+          "family": "IBM Plex Mono",
+          "faces": 1
+        },
+        {
+          "family": "JetBrains Mono",
+          "faces": 1
+        },
+        {
+          "family": "DM Sans",
+          "faces": 1
+        },
+        {
+          "family": "Instrument Serif",
+          "faces": 1
+        }
+      ]
+    },
+    {
+      "slug": "vercel",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "fonts": [
+        {
+          "family": "Inter",
+          "faces": 1
+        },
+        {
+          "family": "Geist",
+          "faces": 1
+        },
+        {
+          "family": "Geist Mono",
+          "faces": 1
+        },
+        {
+          "family": "IBM Plex Sans",
+          "faces": 1
+        },
+        {
+          "family": "IBM Plex Mono",
+          "faces": 1
+        },
+        {
+          "family": "JetBrains Mono",
+          "faces": 1
+        },
+        {
+          "family": "DM Sans",
+          "faces": 1
+        },
+        {
+          "family": "Instrument Serif",
+          "faces": 1
+        }
+      ]
+    },
+    {
+      "slug": "supabase",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "fonts": [
+        {
+          "family": "Inter",
+          "faces": 1
+        },
+        {
+          "family": "Geist",
+          "faces": 1
+        },
+        {
+          "family": "Geist Mono",
+          "faces": 1
+        },
+        {
+          "family": "IBM Plex Sans",
+          "faces": 1
+        },
+        {
+          "family": "IBM Plex Mono",
+          "faces": 1
+        },
+        {
+          "family": "JetBrains Mono",
+          "faces": 1
+        },
+        {
+          "family": "DM Sans",
+          "faces": 1
+        },
+        {
+          "family": "Instrument Serif",
+          "faces": 1
+        }
+      ]
+    }
+  ],
+  "requests": [
+    {
+      "url": "http://127.0.0.1:5175/fonts/brand/inter/font.ttf",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5175/fonts/brand/geistmono/font.ttf",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5175/fonts/brand/geist/font.ttf",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5175/fonts/brand/ibmplexsans/font.ttf",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5175/fonts/brand/ibmplexmono/font.ttf",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5175/fonts/brand/jetbrainsmono/font.ttf",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5175/fonts/brand/dmsans/font.ttf",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5175/fonts/brand/instrumentserif/font.ttf",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5175/brand-assets/vercel/logo.svg",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5175/brand-assets/supabase/logo.svg",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5175/fonts/brand/inter/font.ttf",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5175/fonts/brand/geistmono/font.ttf",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5175/fonts/brand/geist/font.ttf",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5175/fonts/brand/ibmplexsans/font.ttf",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5175/fonts/brand/ibmplexmono/font.ttf",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5175/fonts/brand/jetbrainsmono/font.ttf",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5175/fonts/brand/dmsans/font.ttf",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5175/fonts/brand/instrumentserif/font.ttf",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5175/brand-assets/vercel/logo.svg",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5175/brand-assets/supabase/logo.svg",
+      "status": 200
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,6 @@
+Supabase logo is a trademark of Supabase Inc. Used unmodified to identify the brand.
+Supabase brand guidelines — unmodified identification of Supabase Inc. only; not an MIT asset
+Source: https://supabase.com/brand-assets.zip
+Usage evidence: https://supabase.com/brand-assets
+Checked: 2026-09-12
+Not licensed by the DESIGN.md analysis MIT license.
