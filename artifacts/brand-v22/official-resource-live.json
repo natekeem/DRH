@@ -1,0 +1,660 @@
+[
+  {
+    "brand": "airbnb",
+    "requestedUrl": "https://news.airbnb.com/media-assets",
+    "status": 200,
+    "redirectChain": [
+      {
+        "url": "https://news.airbnb.com/media-assets",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "finalUrl": "https://news.airbnb.com/media-assets",
+    "canonical": "https://news.airbnb.com/media-assets",
+    "title": "Media assets - Airbnb Newsroom",
+    "headings": [
+      "Media assets"
+    ],
+    "officialDomain": "news.airbnb.com",
+    "checkedAt": "2026-09-12T22:46:06.344Z",
+    "reviewRequired": false
+  },
+  {
+    "brand": "apple",
+    "requestedUrl": "https://developer.apple.com/design/human-interface-guidelines",
+    "status": 200,
+    "redirectChain": [
+      {
+        "url": "https://developer.apple.com/design/human-interface-guidelines",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "finalUrl": "https://developer.apple.com/design/human-interface-guidelines",
+    "canonical": "https://developer.apple.com/design/human-interface-guidelines",
+    "title": "Human Interface Guidelines | Apple Developer Documentation",
+    "headings": [
+      "This page requires JavaScript."
+    ],
+    "officialDomain": "developer.apple.com",
+    "checkedAt": "2026-09-12T22:46:06.083Z",
+    "reviewRequired": false
+  },
+  {
+    "brand": "figma",
+    "requestedUrl": "https://www.figma.com/es-la/using-the-figma-brand/",
+    "status": 200,
+    "redirectChain": [
+      {
+        "url": "https://www.figma.com/es-la/using-the-figma-brand/",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "finalUrl": "https://www.figma.com/es-la/using-the-figma-brand/",
+    "canonical": "https://www.figma.com/es-la/using-the-figma-brand/",
+    "title": "Pautas de uso de la marca y el logotipo de Figma | Figma",
+    "headings": [
+      "Lo que puedes hacer en Figma",
+      "Explora todos los productos",
+      "Recursos adicionales del producto",
+      "Casos de uso",
+      "Roles",
+      "Organizaciones",
+      "Comenzar",
+      "Aprender",
+      "Pautas de marca de Figma",
+      "Impulsemos nuestras marcas juntos",
+      "Pautas de marca de Figma",
+      "Marcas de Figma"
+    ],
+    "officialDomain": "www.figma.com",
+    "checkedAt": "2026-09-12T22:46:06.967Z",
+    "reviewRequired": false
+  },
+  {
+    "brand": "ibm",
+    "requestedUrl": "https://carbondesignsystem.com/",
+    "status": 200,
+    "redirectChain": [
+      {
+        "url": "https://carbondesignsystem.com/",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "finalUrl": "https://carbondesignsystem.com/",
+    "canonical": null,
+    "title": null,
+    "headings": [],
+    "officialDomain": "carbondesignsystem.com",
+    "checkedAt": "2026-09-12T22:46:06.699Z",
+    "reviewRequired": true
+  },
+  {
+    "brand": "ibm",
+    "requestedUrl": "https://www.ibm.com/design/language/",
+    "status": 200,
+    "redirectChain": [
+      {
+        "url": "https://www.ibm.com/design/language/",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "finalUrl": "https://www.ibm.com/design/language/",
+    "canonical": null,
+    "title": "IBM Design Language",
+    "headings": [
+      "Tools, templates and assets",
+      "What’s new"
+    ],
+    "officialDomain": "www.ibm.com",
+    "checkedAt": "2026-09-12T22:46:08.050Z",
+    "reviewRequired": false
+  },
+  {
+    "brand": "ibm",
+    "requestedUrl": "https://www.ibm.com/plex/",
+    "status": 200,
+    "redirectChain": [
+      {
+        "url": "https://www.ibm.com/plex/",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "finalUrl": "https://www.ibm.com/plex/",
+    "canonical": null,
+    "title": "Introduction | IBM Plex",
+    "headings": [
+      "IBM&nbsp;Plex® is&nbsp;our&nbsp;new typeface. It&rsquo;s&nbsp;global, it&rsquo;s&nbsp;versatile and it&rsquo;s distinctlyIBM.",
+      "↓02 Concept"
+    ],
+    "officialDomain": "www.ibm.com",
+    "checkedAt": "2026-09-12T22:46:06.884Z",
+    "reviewRequired": false
+  },
+  {
+    "brand": "kakao",
+    "requestedUrl": "https://developers.kakao.com/docs/ko/kakaologin/design-guide",
+    "status": 200,
+    "redirectChain": [
+      {
+        "url": "https://developers.kakao.com/docs/ko/kakaologin/design-guide",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "finalUrl": "https://developers.kakao.com/docs/ko/kakaologin/design-guide",
+    "canonical": "https://developers.kakao.com/docs/ko/kakaologin/design-guide",
+    "title": "카카오 로그인 &gt; 디자인 가이드 - 카카오디벨로퍼스 | 문서",
+    "headings": [
+      "",
+      "사이드 메뉴",
+      "디자인 가이드",
+      "카카오 로그인 버튼",
+      "디자인 가이드"
+    ],
+    "officialDomain": "developers.kakao.com",
+    "checkedAt": "2026-09-12T22:46:07.333Z",
+    "reviewRequired": false
+  },
+  {
+    "brand": "kakaobank",
+    "requestedUrl": "https://www.kakaobank.com/view/about/brand/resource",
+    "status": 200,
+    "redirectChain": [
+      {
+        "url": "https://www.kakaobank.com/view/about/brand/resource",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "finalUrl": "https://www.kakaobank.com/view/about/brand/resource",
+    "canonical": "https://www.kakaobank.com/",
+    "title": "브랜드 리소스 | 카카오뱅크",
+    "headings": [
+      "좌측 카카오뱅크 로고 클릭' });\"> 카카오뱅크",
+      "브랜드 리소스",
+      "로고",
+      "앱 아이콘",
+      "색상",
+      "미디어 패키지"
+    ],
+    "officialDomain": "www.kakaobank.com",
+    "checkedAt": "2026-09-12T22:46:07.341Z",
+    "reviewRequired": false
+  },
+  {
+    "brand": "kakaopay",
+    "requestedUrl": "https://story.kakaopay.com/225-kakaopay-design/",
+    "status": 200,
+    "redirectChain": [
+      {
+        "url": "https://story.kakaopay.com/225-kakaopay-design/",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "finalUrl": "https://story.kakaopay.com/225-kakaopay-design/",
+    "canonical": "https://story.kakaopay.com/225-kakaopay-design/",
+    "title": "모두를 위한 디자인, 차별 없는 디자인 - 카카오페이 블로그",
+    "headings": [
+      "모두를 위한 디자인, 차별 없는 디자인",
+      "추천 컨텐츠",
+      "사장님 고민 끝! 사장님들을 위한 카카오페이 사장님플러스 앱을 소개합니다",
+      "카카오페이 트래블로그 체크카드 출시!",
+      "쉽고 안전한 자산관리, 카카오페이로 시작해 보세요! #통합내역 #금융비서 #함께하는 자산관리"
+    ],
+    "officialDomain": "story.kakaopay.com",
+    "checkedAt": "2026-09-12T22:46:07.727Z",
+    "reviewRequired": false
+  },
+  {
+    "brand": "karrot",
+    "requestedUrl": "https://seed-design.io/",
+    "status": 200,
+    "redirectChain": [
+      {
+        "url": "https://seed-design.io/",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "finalUrl": "https://seed-design.io/",
+    "canonical": null,
+    "title": "SEED Design System",
+    "headings": [
+      "당근의 디자인 시스템 SEED"
+    ],
+    "officialDomain": "seed-design.io",
+    "checkedAt": "2026-09-12T22:46:07.821Z",
+    "reviewRequired": false
+  },
+  {
+    "brand": "linear.app",
+    "requestedUrl": "https://linear.app/brand",
+    "status": 200,
+    "redirectChain": [
+      {
+        "url": "https://linear.app/brand",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "finalUrl": "https://linear.app/brand",
+    "canonical": "https://linear.app/brand",
+    "title": "Brand Guidelines – Linear",
+    "headings": [
+      "Linear Brand Guidelines",
+      "Resources for presenting the Linear brand consistently and professionally."
+    ],
+    "officialDomain": "linear.app",
+    "checkedAt": "2026-09-12T22:46:07.105Z",
+    "reviewRequired": false
+  },
+  {
+    "brand": "mongodb",
+    "requestedUrl": "https://www.mongodb.com/company/newsroom/brand-resources",
+    "status": 200,
+    "redirectChain": [
+      {
+        "url": "https://www.mongodb.com/company/newsroom/brand-resources",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "finalUrl": "https://www.mongodb.com/company/newsroom/brand-resources",
+    "canonical": "https://www.mongodb.com/company/newsroom/brand-resources",
+    "title": "MongoDB Brand Resources | MongoDB",
+    "headings": [
+      "Brand Resources",
+      "Brand Identity",
+      "Primary logo",
+      "Logo mark",
+      "Proper usage",
+      "Primary palette",
+      "Brand Usage Guidelines",
+      "Download media kit"
+    ],
+    "officialDomain": "www.mongodb.com",
+    "checkedAt": "2026-09-12T22:46:08.145Z",
+    "reviewRequired": false
+  },
+  {
+    "brand": "naver",
+    "requestedUrl": "https://www.navercorp.com/company/brandGuide",
+    "status": 200,
+    "redirectChain": [
+      {
+        "url": "https://www.navercorp.com/company/brandGuide",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "finalUrl": "https://www.navercorp.com/company/brandGuide",
+    "canonical": null,
+    "title": "브랜드 리소스 l NAVER Corp.",
+    "headings": [
+      "logo",
+      "브랜드 리소스"
+    ],
+    "officialDomain": "www.navercorp.com",
+    "checkedAt": "2026-09-12T22:46:07.403Z",
+    "reviewRequired": false
+  },
+  {
+    "brand": "raycast",
+    "requestedUrl": "https://www.raycast.com/press",
+    "status": 200,
+    "redirectChain": [
+      {
+        "url": "https://www.raycast.com/press",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "finalUrl": "https://www.raycast.com/press",
+    "canonical": "https://www.raycast.com/press",
+    "title": "Raycast Press &amp; Media Kit",
+    "headings": [
+      "Press &amp; Media Kit",
+      "About Raycast",
+      "Brand Assets",
+      "Screenshots",
+      "Co-Founders",
+      "Coverage",
+      "Need something else?"
+    ],
+    "officialDomain": "www.raycast.com",
+    "checkedAt": "2026-09-12T22:46:07.187Z",
+    "reviewRequired": false
+  },
+  {
+    "brand": "samsung",
+    "requestedUrl": "https://developer.samsung.com/one-ui",
+    "status": 200,
+    "redirectChain": [
+      {
+        "url": "https://developer.samsung.com/one-ui",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "finalUrl": "https://developer.samsung.com/one-ui",
+    "canonical": "https://developer.samsung.com/one-ui",
+    "title": "One UI | Samsung Developer",
+    "headings": [
+      "One UI Design Guidelines",
+      "Designing for large screens",
+      "Designing for foldables",
+      "One UI Design System",
+      "Manage Your Cookies",
+      "Essential Cookies",
+      "Analytical/Performance Cookies",
+      "Functionality Cookies",
+      "Preferences Submitted"
+    ],
+    "officialDomain": "developer.samsung.com",
+    "checkedAt": "2026-09-12T22:46:08.393Z",
+    "reviewRequired": false
+  },
+  {
+    "brand": "sentry",
+    "requestedUrl": "https://sentry.io/branding/",
+    "status": 200,
+    "redirectChain": [
+      {
+        "url": "https://sentry.io/branding/",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "finalUrl": "https://sentry.io/branding/",
+    "canonical": "https://sentry.io/branding/",
+    "title": "Get the Sentry Logo | Sentry",
+    "headings": [
+      "Need our logo?"
+    ],
+    "officialDomain": "sentry.io",
+    "checkedAt": "2026-09-12T22:46:07.605Z",
+    "reviewRequired": false
+  },
+  {
+    "brand": "shopify",
+    "requestedUrl": "https://shopify.dev/docs/api/polaris",
+    "status": 200,
+    "redirectChain": [
+      {
+        "url": "https://shopify.dev/docs/api/polaris",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "finalUrl": "https://shopify.dev/docs/api/polaris",
+    "canonical": "https://shopify.dev/docs/api/polaris",
+    "title": "Polaris references",
+    "headings": [
+      "Polaris references"
+    ],
+    "officialDomain": "shopify.dev",
+    "checkedAt": "2026-09-12T22:46:07.654Z",
+    "reviewRequired": false
+  },
+  {
+    "brand": "shopify",
+    "requestedUrl": "https://www.shopify.com/brand-assets",
+    "status": 200,
+    "redirectChain": [
+      {
+        "url": "https://www.shopify.com/brand-assets",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "finalUrl": "https://www.shopify.com/brand-assets",
+    "canonical": "https://www.shopify.com/brand-assets",
+    "title": "Using our brand - Shopify",
+    "headings": [
+      "Using our brand",
+      "Primary logo",
+      "Monotone logos",
+      "The Shopping Bag",
+      "Clear space",
+      "Minimum size",
+      "Best practices",
+      "Trademark Usage Guidelines",
+      "Start your 3-day free trial today!"
+    ],
+    "officialDomain": "www.shopify.com",
+    "checkedAt": "2026-09-12T22:46:07.074Z",
+    "reviewRequired": false
+  },
+  {
+    "brand": "socar",
+    "requestedUrl": "https://design.socar.kr/",
+    "status": 200,
+    "redirectChain": [
+      {
+        "url": "https://design.socar.kr/",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "finalUrl": "https://design.socar.kr/",
+    "canonical": null,
+    "title": "쏘카 브랜드 센터",
+    "headings": [],
+    "officialDomain": "design.socar.kr",
+    "checkedAt": "2026-09-12T22:46:07.783Z",
+    "reviewRequired": false
+  },
+  {
+    "brand": "spotify",
+    "requestedUrl": "https://developer.spotify.com/documentation/design",
+    "status": 200,
+    "redirectChain": [
+      {
+        "url": "https://developer.spotify.com/documentation/design",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "finalUrl": "https://developer.spotify.com/documentation/design",
+    "canonical": null,
+    "title": "Design &amp; Branding Guidelines | Spotify for Developers",
+    "headings": [
+      "Design &amp; Branding Guidelines",
+      "Introduction",
+      "Attribution",
+      "Using our content",
+      "Browsing Spotify content",
+      "Linking to Spotify",
+      "Playing views",
+      "Showing entities",
+      "Using our logo",
+      "Using our colors",
+      "Logo and naming restrictions",
+      "Fonts"
+    ],
+    "officialDomain": "developer.spotify.com",
+    "checkedAt": "2026-09-12T22:46:06.294Z",
+    "reviewRequired": false
+  },
+  {
+    "brand": "stripe",
+    "requestedUrl": "https://stripe.com/newsroom/information",
+    "status": 200,
+    "redirectChain": [
+      {
+        "url": "https://stripe.com/newsroom/information",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "finalUrl": "https://stripe.com/newsroom/information",
+    "canonical": "https://stripe.com/newsroom/information",
+    "title": "Stripe Newsroom | Information and assets",
+    "headings": [
+      "Stripe logo",
+      "Payments",
+      "Revenue",
+      "Money management",
+      "Platforms and marketplaces",
+      "More",
+      "Payments",
+      "Revenue",
+      "Money management",
+      "Platforms and marketplaces",
+      "More",
+      "Newsroom"
+    ],
+    "officialDomain": "stripe.com",
+    "checkedAt": "2026-09-12T22:46:07.205Z",
+    "reviewRequired": false
+  },
+  {
+    "brand": "supabase",
+    "requestedUrl": "https://supabase.com/brand-assets",
+    "status": 200,
+    "redirectChain": [
+      {
+        "url": "https://supabase.com/brand-assets",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "finalUrl": "https://supabase.com/brand-assets",
+    "canonical": null,
+    "title": "Branding | Supabase",
+    "headings": [
+      "Brand assets",
+      "Build in a weekend, scale to millions",
+      "Footer"
+    ],
+    "officialDomain": "supabase.com",
+    "checkedAt": "2026-09-12T22:46:07.063Z",
+    "reviewRequired": false
+  },
+  {
+    "brand": "toss",
+    "requestedUrl": "https://tossmini-docs.toss.im/tds-mobile/",
+    "status": 200,
+    "redirectChain": [
+      {
+        "url": "https://tossmini-docs.toss.im/tds-mobile/",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "finalUrl": "https://tossmini-docs.toss.im/tds-mobile/",
+    "canonical": null,
+    "title": "Toss Design System | Mobile",
+    "headings": [
+      "TDS를 소개해요"
+    ],
+    "officialDomain": "tossmini-docs.toss.im",
+    "checkedAt": "2026-09-12T22:46:10.465Z",
+    "reviewRequired": false
+  },
+  {
+    "brand": "vercel",
+    "requestedUrl": "https://vercel.com/geist/brands",
+    "status": 200,
+    "redirectChain": [
+      {
+        "url": "https://vercel.com/geist/brands",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "finalUrl": "https://vercel.com/geist/brands",
+    "canonical": "https://vercel.com/geist/brands",
+    "title": "Brands",
+    "headings": [
+      "Brands",
+      "Vercel",
+      "Symbol &amp; unicode",
+      "Spacing considerations",
+      "Next.js",
+      "Next.js symbol",
+      "Next.js spelling",
+      "Turbo",
+      "Turbo symbol",
+      "Turborepo",
+      "Turborepo Symbol",
+      "Turbopack"
+    ],
+    "officialDomain": "vercel.com",
+    "checkedAt": "2026-09-12T22:46:06.135Z",
+    "reviewRequired": false
+  },
+  {
+    "brand": "vercel",
+    "requestedUrl": "https://vercel.com/geist/introduction",
+    "status": 200,
+    "redirectChain": [
+      {
+        "url": "https://vercel.com/geist/introduction",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "finalUrl": "https://vercel.com/geist/introduction",
+    "canonical": "https://vercel.com/geist/introduction",
+    "title": "Geist",
+    "headings": [
+      "Geist Design System"
+    ],
+    "officialDomain": "vercel.com",
+    "checkedAt": "2026-09-12T22:46:06.121Z",
+    "reviewRequired": false
+  },
+  {
+    "brand": "vercel",
+    "requestedUrl": "https://vercel.com/geist/typography",
+    "status": 200,
+    "redirectChain": [
+      {
+        "url": "https://vercel.com/geist/typography",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "finalUrl": "https://vercel.com/geist/typography",
+    "canonical": "https://vercel.com/geist/typography",
+    "title": "Typography",
+    "headings": [
+      "Typography"
+    ],
+    "officialDomain": "vercel.com",
+    "checkedAt": "2026-09-12T22:46:06.166Z",
+    "reviewRequired": false
+  },
+  {
+    "brand": "yeogiotte",
+    "requestedUrl": "https://designlibrary.yeogi.com/",
+    "status": 200,
+    "redirectChain": [
+      {
+        "url": "https://designlibrary.yeogi.com/",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "finalUrl": "https://designlibrary.yeogi.com/",
+    "canonical": "https://designlibrary.yeogi.com/",
+    "title": "여기어때 Design Library",
+    "headings": [
+      "A Visual Language for Travel.",
+      "Voices from Makers",
+      "Discover Our Design",
+      "Get in Touch"
+    ],
+    "officialDomain": "designlibrary.yeogi.com",
+    "checkedAt": "2026-09-12T22:46:07.505Z",
+    "reviewRequired": false
+  }
+]

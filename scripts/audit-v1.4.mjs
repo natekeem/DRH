@@ -32,11 +32,13 @@ console.log('10 official preset exports: syntax, identity, geometry, color and f
 const vendorIds=references.filter(r=>r.id.startsWith('admd-'))
 const nonVendorRefs=references.filter(r=>!r.id.startsWith('admd-'))
 const baselineIds=JSON.parse(await readFile('tests/batch1/baseline-reference-ids.json','utf8'));
+const koreanIds=JSON.parse(await readFile('tests/brand-designs/v22-reference-ids.json','utf8'));
+assert.equal(koreanIds.length,17,'Authorized V2.2 Korean batch');
 const batch1=JSON.parse(await readFile('src/data/batch1Catalog.json','utf8'));
 assert.equal(baselineIds.length,167,'Pinned V1.7 inventory');
 assert.equal(baselineIds.filter(id=>!id.startsWith('admd-')).length,93,'Original 93 entries');
 assert.equal(batch1.length,10,'Only the authorized Batch 1 additions');
-assert.deepEqual(references.map(r=>r.id).sort(),[...baselineIds,...batch1.map(r=>r.id), 'progressive-blur', 'morphing-dialog', 'dock-magnification', 'split-flap'].sort(),'Preserve every V1.7 ID; allow only Batch 1');
+assert.deepEqual(references.map(r=>r.id).sort(),[...baselineIds,...koreanIds,...batch1.map(r=>r.id), 'progressive-blur', 'morphing-dialog', 'dock-magnification', 'split-flap'].sort(),'Preserve every V1.7 ID; allow explicitly pinned Batch 1 and V2.2 Korean additions');
 assert.equal(nonVendorRefs.length,107,'93 original + 10 authorized Batch 1 entries + 4 new references');
 assert(vendorIds.length>0,'V1.6: awesome-design-md vendor entries must be present');
 let artifactCount=0;

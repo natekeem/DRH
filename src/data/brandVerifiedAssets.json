@@ -23,5 +23,41 @@
     "attribution": "Supabase logo is a trademark of Supabase Inc. Used unmodified to identify the brand.",
     "checkedAt": "2026-09-12",
     "sha256": "eb9ffcd100ad26228a578100ba7cbfc5b383e4995338d122abdc6a3b4d210ed3"
+  },
+  "linear.app": {
+    "type": "verified-svg",
+    "format": "logotype",
+    "label": "Linear",
+    "src": "brand-assets/linear/logo.svg",
+    "darkSrc": "brand-assets/linear/logo-dark.svg",
+    "sourceUrl": "https://static.linear.app/design-assets/Linear-Brand-Assets.zip?v=3",
+    "evidenceUrl": "https://linear.app/brand",
+    "license": "Proprietary brand asset; official reference usage conditions, not MIT",
+    "attribution": "Linear 상표·로고는 Linear 소유입니다. 참고 문서 식별용이며 제휴·보증을 뜻하지 않습니다.",
+    "checkedAt": "2026-09-12",
+    "sha256": "6b8c0756d1dc581364c4a91782fc512727e4c47c7bacdfb7f4fbbab1d99c5066",
+    "darkSha256": "38edb7e21a41025b9c9c173557ddc2dac97bb0c3d977a2aab75d3586170f08ff",
+    "usageTerms": "Use unchanged only to refer to Linear; retain clear space; no affiliation, endorsement, combining graphics or use in own product name.",
+    "archiveSha256": "94e12fb9c93933e85e2e81cfeb535636ae535a82303fe9ee355e93cd35cc920a"
+  },
+  "kakaobank": {
+    "type": "verified-svg",
+    "format": "svg",
+    "label": "KakaoBank",
+    "src": "brand-assets/kakaobank/logo.svg",
+    "darkSrc": "brand-assets/kakaobank/logo-dark.svg",
+    "sourceUrl": "https://fde-kkb-prod-krc-stkkbprodkrcblob-g4h6eybzded7e9ha.a01.azurefd.net/prod/20251103%2F6e6d783ad34242c8ada28ac6fb98db2a.zip",
+    "evidenceUrl": "https://www.kakaobank.com/view/about/brand/resource",
+    "license": "Proprietary brand asset; official identification usage guidelines, not MIT",
+    "attribution": "카카오뱅크 상표·로고는 카카오뱅크 소유입니다. 참고 문서 식별용이며 제휴·보증을 뜻하지 않습니다.",
+    "usageTerms": "Unmodified official symbol; preserve aspect ratio, minimum clear space, minimum 12px screen size and original black/white colors. No outline, distortion, mask or affiliation claim.",
+    "checkedAt": "2026-09-12",
+    "sha256": "ed0cb92151ad6e6488c0afa8a863f81234ef881d101f93d22890de758f3c2940",
+    "darkSha256": "c2385367a69c8d503df7ce7d2f3a2b937200e7b3cd3aafade26b143cea5fc547",
+    "archiveSha256": "aaad8fdc8288780edbdbcfed5bceb0a93ca37ccf2f1fc630c4fe48fedbf8e5e3",
+    "originalPaths": [
+      "01_Primary_Black/Digital_Symbol_Primary_Black.svg",
+      "03_Secondary_White/Digital_Symbol_Secondary_White.svg"
+    ]
   }
 }

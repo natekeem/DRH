@@ -1,0 +1,2083 @@
+{
+  "cards": [
+    {
+      "slug": "apple",
+      "viewportWidth": 1920,
+      "width": 355,
+      "scrollWidth": 355,
+      "height": 212,
+      "scrollHeight": 212
+    },
+    {
+      "slug": "linear.app",
+      "viewportWidth": 1920,
+      "width": 355,
+      "scrollWidth": 355,
+      "height": 212,
+      "scrollHeight": 212
+    },
+    {
+      "slug": "spotify",
+      "viewportWidth": 1920,
+      "width": 355,
+      "scrollWidth": 355,
+      "height": 212,
+      "scrollHeight": 212
+    },
+    {
+      "slug": "ferrari",
+      "viewportWidth": 1920,
+      "width": 355,
+      "scrollWidth": 355,
+      "height": 212,
+      "scrollHeight": 212
+    },
+    {
+      "slug": "nintendo-2001",
+      "viewportWidth": 1920,
+      "width": 355,
+      "scrollWidth": 355,
+      "height": 212,
+      "scrollHeight": 212
+    },
+    {
+      "slug": "vercel",
+      "viewportWidth": 1920,
+      "width": 355,
+      "scrollWidth": 355,
+      "height": 212,
+      "scrollHeight": 212
+    },
+    {
+      "slug": "toss",
+      "viewportWidth": 1920,
+      "width": 355,
+      "scrollWidth": 355,
+      "height": 212,
+      "scrollHeight": 212
+    },
+    {
+      "slug": "karrot",
+      "viewportWidth": 1920,
+      "width": 355,
+      "scrollWidth": 355,
+      "height": 212,
+      "scrollHeight": 212
+    },
+    {
+      "slug": "kakao",
+      "viewportWidth": 1920,
+      "width": 355,
+      "scrollWidth": 355,
+      "height": 212,
+      "scrollHeight": 212
+    },
+    {
+      "slug": "kakaobank",
+      "viewportWidth": 1920,
+      "width": 355,
+      "scrollWidth": 355,
+      "height": 212,
+      "scrollHeight": 212
+    },
+    {
+      "slug": "baemin",
+      "viewportWidth": 1920,
+      "width": 355,
+      "scrollWidth": 355,
+      "height": 212,
+      "scrollHeight": 212
+    },
+    {
+      "slug": "musinsa",
+      "viewportWidth": 1920,
+      "width": 355,
+      "scrollWidth": 355,
+      "height": 212,
+      "scrollHeight": 212
+    },
+    {
+      "slug": "socar",
+      "viewportWidth": 1920,
+      "width": 355,
+      "scrollWidth": 355,
+      "height": 212,
+      "scrollHeight": 212
+    },
+    {
+      "slug": "yeogiotte",
+      "viewportWidth": 1920,
+      "width": 355,
+      "scrollWidth": 355,
+      "height": 212,
+      "scrollHeight": 212
+    },
+    {
+      "slug": "29cm",
+      "viewportWidth": 1920,
+      "width": 355,
+      "scrollWidth": 355,
+      "height": 212,
+      "scrollHeight": 212
+    },
+    {
+      "slug": "banksalad",
+      "viewportWidth": 1920,
+      "width": 355,
+      "scrollWidth": 355,
+      "height": 212,
+      "scrollHeight": 212
+    },
+    {
+      "slug": "coupang",
+      "viewportWidth": 1920,
+      "width": 355,
+      "scrollWidth": 355,
+      "height": 212,
+      "scrollHeight": 212
+    },
+    {
+      "slug": "hyundai",
+      "viewportWidth": 1920,
+      "width": 355,
+      "scrollWidth": 355,
+      "height": 212,
+      "scrollHeight": 212
+    },
+    {
+      "slug": "kakaopay",
+      "viewportWidth": 1920,
+      "width": 355,
+      "scrollWidth": 355,
+      "height": 212,
+      "scrollHeight": 212
+    },
+    {
+      "slug": "kurly",
+      "viewportWidth": 1920,
+      "width": 355,
+      "scrollWidth": 355,
+      "height": 212,
+      "scrollHeight": 212
+    },
+    {
+      "slug": "naver",
+      "viewportWidth": 1920,
+      "width": 355,
+      "scrollWidth": 355,
+      "height": 212,
+      "scrollHeight": 212
+    },
+    {
+      "slug": "oliveyoung",
+      "viewportWidth": 1920,
+      "width": 355,
+      "scrollWidth": 355,
+      "height": 212,
+      "scrollHeight": 212
+    },
+    {
+      "slug": "samsung",
+      "viewportWidth": 1920,
+      "width": 355,
+      "scrollWidth": 355,
+      "height": 212,
+      "scrollHeight": 212
+    },
+    {
+      "slug": "apple",
+      "viewportWidth": 1440,
+      "width": 445,
+      "scrollWidth": 445,
+      "height": 266,
+      "scrollHeight": 266
+    },
+    {
+      "slug": "linear.app",
+      "viewportWidth": 1440,
+      "width": 445,
+      "scrollWidth": 445,
+      "height": 266,
+      "scrollHeight": 266
+    },
+    {
+      "slug": "spotify",
+      "viewportWidth": 1440,
+      "width": 445,
+      "scrollWidth": 445,
+      "height": 266,
+      "scrollHeight": 266
+    },
+    {
+      "slug": "ferrari",
+      "viewportWidth": 1440,
+      "width": 445,
+      "scrollWidth": 445,
+      "height": 266,
+      "scrollHeight": 266
+    },
+    {
+      "slug": "nintendo-2001",
+      "viewportWidth": 1440,
+      "width": 445,
+      "scrollWidth": 445,
+      "height": 266,
+      "scrollHeight": 266
+    },
+    {
+      "slug": "vercel",
+      "viewportWidth": 1440,
+      "width": 445,
+      "scrollWidth": 445,
+      "height": 266,
+      "scrollHeight": 266
+    },
+    {
+      "slug": "toss",
+      "viewportWidth": 1440,
+      "width": 445,
+      "scrollWidth": 445,
+      "height": 266,
+      "scrollHeight": 266
+    },
+    {
+      "slug": "karrot",
+      "viewportWidth": 1440,
+      "width": 445,
+      "scrollWidth": 445,
+      "height": 266,
+      "scrollHeight": 266
+    },
+    {
+      "slug": "kakao",
+      "viewportWidth": 1440,
+      "width": 445,
+      "scrollWidth": 445,
+      "height": 266,
+      "scrollHeight": 266
+    },
+    {
+      "slug": "kakaobank",
+      "viewportWidth": 1440,
+      "width": 445,
+      "scrollWidth": 445,
+      "height": 266,
+      "scrollHeight": 266
+    },
+    {
+      "slug": "baemin",
+      "viewportWidth": 1440,
+      "width": 445,
+      "scrollWidth": 445,
+      "height": 266,
+      "scrollHeight": 266
+    },
+    {
+      "slug": "musinsa",
+      "viewportWidth": 1440,
+      "width": 445,
+      "scrollWidth": 445,
+      "height": 266,
+      "scrollHeight": 266
+    },
+    {
+      "slug": "socar",
+      "viewportWidth": 1440,
+      "width": 445,
+      "scrollWidth": 445,
+      "height": 266,
+      "scrollHeight": 266
+    },
+    {
+      "slug": "yeogiotte",
+      "viewportWidth": 1440,
+      "width": 445,
+      "scrollWidth": 445,
+      "height": 266,
+      "scrollHeight": 266
+    },
+    {
+      "slug": "29cm",
+      "viewportWidth": 1440,
+      "width": 445,
+      "scrollWidth": 445,
+      "height": 266,
+      "scrollHeight": 266
+    },
+    {
+      "slug": "banksalad",
+      "viewportWidth": 1440,
+      "width": 445,
+      "scrollWidth": 445,
+      "height": 266,
+      "scrollHeight": 266
+    },
+    {
+      "slug": "coupang",
+      "viewportWidth": 1440,
+      "width": 445,
+      "scrollWidth": 445,
+      "height": 266,
+      "scrollHeight": 266
+    },
+    {
+      "slug": "hyundai",
+      "viewportWidth": 1440,
+      "width": 445,
+      "scrollWidth": 445,
+      "height": 266,
+      "scrollHeight": 266
+    },
+    {
+      "slug": "kakaopay",
+      "viewportWidth": 1440,
+      "width": 445,
+      "scrollWidth": 445,
+      "height": 266,
+      "scrollHeight": 266
+    },
+    {
+      "slug": "kurly",
+      "viewportWidth": 1440,
+      "width": 445,
+      "scrollWidth": 445,
+      "height": 266,
+      "scrollHeight": 266
+    },
+    {
+      "slug": "naver",
+      "viewportWidth": 1440,
+      "width": 445,
+      "scrollWidth": 445,
+      "height": 266,
+      "scrollHeight": 266
+    },
+    {
+      "slug": "oliveyoung",
+      "viewportWidth": 1440,
+      "width": 445,
+      "scrollWidth": 445,
+      "height": 266,
+      "scrollHeight": 266
+    },
+    {
+      "slug": "samsung",
+      "viewportWidth": 1440,
+      "width": 445,
+      "scrollWidth": 445,
+      "height": 266,
+      "scrollHeight": 266
+    },
+    {
+      "slug": "apple",
+      "viewportWidth": 390,
+      "width": 348,
+      "scrollWidth": 348,
+      "height": 208,
+      "scrollHeight": 208
+    },
+    {
+      "slug": "linear.app",
+      "viewportWidth": 390,
+      "width": 348,
+      "scrollWidth": 348,
+      "height": 208,
+      "scrollHeight": 208
+    },
+    {
+      "slug": "spotify",
+      "viewportWidth": 390,
+      "width": 348,
+      "scrollWidth": 348,
+      "height": 208,
+      "scrollHeight": 208
+    },
+    {
+      "slug": "ferrari",
+      "viewportWidth": 390,
+      "width": 348,
+      "scrollWidth": 348,
+      "height": 208,
+      "scrollHeight": 208
+    },
+    {
+      "slug": "nintendo-2001",
+      "viewportWidth": 390,
+      "width": 348,
+      "scrollWidth": 348,
+      "height": 208,
+      "scrollHeight": 208
+    },
+    {
+      "slug": "vercel",
+      "viewportWidth": 390,
+      "width": 348,
+      "scrollWidth": 348,
+      "height": 208,
+      "scrollHeight": 208
+    },
+    {
+      "slug": "toss",
+      "viewportWidth": 390,
+      "width": 348,
+      "scrollWidth": 348,
+      "height": 208,
+      "scrollHeight": 208
+    },
+    {
+      "slug": "karrot",
+      "viewportWidth": 390,
+      "width": 348,
+      "scrollWidth": 348,
+      "height": 208,
+      "scrollHeight": 208
+    },
+    {
+      "slug": "kakao",
+      "viewportWidth": 390,
+      "width": 348,
+      "scrollWidth": 348,
+      "height": 208,
+      "scrollHeight": 208
+    },
+    {
+      "slug": "kakaobank",
+      "viewportWidth": 390,
+      "width": 348,
+      "scrollWidth": 348,
+      "height": 208,
+      "scrollHeight": 208
+    },
+    {
+      "slug": "baemin",
+      "viewportWidth": 390,
+      "width": 348,
+      "scrollWidth": 348,
+      "height": 208,
+      "scrollHeight": 208
+    },
+    {
+      "slug": "musinsa",
+      "viewportWidth": 390,
+      "width": 348,
+      "scrollWidth": 348,
+      "height": 208,
+      "scrollHeight": 208
+    },
+    {
+      "slug": "socar",
+      "viewportWidth": 390,
+      "width": 348,
+      "scrollWidth": 348,
+      "height": 208,
+      "scrollHeight": 208
+    },
+    {
+      "slug": "yeogiotte",
+      "viewportWidth": 390,
+      "width": 348,
+      "scrollWidth": 348,
+      "height": 208,
+      "scrollHeight": 208
+    },
+    {
+      "slug": "29cm",
+      "viewportWidth": 390,
+      "width": 348,
+      "scrollWidth": 348,
+      "height": 208,
+      "scrollHeight": 208
+    },
+    {
+      "slug": "banksalad",
+      "viewportWidth": 390,
+      "width": 348,
+      "scrollWidth": 348,
+      "height": 208,
+      "scrollHeight": 208
+    },
+    {
+      "slug": "coupang",
+      "viewportWidth": 390,
+      "width": 348,
+      "scrollWidth": 348,
+      "height": 208,
+      "scrollHeight": 208
+    },
+    {
+      "slug": "hyundai",
+      "viewportWidth": 390,
+      "width": 348,
+      "scrollWidth": 348,
+      "height": 208,
+      "scrollHeight": 208
+    },
+    {
+      "slug": "kakaopay",
+      "viewportWidth": 390,
+      "width": 348,
+      "scrollWidth": 348,
+      "height": 208,
+      "scrollHeight": 208
+    },
+    {
+      "slug": "kurly",
+      "viewportWidth": 390,
+      "width": 348,
+      "scrollWidth": 348,
+      "height": 208,
+      "scrollHeight": 208
+    },
+    {
+      "slug": "naver",
+      "viewportWidth": 390,
+      "width": 348,
+      "scrollWidth": 348,
+      "height": 208,
+      "scrollHeight": 208
+    },
+    {
+      "slug": "oliveyoung",
+      "viewportWidth": 390,
+      "width": 348,
+      "scrollWidth": 348,
+      "height": 208,
+      "scrollHeight": 208
+    },
+    {
+      "slug": "samsung",
+      "viewportWidth": 390,
+      "width": 348,
+      "scrollWidth": 348,
+      "height": 208,
+      "scrollHeight": 208
+    }
+  ],
+  "details": [
+    {
+      "slug": "apple",
+      "viewportWidth": 1920,
+      "width": 986,
+      "scrollWidth": 986,
+      "height": 641,
+      "scrollHeight": 5391,
+      "officialLinks": 1
+    },
+    {
+      "slug": "linear.app",
+      "viewportWidth": 1920,
+      "width": 986,
+      "scrollWidth": 986,
+      "height": 641,
+      "scrollHeight": 5952,
+      "officialLinks": 1
+    },
+    {
+      "slug": "spotify",
+      "viewportWidth": 1920,
+      "width": 986,
+      "scrollWidth": 986,
+      "height": 641,
+      "scrollHeight": 4691,
+      "officialLinks": 1
+    },
+    {
+      "slug": "ferrari",
+      "viewportWidth": 1920,
+      "width": 986,
+      "scrollWidth": 986,
+      "height": 641,
+      "scrollHeight": 5335,
+      "officialLinks": 0
+    },
+    {
+      "slug": "nintendo-2001",
+      "viewportWidth": 1920,
+      "width": 986,
+      "scrollWidth": 986,
+      "height": 641,
+      "scrollHeight": 5288,
+      "officialLinks": 0
+    },
+    {
+      "slug": "vercel",
+      "viewportWidth": 1920,
+      "width": 986,
+      "scrollWidth": 986,
+      "height": 641,
+      "scrollHeight": 5784,
+      "officialLinks": 3
+    },
+    {
+      "slug": "toss",
+      "viewportWidth": 1920,
+      "width": 986,
+      "scrollWidth": 986,
+      "height": 641,
+      "scrollHeight": 3866,
+      "officialLinks": 1
+    },
+    {
+      "slug": "karrot",
+      "viewportWidth": 1920,
+      "width": 986,
+      "scrollWidth": 986,
+      "height": 641,
+      "scrollHeight": 3545,
+      "officialLinks": 1
+    },
+    {
+      "slug": "kakao",
+      "viewportWidth": 1920,
+      "width": 986,
+      "scrollWidth": 986,
+      "height": 641,
+      "scrollHeight": 3625,
+      "officialLinks": 1
+    },
+    {
+      "slug": "kakaobank",
+      "viewportWidth": 1920,
+      "width": 986,
+      "scrollWidth": 986,
+      "height": 641,
+      "scrollHeight": 3813,
+      "officialLinks": 1
+    },
+    {
+      "slug": "baemin",
+      "viewportWidth": 1920,
+      "width": 986,
+      "scrollWidth": 986,
+      "height": 641,
+      "scrollHeight": 3106,
+      "officialLinks": 0
+    },
+    {
+      "slug": "musinsa",
+      "viewportWidth": 1920,
+      "width": 986,
+      "scrollWidth": 986,
+      "height": 641,
+      "scrollHeight": 2986,
+      "officialLinks": 0
+    },
+    {
+      "slug": "socar",
+      "viewportWidth": 1920,
+      "width": 986,
+      "scrollWidth": 986,
+      "height": 641,
+      "scrollHeight": 2657,
+      "officialLinks": 1
+    },
+    {
+      "slug": "yeogiotte",
+      "viewportWidth": 1920,
+      "width": 986,
+      "scrollWidth": 986,
+      "height": 641,
+      "scrollHeight": 3838,
+      "officialLinks": 1
+    },
+    {
+      "slug": "29cm",
+      "viewportWidth": 1920,
+      "width": 986,
+      "scrollWidth": 986,
+      "height": 641,
+      "scrollHeight": 3297,
+      "officialLinks": 0
+    },
+    {
+      "slug": "banksalad",
+      "viewportWidth": 1920,
+      "width": 986,
+      "scrollWidth": 986,
+      "height": 641,
+      "scrollHeight": 3891,
+      "officialLinks": 0
+    },
+    {
+      "slug": "coupang",
+      "viewportWidth": 1920,
+      "width": 986,
+      "scrollWidth": 986,
+      "height": 641,
+      "scrollHeight": 2291,
+      "officialLinks": 0
+    },
+    {
+      "slug": "hyundai",
+      "viewportWidth": 1920,
+      "width": 986,
+      "scrollWidth": 986,
+      "height": 641,
+      "scrollHeight": 2388,
+      "officialLinks": 0
+    },
+    {
+      "slug": "kakaopay",
+      "viewportWidth": 1920,
+      "width": 986,
+      "scrollWidth": 986,
+      "height": 641,
+      "scrollHeight": 3159,
+      "officialLinks": 1
+    },
+    {
+      "slug": "kurly",
+      "viewportWidth": 1920,
+      "width": 986,
+      "scrollWidth": 986,
+      "height": 641,
+      "scrollHeight": 2893,
+      "officialLinks": 0
+    },
+    {
+      "slug": "naver",
+      "viewportWidth": 1920,
+      "width": 986,
+      "scrollWidth": 986,
+      "height": 641,
+      "scrollHeight": 4021,
+      "officialLinks": 1
+    },
+    {
+      "slug": "oliveyoung",
+      "viewportWidth": 1920,
+      "width": 986,
+      "scrollWidth": 986,
+      "height": 641,
+      "scrollHeight": 3972,
+      "officialLinks": 0
+    },
+    {
+      "slug": "samsung",
+      "viewportWidth": 1920,
+      "width": 986,
+      "scrollWidth": 986,
+      "height": 641,
+      "scrollHeight": 5080,
+      "officialLinks": 1
+    },
+    {
+      "slug": "apple",
+      "viewportWidth": 1440,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "scrollHeight": 5492,
+      "officialLinks": 1
+    },
+    {
+      "slug": "linear.app",
+      "viewportWidth": 1440,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "scrollHeight": 6011,
+      "officialLinks": 1
+    },
+    {
+      "slug": "spotify",
+      "viewportWidth": 1440,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "scrollHeight": 4770,
+      "officialLinks": 1
+    },
+    {
+      "slug": "ferrari",
+      "viewportWidth": 1440,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "scrollHeight": 5434,
+      "officialLinks": 0
+    },
+    {
+      "slug": "nintendo-2001",
+      "viewportWidth": 1440,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "scrollHeight": 5372,
+      "officialLinks": 0
+    },
+    {
+      "slug": "vercel",
+      "viewportWidth": 1440,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "scrollHeight": 5824,
+      "officialLinks": 3
+    },
+    {
+      "slug": "toss",
+      "viewportWidth": 1440,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "scrollHeight": 3884,
+      "officialLinks": 1
+    },
+    {
+      "slug": "karrot",
+      "viewportWidth": 1440,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "scrollHeight": 3704,
+      "officialLinks": 1
+    },
+    {
+      "slug": "kakao",
+      "viewportWidth": 1440,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "scrollHeight": 3683,
+      "officialLinks": 1
+    },
+    {
+      "slug": "kakaobank",
+      "viewportWidth": 1440,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "scrollHeight": 3928,
+      "officialLinks": 1
+    },
+    {
+      "slug": "baemin",
+      "viewportWidth": 1440,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "scrollHeight": 3173,
+      "officialLinks": 0
+    },
+    {
+      "slug": "musinsa",
+      "viewportWidth": 1440,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "scrollHeight": 2986,
+      "officialLinks": 0
+    },
+    {
+      "slug": "socar",
+      "viewportWidth": 1440,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "scrollHeight": 2657,
+      "officialLinks": 1
+    },
+    {
+      "slug": "yeogiotte",
+      "viewportWidth": 1440,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "scrollHeight": 3858,
+      "officialLinks": 1
+    },
+    {
+      "slug": "29cm",
+      "viewportWidth": 1440,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "scrollHeight": 3297,
+      "officialLinks": 0
+    },
+    {
+      "slug": "banksalad",
+      "viewportWidth": 1440,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "scrollHeight": 3911,
+      "officialLinks": 0
+    },
+    {
+      "slug": "coupang",
+      "viewportWidth": 1440,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "scrollHeight": 2291,
+      "officialLinks": 0
+    },
+    {
+      "slug": "hyundai",
+      "viewportWidth": 1440,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "scrollHeight": 2466,
+      "officialLinks": 0
+    },
+    {
+      "slug": "kakaopay",
+      "viewportWidth": 1440,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "scrollHeight": 3198,
+      "officialLinks": 1
+    },
+    {
+      "slug": "kurly",
+      "viewportWidth": 1440,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "scrollHeight": 2933,
+      "officialLinks": 0
+    },
+    {
+      "slug": "naver",
+      "viewportWidth": 1440,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "scrollHeight": 4021,
+      "officialLinks": 1
+    },
+    {
+      "slug": "oliveyoung",
+      "viewportWidth": 1440,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "scrollHeight": 3972,
+      "officialLinks": 0
+    },
+    {
+      "slug": "samsung",
+      "viewportWidth": 1440,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "scrollHeight": 5100,
+      "officialLinks": 1
+    },
+    {
+      "slug": "apple",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 620,
+      "scrollHeight": 7710,
+      "officialLinks": 1
+    },
+    {
+      "slug": "linear.app",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 620,
+      "scrollHeight": 7858,
+      "officialLinks": 1
+    },
+    {
+      "slug": "spotify",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 620,
+      "scrollHeight": 6038,
+      "officialLinks": 1
+    },
+    {
+      "slug": "ferrari",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 620,
+      "scrollHeight": 7485,
+      "officialLinks": 0
+    },
+    {
+      "slug": "nintendo-2001",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 620,
+      "scrollHeight": 7452,
+      "officialLinks": 0
+    },
+    {
+      "slug": "vercel",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 620,
+      "scrollHeight": 8178,
+      "officialLinks": 3
+    },
+    {
+      "slug": "toss",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 620,
+      "scrollHeight": 4400,
+      "officialLinks": 1
+    },
+    {
+      "slug": "karrot",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 620,
+      "scrollHeight": 4134,
+      "officialLinks": 1
+    },
+    {
+      "slug": "kakao",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 620,
+      "scrollHeight": 4113,
+      "officialLinks": 1
+    },
+    {
+      "slug": "kakaobank",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 620,
+      "scrollHeight": 4399,
+      "officialLinks": 1
+    },
+    {
+      "slug": "baemin",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 620,
+      "scrollHeight": 3681,
+      "officialLinks": 0
+    },
+    {
+      "slug": "musinsa",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 620,
+      "scrollHeight": 3264,
+      "officialLinks": 0
+    },
+    {
+      "slug": "socar",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 620,
+      "scrollHeight": 3063,
+      "officialLinks": 1
+    },
+    {
+      "slug": "yeogiotte",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 620,
+      "scrollHeight": 4321,
+      "officialLinks": 1
+    },
+    {
+      "slug": "29cm",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 620,
+      "scrollHeight": 3983,
+      "officialLinks": 0
+    },
+    {
+      "slug": "banksalad",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 620,
+      "scrollHeight": 4973,
+      "officialLinks": 0
+    },
+    {
+      "slug": "coupang",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 620,
+      "scrollHeight": 2378,
+      "officialLinks": 0
+    },
+    {
+      "slug": "hyundai",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 620,
+      "scrollHeight": 2449,
+      "officialLinks": 0
+    },
+    {
+      "slug": "kakaopay",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 620,
+      "scrollHeight": 3510,
+      "officialLinks": 1
+    },
+    {
+      "slug": "kurly",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 620,
+      "scrollHeight": 2960,
+      "officialLinks": 0
+    },
+    {
+      "slug": "naver",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 620,
+      "scrollHeight": 4584,
+      "officialLinks": 1
+    },
+    {
+      "slug": "oliveyoung",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 620,
+      "scrollHeight": 4675,
+      "officialLinks": 0
+    },
+    {
+      "slug": "samsung",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 620,
+      "scrollHeight": 5514,
+      "officialLinks": 1
+    }
+  ],
+  "expanded": [
+    {
+      "slug": "apple",
+      "viewportWidth": 1920,
+      "width": 1905,
+      "scrollWidth": 1905,
+      "height": 1080,
+      "scrollHeight": 7057,
+      "components": 24,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "linear.app",
+      "viewportWidth": 1920,
+      "width": 1905,
+      "scrollWidth": 1905,
+      "height": 1080,
+      "scrollHeight": 6515,
+      "components": 21,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 2
+    },
+    {
+      "slug": "spotify",
+      "viewportWidth": 1920,
+      "width": 1905,
+      "scrollWidth": 1905,
+      "height": 1080,
+      "scrollHeight": 5180,
+      "components": 7,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "ferrari",
+      "viewportWidth": 1920,
+      "width": 1905,
+      "scrollWidth": 1905,
+      "height": 1080,
+      "scrollHeight": 6920,
+      "components": 24,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 2
+    },
+    {
+      "slug": "nintendo-2001",
+      "viewportWidth": 1920,
+      "width": 1905,
+      "scrollWidth": 1905,
+      "height": 1080,
+      "scrollHeight": 6838,
+      "components": 41,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "vercel",
+      "viewportWidth": 1920,
+      "width": 1905,
+      "scrollWidth": 1905,
+      "height": 1080,
+      "scrollHeight": 8454,
+      "components": 40,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "toss",
+      "viewportWidth": 1920,
+      "width": 1905,
+      "scrollWidth": 1905,
+      "height": 1080,
+      "scrollHeight": 3558,
+      "components": 6,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "karrot",
+      "viewportWidth": 1920,
+      "width": 1905,
+      "scrollWidth": 1905,
+      "height": 1080,
+      "scrollHeight": 3553,
+      "components": 5,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "kakao",
+      "viewportWidth": 1920,
+      "width": 1905,
+      "scrollWidth": 1905,
+      "height": 1080,
+      "scrollHeight": 3706,
+      "components": 6,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "kakaobank",
+      "viewportWidth": 1920,
+      "width": 1905,
+      "scrollWidth": 1905,
+      "height": 1080,
+      "scrollHeight": 3807,
+      "components": 5,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "baemin",
+      "viewportWidth": 1920,
+      "width": 1905,
+      "scrollWidth": 1905,
+      "height": 1080,
+      "scrollHeight": 3544,
+      "components": 7,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "musinsa",
+      "viewportWidth": 1920,
+      "width": 1905,
+      "scrollWidth": 1905,
+      "height": 1080,
+      "scrollHeight": 2896,
+      "components": 4,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "socar",
+      "viewportWidth": 1920,
+      "width": 1905,
+      "scrollWidth": 1905,
+      "height": 1080,
+      "scrollHeight": 2455,
+      "components": 4,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "yeogiotte",
+      "viewportWidth": 1920,
+      "width": 1905,
+      "scrollWidth": 1905,
+      "height": 1080,
+      "scrollHeight": 3602,
+      "components": 5,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "29cm",
+      "viewportWidth": 1920,
+      "width": 1905,
+      "scrollWidth": 1905,
+      "height": 1080,
+      "scrollHeight": 3489,
+      "components": 5,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "banksalad",
+      "viewportWidth": 1920,
+      "width": 1905,
+      "scrollWidth": 1905,
+      "height": 1080,
+      "scrollHeight": 3765,
+      "components": 4,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "coupang",
+      "viewportWidth": 1920,
+      "width": 1905,
+      "scrollWidth": 1905,
+      "height": 1080,
+      "scrollHeight": 2332,
+      "components": 2,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "hyundai",
+      "viewportWidth": 1920,
+      "width": 1905,
+      "scrollWidth": 1905,
+      "height": 1080,
+      "scrollHeight": 2205,
+      "components": 1,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "kakaopay",
+      "viewportWidth": 1920,
+      "width": 1905,
+      "scrollWidth": 1905,
+      "height": 1080,
+      "scrollHeight": 2916,
+      "components": 4,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "kurly",
+      "viewportWidth": 1920,
+      "width": 1905,
+      "scrollWidth": 1905,
+      "height": 1080,
+      "scrollHeight": 2655,
+      "components": 3,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "naver",
+      "viewportWidth": 1920,
+      "width": 1905,
+      "scrollWidth": 1905,
+      "height": 1080,
+      "scrollHeight": 4024,
+      "components": 8,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "oliveyoung",
+      "viewportWidth": 1920,
+      "width": 1905,
+      "scrollWidth": 1905,
+      "height": 1080,
+      "scrollHeight": 3623,
+      "components": 1,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "samsung",
+      "viewportWidth": 1920,
+      "width": 1905,
+      "scrollWidth": 1905,
+      "height": 1080,
+      "scrollHeight": 4270,
+      "components": 1,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "apple",
+      "viewportWidth": 1440,
+      "width": 1425,
+      "scrollWidth": 1425,
+      "height": 1000,
+      "scrollHeight": 7077,
+      "components": 24,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "linear.app",
+      "viewportWidth": 1440,
+      "width": 1425,
+      "scrollWidth": 1425,
+      "height": 1000,
+      "scrollHeight": 6515,
+      "components": 21,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 2
+    },
+    {
+      "slug": "spotify",
+      "viewportWidth": 1440,
+      "width": 1425,
+      "scrollWidth": 1425,
+      "height": 1000,
+      "scrollHeight": 5180,
+      "components": 7,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "ferrari",
+      "viewportWidth": 1440,
+      "width": 1425,
+      "scrollWidth": 1425,
+      "height": 1000,
+      "scrollHeight": 7043,
+      "components": 24,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 2
+    },
+    {
+      "slug": "nintendo-2001",
+      "viewportWidth": 1440,
+      "width": 1425,
+      "scrollWidth": 1425,
+      "height": 1000,
+      "scrollHeight": 6838,
+      "components": 41,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "vercel",
+      "viewportWidth": 1440,
+      "width": 1425,
+      "scrollWidth": 1425,
+      "height": 1000,
+      "scrollHeight": 8454,
+      "components": 40,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "toss",
+      "viewportWidth": 1440,
+      "width": 1425,
+      "scrollWidth": 1425,
+      "height": 1000,
+      "scrollHeight": 3558,
+      "components": 6,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "karrot",
+      "viewportWidth": 1440,
+      "width": 1425,
+      "scrollWidth": 1425,
+      "height": 1000,
+      "scrollHeight": 3585,
+      "components": 5,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "kakao",
+      "viewportWidth": 1440,
+      "width": 1425,
+      "scrollWidth": 1425,
+      "height": 1000,
+      "scrollHeight": 3706,
+      "components": 6,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "kakaobank",
+      "viewportWidth": 1440,
+      "width": 1425,
+      "scrollWidth": 1425,
+      "height": 1000,
+      "scrollHeight": 3807,
+      "components": 5,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "baemin",
+      "viewportWidth": 1440,
+      "width": 1425,
+      "scrollWidth": 1425,
+      "height": 1000,
+      "scrollHeight": 3608,
+      "components": 7,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "musinsa",
+      "viewportWidth": 1440,
+      "width": 1425,
+      "scrollWidth": 1425,
+      "height": 1000,
+      "scrollHeight": 2896,
+      "components": 4,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "socar",
+      "viewportWidth": 1440,
+      "width": 1425,
+      "scrollWidth": 1425,
+      "height": 1000,
+      "scrollHeight": 2455,
+      "components": 4,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "yeogiotte",
+      "viewportWidth": 1440,
+      "width": 1425,
+      "scrollWidth": 1425,
+      "height": 1000,
+      "scrollHeight": 3602,
+      "components": 5,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "29cm",
+      "viewportWidth": 1440,
+      "width": 1425,
+      "scrollWidth": 1425,
+      "height": 1000,
+      "scrollHeight": 3509,
+      "components": 5,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "banksalad",
+      "viewportWidth": 1440,
+      "width": 1425,
+      "scrollWidth": 1425,
+      "height": 1000,
+      "scrollHeight": 3765,
+      "components": 4,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "coupang",
+      "viewportWidth": 1440,
+      "width": 1425,
+      "scrollWidth": 1425,
+      "height": 1000,
+      "scrollHeight": 2332,
+      "components": 2,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "hyundai",
+      "viewportWidth": 1440,
+      "width": 1425,
+      "scrollWidth": 1425,
+      "height": 1000,
+      "scrollHeight": 2205,
+      "components": 1,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "kakaopay",
+      "viewportWidth": 1440,
+      "width": 1425,
+      "scrollWidth": 1425,
+      "height": 1000,
+      "scrollHeight": 2936,
+      "components": 4,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "kurly",
+      "viewportWidth": 1440,
+      "width": 1425,
+      "scrollWidth": 1425,
+      "height": 1000,
+      "scrollHeight": 2655,
+      "components": 3,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "naver",
+      "viewportWidth": 1440,
+      "width": 1425,
+      "scrollWidth": 1425,
+      "height": 1000,
+      "scrollHeight": 4024,
+      "components": 8,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "oliveyoung",
+      "viewportWidth": 1440,
+      "width": 1425,
+      "scrollWidth": 1425,
+      "height": 1000,
+      "scrollHeight": 3623,
+      "components": 1,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "samsung",
+      "viewportWidth": 1440,
+      "width": 1425,
+      "scrollWidth": 1425,
+      "height": 1000,
+      "scrollHeight": 4270,
+      "components": 1,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "apple",
+      "viewportWidth": 390,
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 844,
+      "scrollHeight": 13953,
+      "components": 24,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "linear.app",
+      "viewportWidth": 390,
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 844,
+      "scrollHeight": 11842,
+      "components": 21,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 2
+    },
+    {
+      "slug": "spotify",
+      "viewportWidth": 390,
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 844,
+      "scrollHeight": 9522,
+      "components": 7,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "ferrari",
+      "viewportWidth": 390,
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 844,
+      "scrollHeight": 13127,
+      "components": 24,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 2
+    },
+    {
+      "slug": "nintendo-2001",
+      "viewportWidth": 390,
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 844,
+      "scrollHeight": 13474,
+      "components": 41,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "vercel",
+      "viewportWidth": 390,
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 844,
+      "scrollHeight": 17006,
+      "components": 40,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "toss",
+      "viewportWidth": 390,
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 844,
+      "scrollHeight": 5235,
+      "components": 6,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "karrot",
+      "viewportWidth": 390,
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 844,
+      "scrollHeight": 5134,
+      "components": 5,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "kakao",
+      "viewportWidth": 390,
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 844,
+      "scrollHeight": 5571,
+      "components": 6,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "kakaobank",
+      "viewportWidth": 390,
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 844,
+      "scrollHeight": 4964,
+      "components": 5,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "baemin",
+      "viewportWidth": 390,
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 844,
+      "scrollHeight": 5640,
+      "components": 7,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "musinsa",
+      "viewportWidth": 390,
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 844,
+      "scrollHeight": 3420,
+      "components": 4,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "socar",
+      "viewportWidth": 390,
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 844,
+      "scrollHeight": 3568,
+      "components": 4,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "yeogiotte",
+      "viewportWidth": 390,
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 844,
+      "scrollHeight": 4728,
+      "components": 5,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "29cm",
+      "viewportWidth": 390,
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 844,
+      "scrollHeight": 5260,
+      "components": 5,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "banksalad",
+      "viewportWidth": 390,
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 844,
+      "scrollHeight": 5577,
+      "components": 4,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "coupang",
+      "viewportWidth": 390,
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 844,
+      "scrollHeight": 3022,
+      "components": 2,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "hyundai",
+      "viewportWidth": 390,
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 844,
+      "scrollHeight": 2664,
+      "components": 1,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "kakaopay",
+      "viewportWidth": 390,
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 844,
+      "scrollHeight": 3704,
+      "components": 4,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "kurly",
+      "viewportWidth": 390,
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 844,
+      "scrollHeight": 3249,
+      "components": 3,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "naver",
+      "viewportWidth": 390,
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 844,
+      "scrollHeight": 5369,
+      "components": 8,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "oliveyoung",
+      "viewportWidth": 390,
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 844,
+      "scrollHeight": 4864,
+      "components": 1,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "samsung",
+      "viewportWidth": 390,
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 844,
+      "scrollHeight": 5756,
+      "components": 1,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "offline": true,
+  "focusTrap": true,
+  "reducedMotion": true
+}

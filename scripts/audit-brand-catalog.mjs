@@ -3,7 +3,7 @@ import { readFile, writeFile } from 'node:fs/promises'
 import { build } from 'esbuild'
 const bundle=await build({stdin:{contents:"export {buildBrandCatalog} from './src/lib/brandCatalog';export {vendorEntries} from './src/data/awesomeDesignMd'",resolveDir:process.cwd()},bundle:true,write:false,platform:'node',format:'esm'})
 const {buildBrandCatalog,vendorEntries}=await import('data:text/javascript;base64,'+Buffer.from(bundle.outputFiles[0].text).toString('base64'))
-const verification=JSON.parse(await readFile('artifacts/brand-v2/official-resource-checks.json','utf8'))
+const verification=[...JSON.parse(await readFile('artifacts/brand-v22/official-resource-checks.json','utf8')),...JSON.parse(await readFile('artifacts/brand-v2/official-resource-checks.json','utf8'))]
 const report=[]
 for(const entry of vendorEntries){
  const spec=JSON.parse(await readFile('public/brand-design-specs/'+entry.slug+'.json','utf8')),c=buildBrandCatalog(entry,spec)
@@ -13,7 +13,7 @@ for(const entry of vendorEntries){
  assert(c.dna.length>=2&&c.dna.length<=4)
  for(const component of c.components){assert(c.sections.some(s=>s.kind===component.kind&&s.count>0));for(const key of ['backgroundColor','boxShadow','shadow','border'])assert(!/url\s*\(/i.test(String(component.values[key]||'')),'No external CSS assets')}
  for(const theme of c.themes.slice(1))assert(theme.evidence.every(e=>e.startsWith('colors.')&&e.slice(7) in spec.colors))
- for(const r of c.officialResources){assert.equal(r.source,'official');assert.equal(r.checkedAt,'2026-09-12');assert(r.description&&r.evidence.method);assert.equal(new URL(r.url).protocol,'https:');assert.equal(r.evidence.url,r.url);const check=verification.find(v=>v.slug===entry.slug&&v.url===r.url);assert(check&&check.status===200&&check.heading.length&&check.title===r.evidence.title,'Official resource requires reviewed page evidence')}
+ for(const r of c.officialResources){assert.equal(r.source,'official');assert(/^\d{4}-\d{2}-\d{2}$/.test(r.checkedAt));assert(r.description&&r.evidence.method);assert.equal(new URL(r.url).protocol,'https:');assert.equal(r.evidence.url,r.url);const check=verification.find(v=>v.slug===entry.slug&&v.url===r.url);assert(check&&check.status===200&&check.heading.length&&check.title===r.evidence.title,'Official resource requires reviewed page evidence')}
  report.push({slug:entry.slug,components:c.components.length,roles:c.roles.length,sections:c.sections,themes:c.themes,officialResources:c.officialResources})
 }
 const renderer=await readFile('src/components/demos/VendorDesignPreview.tsx','utf8'),catalog=await readFile('src/components/demos/BrandCatalog.tsx','utf8')

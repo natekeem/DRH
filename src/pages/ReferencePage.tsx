@@ -53,7 +53,7 @@ export function ReferencePage(){
       <div className="context-about">
         <span className="eyebrow">ABOUT THIS REFERENCE</span>
         <h2>{descriptionKo(item)}</h2>
-        <p>{isVendor?'VoltAgent awesome-design-md (MIT)에서 가져온 토큰 기반 오프라인 미리보기입니다.':item.designSystem?'문서에 정의된 토큰의 시각화입니다.':maturity.description}</p>
+        <p>{isVendor?'검증된 upstream 문서(MIT)에서 가져온 토큰 기반 오프라인 미리보기입니다.':item.designSystem?'문서에 정의된 토큰의 시각화입니다.':maturity.description}</p>
         {item.demo==='shader-gradient'&&<p>공식 프리셋 · {preset.title}</p>}
         {isVendor&&vendorMdLoading&&<p style={{opacity:0.5,fontSize:'0.8em'}}>DESIGN.md 로딩 중…</p>}
         <div className="tag-list">{item.tags.filter(t=>!['vendor','awesome-design-md'].includes(t)).slice(0,6).map(t=><span key={t}>#{t}</span>)}</div>

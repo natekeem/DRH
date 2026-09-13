@@ -23,6 +23,8 @@ type Seed = {
   sourceUrl?: string
   repo?: string
   license?: string
+  licenseEvidence?: string
+  licenseNotes?: string
   licenseStatus?: 'copy-ok' | 'reference' | 'restricted'
   dependencies?: string[]
   code?: string
@@ -48,9 +50,9 @@ const mk = (s: Seed): ReferenceItem => ({
   license: {
     name: s.license ?? 'MIT (Hub original demo)',
     status: s.licenseStatus ?? 'copy-ok',
-    evidenceUrl: s.repo && upstreamReview.find(r=>'https://github.com/'+r.repository===s.repo)?.license !== 'unverified' ? upstreamReview.find(r=>'https://github.com/'+r.repository===s.repo)?.evidence : s.demo === 'shader-gradient' ? 'https://github.com/ruucm/shadergradient/blob/main/packages/shadergradient/package.json' : s.source === 'Magic UI' ? 'https://github.com/magicuidesign/magicui/blob/main/LICENSE.md' : s.repo === 'VoltAgent/awesome-design-md' ? 'https://github.com/VoltAgent/awesome-design-md/blob/main/LICENSE' : 'https://github.com/natekeem/DRH/blob/main/LICENSE',
-    attributionRequired: s.demo === 'shader-gradient' || s.demo === 'meteors',
-    notes: s.demo === 'shader-gradient' ? '공식 패키지의 MIT 선언을 확인했습니다. 설치한 dependency 고지를 유지하세요.' : s.demo === 'meteors' ? 'Magic UI MIT 고지 전문을 실행 HTML에 포함합니다.' : 'Hub 독립 구현은 MIT입니다. 참고 Source 링크는 upstream 코드를 복사했다는 뜻이 아닙니다.',
+    evidenceUrl: s.licenseEvidence || (s.repo && upstreamReview.find(r=>'https://github.com/'+r.repository===s.repo)?.license !== 'unverified' ? upstreamReview.find(r=>'https://github.com/'+r.repository===s.repo)?.evidence : s.demo === 'shader-gradient' ? 'https://github.com/ruucm/shadergradient/blob/main/packages/shadergradient/package.json' : s.source === 'Magic UI' ? 'https://github.com/magicuidesign/magicui/blob/main/LICENSE.md' : s.repo === 'VoltAgent/awesome-design-md' ? 'https://github.com/VoltAgent/awesome-design-md/blob/main/LICENSE' : 'https://github.com/natekeem/DRH/blob/main/LICENSE'),
+    attributionRequired: !!s.licenseEvidence || s.demo === 'shader-gradient' || s.demo === 'meteors',
+    notes: s.licenseNotes || (s.demo === 'shader-gradient' ? '공식 패키지의 MIT 선언을 확인했습니다. 설치한 dependency 고지를 유지하세요.' : s.demo === 'meteors' ? 'Magic UI MIT 고지 전문을 실행 HTML에 포함합니다.' : 'Hub 독립 구현은 MIT입니다. 참고 Source 링크는 upstream 코드를 복사했다는 뜻이 아닙니다.'),
   },
 })
 
@@ -185,12 +187,14 @@ export const references: ReferenceItem[] = [
     subcategory: v.category,
     demo: `vendor-design-md:${v.slug}`,
     description: v.description || `${v.name} design system analysis via awesome-design-md.`,
-    tags: [...v.tags, 'brand', 'design.md', 'vendor', 'awesome-design-md'],
+    tags: [...v.tags, 'brand', 'design.md', 'vendor', v.vendorSource || 'awesome-design-md'],
     useCases: [v.category],
-    source: 'VoltAgent awesome-design-md',
-    sourceUrl: `${UPSTREAM_REPO}/tree/main/${v.upstreamPath}`,
-    repo: UPSTREAM_REPO,
+    source: v.sourceName || 'VoltAgent awesome-design-md',
+    sourceUrl: `${v.upstreamRepo || UPSTREAM_REPO}/blob/${v.upstreamCommit}/${v.upstreamPath}`,
+    repo: v.upstreamRepo || UPSTREAM_REPO,
     license: 'MIT',
+    licenseEvidence: `${v.upstreamRepo || UPSTREAM_REPO}/blob/${v.upstreamCommit}/LICENSE`,
+    licenseNotes: `DESIGN.md 문서의 MIT 고지를 보존하세요. ${v.referenceRights || ''} 브랜드 상표·로고·폰트·이미지는 별도 권리이며 공식 제휴를 뜻하지 않습니다.`,
     licenseStatus: 'copy-ok' as const,
   })),
 ]

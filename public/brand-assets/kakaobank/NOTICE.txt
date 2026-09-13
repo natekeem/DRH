@@ -1,0 +1,20 @@
+{
+  "type": "verified-svg",
+  "format": "svg",
+  "label": "KakaoBank",
+  "src": "brand-assets/kakaobank/logo.svg",
+  "darkSrc": "brand-assets/kakaobank/logo-dark.svg",
+  "sourceUrl": "https://fde-kkb-prod-krc-stkkbprodkrcblob-g4h6eybzded7e9ha.a01.azurefd.net/prod/20251103%2F6e6d783ad34242c8ada28ac6fb98db2a.zip",
+  "evidenceUrl": "https://www.kakaobank.com/view/about/brand/resource",
+  "license": "Proprietary brand asset; official identification usage guidelines, not MIT",
+  "attribution": "카카오뱅크 상표·로고는 카카오뱅크 소유입니다. 참고 문서 식별용이며 제휴·보증을 뜻하지 않습니다.",
+  "usageTerms": "Unmodified official symbol; preserve aspect ratio, minimum clear space, minimum 12px screen size and original black/white colors. No outline, distortion, mask or affiliation claim.",
+  "checkedAt": "2026-09-12",
+  "sha256": "ed0cb92151ad6e6488c0afa8a863f81234ef881d101f93d22890de758f3c2940",
+  "darkSha256": "c2385367a69c8d503df7ce7d2f3a2b937200e7b3cd3aafade26b143cea5fc547",
+  "archiveSha256": "aaad8fdc8288780edbdbcfed5bceb0a93ca37ccf2f1fc630c4fe48fedbf8e5e3",
+  "originalPaths": [
+    "01_Primary_Black/Digital_Symbol_Primary_Black.svg",
+    "03_Secondary_White/Digital_Symbol_Secondary_White.svg"
+  ]
+}

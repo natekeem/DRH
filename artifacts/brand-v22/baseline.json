@@ -1,0 +1,35 @@
+{
+  "startingCommit": "453dca9246ce4b98c3adddecf2d628974aef3d00",
+  "branch": "main",
+  "workingTree": "clean",
+  "originMain": "453dca9246ce4b98c3adddecf2d628974aef3d00",
+  "coverage": {
+    "totalBrands": 74,
+    "primaryFont": {
+      "open-font": 10,
+      "system-font": 4,
+      "proprietary": 57,
+      "unspecified": 3
+    },
+    "brandsWithDeclaredOpenFont": 27,
+    "brandAsset": {
+      "verified-svg": 2,
+      "verified-image": 0,
+      "text-wordmark": 72
+    },
+    "brandsWithResources": 13,
+    "resourceTypes": {
+      "assets": 7,
+      "design-system": 4,
+      "brand-guidelines": 4,
+      "typography": 2,
+      "developer-design-guide": 1
+    },
+    "responsive": 61,
+    "motion": {
+      "defined": 4,
+      "not-in-scope": 9,
+      "not-specified": 61
+    }
+  }
+}

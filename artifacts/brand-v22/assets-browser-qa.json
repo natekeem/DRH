@@ -1,0 +1,1474 @@
+{
+  "fonts": [
+    {
+      "slug": "29cm",
+      "width": 1440,
+      "kind": "open-font",
+      "text": "브랜드의 목소리를 화면으로 · Aa Bb 0123",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable-Bold",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "29cm",
+      "width": 1440,
+      "role": "editorial-title",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable-SemiBold",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "29cm",
+      "width": 1440,
+      "role": "body",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "29cm",
+      "width": 1440,
+      "role": "caption",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable-Medium",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "29cm",
+      "width": 1440,
+      "role": "product-brand",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable-Bold",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "baemin",
+      "width": 1440,
+      "kind": "proprietary",
+      "text": "브랜드의 목소리를 화면으로 · Aa Bb 0123",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable-ExtraBold",
+          "isCustomFont": true,
+          "glyphCount": 26
+        }
+      ]
+    },
+    {
+      "slug": "banksalad",
+      "width": 1440,
+      "kind": "open-font",
+      "text": "브랜드의 목소리를 화면으로 · Aa Bb 0123",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable-Bold",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "banksalad",
+      "width": 1440,
+      "role": "body",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "banksalad",
+      "width": 1440,
+      "role": "label",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable-Bold",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "banksalad",
+      "width": 1440,
+      "role": "caption",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable-Medium",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "coupang",
+      "width": 1440,
+      "kind": "unspecified",
+      "text": "브랜드의 목소리를 화면으로 · Aa Bb 0123",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "hyundai",
+      "width": 1440,
+      "kind": "proprietary",
+      "text": "브랜드의 목소리를 화면으로 · Aa Bb 0123",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable",
+          "isCustomFont": true,
+          "glyphCount": 26
+        }
+      ]
+    },
+    {
+      "slug": "kakao",
+      "width": 1440,
+      "kind": "proprietary",
+      "text": "브랜드의 목소리를 화면으로 · Aa Bb 0123",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable-Bold",
+          "isCustomFont": true,
+          "glyphCount": 26
+        }
+      ]
+    },
+    {
+      "slug": "kakaobank",
+      "width": 1440,
+      "kind": "open-font",
+      "text": "브랜드의 목소리를 화면으로 · Aa Bb 0123",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable-ExtraBold",
+          "isCustomFont": true,
+          "glyphCount": 26
+        }
+      ]
+    },
+    {
+      "slug": "kakaobank",
+      "width": 1440,
+      "role": "card-title",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable-Bold",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "kakaobank",
+      "width": 1440,
+      "role": "body",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "kakaobank",
+      "width": 1440,
+      "role": "display",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable-Bold",
+          "isCustomFont": true,
+          "glyphCount": 26
+        }
+      ]
+    },
+    {
+      "slug": "kakaobank",
+      "width": 1440,
+      "role": "section",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable-Bold",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "kakaopay",
+      "width": 1440,
+      "kind": "unspecified",
+      "text": "브랜드의 목소리를 화면으로 · Aa Bb 0123",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable-Bold",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "karrot",
+      "width": 1440,
+      "kind": "system-font",
+      "text": "브랜드의 목소리를 화면으로 · Aa Bb 0123",
+      "fonts": [
+        {
+          "familyName": "Malgun Gothic",
+          "postScriptName": "MalgunGothicBold",
+          "isCustomFont": false,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "kurly",
+      "width": 1440,
+      "kind": "open-font",
+      "text": "브랜드의 목소리를 화면으로 · Aa Bb 0123",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "kurly",
+      "width": 1440,
+      "role": "category-tab",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "kurly",
+      "width": 1440,
+      "role": "input",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "musinsa",
+      "width": 1440,
+      "kind": "open-font",
+      "text": "브랜드의 목소리를 화면으로 · Aa Bb 0123",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "musinsa",
+      "width": 1440,
+      "role": "nav",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable-Medium",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "naver",
+      "width": 1440,
+      "kind": "unspecified",
+      "text": "브랜드의 목소리를 화면으로 · Aa Bb 0123",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable-SemiBold",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "naver",
+      "width": 1440,
+      "role": "corporate-tab",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable-SemiBold",
+          "isCustomFont": true,
+          "glyphCount": 12
+        },
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-20pt-SemiBold",
+          "isCustomFont": true,
+          "glyphCount": 15
+        }
+      ]
+    },
+    {
+      "slug": "oliveyoung",
+      "width": 1440,
+      "kind": "proprietary",
+      "text": "브랜드의 목소리를 화면으로 · Aa Bb 0123",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable-Bold",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "samsung",
+      "width": 1440,
+      "kind": "proprietary",
+      "text": "브랜드의 목소리를 화면으로 · Aa Bb 0123",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable-Bold",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "socar",
+      "width": 1440,
+      "kind": "unspecified",
+      "text": "브랜드의 목소리를 화면으로 · Aa Bb 0123",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "toss",
+      "width": 1440,
+      "kind": "proprietary",
+      "text": "브랜드의 목소리를 화면으로 · Aa Bb 0123",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "yeogiotte",
+      "width": 1440,
+      "kind": "open-font",
+      "text": "브랜드의 목소리를 화면으로 · Aa Bb 0123",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable-Bold",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "yeogiotte",
+      "width": 1440,
+      "role": "title-large",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable-Bold",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "yeogiotte",
+      "width": 1440,
+      "role": "body-medium",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "yeogiotte",
+      "width": 1440,
+      "role": "caption-large",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "yeogiotte",
+      "width": 1440,
+      "role": "display-medium",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable-Bold",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "linear.app",
+      "width": 1440,
+      "kind": "proprietary",
+      "text": "Aa — Design",
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-28pt-SemiBold",
+          "isCustomFont": true,
+          "glyphCount": 11
+        }
+      ]
+    },
+    {
+      "slug": "vercel",
+      "width": 1440,
+      "kind": "open-font",
+      "text": "Aa — Design",
+      "fonts": [
+        {
+          "familyName": "Geist",
+          "postScriptName": "Geist-SemiBold",
+          "isCustomFont": true,
+          "glyphCount": 11
+        }
+      ]
+    },
+    {
+      "slug": "vercel",
+      "width": 1440,
+      "role": "body-lg",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Geist",
+          "postScriptName": "Geist",
+          "isCustomFont": true,
+          "glyphCount": 43
+        }
+      ]
+    },
+    {
+      "slug": "vercel",
+      "width": 1440,
+      "role": "caption",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Geist",
+          "postScriptName": "Geist",
+          "isCustomFont": true,
+          "glyphCount": 29
+        }
+      ]
+    },
+    {
+      "slug": "vercel",
+      "width": 1440,
+      "role": "caption-mono",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Geist Mono",
+          "postScriptName": "GeistMono",
+          "isCustomFont": true,
+          "glyphCount": 20
+        }
+      ]
+    },
+    {
+      "slug": "vercel",
+      "width": 1440,
+      "role": "display-lg",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Geist",
+          "postScriptName": "Geist-SemiBold",
+          "isCustomFont": true,
+          "glyphCount": 11
+        }
+      ]
+    },
+    {
+      "slug": "supabase",
+      "width": 1440,
+      "kind": "proprietary",
+      "text": "Aa — Design",
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-28pt-Medium",
+          "isCustomFont": true,
+          "glyphCount": 11
+        }
+      ]
+    },
+    {
+      "slug": "29cm",
+      "width": 390,
+      "kind": "open-font",
+      "text": "브랜드의 목소리를 화면으로 · Aa Bb 0123",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable-Bold",
+          "isCustomFont": true,
+          "glyphCount": 25
+        }
+      ]
+    },
+    {
+      "slug": "29cm",
+      "width": 390,
+      "role": "editorial-title",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable-SemiBold",
+          "isCustomFont": true,
+          "glyphCount": 26
+        }
+      ]
+    },
+    {
+      "slug": "29cm",
+      "width": 390,
+      "role": "body",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "29cm",
+      "width": 390,
+      "role": "caption",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable-Medium",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "29cm",
+      "width": 390,
+      "role": "product-brand",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable-Bold",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "baemin",
+      "width": 390,
+      "kind": "proprietary",
+      "text": "브랜드의 목소리를 화면으로 · Aa Bb 0123",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable-ExtraBold",
+          "isCustomFont": true,
+          "glyphCount": 25
+        }
+      ]
+    },
+    {
+      "slug": "banksalad",
+      "width": 390,
+      "kind": "open-font",
+      "text": "브랜드의 목소리를 화면으로 · Aa Bb 0123",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable-Bold",
+          "isCustomFont": true,
+          "glyphCount": 26
+        }
+      ]
+    },
+    {
+      "slug": "banksalad",
+      "width": 390,
+      "role": "body",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "banksalad",
+      "width": 390,
+      "role": "label",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable-Bold",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "banksalad",
+      "width": 390,
+      "role": "caption",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable-Medium",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "coupang",
+      "width": 390,
+      "kind": "unspecified",
+      "text": "브랜드의 목소리를 화면으로 · Aa Bb 0123",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "hyundai",
+      "width": 390,
+      "kind": "proprietary",
+      "text": "브랜드의 목소리를 화면으로 · Aa Bb 0123",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable",
+          "isCustomFont": true,
+          "glyphCount": 25
+        }
+      ]
+    },
+    {
+      "slug": "kakao",
+      "width": 390,
+      "kind": "proprietary",
+      "text": "브랜드의 목소리를 화면으로 · Aa Bb 0123",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable-Bold",
+          "isCustomFont": true,
+          "glyphCount": 25
+        }
+      ]
+    },
+    {
+      "slug": "kakaobank",
+      "width": 390,
+      "kind": "open-font",
+      "text": "브랜드의 목소리를 화면으로 · Aa Bb 0123",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable-ExtraBold",
+          "isCustomFont": true,
+          "glyphCount": 25
+        }
+      ]
+    },
+    {
+      "slug": "kakaobank",
+      "width": 390,
+      "role": "card-title",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable-Bold",
+          "isCustomFont": true,
+          "glyphCount": 26
+        }
+      ]
+    },
+    {
+      "slug": "kakaobank",
+      "width": 390,
+      "role": "body",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "kakaobank",
+      "width": 390,
+      "role": "display",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable-Bold",
+          "isCustomFont": true,
+          "glyphCount": 25
+        }
+      ]
+    },
+    {
+      "slug": "kakaobank",
+      "width": 390,
+      "role": "section",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable-Bold",
+          "isCustomFont": true,
+          "glyphCount": 26
+        }
+      ]
+    },
+    {
+      "slug": "kakaopay",
+      "width": 390,
+      "kind": "unspecified",
+      "text": "브랜드의 목소리를 화면으로 · Aa Bb 0123",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable-Bold",
+          "isCustomFont": true,
+          "glyphCount": 26
+        }
+      ]
+    },
+    {
+      "slug": "karrot",
+      "width": 390,
+      "kind": "system-font",
+      "text": "브랜드의 목소리를 화면으로 · Aa Bb 0123",
+      "fonts": [
+        {
+          "familyName": "Malgun Gothic",
+          "postScriptName": "MalgunGothicBold",
+          "isCustomFont": false,
+          "glyphCount": 26
+        }
+      ]
+    },
+    {
+      "slug": "kurly",
+      "width": 390,
+      "kind": "open-font",
+      "text": "브랜드의 목소리를 화면으로 · Aa Bb 0123",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "kurly",
+      "width": 390,
+      "role": "category-tab",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "kurly",
+      "width": 390,
+      "role": "input",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "musinsa",
+      "width": 390,
+      "kind": "open-font",
+      "text": "브랜드의 목소리를 화면으로 · Aa Bb 0123",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "musinsa",
+      "width": 390,
+      "role": "nav",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable-Medium",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "naver",
+      "width": 390,
+      "kind": "unspecified",
+      "text": "브랜드의 목소리를 화면으로 · Aa Bb 0123",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable-SemiBold",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "naver",
+      "width": 390,
+      "role": "corporate-tab",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable-SemiBold",
+          "isCustomFont": true,
+          "glyphCount": 12
+        },
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-20pt-SemiBold",
+          "isCustomFont": true,
+          "glyphCount": 14
+        }
+      ]
+    },
+    {
+      "slug": "oliveyoung",
+      "width": 390,
+      "kind": "proprietary",
+      "text": "브랜드의 목소리를 화면으로 · Aa Bb 0123",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable-Bold",
+          "isCustomFont": true,
+          "glyphCount": 26
+        }
+      ]
+    },
+    {
+      "slug": "samsung",
+      "width": 390,
+      "kind": "proprietary",
+      "text": "브랜드의 목소리를 화면으로 · Aa Bb 0123",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable-Bold",
+          "isCustomFont": true,
+          "glyphCount": 26
+        }
+      ]
+    },
+    {
+      "slug": "socar",
+      "width": 390,
+      "kind": "unspecified",
+      "text": "브랜드의 목소리를 화면으로 · Aa Bb 0123",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "toss",
+      "width": 390,
+      "kind": "proprietary",
+      "text": "브랜드의 목소리를 화면으로 · Aa Bb 0123",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "yeogiotte",
+      "width": 390,
+      "kind": "open-font",
+      "text": "브랜드의 목소리를 화면으로 · Aa Bb 0123",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable-Bold",
+          "isCustomFont": true,
+          "glyphCount": 26
+        }
+      ]
+    },
+    {
+      "slug": "yeogiotte",
+      "width": 390,
+      "role": "title-large",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable-Bold",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "yeogiotte",
+      "width": 390,
+      "role": "body-medium",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "yeogiotte",
+      "width": 390,
+      "role": "caption-large",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "slug": "yeogiotte",
+      "width": 390,
+      "role": "display-medium",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Pretendard Variable",
+          "postScriptName": "PretendardVariable-Bold",
+          "isCustomFont": true,
+          "glyphCount": 26
+        }
+      ]
+    },
+    {
+      "slug": "linear.app",
+      "width": 390,
+      "kind": "proprietary",
+      "text": "Aa — Design",
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-28pt-SemiBold",
+          "isCustomFont": true,
+          "glyphCount": 11
+        }
+      ]
+    },
+    {
+      "slug": "vercel",
+      "width": 390,
+      "kind": "open-font",
+      "text": "Aa — Design",
+      "fonts": [
+        {
+          "familyName": "Geist",
+          "postScriptName": "Geist-SemiBold",
+          "isCustomFont": true,
+          "glyphCount": 11
+        }
+      ]
+    },
+    {
+      "slug": "vercel",
+      "width": 390,
+      "role": "body-lg",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Geist",
+          "postScriptName": "Geist",
+          "isCustomFont": true,
+          "glyphCount": 42
+        }
+      ]
+    },
+    {
+      "slug": "vercel",
+      "width": 390,
+      "role": "caption",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Geist",
+          "postScriptName": "Geist",
+          "isCustomFont": true,
+          "glyphCount": 29
+        }
+      ]
+    },
+    {
+      "slug": "vercel",
+      "width": 390,
+      "role": "caption-mono",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Geist Mono",
+          "postScriptName": "GeistMono",
+          "isCustomFont": true,
+          "glyphCount": 20
+        }
+      ]
+    },
+    {
+      "slug": "vercel",
+      "width": 390,
+      "role": "display-lg",
+      "kind": "open-font",
+      "fonts": [
+        {
+          "familyName": "Geist",
+          "postScriptName": "Geist-SemiBold",
+          "isCustomFont": true,
+          "glyphCount": 11
+        }
+      ]
+    },
+    {
+      "slug": "supabase",
+      "width": 390,
+      "kind": "proprietary",
+      "text": "Aa — Design",
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-28pt-Medium",
+          "isCustomFont": true,
+          "glyphCount": 11
+        }
+      ]
+    }
+  ],
+  "logos": [
+    {
+      "slug": "kakaobank",
+      "width": 1440,
+      "src": "http://127.0.0.1:5176/brand-assets/kakaobank/logo.svg",
+      "naturalWidth": 120,
+      "naturalHeight": 150,
+      "alt": "",
+      "fit": "contain",
+      "filter": "none"
+    },
+    {
+      "slug": "linear.app",
+      "width": 1440,
+      "src": "http://127.0.0.1:5176/brand-assets/linear/logo-dark.svg",
+      "naturalWidth": 400,
+      "naturalHeight": 100,
+      "alt": "",
+      "fit": "contain",
+      "filter": "none"
+    },
+    {
+      "slug": "vercel",
+      "width": 1440,
+      "src": "http://127.0.0.1:5176/brand-assets/vercel/logo.svg",
+      "naturalWidth": 2048,
+      "naturalHeight": 407,
+      "alt": "",
+      "fit": "contain",
+      "filter": "none"
+    },
+    {
+      "slug": "supabase",
+      "width": 1440,
+      "src": "http://127.0.0.1:5176/brand-assets/supabase/logo.svg",
+      "naturalWidth": 109,
+      "naturalHeight": 113,
+      "alt": "",
+      "fit": "contain",
+      "filter": "none"
+    },
+    {
+      "slug": "kakaobank",
+      "width": 390,
+      "src": "http://127.0.0.1:5176/brand-assets/kakaobank/logo.svg",
+      "naturalWidth": 120,
+      "naturalHeight": 150,
+      "alt": "",
+      "fit": "contain",
+      "filter": "none"
+    },
+    {
+      "slug": "linear.app",
+      "width": 390,
+      "src": "http://127.0.0.1:5176/brand-assets/linear/logo-dark.svg",
+      "naturalWidth": 400,
+      "naturalHeight": 100,
+      "alt": "",
+      "fit": "contain",
+      "filter": "none"
+    },
+    {
+      "slug": "vercel",
+      "width": 390,
+      "src": "http://127.0.0.1:5176/brand-assets/vercel/logo.svg",
+      "naturalWidth": 2048,
+      "naturalHeight": 407,
+      "alt": "",
+      "fit": "contain",
+      "filter": "none"
+    },
+    {
+      "slug": "supabase",
+      "width": 390,
+      "src": "http://127.0.0.1:5176/brand-assets/supabase/logo.svg",
+      "naturalWidth": 109,
+      "naturalHeight": 113,
+      "alt": "",
+      "fit": "contain",
+      "filter": "none"
+    }
+  ],
+  "external": [],
+  "errors": [],
+  "links": [
+    {
+      "slug": "kakao",
+      "width": 1440,
+      "href": "https://developers.kakao.com/docs/ko/kakaologin/design-guide",
+      "label": "개발자 디자인 가이드\n카카오 로그인 디자인 가이드 ↗\n카카오 로그인 버튼의 색상·크기·표시 규칙입니다."
+    },
+    {
+      "slug": "kakaobank",
+      "width": 1440,
+      "href": "https://www.kakaobank.com/view/about/brand/resource",
+      "label": "브랜드 에셋\n카카오뱅크 브랜드 리소스 ↗\n심볼·워드마크·색상·최소 여백과 다운로드 자료입니다."
+    },
+    {
+      "slug": "kakaopay",
+      "width": 1440,
+      "href": "https://story.kakaopay.com/225-kakaopay-design/",
+      "label": "공식 자료\n카카오페이 접근성 디자인 ↗\n차별 없는 디자인과 접근성에 관한 공식 디자인 글입니다."
+    },
+    {
+      "slug": "karrot",
+      "width": 1440,
+      "href": "https://seed-design.io/",
+      "label": "디자인 시스템\nSEED Design ↗\n당근의 현재 디자인 시스템과 컴포넌트·인터랙션 가이드입니다."
+    },
+    {
+      "slug": "naver",
+      "width": 1440,
+      "href": "https://www.navercorp.com/company/brandGuide",
+      "label": "브랜드 가이드\nNAVER 브랜드 리소스 ↗\n네이버 브랜드 로고와 사용 가이드입니다."
+    },
+    {
+      "slug": "samsung",
+      "width": 1440,
+      "href": "https://developer.samsung.com/one-ui",
+      "label": "개발자 디자인 가이드\nSamsung One UI ↗\nOne UI 설계 원칙과 개발자 문서입니다."
+    },
+    {
+      "slug": "socar",
+      "width": 1440,
+      "href": "https://design.socar.kr/",
+      "label": "브랜드 가이드\n쏘카 브랜드 센터 ↗\n쏘카의 브랜드 방향과 시각 아이덴티티를 소개합니다."
+    },
+    {
+      "slug": "toss",
+      "width": 1440,
+      "href": "https://tossmini-docs.toss.im/tds-mobile/",
+      "label": "디자인 시스템\nToss Design System Mobile ↗\n토스 모바일 디자인 시스템의 기초 스타일과 컴포넌트 문서입니다."
+    },
+    {
+      "slug": "yeogiotte",
+      "width": 1440,
+      "href": "https://designlibrary.yeogi.com/",
+      "label": "디자인 시스템\n여기어때 Design Library ↗\n브랜드·기초 스타일·앱과 웹 컴포넌트 가이드입니다."
+    },
+    {
+      "slug": "linear.app",
+      "width": 1440,
+      "href": "https://linear.app/brand",
+      "label": "브랜드 가이드\nLinear Brand Guidelines ↗\n이름, 로고 사용과 브랜드 색상 규칙입니다."
+    },
+    {
+      "slug": "vercel",
+      "width": 1440,
+      "href": "https://vercel.com/geist/introduction",
+      "label": "디자인 시스템\nGeist Design System ↗\nVercel의 색상·타입·컴포넌트 시스템입니다."
+    },
+    {
+      "slug": "vercel",
+      "width": 1440,
+      "href": "https://vercel.com/geist/typography",
+      "label": "타이포그래피\nGeist Typography ↗\nGeist의 타이포그래피 역할과 크기 규칙입니다."
+    },
+    {
+      "slug": "vercel",
+      "width": 1440,
+      "href": "https://vercel.com/geist/brands",
+      "label": "브랜드 에셋\nVercel Brand Assets ↗\n공식 브랜드 에셋과 식별 목적의 사용 조건입니다."
+    },
+    {
+      "slug": "supabase",
+      "width": 1440,
+      "href": "https://supabase.com/brand-assets",
+      "label": "브랜드 에셋\nSupabase Brand Assets ↗\n공식 로고 키트와 브랜드 표시 조건입니다."
+    },
+    {
+      "slug": "kakao",
+      "width": 390,
+      "href": "https://developers.kakao.com/docs/ko/kakaologin/design-guide",
+      "label": "개발자 디자인 가이드\n카카오 로그인 디자인 가이드 ↗\n카카오 로그인 버튼의 색상·크기·표시 규칙입니다."
+    },
+    {
+      "slug": "kakaobank",
+      "width": 390,
+      "href": "https://www.kakaobank.com/view/about/brand/resource",
+      "label": "브랜드 에셋\n카카오뱅크 브랜드 리소스 ↗\n심볼·워드마크·색상·최소 여백과 다운로드 자료입니다."
+    },
+    {
+      "slug": "kakaopay",
+      "width": 390,
+      "href": "https://story.kakaopay.com/225-kakaopay-design/",
+      "label": "공식 자료\n카카오페이 접근성 디자인 ↗\n차별 없는 디자인과 접근성에 관한 공식 디자인 글입니다."
+    },
+    {
+      "slug": "karrot",
+      "width": 390,
+      "href": "https://seed-design.io/",
+      "label": "디자인 시스템\nSEED Design ↗\n당근의 현재 디자인 시스템과 컴포넌트·인터랙션 가이드입니다."
+    },
+    {
+      "slug": "naver",
+      "width": 390,
+      "href": "https://www.navercorp.com/company/brandGuide",
+      "label": "브랜드 가이드\nNAVER 브랜드 리소스 ↗\n네이버 브랜드 로고와 사용 가이드입니다."
+    },
+    {
+      "slug": "samsung",
+      "width": 390,
+      "href": "https://developer.samsung.com/one-ui",
+      "label": "개발자 디자인 가이드\nSamsung One UI ↗\nOne UI 설계 원칙과 개발자 문서입니다."
+    },
+    {
+      "slug": "socar",
+      "width": 390,
+      "href": "https://design.socar.kr/",
+      "label": "브랜드 가이드\n쏘카 브랜드 센터 ↗\n쏘카의 브랜드 방향과 시각 아이덴티티를 소개합니다."
+    },
+    {
+      "slug": "toss",
+      "width": 390,
+      "href": "https://tossmini-docs.toss.im/tds-mobile/",
+      "label": "디자인 시스템\nToss Design System Mobile ↗\n토스 모바일 디자인 시스템의 기초 스타일과 컴포넌트 문서입니다."
+    },
+    {
+      "slug": "yeogiotte",
+      "width": 390,
+      "href": "https://designlibrary.yeogi.com/",
+      "label": "디자인 시스템\n여기어때 Design Library ↗\n브랜드·기초 스타일·앱과 웹 컴포넌트 가이드입니다."
+    },
+    {
+      "slug": "linear.app",
+      "width": 390,
+      "href": "https://linear.app/brand",
+      "label": "브랜드 가이드\nLinear Brand Guidelines ↗\n이름, 로고 사용과 브랜드 색상 규칙입니다."
+    },
+    {
+      "slug": "vercel",
+      "width": 390,
+      "href": "https://vercel.com/geist/introduction",
+      "label": "디자인 시스템\nGeist Design System ↗\nVercel의 색상·타입·컴포넌트 시스템입니다."
+    },
+    {
+      "slug": "vercel",
+      "width": 390,
+      "href": "https://vercel.com/geist/typography",
+      "label": "타이포그래피\nGeist Typography ↗\nGeist의 타이포그래피 역할과 크기 규칙입니다."
+    },
+    {
+      "slug": "vercel",
+      "width": 390,
+      "href": "https://vercel.com/geist/brands",
+      "label": "브랜드 에셋\nVercel Brand Assets ↗\n공식 브랜드 에셋과 식별 목적의 사용 조건입니다."
+    },
+    {
+      "slug": "supabase",
+      "width": 390,
+      "href": "https://supabase.com/brand-assets",
+      "label": "브랜드 에셋\nSupabase Brand Assets ↗\n공식 로고 키트와 브랜드 표시 조건입니다."
+    }
+  ]
+}

@@ -1,0 +1,5193 @@
+{
+  "repo": "https://github.com/kwakseongjae/oh-my-design",
+  "commit": "15ff013933b37d1800e05c75e7680ed17e56f94b",
+  "entries": [
+    {
+      "slug": "11st",
+      "name": "11st",
+      "quality": {
+        "id": "11st",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 3,
+        "source_count": 7,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "ui": "Noto Sans KR",
+        "numerals": "Lato New",
+        "brand": "11StreetGothic"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "29cm",
+      "name": "29CM",
+      "quality": {
+        "id": "29cm",
+        "status": "verified_v2",
+        "verified_at": "2026-07-11",
+        "next_reverify_at": "2026-10-09",
+        "evidence_coverage": 1,
+        "surface_count": 5,
+        "source_count": 5,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "IMPORTED",
+      "reason": "Verified source selected for first batch",
+      "official": null,
+      "font": {
+        "sans": "Pretendard Variable"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "3o3",
+      "name": "3o3",
+      "quality": {
+        "id": "3o3",
+        "status": "partial",
+        "verified_at": "2026-06-10",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "en-display": "Poppins",
+        "kr": "Pretendard",
+        "funnel": "Noto Sans KR"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "42dot",
+      "name": "42dot",
+      "quality": {
+        "id": "42dot",
+        "status": "partial",
+        "verified_at": "2026-07-02",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "AstaSans",
+        "kr": "Noto Sans KR"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "8percent",
+      "name": "8percent",
+      "quality": {
+        "id": "8percent",
+        "status": "partial",
+        "verified_at": "2026-07-02",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "body": "Pretendard",
+        "blog": "NanumSquare"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "ably",
+      "name": "Ably",
+      "quality": {
+        "id": "ably",
+        "status": "verified_v2",
+        "verified_at": "2026-07-12",
+        "next_reverify_at": "2026-10-10",
+        "evidence_coverage": 1,
+        "surface_count": 3,
+        "source_count": 4,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": {
+        "name": "ABLY Team",
+        "url": "https://ably.team/",
+        "type": "brand",
+        "description": "ABLY's official mission, company, product-evolution, and culture surface; consumer app and Seller Square remain separate UI evidence domains."
+      },
+      "font": {
+        "consumer": "Pretendard",
+        "corporate": "Pretendard",
+        "seller": "Noto Sans Korean"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "airbridge",
+      "name": "Airbridge",
+      "quality": {
+        "id": "airbridge",
+        "status": "partial",
+        "verified_at": "2026-06-26",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard Variable"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "asleep",
+      "name": "Asleep",
+      "quality": {
+        "id": "asleep",
+        "status": "partial",
+        "verified_at": "2026-07-02",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard Variable"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "autopedia",
+      "name": "Dr.Cha (Autopedia)",
+      "quality": {
+        "id": "autopedia",
+        "status": "partial",
+        "verified_at": "2026-07-02",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "body": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "baemin",
+      "name": "Baemin",
+      "quality": {
+        "id": "baemin",
+        "status": "verified_v2",
+        "verified_at": "2026-07-12",
+        "next_reverify_at": "2026-10-09",
+        "evidence_coverage": 1,
+        "surface_count": 5,
+        "source_count": 5,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "IMPORTED",
+      "reason": "Verified source selected for first batch",
+      "official": {
+        "name": "Woowa Font Catalog",
+        "url": "https://www.woowahan.com/fonts",
+        "type": "brand",
+        "description": "Official Baemin brand-font distribution; current web UI use is verified separately from declared brand assets."
+      },
+      "font": {
+        "ui": "BAEMINWORK"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "banksalad",
+      "name": "Banksalad",
+      "quality": {
+        "id": "banksalad",
+        "status": "verified_v2",
+        "verified_at": "2026-07-12",
+        "next_reverify_at": "2026-10-10",
+        "evidence_coverage": 1,
+        "surface_count": 5,
+        "source_count": 7,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "IMPORTED",
+      "reason": "Verified source selected for first batch",
+      "official": {
+        "name": "Banksalad GitHub",
+        "url": "https://github.com/banksalad",
+        "type": "brand",
+        "description": "Banksalad's public GitHub org including styleguide repos and BPL (Banksalad Product Library) reference material.",
+        "og_image": "https://avatars.githubusercontent.com/u/71009899?s=280&v=4"
+      },
+      "font": {
+        "sans": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "barogo",
+      "name": "Barogo",
+      "quality": {
+        "id": "barogo",
+        "status": "partial",
+        "verified_at": "2026-07-02",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "body": "Pretendard",
+        "display": "Termina"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "beusable",
+      "name": "Beusable",
+      "quality": {
+        "id": "beusable",
+        "status": "partial",
+        "verified_at": "2026-07-02",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "display": "NewRubrik",
+        "body": "Pretendard Variable"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "bigin",
+      "name": "Bigin",
+      "quality": {
+        "id": "bigin",
+        "status": "partial",
+        "verified_at": "2026-06-26",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "display": "SpoqaHanSansNeo",
+        "body": "SpoqaHanSansNeo"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "bithumb",
+      "name": "Bithumb",
+      "quality": {
+        "id": "bithumb",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-06-01",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "freshness_conflict",
+          "token_source_unverified",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Bithumb Trading Sans",
+        "mono": "Bithumb Trading Sans"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "brandi",
+      "name": "Brandi",
+      "quality": {
+        "id": "brandi",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 3,
+        "source_count": 5,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "ui": "Noto Sans KR"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "bunjang",
+      "name": "Bunjang",
+      "quality": {
+        "id": "bunjang",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-05-14",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "freshness_conflict",
+          "proof_incomplete",
+          "tier1_source_missing",
+          "token_source_unverified",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard Variable",
+        "mono": "sans-serif"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "buzzvil",
+      "name": "Buzzvil",
+      "quality": {
+        "id": "buzzvil",
+        "status": "partial",
+        "verified_at": "2026-06-26",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "cafe24",
+      "name": "Cafe24",
+      "quality": {
+        "id": "cafe24",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-06-26",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 1,
+        "reason_codes": [
+          "conflict_unresolved",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard",
+        "legacy": "Noto Sans KR"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "catchtable",
+      "name": "CatchTable",
+      "quality": {
+        "id": "catchtable",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 3,
+        "source_count": 6,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "ui": "Pretendard Std Variable"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "cgv",
+      "name": "CGV",
+      "quality": {
+        "id": "cgv",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 3,
+        "source_count": 5,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "channeltalk",
+      "name": "Channel Talk",
+      "quality": {
+        "id": "channeltalk",
+        "status": "verified_v2",
+        "verified_at": "2026-07-12",
+        "next_reverify_at": "2026-10-10",
+        "evidence_coverage": 1,
+        "surface_count": 5,
+        "source_count": 6,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": {
+        "name": "Bezier",
+        "url": "https://github.com/channel-io/bezier-react",
+        "type": "system",
+        "description": "Channel Talk's open-source product design system and component implementation. It is retained as official product-system context, not used to overwrite current public marketing tokens.",
+        "og_image": "https://opengraph.githubassets.com/d5fd6836ec938de2c8399cf28b2ceabc49104fbbf86e937f9e89983f1b50d638/channel-io/bezier-react"
+      },
+      "font": {
+        "ui": "Pretendard",
+        "marketing": "Pretendard",
+        "docs": "Inter"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "cjonstyle",
+      "name": "CJ ONSTYLE",
+      "quality": {
+        "id": "cjonstyle",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-07-02",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 1,
+        "reason_codes": [
+          "conflict_unresolved",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "base": "Nanum Barun Gothic",
+        "alt": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "class101",
+      "name": "Class101",
+      "quality": {
+        "id": "class101",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-10",
+        "evidence_coverage": 1,
+        "surface_count": 3,
+        "source_count": 6,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard Variable"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "classting",
+      "name": "Classting",
+      "quality": {
+        "id": "classting",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-06-03",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "freshness_conflict",
+          "token_source_unverified",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Noto Sans KR",
+        "mono": "Noto Sans KR"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "classum",
+      "name": "Classum",
+      "quality": {
+        "id": "classum",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 3,
+        "source_count": 8,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "ui": "Pretendard Variable"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "codeit",
+      "name": "Codeit",
+      "quality": {
+        "id": "codeit",
+        "status": "partial",
+        "verified_at": "2026-06-26",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "display": "Pretendard",
+        "text": "SpoqaHanSansNeo"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "coinone",
+      "name": "Coinone",
+      "quality": {
+        "id": "coinone",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 3,
+        "source_count": 7,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": {
+        "name": "Coinone Brand Guideline",
+        "url": "https://www.coinonecorp.com/company/brand",
+        "type": "brand",
+        "description": "Official BI/brand guideline for the Coinone Blue palette, signature, and clear space."
+      },
+      "font": {
+        "home": "pretendardCoinone",
+        "trading": "Spoqa Han Sans"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "corca",
+      "name": "Corca",
+      "quality": {
+        "id": "corca",
+        "status": "partial",
+        "verified_at": "2026-07-02",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "display": "brand-webfont",
+        "body": "Pretendard",
+        "ui": "Madefor"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "coupang",
+      "name": "Coupang",
+      "quality": {
+        "id": "coupang",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-10",
+        "evidence_coverage": 1,
+        "surface_count": 3,
+        "source_count": 5,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "IMPORTED",
+      "reason": "Verified source selected for first batch",
+      "official": {
+        "name": "Coupang Media Assets Brand Guidelines",
+        "url": "https://news.coupang.com/coupang-media-assets-brand-guidelines-eng/",
+        "type": "brand",
+        "description": "Official rules for downloaded Coupang media assets, logo treatment, and attribution.",
+        "og_image": "https://news.coupang.com/wp-content/uploads/2023/01/Coupang_2_1609.jpg"
+      },
+      "font": null,
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "dabang",
+      "name": "다방",
+      "quality": {
+        "id": "dabang",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 3,
+        "source_count": 7,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "ui": "Pretendard Variable"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "dable",
+      "name": "Dable",
+      "quality": {
+        "id": "dable",
+        "status": "partial",
+        "verified_at": "2026-07-02",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "display": "Poppins",
+        "body": "Open Sans"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "danawa",
+      "name": "Danawa",
+      "quality": {
+        "id": "danawa",
+        "status": "partial",
+        "verified_at": "2026-06-11",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "datarize",
+      "name": "Datarize",
+      "quality": {
+        "id": "datarize",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 3,
+        "source_count": 8,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "marketing": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "dealicious",
+      "name": "Sinsang Market (Dealicious)",
+      "quality": {
+        "id": "dealicious",
+        "status": "partial",
+        "verified_at": "2026-07-02",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Roboto",
+        "kr": "Noto Sans KR"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "devsisters",
+      "name": "Devsisters",
+      "quality": {
+        "id": "devsisters",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-06-03",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "freshness_conflict",
+          "token_source_unverified",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard",
+        "mono": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "drdiary",
+      "name": "Dr.diary",
+      "quality": {
+        "id": "drdiary",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-07-02",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 1,
+        "reason_codes": [
+          "conflict_unresolved",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "drnow",
+      "name": "Dr.Now (닥터나우)",
+      "quality": {
+        "id": "drnow",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-06-03",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 1,
+        "reason_codes": [
+          "conflict_unresolved",
+          "freshness_conflict",
+          "token_source_unverified",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard Variable",
+        "mono": "Pretendard Variable"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "elice",
+      "name": "Elice",
+      "quality": {
+        "id": "elice",
+        "status": "partial",
+        "verified_at": "2026-06-26",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "display": "Elice DX Neolli",
+        "body": "Pretendard Variable"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "fastcampus",
+      "name": "Fastcampus",
+      "quality": {
+        "id": "fastcampus",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-05-15",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "freshness_conflict",
+          "proof_incomplete",
+          "token_source_unverified",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard Variable",
+        "mono": "Pretendard Variable"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "finda",
+      "name": "Finda",
+      "quality": {
+        "id": "finda",
+        "status": "partial",
+        "verified_at": "2026-06-09",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "display": "SUIT",
+        "body": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "fitpet",
+      "name": "Fitpet",
+      "quality": {
+        "id": "fitpet",
+        "status": "partial",
+        "verified_at": "2026-07-02",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "display": "Poppins",
+        "kr": "Noto Sans KR",
+        "product": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "flex",
+      "name": "flex",
+      "quality": {
+        "id": "flex",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 2,
+        "source_count": 2,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "ui": "Pretendard Variable"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "flo",
+      "name": "FLO",
+      "quality": {
+        "id": "flo",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-06-03",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "freshness_conflict",
+          "token_source_unverified",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard Variable",
+        "mono": "Pretendard Variable"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "friendliai",
+      "name": "FriendliAI",
+      "quality": {
+        "id": "friendliai",
+        "status": "partial",
+        "verified_at": "2026-07-02",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Saans"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "frip",
+      "name": "Frip",
+      "quality": {
+        "id": "frip",
+        "status": "partial",
+        "verified_at": "2026-07-02",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "display": "SUIT",
+        "body": "SUIT",
+        "fallback": "UI Frip, Noto Sans KR"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "furiosaai",
+      "name": "FuriosaAI",
+      "quality": {
+        "id": "furiosaai",
+        "status": "partial",
+        "verified_at": "2026-06-26",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "ABC Favorit",
+        "mono": "ABC Favorit Mono"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "gangnamunni",
+      "name": "강남언니",
+      "quality": {
+        "id": "gangnamunni",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 3,
+        "source_count": 5,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": {
+        "name": "Gangnamunni Blog",
+        "url": "https://blog.gangnamunni.com/post/welchis/",
+        "type": "brand",
+        "description": "Official account of Cell for the consumer app and Welchis for the PC back office."
+      },
+      "font": {
+        "sans": "PretendardVariable"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "gaudiolab",
+      "name": "Gaudio Lab",
+      "quality": {
+        "id": "gaudiolab",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-07-02",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 1,
+        "reason_codes": [
+          "conflict_unresolved",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "display": "Poppins",
+        "body": "Roboto",
+        "ko": "Noto Sans KR"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "genie",
+      "name": "Genie Music",
+      "quality": {
+        "id": "genie",
+        "status": "partial",
+        "verified_at": "2026-06-09",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "dotum",
+        "fallback": "sans-serif"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "gmarket",
+      "name": "Gmarket",
+      "quality": {
+        "id": "gmarket",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-05-15",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 1,
+        "reason_codes": [
+          "conflict_unresolved",
+          "freshness_conflict",
+          "proof_incomplete",
+          "token_source_unverified",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": {
+        "name": "Gmarket Sans",
+        "url": "https://corp.gmarket.com/fonts/",
+        "type": "brand",
+        "description": "Gmarket's SIL OFL brand typeface — 3 weights, TTF/OTF, 11,172 KR glyphs. First-party font artifact from a 25-year-old open marketplace; backing 247 :root CSS vars + Smile Yellow #ffd200 + Club/Event/Service sub-systems on the storefront."
+      },
+      "font": {
+        "sans": "Gmarket Sans",
+        "mono": "system-ui"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "goorm",
+      "name": "goorm",
+      "quality": {
+        "id": "goorm",
+        "status": "partial",
+        "verified_at": "2026-06-26",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard Variable"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "greencar",
+      "name": "Greencar",
+      "quality": {
+        "id": "greencar",
+        "status": "partial",
+        "verified_at": "2026-06-26",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "display": "Outfit",
+        "body": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "greeting",
+      "name": "Greeting",
+      "quality": {
+        "id": "greeting",
+        "status": "partial",
+        "verified_at": "2026-06-11",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "display": "Pretendard SemiBold",
+        "body": "Pretendard Regular",
+        "numeral": "Poppins"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "grip",
+      "name": "Grip",
+      "quality": {
+        "id": "grip",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-06-03",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "freshness_conflict",
+          "token_source_unverified",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard",
+        "mono": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "hackle",
+      "name": "Hackle",
+      "quality": {
+        "id": "hackle",
+        "status": "partial",
+        "verified_at": "2026-06-26",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "display": "Montserrat",
+        "body": "Pretendard",
+        "docs": "Inter"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "hana",
+      "name": "Hana Bank",
+      "quality": {
+        "id": "hana",
+        "status": "partial",
+        "verified_at": "2026-06-22",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "primary": "NotoSans",
+        "body": "NotoSans_Regular",
+        "group": "Pretendard Variable"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "heydealer",
+      "name": "Heydealer",
+      "quality": {
+        "id": "heydealer",
+        "status": "partial",
+        "verified_at": "2026-07-02",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "spoqaHanSansNeo"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "hogangnono",
+      "name": "Hogangnono",
+      "quality": {
+        "id": "hogangnono",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-06-03",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 1,
+        "reason_codes": [
+          "conflict_unresolved",
+          "freshness_conflict",
+          "token_source_unverified",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard",
+        "fallback": "Apple SD Gothic Neo, NanumGothic, sans-serif"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "humanscape",
+      "name": "Humanscape",
+      "quality": {
+        "id": "humanscape",
+        "status": "partial",
+        "verified_at": "2026-07-02",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "hwahae",
+      "name": "Hwahae",
+      "quality": {
+        "id": "hwahae",
+        "status": "partial",
+        "verified_at": "2026-06-26",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "product": "Pretendard Variable",
+        "blog": "Spoqa Han Sans"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "hyperconnect",
+      "name": "Hyperconnect",
+      "quality": {
+        "id": "hyperconnect",
+        "status": "partial",
+        "verified_at": "2026-06-09",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "display": "Poppins",
+        "body": "noto-sans",
+        "ui": "Inter"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "hyundai",
+      "name": "Hyundai",
+      "quality": {
+        "id": "hyundai",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 3,
+        "source_count": 6,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "IMPORTED",
+      "reason": "Verified source selected for first batch",
+      "official": null,
+      "font": {
+        "display": "HyundaiSansHeadKR",
+        "body": "HyundaiSansTextKR"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "hyundaicard",
+      "name": "Hyundai Card",
+      "quality": {
+        "id": "hyundaicard",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 3,
+        "source_count": 4,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": {
+        "name": "Hyundai Card Design Library",
+        "url": "https://newsroom.hyundaicard.com/front/board/Hyundai-Card-Design-Library?country=en",
+        "type": "brand",
+        "description": "A Hyundai Card cultural space, not a public component design-system specification."
+      },
+      "font": {
+        "sans": "YouandiNewKr"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "idus",
+      "name": "idus (Backpackr)",
+      "quality": {
+        "id": "idus",
+        "status": "partial",
+        "verified_at": "2026-07-02",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "system-ui",
+        "kr": "Apple SD Gothic Neo / Malgun Gothic (system stack)"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "igaworks",
+      "name": "IGAWorks",
+      "quality": {
+        "id": "igaworks",
+        "status": "partial",
+        "verified_at": "2026-07-02",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard Variable",
+        "fallback": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "iicombined",
+      "name": "IICOMBINED",
+      "quality": {
+        "id": "iicombined",
+        "status": "partial",
+        "verified_at": "2026-06-17",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "display": "Gentle Monster Serif",
+        "sans": "GentleSans",
+        "sans-alt": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "imweb",
+      "name": "Imweb",
+      "quality": {
+        "id": "imweb",
+        "status": "partial",
+        "verified_at": "2026-06-10",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "body": "Pretendard",
+        "ui": "imweb Sans"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "inflearn",
+      "name": "Inflearn",
+      "quality": {
+        "id": "inflearn",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 3,
+        "source_count": 7,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "ui": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "jandi",
+      "name": "JANDI",
+      "quality": {
+        "id": "jandi",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 6,
+        "source_count": 10,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "ui": "Noto Sans"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "jobkorea",
+      "name": "JobKorea",
+      "quality": {
+        "id": "jobkorea",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-06-03",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 1,
+        "reason_codes": [
+          "conflict_unresolved",
+          "freshness_conflict",
+          "token_source_unverified",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard",
+        "fallback": "Apple SD Gothic Neo, Malgun Gothic, sans-serif"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "jobplanet",
+      "name": "Jobplanet",
+      "quality": {
+        "id": "jobplanet",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-07-02",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 1,
+        "reason_codes": [
+          "conflict_unresolved",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "body": "Pretendard Variable",
+        "blog": "IBM Plex Sans"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "jumpit",
+      "name": "Jumpit",
+      "quality": {
+        "id": "jumpit",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-05-15",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 1,
+        "reason_codes": [
+          "conflict_unresolved",
+          "freshness_conflict",
+          "proof_incomplete",
+          "tier1_source_missing",
+          "token_source_unverified",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard Variable",
+        "mono": "Pretendard Variable"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "kakao",
+      "name": "Kakao",
+      "quality": {
+        "id": "kakao",
+        "status": "verified_v2",
+        "verified_at": "2026-07-11",
+        "next_reverify_at": "2026-10-09",
+        "evidence_coverage": 1,
+        "surface_count": 4,
+        "source_count": 4,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "IMPORTED",
+      "reason": "Verified source selected for first batch",
+      "official": {
+        "name": "Kakao Login Design Guide",
+        "url": "https://developers.kakao.com/docs/latest/ko/kakaologin/design-guide",
+        "type": "system",
+        "description": "Official Kakao Login button compliance guidance; corporate-site design is tracked as a separate surface."
+      },
+      "font": {
+        "display": "KakaoBig",
+        "text": "KakaoSmall",
+        "login": "System"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "kakaobank",
+      "name": "KakaoBank",
+      "quality": {
+        "id": "kakaobank",
+        "status": "verified_v2",
+        "verified_at": "2026-07-12",
+        "next_reverify_at": "2026-10-10",
+        "evidence_coverage": 1,
+        "surface_count": 3,
+        "source_count": 4,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "IMPORTED",
+      "reason": "Verified source selected for first batch",
+      "official": {
+        "name": "KakaoBank Brand Resource",
+        "url": "https://www.kakaobank.com/view/about/brand/resource",
+        "type": "brand",
+        "description": "Official KakaoBank identity resource with symbol, wordmark, and brand-color guidance; it does not substitute for native banking-product UI evidence."
+      },
+      "font": {
+        "ui": "Pretendard Variable"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "kakaogames",
+      "name": "카카오게임즈",
+      "quality": {
+        "id": "kakaogames",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 4,
+        "source_count": 4,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "ui": "SUIT Variable"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "kakaopage",
+      "name": "KakaoPage",
+      "quality": {
+        "id": "kakaopage",
+        "status": "partial",
+        "verified_at": "2026-06-22",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "display": "Pretendard Variable",
+        "body": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "kakaopay",
+      "name": "KakaoPay",
+      "quality": {
+        "id": "kakaopay",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 6,
+        "source_count": 6,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "IMPORTED",
+      "reason": "Verified source selected for first batch",
+      "official": {
+        "name": "KakaoPay design story",
+        "url": "https://story.kakaopay.com/225-kakaopay-design/",
+        "type": "brand",
+        "description": "Official KakaoPay article describing its graphic-accessibility work; it is not a public component library."
+      },
+      "font": {
+        "sans": "KakaoSmall",
+        "display": "KakaoBig"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "kakaot",
+      "name": "Kakao T",
+      "quality": {
+        "id": "kakaot",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-05-27",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 1,
+        "reason_codes": [
+          "conflict_unresolved",
+          "freshness_conflict",
+          "proof_incomplete",
+          "tier1_source_missing",
+          "token_source_unverified",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard",
+        "mono": "SF Mono"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "karrot",
+      "name": "Karrot",
+      "quality": {
+        "id": "karrot",
+        "status": "verified_v2",
+        "verified_at": "2026-07-11",
+        "next_reverify_at": "2026-10-09",
+        "evidence_coverage": 1,
+        "surface_count": 3,
+        "source_count": 7,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "IMPORTED",
+      "reason": "Verified source selected for first batch",
+      "official": {
+        "name": "SEED Design",
+        "url": "https://v2.seed-design.io",
+        "type": "system",
+        "description": "Karrot (Daangn)'s open-source design system for marketplace apps."
+      },
+      "font": {
+        "sans": "System"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "kb-kookmin",
+      "name": "KB국민은행",
+      "quality": {
+        "id": "kb-kookmin",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 3,
+        "source_count": 8,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": null,
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "kbank",
+      "name": "K bank",
+      "quality": {
+        "id": "kbank",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 5,
+        "source_count": 8,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "ui": "Pretendard K Edition"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "kbpay",
+      "name": "KB Pay",
+      "quality": {
+        "id": "kbpay",
+        "status": "partial",
+        "verified_at": "2026-06-22",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "display": "KBFGDisplayM",
+        "body": "KBFGText"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "kcd",
+      "name": "Korea Credit Data",
+      "quality": {
+        "id": "kcd",
+        "status": "partial",
+        "verified_at": "2026-06-26",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "kia",
+      "name": "Kia",
+      "quality": {
+        "id": "kia",
+        "status": "partial",
+        "verified_at": "2026-06-22",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "display": "Kia Signature Bold",
+        "body": "Kia Signature Regular",
+        "fallback": "Arial, sans-serif"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "kmong",
+      "name": "Kmong",
+      "quality": {
+        "id": "kmong",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 2,
+        "source_count": 5,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "ui": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "krafton",
+      "name": "KRAFTON",
+      "quality": {
+        "id": "krafton",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-06-03",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "freshness_conflict",
+          "token_source_unverified",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Poppins",
+        "mono": "SF Mono"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "krds",
+      "name": "KRDS",
+      "quality": {
+        "id": "krds",
+        "status": "verified_v2",
+        "verified_at": "2026-07-11",
+        "next_reverify_at": "2026-10-09",
+        "evidence_coverage": 1,
+        "surface_count": 10,
+        "source_count": 10,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": {
+        "name": "KRDS — Korea Republic Design System",
+        "url": "https://www.krds.go.kr/html/site/index.html",
+        "type": "system",
+        "description": "행정안전부 주관 범정부 통합 디자인 시스템. Government Blue #256EF4, Pretendard GOV, WCAG/KWCAG 2.2 a11y-first tokens and components.",
+        "og_image": "https://www.krds.go.kr/resources/img/guide/KRDS_Open_Graph.png"
+      },
+      "font": {
+        "sans": "Pretendard GOV"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "kream",
+      "name": "KREAM",
+      "quality": {
+        "id": "kream",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 3,
+        "source_count": 7,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "ui": "Pretendard Variable"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "kurly",
+      "name": "Kurly",
+      "quality": {
+        "id": "kurly",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 3,
+        "source_count": 6,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "IMPORTED",
+      "reason": "Verified source selected for first batch",
+      "official": null,
+      "font": {
+        "sans": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "kyobobook",
+      "name": "Kyobo Book Centre",
+      "quality": {
+        "id": "kyobobook",
+        "status": "partial",
+        "verified_at": "2026-06-26",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "primary": "NotoSansKR",
+        "commerce": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "lablup",
+      "name": "Lablup",
+      "quality": {
+        "id": "lablup",
+        "status": "partial",
+        "verified_at": "2026-06-26",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "display": "Google Sans",
+        "body": "Pretendard",
+        "docs": "Poppins"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "laftel",
+      "name": "Laftel",
+      "quality": {
+        "id": "laftel",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-06-03",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "freshness_conflict",
+          "token_source_unverified",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard",
+        "mono": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "laundrygo",
+      "name": "LaundryGo",
+      "quality": {
+        "id": "laundrygo",
+        "status": "partial",
+        "verified_at": "2026-06-11",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "display": "런드리고딕체",
+        "body": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "lemonbase",
+      "name": "Lemonbase",
+      "quality": {
+        "id": "lemonbase",
+        "status": "partial",
+        "verified_at": "2026-06-26",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "display": "Pretendard Bold",
+        "body": "Pretendard Regular",
+        "accent": "Manrope"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "lezhin",
+      "name": "Lezhin Comics",
+      "quality": {
+        "id": "lezhin",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-06-03",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "freshness_conflict",
+          "token_source_unverified",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard Variable",
+        "mono": "Pretendard Variable"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "lguplus",
+      "name": "LG유플러스",
+      "quality": {
+        "id": "lguplus",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 3,
+        "source_count": 5,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "home": "Pretendard",
+        "subscription": "nskr"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "likelion",
+      "name": "LikeLion",
+      "quality": {
+        "id": "likelion",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 2,
+        "source_count": 5,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": {
+        "name": "LikeLion Design System",
+        "url": "https://designsystem.likelion.net/",
+        "type": "system",
+        "description": "Official public documentation surface. The supplied capture covers its documentation chrome, not component-story tokens."
+      },
+      "font": null,
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "liner",
+      "name": "Liner",
+      "quality": {
+        "id": "liner",
+        "status": "partial",
+        "verified_at": "2026-06-22",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "display": "Flare",
+        "body": "Pretendard Variable",
+        "ui": "Pretendard JP Variable"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "lotteon",
+      "name": "롯데ON",
+      "quality": {
+        "id": "lotteon",
+        "status": "verified_v2",
+        "verified_at": "2026-07-14",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 2,
+        "source_count": 5,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "commerce": "Pretendard",
+        "navigation": "NotoSansKR"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "lunit",
+      "name": "Lunit",
+      "quality": {
+        "id": "lunit",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-05-14",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "freshness_conflict",
+          "proof_incomplete",
+          "tier1_source_missing",
+          "token_source_unverified",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Lexend",
+        "mono": "Lexend"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "makinarocks",
+      "name": "MakinaRocks",
+      "quality": {
+        "id": "makinarocks",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 3,
+        "source_count": 6,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "display": "KmrApparat",
+        "body": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "maum-ai",
+      "name": "maum.ai (ex-MindsLab)",
+      "quality": {
+        "id": "maum-ai",
+        "status": "partial",
+        "verified_at": "2026-07-02",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "display": "Jamsil",
+        "body": "Pretendard",
+        "techno": "Orbitron"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "medibloc",
+      "name": "MediBloc (Dr.Palette)",
+      "quality": {
+        "id": "medibloc",
+        "status": "partial",
+        "verified_at": "2026-07-02",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard",
+        "alt": "Roboto"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "megabox",
+      "name": "MEGABOX",
+      "quality": {
+        "id": "megabox",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 3,
+        "source_count": 7,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "ui": "NanumBarunGothic"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "melon",
+      "name": "Melon",
+      "quality": {
+        "id": "melon",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-06-01",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "freshness_conflict",
+          "token_source_unverified",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard",
+        "mono": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "mildang",
+      "name": "Milddang (I Hate Flying Bugs)",
+      "quality": {
+        "id": "mildang",
+        "status": "partial",
+        "verified_at": "2026-07-02",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "millie",
+      "name": "Millie",
+      "quality": {
+        "id": "millie",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-10",
+        "evidence_coverage": 1,
+        "surface_count": 2,
+        "source_count": 7,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard Variable"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "miricanvas",
+      "name": "MiriCanvas",
+      "quality": {
+        "id": "miricanvas",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 3,
+        "source_count": 6,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard Variable"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "modusign",
+      "name": "Modusign",
+      "quality": {
+        "id": "modusign",
+        "status": "partial",
+        "verified_at": "2026-06-10",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "moin",
+      "name": "Moin",
+      "quality": {
+        "id": "moin",
+        "status": "partial",
+        "verified_at": "2026-07-02",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Spoqa Han Sans",
+        "fallback": "Spoqa Han Sans JP"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "moreh",
+      "name": "Moreh",
+      "quality": {
+        "id": "moreh",
+        "status": "partial",
+        "verified_at": "2026-06-26",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Inter"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "musinsa",
+      "name": "Musinsa",
+      "quality": {
+        "id": "musinsa",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-10",
+        "evidence_coverage": 1,
+        "surface_count": 2,
+        "source_count": 2,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "IMPORTED",
+      "reason": "Verified source selected for first batch",
+      "official": null,
+      "font": {
+        "sans": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "mustit",
+      "name": "MUSTIT",
+      "quality": {
+        "id": "mustit",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-06-03",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 1,
+        "reason_codes": [
+          "conflict_unresolved",
+          "freshness_conflict",
+          "token_source_unverified",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard",
+        "mono": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "myrealtrip",
+      "name": "MyRealTrip",
+      "quality": {
+        "id": "myrealtrip",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 3,
+        "source_count": 5,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "naver",
+      "name": "Naver",
+      "quality": {
+        "id": "naver",
+        "status": "verified_v2",
+        "verified_at": "2026-07-11",
+        "next_reverify_at": "2026-10-09",
+        "evidence_coverage": 1,
+        "surface_count": 3,
+        "source_count": 5,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "IMPORTED",
+      "reason": "Verified source selected for first batch",
+      "official": {
+        "name": "NAVER Brand Resource",
+        "url": "https://www.navercorp.com/company/brandGuide",
+        "type": "brand",
+        "description": "Official NAVER logo, color, and usage guidance; it is not a public product design system."
+      },
+      "font": {
+        "portal": "System",
+        "corporate": "InterVariable"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "naverpay",
+      "name": "Naver Pay",
+      "quality": {
+        "id": "naverpay",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-06-22",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 1,
+        "reason_codes": [
+          "conflict_unresolved",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "display": "NanumSquareNeo",
+        "body": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "naverwebtoon",
+      "name": "Naver Webtoon",
+      "quality": {
+        "id": "naverwebtoon",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 3,
+        "source_count": 7,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "ui": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "ncsoft",
+      "name": "NCSOFT",
+      "quality": {
+        "id": "ncsoft",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-06-17",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 1,
+        "reason_codes": [
+          "conflict_unresolved",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "portal": "Pretendard",
+        "media": "Helvetica Now",
+        "display": "Helvetica-Now-Display-Black",
+        "kr": "NotoSans-kr"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "neosapience",
+      "name": "Neosapience",
+      "quality": {
+        "id": "neosapience",
+        "status": "partial",
+        "verified_at": "2026-06-26",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "corporate": "Pretendard",
+        "product-display": "Plus Jakarta Sans",
+        "product-ui": "Roboto",
+        "product-fallback": "Spoqa Han Sans"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "nexon",
+      "name": "Nexon",
+      "quality": {
+        "id": "nexon",
+        "status": "partial",
+        "verified_at": "2026-06-09",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "NEXON Gothic Bold",
+        "fallback": "malgun gothic"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "nhn",
+      "name": "NHN",
+      "quality": {
+        "id": "nhn",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 3,
+        "source_count": 5,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "ui": "Pretendard Variable",
+        "display-kr": "Main Pretendard Variable"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "nhncloud",
+      "name": "NHN Cloud",
+      "quality": {
+        "id": "nhncloud",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 3,
+        "source_count": 7,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": {
+        "name": "TOAST UI",
+        "url": "https://ui.toast.com",
+        "type": "system",
+        "description": "NHN Cloud's official, continuously maintained open-source JavaScript UI catalog; it is a distinct developer/documentation surface, not a published token sheet for the NHN Cloud marketing site."
+      },
+      "font": {
+        "ui": "Pretendard Variable"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "nota",
+      "name": "Nota AI",
+      "quality": {
+        "id": "nota",
+        "status": "partial",
+        "verified_at": "2026-06-26",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Roboto",
+        "kr": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "nrise",
+      "name": "NRISE (WIPPY)",
+      "quality": {
+        "id": "nrise",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-07-02",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 1,
+        "reason_codes": [
+          "conflict_unresolved",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "ohouse",
+      "name": "Ohouse",
+      "quality": {
+        "id": "ohouse",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 3,
+        "source_count": 6,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "ui": "Pretendard Variable"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "oliveyoung",
+      "name": "Olive Young",
+      "quality": {
+        "id": "oliveyoung",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 2,
+        "source_count": 6,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "IMPORTED",
+      "reason": "Verified source selected for first batch",
+      "official": null,
+      "font": {
+        "storefront": "Montserrat",
+        "corporate": "CJONLYONENew"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "onestore",
+      "name": "원스토어",
+      "quality": {
+        "id": "onestore",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 5,
+        "source_count": 11,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": null,
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "payco",
+      "name": "PAYCO",
+      "quality": {
+        "id": "payco",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-06-03",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 1,
+        "reason_codes": [
+          "conflict_unresolved",
+          "freshness_conflict",
+          "token_source_unverified",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "NotoSans",
+        "mono": "monospace"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "payhere",
+      "name": "Payhere",
+      "quality": {
+        "id": "payhere",
+        "status": "partial",
+        "verified_at": "2026-07-02",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "primary": "Noto Sans KR",
+        "blog": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "peoplefund",
+      "name": "PeopleFund",
+      "quality": {
+        "id": "peoplefund",
+        "status": "partial",
+        "verified_at": "2026-07-02",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard",
+        "fallback": "Lato, \"Noto Sans KR\", sans-serif"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "petfriends",
+      "name": "Pet Friends",
+      "quality": {
+        "id": "petfriends",
+        "status": "partial",
+        "verified_at": "2026-07-02",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "brand": "Lific",
+        "fallback": "Noto Sans KR"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "pinkfong",
+      "name": "The Pinkfong Company",
+      "quality": {
+        "id": "pinkfong",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 4,
+        "source_count": 6,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": {
+        "name": "The Pinkfong Company Identity",
+        "url": "https://www.thepinkfongcompany.com/company",
+        "type": "brand",
+        "description": "Official corporate identity page with company and franchise BI downloads; not a public product-component specification."
+      },
+      "font": {
+        "corporate-ui": "Spoqa Han Sans Neo",
+        "brand-display": "Pinkfong Baby Shark Font"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "portone",
+      "name": "PortOne",
+      "quality": {
+        "id": "portone",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-06-26",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 1,
+        "reason_codes": [
+          "conflict_unresolved",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard Variable"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "postype",
+      "name": "POSTYPE",
+      "quality": {
+        "id": "postype",
+        "status": "partial",
+        "verified_at": "2026-06-11",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Postype Sans-serif KR",
+        "fallback": "Apple SD Gothic Neo"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "pozalabs",
+      "name": "POZAlabs",
+      "quality": {
+        "id": "pozalabs",
+        "status": "partial",
+        "verified_at": "2026-07-02",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "display": "Garet",
+        "ui": "Inter",
+        "kr": "Pretendard",
+        "body": "Source Sans Pro",
+        "serif": "Sanchez",
+        "mono": "Hack"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "protopie",
+      "name": "ProtoPie",
+      "quality": {
+        "id": "protopie",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-07-02",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 1,
+        "reason_codes": [
+          "conflict_unresolved",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "display": "Gilroy",
+        "body": "Inter"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "publy",
+      "name": "PUBLY",
+      "quality": {
+        "id": "publy",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-05-27",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 1,
+        "reason_codes": [
+          "conflict_unresolved",
+          "freshness_conflict",
+          "proof_incomplete",
+          "tier1_source_missing",
+          "token_source_unverified",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "system-ui"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "qanda",
+      "name": "QANDA",
+      "quality": {
+        "id": "qanda",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-05-15",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 1,
+        "reason_codes": [
+          "conflict_unresolved",
+          "freshness_conflict",
+          "proof_incomplete",
+          "tier1_source_missing",
+          "token_source_unverified",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard",
+        "mono": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "qraft",
+      "name": "Qraft Technologies",
+      "quality": {
+        "id": "qraft",
+        "status": "partial",
+        "verified_at": "2026-07-02",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "display": "Inter",
+        "heading": "Helvetica Neue",
+        "body": "Arial"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "queenit",
+      "name": "Queenit",
+      "quality": {
+        "id": "queenit",
+        "status": "partial",
+        "verified_at": "2026-06-26",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "product": "Pretendard",
+        "corp": "Noto Sans Korean"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "quotabook",
+      "name": "Quotabook",
+      "quality": {
+        "id": "quotabook",
+        "status": "partial",
+        "verified_at": "2026-07-02",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "display": "Pretendard",
+        "mono": "Fragment Mono",
+        "latin": "Geist"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "rebellions",
+      "name": "Rebellions",
+      "quality": {
+        "id": "rebellions",
+        "status": "partial",
+        "verified_at": "2026-06-26",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "display": "Sohne",
+        "body": "Pretendard",
+        "mono": "Space Mono"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "remember",
+      "name": "Remember",
+      "quality": {
+        "id": "remember",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 3,
+        "source_count": 5,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": {
+        "name": "Remember UI",
+        "url": "https://dramancompany.github.io/remember-ui/",
+        "type": "system",
+        "description": "Public Remember UI Storybook deployment.",
+        "og_image": "https://cdn.rememberapp.co.kr/logos/remember/rmbr_og_image.png"
+      },
+      "font": {
+        "ui": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "returnzero",
+      "name": "Return Zero",
+      "quality": {
+        "id": "returnzero",
+        "status": "partial",
+        "verified_at": "2026-06-26",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "ridi",
+      "name": "RIDI",
+      "quality": {
+        "id": "ridi",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-05-15",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 1,
+        "reason_codes": [
+          "conflict_unresolved",
+          "freshness_conflict",
+          "proof_incomplete",
+          "tier1_source_missing",
+          "token_source_unverified",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard Std",
+        "mono": "SF Mono"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "riiid",
+      "name": "Riiid",
+      "quality": {
+        "id": "riiid",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-06-03",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "freshness_conflict",
+          "token_source_unverified",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard",
+        "display": "Playfair Display"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "ringle",
+      "name": "Ringle",
+      "quality": {
+        "id": "ringle",
+        "status": "partial",
+        "verified_at": "2026-06-11",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "display": "Pretendard JP ExtraBold",
+        "body": "Pretendard Variable"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "samsung",
+      "name": "Samsung",
+      "quality": {
+        "id": "samsung",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 3,
+        "source_count": 7,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "IMPORTED",
+      "reason": "Verified source selected for first batch",
+      "official": {
+        "name": "Samsung One UI Design System",
+        "url": "https://developer.samsung.com/one-ui",
+        "type": "system",
+        "description": "Samsung's official platform design guidance. Its component and color rules are a separate evidence domain from the captured Samsung Korea public web surfaces."
+      },
+      "font": {
+        "display": "Samsung Sharp Sans",
+        "ui": "SamsungOneKorean"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "sandoll",
+      "name": "Sandoll",
+      "quality": {
+        "id": "sandoll",
+        "status": "partial",
+        "verified_at": "2026-07-02",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "display": "SDGretaSans",
+        "body": "SDGretaSans",
+        "product": "SandollGothicNeo1Unicode"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "saramin",
+      "name": "Saramin",
+      "quality": {
+        "id": "saramin",
+        "status": "partial",
+        "verified_at": "2026-06-26",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard",
+        "fallback": "Malgun Gothic"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "scatterlab",
+      "name": "Scatter Lab",
+      "quality": {
+        "id": "scatterlab",
+        "status": "partial",
+        "verified_at": "2026-07-02",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard",
+        "blog": "IBM Plex Sans",
+        "var": "Pretendard Variable"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "selectstar",
+      "name": "Selectstar",
+      "quality": {
+        "id": "selectstar",
+        "status": "partial",
+        "verified_at": "2026-07-02",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Inter",
+        "kr": "Noto Sans KR"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "shiftee",
+      "name": "Shiftee",
+      "quality": {
+        "id": "shiftee",
+        "status": "partial",
+        "verified_at": "2026-06-26",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Inter",
+        "krfallback": "Noto Sans KR"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "shiftup",
+      "name": "Shift Up",
+      "quality": {
+        "id": "shiftup",
+        "status": "partial",
+        "verified_at": "2026-06-17",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "display": "Roboto Condensed",
+        "body": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "shinhanbank",
+      "name": "Shinhan Bank",
+      "quality": {
+        "id": "shinhanbank",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 5,
+        "source_count": 7,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "banking": "Spoqa",
+        "group": "Pretendard",
+        "brand": "OneShinhan"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "shinhancard",
+      "name": "Shinhan Card",
+      "quality": {
+        "id": "shinhancard",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 3,
+        "source_count": 3,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Digital One Shinhan"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "sionic",
+      "name": "SIONIC AI",
+      "quality": {
+        "id": "sionic",
+        "status": "partial",
+        "verified_at": "2026-07-02",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "sktelecom",
+      "name": "SK텔레콤",
+      "quality": {
+        "id": "sktelecom",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 2,
+        "source_count": 6,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "ui": "SKT Sans Text",
+        "display": "SKT Sans Display"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "socar",
+      "name": "SOCAR",
+      "quality": {
+        "id": "socar",
+        "status": "verified_v2",
+        "verified_at": "2026-07-12",
+        "next_reverify_at": "2026-10-10",
+        "evidence_coverage": 1,
+        "surface_count": 5,
+        "source_count": 5,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "IMPORTED",
+      "reason": "Verified source selected for first batch",
+      "official": {
+        "name": "SOCAR Design",
+        "url": "https://design.socar.kr/",
+        "type": "system",
+        "description": "SOCAR's design system hub — Space Frame, SOCAR Blue, Sandoll Gothic Neo2 + Avenir typography, and mobility-flow component patterns.",
+        "og_image": "https://design.socar.kr/og.jpg"
+      },
+      "font": {
+        "product": "Pretendard",
+        "brand-center": "IBM Plex Sans KR"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "solapi",
+      "name": "SOLAPI",
+      "quality": {
+        "id": "solapi",
+        "status": "partial",
+        "verified_at": "2026-06-26",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard",
+        "mono": "Monaco"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "soomgo",
+      "name": "Soomgo",
+      "quality": {
+        "id": "soomgo",
+        "status": "partial",
+        "verified_at": "2026-06-09",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard",
+        "fallback": "Apple SD Gothic Neo"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "soop",
+      "name": "숲",
+      "quality": {
+        "id": "soop",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 3,
+        "source_count": 7,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "ui": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "spoon",
+      "name": "Spoon",
+      "quality": {
+        "id": "spoon",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-05-19",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 1,
+        "reason_codes": [
+          "conflict_unresolved",
+          "freshness_conflict",
+          "proof_incomplete",
+          "tier1_source_missing",
+          "token_source_unverified",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard",
+        "mono": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "spoqa",
+      "name": "Spoqa",
+      "quality": {
+        "id": "spoqa",
+        "status": "partial",
+        "verified_at": "2026-06-17",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "display": "Spoqa Han Sans Neo",
+        "body": "Spoqa Han Sans Neo"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "squeezebits",
+      "name": "SqueezeBits",
+      "quality": {
+        "id": "squeezebits",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-07-02",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 1,
+        "reason_codes": [
+          "conflict_unresolved",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "display": "Pretendard",
+        "heading": "IBM Plex Sans",
+        "body": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "ssg",
+      "name": "SSG.COM",
+      "quality": {
+        "id": "ssg",
+        "status": "partial",
+        "verified_at": "2026-06-22",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "display": "Pretendard",
+        "body": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "stayfolio",
+      "name": "Stayfolio",
+      "quality": {
+        "id": "stayfolio",
+        "status": "partial",
+        "verified_at": "2026-07-02",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard JP Variable",
+        "fallback": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "stibee",
+      "name": "Stibee",
+      "quality": {
+        "id": "stibee",
+        "status": "partial",
+        "verified_at": "2026-06-17",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard Variable"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "supertone",
+      "name": "Supertone",
+      "quality": {
+        "id": "supertone",
+        "status": "partial",
+        "verified_at": "2026-06-26",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Euclid Circular B"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "tabling",
+      "name": "Tabling",
+      "quality": {
+        "id": "tabling",
+        "status": "partial",
+        "verified_at": "2026-07-02",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "display": "Pretendard",
+        "body": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "tada",
+      "name": "TADA",
+      "quality": {
+        "id": "tada",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-05-27",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 1,
+        "reason_codes": [
+          "conflict_unresolved",
+          "freshness_conflict",
+          "proof_incomplete",
+          "tier1_source_missing",
+          "token_source_unverified",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard",
+        "mono": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "teamblind",
+      "name": "Blind",
+      "quality": {
+        "id": "teamblind",
+        "status": "partial",
+        "verified_at": "2026-06-10",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "teamsparta",
+      "name": "Team Sparta",
+      "quality": {
+        "id": "teamsparta",
+        "status": "partial",
+        "verified_at": "2026-07-02",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "display": "Pretendard Bold",
+        "body": "Pretendard",
+        "accent": "Gmarket Sans"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "tellingme",
+      "name": "TellingMe",
+      "quality": {
+        "id": "tellingme",
+        "status": "partial",
+        "verified_at": "2026-07-02",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "display": "NanumSquareRound"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "tmap",
+      "name": "TMAP Mobility",
+      "quality": {
+        "id": "tmap",
+        "status": "partial",
+        "verified_at": "2026-06-17",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "toss",
+      "name": "Toss",
+      "quality": {
+        "id": "toss",
+        "status": "verified_v2",
+        "verified_at": "2026-07-11",
+        "next_reverify_at": "2026-10-09",
+        "evidence_coverage": 1,
+        "surface_count": 5,
+        "source_count": 5,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "IMPORTED",
+      "reason": "Verified source selected for first batch",
+      "official": {
+        "name": "TDS Mobile",
+        "url": "https://tossmini-docs.toss.im/tds-mobile/",
+        "type": "system",
+        "description": "Toss's public mobile design-system documentation."
+      },
+      "font": {
+        "sans": "Toss Product Sans"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "toss-securities",
+      "name": "Toss Securities",
+      "quality": {
+        "id": "toss-securities",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 3,
+        "source_count": 5,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Toss Product Sans"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "tossbank",
+      "name": "Toss Bank",
+      "quality": {
+        "id": "tossbank",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-10",
+        "evidence_coverage": 1,
+        "surface_count": 4,
+        "source_count": 7,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": {
+        "name": "Toss Brand Resource Center",
+        "url": "https://brand.toss.im/",
+        "type": "brand",
+        "description": "Official Toss group mark and color guidance; it is not a Toss Bank product-UI token source."
+      },
+      "font": {
+        "sans": "Toss Product Sans"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "trenbe",
+      "name": "Trenbe",
+      "quality": {
+        "id": "trenbe",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-06-03",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 1,
+        "reason_codes": [
+          "conflict_unresolved",
+          "freshness_conflict",
+          "token_source_unverified",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard",
+        "mono": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "triple",
+      "name": "Triple",
+      "quality": {
+        "id": "triple",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-05-19",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 1,
+        "reason_codes": [
+          "conflict_unresolved",
+          "freshness_conflict",
+          "proof_incomplete",
+          "tier1_source_missing",
+          "token_source_unverified",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "-apple-system",
+        "mono": "-apple-system"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "tumblbug",
+      "name": "Tumblbug",
+      "quality": {
+        "id": "tumblbug",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-05-27",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 1,
+        "reason_codes": [
+          "conflict_unresolved",
+          "freshness_conflict",
+          "proof_incomplete",
+          "tier1_source_missing",
+          "token_source_unverified",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard",
+        "mono": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "tving",
+      "name": "TVING",
+      "quality": {
+        "id": "tving",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 3,
+        "source_count": 7,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "ui": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "typed",
+      "name": "Typed (Business Canvas)",
+      "quality": {
+        "id": "typed",
+        "status": "partial",
+        "verified_at": "2026-07-02",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "product": "Helvetica Neue",
+        "corporate": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "upbit",
+      "name": "Upbit",
+      "quality": {
+        "id": "upbit",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 3,
+        "source_count": 7,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": null,
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "upstage",
+      "name": "Upstage",
+      "quality": {
+        "id": "upstage",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 2,
+        "source_count": 6,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": {
+        "name": "Upstage Brand Resource Center",
+        "url": "https://www.upstage.ai/resources/brand-resource-center",
+        "type": "brand",
+        "description": "Official distribution point for Upstage logo, product-logo, media-kit, and leadership assets; it does not publish a UI token specification.",
+        "og_image": "https://cdn.prod.website-files.com/6743d5190bb2b52f38e99e37/680a25ee07a17eed6deeff74_OG.avif"
+      },
+      "font": {
+        "ui": "Geist",
+        "marketing-display": "Espeak"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "velog",
+      "name": "velog",
+      "quality": {
+        "id": "velog",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-06-01",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "freshness_conflict",
+          "token_source_unverified",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": {
+        "name": "velog (open source)",
+        "url": "https://github.com/velog-io/velog",
+        "type": "system",
+        "description": "velog's production frontend is fully open-source (MIT); its design tokens live in src/lib/styles (themes.ts + palette.ts), built on the Open Color palette."
+      },
+      "font": {
+        "sans": "system-ui",
+        "mono": "ui-monospace"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "vuno",
+      "name": "VUNO",
+      "quality": {
+        "id": "vuno",
+        "status": "partial",
+        "verified_at": "2026-06-26",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "display": "Poppins",
+        "korean": "NANUMSQUARE",
+        "fallback": "Roboto"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "wadiz",
+      "name": "Wadiz",
+      "quality": {
+        "id": "wadiz",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-05-14",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "freshness_conflict",
+          "proof_incomplete",
+          "tier1_source_missing",
+          "token_source_unverified",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard",
+        "mono": "ui-monospace"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "wanted",
+      "name": "Wanted",
+      "quality": {
+        "id": "wanted",
+        "status": "verified_v2",
+        "verified_at": "2026-07-12",
+        "next_reverify_at": "2026-10-10",
+        "evidence_coverage": 1,
+        "surface_count": 5,
+        "source_count": 7,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": {
+        "name": "Wanted Montage",
+        "url": "https://montage.wanted.co.kr/",
+        "type": "system",
+        "description": "Wanted's official product-experience design system with foundations, cross-platform components, UI kits, utilities, and usage guidance."
+      },
+      "font": {
+        "ui": "Pretendard Variable"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "watcha",
+      "name": "Watcha",
+      "quality": {
+        "id": "watcha",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-05-19",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 1,
+        "reason_codes": [
+          "conflict_unresolved",
+          "freshness_conflict",
+          "proof_incomplete",
+          "tier1_source_missing",
+          "token_source_unverified",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard",
+        "mono": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "wavve",
+      "name": "Wavve",
+      "quality": {
+        "id": "wavve",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-05-27",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 1,
+        "reason_codes": [
+          "conflict_unresolved",
+          "freshness_conflict",
+          "proof_incomplete",
+          "tier1_source_missing",
+          "token_source_unverified",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard",
+        "mono": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "wconcept",
+      "name": "W Concept",
+      "quality": {
+        "id": "wconcept",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-05-27",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 1,
+        "reason_codes": [
+          "conflict_unresolved",
+          "freshness_conflict",
+          "proof_incomplete",
+          "tier1_source_missing",
+          "token_source_unverified",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard Variable",
+        "mono": "Pretendard Variable"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "weverse",
+      "name": "Weverse",
+      "quality": {
+        "id": "weverse",
+        "status": "partial",
+        "verified_at": "2026-06-26",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "wisetracker",
+      "name": "Wisetracker",
+      "quality": {
+        "id": "wisetracker",
+        "status": "partial",
+        "verified_at": "2026-07-02",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "display": "Noto Sans CJK KR",
+        "body": "Noto Sans CJK KR",
+        "latin": "Inter",
+        "docs": "Noto Sans"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "wooribank",
+      "name": "Woori Bank",
+      "quality": {
+        "id": "wooribank",
+        "status": "verified_v2",
+        "verified_at": "2026-07-14",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 4,
+        "source_count": 8,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": null,
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "wrtn",
+      "name": "Wrtn",
+      "quality": {
+        "id": "wrtn",
+        "status": "partial",
+        "verified_at": "2026-06-17",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "body": "Pretendard",
+        "display": "Manrope",
+        "mono": "IBMPlexMono"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "yanolja",
+      "name": "Yanolja",
+      "quality": {
+        "id": "yanolja",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 4,
+        "source_count": 6,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": {
+        "name": "Yanolja Brand Center",
+        "url": "https://www.yanoljagroup.com/brand_center",
+        "type": "brand",
+        "description": "Official Yanolja Group identity guidance; it is separate from the live NOL consumer-product chrome documented below.",
+        "og_image": "https://www.yanoljagroup.com/common/assets/yanolja_colored_og_image.jpg"
+      },
+      "font": {
+        "sans": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "yeogiotte",
+      "name": "여기어때",
+      "quality": {
+        "id": "yeogiotte",
+        "status": "verified_v2",
+        "verified_at": "2026-07-11",
+        "next_reverify_at": "2026-10-09",
+        "evidence_coverage": 1,
+        "surface_count": 10,
+        "source_count": 10,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "IMPORTED",
+      "reason": "Verified source selected for first batch",
+      "official": {
+        "name": "여기어때 Design Library",
+        "url": "https://designlibrary.yeogi.com/",
+        "type": "system",
+        "description": "YDS 6.0 foundations and public Button, Price marker, Search bar component guidance.",
+        "og_image": "https://framerusercontent.com/assets/kA6JROOLbG0jX7SQZl1tLZzahM.jpg"
+      },
+      "font": {
+        "sans": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "yogiyo",
+      "name": "Yogiyo",
+      "quality": {
+        "id": "yogiyo",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-05-27",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 1,
+        "reason_codes": [
+          "conflict_unresolved",
+          "freshness_conflict",
+          "proof_incomplete",
+          "tier1_source_missing",
+          "token_source_unverified",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard",
+        "mono": "Pretendard"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "zepeto",
+      "name": "ZEPETO",
+      "quality": {
+        "id": "zepeto",
+        "status": "partial",
+        "verified_at": "2026-06-17",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 0,
+        "reason_codes": [
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "ui-sans-serif",
+        "body": "-apple-system"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "zigbang",
+      "name": "Zigbang",
+      "quality": {
+        "id": "zigbang",
+        "status": "legacy_snapshot",
+        "verified_at": "2026-05-15",
+        "next_reverify_at": null,
+        "evidence_coverage": 0,
+        "surface_count": 0,
+        "source_count": 0,
+        "conflict_count": 1,
+        "reason_codes": [
+          "conflict_unresolved",
+          "freshness_conflict",
+          "proof_incomplete",
+          "tier1_source_missing",
+          "token_source_unverified",
+          "verification_v2_missing"
+        ]
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": null,
+      "font": {
+        "sans": "Pretendard Variable",
+        "mono": "Pretendard Variable"
+      },
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    },
+    {
+      "slug": "zigzag",
+      "name": "ZIGZAG",
+      "quality": {
+        "id": "zigzag",
+        "status": "verified_v2",
+        "verified_at": "2026-07-13",
+        "next_reverify_at": "2026-10-11",
+        "evidence_coverage": 1,
+        "surface_count": 3,
+        "source_count": 5,
+        "conflict_count": 0,
+        "reason_codes": []
+      },
+      "status": "DEFER",
+      "reason": "Outside bounded first batch or insufficient verified-v2 evidence",
+      "official": {
+        "name": "ZIGZAG Design System (ZDS)",
+        "url": "https://devblog.kakaostyle.com/ko/2024-12-13-1-rebuilding-frontend-design-system/",
+        "type": "system",
+        "description": "Official Kakaostyle engineering account of the ZDS rebuild, CSS-variable token work, and product-card unification."
+      },
+      "font": null,
+      "logo": "text-wordmark; source favicon is not redistribution permission"
+    }
+  ]
+}

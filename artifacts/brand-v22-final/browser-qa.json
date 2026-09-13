@@ -1,0 +1,103 @@
+{
+  "cards": [
+    {
+      "slug": "coupang",
+      "viewportWidth": 1920,
+      "width": 355,
+      "scrollWidth": 355,
+      "height": 212,
+      "scrollHeight": 212
+    },
+    {
+      "slug": "coupang",
+      "viewportWidth": 1440,
+      "width": 445,
+      "scrollWidth": 445,
+      "height": 266,
+      "scrollHeight": 266
+    },
+    {
+      "slug": "coupang",
+      "viewportWidth": 390,
+      "width": 348,
+      "scrollWidth": 348,
+      "height": 208,
+      "scrollHeight": 208
+    }
+  ],
+  "details": [
+    {
+      "slug": "coupang",
+      "viewportWidth": 1920,
+      "width": 986,
+      "scrollWidth": 986,
+      "height": 641,
+      "scrollHeight": 2577,
+      "officialLinks": 0
+    },
+    {
+      "slug": "coupang",
+      "viewportWidth": 1440,
+      "width": 722,
+      "scrollWidth": 722,
+      "height": 590,
+      "scrollHeight": 2577,
+      "officialLinks": 0
+    },
+    {
+      "slug": "coupang",
+      "viewportWidth": 390,
+      "width": 356,
+      "scrollWidth": 356,
+      "height": 620,
+      "scrollHeight": 2875,
+      "officialLinks": 0
+    }
+  ],
+  "expanded": [
+    {
+      "slug": "coupang",
+      "viewportWidth": 1920,
+      "width": 1905,
+      "scrollWidth": 1905,
+      "height": 1080,
+      "scrollHeight": 2342,
+      "components": 2,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "coupang",
+      "viewportWidth": 1440,
+      "width": 1425,
+      "scrollWidth": 1425,
+      "height": 1000,
+      "scrollHeight": 2342,
+      "components": 2,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    },
+    {
+      "slug": "coupang",
+      "viewportWidth": 390,
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 844,
+      "scrollHeight": 3055,
+      "components": 2,
+      "escape": true,
+      "close": true,
+      "restore": true,
+      "themes": 0
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "offline": true,
+  "focusTrap": true,
+  "reducedMotion": true
+}

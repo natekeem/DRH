@@ -240,20 +240,20 @@
     {
       "source": "oh-my-design (kwakseongjae)",
       "category": "DESIGN.md",
-      "what_it_provides": "Installer with hundreds of graded company design references, reusable skills and specialist roles.",
+      "what_it_provides": "17 Korean DESIGN.md references imported at exact pinned commit, with original verification metadata and separate font/logo rights.",
       "preview": "Catalog/live builder",
       "code": "Yes",
       "stack": "CLI, Markdown, Skills",
       "license": "MIT (tool); references retain company rights",
-      "license_evidence": "https://github.com/kwakseongjae/oh-my-design",
+      "license_evidence": "https://github.com/kwakseongjae/oh-my-design/blob/15ff013933b37d1800e05c75e7680ed17e56f94b/LICENSE",
       "redistribution": "Tool may be reused under MIT; company references should be treated as educational/reference material unless separately licensed.",
-      "attribution": "MIT notice for tool",
+      "attribution": "Preserve MIT notice plus README educational/reference rights notice. Pinned commit 15ff013933b37d1800e05c75e7680ed17e56f94b",
       "agent_friendly": "Very High",
       "recommendation": "REFERENCE",
       "url": "https://oh-my-design.kr/",
       "github": "https://github.com/kwakseongjae/oh-my-design",
-      "caveat": "Repo itself states references belong to respective companies.",
-      "reviewed_at": "2026-09-06"
+      "caveat": "References belong to their respective companies; reproduced for educational reference. Repository MIT does not license brand logos, proprietary fonts, screenshots or trademarks.",
+      "reviewed_at": "2026-09-13"
     },
     {
       "source": "DESIGNmd Community Library",

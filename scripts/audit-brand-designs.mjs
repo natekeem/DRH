@@ -12,10 +12,10 @@ const { references } = await demoModule()
 assert.equal(new Set(references.map(r=>r.id)).size,references.length)
 assert(vendorEntries.length > 0)
 const directories = (await readdir('public/vendor/awesome-design-md', { withFileTypes: true })).filter(d => d.isDirectory()).map(d => d.name).sort()
-assert.deepEqual(vendorEntries.map(e => e.slug).sort(), directories)
+assert.deepEqual(vendorEntries.filter(e=>!e.vendorSource).map(e => e.slug).sort(), directories)
 const signatures = new Map(), report = []
 for (const entry of vendorEntries) {
-  const raw = await readFile(`public/vendor/awesome-design-md/${entry.slug}/DESIGN.md`, 'utf8')
+  const raw = await readFile(`public/vendor/${entry.vendorSource||'awesome-design-md'}/${entry.slug}/DESIGN.md`, 'utf8')
   const parsed = parseYamlFrontmatter(raw)
   const full = JSON.parse(await readFile(`public/brand-design-specs/${entry.slug}.json`, 'utf8'))
   assert.deepEqual(full, JSON.parse(JSON.stringify(brandSpec(parsed, raw, entry.slug))), `${entry.slug}: full evidence drift`)
@@ -85,6 +85,9 @@ const {resolveArtifacts}=await import('data:text/javascript;base64,'+Buffer.from
 const fontAssets=JSON.parse(await readFile('src/data/brandFontAssets.json','utf8'))
 const verifiedAssets=JSON.parse(await readFile('src/data/brandVerifiedAssets.json','utf8'))
 for(const entry of vendorEntries){
+ const reference=references.find(r=>r.id==='admd-'+entry.slug)
+ assert.equal(reference.license.evidenceUrl,`${entry.upstreamRepo||'https://github.com/VoltAgent/awesome-design-md'}/blob/${entry.upstreamCommit}/LICENSE`)
+ assert(reference.license.attributionRequired&&reference.license.notes.includes('별도 권리'))
  const output=resolveArtifacts(references.find(r=>r.id==='admd-'+entry.slug))
  assert.deepEqual(JSON.parse(output.tokens.json).brandSpec,entry.spec,entry.slug+': token spec parity')
  const token=JSON.parse(output.tokens.json),asset=verifiedAssets[entry.slug]||entry.spec.brandAsset

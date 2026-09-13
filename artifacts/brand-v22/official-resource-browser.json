@@ -1,0 +1,465 @@
+[
+  {
+    "slug": "airbnb",
+    "url": "https://news.airbnb.com/media-assets",
+    "status": 200,
+    "title": "Media assets - Airbnb Newsroom",
+    "heading": [
+      "Media assets"
+    ],
+    "finalUrl": "https://news.airbnb.com/media-assets",
+    "canonical": "https://news.airbnb.com/media-assets",
+    "checkedAt": "2026-09-12"
+  },
+  {
+    "slug": "apple",
+    "url": "https://developer.apple.com/design/human-interface-guidelines",
+    "status": 200,
+    "title": "Human Interface Guidelines | Apple Developer Documentation",
+    "heading": [
+      "Explore Get Started",
+      "Stay Updated",
+      "Explore Platforms",
+      "Featured",
+      "Explore Technologies",
+      "Featured",
+      "Explore Community",
+      "Featured",
+      "Explore Documentation",
+      "Release Notes",
+      "Explore Downloads",
+      "Featured",
+      "Explore Support",
+      "Featured",
+      "Quick Links"
+    ],
+    "finalUrl": "https://developer.apple.com/design/human-interface-guidelines",
+    "canonical": "https://developer.apple.com/design/human-interface-guidelines",
+    "checkedAt": "2026-09-12"
+  },
+  {
+    "slug": "baemin",
+    "url": "https://www.woowahan.com/fonts",
+    "status": 403,
+    "title": "보안 위배 접근 제한 페이지 1",
+    "heading": [],
+    "finalUrl": "https://www.woowahan.com/fonts",
+    "canonical": null,
+    "checkedAt": "2026-09-12"
+  },
+  {
+    "slug": "figma",
+    "url": "https://www.figma.com/es-la/using-the-figma-brand/",
+    "status": 200,
+    "title": "Pautas de uso de la marca y el logotipo de Figma | Figma",
+    "heading": [
+      "Lo que puedes hacer en Figma",
+      "Explora todos los productos",
+      "Recursos adicionales del producto",
+      "Casos de uso",
+      "Roles",
+      "Organizaciones",
+      "Comenzar",
+      "Aprender",
+      "Pautas de marca de Figma",
+      "Impulsemos nuestras marcas juntos",
+      "Pautas de marca de Figma",
+      "Marcas de Figma",
+      "Qué hacer y qué no",
+      "Preguntas",
+      "Probar Figma gratis",
+      "Redes sociales de Figma",
+      "Producto",
+      "Planes",
+      "Casos de uso",
+      "Recursos",
+      "Empresa"
+    ],
+    "finalUrl": "https://www.figma.com/es-la/using-the-figma-brand/",
+    "canonical": "https://www.figma.com/es-la/using-the-figma-brand/",
+    "checkedAt": "2026-09-12"
+  },
+  {
+    "slug": "ibm",
+    "url": "https://carbondesignsystem.com/",
+    "status": 200,
+    "title": "",
+    "heading": [],
+    "finalUrl": "https://carbondesignsystem.com/",
+    "canonical": null,
+    "checkedAt": "2026-09-12"
+  },
+  {
+    "slug": "ibm",
+    "url": "https://www.ibm.com/design/language/",
+    "status": 200,
+    "title": "IBM Design Language",
+    "heading": [
+      "Tools, templates and assets",
+      "What’s new"
+    ],
+    "finalUrl": "https://www.ibm.com/design/language/",
+    "canonical": null,
+    "checkedAt": "2026-09-12"
+  },
+  {
+    "slug": "ibm",
+    "url": "https://www.ibm.com/plex/",
+    "status": 200,
+    "title": "Introduction | IBM Plex",
+    "heading": [
+      "\n              IBM Plex® is our new typeface. It’s global, it’s versatile and it’s distinctlyIBM.\n            ",
+      "↓02 Concept"
+    ],
+    "finalUrl": "https://www.ibm.com/plex/",
+    "canonical": null,
+    "checkedAt": "2026-09-12"
+  },
+  {
+    "slug": "kakao",
+    "url": "https://developers.kakao.com/docs/ko/kakaologin/design-guide",
+    "status": 200,
+    "title": "카카오 로그인 > 디자인 가이드 - 카카오디벨로퍼스 | 문서",
+    "heading": [
+      "",
+      "사이드 메뉴",
+      "디자인 가이드",
+      "카카오 로그인 버튼",
+      "디자인 가이드"
+    ],
+    "finalUrl": "https://developers.kakao.com/docs/ko/kakaologin/design-guide",
+    "canonical": "https://developers.kakao.com/docs/ko/kakaologin/design-guide",
+    "checkedAt": "2026-09-12"
+  },
+  {
+    "slug": "kakaobank",
+    "url": "https://www.kakaobank.com/view/about/brand/resource",
+    "status": 200,
+    "title": "브랜드 리소스 | 카카오뱅크",
+    "heading": [
+      "\n            \n                카카오뱅크\n            \n        ",
+      "브랜드 리소스",
+      "로고",
+      "앱 아이콘",
+      "색상",
+      "미디어 패키지"
+    ],
+    "finalUrl": "https://www.kakaobank.com/view/about/brand/resource",
+    "canonical": "https://www.kakaobank.com",
+    "checkedAt": "2026-09-12"
+  },
+  {
+    "slug": "kakaopay",
+    "url": "https://story.kakaopay.com/225-kakaopay-design/",
+    "status": 200,
+    "title": "모두를 위한 디자인, 차별 없는 디자인 - 카카오페이 블로그",
+    "heading": [
+      "모두를 위한 디자인, 차별 없는 디자인",
+      "추천 컨텐츠",
+      "카카오페이 크루가 알려주는 일본 주류 쇼핑 TIP",
+      "카카오페이 트래블로그 체크카드 출시!",
+      "카카오페이와 일본 여행 떠나보고서"
+    ],
+    "finalUrl": "https://story.kakaopay.com/225-kakaopay-design/",
+    "canonical": "https://story.kakaopay.com/225-kakaopay-design/",
+    "checkedAt": "2026-09-12"
+  },
+  {
+    "slug": "linear.app",
+    "url": "https://linear.app/brand",
+    "status": 200,
+    "title": "Brand Guidelines – Linear",
+    "heading": [
+      "Linear Brand Guidelines",
+      "Resources for presenting the Linear brand consistently and professionally."
+    ],
+    "finalUrl": "https://linear.app/brand",
+    "canonical": "https://linear.app/brand",
+    "checkedAt": "2026-09-12"
+  },
+  {
+    "slug": "mongodb",
+    "url": "https://www.mongodb.com/company/newsroom/brand-resources",
+    "status": 200,
+    "title": "MongoDB Brand Resources | MongoDB",
+    "heading": [
+      "Brand Resources",
+      "Brand Identity",
+      "Primary logo",
+      "Logo mark",
+      "Proper usage",
+      "Primary palette",
+      "Brand Usage Guidelines",
+      "Download media kit"
+    ],
+    "finalUrl": "https://www.mongodb.com/company/newsroom/brand-resources",
+    "canonical": "https://www.mongodb.com/company/newsroom/brand-resources",
+    "checkedAt": "2026-09-12"
+  },
+  {
+    "slug": "naver",
+    "url": "https://www.navercorp.com/company/brandGuide",
+    "status": 200,
+    "title": "브랜드 리소스 l NAVER Corp.",
+    "heading": [
+      "logo",
+      "브랜드 리소스"
+    ],
+    "finalUrl": "https://www.navercorp.com/company/brandGuide",
+    "canonical": null,
+    "checkedAt": "2026-09-12"
+  },
+  {
+    "slug": "raycast",
+    "url": "https://www.raycast.com/press",
+    "status": 200,
+    "title": "Raycast Press & Media Kit",
+    "heading": [
+      "Press & Media Kit",
+      "About Raycast",
+      "Brand Assets",
+      "Screenshots",
+      "Co-Founders",
+      "Coverage",
+      "Need something else?"
+    ],
+    "finalUrl": "https://www.raycast.com/press",
+    "canonical": "https://www.raycast.com/press",
+    "checkedAt": "2026-09-12"
+  },
+  {
+    "slug": "samsung",
+    "url": "https://developer.samsung.com/one-ui",
+    "status": 200,
+    "title": "One UI | Samsung Developer",
+    "heading": [
+      "One UI Design Guidelines",
+      "Designing for large screens",
+      "Designing for foldables",
+      "One UI Design System",
+      "\n                        Manage Your Cookies\n                    ",
+      "Essential Cookies",
+      "Analytical/Performance Cookies",
+      "Functionality Cookies",
+      "\n              Preferences Submitted\n            "
+    ],
+    "finalUrl": "https://developer.samsung.com/one-ui",
+    "canonical": "/one-ui",
+    "checkedAt": "2026-09-12"
+  },
+  {
+    "slug": "sentry",
+    "url": "https://sentry.io/branding/",
+    "status": 200,
+    "title": "Get the Sentry Logo | Sentry",
+    "heading": [
+      "Need our logo?"
+    ],
+    "finalUrl": "https://sentry.io/branding/",
+    "canonical": "https://sentry.io/branding/",
+    "checkedAt": "2026-09-12"
+  },
+  {
+    "slug": "shopify",
+    "url": "https://shopify.dev/docs/api/polaris",
+    "status": 200,
+    "title": "Polaris references",
+    "heading": [
+      "Polaris references"
+    ],
+    "finalUrl": "https://shopify.dev/docs/api/polaris",
+    "canonical": "https://shopify.dev/docs/api/polaris",
+    "checkedAt": "2026-09-12"
+  },
+  {
+    "slug": "shopify",
+    "url": "https://www.shopify.com/brand-assets",
+    "status": 200,
+    "title": "Using our brand - Shopify",
+    "heading": [
+      "Using our brand",
+      "Primary logo",
+      "Monotone logos",
+      "The Shopping Bag",
+      "Clear space",
+      "Minimum size",
+      "Best practices",
+      "Trademark Usage Guidelines",
+      "Start your 3-day free trial today!"
+    ],
+    "finalUrl": "https://www.shopify.com/brand-assets",
+    "canonical": "https://www.shopify.com/brand-assets",
+    "checkedAt": "2026-09-12"
+  },
+  {
+    "slug": "spotify",
+    "url": "https://developer.spotify.com/documentation/design",
+    "status": 200,
+    "title": "Design & Branding Guidelines | Spotify for Developers",
+    "heading": [
+      "Design & Branding Guidelines  ",
+      "Introduction",
+      "Attribution",
+      "Using our content",
+      "Browsing Spotify content",
+      "Linking to Spotify",
+      "Playing views",
+      "Showing entities",
+      "Using our logo",
+      "Using our colors",
+      "Logo and naming restrictions",
+      "Fonts",
+      "Thank you!",
+      "Footer"
+    ],
+    "finalUrl": "https://developer.spotify.com/documentation/design",
+    "canonical": null,
+    "checkedAt": "2026-09-12"
+  },
+  {
+    "slug": "stripe",
+    "url": "https://stripe.com/newsroom/information",
+    "status": 200,
+    "title": "Stripe Newsroom | Information and assets",
+    "heading": [
+      "\n          \n            Stripe logo\n          \n        ",
+      "\n  \n      Payments\n    \n",
+      "\n  \n      Revenue\n    \n",
+      "\n  \n        Money management\n    \n",
+      "\n  \n      Platforms and marketplaces\n  \n",
+      "More",
+      "\n  \n      Payments\n    \n",
+      "\n  \n      Revenue\n    \n",
+      "\n  \n        Money management\n    \n",
+      "\n  \n      Platforms and marketplaces\n  \n",
+      "More",
+      "\n      \n        \n        Newsroom\n      \n\n      \n    ",
+      "About Stripe",
+      "\n          Our mission is to increase the GDP of the internet\n        ",
+      "\n          Fast facts\n        ",
+      "\n          100+\n        ",
+      "\n          $1.4T+\n        ",
+      "\n          135+\n        ",
+      "\n          50+ \n        ",
+      "\n          Leadership\n        ",
+      "\n          Patrick Collison\n        ",
+      "\n          John Collison\n        ",
+      "\n          Will Gaybrick\n        ",
+      "\n          Trish Walsh\n        ",
+      "\n          Eileen O’Mara\n        ",
+      "\n          Jeff Titterton\n        ",
+      "\n          Steffan Tomlinson\n        ",
+      "\n          Rob McIntosh\n        ",
+      "\n          Tyler Bryson\n        ",
+      "\n          Claire Hughes Johnson\n        ",
+      "\n          Board members\n        ",
+      "\n          Patrick Collison\n        ",
+      "\n          John Collison\n        ",
+      "\n          Bill Winters, CBE\n        ",
+      "\n          Christa Davies\n        ",
+      "\n          Kevin Kelly\n        ",
+      "\n          Luciana Lixandru\n        ",
+      "\n          Matthew Huang\n        ",
+      "\n          Parker Conrad\n        ",
+      "\n          Media assets\n        ",
+      "\n          The Stripe logo\n        ",
+      "\n          Stripe badge\n        ",
+      "\n          Media gallery\n        ",
+      "\n          Leadership\n        ",
+      "Products & pricing",
+      "Solutions",
+      "Integrations & custom solutions",
+      "Developers",
+      "Resources",
+      "Company",
+      "Support"
+    ],
+    "finalUrl": "https://stripe.com/newsroom/information",
+    "canonical": "https://stripe.com/newsroom/information",
+    "checkedAt": "2026-09-12"
+  },
+  {
+    "slug": "supabase",
+    "url": "https://supabase.com/brand-assets",
+    "status": 200,
+    "title": "Branding | Supabase",
+    "heading": [
+      "Brand assets",
+      "Build in a weekend, scale to millions",
+      "Footer"
+    ],
+    "finalUrl": "https://supabase.com/brand-assets",
+    "canonical": null,
+    "checkedAt": "2026-09-12"
+  },
+  {
+    "slug": "vercel",
+    "url": "https://vercel.com/geist/brands",
+    "status": 200,
+    "title": "Brands",
+    "heading": [
+      "Brands",
+      "Vercel",
+      "Symbol & unicode",
+      "Spacing considerations",
+      "Next.js",
+      "Next.js symbol",
+      "Next.js spelling",
+      "Turbo",
+      "Turbo symbol",
+      "Turborepo",
+      "Turborepo Symbol",
+      "Turbopack",
+      "Turbopack Symbol",
+      "v0",
+      "eve",
+      "eve spelling",
+      "AI SDK",
+      "General Information",
+      "Usage",
+      "Misuse"
+    ],
+    "finalUrl": "https://vercel.com/geist/brands",
+    "canonical": "https://vercel.com/geist/brands",
+    "checkedAt": "2026-09-12"
+  },
+  {
+    "slug": "vercel",
+    "url": "https://vercel.com/geist/introduction",
+    "status": 200,
+    "title": "Geist",
+    "heading": [
+      "Geist Design System"
+    ],
+    "finalUrl": "https://vercel.com/geist/introduction",
+    "canonical": "https://vercel.com/geist/introduction",
+    "checkedAt": "2026-09-12"
+  },
+  {
+    "slug": "vercel",
+    "url": "https://vercel.com/geist/typography",
+    "status": 200,
+    "title": "Typography",
+    "heading": [
+      "Typography"
+    ],
+    "finalUrl": "https://vercel.com/geist/typography",
+    "canonical": "https://vercel.com/geist/typography",
+    "checkedAt": "2026-09-12"
+  },
+  {
+    "slug": "yeogiotte",
+    "url": "https://designlibrary.yeogi.com/",
+    "status": 200,
+    "title": "여기어때 Design Library",
+    "heading": [
+      "A Visual Language for Travel.",
+      "Voices from Makers",
+      "Discover Our Design",
+      "Get in Touch"
+    ],
+    "finalUrl": "https://designlibrary.yeogi.com/",
+    "canonical": "https://designlibrary.yeogi.com/",
+    "checkedAt": "2026-09-12"
+  }
+]

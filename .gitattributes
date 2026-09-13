@@ -3,3 +3,7 @@
 public/brand-assets/**/*.svg -text
 public/fonts/brand/**/*.ttf -text
 public/fonts/brand/**/OFL.txt -text -whitespace
+
+# Preserve pinned upstream bytes and hashes on Windows checkout.
+public/vendor/oh-my-design/** -text -whitespace
+third_party/oh-my-design/README.upstream.md -text -whitespace

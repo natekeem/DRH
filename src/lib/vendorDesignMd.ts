@@ -1,3 +1,4 @@
+import {vendorEntryBySlug} from '../data/references'
 /**
  * vendorDesignMd.ts
  * Runtime helpers for vendor-ingested DESIGN.md files from awesome-design-md.
@@ -6,7 +7,7 @@
 
 /** Lazy-fetch a raw DESIGN.md from the public static directory. */
 export async function fetchVendorDesignMd(slug: string): Promise<string> {
-  const url = `/vendor/awesome-design-md/${encodeURIComponent(slug)}/DESIGN.md`
+  const url = `/vendor/${vendorEntryBySlug[slug]?.vendorSource || 'awesome-design-md'}/${encodeURIComponent(slug)}/DESIGN.md`
   const res = await fetch(url)
   if (!res.ok) throw new Error(`Could not load DESIGN.md for "${slug}" (${res.status})`)
   return res.text()

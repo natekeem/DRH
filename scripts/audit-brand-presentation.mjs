@@ -63,6 +63,6 @@ function check(parent){const seen=new Set();for(const node of parent.nodes||[]){
 const component=await readFile('src/components/demos/BrandCatalog.tsx','utf8')
 assert(!component.includes('JSON.stringify'));assert(component.includes('expanded&&')&&component.includes('spec.sections||{}'))
 const source=await readFile('src/components/demos/BrandSourceNotes.tsx','utf8');assert(!source.includes('JSON.stringify'))
-await mkdir('artifacts/brand-v21',{recursive:true})
-await writeFile('artifacts/brand-v21/presentation-audit.json',JSON.stringify({coverage,fontAssets:p.brandFontAssets,brands:rows},null,2)+'\n')
+await mkdir('artifacts/brand-v22',{recursive:true})
+await writeFile('artifacts/brand-v22/presentation-audit.json',JSON.stringify({coverage,fontAssets:p.brandFontAssets,brands:rows},null,2)+'\n')
 console.log('PASS: source-backed presentation, font/license/asset integrity, CSS uniqueness',coverage)

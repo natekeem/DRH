@@ -13,8 +13,12 @@
     "sync:awesome-design-md": "node scripts/sync-awesome-design-md.mjs",
     "audit:demos": "node scripts/audit-demos.mjs",
     "audit:references": "node scripts/audit-reference-quality.mjs",
-    "sync:brand-designs": "node scripts/sync-awesome-design-md.mjs --offline",
-    "audit:brand-designs": "node scripts/audit-brand-designs.mjs && node tests/brand-designs/sync-qa.mjs && node scripts/audit-brand-catalog.mjs && node scripts/audit-brand-presentation.mjs"
+    "sync:brand-designs": "node scripts/sync-awesome-design-md.mjs --offline && node scripts/sync-oh-my-design.mjs",
+    "audit:brand-designs": "node scripts/audit-brand-designs.mjs && node tests/brand-designs/sync-qa.mjs && node scripts/audit-brand-catalog.mjs && node scripts/audit-brand-presentation.mjs",
+    "sync:oh-my-design": "node scripts/sync-oh-my-design.mjs",
+    "audit:brand-resources": "node scripts/audit-brand-resources.mjs",
+    "verify:brand-resources": "node scripts/verify-brand-resources.mjs",
+    "audit:korean-brands": "node scripts/audit-korean-brands.mjs"
   },
   "dependencies": {
     "@react-three/fiber": "8.18.0",

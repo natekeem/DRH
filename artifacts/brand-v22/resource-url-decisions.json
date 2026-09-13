@@ -1,0 +1,20 @@
+[
+  {
+    "brand": "apple",
+    "previous": "https://developer.apple.com/design/human-interface-guidelines/",
+    "current": "https://developer.apple.com/design/human-interface-guidelines",
+    "reason": "Same official content; explicit HTML canonical removes trailing slash."
+  },
+  {
+    "brand": "kakao",
+    "previous": "https://developers.kakao.com/docs/latest/ko/kakaologin/design-guide",
+    "current": "https://developers.kakao.com/docs/ko/kakaologin/design-guide",
+    "reason": "Pinned OmD legacy URL redirects to current official path; raw upstream remains unchanged."
+  },
+  {
+    "brand": "karrot",
+    "previous": "https://v2.seed-design.io/",
+    "current": "https://seed-design.io/",
+    "reason": "Legacy site remains available; current official design system discovered and content reviewed. This is curated source selection, not a claimed redirect."
+  }
+]

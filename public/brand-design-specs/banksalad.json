@@ -1,0 +1,898 @@
+{
+  "colors": {
+    "primary": "#13bd7e",
+    "action": "#06a96c",
+    "canvas": "#ffffff",
+    "foreground": "#111111",
+    "secondary": "#555c68",
+    "muted": "#9fa4b0",
+    "line": "#f0f2f5"
+  },
+  "typography": {
+    "heading": {
+      "size": 20,
+      "weight": 700,
+      "lineHeight": 1.4,
+      "tracking": 0,
+      "use": "Product and safety section headings",
+      "script": "ko",
+      "fontFamily": "Pretendard",
+      "fontSize": "20px",
+      "fontWeight": 700,
+      "letterSpacing": "0px",
+      "declaredFamily": "Pretendard",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "body": {
+      "size": 16,
+      "weight": 400,
+      "lineHeight": 1.5,
+      "use": "Shared product body and list content",
+      "script": "ko",
+      "fontFamily": "Pretendard",
+      "fontSize": "16px",
+      "fontWeight": 400,
+      "declaredFamily": "Pretendard",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "label": {
+      "size": 16,
+      "weight": 700,
+      "lineHeight": 1.625,
+      "tracking": -0.08,
+      "use": "Prominent product labels and actions",
+      "script": "ko",
+      "fontFamily": "Pretendard",
+      "fontSize": "16px",
+      "fontWeight": 700,
+      "letterSpacing": "-0.08px",
+      "declaredFamily": "Pretendard",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "caption": {
+      "size": 14,
+      "weight": 500,
+      "lineHeight": 1.43,
+      "tracking": -0.07,
+      "use": "Product metadata and helper text",
+      "script": "ko",
+      "fontFamily": "Pretendard",
+      "fontSize": "14px",
+      "fontWeight": 500,
+      "letterSpacing": "-0.07px",
+      "declaredFamily": "Pretendard",
+      "renderFallback": "system-ui, sans-serif"
+    }
+  },
+  "spacing": {
+    "sm": "8px",
+    "md": "12px",
+    "base": "16px",
+    "lg": "24px"
+  },
+  "radius": {
+    "chip": "6px",
+    "action": "16px",
+    "card": "24px",
+    "full": "9999px"
+  },
+  "border": {
+    "safety-card": "1px solid #f0f2f5"
+  },
+  "motion": {
+    "rules": [
+      "| **Pressed (button)** | Inset shadow `inset 0 1px 1px rgba(0,0,0,.12)` + background shifts by ~5% darker for the press duration. Returns instantly on release (no spring). |",
+      "## 15. Motion & Easing",
+      "One current public accordion panel exposed a `350ms` height/opacity transition using `cubic-bezier(0.25, 0.1, 0.25, 1)`. No broader duration scale, spring policy, chart animation, score count-up, or reduced-motion implementation was verified in this capture.",
+      "**Durations:**",
+      "| `motion-slow` | 400ms | Page-level transitions, recommendation-card reveal animation |",
+      "**Easings:**",
+      "| `ease-enter` | `cubic-bezier(0.0, 0.0, 0.2, 1)` | Arriving — modals, dropdowns, sheets |",
+      "| `ease-exit` | `cubic-bezier(0.4, 0.0, 1, 1)` | Dismissals |",
+      "| `ease-standard` | `cubic-bezier(0.4, 0.0, 0.2, 1)` | Two-way transitions, chart draw-in |",
+      "| `ease-data` | `cubic-bezier(0.25, 0.46, 0.45, 0.94)` | Score count-up, chart series — eases out gradually so the final value is the calm resting state |",
+      "**Explicitly forbidden.** No spring overshoot anywhere. No bounce. No `cubic-bezier` with a middle control above `1.0`. Banksalad's voice is *advisor*, not *delighter* — spring-easing reads as a consumer app celebrating a transaction, which is the opposite of the brand promise. Where Toss licenses spring easing only for the money-moved checkmark, Banksalad does not license it at all.",
+      "1. **Score count-up.** When a credit-score or asset-total updates, the number animates from the previous value to the new value across `motion-data` (600ms) with `ease-data`. The duration is deliberately slow — the user is supposed to read the change, not see it flash. The Korean numeric separators (`,`) re-flow correctly during the count."
+    ]
+  },
+  "depth": {
+    "6. Depth & Elevation": "| Level | Treatment | Use |\n|---|---|---|\n| Flat (L0) | No shadow | Page background, inline elements |\n| Soft (L1) | `0 1px 1px rgba(0,0,0,.08)` | Subtle row lift, list-item separators |\n| Standard (L2) | `0 2px 5px rgba(0,0,0,.12)` | Default cards — by far the most common (~38 occurrences) |\n| Elevated (L3) | `0 4px 9px rgba(0,0,0,.15)` | Dropdowns, hover-elevated cards |\n| Deep (L4) | `0px 2px 8px rgba(0,0,0,.1)` | Floating action panels |\n| Modal (L5) | `0 17px 50px rgba(0,0,0,.19)` | Dialog modals, account-switch overlays |\n| Inset (L-1) | `inset 0 1px 1px rgba(0,0,0,.12)` | Pressed button state, depressed input visual |\n| Halo | `0 0 2px rgba(0,0,0,.26)` | Thin outline on overlay menus and popovers |\n\n**Shadow Philosophy.** Shadows are **always neutral and single-layer.** No colored shadows, no parallax stacks. Where Stripe brands its shadows in navy and Toss uses near-zero shadows for clinical clarity, Banksalad sits between — visible enough that cards lift off the surface, restrained enough that the data inside is what the eye lands on. The signature `0 2px 5px rgba(0,0,0,.12)` is a small, low-cost lift used 38× in the bundle."
+  },
+  "components": {
+    "primary-action": {
+      "type": "button",
+      "bg": "#06a96c",
+      "fg": "#ffffff",
+      "radius": "16px",
+      "padding": "16px 20px",
+      "height": "56px",
+      "font": "16px / 700",
+      "states": "default captured; no safe active interaction expansion",
+      "use": "Full-width primary action in the public interest-rate flow",
+      "backgroundColor": "#06a96c",
+      "textColor": "#ffffff",
+      "rounded": "16px"
+    },
+    "filter-chip": {
+      "type": "button",
+      "bg": "rgba(19,189,126,0.15)",
+      "fg": "#13bd7e",
+      "radius": "6px",
+      "padding": "10px 12px",
+      "font": "16px / 500",
+      "states": "default captured; no safe active interaction expansion",
+      "use": "Content-directory category or filter action",
+      "backgroundColor": "rgba(19,189,126,0.15)",
+      "textColor": "#13bd7e",
+      "rounded": "6px"
+    },
+    "safety-card": {
+      "type": "card",
+      "bg": "#ffffff",
+      "border": "1px solid #f0f2f5",
+      "radius": "24px",
+      "padding": "24px",
+      "use": "Customer-safety action and guidance card",
+      "backgroundColor": "#ffffff",
+      "rounded": "24px"
+    },
+    "disclosure-row": {
+      "type": "listItem",
+      "bg": "transparent",
+      "fg": "#111111",
+      "radius": "0px",
+      "padding": "24px 20px",
+      "font": "16px / 400",
+      "use": "Expandable disclosure row on a public card product detail",
+      "backgroundColor": "transparent",
+      "textColor": "#111111",
+      "rounded": "0px"
+    }
+  },
+  "layout": "product",
+  "traits": "Banksalad is a Korean data-driven financial platform that helps people compare products, understand credit and spending, and connect finance with a broader health-asset proposition. Its current public web surfaces feel informational rather than decorative: a white `#ffffff` canvas, dense but readable Pretendard typography, near-black `#111111` content, and green actions that keep comparison and next steps visible. The most repeated current accent is `#13bd7e`, while a consequential full-width loan action uses the deeper `#06a96c`. This reference follows the live product surfaces and the official Banksalad Product Language publications separately, preserving BPL's collaboration philosophy without pretending its 2020 component values are necessarily identical to today's public web implementation.\n\nCurrent geometry is role-specific rather than governed by one sharp-corner default. The content directory uses a compact 6px green chip, the public loan action uses a 16px radius, customer-safety cards use 24px corners with a `#f0f2f5` border, and a carousel indicator uses a full pill. Plain lists and disclosure rows remain square. The earlier claim that 2px was the dominant current system came from a legacy CSS bundle and is not promoted in this pass.\n\nTypography is consistently Pretendard across the five inspected surfaces. The collector matched loaded Pretendard font faces to 603 visible elements spanning body, headings, buttons, cards, and list items. `swiper-icons` was declared but not used for visible text. BM JUA was not declared or visibly used in this fresh capture, so it is not a current UI or marketing token; its earlier promotion has been removed. The observed hierarchy relies mainly on 16px body and labels, 14px supporting copy, and 18–20px headings with 400/500/700 weights.\n\n**Key Characteristics:**\n- Loaded Pretendard across all five current public web surfaces\n- Current accent `#13bd7e`; deeper action green `#06a96c`\n- White `#ffffff` canvas with `#111111` foreground, `#555c68` secondary text, and `#9fa4b0` muted metadata\n- Role-specific 6px / 16px / 24px / full-pill geometry\n- 8px, 12px, 16px, and 24px as recurring useful spacing values\n- Public product evidence covers buttons, cards, and list/disclosure rows; inputs, charts, dialogs, and authenticated app states remain unpromoted",
+  "sections": {
+    "1. Visual Theme & Atmosphere": "Banksalad is a Korean data-driven financial platform that helps people compare products, understand credit and spending, and connect finance with a broader health-asset proposition. Its current public web surfaces feel informational rather than decorative: a white `#ffffff` canvas, dense but readable Pretendard typography, near-black `#111111` content, and green actions that keep comparison and next steps visible. The most repeated current accent is `#13bd7e`, while a consequential full-width loan action uses the deeper `#06a96c`. This reference follows the live product surfaces and the official Banksalad Product Language publications separately, preserving BPL's collaboration philosophy without pretending its 2020 component values are necessarily identical to today's public web implementation.\n\nCurrent geometry is role-specific rather than governed by one sharp-corner default. The content directory uses a compact 6px green chip, the public loan action uses a 16px radius, customer-safety cards use 24px corners with a `#f0f2f5` border, and a carousel indicator uses a full pill. Plain lists and disclosure rows remain square. The earlier claim that 2px was the dominant current system came from a legacy CSS bundle and is not promoted in this pass.\n\nTypography is consistently Pretendard across the five inspected surfaces. The collector matched loaded Pretendard font faces to 603 visible elements spanning body, headings, buttons, cards, and list items. `swiper-icons` was declared but not used for visible text. BM JUA was not declared or visibly used in this fresh capture, so it is not a current UI or marketing token; its earlier promotion has been removed. The observed hierarchy relies mainly on 16px body and labels, 14px supporting copy, and 18–20px headings with 400/500/700 weights.\n\n**Key Characteristics:**\n- Loaded Pretendard across all five current public web surfaces\n- Current accent `#13bd7e`; deeper action green `#06a96c`\n- White `#ffffff` canvas with `#111111` foreground, `#555c68` secondary text, and `#9fa4b0` muted metadata\n- Role-specific 6px / 16px / 24px / full-pill geometry\n- 8px, 12px, 16px, and 24px as recurring useful spacing values\n- Public product evidence covers buttons, cards, and list/disclosure rows; inputs, charts, dialogs, and authenticated app states remain unpromoted",
+    "2. Color Palette & Roles": "### Primary\n- **Current accent** (`#13bd7e`): repeated green text and border color across home, contents, loan, and card-detail surfaces.\n- **Primary action** (`#06a96c`): full-width loan-flow action background, paired with `#ffffff` text.\n- The previous `#04c584` and `#10df99` values were not observed in the five-surface capture and are not current canonical tokens.\n\n### Heading & Body\n- **Foreground** (`#111111`): dominant heading, body, and list text across all five surfaces.\n- **Secondary** (`#555c68`): supporting copy on home, contents, and card detail.\n- **Neutral** (`#606874`): explanatory copy in loan and customer-safety contexts.\n- **Muted** (`#9fa4b0`): product metadata and subdued actions on contents and card detail.\n\n### Surface & Border\n- **Canvas** (`#ffffff`): default current page and card surface.\n- **Line** (`#f0f2f5`): observed 1px customer-safety card border.\n- **Transparent**: most navigation, list, disclosure, and utility controls stay unfilled.\n\n### Unresolved color groups\n\nNo current public chart, authenticated dashboard, input validation, warning, error, or success-state palette was safely captured. Those legacy groups are omitted rather than mapped to plausible greens, reds, or teals.",
+    "3. Typography Rules": "### Font evidence boundary\n\n| Evidence class | Resolution |\n|---|---|\n| Official product-use | BPL publications establish an official product-language system, but do not publish a current universal font token in the inspected text. |\n| Live surface-use | Five public web surfaces loaded and visibly used Pretendard on 603 elements. |\n| Official distributed asset | No Banksalad-exclusive UI font asset is promoted in this reference. |\n| Declared-only | `swiper-icons` was declared with zero visible text usage. |\n| Unresolved | Native-app-only typography remains unresolved without an inspectable current surface. |\n\nSpecimen availability requires a loadable font source and is separate from family truth.\n\n### Font Family\n- **Primary**: `Pretendard, -apple-system, BlinkMacSystemFont, system-ui, \"Segoe UI\", Roboto, \"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", sans-serif`\n- Loaded sources were observed for Pretendard Regular, Medium, SemiBold, Bold, and ExtraBold subsets.\n- BM JUA was not declared, loaded, or visibly used in this fresh capture and is omitted.\n\n### Hierarchy\n\n| Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |\n|---|---|---|---|---|---|---|\n| Product Heading | Pretendard | 20px | 700 | 28px | normal | Repeated section and card heading |\n| Supporting Heading | Pretendard | 18px | 700 | 26px | -0.09px | Compact product heading |\n| Body | Pretendard | 16px | 400 | 24px | normal | Shared product body and list copy |\n| Prominent Label | Pretendard | 16px | 700 | 26px | -0.08px | Action and emphasized product label |\n| Metadata | Pretendard | 14px | 500 | 20px | -0.07px | Supporting product information |\n| Caption | Pretendard | 12px | 500–700 | 18px | -0.06px | Dense metadata where observed |\n\n### Principles\n- **Pretendard is the only current visible text family.** Do not substitute an unobserved accent face.\n- **400 carries reading; 700 carries decisions.** Current body/list copy is commonly 400, while headings and the primary loan action are 700.\n- **Tracking is subtle at product sizes.** Current 14–18px roles use approximately -0.06px to -0.09px; no -1px display token is promoted.\n- **Surface evidence stays local.** Authenticated app typography and native-only financial amount roles remain unresolved.",
+    "4. Component Stylings": "### Current verified components\n\n**Primary Loan Action**\n- Background: `#06a96c`\n- Text: `#ffffff`\n- Radius: 16px\n- Padding: 16px 20px\n- Height: 56px\n- Font: 16px / 700 / Pretendard\n- States: default captured; no safe active interaction expansion\n- Use: Full-width primary action in the public interest-rate flow\n\n**Content Filter Chip**\n- Background: `rgba(19, 189, 126, 0.15)`\n- Text: `#13bd7e`\n- Radius: 6px\n- Padding: 10px 12px\n- Font: 16px / 500 / Pretendard\n- States: default captured; no safe active interaction expansion\n- Use: Category and filter action on the public contents directory\n\n**Customer Safety Card**\n- Background: `#ffffff`\n- Border: 1px solid `#f0f2f5`\n- Radius: 24px\n- Padding: 24px\n- Use: Customer-safety action and guidance card\n\n**Product Disclosure Row**\n- Background: transparent\n- Text: `#111111`\n- Radius: 0px\n- Padding: 24px 20px\n- Font: 16px / 400 / Pretendard\n- Use: Expandable disclosure row on the public card-product detail\n\n<details>\n<summary>Superseded 2026-05 legacy snapshot — retained for audit history, not canonical</summary>\n\n### Legacy Buttons\n\n#### Primary CTA (Salad Green)\n- Background: `#04c584`\n- Text: `#ffffff`\n- Border: none\n- Radius: 2px\n- Padding: 12px 24px\n- Height: 42px (line-height-driven)\n- Font: 16px / 700 / Pretendard\n- Hover: background `#10df99` (lightens — opposite of convention)\n- Use: Primary CTA on data tables, recommendation rows, transactional flows (\"내 카드 추천 받기\", \"신청하기\")\n\n#### Primary CTA — Large Display\n- Background: `#04c584`\n- Text: `#ffffff`\n- Border: none\n- Radius: 2px\n- Padding: 16px 32px\n- Height: 56px\n- Font: 18px / 700 / Pretendard\n- Letter-spacing: -1px\n- Hover: `#10df99`\n- Use: Hero CTA on landing surfaces (\"앱 다운로드\", \"지금 시작하기\")\n\n#### Primary CTA — Hover-Inverted (Retry)\n- Background: `#10df99` (default lighter)\n- Text: `#ffffff`\n- Border: none\n- Radius: 2px\n- Padding: 10px 20px\n- Font: 14px / 500 / Pretendard\n- Hover: background `#04c584` (darkens — the one place Banksalad uses the darken pattern)\n- Use: Secondary retry / \"다시 시도\" actions where the resting state is a softer mint\n\n#### Ghost / Outlined\n- Background: `#ffffff`\n- Text: `#04c584`\n- Border: 1px solid `#04c584`\n- Radius: 2px\n- Padding: 12px 24px\n- Font: 16px / 700 / Pretendard\n- Hover: background `#f3fdfa` (mint tint)\n- Use: Secondary actions paired with a Primary CTA\n\n#### Neutral / Cancel\n- Background: `#f5f5f5`\n- Text: `#434444`\n- Border: none\n- Radius: 2px\n- Padding: 12px 24px\n- Font: 16px / 700 / Pretendard\n- Hover: background `#e1e1e1`\n- Use: Cancel / \"취소\" / dismiss actions\n\n#### Disabled\n- Background: `#e1e1e1`\n- Text: `#acacac`\n- Border: none\n- Radius: 2px\n- Font: 16px / 700 / Pretendard\n- Use: Disabled state (form incomplete, retry cooling down)\n\n#### Link Button (Inline Text Link)\n- Background: transparent\n- Text: `#04c584`\n- Border: none\n- Padding: 0\n- Font: 14px / 500 / Pretendard\n- Hover: text-decoration: underline\n- Use: Inline links within content (\"자세히 보기\"), table-row jump links\n\n### Cards & Containers\n\n#### Data Card (Default)\n- Background: `#ffffff`\n- Border: 1px solid `#e1e1e1` (some surfaces use no border + shadow only)\n- Radius: 2px\n- Padding: 20px 24px\n- Shadow: `0 2px 5px rgba(0, 0, 0, 0.12)`\n- Use: Recommendation rows, transaction cards, account summary blocks\n\n#### Card — Soft Variant\n- Background: `#fbfbfb`\n- Border: none\n- Radius: 8px\n- Padding: 24px\n- Shadow: `0 2px 8px rgba(0, 0, 0, 0.1)`\n- Use: Marketing/landing feature cards (the rare 8px-radius case)\n\n#### Card — Highlight (Selected)\n- Background: `#f3fdfa`\n- Border: 1px solid `#10df99`\n- Radius: 2px\n- Padding: 20px 24px\n- Use: Selected state in product comparison lists (cards/loans), recommended-pick highlight\n\n### Inputs & Forms\n\n#### Text Input (Default)\n- Background: `#ffffff`\n- Text: `#999999` (placeholder) / `#434444` (filled)\n- Border: 1px solid `#e1e1e1`\n- Radius: 2px\n- Padding: 0 16px\n- Height: 48px\n- Font: 16px / 500 / Pretendard\n\n#### Text Input — Focus\n- Background: `#f3fdfa`\n- Text: `#434444`\n- Border: 1px solid `#10df99`\n- Radius: 2px\n- Use: Active typing state — the mint tint is the only branded background fill in the system\n\n#### Text Input — Error\n- Background: `#ffffff`\n- Text: `#434444`\n- Border: 1px solid `#fe493d`\n- Radius: 2px\n- Error message below: 12px / 500 / `#fe493d`\n- Use: Validation failure state\n\n#### Amount Input (Financial)\n- Background: `#ffffff`\n- Text: `#2b2b2b`\n- Border: 2px solid `#f5f5f5`\n- Radius: 2px\n- Padding: 0 16px\n- Height: 56px\n- Font: 22px / 700 / Pretendard (right-aligned)\n- Use: Specialized input for entering won amounts — heavier border (2px), bigger type, right-aligned, 700 weight; treats money input as a heading not a form field\n\n### Badges & Tags\n\n#### Status Pill (Brand)\n- Background: `#f3fdfa`\n- Text: `#04c584`\n- Border: none\n- Radius: 41px (rare pill — used only on tag chips, not buttons)\n- Padding: 4px 10px\n- Font: 12px / 500 / Pretendard\n- Use: Filter chips (\"연회비 없음\", \"주유 할인\") on card-recommendation pages\n\n#### Status Badge (Warning)\n- Background: `#ffffff`\n- Text: `#f56200`\n- Border: 1px solid `#fd8700`\n- Radius: 2px\n- Padding: 2px 8px\n- Font: 12px / 700 / Pretendard\n- Use: Rate-warning, expiry, attention-needed indicators\n\n#### Status Badge (Negative)\n- Background: `#ffffff`\n- Text: `#fe493d`\n- Border: 1px solid `#fe493d`\n- Radius: 2px\n- Padding: 2px 8px\n- Font: 12px / 700 / Pretendard\n- Use: Overdue, declined, blocking-issue indicators\n\n### Tables (Financial Data)\n\n#### Table Header Row\n- Background: `#f5f5f5`\n- Text: `#7b7b7b`\n- Border-bottom: 1px solid `#e1e1e1`\n- Padding: 12px 16px\n- Font: 13px / 700 / Pretendard / uppercase letter-spacing 0.05em\n- Use: Column headers on transaction lists, fee schedules\n\n#### Table Body Row\n- Background: `#ffffff` (alternates with `#fbfbfb` on dense tables)\n- Text: `#434444`\n- Border-bottom: 1px solid `#e1e1e1`\n- Padding: 12px 16px\n- Font: 14px / 500 / Pretendard\n- Amounts right-aligned: 14px / 700 / `#2b2b2b` (positive) or `#fe493d` (negative)\n- Use: Transaction rows, line-item displays\n\n### Charts & Data Viz\n\n#### Chart Series Tokens\n- Series 1: `#34464b` (primary)\n- Series 2: `#5c818a` (secondary)\n- Series 3: `#1c6c73` (tertiary)\n- Series 4: `#a7c7cf` (quaternary / pale)\n- Highlight: `#04c584` (always reserved for \"your value\" / user's own data point)\n- Negative: `#fe493d`\n- Positive trend: `#04c584`\n\n#### Axis & Gridlines\n- Axis label: 10–12px / 500 / `#7b7b7b`\n- Gridline: 1px dashed `#e1e1e1`\n- Background: `#ffffff` or `#fbfbfb`\n\n### Navigation\n\n- Header: sticky white (`#ffffff`), no shadow at rest, 1px bottom border `#f5f5f5`\n- Logo: left, ~24–28px tall, brand wordmark in `#04c584` (or `#2b2b2b` mono variant)\n- Nav links: 14px / 500 / Pretendard / `#434444`, hover `#04c584`\n- Sign-in CTA: white background, `#2b2b2b` text, 1px solid `#d8dfe6` border, 16px radius, 6px 14px padding, 14px / 400 (the home-page header uses a softer 16px radius for the auth pill — exception to the 2px default; this is the only 16px-radius live observation in the captured DOM)\n\n### Shadows\n\n| Level | Treatment | Use |\n|---|---|---|\n| Flat | none | Page background, inline elements |\n| Soft (L1) | `0 1px 1px rgba(0,0,0,.08)` | Subtle row separators |\n| Standard (L2) | `0 2px 5px rgba(0,0,0,.12)` | Default cards — most common (~38 occurrences) |\n| Elevated (L3) | `0 4px 9px rgba(0,0,0,.15)` | Dropdowns, popovers |\n| Deep (L4) | `0px 2px 8px rgba(0,0,0,.1)` | Floating panels |\n| Modal (L5) | `0 17px 50px rgba(0,0,0,.19)` | Modal dialogs |\n| Inset | `inset 0 1px 1px rgba(0,0,0,.12)` | Pressed-button / depressed input feel |\n\n---\n\n</details>\n\n---\n\n**Verified:** 2026-07-12 (omd:migrate)\n**Tier 1 sources:** https://www.banksalad.com/ ; https://www.banksalad.com/contents ; https://www.banksalad.com/loan/interest-rate-cut ; https://www.banksalad.com/customer-safety ; https://www.banksalad.com/product/cards/CARD002319 ; https://blog.banksalad.com/tech/banksalad-product-language-design/ ; https://blog.banksalad.com/tech/banksalad-product-language-ios/\n**Tier 2 sources:** https://getdesign.md/banksalad (no brand record found in exact search); https://styles.refero.design/?q=banksalad (attempted; browser-harness unavailable and indexed search returned no brand result)\n**Tier 2 status:** unavailable\n**Conflicts unresolved:** none\n**Earlier mistakes reverted:** `#04c584` canonical primary, `#10df99` hover, BM JUA current usage, 2px default radius, and uncaptured input/chart/modal/state claims",
+    "5. Layout Principles": "### Spacing System\n- Base unit: 4px\n- Scale: 4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px\n- Card internal padding: 20px / 24px (slightly tighter than Toss's 20px-horizontal default — Banksalad packs more data)\n- Table-row vertical padding: 12px (denser than consumer apps)\n\n### Grid & Container\n- Marketing/landing: max content width ~1080–1200px, centered\n- App / data surfaces: full-width with 16–24px gutters; tables go edge-to-edge on mobile\n- Card-recommendation lists: single-column on mobile, 2–3 column grid on desktop\n- Charts: full-width within their card container, never bleed outside\n\n### Whitespace Philosophy\n- **Density is the brand.** Where Toss says \"breathing room for money\", Banksalad says \"more facts visible without scrolling\". A balance, a comparison rate, an interest rate, and three filter chips can coexist in one card.\n- **Section rhythm by surface fill.** White (`#ffffff`) and off-white (`#fbfbfb`) sections alternate quietly — not for drama, but to chunk dense data into scannable bands.\n- **Tight gaps inside, generous gaps outside.** Inside a comparison card, rows sit on 12px vertical gaps. Between cards, 24–32px. The hierarchy of grouping is communicated through gap-size alone.\n\n### Border Radius Scale\n- **2px (dominant — 81 occurrences in CSS)**: Buttons, inputs, cards, badges, banners. The signature.\n- 4px: Small badges, inline pills.\n- 8px: Soft marketing cards (rare).\n- 10–12px: Promotional banner corners (rare).\n- 30–41px: Filter pills, tag chips, avatar circles.\n- 50%: Avatars, icon backdrops.\n\nBanksalad's 2px is a typographic-engineering commitment: pixel rounding sharp enough to look engineered, soft enough to not draw blood. Any radius ≥ 12px feels Toss-ish and is reserved for explicitly marketing-warmth contexts.",
+    "6. Depth & Elevation": "| Level | Treatment | Use |\n|---|---|---|\n| Flat (L0) | No shadow | Page background, inline elements |\n| Soft (L1) | `0 1px 1px rgba(0,0,0,.08)` | Subtle row lift, list-item separators |\n| Standard (L2) | `0 2px 5px rgba(0,0,0,.12)` | Default cards — by far the most common (~38 occurrences) |\n| Elevated (L3) | `0 4px 9px rgba(0,0,0,.15)` | Dropdowns, hover-elevated cards |\n| Deep (L4) | `0px 2px 8px rgba(0,0,0,.1)` | Floating action panels |\n| Modal (L5) | `0 17px 50px rgba(0,0,0,.19)` | Dialog modals, account-switch overlays |\n| Inset (L-1) | `inset 0 1px 1px rgba(0,0,0,.12)` | Pressed button state, depressed input visual |\n| Halo | `0 0 2px rgba(0,0,0,.26)` | Thin outline on overlay menus and popovers |\n\n**Shadow Philosophy.** Shadows are **always neutral and single-layer.** No colored shadows, no parallax stacks. Where Stripe brands its shadows in navy and Toss uses near-zero shadows for clinical clarity, Banksalad sits between — visible enough that cards lift off the surface, restrained enough that the data inside is what the eye lands on. The signature `0 2px 5px rgba(0,0,0,.12)` is a small, low-cost lift used 38× in the bundle.",
+    "7. Do's and Don'ts": "### Do\n- Use `#04c584` for every interactive moment — CTAs, links, focus accents, \"your data point\" on charts\n- Use `#10df99` for hover (it's *brighter* than `#04c584` — Banksalad lightens on interaction)\n- Use `#f3fdfa` mint tint on input focus background — the only branded surface tint in the system\n- Keep border-radius at 2px for buttons, inputs, cards, badges — the system's geometric signature\n- Use Pretendard with the full Korean fallback stack; 700 as default weight for headings and CTAs\n- Use `#2b2b2b`/`#434444` warm near-blacks for type instead of `#000000`\n- Use the teal-slate family (`#34464b`/`#5c818a`/`#1c6c73`/`#a7c7cf`) for chart series — cooler than brand green by design\n- Use `#04c584` only for \"your value\" on a chart — never as a generic data fill\n- Right-align financial amounts in tables; use 700 weight for amounts even at 14px\n- Use comma-separated won amounts with the currency unit in 500 weight (`12,400,000원`)\n\n### Don't\n- Don't use Toss's 12px+ rounded corners — Banksalad is 2px; 8px is the soft-marketing exception\n- Don't use Kakao yellow, KakaoPay yellow, or any warm accent for primary interaction — green is the sole interactive hue\n- Don't use BM JUA inside the app — Jua is for marketing-landing display moments only\n- Don't use weight 400 for body — Banksalad's body weight is 500\n- Don't apply colored shadows (blue, green, branded) — shadows are always neutral black\n- Don't pad financial cards generously like Toss — Banksalad packs density; data is the aesthetic\n- Don't approximate currency amounts (`약 120만원`) on primary financial surfaces — bare numerals with commas only\n- Don't use `#0099ff` info-blue for default links — green is the default link color; blue is reserved for *external* references\n- Don't use Pretendard 300 on body — light weights only at hero display sizes (52px+)\n- Don't sprinkle the brand green on chart series — green is for interaction, teal-slate is for data",
+    "8. Responsive Behavior": "### Breakpoints\n| Name | Width | Key Changes |\n|---|---|---|\n| Mobile | <600px | Single column, full-width tables (horizontal scroll if needed), 16px gutters |\n| Tablet | 600–1024px | 2-column card grids, 20px gutters |\n| Desktop | 1024–1280px | Full marketing layout, 3-column feature grids |\n| Large | >1280px | Centered content max-width ~1200px |\n\n### Touch Targets\n- Buttons minimum 42px height (default), 56px for hero display CTAs\n- Table rows minimum 44px (slightly denser than 48px standard — Banksalad accepts a tighter tap)\n- Filter pill chips: 28–32px height\n- Input minimum 48px height; amount-input 56px\n\n### Collapsing Strategy\n- Hero: 52px → 36px on mobile, weight 700 maintained\n- Marketing 3-col feature grids → 2-col → single column\n- Comparison tables: maintain table form on tablet, switch to stacked cards on mobile (each row becomes a card with key/value pairs)\n- Charts: full-width, maintain aspect ratio, axis-label font drops 12px → 10px on mobile\n- Filter chip rows: horizontal scroll (no wrap) on mobile to preserve the chip rhythm\n\n### Image Behavior\n- Card/product logos: 24–40px, consistent square framing within rows\n- Chart screenshots in marketing: full-width on mobile, 2-col on desktop\n- Decorative illustrations: rare; when used, locked to a single accent illustration per landing surface (no illustration overload — data is the visual)",
+    "9. Agent Prompt Guide": "### Quick Color Reference\n- Primary CTA: Salad Green (`#04c584`)\n- Hover: Hover Green (`#10df99`)\n- Page background: White (`#ffffff`)\n- Surface alt: Off-white (`#fbfbfb`)\n- Neutral surface: (`#f5f5f5`)\n- Heading text: Warm near-black (`#2b2b2b`)\n- Body text: (`#434444`)\n- Caption: (`#7b7b7b`)\n- Placeholder: (`#999999`)\n- Border: (`#e1e1e1`)\n- Focus background tint: Mint (`#f3fdfa`)\n- Chart series: `#34464b` / `#5c818a` / `#1c6c73` / `#a7c7cf`\n- Error: `#fe493d`\n- Warning: `#fd8700` / `#f56200`\n\n### Example Component Prompts\n- \"Create a Banksalad-style primary CTA: `#04c584` background, white text, 2px border-radius (not 12px), 700-weight Pretendard at 16px, 12px 24px padding, 42px height. Hover lightens to `#10df99`.\"\n- \"Design a card-recommendation row: white background, 1px solid `#e1e1e1` border, 2px radius, 20px 24px padding, shadow `0 2px 5px rgba(0,0,0,.12)`. Card logo 32px left, title 16px/700 `#2b2b2b`, three filter chips below (`#f3fdfa` bg, `#04c584` text, 41px radius, 12px/500), annual-fee figure right-aligned 18px/700 with '원' suffix in 500.\"\n- \"Build a focused amount input: 2px border `#f5f5f5`, on focus border `#10df99` and background `#f3fdfa`. Text 22px/700 right-aligned, `#2b2b2b`, won unit in 500 weight following the digits.\"\n- \"Create a data chart: white background, axis labels 10px/500 `#7b7b7b`, gridlines 1px dashed `#e1e1e1`. Series 1 `#34464b`, series 2 `#5c818a`, series 3 `#1c6c73`. User's own data point in `#04c584` to make 'your value' pop against neutral teal-slate.\"\n- \"Design a transaction table row: alternating `#ffffff` / `#fbfbfb` background, 12px 16px padding, 1px solid `#e1e1e1` bottom border. Date column 14px/500 `#7b7b7b`, merchant 14px/500 `#434444`, amount right-aligned 14px/700 — `#2b2b2b` for positive, `#fe493d` for negative.\"\n\n### Iteration Guide\n1. **Default radius is 2px.** If the AI produces 12px or 16px corners, reject — that's Toss, not Banksalad.\n2. **Default weight is 700 for anything important.** Headings, CTAs, financial amounts. 500 for body. Never 400 for body.\n3. **Green is for interaction only.** Never use `#04c584` as a generic background fill or decorative element. It always means: the user can tap this, or this is the user's own data.\n4. **Hover lightens.** `#04c584` → `#10df99` on hover (the opposite of conventional darken-on-hover). This is a signature.\n5. **Shadows are neutral and single-layer.** `0 2px 5px rgba(0,0,0,.12)` is the workhorse. No colored shadows.\n6. **Chart series are teal-slate, not green.** `#34464b` / `#5c818a` / `#1c6c73` / `#a7c7cf`. Reserve green for the user's own data point.\n7. **Pretendard is non-negotiable.** Always include the full Korean fallback stack. Jua only for marketing display.\n\n---",
+    "10. Voice & Tone": "Current public copy is direct, explanatory, and comparison-oriented. The home page connects financial and health assets; the contents directory names products, benefits, and comparison tasks explicitly; customer-safety copy gives the risk and the next action. This supports a factual Korean product voice, but it does not establish the invented notification, validation, or authenticated-app copy previously included here.\n\n<details>\n<summary>Superseded voice hypotheses — not current official guidance</summary>\n\n| Context | Tone |\n|---|---|\n| CTAs | Imperative, concrete outcome. `내 카드 찾기`, `대출 한도 확인하기`, `신청하기`. Never `시작하기 →` with an arrow flourish. |\n| Section headlines | Statement of fact, not a hook. `이번 달 지출 분석` not `이번 달, 얼마나 썼는지 보러 갈까요?`. |\n| Recommendations | Justified. Every recommended card or loan has a one-sentence reason next to it (`연 30만원 이상 절약될 수 있어요`). Never a bare ranked list. |\n| Financial figures | Bare numerals with commas. `1,240,000원`. Approximations (`약 124만원`) are forbidden on primary surfaces. |\n| Success messages | One-line confirmation + the relevant figure. `신용점수가 855점으로 올랐어요.` No emoji, no exclamation. |\n| Error / validation | Specific cause + one-line action. `주민등록번호가 일치하지 않아요. 다시 확인해주세요.` Never `오류가 발생했습니다`. |\n| Empty states | Explain the *why*, then suggest one next step. `아직 연동된 카드가 없어요. 카드를 연동하면 자동으로 지출 분석이 시작돼요.` |\n| Legal / disclosure | Formal `~합니다` endings. Pinned at the bottom of recommendation cards. Treated as part of the product, not a footer afterthought. |\n| Health-asset (DNA, screening) | Same calm advisor voice as finance. No marketing exuberance about \"discovering your DNA\". Just `이번 검사로 18가지 항목을 확인할 수 있어요`. |\n\n</details>\n\nThe table above is a historical hypothesis and is not promoted as an official writing standard. Current verified samples are:\n\n- “금융을 넘어 건강 자산까지” — current home positioning. <!-- verified: https://www.banksalad.com/ -->\n- “신용대출, 햇살론, 직장인 대출까지 한 번에 비교하세요” — comparison copy. <!-- verified: https://www.banksalad.com/contents -->\n- “내 대출금리 조회” — concrete product action. <!-- verified: https://www.banksalad.com/contents -->\n- “명의 도용 의심 도용사고·보이스피싱 신고 및 행동 요령을 확인하세요” — risk plus next action. <!-- verified: https://www.banksalad.com/customer-safety -->\n\nNo complete official voice-and-tone manual was found. Push notifications, authenticated errors, sentence-ending rules, and prohibited phrase lists remain unresolved.",
+    "11. Brand Narrative": "Banksalad's current first-party web presence presents a data-based financial platform spanning product comparison, credit and loan guidance, financial content, customer safety, and a wider health-asset direction. The current home page describes a large comparison inventory and a recommendation engine designed to help people choose favorable products. This reference uses those live statements as the present product narrative and does not rely on third-party founder mythology, funding figures, or fabricated competitive comparisons.\n\nThe official BPL publications explain how this product is made. Banksalad describes Product Language as broader than a visual design system: designers and platform engineers share names, abstraction boundaries, component structures, implementation guidance, and examples. BPL emerged alongside a major service redesign, moved collaborative design work to Figma, established ground rules, and maintained versioned libraries and sample applications so platform differences could be reviewed rather than hidden.\n\nBPL's implementation article states “Communication cost is most expensive. Code and Show first, argue after that.” It describes working prototypes, component examples, snapshot testing, and an integral sample app as ways to align design and implementation. These are verified process principles. They do not prove that the colors, radius, or typography observed in 2020 remain current tokens, which is why the current five-surface measurements are reconciled independently.\n\nThe current design identity therefore has two evidence layers: an official history of cross-functional product-language practice, and a present web implementation built from white surfaces, Pretendard, green actions, explicit comparison copy, and role-specific geometry. Neither layer is used as a substitute for inaccessible native-app evidence.",
+    "12. Principles": "1. **Share one product language.** BPL exists so design and platform teams name and structure the same UI concepts consistently. *UI implication:* component names and anatomy should map across design and implementation rather than being reinvented per platform.\n2. **Code and show before abstract debate.** The official BPL article uses working prototypes to expose where teams agree or disagree. *UI implication:* validate a component in a representative screen before promoting a generalized rule.\n3. **Keep design and implementation structures aligned.** BPL describes matching Figma layout structure closely enough that a design change produces a corresponding implementation change. *UI implication:* avoid premature abstraction that obscures the authored component anatomy.\n4. **Version the shared language.** The official design article describes fixed platform versions, update tracking, and component-list tooling. *UI implication:* reference claims need dates and surface provenance; old BPL values cannot silently become current web tokens.\n5. **Test components alone and in realistic composition.** BPL used component examples, snapshot tests, and an integral sample app. *UI implication:* validate both the isolated spec and the assembled product flow.",
+    "13. Personas": "Banksalad does not publish validated demographic personas in the sources used for this pass. The current public surfaces support task contexts instead:\n\n- A person comparing cards, loans, deposits, or insurance and reading product conditions.\n- A person checking whether an interest-rate reduction request may be available.\n- A card-detail visitor reading benefits, disclosures, and product metadata.\n- A customer looking for fraud, identity-theft, voice-phishing, or mistaken-transfer guidance.\n- A reader using the financial contents directory to understand a decision before entering a product flow.\n\nThese are observable jobs, not invented people. Names, ages, quotes, income, behavior frequency, and authenticated-app habits require separate user research.",
+    "14. States": "The collector recorded default render states only and performed zero safe interaction expansions. No canonical empty, loading, error, success, disabled, hover, focus, or pressed treatment is promoted. The loan accordion was captured in its rendered state, but this does not establish a complete product-state system.\n\n<details>\n<summary>Superseded synthetic state proposals — not verified product facts</summary>\n\n| State | Treatment |\n|---|---|\n| **Empty (no linked accounts)** | White canvas. Single short paragraph in `#434444` body text explaining why the screen is empty (`아직 연동된 카드가 없어요. 카드를 연동하면 자동으로 지출 분석이 시작돼요.`). One primary CTA in Salad Green (`#04c584`, 2px radius). No illustration. |\n| **Empty (filter cleared)** | Single line of `#7b7b7b` caption (`조건에 맞는 결과가 없어요. 필터를 조정해주세요.`). No CTA — user adjusts filters themselves. |\n| **Empty (no transactions this period)** | Two-line message in `#434444` explaining the filter scope (`선택한 기간에 거래 내역이 없어요. 다른 기간을 선택하거나 카드 연동을 확인해보세요.`). |\n| **Loading (first paint)** | Skeleton blocks at `#f5f5f5` matching the final layout exactly. Financial amounts render as `--원` placeholders rather than skeleton bars — a skeleton bar that resolves to a number is disorienting; `--` is honest. 1s shimmer with 8% white highlight using a `linear-gradient` sweep. |\n| **Loading (refresh / in-place)** | Subtle `#04c584` 2px progress bar at top of the section. Previous values stay visible. Never block the table during refresh. |\n| **Error (inline field)** | `#fe493d` 1px border on the input, 12px error text below in `#fe493d` weight 500. One actionable sentence (`주민등록번호가 일치하지 않아요. 다시 확인해주세요.`). |\n| **Error (recommendation fetch failed)** | Inline banner inside the recommendation card area. `#fe493d` left border, white background, 14px `#434444` text explaining what failed + a `다시 시도하기` button in the retry-button style (`#10df99` resting → `#04c584` on hover). Never a generic toast. |\n| **Error (data freshness warning)** | Soft warning banner with `#fd8700` left accent bar, white background, 13px `#7b7b7b` text noting the data is N hours stale. Non-blocking — the user can still see the (possibly stale) figures. |\n| **Success (action confirmed)** | Inline confirmation row in `#f3fdfa` mint-tint background, `#04c584` 16px / 700 confirmation text, the relevant figure in 22px / 700 `#2b2b2b` below. No toast for important actions — they get their own confirmation surface. |\n| **Success (passive update)** | 3s auto-dismiss toast at top-right. `#2b2b2b` background (NOT brand green — green is reserved for interactive surfaces), white 14px / 500 text, 2px radius, shadow `0 2px 5px rgba(0,0,0,.12)`. No emoji. |\n| **Skeleton** | `#f5f5f5` blocks at exact final dimensions, 2px radius matching the component being loaded. 1s shimmer. Financial-amount slots show `--원`, not a bar. |\n| **Disabled** | Background `#e1e1e1`, text `#acacac`, 2px radius preserved. Cursor `not-allowed`. The geometry stays identical to the enabled state so re-enabling does not shift layout. |\n| **Pressed (button)** | Inset shadow `inset 0 1px 1px rgba(0,0,0,.12)` + background shifts by ~5% darker for the press duration. Returns instantly on release (no spring). |\n\n</details>",
+    "15. Motion & Easing": "One current public accordion panel exposed a `350ms` height/opacity transition using `cubic-bezier(0.25, 0.1, 0.25, 1)`. No broader duration scale, spring policy, chart animation, score count-up, or reduced-motion implementation was verified in this capture.\n\n<details>\n<summary>Superseded synthetic motion proposals — not verified product facts</summary>\n\n**Durations:**\n\n| Token | Value | Use |\n|---|---|---|\n| `motion-instant` | 0ms | State commits, checkbox flips, focus ring appearance |\n| `motion-fast` | 150ms | Hover, focus, button press overlays, inline value updates |\n| `motion-standard` | 250ms | Card expand, dropdown open, tab content switch, modal open |\n| `motion-slow` | 400ms | Page-level transitions, recommendation-card reveal animation |\n| `motion-data` | 600ms | Chart series draw-in, score-bar count-up — slower because the user needs time to read the number |\n\n**Easings:**\n\n| Token | Curve | Use |\n|---|---|---|\n| `ease-enter` | `cubic-bezier(0.0, 0.0, 0.2, 1)` | Arriving — modals, dropdowns, sheets |\n| `ease-exit` | `cubic-bezier(0.4, 0.0, 1, 1)` | Dismissals |\n| `ease-standard` | `cubic-bezier(0.4, 0.0, 0.2, 1)` | Two-way transitions, chart draw-in |\n| `ease-data` | `cubic-bezier(0.25, 0.46, 0.45, 0.94)` | Score count-up, chart series — eases out gradually so the final value is the calm resting state |\n\n**Explicitly forbidden.** No spring overshoot anywhere. No bounce. No `cubic-bezier` with a middle control above `1.0`. Banksalad's voice is *advisor*, not *delighter* — spring-easing reads as a consumer app celebrating a transaction, which is the opposite of the brand promise. Where Toss licenses spring easing only for the money-moved checkmark, Banksalad does not license it at all.\n\n**Signature motions.**\n\n1. **Score count-up.** When a credit-score or asset-total updates, the number animates from the previous value to the new value across `motion-data` (600ms) with `ease-data`. The duration is deliberately slow — the user is supposed to read the change, not see it flash. The Korean numeric separators (`,`) re-flow correctly during the count.\n2. **Chart series draw-in.** Time-series charts draw left-to-right in `motion-data` with `ease-standard`. The user's own series (`#04c584`) is drawn *last*, so the eye lands on the user's own data after the surrounding distribution has been established.\n3. **Recommendation card reveal.** When a fresh recommendation set loads, cards fade in with `motion-standard / ease-enter` from `opacity: 0; translateY(4px)`. Translate is intentionally small (4px, not 20px) — the cards arrive, they do not fly in.\n4. **Reduce motion.** Under `prefers-reduced-motion: reduce`, all `motion-*` tokens collapse to `motion-instant`. Score count-ups become instant value swaps. Chart draw-ins render their final state immediately. Banksalad remains fully usable; nothing in the product is information-dependent on motion.\n\n</details>\n\n<!--\nOmD v0.1 Sources — Philosophy Layer (sections 10–15)\n\nDirect verification via WebFetch + curl (2026-05-13):\n- https://www.banksalad.com/ — confirms current tagline \"뱅크샐러드 | 금융을 넘어 건강 자산까지\"\n  and the Pretendard + BM JUA font stack via preload <link> tags.\n- https://webview-cdn.banksalad.com/banksalad-web/static/dist/v2.5c10981711a65fe446400c6ecec36a221b1c3e9e.bundle.css\n  (865 KB) — all token-level claims (#04c584 primary green, 2px dominant radius,\n  Pretendard with full Korean fallback, 700 default weight, 0 2px 5px rgba(0,0,0,.12)\n  standard shadow, input focus border #10df99 / background #f3fdfa).\n- https://blog.banksalad.com/tech/banksalad-product-language-ios/ — confirms\n  the design system is internally called \"BPL\" (Banksalad Product Language)\n  and the quoted principle \"Communication cost is most expensive. Code and Show\n  first, argue after that.\"\n- https://github.com/banksalad — confirms the official org and the\n  banksalad/styleguide public repo.\n\nBrand facts via WebSearch (2026-05-13):\n- Hankyung 2019-03-12 — manual 16-hour/day data classification origin\n- Korea Herald 2019-02-22 — 1.5M MAU early 2019\n- Korea Herald 2019-08-28 — ₩45B Series C at ₩300B valuation\n- PitchBook — $169.96M total raised\n\nFounder mission quote \"정보 비대칭성을 해소해 누구나 똑똑해지는 세상을 만들겠다\"\nis attributed to Kim Tae-hoon per multiple Korean press interviews summarized\nin the WebSearch result; the exact phrasing is widely cited in Korean fintech\ncoverage of Banksalad.\n\nPersonas (§13) are fictional archetypes informed by publicly described\nBanksalad user segments (Korean millennials managing credit-card spend,\nself-employed users comparing rates, UX researchers using the health-asset\nextension, mid-career users using Banksalad as a passive dashboard). Names\nare illustrative; they do not refer to real people. Yi Su-yeon's paraphrase\nof Toss-vs-Banksalad voice in §13 is explicitly marked illustrative.\n\nInterpretive claims (e.g., \"2px is a philosophical commitment\", \"green is for\ninteraction, not decoration\", \"approximations are a betrayal\") are editorial\nreadings of BPL's observable design choices, not directly sourced Banksalad\nstatements. They are anchored in the principle quote from BPL_iOS\n(\"Communication cost is most expensive...\") and the founder's mission\n(\"resolve information asymmetry\").\n-->"
+  },
+  "frontmatter": {
+    "id": "banksalad",
+    "name": "Banksalad",
+    "country": "KR",
+    "category": "fintech",
+    "homepage": "https://www.banksalad.com",
+    "primary_color": "#13bd7e",
+    "logo": {
+      "type": "favicon",
+      "slug": "https://www.google.com/s2/favicons?domain=banksalad.com&sz=256"
+    },
+    "verified": "2026-07-12",
+    "omd": "0.1",
+    "ds": {
+      "name": "Banksalad GitHub",
+      "url": "https://github.com/banksalad",
+      "type": "brand",
+      "description": "Banksalad's public GitHub org including styleguide repos and BPL (Banksalad Product Library) reference material.",
+      "og_image": "https://avatars.githubusercontent.com/u/71009899?s=280&v=4"
+    },
+    "verification_v2": {
+      "schema": 2,
+      "checked": "2026-07-12",
+      "surfaces": [
+        {
+          "id": "home",
+          "kind": "marketing-product",
+          "url": "https://www.banksalad.com/",
+          "inspected": "2026-07-12"
+        },
+        {
+          "id": "contents",
+          "kind": "product-directory",
+          "url": "https://www.banksalad.com/contents",
+          "inspected": "2026-07-12"
+        },
+        {
+          "id": "loan",
+          "kind": "product-flow",
+          "url": "https://www.banksalad.com/loan/interest-rate-cut",
+          "inspected": "2026-07-12"
+        },
+        {
+          "id": "safety",
+          "kind": "support-product",
+          "url": "https://www.banksalad.com/customer-safety",
+          "inspected": "2026-07-12"
+        },
+        {
+          "id": "card",
+          "kind": "product-detail",
+          "url": "https://www.banksalad.com/product/cards/CARD002319",
+          "inspected": "2026-07-12"
+        }
+      ],
+      "sources": [
+        {
+          "id": "home-live",
+          "kind": "product-surface",
+          "url": "https://www.banksalad.com/",
+          "captured": "2026-07-12"
+        },
+        {
+          "id": "contents-live",
+          "kind": "product-surface",
+          "url": "https://www.banksalad.com/contents",
+          "captured": "2026-07-12"
+        },
+        {
+          "id": "loan-live",
+          "kind": "product-surface",
+          "url": "https://www.banksalad.com/loan/interest-rate-cut",
+          "captured": "2026-07-12"
+        },
+        {
+          "id": "safety-live",
+          "kind": "product-surface",
+          "url": "https://www.banksalad.com/customer-safety",
+          "captured": "2026-07-12"
+        },
+        {
+          "id": "card-live",
+          "kind": "product-surface",
+          "url": "https://www.banksalad.com/product/cards/CARD002319",
+          "captured": "2026-07-12"
+        },
+        {
+          "id": "bpl-design",
+          "kind": "official-doc",
+          "url": "https://blog.banksalad.com/tech/banksalad-product-language-design/",
+          "captured": "2026-07-12"
+        },
+        {
+          "id": "bpl-engineering",
+          "kind": "official-doc",
+          "url": "https://blog.banksalad.com/tech/banksalad-product-language-ios/",
+          "captured": "2026-07-12"
+        }
+      ],
+      "conflicts": [],
+      "claims": {
+        "tokens.colors.primary": {
+          "surface_id": "home",
+          "source_id": "home-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.colors.action": {
+          "surface_id": "loan",
+          "source_id": "loan-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.colors.canvas": {
+          "surface_id": "home",
+          "source_id": "home-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.colors.foreground": {
+          "surface_id": "home",
+          "source_id": "home-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.colors.secondary": {
+          "surface_id": "home",
+          "source_id": "home-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.colors.muted": {
+          "surface_id": "card",
+          "source_id": "card-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.colors.line": {
+          "surface_id": "safety",
+          "source_id": "safety-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.typography.family.sans": {
+          "surface_id": "home",
+          "source_id": "home-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.typography.heading.size": {
+          "surface_id": "loan",
+          "source_id": "loan-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.typography.heading.weight": {
+          "surface_id": "loan",
+          "source_id": "loan-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.typography.heading.lineHeight": {
+          "surface_id": "loan",
+          "source_id": "loan-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.typography.heading.tracking": {
+          "surface_id": "loan",
+          "source_id": "loan-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.typography.heading.use": {
+          "surface_id": "loan",
+          "source_id": "loan-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.typography.body.size": {
+          "surface_id": "home",
+          "source_id": "home-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.typography.body.weight": {
+          "surface_id": "home",
+          "source_id": "home-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.typography.body.lineHeight": {
+          "surface_id": "home",
+          "source_id": "home-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.typography.body.use": {
+          "surface_id": "home",
+          "source_id": "home-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.typography.label.size": {
+          "surface_id": "home",
+          "source_id": "home-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.typography.label.weight": {
+          "surface_id": "home",
+          "source_id": "home-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.typography.label.lineHeight": {
+          "surface_id": "home",
+          "source_id": "home-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.typography.label.tracking": {
+          "surface_id": "home",
+          "source_id": "home-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.typography.label.use": {
+          "surface_id": "home",
+          "source_id": "home-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.typography.caption.size": {
+          "surface_id": "card",
+          "source_id": "card-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.typography.caption.weight": {
+          "surface_id": "card",
+          "source_id": "card-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.typography.caption.lineHeight": {
+          "surface_id": "card",
+          "source_id": "card-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.typography.caption.tracking": {
+          "surface_id": "card",
+          "source_id": "card-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.typography.caption.use": {
+          "surface_id": "card",
+          "source_id": "card-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.spacing.sm": {
+          "surface_id": "home",
+          "source_id": "home-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.spacing.md": {
+          "surface_id": "home",
+          "source_id": "home-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.spacing.base": {
+          "surface_id": "home",
+          "source_id": "home-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.spacing.lg": {
+          "surface_id": "safety",
+          "source_id": "safety-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.rounded.chip": {
+          "surface_id": "contents",
+          "source_id": "contents-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.rounded.action": {
+          "surface_id": "loan",
+          "source_id": "loan-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.rounded.card": {
+          "surface_id": "safety",
+          "source_id": "safety-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.rounded.full": {
+          "surface_id": "home",
+          "source_id": "home-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.shadow.flat": {
+          "surface_id": "home",
+          "source_id": "home-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.components.primary-action.type": {
+          "surface_id": "loan",
+          "source_id": "loan-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.components.primary-action.bg": {
+          "surface_id": "loan",
+          "source_id": "loan-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.components.primary-action.fg": {
+          "surface_id": "loan",
+          "source_id": "loan-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.components.primary-action.radius": {
+          "surface_id": "loan",
+          "source_id": "loan-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.components.primary-action.padding": {
+          "surface_id": "loan",
+          "source_id": "loan-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.components.primary-action.height": {
+          "surface_id": "loan",
+          "source_id": "loan-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.components.primary-action.font": {
+          "surface_id": "loan",
+          "source_id": "loan-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.components.primary-action.states": {
+          "surface_id": "loan",
+          "source_id": "loan-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.components.primary-action.use": {
+          "surface_id": "loan",
+          "source_id": "loan-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.components.filter-chip.type": {
+          "surface_id": "contents",
+          "source_id": "contents-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.components.filter-chip.bg": {
+          "surface_id": "contents",
+          "source_id": "contents-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.components.filter-chip.fg": {
+          "surface_id": "contents",
+          "source_id": "contents-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.components.filter-chip.radius": {
+          "surface_id": "contents",
+          "source_id": "contents-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.components.filter-chip.padding": {
+          "surface_id": "contents",
+          "source_id": "contents-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.components.filter-chip.font": {
+          "surface_id": "contents",
+          "source_id": "contents-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.components.filter-chip.states": {
+          "surface_id": "contents",
+          "source_id": "contents-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.components.filter-chip.use": {
+          "surface_id": "contents",
+          "source_id": "contents-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.components.safety-card.type": {
+          "surface_id": "safety",
+          "source_id": "safety-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.components.safety-card.bg": {
+          "surface_id": "safety",
+          "source_id": "safety-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.components.safety-card.border": {
+          "surface_id": "safety",
+          "source_id": "safety-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.components.safety-card.radius": {
+          "surface_id": "safety",
+          "source_id": "safety-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.components.safety-card.padding": {
+          "surface_id": "safety",
+          "source_id": "safety-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.components.safety-card.use": {
+          "surface_id": "safety",
+          "source_id": "safety-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.components.disclosure-row.type": {
+          "surface_id": "card",
+          "source_id": "card-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.components.disclosure-row.bg": {
+          "surface_id": "card",
+          "source_id": "card-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.components.disclosure-row.fg": {
+          "surface_id": "card",
+          "source_id": "card-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.components.disclosure-row.radius": {
+          "surface_id": "card",
+          "source_id": "card-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.components.disclosure-row.padding": {
+          "surface_id": "card",
+          "source_id": "card-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.components.disclosure-row.font": {
+          "surface_id": "card",
+          "source_id": "card-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        },
+        "tokens.components.disclosure-row.use": {
+          "surface_id": "card",
+          "source_id": "card-live",
+          "method": "live-inspect",
+          "captured": "2026-07-12"
+        }
+      }
+    },
+    "tokens": {
+      "source": "reconciled",
+      "extracted": "2026-07-12",
+      "note": "Five current first-party web surfaces. Pretendard is loaded and used; swiper-icons is declared-only. Legacy #04c584, BM JUA, 2px-default components, inputs, charts, and modal claims were not promoted.",
+      "colors": {
+        "primary": "#13bd7e",
+        "action": "#06a96c",
+        "canvas": "#ffffff",
+        "foreground": "#111111",
+        "secondary": "#555c68",
+        "muted": "#9fa4b0",
+        "line": "#f0f2f5"
+      },
+      "typography": {
+        "family": {
+          "sans": "Pretendard"
+        },
+        "heading": {
+          "size": 20,
+          "weight": 700,
+          "lineHeight": 1.4,
+          "tracking": 0,
+          "use": "Product and safety section headings"
+        },
+        "body": {
+          "size": 16,
+          "weight": 400,
+          "lineHeight": 1.5,
+          "use": "Shared product body and list content"
+        },
+        "label": {
+          "size": 16,
+          "weight": 700,
+          "lineHeight": 1.625,
+          "tracking": -0.08,
+          "use": "Prominent product labels and actions"
+        },
+        "caption": {
+          "size": 14,
+          "weight": 500,
+          "lineHeight": 1.43,
+          "tracking": -0.07,
+          "use": "Product metadata and helper text"
+        }
+      },
+      "spacing": {
+        "sm": 8,
+        "md": 12,
+        "base": 16,
+        "lg": 24
+      },
+      "rounded": {
+        "chip": 6,
+        "action": 16,
+        "card": 24,
+        "full": 9999
+      },
+      "shadow": {
+        "flat": "none"
+      },
+      "components_harvested": true,
+      "components": {
+        "primary-action": {
+          "type": "button",
+          "bg": "#06a96c",
+          "fg": "#ffffff",
+          "radius": "16px",
+          "padding": "16px 20px",
+          "height": "56px",
+          "font": "16px / 700",
+          "states": "default captured; no safe active interaction expansion",
+          "use": "Full-width primary action in the public interest-rate flow"
+        },
+        "filter-chip": {
+          "type": "button",
+          "bg": "rgba(19,189,126,0.15)",
+          "fg": "#13bd7e",
+          "radius": "6px",
+          "padding": "10px 12px",
+          "font": "16px / 500",
+          "states": "default captured; no safe active interaction expansion",
+          "use": "Content-directory category or filter action"
+        },
+        "safety-card": {
+          "type": "card",
+          "bg": "#ffffff",
+          "border": "1px solid #f0f2f5",
+          "radius": "24px",
+          "padding": "24px",
+          "use": "Customer-safety action and guidance card"
+        },
+        "disclosure-row": {
+          "type": "listItem",
+          "bg": "transparent",
+          "fg": "#111111",
+          "radius": "0px",
+          "padding": "24px 20px",
+          "font": "16px / 400",
+          "use": "Expandable disclosure row on a public card product detail"
+        }
+      }
+    },
+    "description": "Banksalad is a Korean data-driven financial platform that helps people compare products, understand credit and spending, and connect finance with a broader health-asset proposition. Its current public web surfaces feel informational rather than decorative: a white `#ffffff` canvas, dense but readable Pretendard typography, near-black `#111111` content, and green actions that keep comparison and next steps visible. The most repeated current accent is `#13bd7e`, while a consequential full-width loan action uses the deeper `#06a96c`. This reference follows the live product surfaces and the official Banksalad Product Language publications separately, preserving BPL's collaboration philosophy without pretending its 2020 component values are necessarily identical to today's public web implementation.\n\nCurrent geometry is role-specific rather than governed by one sharp-corner default. The content directory uses a compact 6px green chip, the public loan action uses a 16px radius, customer-safety cards use 24px corners with a `#f0f2f5` border, and a carousel indicator uses a full pill. Plain lists and disclosure rows remain square. The earlier claim that 2px was the dominant current system came from a legacy CSS bundle and is not promoted in this pass.\n\nTypography is consistently Pretendard across the five inspected surfaces. The collector matched loaded Pretendard font faces to 603 visible elements spanning body, headings, buttons, cards, and list items. `swiper-icons` was declared but not used for visible text. BM JUA was not declared or visibly used in this fresh capture, so it is not a current UI or marketing token; its earlier promotion has been removed. The observed hierarchy relies mainly on 16px body and labels, 14px supporting copy, and 18–20px headings with 400/500/700 weights.\n\n**Key Characteristics:**\n- Loaded Pretendard across all five current public web surfaces\n- Current accent `#13bd7e`; deeper action green `#06a96c`\n- White `#ffffff` canvas with `#111111` foreground, `#555c68` secondary text, and `#9fa4b0` muted metadata\n- Role-specific 6px / 16px / 24px / full-pill geometry\n- 8px, 12px, 16px, and 24px as recurring useful spacing values\n- Public product evidence covers buttons, cards, and list/disclosure rows; inputs, charts, dialogs, and authenticated app states remain unpromoted",
+    "colors": {
+      "primary": "#13bd7e",
+      "action": "#06a96c",
+      "canvas": "#ffffff",
+      "foreground": "#111111",
+      "secondary": "#555c68",
+      "muted": "#9fa4b0",
+      "line": "#f0f2f5"
+    },
+    "typography": {
+      "heading": {
+        "size": 20,
+        "weight": 700,
+        "lineHeight": 1.4,
+        "tracking": 0,
+        "use": "Product and safety section headings",
+        "script": "ko",
+        "fontFamily": "Pretendard",
+        "fontSize": "20px",
+        "fontWeight": 700,
+        "letterSpacing": "0px"
+      },
+      "body": {
+        "size": 16,
+        "weight": 400,
+        "lineHeight": 1.5,
+        "use": "Shared product body and list content",
+        "script": "ko",
+        "fontFamily": "Pretendard",
+        "fontSize": "16px",
+        "fontWeight": 400
+      },
+      "label": {
+        "size": 16,
+        "weight": 700,
+        "lineHeight": 1.625,
+        "tracking": -0.08,
+        "use": "Prominent product labels and actions",
+        "script": "ko",
+        "fontFamily": "Pretendard",
+        "fontSize": "16px",
+        "fontWeight": 700,
+        "letterSpacing": "-0.08px"
+      },
+      "caption": {
+        "size": 14,
+        "weight": 500,
+        "lineHeight": 1.43,
+        "tracking": -0.07,
+        "use": "Product metadata and helper text",
+        "script": "ko",
+        "fontFamily": "Pretendard",
+        "fontSize": "14px",
+        "fontWeight": 500,
+        "letterSpacing": "-0.07px"
+      }
+    },
+    "components": {
+      "primary-action": {
+        "type": "button",
+        "bg": "#06a96c",
+        "fg": "#ffffff",
+        "radius": "16px",
+        "padding": "16px 20px",
+        "height": "56px",
+        "font": "16px / 700",
+        "states": "default captured; no safe active interaction expansion",
+        "use": "Full-width primary action in the public interest-rate flow",
+        "backgroundColor": "#06a96c",
+        "textColor": "#ffffff",
+        "rounded": "16px"
+      },
+      "filter-chip": {
+        "type": "button",
+        "bg": "rgba(19,189,126,0.15)",
+        "fg": "#13bd7e",
+        "radius": "6px",
+        "padding": "10px 12px",
+        "font": "16px / 500",
+        "states": "default captured; no safe active interaction expansion",
+        "use": "Content-directory category or filter action",
+        "backgroundColor": "rgba(19,189,126,0.15)",
+        "textColor": "#13bd7e",
+        "rounded": "6px"
+      },
+      "safety-card": {
+        "type": "card",
+        "bg": "#ffffff",
+        "border": "1px solid #f0f2f5",
+        "radius": "24px",
+        "padding": "24px",
+        "use": "Customer-safety action and guidance card",
+        "backgroundColor": "#ffffff",
+        "rounded": "24px"
+      },
+      "disclosure-row": {
+        "type": "listItem",
+        "bg": "transparent",
+        "fg": "#111111",
+        "radius": "0px",
+        "padding": "24px 20px",
+        "font": "16px / 400",
+        "use": "Expandable disclosure row on a public card product detail",
+        "backgroundColor": "transparent",
+        "textColor": "#111111",
+        "rounded": "0px"
+      }
+    },
+    "spacing": {
+      "sm": "8px",
+      "md": "12px",
+      "base": "16px",
+      "lg": "24px"
+    },
+    "rounded": {
+      "chip": "6px",
+      "action": "16px",
+      "card": "24px",
+      "full": "9999px"
+    }
+  },
+  "brandAsset": {
+    "type": "text-wordmark",
+    "label": "Banksalad"
+  }
+}

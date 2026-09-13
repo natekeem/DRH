@@ -1,0 +1,37 @@
+[
+  {
+    "slug": "toss",
+    "url": "https://tossmini-docs.toss.im/tds-mobile/",
+    "status": 200,
+    "title": "Toss Design System | Mobile",
+    "heading": [
+      "TDS를 소개해요"
+    ],
+    "finalUrl": "https://tossmini-docs.toss.im/tds-mobile/",
+    "checkedAt": "2026-09-12"
+  },
+  {
+    "slug": "karrot",
+    "url": "https://v2.seed-design.io/",
+    "status": 200,
+    "title": "SEED Design",
+    "heading": [
+      "SEED Design",
+      "Component",
+      "Primitive"
+    ],
+    "finalUrl": "https://v2.seed-design.io/",
+    "checkedAt": "2026-09-12"
+  },
+  {
+    "slug": "socar",
+    "url": "https://design.socar.kr/",
+    "status": 200,
+    "title": "새로운 쏘카 | 쏘카 브랜드 센터",
+    "heading": [
+      ""
+    ],
+    "finalUrl": "https://design.socar.kr/",
+    "checkedAt": "2026-09-12"
+  }
+]

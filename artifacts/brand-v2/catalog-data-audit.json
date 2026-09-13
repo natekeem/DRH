@@ -1,16 +1,16 @@
 {
   "coverage": {
-    "totalBrands": 74,
-    "brandsWithResources": 13,
-    "totalLinks": 18,
+    "totalBrands": 91,
+    "brandsWithResources": 22,
+    "totalLinks": 27,
     "types": {
-      "brand-guidelines": 4,
-      "design-system": 4,
-      "developer-design-guide": 1,
+      "brand-guidelines": 6,
+      "design-system": 7,
+      "developer-design-guide": 3,
       "typography": 2,
       "components": 0,
-      "assets": 7,
-      "other": 0
+      "assets": 8,
+      "other": 1
     }
   },
   "entries": [
@@ -392,12 +392,12 @@
         {
           "type": "design-system",
           "label": "Human Interface Guidelines",
-          "url": "https://developer.apple.com/design/human-interface-guidelines/",
+          "url": "https://developer.apple.com/design/human-interface-guidelines",
           "source": "official",
           "checkedAt": "2026-09-12",
           "description": "Apple 플랫폼의 인터페이스 원칙과 컴포넌트 가이드입니다.",
           "evidence": {
-            "url": "https://developer.apple.com/design/human-interface-guidelines/",
+            "url": "https://developer.apple.com/design/human-interface-guidelines",
             "title": "Human Interface Guidelines | Apple Developer Documentation",
             "method": "Official domain, rendered heading and page content reviewed on 2026-09-12"
           }
@@ -8925,6 +8925,1608 @@
         }
       ],
       "officialResources": []
+    },
+    {
+      "slug": "29cm",
+      "components": 5,
+      "roles": 7,
+      "sections": [
+        {
+          "type": "overview",
+          "id": "overview",
+          "label": "Overview · 브랜드 특징"
+        },
+        {
+          "type": "colors",
+          "id": "colors",
+          "label": "Colors",
+          "count": 8
+        },
+        {
+          "type": "typography",
+          "id": "typography",
+          "label": "Typography",
+          "count": 7
+        },
+        {
+          "type": "components",
+          "id": "buttons",
+          "label": "Buttons · 버튼",
+          "kind": "buttons",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "other",
+          "label": "기타 구성요소",
+          "kind": "other",
+          "count": 2
+        },
+        {
+          "type": "geometry",
+          "id": "geometry",
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
+        },
+        {
+          "type": "layout",
+          "id": "layout",
+          "label": "Layout DNA"
+        },
+        {
+          "type": "source",
+          "id": "source",
+          "label": "Source notes"
+        }
+      ],
+      "themes": [
+        {
+          "id": "light",
+          "label": "Light",
+          "colors": {
+            "canvas": "#ffffff",
+            "surface": "#ffffff",
+            "text": "#111111",
+            "muted": "#5d5d5d",
+            "border": "#dddddd"
+          },
+          "evidence": [
+            "normalized source palette"
+          ]
+        }
+      ],
+      "officialResources": []
+    },
+    {
+      "slug": "baemin",
+      "components": 7,
+      "roles": 8,
+      "sections": [
+        {
+          "type": "overview",
+          "id": "overview",
+          "label": "Overview · 브랜드 특징"
+        },
+        {
+          "type": "colors",
+          "id": "colors",
+          "label": "Colors",
+          "count": 11
+        },
+        {
+          "type": "typography",
+          "id": "typography",
+          "label": "Typography",
+          "count": 8
+        },
+        {
+          "type": "components",
+          "id": "buttons",
+          "label": "Buttons · 버튼",
+          "kind": "buttons",
+          "count": 7
+        },
+        {
+          "type": "geometry",
+          "id": "geometry",
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
+        },
+        {
+          "type": "layout",
+          "id": "layout",
+          "label": "Layout DNA"
+        },
+        {
+          "type": "source",
+          "id": "source",
+          "label": "Source notes"
+        }
+      ],
+      "themes": [
+        {
+          "id": "light",
+          "label": "Light",
+          "colors": {
+            "canvas": "#ffffff",
+            "surface": "#ffffff",
+            "text": "#111111",
+            "muted": "#111111",
+            "border": "currentColor"
+          },
+          "evidence": [
+            "normalized source palette"
+          ]
+        }
+      ],
+      "officialResources": []
+    },
+    {
+      "slug": "banksalad",
+      "components": 4,
+      "roles": 4,
+      "sections": [
+        {
+          "type": "overview",
+          "id": "overview",
+          "label": "Overview · 브랜드 특징"
+        },
+        {
+          "type": "colors",
+          "id": "colors",
+          "label": "Colors",
+          "count": 7
+        },
+        {
+          "type": "typography",
+          "id": "typography",
+          "label": "Typography",
+          "count": 4
+        },
+        {
+          "type": "components",
+          "id": "buttons",
+          "label": "Buttons · 버튼",
+          "kind": "buttons",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "cards",
+          "label": "Cards · 카드",
+          "kind": "cards",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "tables",
+          "label": "Tables · 표",
+          "kind": "tables",
+          "count": 1
+        },
+        {
+          "type": "geometry",
+          "id": "geometry",
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
+        },
+        {
+          "type": "layout",
+          "id": "layout",
+          "label": "Layout DNA"
+        },
+        {
+          "type": "source",
+          "id": "source",
+          "label": "Source notes"
+        }
+      ],
+      "themes": [
+        {
+          "id": "light",
+          "label": "Light",
+          "colors": {
+            "canvas": "#ffffff",
+            "surface": "#ffffff",
+            "text": "#111111",
+            "muted": "#9fa4b0",
+            "border": "currentColor"
+          },
+          "evidence": [
+            "normalized source palette"
+          ]
+        }
+      ],
+      "officialResources": []
+    },
+    {
+      "slug": "coupang",
+      "components": 2,
+      "roles": 4,
+      "sections": [
+        {
+          "type": "overview",
+          "id": "overview",
+          "label": "Overview · 브랜드 특징"
+        },
+        {
+          "type": "colors",
+          "id": "colors",
+          "label": "Colors",
+          "count": 6
+        },
+        {
+          "type": "typography",
+          "id": "typography",
+          "label": "Typography",
+          "count": 4
+        },
+        {
+          "type": "components",
+          "id": "navigation",
+          "label": "Navigation · 탐색",
+          "kind": "navigation",
+          "count": 2
+        },
+        {
+          "type": "geometry",
+          "id": "geometry",
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
+        },
+        {
+          "type": "layout",
+          "id": "layout",
+          "label": "Layout DNA"
+        },
+        {
+          "type": "source",
+          "id": "source",
+          "label": "Source notes"
+        }
+      ],
+      "themes": [
+        {
+          "id": "light",
+          "label": "Light",
+          "colors": {
+            "canvas": "#ffffff",
+            "surface": "#ffffff",
+            "text": "#111111",
+            "muted": "#111111",
+            "border": "#e5e7eb"
+          },
+          "evidence": [
+            "normalized source palette"
+          ]
+        }
+      ],
+      "officialResources": []
+    },
+    {
+      "slug": "hyundai",
+      "components": 1,
+      "roles": 3,
+      "sections": [
+        {
+          "type": "overview",
+          "id": "overview",
+          "label": "Overview · 브랜드 특징"
+        },
+        {
+          "type": "colors",
+          "id": "colors",
+          "label": "Colors",
+          "count": 8
+        },
+        {
+          "type": "typography",
+          "id": "typography",
+          "label": "Typography",
+          "count": 3
+        },
+        {
+          "type": "components",
+          "id": "tabs",
+          "label": "Tabs · 탭",
+          "kind": "tabs",
+          "count": 1
+        },
+        {
+          "type": "geometry",
+          "id": "geometry",
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
+        },
+        {
+          "type": "layout",
+          "id": "layout",
+          "label": "Layout DNA"
+        },
+        {
+          "type": "source",
+          "id": "source",
+          "label": "Source notes"
+        }
+      ],
+      "themes": [
+        {
+          "id": "light",
+          "label": "Light",
+          "colors": {
+            "canvas": "#ffffff",
+            "surface": "#ffffff",
+            "text": "#000000",
+            "muted": "#999999",
+            "border": "currentColor"
+          },
+          "evidence": [
+            "normalized source palette"
+          ]
+        }
+      ],
+      "officialResources": []
+    },
+    {
+      "slug": "kakao",
+      "components": 6,
+      "roles": 8,
+      "sections": [
+        {
+          "type": "official-resources",
+          "id": "official",
+          "label": "Official Resources · 공식 가이드",
+          "count": 1
+        },
+        {
+          "type": "overview",
+          "id": "overview",
+          "label": "Overview · 브랜드 특징"
+        },
+        {
+          "type": "colors",
+          "id": "colors",
+          "label": "Colors",
+          "count": 11
+        },
+        {
+          "type": "typography",
+          "id": "typography",
+          "label": "Typography",
+          "count": 8
+        },
+        {
+          "type": "components",
+          "id": "buttons",
+          "label": "Buttons · 버튼",
+          "kind": "buttons",
+          "count": 5
+        },
+        {
+          "type": "components",
+          "id": "badges",
+          "label": "Badges · 배지",
+          "kind": "badges",
+          "count": 1
+        },
+        {
+          "type": "geometry",
+          "id": "geometry",
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
+        },
+        {
+          "type": "layout",
+          "id": "layout",
+          "label": "Layout DNA"
+        },
+        {
+          "type": "source",
+          "id": "source",
+          "label": "Source notes"
+        }
+      ],
+      "themes": [
+        {
+          "id": "light",
+          "label": "Light",
+          "colors": {
+            "canvas": "#ffffff",
+            "surface": "#eeeeee",
+            "text": "#111111",
+            "muted": "#888888",
+            "border": "#dbdbdb"
+          },
+          "evidence": [
+            "normalized source palette"
+          ]
+        }
+      ],
+      "officialResources": [
+        {
+          "type": "developer-design-guide",
+          "label": "카카오 로그인 디자인 가이드",
+          "url": "https://developers.kakao.com/docs/ko/kakaologin/design-guide",
+          "source": "official",
+          "checkedAt": "2026-09-12",
+          "description": "카카오 로그인 버튼의 색상·크기·표시 규칙입니다.",
+          "evidence": {
+            "url": "https://developers.kakao.com/docs/ko/kakaologin/design-guide",
+            "title": "카카오 로그인 > 디자인 가이드 - 카카오디벨로퍼스 | 문서",
+            "method": "Official domain and primary page content reviewed; link-only, separate asset rights."
+          }
+        }
+      ]
+    },
+    {
+      "slug": "kakaobank",
+      "components": 5,
+      "roles": 6,
+      "sections": [
+        {
+          "type": "official-resources",
+          "id": "official",
+          "label": "Official Resources · 공식 가이드",
+          "count": 1
+        },
+        {
+          "type": "overview",
+          "id": "overview",
+          "label": "Overview · 브랜드 특징"
+        },
+        {
+          "type": "colors",
+          "id": "colors",
+          "label": "Colors",
+          "count": 7
+        },
+        {
+          "type": "typography",
+          "id": "typography",
+          "label": "Typography",
+          "count": 6
+        },
+        {
+          "type": "components",
+          "id": "buttons",
+          "label": "Buttons · 버튼",
+          "kind": "buttons",
+          "count": 3
+        },
+        {
+          "type": "components",
+          "id": "tabs",
+          "label": "Tabs · 탭",
+          "kind": "tabs",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "tables",
+          "label": "Tables · 표",
+          "kind": "tables",
+          "count": 1
+        },
+        {
+          "type": "geometry",
+          "id": "geometry",
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
+        },
+        {
+          "type": "layout",
+          "id": "layout",
+          "label": "Layout DNA"
+        },
+        {
+          "type": "source",
+          "id": "source",
+          "label": "Source notes"
+        }
+      ],
+      "themes": [
+        {
+          "id": "light",
+          "label": "Light",
+          "colors": {
+            "canvas": "#ffffff",
+            "surface": "#f7f7f7",
+            "text": "#444444",
+            "muted": "#444444",
+            "border": "currentColor"
+          },
+          "evidence": [
+            "normalized source palette"
+          ]
+        }
+      ],
+      "officialResources": [
+        {
+          "type": "assets",
+          "label": "카카오뱅크 브랜드 리소스",
+          "url": "https://www.kakaobank.com/view/about/brand/resource",
+          "source": "official",
+          "checkedAt": "2026-09-12",
+          "description": "심볼·워드마크·색상·최소 여백과 다운로드 자료입니다.",
+          "evidence": {
+            "url": "https://www.kakaobank.com/view/about/brand/resource",
+            "title": "브랜드 리소스 | 카카오뱅크",
+            "method": "Official domain and primary page content reviewed; link-only, separate asset rights."
+          }
+        }
+      ]
+    },
+    {
+      "slug": "kakaopay",
+      "components": 4,
+      "roles": 3,
+      "sections": [
+        {
+          "type": "official-resources",
+          "id": "official",
+          "label": "Official Resources · 공식 가이드",
+          "count": 1
+        },
+        {
+          "type": "overview",
+          "id": "overview",
+          "label": "Overview · 브랜드 특징"
+        },
+        {
+          "type": "colors",
+          "id": "colors",
+          "label": "Colors",
+          "count": 7
+        },
+        {
+          "type": "typography",
+          "id": "typography",
+          "label": "Typography",
+          "count": 3
+        },
+        {
+          "type": "components",
+          "id": "buttons",
+          "label": "Buttons · 버튼",
+          "kind": "buttons",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "cards",
+          "label": "Cards · 카드",
+          "kind": "cards",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "badges",
+          "label": "Badges · 배지",
+          "kind": "badges",
+          "count": 1
+        },
+        {
+          "type": "geometry",
+          "id": "geometry",
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
+        },
+        {
+          "type": "layout",
+          "id": "layout",
+          "label": "Layout DNA"
+        },
+        {
+          "type": "source",
+          "id": "source",
+          "label": "Source notes"
+        }
+      ],
+      "themes": [
+        {
+          "id": "light",
+          "label": "Light",
+          "colors": {
+            "canvas": "#ffffff",
+            "surface": "#f3f3f3",
+            "text": "#000000",
+            "muted": "#666666",
+            "border": "currentColor"
+          },
+          "evidence": [
+            "normalized source palette"
+          ]
+        }
+      ],
+      "officialResources": [
+        {
+          "type": "other",
+          "label": "카카오페이 접근성 디자인",
+          "url": "https://story.kakaopay.com/225-kakaopay-design/",
+          "source": "official",
+          "checkedAt": "2026-09-12",
+          "description": "차별 없는 디자인과 접근성에 관한 공식 디자인 글입니다.",
+          "evidence": {
+            "url": "https://story.kakaopay.com/225-kakaopay-design/",
+            "title": "모두를 위한 디자인, 차별 없는 디자인 - 카카오페이 블로그",
+            "method": "Official domain and primary page content reviewed; link-only, separate asset rights."
+          }
+        }
+      ]
+    },
+    {
+      "slug": "karrot",
+      "components": 5,
+      "roles": 6,
+      "sections": [
+        {
+          "type": "official-resources",
+          "id": "official",
+          "label": "Official Resources · 공식 가이드",
+          "count": 1
+        },
+        {
+          "type": "overview",
+          "id": "overview",
+          "label": "Overview · 브랜드 특징"
+        },
+        {
+          "type": "colors",
+          "id": "colors",
+          "label": "Colors",
+          "count": 15
+        },
+        {
+          "type": "typography",
+          "id": "typography",
+          "label": "Typography",
+          "count": 6
+        },
+        {
+          "type": "components",
+          "id": "buttons",
+          "label": "Buttons · 버튼",
+          "kind": "buttons",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "tabs",
+          "label": "Tabs · 탭",
+          "kind": "tabs",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "other",
+          "label": "기타 구성요소",
+          "kind": "other",
+          "count": 1
+        },
+        {
+          "type": "geometry",
+          "id": "geometry",
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
+        },
+        {
+          "type": "layout",
+          "id": "layout",
+          "label": "Layout DNA"
+        },
+        {
+          "type": "source",
+          "id": "source",
+          "label": "Source notes"
+        }
+      ],
+      "themes": [
+        {
+          "id": "light",
+          "label": "Light",
+          "colors": {
+            "canvas": "#ffffff",
+            "surface": "#f7f8fa",
+            "text": "#111111",
+            "muted": "#868b94",
+            "border": "#eaebee"
+          },
+          "evidence": [
+            "normalized source palette"
+          ]
+        }
+      ],
+      "officialResources": [
+        {
+          "type": "design-system",
+          "label": "SEED Design",
+          "url": "https://seed-design.io/",
+          "source": "official",
+          "checkedAt": "2026-09-13",
+          "description": "당근의 현재 디자인 시스템과 컴포넌트·인터랙션 가이드입니다.",
+          "evidence": {
+            "url": "https://seed-design.io/",
+            "title": "SEED Design System",
+            "method": "Official domain and rendered page content reviewed; link-only, asset rights remain separate."
+          }
+        }
+      ]
+    },
+    {
+      "slug": "kurly",
+      "components": 3,
+      "roles": 3,
+      "sections": [
+        {
+          "type": "overview",
+          "id": "overview",
+          "label": "Overview · 브랜드 특징"
+        },
+        {
+          "type": "colors",
+          "id": "colors",
+          "label": "Colors",
+          "count": 8
+        },
+        {
+          "type": "typography",
+          "id": "typography",
+          "label": "Typography",
+          "count": 3
+        },
+        {
+          "type": "components",
+          "id": "buttons",
+          "label": "Buttons · 버튼",
+          "kind": "buttons",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "cards",
+          "label": "Cards · 카드",
+          "kind": "cards",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 1
+        },
+        {
+          "type": "geometry",
+          "id": "geometry",
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
+        },
+        {
+          "type": "layout",
+          "id": "layout",
+          "label": "Layout DNA"
+        },
+        {
+          "type": "source",
+          "id": "source",
+          "label": "Source notes"
+        }
+      ],
+      "themes": [
+        {
+          "id": "light",
+          "label": "Light",
+          "colors": {
+            "canvas": "#ffffff",
+            "surface": "#ffffff",
+            "text": "#464c52",
+            "muted": "#999999",
+            "border": "#dfe4eb"
+          },
+          "evidence": [
+            "normalized source palette"
+          ]
+        }
+      ],
+      "officialResources": []
+    },
+    {
+      "slug": "musinsa",
+      "components": 4,
+      "roles": 2,
+      "sections": [
+        {
+          "type": "overview",
+          "id": "overview",
+          "label": "Overview · 브랜드 특징"
+        },
+        {
+          "type": "colors",
+          "id": "colors",
+          "label": "Colors",
+          "count": 5
+        },
+        {
+          "type": "typography",
+          "id": "typography",
+          "label": "Typography",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "buttons",
+          "label": "Buttons · 버튼",
+          "kind": "buttons",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "cards",
+          "label": "Cards · 카드",
+          "kind": "cards",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 1
+        },
+        {
+          "type": "geometry",
+          "id": "geometry",
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
+        },
+        {
+          "type": "layout",
+          "id": "layout",
+          "label": "Layout DNA"
+        },
+        {
+          "type": "source",
+          "id": "source",
+          "label": "Source notes"
+        }
+      ],
+      "themes": [
+        {
+          "id": "light",
+          "label": "Light",
+          "colors": {
+            "canvas": "#ffffff",
+            "surface": "#ffffff",
+            "text": "#111111",
+            "muted": "#666666",
+            "border": "currentColor"
+          },
+          "evidence": [
+            "normalized source palette"
+          ]
+        }
+      ],
+      "officialResources": []
+    },
+    {
+      "slug": "naver",
+      "components": 8,
+      "roles": 5,
+      "sections": [
+        {
+          "type": "official-resources",
+          "id": "official",
+          "label": "Official Resources · 공식 가이드",
+          "count": 1
+        },
+        {
+          "type": "overview",
+          "id": "overview",
+          "label": "Overview · 브랜드 특징"
+        },
+        {
+          "type": "colors",
+          "id": "colors",
+          "label": "Colors",
+          "count": 9
+        },
+        {
+          "type": "typography",
+          "id": "typography",
+          "label": "Typography",
+          "count": 5
+        },
+        {
+          "type": "components",
+          "id": "buttons",
+          "label": "Buttons · 버튼",
+          "kind": "buttons",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "cards",
+          "label": "Cards · 카드",
+          "kind": "cards",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "badges",
+          "label": "Badges · 배지",
+          "kind": "badges",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "tabs",
+          "label": "Tabs · 탭",
+          "kind": "tabs",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "navigation",
+          "label": "Navigation · 탐색",
+          "kind": "navigation",
+          "count": 1
+        },
+        {
+          "type": "geometry",
+          "id": "geometry",
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
+        },
+        {
+          "type": "layout",
+          "id": "layout",
+          "label": "Layout DNA"
+        },
+        {
+          "type": "source",
+          "id": "source",
+          "label": "Source notes"
+        }
+      ],
+      "themes": [
+        {
+          "id": "light",
+          "label": "Light",
+          "colors": {
+            "canvas": "#ffffff",
+            "surface": "#ffffff",
+            "text": "#111111",
+            "muted": "#111111",
+            "border": "#e5e5e5"
+          },
+          "evidence": [
+            "normalized source palette"
+          ]
+        }
+      ],
+      "officialResources": [
+        {
+          "type": "brand-guidelines",
+          "label": "NAVER 브랜드 리소스",
+          "url": "https://www.navercorp.com/company/brandGuide",
+          "source": "official",
+          "checkedAt": "2026-09-12",
+          "description": "네이버 브랜드 로고와 사용 가이드입니다.",
+          "evidence": {
+            "url": "https://www.navercorp.com/company/brandGuide",
+            "title": "브랜드 리소스 l NAVER Corp.",
+            "method": "Official domain and primary page content reviewed; link-only, separate asset rights."
+          }
+        }
+      ]
+    },
+    {
+      "slug": "oliveyoung",
+      "components": 1,
+      "roles": 2,
+      "sections": [
+        {
+          "type": "overview",
+          "id": "overview",
+          "label": "Overview · 브랜드 특징"
+        },
+        {
+          "type": "colors",
+          "id": "colors",
+          "label": "Colors",
+          "count": 7
+        },
+        {
+          "type": "typography",
+          "id": "typography",
+          "label": "Typography",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "tabs",
+          "label": "Tabs · 탭",
+          "kind": "tabs",
+          "count": 1
+        },
+        {
+          "type": "geometry",
+          "id": "geometry",
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "layout",
+          "id": "layout",
+          "label": "Layout DNA"
+        },
+        {
+          "type": "source",
+          "id": "source",
+          "label": "Source notes"
+        }
+      ],
+      "themes": [
+        {
+          "id": "light",
+          "label": "Light",
+          "colors": {
+            "canvas": "#ffffff",
+            "surface": "#ffffff",
+            "text": "#111111",
+            "muted": "#111111",
+            "border": "currentColor"
+          },
+          "evidence": [
+            "normalized source palette"
+          ]
+        }
+      ],
+      "officialResources": []
+    },
+    {
+      "slug": "samsung",
+      "components": 1,
+      "roles": 3,
+      "sections": [
+        {
+          "type": "official-resources",
+          "id": "official",
+          "label": "Official Resources · 공식 가이드",
+          "count": 1
+        },
+        {
+          "type": "overview",
+          "id": "overview",
+          "label": "Overview · 브랜드 특징"
+        },
+        {
+          "type": "colors",
+          "id": "colors",
+          "label": "Colors",
+          "count": 8
+        },
+        {
+          "type": "typography",
+          "id": "typography",
+          "label": "Typography",
+          "count": 3
+        },
+        {
+          "type": "components",
+          "id": "tabs",
+          "label": "Tabs · 탭",
+          "kind": "tabs",
+          "count": 1
+        },
+        {
+          "type": "geometry",
+          "id": "geometry",
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
+        },
+        {
+          "type": "layout",
+          "id": "layout",
+          "label": "Layout DNA"
+        },
+        {
+          "type": "source",
+          "id": "source",
+          "label": "Source notes"
+        }
+      ],
+      "themes": [
+        {
+          "id": "light",
+          "label": "Light",
+          "colors": {
+            "canvas": "#ffffff",
+            "surface": "#f7f7f7",
+            "text": "#111111",
+            "muted": "#707070",
+            "border": "#dddddd"
+          },
+          "evidence": [
+            "normalized source palette"
+          ]
+        }
+      ],
+      "officialResources": [
+        {
+          "type": "developer-design-guide",
+          "label": "Samsung One UI",
+          "url": "https://developer.samsung.com/one-ui",
+          "source": "official",
+          "checkedAt": "2026-09-12",
+          "description": "One UI 설계 원칙과 개발자 문서입니다.",
+          "evidence": {
+            "url": "https://developer.samsung.com/one-ui",
+            "title": "One UI | Samsung Developer",
+            "method": "Official domain and primary page content reviewed; link-only, separate asset rights."
+          }
+        }
+      ]
+    },
+    {
+      "slug": "socar",
+      "components": 4,
+      "roles": 4,
+      "sections": [
+        {
+          "type": "official-resources",
+          "id": "official",
+          "label": "Official Resources · 공식 가이드",
+          "count": 1
+        },
+        {
+          "type": "overview",
+          "id": "overview",
+          "label": "Overview · 브랜드 특징"
+        },
+        {
+          "type": "colors",
+          "id": "colors",
+          "label": "Colors",
+          "count": 8
+        },
+        {
+          "type": "typography",
+          "id": "typography",
+          "label": "Typography",
+          "count": 4
+        },
+        {
+          "type": "components",
+          "id": "buttons",
+          "label": "Buttons · 버튼",
+          "kind": "buttons",
+          "count": 3
+        },
+        {
+          "type": "components",
+          "id": "other",
+          "label": "기타 구성요소",
+          "kind": "other",
+          "count": 1
+        },
+        {
+          "type": "geometry",
+          "id": "geometry",
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "layout",
+          "id": "layout",
+          "label": "Layout DNA"
+        },
+        {
+          "type": "source",
+          "id": "source",
+          "label": "Source notes"
+        }
+      ],
+      "themes": [
+        {
+          "id": "light",
+          "label": "Light",
+          "colors": {
+            "canvas": "#ffffff",
+            "surface": "#f2f3f8",
+            "text": "#111111",
+            "muted": "#b4bbcb",
+            "border": "#e5e8ef"
+          },
+          "evidence": [
+            "normalized source palette"
+          ]
+        }
+      ],
+      "officialResources": [
+        {
+          "type": "brand-guidelines",
+          "label": "쏘카 브랜드 센터",
+          "url": "https://design.socar.kr/",
+          "source": "official",
+          "checkedAt": "2026-09-12",
+          "description": "쏘카의 브랜드 방향과 시각 아이덴티티를 소개합니다.",
+          "evidence": {
+            "url": "https://design.socar.kr/",
+            "title": "새로운 쏘카 | 쏘카 브랜드 센터",
+            "method": "Official domain and rendered page content reviewed; link-only, asset rights remain separate."
+          }
+        }
+      ]
+    },
+    {
+      "slug": "toss",
+      "components": 6,
+      "roles": 6,
+      "sections": [
+        {
+          "type": "official-resources",
+          "id": "official",
+          "label": "Official Resources · 공식 가이드",
+          "count": 1
+        },
+        {
+          "type": "overview",
+          "id": "overview",
+          "label": "Overview · 브랜드 특징"
+        },
+        {
+          "type": "colors",
+          "id": "colors",
+          "label": "Colors",
+          "count": 12
+        },
+        {
+          "type": "typography",
+          "id": "typography",
+          "label": "Typography",
+          "count": 6
+        },
+        {
+          "type": "components",
+          "id": "buttons",
+          "label": "Buttons · 버튼",
+          "kind": "buttons",
+          "count": 3
+        },
+        {
+          "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "badges",
+          "label": "Badges · 배지",
+          "kind": "badges",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "other",
+          "label": "기타 구성요소",
+          "kind": "other",
+          "count": 1
+        },
+        {
+          "type": "geometry",
+          "id": "geometry",
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
+        },
+        {
+          "type": "layout",
+          "id": "layout",
+          "label": "Layout DNA"
+        },
+        {
+          "type": "source",
+          "id": "source",
+          "label": "Source notes"
+        }
+      ],
+      "themes": [
+        {
+          "id": "light",
+          "label": "Light",
+          "colors": {
+            "canvas": "#ffffff",
+            "surface": "#f2f4f6",
+            "text": "#4e5968",
+            "muted": "#8b95a1",
+            "border": "#e5e8eb"
+          },
+          "evidence": [
+            "normalized source palette"
+          ]
+        }
+      ],
+      "officialResources": [
+        {
+          "type": "design-system",
+          "label": "Toss Design System Mobile",
+          "url": "https://tossmini-docs.toss.im/tds-mobile/",
+          "source": "official",
+          "checkedAt": "2026-09-12",
+          "description": "토스 모바일 디자인 시스템의 기초 스타일과 컴포넌트 문서입니다.",
+          "evidence": {
+            "url": "https://tossmini-docs.toss.im/tds-mobile/",
+            "title": "Toss Design System | Mobile",
+            "method": "Official domain and rendered page content reviewed; link-only, asset rights remain separate."
+          }
+        }
+      ]
+    },
+    {
+      "slug": "yeogiotte",
+      "components": 5,
+      "roles": 5,
+      "sections": [
+        {
+          "type": "official-resources",
+          "id": "official",
+          "label": "Official Resources · 공식 가이드",
+          "count": 1
+        },
+        {
+          "type": "overview",
+          "id": "overview",
+          "label": "Overview · 브랜드 특징"
+        },
+        {
+          "type": "colors",
+          "id": "colors",
+          "label": "Colors",
+          "count": 9
+        },
+        {
+          "type": "typography",
+          "id": "typography",
+          "label": "Typography",
+          "count": 5
+        },
+        {
+          "type": "components",
+          "id": "buttons",
+          "label": "Buttons · 버튼",
+          "kind": "buttons",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "cards",
+          "label": "Cards · 카드",
+          "kind": "cards",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "inputs",
+          "label": "Forms · 입력",
+          "kind": "inputs",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "badges",
+          "label": "Badges · 배지",
+          "kind": "badges",
+          "count": 2
+        },
+        {
+          "type": "geometry",
+          "id": "geometry",
+          "label": "Spacing & Radius · 간격과 모서리"
+        },
+        {
+          "type": "elevation",
+          "id": "elevation",
+          "label": "Elevation · 깊이와 경계"
+        },
+        {
+          "type": "responsive",
+          "id": "responsive",
+          "label": "Responsive · 반응형"
+        },
+        {
+          "type": "layout",
+          "id": "layout",
+          "label": "Layout DNA"
+        },
+        {
+          "type": "source",
+          "id": "source",
+          "label": "Source notes"
+        }
+      ],
+      "themes": [
+        {
+          "id": "light",
+          "label": "Light",
+          "colors": {
+            "canvas": "#ffffff",
+            "surface": "#ffffff",
+            "text": "#111111",
+            "muted": "#111111",
+            "border": "#e6e6e6"
+          },
+          "evidence": [
+            "normalized source palette"
+          ]
+        }
+      ],
+      "officialResources": [
+        {
+          "type": "design-system",
+          "label": "여기어때 Design Library",
+          "url": "https://designlibrary.yeogi.com/",
+          "source": "official",
+          "checkedAt": "2026-09-12",
+          "description": "브랜드·기초 스타일·앱과 웹 컴포넌트 가이드입니다.",
+          "evidence": {
+            "url": "https://designlibrary.yeogi.com/",
+            "title": "여기어때 Design Library",
+            "method": "Official domain and primary page content reviewed; link-only, separate asset rights."
+          }
+        }
+      ]
     }
   ]
 }

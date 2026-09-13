@@ -1,0 +1,58 @@
+[
+  {
+    "src": "http://127.0.0.1:5176/brand-assets/vercel/logo.svg",
+    "naturalWidth": 2048,
+    "naturalHeight": 407,
+    "fit": "contain",
+    "filter": "none"
+  },
+  {
+    "src": "http://127.0.0.1:5176/brand-assets/vercel/logo-dark.svg",
+    "naturalWidth": 2048,
+    "naturalHeight": 407,
+    "fit": "contain",
+    "filter": "none"
+  },
+  {
+    "src": "http://127.0.0.1:5176/brand-assets/supabase/logo.svg",
+    "naturalWidth": 109,
+    "naturalHeight": 113,
+    "fit": "contain",
+    "filter": "none"
+  },
+  {
+    "src": "http://127.0.0.1:5176/brand-assets/supabase/logo.svg",
+    "naturalWidth": 109,
+    "naturalHeight": 113,
+    "fit": "contain",
+    "filter": "none"
+  },
+  {
+    "src": "http://127.0.0.1:5176/brand-assets/linear/logo.svg",
+    "naturalWidth": 400,
+    "naturalHeight": 100,
+    "fit": "contain",
+    "filter": "none"
+  },
+  {
+    "src": "http://127.0.0.1:5176/brand-assets/linear/logo-dark.svg",
+    "naturalWidth": 400,
+    "naturalHeight": 100,
+    "fit": "contain",
+    "filter": "none"
+  },
+  {
+    "src": "http://127.0.0.1:5176/brand-assets/kakaobank/logo.svg",
+    "naturalWidth": 120,
+    "naturalHeight": 150,
+    "fit": "contain",
+    "filter": "none"
+  },
+  {
+    "src": "http://127.0.0.1:5176/brand-assets/kakaobank/logo-dark.svg",
+    "naturalWidth": 120,
+    "naturalHeight": 150,
+    "fit": "contain",
+    "filter": "none"
+  }
+]

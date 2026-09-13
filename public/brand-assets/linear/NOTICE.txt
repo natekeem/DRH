@@ -1,0 +1,17 @@
+{
+  "type": "verified-svg",
+  "format": "logotype",
+  "label": "Linear",
+  "src": "brand-assets/linear/logo.svg",
+  "darkSrc": "brand-assets/linear/logo-dark.svg",
+  "sourceUrl": "https://static.linear.app/design-assets/Linear-Brand-Assets.zip?v=3",
+  "evidenceUrl": "https://linear.app/brand",
+  "license": "Proprietary brand asset; official reference usage conditions, not MIT",
+  "attribution": "Linear 상표·로고는 Linear 소유입니다. 참고 문서 식별용이며 제휴·보증을 뜻하지 않습니다.",
+  "checkedAt": "2026-09-12",
+  "sha256": "6b8c0756d1dc581364c4a91782fc512727e4c47c7bacdfb7f4fbbab1d99c5066",
+  "darkSha256": "38edb7e21a41025b9c9c173557ddc2dac97bb0c3d977a2aab75d3586170f08ff",
+  "usageTerms": "Use unchanged only to refer to Linear; retain clear space; no affiliation, endorsement, combining graphics or use in own product name.",
+  "archiveSha256": "94e12fb9c93933e85e2e81cfeb535636ae535a82303fe9ee355e93cd35cc920a"
+}
+Original archive paths: wordmark-dark.svg; wordmark-light.svg. Files unchanged.

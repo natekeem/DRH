@@ -19,18 +19,21 @@ export function resolveBrandFont(role:Partial<BrandTypeRole>) {
  const family=declared.split(',')[0].replace(/["']/g,'').trim()
  const normalized=family.toLowerCase().replace(/[- ]|variable|display/g,'')
  const font=fonts.find(f=>f.family.toLowerCase().replace(/ /g,'')===normalized)
- if(font)return {kind:'open-font' as const,declared,family:font.family,stack:`"${font.localFamily}", ${/mono/i.test(font.family)?'monospace':/serif/i.test(font.family)?'serif':'sans-serif'}`,asset:font}
+ if(font){
+  const scriptFallback=role.script==='ko'&&font.family!=='Pretendard'?'Pretendard':undefined
+  return {status:'verified-brand-font' as const,kind:'open-font' as const,declared,family:font.family,scriptFallback,stack:`"${font.localFamily}", ${scriptFallback?'"Pretendard", ':''}${/mono/i.test(font.family)?'monospace':/serif/i.test(font.family)?'serif':'sans-serif'}`,asset:font}
+ }
  if(/^(SF Pro|SFMono|SF Mono|-apple-system|BlinkMacSystemFont|system-ui|ui-|Arial|Helvetica|Times New Roman|Georgia|Menlo|Monaco|Consolas)/i.test(family)) {
   const stack=/^SF Pro/i.test(family)?'-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif':/^SFMono|^SF Mono/i.test(family)?'ui-monospace, "Cascadia Code", Consolas, monospace':declared+', '+(/Times|Georgia/i.test(family)?'serif':/Mono|Consolas|Menlo/i.test(family)?'monospace':'sans-serif')
-  return {kind:'system-font' as const,declared,family:stack,stack}
+  return {status:'system-font' as const,kind:'system-font' as const,declared,family:stack,stack}
  }
  // Use an explicitly declared open fallback when available. Otherwise honor the source's generic family.
  const alternate=fonts.find(f=>declared.split(',').slice(1).some(s=>s.replace(/["']/g,'').trim()===f.family))
  const mono=/mono/i.test(declared)||/mono/i.test(role.renderFallback||'')
  const serif=/\bserif\b/i.test(declared)&&!/sans-serif/i.test(declared)
- const fallback=alternate?.family||(mono?'Geist Mono':serif?'Georgia':'Inter')
+ const fallback=alternate?.family||(role.script==='ko'?'Pretendard':mono?'Geist Mono':serif?'Georgia':'Inter')
  const stack=`"${fallback}", ${mono?'monospace':serif?'serif':'sans-serif'}`
- return {kind:declared?'proprietary' as const:'unspecified' as const,declared,family:fallback,stack}
+ return {status:declared?'proprietary-unavailable' as const:'unknown' as const,fallbackStatus:'verified-open-fallback' as const,kind:declared?'proprietary' as const:'unspecified' as const,declared,family:fallback,stack}
 }
 
 export function sourceLines(value:unknown):string[] {

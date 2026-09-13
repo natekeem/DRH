@@ -3,7 +3,7 @@ import {createRequire} from 'node:module'
 import {mkdir,writeFile,readFile} from 'node:fs/promises'
 const require=createRequire(import.meta.url),{chromium}=require(process.env.PLAYWRIGHT_PATH||'playwright'),sharp=require(process.env.SHARP_PATH||'sharp')
 const base=process.env.DRH_URL||'http://127.0.0.1:5174',out=process.env.DRH_QA_OUT||'artifacts/brand-v21'
-const canaries=['apple','airbnb','notion','linear.app','stripe','vercel','spotify','ferrari','nintendo-2001','binance','tesla','figma','ibm','supabase']
+const canaries=process.env.DRH_CANARIES?.split(',')||['apple','airbnb','notion','linear.app','stripe','vercel','spotify','ferrari','nintendo-2001','binance','tesla','figma','ibm','supabase']
 await mkdir(out,{recursive:true})
 const browser=await chromium.launch({executablePath:process.env.EDGE_PATH||'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',headless:true})
 const report={cards:[],details:[],expanded:[],errors:[],external:[],offline:false,focusTrap:false,reducedMotion:true}
@@ -13,12 +13,12 @@ try{
  for(const [width,height]of [[1920,1080],[1440,1000],[390,844]]){
   const context=await browser.newContext({viewport:{width,height},isMobile:width===390,hasTouch:width===390,reducedMotion:'reduce'}),page=await context.newPage()
   page.on('pageerror',e=>report.errors.push(e.message));page.on('request',r=>{if(!r.url().startsWith(base)&&!r.url().startsWith('data:'))report.external.push(r.url())})
-  await page.goto(base+'/tests/brand-designs/index.html')
+  await page.goto(base+'/tests/brand-designs/index.html?slugs='+canaries.join(','))
   const tiles=[]
   for(const slug of canaries){
    const card=page.locator('.reference-card').filter({has:page.locator('a[href="/reference/admd-'+slug+'"]')});await card.scrollIntoViewIfNeeded();const el=card.locator('.bc-card');await el.waitFor();await page.evaluate(()=>document.fonts.ready)
    const g=await geometry(el);assert(g.scrollWidth<=g.width+1&&g.scrollHeight<=g.height+1,slug+' card overflow '+width)
-   assert(await el.locator('.bc-micro').evaluate(e=>e.clientHeight)>=32,slug+' clipped micro specimen');assert.equal(await el.locator('.bc-identifier b').count(),1);assert(await el.locator('.bc-dna span').count()>=2);assert.equal(await el.locator('a').count(),0)
+   assert(await el.locator('.bc-micro').evaluate(e=>e.clientHeight)>=32,slug+' clipped micro specimen');assert(await el.locator('.bc-micro>span').count()>0,slug+' missing micro specimen');assert.equal(await el.locator('.bc-identifier b').count(),1);assert(await el.locator('.bc-dna span').count()>=2);assert.equal(await el.locator('a').count(),0)
    const path=out+'/card-'+slug+'-'+width+'.png';await el.screenshot({path});tiles.push(path);report.cards.push({slug,viewportWidth:width,...g})
   }
   const thumbs=await Promise.all(tiles.map(p=>sharp(p).resize(320,230,{fit:'contain',background:'#eee'}).toBuffer()))
@@ -45,7 +45,7 @@ try{
    await page.evaluate(()=>document.fonts.ready);
    await page.screenshot({path:out+'/expanded-'+slug+'-'+width+'.png'})
    const themeButtons=expanded.locator('.bc-themes button');if(await themeButtons.count()>1){const before=await expanded.getAttribute('data-theme');await themeButtons.filter({hasText:before==='dark'?'Light':'Dark'}).click();assert.notEqual(await expanded.getAttribute('data-theme'),before);assert.equal(await detail.getAttribute('data-theme'),await expanded.getAttribute('data-theme'));await themeButtons.filter({hasText:before==='dark'?'Dark':'Light'}).click()}
-   if(width===1440||width===390){await jump(expanded,'buttons');await page.screenshot({path:out+'/components-'+slug+'-'+width+'.png'})}
+   if((width===1440||width===390)&&await expanded.locator('[data-section=buttons]').count()){await jump(expanded,'buttons');await page.screenshot({path:out+'/components-'+slug+'-'+width+'.png'})}
    const button=expanded.locator('[data-kind=buttons] .bc-sample>button:not(:disabled)').first();if(await button.count()){await button.click();assert.equal(await button.getAttribute('aria-pressed'),'true')}
    const input=expanded.locator('.bc-field input:not([type=radio]):not([type=checkbox]):not(:disabled)').first();if(await input.count()){await input.fill('Catalog QA');assert.equal(await input.inputValue(),'Catalog QA')}
    const tabs=expanded.locator('[role=tablist]').first();if(await tabs.count()){await tabs.getByRole('tab').last().click();assert.equal(await tabs.getByRole('tab').last().getAttribute('aria-selected'),'true');await page.keyboard.press('ArrowLeft');assert.equal(await tabs.getByRole('tab').first().getAttribute('aria-selected'),'true')}
@@ -61,9 +61,9 @@ try{
    report.expanded.push({slug,viewportWidth:width,...eg,components:Object.keys(full.components).length,escape:true,close:true,restore:true,themes:await detail.locator('.bc-themes button').count()})
    console.log('PASS',slug,width)
   }
-  if(width===390){await context.setOffline(true);await page.locator('.bc-detail').getByRole('button',{name:'크게 보기'}).click();await page.locator('.bc-expanded [data-kind=buttons] .bc-sample>button:not(:disabled)').first().click();await page.keyboard.press('Escape');report.offline=true;await context.setOffline(false)}
+  if(width===390){await context.setOffline(true);await page.locator('.bc-detail').getByRole('button',{name:'크게 보기'}).click();const sample=page.locator('.bc-expanded [data-kind=buttons] .bc-sample>button:not(:disabled)').first();if(await sample.count())await sample.click();else {const tab=page.locator('.bc-expanded [role=tab]').last();if(await tab.count())await tab.click();else await page.locator('.bc-expanded .bc-sample nav button').first().click()}await page.keyboard.press('Escape');report.offline=true;await context.setOffline(false)}
   await context.close()
  }
  assert.equal(report.errors.length,0,report.errors.join('\n'));assert.equal(report.external.length,0,report.external.join('\n'))
 }finally{await writeFile(out+'/browser-qa.json',JSON.stringify(report,null,2)+'\n');await browser.close()}
-console.log('PASS: 42 Card/Detail/Expanded cases, keyboard, touch, source coverage, offline, no external requests')
+console.log('PASS: '+report.cards.length+' Card/Detail/Expanded cases, keyboard, touch, source coverage, offline, no external requests')

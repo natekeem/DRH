@@ -2,7 +2,7 @@
 
 93개 항목을 renderer, CSS/JS 동작, source, export 기준으로 재분류했다. Working은 canonical 핵심 효과를 보여주는 데모이며 실제 제품 통합 완료를 의미하지 않는다. Prototype은 수량을 맞추기 위해 승격하지 않았다. V1.5에서 정규화 토큰을 갖춘 DESIGN.md specimen 10개를 Working으로 검증했다. Browser 증거와 검수 범위는 V1_4_AUDIT.md 및 V1_5_REFERENCE_WORKSPACE.md 참조.
 
-- WORKING DEMO: 152
+- WORKING DEMO: 169
 - PROTOTYPE: 28
 - OFFICIAL LIVE: 1
 
@@ -115,57 +115,57 @@
 | Skeleton Loading (skeleton-loading) | UI Patterns | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | react-loading-skeleton · CODE_OK | 제품 적용 시 크기/내용 조정 |
 | Segmented Control (segmented-control) | UI Patterns | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | @rc-component/segmented · CODE_OK | 제품 적용 시 크기/내용 조정 |
 | Agency Landing (agency-landing) | Pages | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Agency Website v2 · REFERENCE_ONLY | 제품 적용 시 크기/내용 조정 |
-| AIrbnb (admd-airbnb) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
-| AIrtable (admd-airtable) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
+| Airbnb (admd-airbnb) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
+| Airtable (admd-airtable) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
 | Apple (admd-apple) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
 | Binance (admd-binance) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
-| BMW M (admd-bmw-m) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
 | BMW (admd-bmw) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
+| BMW-M (admd-bmw-m) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
 | Bugatti (admd-bugatti) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
-| Cal (admd-cal) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
+| Cal.com (admd-cal) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
 | Claude (admd-claude) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
 | Clay (admd-clay) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
-| Clickhouse (admd-clickhouse) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
+| ClickHouse (admd-clickhouse) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
 | Cohere (admd-cohere) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
 | Coinbase (admd-coinbase) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
 | Composio (admd-composio) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
 | Cursor (admd-cursor) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
-| Dell 1996 (admd-dell-1996) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
-| Elevenlabs (admd-elevenlabs) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
+| Dell-1996 (admd-dell-1996) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
+| ElevenLabs (admd-elevenlabs) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
 | Expo (admd-expo) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
 | Ferrari (admd-ferrari) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
 | Figma (admd-figma) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
 | Framer (admd-framer) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
-| Hashicorp (admd-hashicorp) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
+| HashiCorp (admd-hashicorp) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
 | HP (admd-hp) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
 | IBM (admd-ibm) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
 | Intercom (admd-intercom) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
 | Kraken (admd-kraken) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
 | Lamborghini (admd-lamborghini) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
-| Linear App (admd-linear.app) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
+| Linear (admd-linear.app) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
 | Lovable (admd-lovable) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
 | Mastercard (admd-mastercard) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
 | Meta (admd-meta) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
-| Minimax (admd-minimax) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
+| MiniMax (admd-minimax) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
 | Mintlify (admd-mintlify) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
 | Miro (admd-miro) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
-| Mistral AI (admd-mistral.ai) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
-| Mongodb (admd-mongodb) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
+| Mistral-AI (admd-mistral.ai) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
+| MongoDB (admd-mongodb) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
 | Nike (admd-nike) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
-| Nintendo 2001 (admd-nintendo-2001) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
+| Nintendo.com (2001) (admd-nintendo-2001) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
 | Notion (admd-notion) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
-| Nvidia (admd-nvidia) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
+| NVIDIA (admd-nvidia) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
 | Ollama (admd-ollama) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
-| Opencode AI (admd-opencode.ai) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
+| OpenCode (admd-opencode.ai) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
 | Pinterest (admd-pinterest) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
-| Playstation (admd-playstation) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
-| Posthog (admd-posthog) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
+| PlayStation (admd-playstation) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
+| PostHog (admd-posthog) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
 | Raycast (admd-raycast) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
 | Renault (admd-renault) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
 | Replicate (admd-replicate) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
 | Resend (admd-resend) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
 | Revolut (admd-revolut) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
-| Runwayml (admd-runwayml) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
+| Runway (admd-runwayml) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
 | Sanity (admd-sanity) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
 | Sentry (admd-sentry) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
 | Shopify (admd-shopify) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
@@ -177,8 +177,8 @@
 | Supabase (admd-supabase) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
 | Superhuman (admd-superhuman) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
 | Tesla (admd-tesla) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
-| Theverge (admd-theverge) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
-| Together AI (admd-together.ai) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
+| The Verge (admd-theverge) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
+| Together Ai (admd-together.ai) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
 | Uber (admd-uber) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
 | Vercel (admd-vercel) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
 | Vodafone (admd-vodafone) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
@@ -187,5 +187,22 @@
 | Webflow (admd-webflow) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
 | Wired (admd-wired) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
 | Wise (admd-wise) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
-| X AI (admd-x.ai) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
+| X Ai (admd-x.ai) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
 | Zapier (admd-zapier) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | VoltAgent awesome-design-md | 실행 가능한 export 보강 |
+| 29CM (admd-29cm) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | oh-my-design | 실행 가능한 export 보강 |
+| Baemin (admd-baemin) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | oh-my-design | 실행 가능한 export 보강 |
+| Banksalad (admd-banksalad) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | oh-my-design | 실행 가능한 export 보강 |
+| Coupang (admd-coupang) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | oh-my-design | 실행 가능한 export 보강 |
+| Hyundai (admd-hyundai) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | oh-my-design | 실행 가능한 export 보강 |
+| Kakao (admd-kakao) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | oh-my-design | 실행 가능한 export 보강 |
+| KakaoBank (admd-kakaobank) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | oh-my-design | 실행 가능한 export 보강 |
+| KakaoPay (admd-kakaopay) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | oh-my-design | 실행 가능한 export 보강 |
+| Karrot (admd-karrot) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | oh-my-design | 실행 가능한 export 보강 |
+| Kurly (admd-kurly) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | oh-my-design | 실행 가능한 export 보강 |
+| Musinsa (admd-musinsa) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | oh-my-design | 실행 가능한 export 보강 |
+| Naver (admd-naver) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | oh-my-design | 실행 가능한 export 보강 |
+| Olive Young (admd-oliveyoung) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | oh-my-design | 실행 가능한 export 보강 |
+| Samsung (admd-samsung) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | oh-my-design | 실행 가능한 export 보강 |
+| SOCAR (admd-socar) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | oh-my-design | 실행 가능한 export 보강 |
+| Toss (admd-toss) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | oh-my-design | 실행 가능한 export 보강 |
+| 여기어때 (admd-yeogiotte) | DESIGN.md | PROTOTYPE | WORKING DEMO | 기존 React/CSS demo | oh-my-design | 실행 가능한 export 보강 |

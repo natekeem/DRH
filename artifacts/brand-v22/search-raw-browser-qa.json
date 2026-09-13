@@ -1,0 +1,137 @@
+[
+  {
+    "query": "배달의민족",
+    "canonical": "admd-baemin",
+    "matchCount": 1
+  },
+  {
+    "query": "Woowahan",
+    "canonical": "admd-baemin",
+    "matchCount": 1
+  },
+  {
+    "query": "Baemin",
+    "canonical": "admd-baemin",
+    "matchCount": 1
+  },
+  {
+    "query": "당근",
+    "canonical": "admd-karrot",
+    "matchCount": 1
+  },
+  {
+    "query": "Daangn",
+    "canonical": "admd-karrot",
+    "matchCount": 1
+  },
+  {
+    "query": "Karrot",
+    "canonical": "admd-karrot",
+    "matchCount": 1
+  },
+  {
+    "query": "카카오뱅크",
+    "canonical": "admd-kakaobank",
+    "matchCount": 1
+  },
+  {
+    "query": "토스",
+    "canonical": "admd-toss",
+    "matchCount": 1
+  },
+  {
+    "query": "무신사",
+    "canonical": "admd-musinsa",
+    "matchCount": 1
+  },
+  {
+    "query": "쏘카",
+    "canonical": "admd-socar",
+    "matchCount": 1
+  },
+  {
+    "slug": "29cm",
+    "rawRoute": "vendor/oh-my-design/29cm/DESIGN.md",
+    "sha256": "e6a22d1a2d5462c4093f1d3adbd2a171239089a7d067a63930b47fc2c4cf9ba0"
+  },
+  {
+    "slug": "baemin",
+    "rawRoute": "vendor/oh-my-design/baemin/DESIGN.md",
+    "sha256": "b04937971f8b91b376d1b523f5a476f6b002a4652284cdaf823eb60f3407af49"
+  },
+  {
+    "slug": "banksalad",
+    "rawRoute": "vendor/oh-my-design/banksalad/DESIGN.md",
+    "sha256": "6406d4ce56623b000d367f0cfbf95653b28152aff43df8f24ec45de178ecb16a"
+  },
+  {
+    "slug": "coupang",
+    "rawRoute": "vendor/oh-my-design/coupang/DESIGN.md",
+    "sha256": "74f82355f6dda0ad97558f9f74a5c2cdc72946788d6ef48f6412b3c28dc9c325"
+  },
+  {
+    "slug": "hyundai",
+    "rawRoute": "vendor/oh-my-design/hyundai/DESIGN.md",
+    "sha256": "2dbbd9f31c46779a696b6f3586e20100f43264274df4846d03b848c29c9e3a11"
+  },
+  {
+    "slug": "kakao",
+    "rawRoute": "vendor/oh-my-design/kakao/DESIGN.md",
+    "sha256": "a06cfee0bc444994b217962ce3892a883b5ecffa2765bfde42645c2222bc8362"
+  },
+  {
+    "slug": "kakaobank",
+    "rawRoute": "vendor/oh-my-design/kakaobank/DESIGN.md",
+    "sha256": "a2659b60968159b143317fb6a99ad21c35e2f04a87ef561edf6c12c2919144cf"
+  },
+  {
+    "slug": "kakaopay",
+    "rawRoute": "vendor/oh-my-design/kakaopay/DESIGN.md",
+    "sha256": "3067d6ac24ee2792e2404f01ef7ec0d50e12447031a4302076fdd433624f169c"
+  },
+  {
+    "slug": "karrot",
+    "rawRoute": "vendor/oh-my-design/karrot/DESIGN.md",
+    "sha256": "09df85980a8ae2f45e3c936b62f2549fcaf4660904fffee91c9d59d4effca087"
+  },
+  {
+    "slug": "kurly",
+    "rawRoute": "vendor/oh-my-design/kurly/DESIGN.md",
+    "sha256": "b953f809f8d7e38f4d244891d9901e2e07dce3c4c2b85d7d1a3f710c660395c7"
+  },
+  {
+    "slug": "musinsa",
+    "rawRoute": "vendor/oh-my-design/musinsa/DESIGN.md",
+    "sha256": "b50efaff74122fcd7aea1d9ba05826bd1a53248a1e92ce7a429ca87868fbd70d"
+  },
+  {
+    "slug": "naver",
+    "rawRoute": "vendor/oh-my-design/naver/DESIGN.md",
+    "sha256": "7c42dad9552326b6196365ba2acf53579f9db56471488c6694e607fb78ca0e5f"
+  },
+  {
+    "slug": "oliveyoung",
+    "rawRoute": "vendor/oh-my-design/oliveyoung/DESIGN.md",
+    "sha256": "4069134f2abcb90b9214a85e8a21ef66c08e5929fbce70392ed0381c6ffabdd4"
+  },
+  {
+    "slug": "samsung",
+    "rawRoute": "vendor/oh-my-design/samsung/DESIGN.md",
+    "sha256": "bacd6c7f5b4c7a05ca60cede7dd76599258064f3df563cbb4fa35a92f9ac7928"
+  },
+  {
+    "slug": "socar",
+    "rawRoute": "vendor/oh-my-design/socar/DESIGN.md",
+    "sha256": "1af22ef57f6d829048c0d5600860b821f1f74405c37457925696e0ed0dc596e1"
+  },
+  {
+    "slug": "toss",
+    "rawRoute": "vendor/oh-my-design/toss/DESIGN.md",
+    "sha256": "115778c526c36b165ad5828b95637c2289c05735e5d81d8a00c4c7d195c50c32"
+  },
+  {
+    "slug": "yeogiotte",
+    "rawRoute": "vendor/oh-my-design/yeogiotte/DESIGN.md",
+    "sha256": "60940591b636a9551efaf81f3b95c2e18dd0e08b7bb31ede96b0054d6ec274a8"
+  }
+]

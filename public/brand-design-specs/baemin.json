@@ -1,0 +1,1383 @@
+{
+  "colors": {
+    "primary": "#0cefd3",
+    "canvas": "#ffffff",
+    "foreground": "#222222",
+    "baemin-dark": "#000000",
+    "baemin-panel": "#f6f6f6",
+    "corporate-foreground": "#232324",
+    "corporate-muted": "#6c6d6f",
+    "corporate-surface": "#f3f4f5",
+    "corporate-disabled": "#cccccc",
+    "corporate-border": "#a6a7a9",
+    "on-dark": "#ffffff"
+  },
+  "typography": {
+    "baemin-hero": {
+      "size": 60,
+      "weight": 800,
+      "lineHeight": "84px",
+      "script": "ko",
+      "fontFamily": "BAEMINWORK",
+      "fontSize": "60px",
+      "fontWeight": 800,
+      "declaredFamily": "BAEMINWORK",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "baemin-heading": {
+      "size": 24,
+      "weight": 700,
+      "lineHeight": "normal",
+      "script": "ko",
+      "fontFamily": "BAEMINWORK",
+      "fontSize": "24px",
+      "fontWeight": 700,
+      "declaredFamily": "BAEMINWORK",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "baemin-button": {
+      "size": 16,
+      "weight": 700,
+      "lineHeight": "22.4px",
+      "script": "ko",
+      "fontFamily": "BAEMINWORK",
+      "fontSize": "16px",
+      "fontWeight": 700,
+      "declaredFamily": "BAEMINWORK",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "corporate-heading": {
+      "size": 40,
+      "weight": 700,
+      "lineHeight": "52px",
+      "tracking": "-1.2px",
+      "script": "ko",
+      "fontFamily": "BAEMINWORK",
+      "fontSize": "40px",
+      "fontWeight": 700,
+      "letterSpacing": "-1.2px",
+      "declaredFamily": "BAEMINWORK",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "corporate-card-title": {
+      "size": 24,
+      "weight": 700,
+      "lineHeight": "36px",
+      "tracking": "-0.4px",
+      "script": "ko",
+      "fontFamily": "BAEMINWORK",
+      "fontSize": "24px",
+      "fontWeight": 700,
+      "letterSpacing": "-0.4px",
+      "declaredFamily": "BAEMINWORK",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "corporate-body": {
+      "size": 16,
+      "weight": 400,
+      "lineHeight": "24px",
+      "tracking": "-0.32px",
+      "script": "ko",
+      "fontFamily": "BAEMINWORK",
+      "fontSize": "16px",
+      "fontWeight": 400,
+      "letterSpacing": "-0.32px",
+      "declaredFamily": "BAEMINWORK",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "corporate-label": {
+      "size": 14,
+      "weight": 700,
+      "lineHeight": "21px",
+      "tracking": "-0.32px",
+      "script": "ko",
+      "fontFamily": "BAEMINWORK",
+      "fontSize": "14px",
+      "fontWeight": 700,
+      "letterSpacing": "-0.32px",
+      "declaredFamily": "BAEMINWORK",
+      "renderFallback": "system-ui, sans-serif"
+    },
+    "catalog-title": {
+      "size": 48,
+      "weight": 700,
+      "lineHeight": "64.8px",
+      "tracking": "-0.32px",
+      "script": "ko",
+      "fontFamily": "BAEMINWORK",
+      "fontSize": "48px",
+      "fontWeight": 700,
+      "letterSpacing": "-0.32px",
+      "declaredFamily": "BAEMINWORK",
+      "renderFallback": "system-ui, sans-serif"
+    }
+  },
+  "spacing": {
+    "xs": "6px",
+    "sm": "8px",
+    "md": "12px",
+    "lg": "16px",
+    "xl": "20px",
+    "xxl": "24px",
+    "section": "32px"
+  },
+  "radius": {
+    "corporate-control": "8px",
+    "download-card": "12px",
+    "media-control": "16px",
+    "circle": "9999px"
+  },
+  "border": {
+    "woowa-more-overlay": "1px solid #ffffff",
+    "woowa-site-selector": "1px solid #a6a7a9"
+  },
+  "motion": {
+    "rules": [
+      "## 15. Motion & Easing",
+      "No exact motion duration or easing token is promoted. The native-app motion system remains unresolved; web transitions should be treated as local implementation details until explicitly captured."
+    ]
+  },
+  "depth": {
+    "6. Depth & Elevation": "No canonical shadow token is promoted. Current retained controls use flat fills, borders, or translucent overlays. Earlier five-tier app-shadow claims were not grounded by inspectable native evidence and were removed."
+  },
+  "components": {
+    "app-download-card": {
+      "type": "button",
+      "bg": "#ffffff",
+      "fg": "#222222",
+      "radius": "12px",
+      "height": "54px",
+      "padding": "14px 19px",
+      "font": "13.3333px / 400",
+      "states": "default and hover captured across store/QR variants",
+      "use": "baemin.com app-store and QR download action",
+      "backgroundColor": "#ffffff",
+      "textColor": "#222222",
+      "rounded": "12px"
+    },
+    "baemin-nav-link": {
+      "type": "button",
+      "bg": "transparent",
+      "fg": "#ffffff",
+      "height": "22px",
+      "font": "16px / 700",
+      "states": "default captured; hover not retained",
+      "use": "baemin.com top navigation action",
+      "backgroundColor": "transparent",
+      "textColor": "#ffffff"
+    },
+    "woowa-more-light": {
+      "type": "button",
+      "bg": "#f3f4f5",
+      "fg": "#232324",
+      "radius": "8px",
+      "height": "52px",
+      "padding": "0 22px",
+      "font": "16px / 700",
+      "states": "default captured; hover not retained",
+      "use": "Woowa corporate light read-more action",
+      "backgroundColor": "#f3f4f5",
+      "textColor": "#232324",
+      "rounded": "8px"
+    },
+    "woowa-more-overlay": {
+      "type": "button",
+      "bg": "rgba(0, 0, 0, 0.3)",
+      "fg": "#ffffff",
+      "border": "1px solid #ffffff",
+      "radius": "8px",
+      "height": "52px",
+      "padding": "0 22px",
+      "font": "16px / 700",
+      "states": "default on image overlay; hover not retained",
+      "use": "Woowa corporate overlay read-more action",
+      "backgroundColor": "rgba(0, 0, 0, 0.3)",
+      "textColor": "#ffffff",
+      "rounded": "8px"
+    },
+    "woowa-site-selector": {
+      "type": "button",
+      "bg": "#ffffff",
+      "fg": "#6c6d6f",
+      "border": "1px solid #a6a7a9",
+      "radius": "8px",
+      "height": "50px",
+      "padding": "13px 16px",
+      "font": "14px / 400",
+      "states": "default captured; expanded state not retained",
+      "use": "Woowa footer family-site selector",
+      "backgroundColor": "#ffffff",
+      "textColor": "#6c6d6f",
+      "rounded": "8px"
+    },
+    "woowa-carousel-control": {
+      "type": "button",
+      "bg": "rgba(0, 0, 0, 0.4)",
+      "fg": "#000000",
+      "radius": "50%",
+      "height": "40px",
+      "states": "default and disabled navigation states observed",
+      "use": "Woowa media carousel navigation",
+      "backgroundColor": "rgba(0, 0, 0, 0.4)",
+      "textColor": "#000000",
+      "rounded": "50%"
+    },
+    "font-download": {
+      "type": "button",
+      "bg": "transparent",
+      "fg": "#232324",
+      "height": "28px",
+      "font": "16px / 700",
+      "states": "available download and unavailable/disabled controls observed on the catalog",
+      "use": "official font catalog download action",
+      "backgroundColor": "transparent",
+      "textColor": "#232324"
+    }
+  },
+  "layout": "product",
+  "traits": "Baemin is the Korean delivery platform that turned ordering food into a recognizable popular-culture brand through mint color, everyday wit, and an unusually sustained investment in Korean type. Launched in 2010 to move delivery from phone calls into an app, Baemin now describes its mission as keeping what people need from going cold—connecting speed with warmth across customers, restaurant owners, and riders. Its identity expects operational immediacy and familiar neighborhood culture to coexist, rather than forcing efficiency to look anonymous or institutional.\n\nTypography is part of that identity, not decorative garnish. The official Baemin font program began with Hanna, modeled on the uneven acrylic-cut storefront lettering of 1960s–70s Korea, then expanded through Jua, Dohyeon, Euljiro, Kkubulim, and other faces that reinterpret hand-painted signs and vernacular lettering. The same cultural instinct appears in Baemin goods and writing: familiar objects, slightly unexpected forms, and short lines that feel conversational rather than institutional.\n\nBaemin 2.0 adds a clearer digital layer to that playful heritage. In July 2025, Woowa Brothers officially introduced a brighter mint and the new WORK typeface in the Baemin app, describing both as a more vivid, modern, simple, and legible customer-centered identity. This reference therefore combines the current `#0cefd3` live color measurement with the official WORK product-font claim, while keeping exact web, corporate, catalog, and app measurements attached to their own surfaces.\n\n**Key Characteristics:**\n- Bright Baemin 2.0 mint: official direction, measured live on baemin.com as `#0cefd3`\n- WORK (`BAEMINWORK`): the official current Baemin app typeface, designed for simple and clear digital reading\n- A long-running public font program rooted in Korean storefront lettering and freely shared brand culture\n- Playful warmth in brand expression, paired with clearer and more direct product communication\n- Surface-local metrics: app identity, baemin.com, Woowa corporate UI, and the font catalog are not flattened into one false system",
+  "sections": {
+    "1. Visual Theme & Atmosphere": "Baemin is the Korean delivery platform that turned ordering food into a recognizable popular-culture brand through mint color, everyday wit, and an unusually sustained investment in Korean type. Launched in 2010 to move delivery from phone calls into an app, Baemin now describes its mission as keeping what people need from going cold—connecting speed with warmth across customers, restaurant owners, and riders. Its identity expects operational immediacy and familiar neighborhood culture to coexist, rather than forcing efficiency to look anonymous or institutional.\n\nTypography is part of that identity, not decorative garnish. The official Baemin font program began with Hanna, modeled on the uneven acrylic-cut storefront lettering of 1960s–70s Korea, then expanded through Jua, Dohyeon, Euljiro, Kkubulim, and other faces that reinterpret hand-painted signs and vernacular lettering. The same cultural instinct appears in Baemin goods and writing: familiar objects, slightly unexpected forms, and short lines that feel conversational rather than institutional.\n\nBaemin 2.0 adds a clearer digital layer to that playful heritage. In July 2025, Woowa Brothers officially introduced a brighter mint and the new WORK typeface in the Baemin app, describing both as a more vivid, modern, simple, and legible customer-centered identity. This reference therefore combines the current `#0cefd3` live color measurement with the official WORK product-font claim, while keeping exact web, corporate, catalog, and app measurements attached to their own surfaces.\n\n**Key Characteristics:**\n- Bright Baemin 2.0 mint: official direction, measured live on baemin.com as `#0cefd3`\n- WORK (`BAEMINWORK`): the official current Baemin app typeface, designed for simple and clear digital reading\n- A long-running public font program rooted in Korean storefront lettering and freely shared brand culture\n- Playful warmth in brand expression, paired with clearer and more direct product communication\n- Surface-local metrics: app identity, baemin.com, Woowa corporate UI, and the font catalog are not flattened into one false system",
+    "2. Color Palette & Roles": "### baemin.com\n- **Accent** (`#0cefd3`): current bright public-web accent text/border observation.\n- **Canvas** (`#ffffff`): app-download card and page surfaces.\n- **Foreground** (`#222222`): download-card text.\n- **Dark** (`#000000`): strongest current text/border observation.\n- **Panel** (`#f6f6f6`): quiet current background surface.\n\n### woowahan.com and official font pages\n- **Corporate Foreground** (`#232324`): dominant text and control color.\n- **Corporate Muted** (`#6c6d6f`): footer and secondary control text.\n- **Corporate Surface** (`#f3f4f5`): light read-more and catalog control background.\n- **Corporate Disabled** (`#cccccc`): disabled control text.\n- **Corporate Border** (`#a6a7a9`): current selector/catalog border.\n- **On Dark** (`#ffffff`): text/border on overlay actions.",
+    "3. Typography Rules": "### Current Product Typeface — WORK\n\n**WORK** (captured family name: `BAEMINWORK`) is the current official Baemin app typeface introduced with Baemin 2.0 in July 2025. Woowa Brothers describes it as simpler and clearer than the earlier Hanna-led identity, with diagonal Hangeul strokes reduced into block-like forms. The family is a verified product-font fact; its binary is not publicly loaded by this preview, so the builder shows metadata without substituting another face.\n\n### Official Baemin Font Program\n\nThe downloadable font catalog is a separate but essential brand layer. These faces are official Baemin assets and cultural references; they are not automatically the current functional UI font.\n\n| Family | Official origin / character | Evidence boundary |\n|---|---|---|\n| Hanna | Uneven acrylic-cut lettering from Korean storefront signs of the 1960s–70s | First Baemin font and a historical brand symbol |\n| Jua | Rounded, non-uniform strokes inspired by hand-painted storefront signs | Warm display/brand asset, not asserted as app UI |\n| Dohyeon | More methodically cut acrylic-sign lettering with connected Hangeul strokes | Display/brand asset, not asserted as app UI |\n| Euljiro series | Weathered neighborhood sign lettering imagined across the passage of time | Expressive display/brand asset |\n| Kkubulim | Bent rather than simply rounded edges, giving stiff text a free-spirited character | Current catalog asset |\n\nThe official license permits personal and corporate commercial/non-commercial use and modification under its stated terms; selling the font files by themselves is prohibited. Bundling or redistribution must retain the license text and reserved-name conditions.\n\n### Verified Surface Metrics\n\nThe table below keeps measurements tied to the surfaces where they were observed. The baemin.com and Woowa rows describe current public web rendering, not a fallback stack for the Baemin app.\n\n| Evidence class | Baemin status |\n|---|---|\n| **Official product-use** | WORK / `BAEMINWORK`, confirmed as applied to the Baemin app in the official Baemin 2.0 announcement |\n| **Live surface-use** | System on baemin.com; Pretendard Variable on Woowa corporate and font-catalog surfaces |\n| **Official distributed asset** | Hanna, Jua, Dohyeon, Euljiro, Kkubulim, and the wider downloadable Baemin font program |\n| **Declared-only** | Heritage BM FontFace assets declared on public pages but not observed as first-family page chrome |\n| **Unresolved** | Exact native-app type scale/weights and an authorized browser-loadable WORK specimen |\n\n| Role | Size | Weight | Line Height | Tracking |\n|---|---:|---:|---:|---:|\n| Baemin Web Hero | 60px | 800 | 84px | normal |\n| Baemin Web Heading | 24px | 700 | normal | normal |\n| Baemin Web Button | 16px | 700 | 22.4px | normal |\n| Corporate Heading | 40px | 700 | 52px | -1.2px |\n| Corporate Card Title | 24px | 700 | 36px | -0.4px |\n| Corporate Body | 16px | 400 | 24px | -0.32px |\n| Corporate Label | 14px | 700 | 21px | -0.32px |\n| Font Catalog Title | 48px | 700 | 64.8px | -0.32px |",
+    "4. Component Patterns": "### baemin.com App Download Card\n- Background: `#ffffff`\n- Text: `#222222`\n- Radius: 12px\n- Height: 54px\n- Padding: 14px 19px\n- Text style: 13.3333px / 400\n- States: default and hover captured across store/QR variants\n- Use: app-store and QR download action\n\n### baemin.com Navigation Action\n- Background: transparent\n- Text: `#ffffff`\n- Height: 22px\n- Text style: 16px / 700\n- States: default captured; hover not retained\n\n### Woowa Light Read-More\n- Background: `#f3f4f5`\n- Text: `#232324`\n- Radius: 8px\n- Height: 52px\n- Padding: 0 22px\n- Text style: 16px / 700\n- States: default captured; hover not retained\n\n### Woowa Overlay Read-More\n- Background: `rgba(0, 0, 0, 0.3)`\n- Text: `#ffffff`\n- Border: 1px solid `#ffffff`\n- Radius: 8px\n- Height: 52px\n- Padding: 0 22px\n- Text style: 16px / 700\n- States: default on image overlay; hover not retained\n\n### Woowa Family-Site Selector\n- Background: `#ffffff`\n- Text: `#6c6d6f`\n- Border: 1px solid `#a6a7a9`\n- Radius: 8px\n- Height: 50px\n- Padding: 13px 16px\n- Text style: 14px / 400\n- States: default captured; expanded state not retained\n\n### Woowa Carousel Control\n- Background: `rgba(0, 0, 0, 0.4)`\n- Text/Icon context: `#000000`\n- Radius: 50%\n- Height: 40px\n- States: default and disabled navigation states observed\n\n### Official Font Download\n- Background: transparent\n- Text: `#232324`\n- Height: 28px\n- Text style: 16px / 700\n- States: available download and unavailable/disabled catalog controls observed\n\n---\n\n**Verified:** 2026-07-12 (verification v2, four live first-party web surfaces + official Baemin 2.0 product source)\n**Tier 1 sources:** https://www.baemin.com/ https://www.woowahan.com/ https://www.woowahan.com/fonts https://www.woowahan.com/fonts/license https://www.woowahan.com/report/detail/975?page=1\n**Tier 2 sources:** https://getdesign.md/baemin and https://styles.refero.design/?q=Baemin did not provide importable current records.\n**Surface split:** WORK is promoted only as the officially confirmed app family; baemin.com, Woowa corporate, and the asset catalog retain their separately measured metrics and roles.\n**Conflicts unresolved:** none",
+    "5. Layout Principles": "- baemin.com current control spacing clusters around 6px and 20px.\n- Woowa corporate composition repeatedly uses 8px, 12px, 16px, 20px, 24px, and 32px.\n- These are public-web values; no native ordering-app grid, breakpoint, or touch-target scale is claimed.",
+    "6. Depth & Elevation": "No canonical shadow token is promoted. Current retained controls use flat fills, borders, or translucent overlays. Earlier five-tier app-shadow claims were not grounded by inspectable native evidence and were removed.",
+    "7. Do's and Don'ts": "### Do\n- Use WORK as the current Baemin app identity when a typeface name is required, while marking live preview availability honestly.\n- Keep public-web and corporate type metrics attached to their measured surfaces.\n- Treat Hanna, Jua, Dohyeon, Euljiro, and Kkubulim as official brand assets with their own historical character.\n- Name each component by its source surface.\n\n### Don't\n- Don't replace WORK with System, Arial, Pretendard, or a catalog display face in an app-facing design.\n- Don't treat every official Baemin font as a functional product UI family.\n- Don't treat `#2ac1bc` as a verified current web token; this run observed `#0cefd3` on baemin.com.\n- Don't retain the old black pill CTA after it disappeared from the current capture.\n- Don't fabricate restaurant cards, app tabs, inputs, badges, toasts, native motion, or semantic colors from remembered Baemin patterns.\n- Don't infer license permissions from a font file alone; keep the official license page with any redistribution workflow.",
+    "8. Responsive Behavior": "The public web surfaces are responsive, but this pass does not promote universal breakpoints. Preserve the captured component geometry at the relevant web surface and treat native-app responsive/touch behavior as unresolved until a device-inspectable evidence source exists.",
+    "9. Agent Prompt Guide": "- “Reproduce the current baemin.com download action as a 54px white card with 12px radius, 14px 19px padding, `#222222` text, and 13.3333px/400 type.”\n- “Use WORK as the Baemin 2.0 product typeface, but leave the live specimen unavailable unless an authorized browser-loadable source is present.”\n- “Use the verified Woowa corporate geometry with `#232324` foreground and 8px control radius only for Woowa corporate surfaces.”\n- “Pair Baemin's playful cultural character with the clearer, more direct customer experience of Baemin 2.0.”",
+    "10. Voice & Tone": "Baemin's brand voice is warm, concise, and unexpectedly playful. The humor usually comes from observing an ordinary situation closely—a meal, a neighborhood sign, a familiar household object—then turning it slightly rather than performing a joke for its own sake. Product communication should stay clearer than campaign or merchandise copy: Baemin 2.0 explicitly prioritizes a clear customer experience and confidence in the service.\n\n| Context | Tone |\n|---|---|\n| Ordering, payment, delivery status | Direct, reassuring, immediately understandable |\n| Help and error recovery | Specific about what happened and what the user can do next |\n| Campaigns, goods, cultural content | Short, conversational, observant, allowed one surprising turn |\n| Restaurant-owner and rider communication | Respectful, practical, partnership-oriented |\n\nVerified brand expressions include the current mission around keeping things from going cold, the long-running use of ordinary-life wordplay in Baemin goods, and the official framing of Baemin fonts as freely shared cultural assets. Do not reuse slogans verbatim as generic UI filler.",
+    "11. Brand Narrative": "Baemin launched in 2010 with the aim of advancing food delivery through information technology, moving a phone-call habit into an app experience. Its identity grew beyond utility: the official company history describes Hanna—the first freely shared Baemin font—as an integral brand symbol that helped widen the landscape of Hangeul type.\n\nThat public type program became a durable expression of how Baemin sees culture. Hanna preserved the charming imprecision of hand-cut acrylic signs; later faces explored hand-painted storefronts, connected strokes, weathering, and bent forms. Fonts, goods, and music are presented by Woowa Brothers as original Baemin cultural assets intended to be used and enjoyed beyond the product itself.\n\nBaemin 2.0 marks a deliberate evolution rather than a rejection of that history. The 2025 rebrand introduced a brighter mint and WORK in the app, alongside a mission centered on delivering immediate satisfaction without letting value “go cold.” The design implication is a dual character: cultural expression can remain witty and tactile, while product interactions become clearer, more legible, and more dependable.",
+    "12. Principles": "These are evidence-derived implementation principles:\n\n1. **Warmth must survive speed.** Fast delivery and clear interaction should still feel human.\n2. **Culture is a system asset.** Typography, language, goods, and music can carry the brand beyond the transaction.\n3. **Playfulness needs a straight man.** Let campaigns and brand moments bend expectations; keep ordering and recovery flows explicit.\n4. **Current clarity beats nostalgia.** WORK and the brighter mint define the product-facing Baemin 2.0 layer; heritage fonts remain purposeful brand assets.\n5. **Keep evidence surface-local.** App, marketing web, corporate web, and the font catalog may belong to one brand without sharing every token.",
+    "13. Personas": "These are official stakeholder contexts from Woowa Brothers reporting, not invented demographic personas.\n\n- **Customers:** want an efficient app, accessible service, and a differentiated delivery experience.\n- **Restaurant owners:** need practical tools that improve store operations, capability building, and access to online demand.\n- **Riders:** need safe working conditions, useful operational support, and confidence in the delivery ecosystem.",
+    "14. States": "| Component | Verified state evidence |\n|---|---|\n| App download card | default, hover |\n| Woowa carousel | default, disabled |\n| Font catalog download | available, unavailable/disabled controls |\n| Other retained buttons | default only; missing states remain explicitly unclaimed |",
+    "15. Motion & Easing": "No exact motion duration or easing token is promoted. The native-app motion system remains unresolved; web transitions should be treated as local implementation details until explicitly captured."
+  },
+  "frontmatter": {
+    "id": "baemin",
+    "name": "Baemin",
+    "country": "KR",
+    "category": "consumer-tech",
+    "homepage": "https://www.baemin.com",
+    "primary_color": "#0cefd3",
+    "logo": {
+      "type": "favicon",
+      "slug": "https://www.baemin.com/favicon.ico"
+    },
+    "verified": "2026-07-12",
+    "omd": "0.1",
+    "ds": {
+      "name": "Woowa Font Catalog",
+      "url": "https://www.woowahan.com/fonts",
+      "type": "brand",
+      "description": "Official Baemin brand-font distribution; current web UI use is verified separately from declared brand assets."
+    },
+    "verification_v2": {
+      "schema": 2,
+      "checked": "2026-07-12",
+      "surfaces": [
+        {
+          "id": "baemin-home",
+          "kind": "marketing",
+          "url": "https://www.baemin.com/",
+          "inspected": "2026-07-11"
+        },
+        {
+          "id": "woowa-home",
+          "kind": "corporate",
+          "url": "https://www.woowahan.com/",
+          "inspected": "2026-07-11"
+        },
+        {
+          "id": "font-catalog",
+          "kind": "design-system",
+          "url": "https://www.woowahan.com/fonts",
+          "inspected": "2026-07-11"
+        },
+        {
+          "id": "font-license",
+          "kind": "design-system",
+          "url": "https://www.woowahan.com/fonts/license",
+          "inspected": "2026-07-11"
+        },
+        {
+          "id": "baemin-app-rebrand",
+          "kind": "product",
+          "url": "https://www.woowahan.com/report/detail/975?page=1",
+          "inspected": "2026-07-12"
+        }
+      ],
+      "sources": [
+        {
+          "id": "baemin-live",
+          "kind": "product-surface",
+          "url": "https://www.baemin.com/",
+          "captured": "2026-07-11"
+        },
+        {
+          "id": "woowa-live",
+          "kind": "product-surface",
+          "url": "https://www.woowahan.com/",
+          "captured": "2026-07-11"
+        },
+        {
+          "id": "font-catalog-live",
+          "kind": "official-doc",
+          "url": "https://www.woowahan.com/fonts",
+          "captured": "2026-07-11"
+        },
+        {
+          "id": "font-license-live",
+          "kind": "license",
+          "url": "https://www.woowahan.com/fonts/license",
+          "captured": "2026-07-11"
+        },
+        {
+          "id": "baemin-rebrand-official",
+          "kind": "official-doc",
+          "url": "https://www.woowahan.com/report/detail/975?page=1",
+          "captured": "2026-07-12"
+        }
+      ],
+      "claims": {
+        "tokens.colors.primary": {
+          "surface_id": "baemin-home",
+          "source_id": "baemin-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.colors.canvas": {
+          "surface_id": "baemin-home",
+          "source_id": "baemin-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.colors.foreground": {
+          "surface_id": "baemin-home",
+          "source_id": "baemin-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.colors.baemin-dark": {
+          "surface_id": "baemin-home",
+          "source_id": "baemin-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.colors.baemin-panel": {
+          "surface_id": "baemin-home",
+          "source_id": "baemin-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.colors.corporate-foreground": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.colors.corporate-muted": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.colors.corporate-surface": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.colors.corporate-disabled": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.colors.corporate-border": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.colors.on-dark": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.typography.family.ui": {
+          "surface_id": "baemin-app-rebrand",
+          "source_id": "baemin-rebrand-official",
+          "method": "official-doc",
+          "captured": "2026-07-12"
+        },
+        "tokens.typography.baemin-hero.size": {
+          "surface_id": "baemin-home",
+          "source_id": "baemin-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.typography.baemin-hero.weight": {
+          "surface_id": "baemin-home",
+          "source_id": "baemin-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.typography.baemin-hero.lineHeight": {
+          "surface_id": "baemin-home",
+          "source_id": "baemin-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.typography.baemin-heading.size": {
+          "surface_id": "baemin-home",
+          "source_id": "baemin-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.typography.baemin-heading.weight": {
+          "surface_id": "baemin-home",
+          "source_id": "baemin-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.typography.baemin-heading.lineHeight": {
+          "surface_id": "baemin-home",
+          "source_id": "baemin-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.typography.baemin-button.size": {
+          "surface_id": "baemin-home",
+          "source_id": "baemin-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.typography.baemin-button.weight": {
+          "surface_id": "baemin-home",
+          "source_id": "baemin-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.typography.baemin-button.lineHeight": {
+          "surface_id": "baemin-home",
+          "source_id": "baemin-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.typography.corporate-heading.size": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.typography.corporate-heading.weight": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.typography.corporate-heading.lineHeight": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.typography.corporate-heading.tracking": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.typography.corporate-card-title.size": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.typography.corporate-card-title.weight": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.typography.corporate-card-title.lineHeight": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.typography.corporate-card-title.tracking": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.typography.corporate-body.size": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.typography.corporate-body.weight": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.typography.corporate-body.lineHeight": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.typography.corporate-body.tracking": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.typography.corporate-label.size": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.typography.corporate-label.weight": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.typography.corporate-label.lineHeight": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.typography.corporate-label.tracking": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.typography.catalog-title.size": {
+          "surface_id": "font-catalog",
+          "source_id": "font-catalog-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.typography.catalog-title.weight": {
+          "surface_id": "font-catalog",
+          "source_id": "font-catalog-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.typography.catalog-title.lineHeight": {
+          "surface_id": "font-catalog",
+          "source_id": "font-catalog-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.typography.catalog-title.tracking": {
+          "surface_id": "font-catalog",
+          "source_id": "font-catalog-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.spacing.xs": {
+          "surface_id": "baemin-home",
+          "source_id": "baemin-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.spacing.sm": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.spacing.md": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.spacing.lg": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.spacing.xl": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.spacing.xxl": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.spacing.section": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.rounded.corporate-control": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.rounded.download-card": {
+          "surface_id": "baemin-home",
+          "source_id": "baemin-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.rounded.media-control": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.rounded.circle": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.app-download-card.type": {
+          "surface_id": "baemin-home",
+          "source_id": "baemin-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.app-download-card.bg": {
+          "surface_id": "baemin-home",
+          "source_id": "baemin-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.app-download-card.fg": {
+          "surface_id": "baemin-home",
+          "source_id": "baemin-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.app-download-card.radius": {
+          "surface_id": "baemin-home",
+          "source_id": "baemin-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.app-download-card.height": {
+          "surface_id": "baemin-home",
+          "source_id": "baemin-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.app-download-card.padding": {
+          "surface_id": "baemin-home",
+          "source_id": "baemin-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.app-download-card.font": {
+          "surface_id": "baemin-home",
+          "source_id": "baemin-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.app-download-card.states": {
+          "surface_id": "baemin-home",
+          "source_id": "baemin-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.app-download-card.use": {
+          "surface_id": "baemin-home",
+          "source_id": "baemin-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.baemin-nav-link.type": {
+          "surface_id": "baemin-home",
+          "source_id": "baemin-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.baemin-nav-link.bg": {
+          "surface_id": "baemin-home",
+          "source_id": "baemin-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.baemin-nav-link.fg": {
+          "surface_id": "baemin-home",
+          "source_id": "baemin-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.baemin-nav-link.height": {
+          "surface_id": "baemin-home",
+          "source_id": "baemin-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.baemin-nav-link.font": {
+          "surface_id": "baemin-home",
+          "source_id": "baemin-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.baemin-nav-link.states": {
+          "surface_id": "baemin-home",
+          "source_id": "baemin-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.baemin-nav-link.use": {
+          "surface_id": "baemin-home",
+          "source_id": "baemin-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.woowa-more-light.type": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.woowa-more-light.bg": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.woowa-more-light.fg": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.woowa-more-light.radius": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.woowa-more-light.height": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.woowa-more-light.padding": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.woowa-more-light.font": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.woowa-more-light.states": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.woowa-more-light.use": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.woowa-more-overlay.type": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.woowa-more-overlay.bg": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.woowa-more-overlay.fg": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.woowa-more-overlay.border": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.woowa-more-overlay.radius": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.woowa-more-overlay.height": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.woowa-more-overlay.padding": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.woowa-more-overlay.font": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.woowa-more-overlay.states": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.woowa-more-overlay.use": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.woowa-site-selector.type": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.woowa-site-selector.bg": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.woowa-site-selector.fg": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.woowa-site-selector.border": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.woowa-site-selector.radius": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.woowa-site-selector.height": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.woowa-site-selector.padding": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.woowa-site-selector.font": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.woowa-site-selector.states": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.woowa-site-selector.use": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.woowa-carousel-control.type": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.woowa-carousel-control.bg": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.woowa-carousel-control.fg": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.woowa-carousel-control.radius": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.woowa-carousel-control.height": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.woowa-carousel-control.states": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.woowa-carousel-control.use": {
+          "surface_id": "woowa-home",
+          "source_id": "woowa-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.font-download.type": {
+          "surface_id": "font-catalog",
+          "source_id": "font-catalog-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.font-download.bg": {
+          "surface_id": "font-catalog",
+          "source_id": "font-catalog-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.font-download.fg": {
+          "surface_id": "font-catalog",
+          "source_id": "font-catalog-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.font-download.height": {
+          "surface_id": "font-catalog",
+          "source_id": "font-catalog-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.font-download.font": {
+          "surface_id": "font-catalog",
+          "source_id": "font-catalog-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.font-download.states": {
+          "surface_id": "font-catalog",
+          "source_id": "font-catalog-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        },
+        "tokens.components.font-download.use": {
+          "surface_id": "font-catalog",
+          "source_id": "font-catalog-live",
+          "method": "computed-style",
+          "captured": "2026-07-11"
+        }
+      },
+      "conflicts": []
+    },
+    "tokens": {
+      "source": "reconciled",
+      "extracted": "2026-07-11",
+      "note": "Baemin 2.0 officially confirms BAEMINWORK/WORK as the app typeface. Exact type metrics remain surface-local: baemin.com, Woowa corporate UI, and the official font catalog are measured separately.",
+      "colors": {
+        "primary": "#0cefd3",
+        "canvas": "#ffffff",
+        "foreground": "#222222",
+        "baemin-dark": "#000000",
+        "baemin-panel": "#f6f6f6",
+        "corporate-foreground": "#232324",
+        "corporate-muted": "#6c6d6f",
+        "corporate-surface": "#f3f4f5",
+        "corporate-disabled": "#cccccc",
+        "corporate-border": "#a6a7a9",
+        "on-dark": "#ffffff"
+      },
+      "typography": {
+        "family": {
+          "ui": "BAEMINWORK"
+        },
+        "baemin-hero": {
+          "size": 60,
+          "weight": 800,
+          "lineHeight": "84px"
+        },
+        "baemin-heading": {
+          "size": 24,
+          "weight": 700,
+          "lineHeight": "normal"
+        },
+        "baemin-button": {
+          "size": 16,
+          "weight": 700,
+          "lineHeight": "22.4px"
+        },
+        "corporate-heading": {
+          "size": 40,
+          "weight": 700,
+          "lineHeight": "52px",
+          "tracking": "-1.2px"
+        },
+        "corporate-card-title": {
+          "size": 24,
+          "weight": 700,
+          "lineHeight": "36px",
+          "tracking": "-0.4px"
+        },
+        "corporate-body": {
+          "size": 16,
+          "weight": 400,
+          "lineHeight": "24px",
+          "tracking": "-0.32px"
+        },
+        "corporate-label": {
+          "size": 14,
+          "weight": 700,
+          "lineHeight": "21px",
+          "tracking": "-0.32px"
+        },
+        "catalog-title": {
+          "size": 48,
+          "weight": 700,
+          "lineHeight": "64.8px",
+          "tracking": "-0.32px"
+        }
+      },
+      "spacing": {
+        "xs": 6,
+        "sm": 8,
+        "md": 12,
+        "lg": 16,
+        "xl": 20,
+        "xxl": 24,
+        "section": 32
+      },
+      "rounded": {
+        "corporate-control": 8,
+        "download-card": 12,
+        "media-control": 16,
+        "circle": 9999
+      },
+      "components_harvested": true,
+      "components": {
+        "app-download-card": {
+          "type": "button",
+          "bg": "#ffffff",
+          "fg": "#222222",
+          "radius": "12px",
+          "height": "54px",
+          "padding": "14px 19px",
+          "font": "13.3333px / 400",
+          "states": "default and hover captured across store/QR variants",
+          "use": "baemin.com app-store and QR download action"
+        },
+        "baemin-nav-link": {
+          "type": "button",
+          "bg": "transparent",
+          "fg": "#ffffff",
+          "height": "22px",
+          "font": "16px / 700",
+          "states": "default captured; hover not retained",
+          "use": "baemin.com top navigation action"
+        },
+        "woowa-more-light": {
+          "type": "button",
+          "bg": "#f3f4f5",
+          "fg": "#232324",
+          "radius": "8px",
+          "height": "52px",
+          "padding": "0 22px",
+          "font": "16px / 700",
+          "states": "default captured; hover not retained",
+          "use": "Woowa corporate light read-more action"
+        },
+        "woowa-more-overlay": {
+          "type": "button",
+          "bg": "rgba(0, 0, 0, 0.3)",
+          "fg": "#ffffff",
+          "border": "1px solid #ffffff",
+          "radius": "8px",
+          "height": "52px",
+          "padding": "0 22px",
+          "font": "16px / 700",
+          "states": "default on image overlay; hover not retained",
+          "use": "Woowa corporate overlay read-more action"
+        },
+        "woowa-site-selector": {
+          "type": "button",
+          "bg": "#ffffff",
+          "fg": "#6c6d6f",
+          "border": "1px solid #a6a7a9",
+          "radius": "8px",
+          "height": "50px",
+          "padding": "13px 16px",
+          "font": "14px / 400",
+          "states": "default captured; expanded state not retained",
+          "use": "Woowa footer family-site selector"
+        },
+        "woowa-carousel-control": {
+          "type": "button",
+          "bg": "rgba(0, 0, 0, 0.4)",
+          "fg": "#000000",
+          "radius": "50%",
+          "height": "40px",
+          "states": "default and disabled navigation states observed",
+          "use": "Woowa media carousel navigation"
+        },
+        "font-download": {
+          "type": "button",
+          "bg": "transparent",
+          "fg": "#232324",
+          "height": "28px",
+          "font": "16px / 700",
+          "states": "available download and unavailable/disabled controls observed on the catalog",
+          "use": "official font catalog download action"
+        }
+      }
+    },
+    "description": "Baemin is the Korean delivery platform that turned ordering food into a recognizable popular-culture brand through mint color, everyday wit, and an unusually sustained investment in Korean type. Launched in 2010 to move delivery from phone calls into an app, Baemin now describes its mission as keeping what people need from going cold—connecting speed with warmth across customers, restaurant owners, and riders. Its identity expects operational immediacy and familiar neighborhood culture to coexist, rather than forcing efficiency to look anonymous or institutional.\n\nTypography is part of that identity, not decorative garnish. The official Baemin font program began with Hanna, modeled on the uneven acrylic-cut storefront lettering of 1960s–70s Korea, then expanded through Jua, Dohyeon, Euljiro, Kkubulim, and other faces that reinterpret hand-painted signs and vernacular lettering. The same cultural instinct appears in Baemin goods and writing: familiar objects, slightly unexpected forms, and short lines that feel conversational rather than institutional.\n\nBaemin 2.0 adds a clearer digital layer to that playful heritage. In July 2025, Woowa Brothers officially introduced a brighter mint and the new WORK typeface in the Baemin app, describing both as a more vivid, modern, simple, and legible customer-centered identity. This reference therefore combines the current `#0cefd3` live color measurement with the official WORK product-font claim, while keeping exact web, corporate, catalog, and app measurements attached to their own surfaces.\n\n**Key Characteristics:**\n- Bright Baemin 2.0 mint: official direction, measured live on baemin.com as `#0cefd3`\n- WORK (`BAEMINWORK`): the official current Baemin app typeface, designed for simple and clear digital reading\n- A long-running public font program rooted in Korean storefront lettering and freely shared brand culture\n- Playful warmth in brand expression, paired with clearer and more direct product communication\n- Surface-local metrics: app identity, baemin.com, Woowa corporate UI, and the font catalog are not flattened into one false system",
+    "colors": {
+      "primary": "#0cefd3",
+      "canvas": "#ffffff",
+      "foreground": "#222222",
+      "baemin-dark": "#000000",
+      "baemin-panel": "#f6f6f6",
+      "corporate-foreground": "#232324",
+      "corporate-muted": "#6c6d6f",
+      "corporate-surface": "#f3f4f5",
+      "corporate-disabled": "#cccccc",
+      "corporate-border": "#a6a7a9",
+      "on-dark": "#ffffff"
+    },
+    "typography": {
+      "baemin-hero": {
+        "size": 60,
+        "weight": 800,
+        "lineHeight": "84px",
+        "script": "ko",
+        "fontFamily": "BAEMINWORK",
+        "fontSize": "60px",
+        "fontWeight": 800
+      },
+      "baemin-heading": {
+        "size": 24,
+        "weight": 700,
+        "lineHeight": "normal",
+        "script": "ko",
+        "fontFamily": "BAEMINWORK",
+        "fontSize": "24px",
+        "fontWeight": 700
+      },
+      "baemin-button": {
+        "size": 16,
+        "weight": 700,
+        "lineHeight": "22.4px",
+        "script": "ko",
+        "fontFamily": "BAEMINWORK",
+        "fontSize": "16px",
+        "fontWeight": 700
+      },
+      "corporate-heading": {
+        "size": 40,
+        "weight": 700,
+        "lineHeight": "52px",
+        "tracking": "-1.2px",
+        "script": "ko",
+        "fontFamily": "BAEMINWORK",
+        "fontSize": "40px",
+        "fontWeight": 700,
+        "letterSpacing": "-1.2px"
+      },
+      "corporate-card-title": {
+        "size": 24,
+        "weight": 700,
+        "lineHeight": "36px",
+        "tracking": "-0.4px",
+        "script": "ko",
+        "fontFamily": "BAEMINWORK",
+        "fontSize": "24px",
+        "fontWeight": 700,
+        "letterSpacing": "-0.4px"
+      },
+      "corporate-body": {
+        "size": 16,
+        "weight": 400,
+        "lineHeight": "24px",
+        "tracking": "-0.32px",
+        "script": "ko",
+        "fontFamily": "BAEMINWORK",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "letterSpacing": "-0.32px"
+      },
+      "corporate-label": {
+        "size": 14,
+        "weight": 700,
+        "lineHeight": "21px",
+        "tracking": "-0.32px",
+        "script": "ko",
+        "fontFamily": "BAEMINWORK",
+        "fontSize": "14px",
+        "fontWeight": 700,
+        "letterSpacing": "-0.32px"
+      },
+      "catalog-title": {
+        "size": 48,
+        "weight": 700,
+        "lineHeight": "64.8px",
+        "tracking": "-0.32px",
+        "script": "ko",
+        "fontFamily": "BAEMINWORK",
+        "fontSize": "48px",
+        "fontWeight": 700,
+        "letterSpacing": "-0.32px"
+      }
+    },
+    "components": {
+      "app-download-card": {
+        "type": "button",
+        "bg": "#ffffff",
+        "fg": "#222222",
+        "radius": "12px",
+        "height": "54px",
+        "padding": "14px 19px",
+        "font": "13.3333px / 400",
+        "states": "default and hover captured across store/QR variants",
+        "use": "baemin.com app-store and QR download action",
+        "backgroundColor": "#ffffff",
+        "textColor": "#222222",
+        "rounded": "12px"
+      },
+      "baemin-nav-link": {
+        "type": "button",
+        "bg": "transparent",
+        "fg": "#ffffff",
+        "height": "22px",
+        "font": "16px / 700",
+        "states": "default captured; hover not retained",
+        "use": "baemin.com top navigation action",
+        "backgroundColor": "transparent",
+        "textColor": "#ffffff"
+      },
+      "woowa-more-light": {
+        "type": "button",
+        "bg": "#f3f4f5",
+        "fg": "#232324",
+        "radius": "8px",
+        "height": "52px",
+        "padding": "0 22px",
+        "font": "16px / 700",
+        "states": "default captured; hover not retained",
+        "use": "Woowa corporate light read-more action",
+        "backgroundColor": "#f3f4f5",
+        "textColor": "#232324",
+        "rounded": "8px"
+      },
+      "woowa-more-overlay": {
+        "type": "button",
+        "bg": "rgba(0, 0, 0, 0.3)",
+        "fg": "#ffffff",
+        "border": "1px solid #ffffff",
+        "radius": "8px",
+        "height": "52px",
+        "padding": "0 22px",
+        "font": "16px / 700",
+        "states": "default on image overlay; hover not retained",
+        "use": "Woowa corporate overlay read-more action",
+        "backgroundColor": "rgba(0, 0, 0, 0.3)",
+        "textColor": "#ffffff",
+        "rounded": "8px"
+      },
+      "woowa-site-selector": {
+        "type": "button",
+        "bg": "#ffffff",
+        "fg": "#6c6d6f",
+        "border": "1px solid #a6a7a9",
+        "radius": "8px",
+        "height": "50px",
+        "padding": "13px 16px",
+        "font": "14px / 400",
+        "states": "default captured; expanded state not retained",
+        "use": "Woowa footer family-site selector",
+        "backgroundColor": "#ffffff",
+        "textColor": "#6c6d6f",
+        "rounded": "8px"
+      },
+      "woowa-carousel-control": {
+        "type": "button",
+        "bg": "rgba(0, 0, 0, 0.4)",
+        "fg": "#000000",
+        "radius": "50%",
+        "height": "40px",
+        "states": "default and disabled navigation states observed",
+        "use": "Woowa media carousel navigation",
+        "backgroundColor": "rgba(0, 0, 0, 0.4)",
+        "textColor": "#000000",
+        "rounded": "50%"
+      },
+      "font-download": {
+        "type": "button",
+        "bg": "transparent",
+        "fg": "#232324",
+        "height": "28px",
+        "font": "16px / 700",
+        "states": "available download and unavailable/disabled controls observed on the catalog",
+        "use": "official font catalog download action",
+        "backgroundColor": "transparent",
+        "textColor": "#232324"
+      }
+    },
+    "spacing": {
+      "xs": "6px",
+      "sm": "8px",
+      "md": "12px",
+      "lg": "16px",
+      "xl": "20px",
+      "xxl": "24px",
+      "section": "32px"
+    },
+    "rounded": {
+      "corporate-control": "8px",
+      "download-card": "12px",
+      "media-control": "16px",
+      "circle": "9999px"
+    }
+  },
+  "brandAsset": {
+    "type": "text-wordmark",
+    "label": "Baemin"
+  }
+}

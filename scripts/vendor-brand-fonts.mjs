@@ -20,3 +20,6 @@ for(const [id,family] of families){
 }
 await writeFile('src/data/brandFontAssets.json',JSON.stringify(registry,null,2)+'\n')
 await writeFile('src/components/demos/brandFonts.css',registry.map(f=>`@font-face{font-family:"${f.family}";src:url("/${f.src}") format("truetype");font-style:normal;font-weight:${f.variable?'100 900':'400'};font-display:swap;}`).join('\n')+'\n')
+
+// Keep the independently pinned Korean font extension when refreshing all assets.
+await import('./vendor-korean-fonts.mjs')

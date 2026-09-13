@@ -180,6 +180,7 @@ async function main() {
 // License: MIT (Copyright 2026 VoltAgent)
 // Run \`npm run sync:awesome-design-md\` to update.
 
+import { ohMyDesignEntries } from './ohMyDesign'
 import type { DesignSystemTokens } from '../types'
 import type { BrandDesignSpec } from '../brandDesignSpec'
 
@@ -188,6 +189,13 @@ export const UPSTREAM_REPO = 'https://github.com/VoltAgent/awesome-design-md' as
 export const IMPORT_DATE = '${'2026-09-08'}' as const
 
 export type VendorEntry = {
+  referenceRights?: string
+  sourceName?: string
+  upstreamRepo?: string
+  vendorSource?: string
+  copyright?: string
+  aliases?: string[]
+  rawSha256?: string
   slug: string
   name: string
   description: string
@@ -205,7 +213,8 @@ export type VendorEntry = {
   externalDeps: string[]
 }
 
-export const vendorEntries: VendorEntry[] = ${JSON.stringify(metaList, null, 2)}
+const awesomeEntries: VendorEntry[] = ${JSON.stringify(metaList, null, 2)}
+export const vendorEntries: VendorEntry[] = [...awesomeEntries, ...ohMyDesignEntries]
 `
   if (!existsSync(tsPath) || readFileSync(tsPath,'utf8').replace(/\r\n/g,'\n')!==generated) writeFileSync(tsPath, generated, 'utf8')
   console.log(`\n✅  Generated ${tsPath}`)

@@ -1,4 +1,5 @@
 import {parse} from 'yaml'
+import {adaptOhMyDesign} from './oh-my-design-adapter.mjs'
 const number=v=>Number.isFinite(parseFloat(v))?parseFloat(v):null
 
 // Theme-role selection uses the source palette, without rewriting source colors.
@@ -19,7 +20,7 @@ export function contrastRatio(foreground, background) {
 export function parseYamlFrontmatter(raw){
  raw=raw.replace(/\r\n/g,'\n')
  const m=raw.match(/^---\r?\n([\s\S]*?)\r?\n---/)
- if(m){const p=parse(m[1].replace(/^(description|属于): (.+)$/gm,(_,k,v)=>k+': '+(v.includes(': ')&&!/^[\"']/.test(v)?JSON.stringify(v):v)));p.description ||= p['属于'];return p}
+ if(m){const p=parse(m[1].replace(/^(description|属于): (.+)$/gm,(_,k,v)=>k+': '+(v.includes(': ')&&!/^[\"']/.test(v)?JSON.stringify(v):v)));p.description ||= p['属于'];return adaptOhMyDesign(p,raw)}
  return parseMarkdown(raw)
 }
 
@@ -107,8 +108,10 @@ export function compactBrandSpec(full) {
  const roles=Object.entries(full.typography), components=Object.entries(full.components)
  const display=roles.find(([key])=>/hero-display|display-mega|^display$|hero-title|section-title/.test(key))??roles.find(([key])=>/display|headline/.test(key))??roles[0]
  const body=roles.find(([key])=>key==='body')??roles.find(([key])=>/^body/.test(key))
- const primary=components.find(([key])=>key==='button-primary')??components.find(([key])=>key==='primary-cta')??components.find(([key])=>/primary|dark-pill/.test(key))
- const surface=components.find(([key])=>/feature-card-photo|property-card|card-base|promo-card|pricing-card/.test(key))??components.find(([key])=>/card/.test(key))
+ const primary=components.find(([key])=>key==='button-primary')??components.find(([key])=>key==='primary-cta')??components.find(([key])=>/primary|dark-pill/.test(key))??(frontmatter?.omd?components.find(([,v])=>v.type==='button'):undefined)
+ const surface=components.find(([key])=>/feature-card-photo|property-card|card-base|promo-card|pricing-card/.test(key))??components.find(([key])=>/card/.test(key))??(frontmatter?.omd?components.find(([,v])=>['card','badge','input','tab'].includes(v.type)):undefined)
  const search=components.find(([key])=>/search-bar|search-pill/.test(key))
- return {...compact, typography:Object.fromEntries([display,body].filter(Boolean)), components:Object.fromEntries([...new Map([primary,surface,search,...components.filter(([key])=>/nav-bar|top-nav|global-nav|hero-band|card-feature|circular-play|text-input/.test(key)).slice(0,5)].filter(Boolean)).entries()]), depth, motion}
+ const selected=[primary,surface,search,...components.filter(([key])=>/nav-bar|top-nav|global-nav|hero-band|card-feature|circular-play|text-input/.test(key)).slice(0,5)].filter(Boolean)
+ if(frontmatter?.omd&&!selected.length)selected.push(...components.slice(0,2))
+ return {...compact, typography:Object.fromEntries([display,body].filter(Boolean)), components:Object.fromEntries(new Map(selected)), depth, motion}
 }

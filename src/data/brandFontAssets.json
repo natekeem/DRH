@@ -102,5 +102,18 @@
     "commit": "809e4d8b8d7e9364a914909bb777679606c178b8",
     "sha256": "498efd461f6ddfcb7a111bf9a565709d2085d48201d501ead960d93e84ffbb88",
     "variable": false
+  },
+  {
+    "family": "Pretendard",
+    "kind": "open-font",
+    "localFamily": "Pretendard",
+    "src": "fonts/brand/pretendard/font.woff2",
+    "sourceUrl": "https://raw.githubusercontent.com/orioncactus/pretendard/7aeb0698819be2b4097dae8ec8fe6a795e5cf3ae/packages/pretendard/dist/web/variable/woff2/PretendardVariable.woff2",
+    "evidenceUrl": "https://raw.githubusercontent.com/orioncactus/pretendard/7aeb0698819be2b4097dae8ec8fe6a795e5cf3ae/LICENSE",
+    "license": "SIL OFL 1.1",
+    "licensePath": "fonts/brand/pretendard/OFL.txt",
+    "commit": "7aeb0698819be2b4097dae8ec8fe6a795e5cf3ae",
+    "sha256": "9599f12fd42fc0bce1cd50b47a0c022e108d7aa64dd0d1bb0ed44f3282d900b4",
+    "variable": true
   }
 ]

@@ -1,0 +1,70 @@
+{
+  "apple": [
+    "developer.apple.com"
+  ],
+  "linear.app": [
+    "linear.app"
+  ],
+  "vercel": [
+    "vercel.com"
+  ],
+  "airbnb": [
+    "news.airbnb.com"
+  ],
+  "stripe": [
+    "stripe.com"
+  ],
+  "spotify": [
+    "developer.spotify.com"
+  ],
+  "figma": [
+    "www.figma.com"
+  ],
+  "ibm": [
+    "carbondesignsystem.com",
+    "www.ibm.com"
+  ],
+  "shopify": [
+    "shopify.dev",
+    "www.shopify.com"
+  ],
+  "supabase": [
+    "supabase.com"
+  ],
+  "mongodb": [
+    "www.mongodb.com"
+  ],
+  "raycast": [
+    "www.raycast.com"
+  ],
+  "sentry": [
+    "sentry.io"
+  ],
+  "kakao": [
+    "developers.kakao.com"
+  ],
+  "kakaobank": [
+    "www.kakaobank.com"
+  ],
+  "naver": [
+    "www.navercorp.com"
+  ],
+  "yeogiotte": [
+    "designlibrary.yeogi.com"
+  ],
+  "samsung": [
+    "developer.samsung.com"
+  ],
+  "kakaopay": [
+    "story.kakaopay.com"
+  ],
+  "karrot": [
+    "seed-design.io"
+  ],
+  "toss": [
+    "tossmini-docs.toss.im"
+  ],
+  "socar": [
+    "design.socar.kr"
+  ]
+}

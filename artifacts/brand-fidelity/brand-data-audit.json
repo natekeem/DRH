@@ -1,6 +1,6 @@
 {
-  "references": 181,
-  "vendors": 74,
+  "references": 198,
+  "vendors": 91,
   "duplicates": [],
   "entries": [
     {
@@ -999,6 +999,262 @@
         "colors.border"
       ],
       "signature": "b6404c40f34bbb919247b0616dd166f5701b610d4a9e9b16274cf5288499e412"
+    },
+    {
+      "slug": "29cm",
+      "format": "yaml",
+      "rawSha256": "e6a22d1a2d5462c4093f1d3adbd2a171239089a7d067a63930b47fc2c4cf9ba0",
+      "typographyRoles": 7,
+      "radiusValues": 4,
+      "spacingValues": 6,
+      "colorRoles": 8,
+      "componentSignatures": 5,
+      "layout": "gallery",
+      "fallbackFields": [
+        "colors.text"
+      ],
+      "signature": "151c1365a5368989815caf602aade78f97d488a6e1f9f3463347b202600642b7"
+    },
+    {
+      "slug": "baemin",
+      "format": "yaml",
+      "rawSha256": "b04937971f8b91b376d1b523f5a476f6b002a4652284cdaf823eb60f3407af49",
+      "typographyRoles": 8,
+      "radiusValues": 4,
+      "spacingValues": 7,
+      "colorRoles": 11,
+      "componentSignatures": 7,
+      "layout": "product",
+      "fallbackFields": [
+        "colors.text",
+        "colors.onPrimary",
+        "colors.border"
+      ],
+      "signature": "6a9afdd9c35aaa4428b6ee90810ce33e70d58600811ee1de628f767c7323e3a4"
+    },
+    {
+      "slug": "banksalad",
+      "format": "yaml",
+      "rawSha256": "6406d4ce56623b000d367f0cfbf95653b28152aff43df8f24ec45de178ecb16a",
+      "typographyRoles": 4,
+      "radiusValues": 4,
+      "spacingValues": 4,
+      "colorRoles": 7,
+      "componentSignatures": 4,
+      "layout": "product",
+      "fallbackFields": [
+        "colors.border"
+      ],
+      "signature": "99f54775183158e28418075d490f032f6602d880509b64bbf0971cebdeaa1685"
+    },
+    {
+      "slug": "coupang",
+      "format": "yaml",
+      "rawSha256": "74f82355f6dda0ad97558f9f74a5c2cdc72946788d6ef48f6412b3c28dc9c325",
+      "typographyRoles": 4,
+      "radiusValues": 1,
+      "spacingValues": 8,
+      "colorRoles": 6,
+      "componentSignatures": 2,
+      "layout": "editorial",
+      "fallbackFields": [
+        "colors.text"
+      ],
+      "signature": "b4cbea8e0ad244604972adb9ceb998a1dabb8d57828b2f08b491d604bdc50d17"
+    },
+    {
+      "slug": "hyundai",
+      "format": "yaml",
+      "rawSha256": "2dbbd9f31c46779a696b6f3586e20100f43264274df4846d03b848c29c9e3a11",
+      "typographyRoles": 3,
+      "radiusValues": 2,
+      "spacingValues": 0,
+      "colorRoles": 8,
+      "componentSignatures": 1,
+      "layout": "product",
+      "fallbackFields": [
+        "colors.border"
+      ],
+      "signature": "fa8fe53a2d19acec3c38549a76648d2ad195208c5eed1165814ca0fc9b18dc03"
+    },
+    {
+      "slug": "kakao",
+      "format": "yaml",
+      "rawSha256": "a06cfee0bc444994b217962ce3892a883b5ecffa2765bfde42645c2222bc8362",
+      "typographyRoles": 8,
+      "radiusValues": 6,
+      "spacingValues": 5,
+      "colorRoles": 11,
+      "componentSignatures": 6,
+      "layout": "product",
+      "fallbackFields": [],
+      "signature": "757e92a4b478701019fa57ec1b29b1551af834b51b81aee538eee9f5291f8904"
+    },
+    {
+      "slug": "kakaobank",
+      "format": "yaml",
+      "rawSha256": "a2659b60968159b143317fb6a99ad21c35e2f04a87ef561edf6c12c2919144cf",
+      "typographyRoles": 6,
+      "radiusValues": 3,
+      "spacingValues": 5,
+      "colorRoles": 7,
+      "componentSignatures": 5,
+      "layout": "editorial",
+      "fallbackFields": [
+        "colors.onPrimary",
+        "colors.border"
+      ],
+      "signature": "87cf96557fd268f94ad4103e91d9ec71d21a3aa668a1e403e5c2ad1c4558fbe7"
+    },
+    {
+      "slug": "kakaopay",
+      "format": "yaml",
+      "rawSha256": "3067d6ac24ee2792e2404f01ef7ec0d50e12447031a4302076fdd433624f169c",
+      "typographyRoles": 3,
+      "radiusValues": 5,
+      "spacingValues": 3,
+      "colorRoles": 7,
+      "componentSignatures": 4,
+      "layout": "editorial",
+      "fallbackFields": [
+        "colors.border"
+      ],
+      "signature": "950c2fd75de4889f019af37cec0b0d0f4c620e7a3044a06036378c04c91d8bb4"
+    },
+    {
+      "slug": "karrot",
+      "format": "yaml",
+      "rawSha256": "09df85980a8ae2f45e3c936b62f2549fcaf4660904fffee91c9d59d4effca087",
+      "typographyRoles": 6,
+      "radiusValues": 3,
+      "spacingValues": 5,
+      "colorRoles": 15,
+      "componentSignatures": 5,
+      "layout": "product",
+      "fallbackFields": [
+        "colors.text"
+      ],
+      "signature": "19d75785321466a926fa628da4e7e4348b2619d56c547c8e7aa3738804342f35"
+    },
+    {
+      "slug": "kurly",
+      "format": "yaml",
+      "rawSha256": "b953f809f8d7e38f4d244891d9901e2e07dce3c4c2b85d7d1a3f710c660395c7",
+      "typographyRoles": 3,
+      "radiusValues": 2,
+      "spacingValues": 4,
+      "colorRoles": 8,
+      "componentSignatures": 3,
+      "layout": "editorial",
+      "fallbackFields": [],
+      "signature": "5a6d2e6d2a8609f6ea4a788c51cf219fae3e4929ece9f660e5d31214ee6d5560"
+    },
+    {
+      "slug": "musinsa",
+      "format": "yaml",
+      "rawSha256": "b50efaff74122fcd7aea1d9ba05826bd1a53248a1e92ce7a429ca87868fbd70d",
+      "typographyRoles": 2,
+      "radiusValues": 3,
+      "spacingValues": 4,
+      "colorRoles": 5,
+      "componentSignatures": 4,
+      "layout": "marketplace",
+      "fallbackFields": [
+        "colors.text",
+        "colors.border"
+      ],
+      "signature": "76b44815b94e841bade069f0246a7b3765125388ecda27bef1adda86b8ea3749"
+    },
+    {
+      "slug": "naver",
+      "format": "yaml",
+      "rawSha256": "7c42dad9552326b6196365ba2acf53579f9db56471488c6694e607fb78ca0e5f",
+      "typographyRoles": 5,
+      "radiusValues": 4,
+      "spacingValues": 5,
+      "colorRoles": 9,
+      "componentSignatures": 8,
+      "layout": "product",
+      "fallbackFields": [
+        "colors.text",
+        "colors.primary"
+      ],
+      "signature": "72661dfba0469d8e7ec6bfb2a6a926160176ac654f27be9ce3b1aa63375e4dea"
+    },
+    {
+      "slug": "oliveyoung",
+      "format": "yaml",
+      "rawSha256": "4069134f2abcb90b9214a85e8a21ef66c08e5929fbce70392ed0381c6ffabdd4",
+      "typographyRoles": 2,
+      "radiusValues": 3,
+      "spacingValues": 2,
+      "colorRoles": 7,
+      "componentSignatures": 1,
+      "layout": "editorial",
+      "fallbackFields": [
+        "colors.text",
+        "colors.primary",
+        "colors.border"
+      ],
+      "signature": "d052ee37983fea493d67dc0f822c1d5f55389b9cd6ba7816b016411ae95596c3"
+    },
+    {
+      "slug": "samsung",
+      "format": "yaml",
+      "rawSha256": "bacd6c7f5b4c7a05ca60cede7dd76599258064f3df563cbb4fa35a92f9ac7928",
+      "typographyRoles": 3,
+      "radiusValues": 3,
+      "spacingValues": 3,
+      "colorRoles": 8,
+      "componentSignatures": 1,
+      "layout": "product",
+      "fallbackFields": [
+        "colors.text"
+      ],
+      "signature": "8cba8578f6d40647e464935ed2fbd1c8e4ac73b1d8445c87127e20b7332d7c70"
+    },
+    {
+      "slug": "socar",
+      "format": "yaml",
+      "rawSha256": "1af22ef57f6d829048c0d5600860b821f1f74405c37457925696e0ed0dc596e1",
+      "typographyRoles": 4,
+      "radiusValues": 4,
+      "spacingValues": 5,
+      "colorRoles": 8,
+      "componentSignatures": 4,
+      "layout": "editorial",
+      "fallbackFields": [
+        "colors.text"
+      ],
+      "signature": "fa8e2e5b92922d79c60ab219f2c183f179fb3e674869ee12ad352edbf8fab5e0"
+    },
+    {
+      "slug": "toss",
+      "format": "yaml",
+      "rawSha256": "115778c526c36b165ad5828b95637c2289c05735e5d81d8a00c4c7d195c50c32",
+      "typographyRoles": 6,
+      "radiusValues": 6,
+      "spacingValues": 6,
+      "colorRoles": 12,
+      "componentSignatures": 6,
+      "layout": "product",
+      "fallbackFields": [],
+      "signature": "c465c638a60281f0316b00425284f934ae4dc8c6c36290d2c4ac81ccaa9a196e"
+    },
+    {
+      "slug": "yeogiotte",
+      "format": "yaml",
+      "rawSha256": "60940591b636a9551efaf81f3b95c2e18dd0e08b7bb31ede96b0054d6ec274a8",
+      "typographyRoles": 5,
+      "radiusValues": 6,
+      "spacingValues": 8,
+      "colorRoles": 9,
+      "componentSignatures": 5,
+      "layout": "product",
+      "fallbackFields": [
+        "colors.text"
+      ],
+      "signature": "a6e5cadd3b4fca60994254997f98e3983fd2aa83365e239222f092483ec4f74a"
     }
   ]
 }
