@@ -72,7 +72,7 @@ export function motionEvidence(spec:BrandDesignSpec) {
 const replacements:[RegExp,string][]=[[/no shadow,? no border/gi,'그림자·테두리 없음'],[/no (?:drop[- ]?)?shadow/gi,'그림자 없음'],[/no border/gi,'테두리 없음'],[/background/gi,'배경'],[/focus(?:ed)? (?:ring|outline)/gi,'포커스 링'],[/border/gi,'테두리'],[/outline/gi,'외곽선'],[/shadow/gi,'그림자'],[/single[- ]column/gi,'1열'],[/two[- ]column/gi,'2열'],[/three[- ]column/gi,'3열'],[/default desktop layout/gi,'기본 데스크톱 구성'],[/card grid/gi,'카드 그리드'],[/maintained/gi,'유지'],[/nav hamburger/gi,'메뉴 버튼으로 전환'],[/pricing comparison becomes accordion/gi,'요금 비교를 아코디언으로 전환'],[/on canvas/gi,'캔버스 위'],[/at (\d+)% opacity/gi,'불투명도 $1%'],[/surface/gi,'표면'],[/inset/gi,'안쪽'],[/flat/gi,'평면']]
 export function shortRule(text:string){const tokens:string[]=[];let s=cleanSource(text).replace(/(?:colors|typography|components?)\.[\w-]+/g,t=>{tokens.push(t);return `§${tokens.length-1}§`});for(const [pattern,translation]of replacements)s=s.replace(pattern,translation);return s.replace(/§(\d+)§/g,(_,i)=>tokens[Number(i)])}
 export function curatedColors<T>(colors:[string,T][]):[string,T][] {
- const priorities=[/^primary$/, /^canvas$/, /^surface(?:-1)?$/, /^(ink|text|body)$/, /^(ink-muted|muted)$/, /^(hairline|border)$/, /primary-hover/, /semantic-success/]
+ const priorities=[/^primary$/, /^canvas$/, /^surface(?:-1|-card|-soft)?$/, /^(ink|text|body)$/, /^(ink-muted|muted)$/, /^(hairline|border)$/, /primary-hover/, /semantic-success/]
  const chosen=priorities.map(p=>colors.find(([k])=>p.test(k))).filter((v):v is [string,T]=>!!v)
  return [...new Map([...chosen,...colors].map(v=>[v[0],v])).values()].slice(0,8)
 }

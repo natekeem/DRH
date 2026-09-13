@@ -1,20 +1,39 @@
 import type { CSSProperties } from 'react'
+import { resolveComponentStyle } from './brandComponentStyle'
 import type { BrandDesignSpec, BrandTypeRole, OfficialBrandResource } from '../brandDesignSpec'
 import type { VendorEntry } from '../data/awesomeDesignMd'
 import resourceRegistry from '../data/brandOfficialResources.json'
 import { motionEvidence, responsiveEvidence, resolveBrandFont, sourceLines } from './brandPresentation'
 
-export type ComponentKind = 'buttons'|'inputs'|'cards'|'badges'|'tabs'|'dialogs'|'tables'|'navigation'|'other'
+export type ComponentKind = 'buttons'|'inputs'|'cards'|'badges'|'tabs'|'dialogs'|'tables'|'navigation'|'hero'|'section'|'cta-band'|'pricing'|'media'|'code'|'status'|'icon'|'footer'|'legal'|'content-surface'|'other'
 export type CatalogComponent = { key:string; kind:ComponentKind; values:Record<string,unknown> }
 export type BrandCatalogSection = { type:'overview'|'official-resources'|'colors'|'typography'|'components'|'geometry'|'elevation'|'motion'|'responsive'|'layout'|'source'; id:string; label:string; count?:number; kind?:ComponentKind }
 export type BrandTheme = {id:'light'|'dark';label:string;colors:{canvas:string;surface:string;text:string;muted:string;border:string};evidence:string[]}
 export type BrandCatalog = {entry:VendorEntry;spec:BrandDesignSpec;dna:{label:string;evidence:string}[];colors:[string,string][];roles:[string,BrandTypeRole][];components:CatalogComponent[];sections:BrandCatalogSection[];themes:BrandTheme[];officialResources:OfficialBrandResource[]}
-export const componentLabels:Record<ComponentKind,string>={buttons:'Buttons · 버튼',cards:'Cards · 카드',inputs:'Forms · 입력',badges:'Badges · 배지',tabs:'Tabs · 탭',dialogs:'Dialogs · 대화상자',tables:'Tables · 표',navigation:'Navigation · 탐색',other:'기타 구성요소'}
+export const componentLabels:Record<ComponentKind,string>={buttons:'Buttons · 버튼',cards:'Cards · 카드',inputs:'Forms · 입력',badges:'Badges · 배지',tabs:'Tabs · 탭',dialogs:'Dialogs · 대화상자',tables:'Tables · 표',navigation:'Navigation · 탐색',hero:'Hero · 주요 메시지',section:'Sections · 콘텐츠 영역','cta-band':'CTA · 다음 행동',pricing:'Pricing · 요금',media:'Media · 미디어',code:'Code · 코드',status:'Status · 상태',icon:'Assets · 형태',footer:'Footer · 하단',legal:'Legal · 안내','content-surface':'Content · 목록과 표면',other:'분류되지 않은 원본 정의'}
 export const scalar=(v:unknown,fallback='')=>typeof v==='string'||typeof v==='number'?String(v):fallback
 export const numeric=(v:unknown,fallback=0)=>Number.isFinite(parseFloat(String(v)))?parseFloat(String(v)):fallback
 export const length=(v:unknown)=>typeof v==='number'?v+'px':scalar(v)||undefined
 export function isDark(color:string){const c=color.replace('#','');return c.length===6&&parseInt(c.slice(0,2),16)*.299+parseInt(c.slice(2,4),16)*.587+parseInt(c.slice(4,6),16)*.114<128}
-export function componentKind(key:string):ComponentKind{
+export function componentKind(key:string,values:Record<string,unknown>={}):ComponentKind{
+ const explicit:Record<string,ComponentKind>={button:'buttons',input:'inputs',toggle:'inputs',card:'cards',badge:'badges',tab:'tabs',tabs:'tabs',dialog:'dialogs',table:'tables',navigation:'navigation',hero:'hero',section:'section',pricing:'pricing',media:'media',code:'code',status:'status',icon:'icon',footer:'footer',legal:'legal','cta-band':'cta-band','content-surface':'content-surface'}
+ if(explicit[String(values.type)])return explicit[String(values.type)]
+ if(values.type==='listItem')return /header|menu|nav/.test(key)?'navigation':'content-surface'
+ const semantic=String(values.semantic??values.role??values.use??'').toLowerCase()
+ if(explicit[semantic])return explicit[semantic]
+ if(/hero/.test(key))return 'hero'
+ if(/pricing|tier/.test(key))return 'pricing'
+ if(/cta-band/.test(key))return 'cta-band'
+ if(/legal/.test(key))return 'legal'
+ if(/footer/.test(key))return 'footer'
+ if(/asset-icon|logo-strip|^icon$/.test(key))return 'icon'
+ if(/code-editor|terminal|code-block/.test(key))return 'code'
+ if(/toast|status/.test(key))return 'status'
+ if(/media|cover|player|image|video/.test(key)&&!/button|control/.test(key))return 'media'
+ if(/section|band|mesh/.test(key))return 'section'
+ if(/app-shell-row/.test(key))return 'navigation'
+ if(/auth-form-card|form-panel/.test(key))return 'cards'
+
  if(/modal|dialog|drawer/.test(key))return 'dialogs'
  if(/table|(?:^|-)row|(?:^|-)cell/.test(key))return 'tables'
  if(/tab/.test(key))return 'tabs'
@@ -26,7 +45,7 @@ export function componentKind(key:string):ComponentKind{
  return 'other'
 }
 export function buildBrandCatalog(entry:VendorEntry,spec:BrandDesignSpec=entry.spec):BrandCatalog{
- const colors=Object.entries(spec.colors),roles=Object.entries(spec.typography),components=Object.entries(spec.components).map(([key,values])=>({key,values,kind:(entry.vendorSource==='oh-my-design'&&values.type==='listItem'&&/header|menu|nav/.test(key)?'navigation':undefined)||(entry.vendorSource==='oh-my-design'&&({button:'buttons',input:'inputs',card:'cards',badge:'badges',tab:'tabs',tabs:'tabs',navigation:'navigation',table:'tables'} as Record<string,ComponentKind>)[String(values.type)])||componentKind(key)}))
+ const colors=Object.entries(spec.colors),roles=Object.entries(spec.typography),components=Object.entries(spec.components).map(([key,values])=>({key,values,kind:componentKind(key,values)}))
  const dna:{label:string;evidence:string}[]=[]
  for(const [pattern,label]of [[/photography|photograph|photo-first/i,'Photography-led'],[/dense|technical|compact/i,'Dense'],[/generous|spacious|whitespace|white space/i,'Spacious'],[/minimal|subtraction|recedes|restraint/i,'Minimal'],[/bevel|Y2K|retro/i,'Retro'],[/editorial/i,'Editorial'],[/pastel/i,'Pastel surfaces'],[/dark|near-black/i,'Dark surfaces'],[/marketplace/i,'Marketplace'],[/product|workspace/i,'Product-first']] as [RegExp,string][]){const found=spec.traits.match(pattern);if(found)dna.push({label,evidence:found[0]})}
  if(dna.length<2){if(!dna.some(d=>d.label.toLowerCase()===spec.layout))dna.push({label:spec.layout.charAt(0).toUpperCase()+spec.layout.slice(1),evidence:'Source-trait composition'});const radius=Object.values(spec.radius).find(v=>numeric(v)>0);if(radius)dna.push({label:'Rounded geometry',evidence:'radius: '+radius})}
@@ -56,9 +75,5 @@ export function typeStyle(role:Partial<BrandTypeRole>):CSSProperties{
  return {fontFamily:resolveBrandFont(role).stack,fontSize:length(role.fontSize),fontWeight:role.fontWeight as CSSProperties['fontWeight'],lineHeight:leading.endsWith('px')?numeric(leading)/size:leading||undefined,letterSpacing:length(role.letterSpacing),textTransform:role.textTransform as CSSProperties['textTransform']}
 }
 export function componentStyle(values:Record<string,unknown>,catalog:BrandCatalog,theme:BrandTheme):CSSProperties{
- const base=catalog.themes[0].colors
- const color=(value:unknown)=>{const s=scalar(value);if(!s)return undefined;for(const key of ['canvas','surface','text','border'] as const){if(s.toLowerCase()===base[key].toLowerCase())return theme.colors[key]}return s}
- const typography:Partial<BrandTypeRole>=typeof values.typography==='object'&&values.typography?values.typography as BrandTypeRole:{}
- // Explicit source CSS properties only; layout bounds belong to the catalog stylesheet.
- return {...typeStyle(typography),background:color(values.backgroundColor),color:color(values.textColor),borderRadius:length(values.rounded??values.borderRadius),border:scalar(values.border)||undefined,boxShadow:scalar(values.boxShadow??values.shadow)||undefined,padding:length(values.padding),height:length(values.height),fontSize:length(typography.fontSize),opacity:values.opacity===undefined?undefined:numeric(values.opacity,1)}
+ return resolveComponentStyle(values,catalog,theme)
 }

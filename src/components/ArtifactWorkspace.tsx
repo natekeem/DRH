@@ -21,7 +21,7 @@ export function ArtifactWorkspace({artifacts}:{artifacts:ArtifactView[]}) {
     document.getElementById(`artifact-tab-${artifacts[next].id}`)?.focus()
   }
   return <section className="artifact-workspace-wrapper" aria-label="Artifact workspace">
-    <div className="artifact-meta"><span className="eyebrow">TAKE IT TO YOUR AGENT</span><Link to="/guides/using-design-md">사용 가이드 ↗</Link></div>
+    <div className="artifact-meta"><span className="eyebrow">TAKE IT TO YOUR AGENT</span><Link to="/guides/apply-demo-code">사용 가이드 ↗</Link></div>
     <div className="artifact-workspace">
       <div className="artifact-tabs" role="tablist" aria-label="Artifacts">{artifacts.map((a,i)=><button key={a.id} id={`artifact-tab-${a.id}`} role="tab" aria-selected={current.id===a.id} aria-controls="artifact-panel" tabIndex={current.id===a.id?0:-1} onKeyDown={e=>onKey(e,i)} onClick={()=>setTab(a.id)}>{a.label}</button>)}</div>
       <div className="artifact-options">{current.compact?<><div className="artifact-mode" role="group" aria-label="문서 길이"><button aria-pressed={mode==='compact'} onClick={()=>setMode('compact')}>Compact</button><button aria-pressed={mode==='extended'} onClick={()=>setMode('extended')}>Extended</button></div><span>{mode==='extended'?'권장 · 구체적인 구현 계약':'핵심 규칙 · 적은 토큰'}</span></>:<span>{current.hint??'바로 저장할 수 있는 원문입니다.'}</span>}</div>

@@ -1,0 +1,1225 @@
+{
+  "cases": [
+    {
+      "slug": "baemin",
+      "width": 1920,
+      "height": 1080,
+      "catalog": {
+        "width": 986,
+        "scrollWidth": 986,
+        "parentWidth": 1001,
+        "parentScroll": 1001,
+        "overflow": []
+      },
+      "applied": {
+        "width": 986,
+        "scrollWidth": 986,
+        "parentWidth": 1001,
+        "parentScroll": 1001,
+        "overflow": []
+      },
+      "full": {
+        "width": 1905,
+        "scrollWidth": 1905,
+        "parentWidth": 1920,
+        "parentScroll": 1920,
+        "overflow": []
+      },
+      "buttonParity": {
+        "backgroundColor": "rgb(255, 255, 255)",
+        "color": "rgb(34, 34, 34)",
+        "borderRadius": "12px",
+        "fontSize": "13.3333px",
+        "fontWeight": "400",
+        "padding": "14px 19px",
+        "borderColor": "rgb(34, 34, 34)",
+        "borderWidth": "0px"
+      },
+      "downloadSha256": "b04937971f8b91b376d1b523f5a476f6b002a4652284cdaf823eb60f3407af49",
+      "copyLength": 298
+    },
+    {
+      "slug": "kakaobank",
+      "width": 1920,
+      "height": 1080,
+      "catalog": {
+        "width": 986,
+        "scrollWidth": 986,
+        "parentWidth": 1001,
+        "parentScroll": 1001,
+        "overflow": []
+      },
+      "applied": {
+        "width": 986,
+        "scrollWidth": 986,
+        "parentWidth": 1001,
+        "parentScroll": 1001,
+        "overflow": []
+      },
+      "full": {
+        "width": 1905,
+        "scrollWidth": 1905,
+        "parentWidth": 1920,
+        "parentScroll": 1920,
+        "overflow": []
+      },
+      "buttonParity": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "fontSize": "14px",
+        "fontWeight": "600",
+        "padding": "0px 20px",
+        "borderColor": "rgb(0, 0, 0)",
+        "borderWidth": "0px"
+      },
+      "downloadSha256": "a2659b60968159b143317fb6a99ad21c35e2f04a87ef561edf6c12c2919144cf",
+      "copyLength": 301
+    },
+    {
+      "slug": "toss",
+      "width": 1920,
+      "height": 1080,
+      "catalog": {
+        "width": 986,
+        "scrollWidth": 986,
+        "parentWidth": 1001,
+        "parentScroll": 1001,
+        "overflow": []
+      },
+      "applied": {
+        "width": 986,
+        "scrollWidth": 986,
+        "parentWidth": 1001,
+        "parentScroll": 1001,
+        "overflow": []
+      },
+      "full": {
+        "width": 1905,
+        "scrollWidth": 1905,
+        "parentWidth": 1920,
+        "parentScroll": 1920,
+        "overflow": []
+      },
+      "buttonParity": {
+        "backgroundColor": "rgb(49, 130, 246)",
+        "color": "rgb(255, 255, 255)",
+        "borderRadius": "16px",
+        "fontSize": "17px",
+        "fontWeight": "600",
+        "padding": "0px 20px",
+        "borderColor": "rgb(255, 255, 255)",
+        "borderWidth": "0px"
+      },
+      "downloadSha256": "115778c526c36b165ad5828b95637c2289c05735e5d81d8a00c4c7d195c50c32",
+      "copyLength": 296
+    },
+    {
+      "slug": "linear.app",
+      "width": 1920,
+      "height": 1080,
+      "catalog": {
+        "width": 986,
+        "scrollWidth": 986,
+        "parentWidth": 1001,
+        "parentScroll": 1001,
+        "overflow": []
+      },
+      "applied": {
+        "width": 986,
+        "scrollWidth": 986,
+        "parentWidth": 1001,
+        "parentScroll": 1001,
+        "overflow": []
+      },
+      "full": {
+        "width": 1905,
+        "scrollWidth": 1905,
+        "parentWidth": 1920,
+        "parentScroll": 1920,
+        "overflow": []
+      },
+      "buttonParity": {
+        "backgroundColor": "rgb(94, 106, 210)",
+        "color": "rgb(255, 255, 255)",
+        "borderRadius": "8px",
+        "fontSize": "14px",
+        "fontWeight": "500",
+        "padding": "8px 14px",
+        "borderColor": "rgb(255, 255, 255)",
+        "borderWidth": "0px"
+      },
+      "downloadSha256": "30bd30e72c48a16e4bdbd010f2d1c85fab657c6fae3cc85389399aab10f9cb5f",
+      "copyLength": 313
+    },
+    {
+      "slug": "coinbase",
+      "width": 1920,
+      "height": 1080,
+      "catalog": {
+        "width": 986,
+        "scrollWidth": 986,
+        "parentWidth": 1001,
+        "parentScroll": 1001,
+        "overflow": []
+      },
+      "applied": {
+        "width": 986,
+        "scrollWidth": 986,
+        "parentWidth": 1001,
+        "parentScroll": 1001,
+        "overflow": []
+      },
+      "full": {
+        "width": 1905,
+        "scrollWidth": 1905,
+        "parentWidth": 1920,
+        "parentScroll": 1920,
+        "overflow": []
+      },
+      "buttonParity": {
+        "backgroundColor": "rgb(0, 82, 255)",
+        "color": "rgb(255, 255, 255)",
+        "borderRadius": "100px",
+        "fontSize": "16px",
+        "fontWeight": "600",
+        "padding": "12px 20px",
+        "borderColor": "rgb(255, 255, 255)",
+        "borderWidth": "0px"
+      },
+      "downloadSha256": "c8c67800dd7f58fcc87ed7d267a3bba862e3419e499e8a66d67731a69d2de1d6",
+      "copyLength": 315
+    },
+    {
+      "slug": "spotify",
+      "width": 1920,
+      "height": 1080,
+      "catalog": {
+        "width": 986,
+        "scrollWidth": 986,
+        "parentWidth": 1001,
+        "parentScroll": 1001,
+        "overflow": []
+      },
+      "applied": {
+        "width": 986,
+        "scrollWidth": 986,
+        "parentWidth": 1001,
+        "parentScroll": 1001,
+        "overflow": []
+      },
+      "full": {
+        "width": 1905,
+        "scrollWidth": 1905,
+        "parentWidth": 1920,
+        "parentScroll": 1920,
+        "overflow": []
+      },
+      "buttonParity": {
+        "backgroundColor": "rgb(31, 31, 31)",
+        "color": "rgb(255, 255, 255)",
+        "borderRadius": "9999px",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "padding": "8px 16px",
+        "borderColor": "rgb(255, 255, 255)",
+        "borderWidth": "0px"
+      },
+      "downloadSha256": "72e964a6cf551d0603f9854f2f42ee08e97ad4d9e17e037f50f6233508288295",
+      "copyLength": 314
+    },
+    {
+      "slug": "ferrari",
+      "width": 1920,
+      "height": 1080,
+      "catalog": {
+        "width": 986,
+        "scrollWidth": 986,
+        "parentWidth": 1001,
+        "parentScroll": 1001,
+        "overflow": []
+      },
+      "applied": {
+        "width": 986,
+        "scrollWidth": 986,
+        "parentWidth": 1001,
+        "parentScroll": 1001,
+        "overflow": []
+      },
+      "full": {
+        "width": 1905,
+        "scrollWidth": 1905,
+        "parentWidth": 1920,
+        "parentScroll": 1920,
+        "overflow": []
+      },
+      "buttonParity": {
+        "backgroundColor": "rgb(218, 41, 28)",
+        "color": "rgb(255, 255, 255)",
+        "borderRadius": "0px",
+        "fontSize": "14px",
+        "fontWeight": "700",
+        "padding": "14px 24px",
+        "borderColor": "rgb(255, 255, 255)",
+        "borderWidth": "0px"
+      },
+      "downloadSha256": "1199e2832641cac7e384aaf3b1f3db87f992240cea5d3d1eee04d9dc00acb17c",
+      "copyLength": 314
+    },
+    {
+      "slug": "nintendo-2001",
+      "width": 1920,
+      "height": 1080,
+      "catalog": {
+        "width": 986,
+        "scrollWidth": 986,
+        "parentWidth": 1001,
+        "parentScroll": 1001,
+        "overflow": []
+      },
+      "applied": {
+        "width": 986,
+        "scrollWidth": 986,
+        "parentWidth": 1001,
+        "parentScroll": 1001,
+        "overflow": []
+      },
+      "full": {
+        "width": 1905,
+        "scrollWidth": 1905,
+        "parentWidth": 1920,
+        "parentScroll": 1920,
+        "overflow": []
+      },
+      "buttonParity": {
+        "backgroundColor": "rgb(236, 171, 55)",
+        "color": "rgb(33, 36, 46)",
+        "borderRadius": "2px",
+        "fontSize": "11px",
+        "fontWeight": "700",
+        "padding": "12px",
+        "borderColor": "rgb(33, 36, 46)",
+        "borderWidth": "0px"
+      },
+      "downloadSha256": "9630af17090d5c39ba9d8b5915a597a96c7552efe1422b3b8c3f31fb3e636716",
+      "copyLength": 326
+    },
+    {
+      "slug": "vercel",
+      "width": 1920,
+      "height": 1080,
+      "catalog": {
+        "width": 986,
+        "scrollWidth": 986,
+        "parentWidth": 1001,
+        "parentScroll": 1001,
+        "overflow": []
+      },
+      "applied": {
+        "width": 986,
+        "scrollWidth": 986,
+        "parentWidth": 1001,
+        "parentScroll": 1001,
+        "overflow": []
+      },
+      "full": {
+        "width": 1905,
+        "scrollWidth": 1905,
+        "parentWidth": 1920,
+        "parentScroll": 1920,
+        "overflow": []
+      },
+      "buttonParity": {
+        "backgroundColor": "rgb(23, 23, 23)",
+        "color": "rgb(255, 255, 255)",
+        "borderRadius": "100px",
+        "fontSize": "16px",
+        "fontWeight": "500",
+        "padding": "0px 12px",
+        "borderColor": "rgb(255, 255, 255)",
+        "borderWidth": "0px"
+      },
+      "downloadSha256": "d0951b93c2b4ce9840c715c9f9b3e58a386c6c58ae5cc0f804dec3b116b95bd8",
+      "copyLength": 313
+    },
+    {
+      "slug": "apple",
+      "width": 1920,
+      "height": 1080,
+      "catalog": {
+        "width": 986,
+        "scrollWidth": 986,
+        "parentWidth": 1001,
+        "parentScroll": 1001,
+        "overflow": []
+      },
+      "applied": {
+        "width": 986,
+        "scrollWidth": 986,
+        "parentWidth": 1001,
+        "parentScroll": 1001,
+        "overflow": []
+      },
+      "full": {
+        "width": 1905,
+        "scrollWidth": 1905,
+        "parentWidth": 1920,
+        "parentScroll": 1920,
+        "overflow": []
+      },
+      "buttonParity": {
+        "backgroundColor": "rgb(0, 102, 204)",
+        "color": "rgb(255, 255, 255)",
+        "borderRadius": "9999px",
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "padding": "11px 22px",
+        "borderColor": "rgb(255, 255, 255)",
+        "borderWidth": "0px"
+      },
+      "downloadSha256": "83fbc614443a9b3d7569e9956a43e7b8740f9d0f939f58b8154f7a7cec3002b2",
+      "copyLength": 312
+    },
+    {
+      "slug": "baemin",
+      "width": 1440,
+      "height": 1000,
+      "catalog": {
+        "width": 722,
+        "scrollWidth": 722,
+        "parentWidth": 737,
+        "parentScroll": 737,
+        "overflow": []
+      },
+      "applied": {
+        "width": 722,
+        "scrollWidth": 722,
+        "parentWidth": 737,
+        "parentScroll": 737,
+        "overflow": []
+      },
+      "full": {
+        "width": 1425,
+        "scrollWidth": 1425,
+        "parentWidth": 1440,
+        "parentScroll": 1440,
+        "overflow": []
+      },
+      "buttonParity": {
+        "backgroundColor": "rgb(255, 255, 255)",
+        "color": "rgb(34, 34, 34)",
+        "borderRadius": "12px",
+        "fontSize": "13.3333px",
+        "fontWeight": "400",
+        "padding": "14px 19px",
+        "borderColor": "rgb(34, 34, 34)",
+        "borderWidth": "0px"
+      },
+      "downloadSha256": "b04937971f8b91b376d1b523f5a476f6b002a4652284cdaf823eb60f3407af49",
+      "copyLength": 298
+    },
+    {
+      "slug": "kakaobank",
+      "width": 1440,
+      "height": 1000,
+      "catalog": {
+        "width": 722,
+        "scrollWidth": 722,
+        "parentWidth": 737,
+        "parentScroll": 737,
+        "overflow": []
+      },
+      "applied": {
+        "width": 722,
+        "scrollWidth": 722,
+        "parentWidth": 737,
+        "parentScroll": 737,
+        "overflow": []
+      },
+      "full": {
+        "width": 1425,
+        "scrollWidth": 1425,
+        "parentWidth": 1440,
+        "parentScroll": 1440,
+        "overflow": []
+      },
+      "buttonParity": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "fontSize": "14px",
+        "fontWeight": "600",
+        "padding": "0px 20px",
+        "borderColor": "rgb(0, 0, 0)",
+        "borderWidth": "0px"
+      },
+      "downloadSha256": "a2659b60968159b143317fb6a99ad21c35e2f04a87ef561edf6c12c2919144cf",
+      "copyLength": 301
+    },
+    {
+      "slug": "toss",
+      "width": 1440,
+      "height": 1000,
+      "catalog": {
+        "width": 722,
+        "scrollWidth": 722,
+        "parentWidth": 737,
+        "parentScroll": 737,
+        "overflow": []
+      },
+      "applied": {
+        "width": 722,
+        "scrollWidth": 722,
+        "parentWidth": 737,
+        "parentScroll": 737,
+        "overflow": []
+      },
+      "full": {
+        "width": 1425,
+        "scrollWidth": 1425,
+        "parentWidth": 1440,
+        "parentScroll": 1440,
+        "overflow": []
+      },
+      "buttonParity": {
+        "backgroundColor": "rgb(49, 130, 246)",
+        "color": "rgb(255, 255, 255)",
+        "borderRadius": "16px",
+        "fontSize": "17px",
+        "fontWeight": "600",
+        "padding": "0px 20px",
+        "borderColor": "rgb(255, 255, 255)",
+        "borderWidth": "0px"
+      },
+      "downloadSha256": "115778c526c36b165ad5828b95637c2289c05735e5d81d8a00c4c7d195c50c32",
+      "copyLength": 296
+    },
+    {
+      "slug": "linear.app",
+      "width": 1440,
+      "height": 1000,
+      "catalog": {
+        "width": 722,
+        "scrollWidth": 722,
+        "parentWidth": 737,
+        "parentScroll": 737,
+        "overflow": []
+      },
+      "applied": {
+        "width": 722,
+        "scrollWidth": 722,
+        "parentWidth": 737,
+        "parentScroll": 737,
+        "overflow": []
+      },
+      "full": {
+        "width": 1425,
+        "scrollWidth": 1425,
+        "parentWidth": 1440,
+        "parentScroll": 1440,
+        "overflow": []
+      },
+      "buttonParity": {
+        "backgroundColor": "rgb(94, 106, 210)",
+        "color": "rgb(255, 255, 255)",
+        "borderRadius": "8px",
+        "fontSize": "14px",
+        "fontWeight": "500",
+        "padding": "8px 14px",
+        "borderColor": "rgb(255, 255, 255)",
+        "borderWidth": "0px"
+      },
+      "downloadSha256": "30bd30e72c48a16e4bdbd010f2d1c85fab657c6fae3cc85389399aab10f9cb5f",
+      "copyLength": 313
+    },
+    {
+      "slug": "coinbase",
+      "width": 1440,
+      "height": 1000,
+      "catalog": {
+        "width": 722,
+        "scrollWidth": 722,
+        "parentWidth": 737,
+        "parentScroll": 737,
+        "overflow": []
+      },
+      "applied": {
+        "width": 722,
+        "scrollWidth": 722,
+        "parentWidth": 737,
+        "parentScroll": 737,
+        "overflow": []
+      },
+      "full": {
+        "width": 1425,
+        "scrollWidth": 1425,
+        "parentWidth": 1440,
+        "parentScroll": 1440,
+        "overflow": []
+      },
+      "buttonParity": {
+        "backgroundColor": "rgb(0, 82, 255)",
+        "color": "rgb(255, 255, 255)",
+        "borderRadius": "100px",
+        "fontSize": "16px",
+        "fontWeight": "600",
+        "padding": "12px 20px",
+        "borderColor": "rgb(255, 255, 255)",
+        "borderWidth": "0px"
+      },
+      "downloadSha256": "c8c67800dd7f58fcc87ed7d267a3bba862e3419e499e8a66d67731a69d2de1d6",
+      "copyLength": 315
+    },
+    {
+      "slug": "spotify",
+      "width": 1440,
+      "height": 1000,
+      "catalog": {
+        "width": 722,
+        "scrollWidth": 722,
+        "parentWidth": 737,
+        "parentScroll": 737,
+        "overflow": []
+      },
+      "applied": {
+        "width": 722,
+        "scrollWidth": 722,
+        "parentWidth": 737,
+        "parentScroll": 737,
+        "overflow": []
+      },
+      "full": {
+        "width": 1425,
+        "scrollWidth": 1425,
+        "parentWidth": 1440,
+        "parentScroll": 1440,
+        "overflow": []
+      },
+      "buttonParity": {
+        "backgroundColor": "rgb(31, 31, 31)",
+        "color": "rgb(255, 255, 255)",
+        "borderRadius": "9999px",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "padding": "8px 16px",
+        "borderColor": "rgb(255, 255, 255)",
+        "borderWidth": "0px"
+      },
+      "downloadSha256": "72e964a6cf551d0603f9854f2f42ee08e97ad4d9e17e037f50f6233508288295",
+      "copyLength": 314
+    },
+    {
+      "slug": "ferrari",
+      "width": 1440,
+      "height": 1000,
+      "catalog": {
+        "width": 722,
+        "scrollWidth": 722,
+        "parentWidth": 737,
+        "parentScroll": 737,
+        "overflow": []
+      },
+      "applied": {
+        "width": 722,
+        "scrollWidth": 722,
+        "parentWidth": 737,
+        "parentScroll": 737,
+        "overflow": []
+      },
+      "full": {
+        "width": 1425,
+        "scrollWidth": 1425,
+        "parentWidth": 1440,
+        "parentScroll": 1440,
+        "overflow": []
+      },
+      "buttonParity": {
+        "backgroundColor": "rgb(218, 41, 28)",
+        "color": "rgb(255, 255, 255)",
+        "borderRadius": "0px",
+        "fontSize": "14px",
+        "fontWeight": "700",
+        "padding": "14px 24px",
+        "borderColor": "rgb(255, 255, 255)",
+        "borderWidth": "0px"
+      },
+      "downloadSha256": "1199e2832641cac7e384aaf3b1f3db87f992240cea5d3d1eee04d9dc00acb17c",
+      "copyLength": 314
+    },
+    {
+      "slug": "nintendo-2001",
+      "width": 1440,
+      "height": 1000,
+      "catalog": {
+        "width": 722,
+        "scrollWidth": 722,
+        "parentWidth": 737,
+        "parentScroll": 737,
+        "overflow": []
+      },
+      "applied": {
+        "width": 722,
+        "scrollWidth": 722,
+        "parentWidth": 737,
+        "parentScroll": 737,
+        "overflow": []
+      },
+      "full": {
+        "width": 1425,
+        "scrollWidth": 1425,
+        "parentWidth": 1440,
+        "parentScroll": 1440,
+        "overflow": []
+      },
+      "buttonParity": {
+        "backgroundColor": "rgb(236, 171, 55)",
+        "color": "rgb(33, 36, 46)",
+        "borderRadius": "2px",
+        "fontSize": "11px",
+        "fontWeight": "700",
+        "padding": "12px",
+        "borderColor": "rgb(33, 36, 46)",
+        "borderWidth": "0px"
+      },
+      "downloadSha256": "9630af17090d5c39ba9d8b5915a597a96c7552efe1422b3b8c3f31fb3e636716",
+      "copyLength": 326
+    },
+    {
+      "slug": "vercel",
+      "width": 1440,
+      "height": 1000,
+      "catalog": {
+        "width": 722,
+        "scrollWidth": 722,
+        "parentWidth": 737,
+        "parentScroll": 737,
+        "overflow": []
+      },
+      "applied": {
+        "width": 722,
+        "scrollWidth": 722,
+        "parentWidth": 737,
+        "parentScroll": 737,
+        "overflow": []
+      },
+      "full": {
+        "width": 1425,
+        "scrollWidth": 1425,
+        "parentWidth": 1440,
+        "parentScroll": 1440,
+        "overflow": []
+      },
+      "buttonParity": {
+        "backgroundColor": "rgb(23, 23, 23)",
+        "color": "rgb(255, 255, 255)",
+        "borderRadius": "100px",
+        "fontSize": "16px",
+        "fontWeight": "500",
+        "padding": "0px 12px",
+        "borderColor": "rgb(255, 255, 255)",
+        "borderWidth": "0px"
+      },
+      "downloadSha256": "d0951b93c2b4ce9840c715c9f9b3e58a386c6c58ae5cc0f804dec3b116b95bd8",
+      "copyLength": 313
+    },
+    {
+      "slug": "apple",
+      "width": 1440,
+      "height": 1000,
+      "catalog": {
+        "width": 722,
+        "scrollWidth": 722,
+        "parentWidth": 737,
+        "parentScroll": 737,
+        "overflow": []
+      },
+      "applied": {
+        "width": 722,
+        "scrollWidth": 722,
+        "parentWidth": 737,
+        "parentScroll": 737,
+        "overflow": []
+      },
+      "full": {
+        "width": 1425,
+        "scrollWidth": 1425,
+        "parentWidth": 1440,
+        "parentScroll": 1440,
+        "overflow": []
+      },
+      "buttonParity": {
+        "backgroundColor": "rgb(0, 102, 204)",
+        "color": "rgb(255, 255, 255)",
+        "borderRadius": "9999px",
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "padding": "11px 22px",
+        "borderColor": "rgb(255, 255, 255)",
+        "borderWidth": "0px"
+      },
+      "downloadSha256": "83fbc614443a9b3d7569e9956a43e7b8740f9d0f939f58b8154f7a7cec3002b2",
+      "copyLength": 312
+    },
+    {
+      "slug": "baemin",
+      "width": 390,
+      "height": 844,
+      "catalog": {
+        "width": 341,
+        "scrollWidth": 341,
+        "parentWidth": 356,
+        "parentScroll": 356,
+        "overflow": []
+      },
+      "applied": {
+        "width": 341,
+        "scrollWidth": 341,
+        "parentWidth": 356,
+        "parentScroll": 356,
+        "overflow": []
+      },
+      "full": {
+        "width": 375,
+        "scrollWidth": 375,
+        "parentWidth": 390,
+        "parentScroll": 390,
+        "overflow": []
+      },
+      "buttonParity": {
+        "backgroundColor": "rgb(255, 255, 255)",
+        "color": "rgb(34, 34, 34)",
+        "borderRadius": "12px",
+        "fontSize": "13.3333px",
+        "fontWeight": "400",
+        "padding": "14px 19px",
+        "borderColor": "rgb(34, 34, 34)",
+        "borderWidth": "0px"
+      },
+      "downloadSha256": "b04937971f8b91b376d1b523f5a476f6b002a4652284cdaf823eb60f3407af49",
+      "copyLength": 298
+    },
+    {
+      "slug": "kakaobank",
+      "width": 390,
+      "height": 844,
+      "catalog": {
+        "width": 341,
+        "scrollWidth": 341,
+        "parentWidth": 356,
+        "parentScroll": 356,
+        "overflow": []
+      },
+      "applied": {
+        "width": 341,
+        "scrollWidth": 341,
+        "parentWidth": 356,
+        "parentScroll": 356,
+        "overflow": []
+      },
+      "full": {
+        "width": 375,
+        "scrollWidth": 375,
+        "parentWidth": 390,
+        "parentScroll": 390,
+        "overflow": []
+      },
+      "buttonParity": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "borderRadius": "0px",
+        "fontSize": "14px",
+        "fontWeight": "600",
+        "padding": "0px 20px",
+        "borderColor": "rgb(0, 0, 0)",
+        "borderWidth": "0px"
+      },
+      "downloadSha256": "a2659b60968159b143317fb6a99ad21c35e2f04a87ef561edf6c12c2919144cf",
+      "copyLength": 301
+    },
+    {
+      "slug": "toss",
+      "width": 390,
+      "height": 844,
+      "catalog": {
+        "width": 341,
+        "scrollWidth": 341,
+        "parentWidth": 356,
+        "parentScroll": 356,
+        "overflow": []
+      },
+      "applied": {
+        "width": 341,
+        "scrollWidth": 341,
+        "parentWidth": 356,
+        "parentScroll": 356,
+        "overflow": []
+      },
+      "full": {
+        "width": 375,
+        "scrollWidth": 375,
+        "parentWidth": 390,
+        "parentScroll": 390,
+        "overflow": []
+      },
+      "buttonParity": {
+        "backgroundColor": "rgb(49, 130, 246)",
+        "color": "rgb(255, 255, 255)",
+        "borderRadius": "16px",
+        "fontSize": "17px",
+        "fontWeight": "600",
+        "padding": "0px 20px",
+        "borderColor": "rgb(255, 255, 255)",
+        "borderWidth": "0px"
+      },
+      "downloadSha256": "115778c526c36b165ad5828b95637c2289c05735e5d81d8a00c4c7d195c50c32",
+      "copyLength": 296
+    },
+    {
+      "slug": "linear.app",
+      "width": 390,
+      "height": 844,
+      "catalog": {
+        "width": 341,
+        "scrollWidth": 341,
+        "parentWidth": 356,
+        "parentScroll": 356,
+        "overflow": []
+      },
+      "applied": {
+        "width": 341,
+        "scrollWidth": 341,
+        "parentWidth": 356,
+        "parentScroll": 356,
+        "overflow": []
+      },
+      "full": {
+        "width": 375,
+        "scrollWidth": 375,
+        "parentWidth": 390,
+        "parentScroll": 390,
+        "overflow": []
+      },
+      "buttonParity": {
+        "backgroundColor": "rgb(94, 106, 210)",
+        "color": "rgb(255, 255, 255)",
+        "borderRadius": "8px",
+        "fontSize": "14px",
+        "fontWeight": "500",
+        "padding": "8px 14px",
+        "borderColor": "rgb(255, 255, 255)",
+        "borderWidth": "0px"
+      },
+      "downloadSha256": "30bd30e72c48a16e4bdbd010f2d1c85fab657c6fae3cc85389399aab10f9cb5f",
+      "copyLength": 313
+    },
+    {
+      "slug": "coinbase",
+      "width": 390,
+      "height": 844,
+      "catalog": {
+        "width": 341,
+        "scrollWidth": 341,
+        "parentWidth": 356,
+        "parentScroll": 356,
+        "overflow": []
+      },
+      "applied": {
+        "width": 341,
+        "scrollWidth": 341,
+        "parentWidth": 356,
+        "parentScroll": 356,
+        "overflow": []
+      },
+      "full": {
+        "width": 375,
+        "scrollWidth": 375,
+        "parentWidth": 390,
+        "parentScroll": 390,
+        "overflow": []
+      },
+      "buttonParity": {
+        "backgroundColor": "rgb(0, 82, 255)",
+        "color": "rgb(255, 255, 255)",
+        "borderRadius": "100px",
+        "fontSize": "16px",
+        "fontWeight": "600",
+        "padding": "12px 20px",
+        "borderColor": "rgb(255, 255, 255)",
+        "borderWidth": "0px"
+      },
+      "downloadSha256": "c8c67800dd7f58fcc87ed7d267a3bba862e3419e499e8a66d67731a69d2de1d6",
+      "copyLength": 315
+    },
+    {
+      "slug": "spotify",
+      "width": 390,
+      "height": 844,
+      "catalog": {
+        "width": 341,
+        "scrollWidth": 341,
+        "parentWidth": 356,
+        "parentScroll": 356,
+        "overflow": []
+      },
+      "applied": {
+        "width": 341,
+        "scrollWidth": 341,
+        "parentWidth": 356,
+        "parentScroll": 356,
+        "overflow": []
+      },
+      "full": {
+        "width": 375,
+        "scrollWidth": 375,
+        "parentWidth": 390,
+        "parentScroll": 390,
+        "overflow": []
+      },
+      "buttonParity": {
+        "backgroundColor": "rgb(31, 31, 31)",
+        "color": "rgb(255, 255, 255)",
+        "borderRadius": "9999px",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "padding": "8px 16px",
+        "borderColor": "rgb(255, 255, 255)",
+        "borderWidth": "0px"
+      },
+      "downloadSha256": "72e964a6cf551d0603f9854f2f42ee08e97ad4d9e17e037f50f6233508288295",
+      "copyLength": 314
+    },
+    {
+      "slug": "ferrari",
+      "width": 390,
+      "height": 844,
+      "catalog": {
+        "width": 341,
+        "scrollWidth": 341,
+        "parentWidth": 356,
+        "parentScroll": 356,
+        "overflow": []
+      },
+      "applied": {
+        "width": 341,
+        "scrollWidth": 341,
+        "parentWidth": 356,
+        "parentScroll": 356,
+        "overflow": []
+      },
+      "full": {
+        "width": 375,
+        "scrollWidth": 375,
+        "parentWidth": 390,
+        "parentScroll": 390,
+        "overflow": []
+      },
+      "buttonParity": {
+        "backgroundColor": "rgb(218, 41, 28)",
+        "color": "rgb(255, 255, 255)",
+        "borderRadius": "0px",
+        "fontSize": "14px",
+        "fontWeight": "700",
+        "padding": "14px 24px",
+        "borderColor": "rgb(255, 255, 255)",
+        "borderWidth": "0px"
+      },
+      "downloadSha256": "1199e2832641cac7e384aaf3b1f3db87f992240cea5d3d1eee04d9dc00acb17c",
+      "copyLength": 314
+    },
+    {
+      "slug": "nintendo-2001",
+      "width": 390,
+      "height": 844,
+      "catalog": {
+        "width": 341,
+        "scrollWidth": 341,
+        "parentWidth": 356,
+        "parentScroll": 356,
+        "overflow": []
+      },
+      "applied": {
+        "width": 341,
+        "scrollWidth": 341,
+        "parentWidth": 356,
+        "parentScroll": 356,
+        "overflow": []
+      },
+      "full": {
+        "width": 375,
+        "scrollWidth": 375,
+        "parentWidth": 390,
+        "parentScroll": 390,
+        "overflow": []
+      },
+      "buttonParity": {
+        "backgroundColor": "rgb(236, 171, 55)",
+        "color": "rgb(33, 36, 46)",
+        "borderRadius": "2px",
+        "fontSize": "11px",
+        "fontWeight": "700",
+        "padding": "12px",
+        "borderColor": "rgb(33, 36, 46)",
+        "borderWidth": "0px"
+      },
+      "downloadSha256": "9630af17090d5c39ba9d8b5915a597a96c7552efe1422b3b8c3f31fb3e636716",
+      "copyLength": 326
+    },
+    {
+      "slug": "vercel",
+      "width": 390,
+      "height": 844,
+      "catalog": {
+        "width": 341,
+        "scrollWidth": 341,
+        "parentWidth": 356,
+        "parentScroll": 356,
+        "overflow": []
+      },
+      "applied": {
+        "width": 341,
+        "scrollWidth": 341,
+        "parentWidth": 356,
+        "parentScroll": 356,
+        "overflow": []
+      },
+      "full": {
+        "width": 375,
+        "scrollWidth": 375,
+        "parentWidth": 390,
+        "parentScroll": 390,
+        "overflow": []
+      },
+      "buttonParity": {
+        "backgroundColor": "rgb(23, 23, 23)",
+        "color": "rgb(255, 255, 255)",
+        "borderRadius": "100px",
+        "fontSize": "16px",
+        "fontWeight": "500",
+        "padding": "0px 12px",
+        "borderColor": "rgb(255, 255, 255)",
+        "borderWidth": "0px"
+      },
+      "downloadSha256": "d0951b93c2b4ce9840c715c9f9b3e58a386c6c58ae5cc0f804dec3b116b95bd8",
+      "copyLength": 313
+    },
+    {
+      "slug": "apple",
+      "width": 390,
+      "height": 844,
+      "catalog": {
+        "width": 341,
+        "scrollWidth": 341,
+        "parentWidth": 356,
+        "parentScroll": 356,
+        "overflow": []
+      },
+      "applied": {
+        "width": 341,
+        "scrollWidth": 341,
+        "parentWidth": 356,
+        "parentScroll": 356,
+        "overflow": []
+      },
+      "full": {
+        "width": 375,
+        "scrollWidth": 375,
+        "parentWidth": 390,
+        "parentScroll": 390,
+        "overflow": []
+      },
+      "buttonParity": {
+        "backgroundColor": "rgb(0, 102, 204)",
+        "color": "rgb(255, 255, 255)",
+        "borderRadius": "9999px",
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "padding": "11px 22px",
+        "borderColor": "rgb(255, 255, 255)",
+        "borderWidth": "0px"
+      },
+      "downloadSha256": "83fbc614443a9b3d7569e9956a43e7b8740f9d0f939f58b8154f7a7cec3002b2",
+      "copyLength": 312
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "hero": [
+    {
+      "width": 1406,
+      "key": "hero-band-dark",
+      "fontSize": "40px",
+      "padding": "32px",
+      "scrollWidth": 1406,
+      "titleHeight": 40,
+      "lineHeight": "40px"
+    },
+    {
+      "width": 1406,
+      "key": "hero-band-light",
+      "fontSize": "40px",
+      "padding": "32px",
+      "scrollWidth": 1406,
+      "titleHeight": 40,
+      "lineHeight": "40px"
+    },
+    {
+      "width": 1351,
+      "key": "hero-band-dark",
+      "fontSize": "40px",
+      "padding": "32px",
+      "scrollWidth": 1351,
+      "titleHeight": 40,
+      "lineHeight": "40px"
+    },
+    {
+      "width": 1351,
+      "key": "hero-band-light",
+      "fontSize": "40px",
+      "padding": "32px",
+      "scrollWidth": 1351,
+      "titleHeight": 40,
+      "lineHeight": "40px"
+    },
+    {
+      "width": 317,
+      "key": "hero-band-dark",
+      "fontSize": "40px",
+      "padding": "32px",
+      "scrollWidth": 317,
+      "titleHeight": 30,
+      "lineHeight": "30px"
+    },
+    {
+      "width": 317,
+      "key": "hero-band-light",
+      "fontSize": "40px",
+      "padding": "32px",
+      "scrollWidth": 317,
+      "titleHeight": 30,
+      "lineHeight": "30px"
+    }
+  ],
+  "interactions": [
+    "Input source border, ArrowRight tabs, table divider, nested dialog Escape",
+    "Keyboard button feedback and real Guide route"
+  ],
+  "offline": [
+    {
+      "slug": "baemin",
+      "scope": "already loaded catalog and spec; switch/expand offline"
+    },
+    {
+      "slug": "coinbase",
+      "scope": "already loaded catalog and spec; switch/expand offline"
+    },
+    {
+      "slug": "linear.app",
+      "scope": "already loaded catalog and spec; switch/expand offline"
+    }
+  ],
+  "reducedMotion": [
+    "baemin",
+    "coinbase",
+    "linear.app"
+  ]
+}

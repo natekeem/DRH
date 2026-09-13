@@ -18,7 +18,8 @@
     "sync:oh-my-design": "node scripts/sync-oh-my-design.mjs",
     "audit:brand-resources": "node scripts/audit-brand-resources.mjs",
     "verify:brand-resources": "node scripts/verify-brand-resources.mjs",
-    "audit:korean-brands": "node scripts/audit-korean-brands.mjs"
+    "audit:korean-brands": "node scripts/audit-korean-brands.mjs",
+    "audit:brand-fidelity": "node scripts/audit-brand-fidelity.mjs"
   },
   "dependencies": {
     "@react-three/fiber": "8.18.0",

@@ -1,0 +1,42 @@
+[
+  {
+    "script": "typecheck",
+    "status": 0
+  },
+  {
+    "script": "build",
+    "status": 0
+  },
+  {
+    "script": "audit:references",
+    "status": 0
+  },
+  {
+    "script": "audit:design-md",
+    "status": 0
+  },
+  {
+    "script": "audit:brand-designs",
+    "status": 0
+  },
+  {
+    "script": "audit:demos",
+    "status": 0
+  },
+  {
+    "script": "audit:brand-resources",
+    "status": 0
+  },
+  {
+    "script": "audit:korean-brands",
+    "status": 0
+  },
+  {
+    "script": "audit:v1.4",
+    "status": 0
+  },
+  {
+    "script": "audit:brand-fidelity",
+    "status": 0
+  }
+]

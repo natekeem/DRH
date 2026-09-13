@@ -1,0 +1,188 @@
+COMMAND: npm run typecheck
+EXIT: 0
+
+> design-reference-hub@0.3.0 typecheck
+> tsc --noEmit -p tsconfig.app.json
+
+
+
+COMMAND: npm run build
+EXIT: 0
+
+> design-reference-hub@0.3.0 build
+> tsc --noEmit -p tsconfig.app.json && vite build
+
+vite v6.0.5 building for production...
+transforming...
+✓ 2028 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                  0.69 kB │ gzip:   0.40 kB
+dist/assets/index-D_2PTdNs.css                 127.50 kB │ gzip:  27.42 kB
+dist/assets/BrandSourceNotes-D4xMRXKc.js         0.29 kB │ gzip:   0.24 kB
+dist/assets/quickstart-BOGm2XZX.js               1.09 kB │ gzip:   1.15 kB
+dist/assets/apply-demo-code-DN9eoP8R.js          1.89 kB │ gzip:   1.93 kB
+dist/assets/BrandProjectHandoff-DqfZxgmm.js      2.34 kB │ gzip:   1.47 kB
+dist/assets/create-design-md-CjOdmUAA.js         4.75 kB │ gzip:   3.72 kB
+dist/assets/license-basics-BETRYKPj.js           5.61 kB │ gzip:   4.63 kB
+dist/assets/GuidesPage-B1cOnF0h.js               6.71 kB │ gzip:   3.23 kB
+dist/assets/index-CHwtYdTE.js                  157.22 kB │ gzip:  47.64 kB
+dist/assets/index-CpRAJjwn.js                2,342.91 kB │ gzip: 601.05 kB
+✓ built in 4.89s
+
+(!) Some chunks are larger than 1400 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+
+
+COMMAND: npm run audit:references
+EXIT: 0
+
+> design-reference-hub@0.3.0 audit:references
+> node scripts/audit-reference-quality.mjs
+
+PASS: 198 references audited successfully.
+
+
+COMMAND: npm run audit:design-md
+EXIT: 0
+
+> design-reference-hub@0.3.0 audit:design-md
+> node scripts/audit-design-md.mjs
+
+
+═══ DRH awesome-design-md Audit ═══
+
+✓ vendor entries discovered: 74
+✓   DESIGN.md present:     74 / 74
+    preview.html present:  0 / 74
+✓ src/data/awesomeDesignMd.ts exists (643.8 KB)
+✓   upstream commit SHA embedded: 8147538b4226…
+✓ third_party/awesome-design-md/LICENSE exists
+✓ third_party/awesome-design-md/UPSTREAM.md exists
+✓ unique slugs: 74 (no duplicates)
+✓ docs/AWESOME_DESIGN_MD_INGESTION.md exists
+✓ scripts/sync-awesome-design-md.mjs exists
+
+── Summary ──────────────────────────────
+  Upstream commit:    8147538b4226ae41e2487a9179e3bcc1f68e8554
+  Upstream repo:      https://github.com/VoltAgent/awesome-design-md
+  Entries discovered: 74
+  DESIGN.md OK:       74
+  DESIGN.md missing:  0
+  preview.html:       0
+  External deps:      0 entries
+
+Audit PASSED ✓
+
+
+
+COMMAND: npm run audit:brand-designs
+EXIT: 0
+
+> design-reference-hub@0.3.0 audit:brand-designs
+> node scripts/audit-brand-designs.mjs && node tests/brand-designs/sync-qa.mjs && node scripts/audit-brand-catalog.mjs && node scripts/audit-brand-presentation.mjs
+
+PASS: 198 references; 91 unchanged-source brand specs; 81 YAML / 10 Markdown; 0 duplicate signatures
+Compatibility defaults remain presentation fallbacks; absent fields stay absent in BrandDesignSpec. Full evidence report: artifacts/brand-fidelity/brand-data-audit.json
+PASS: Vendor Tokens and both Agent forms preserve the rendered BrandDesignSpec; no fake standalone artifacts
+PASS: offline/online generation parity; pinned discovery; repeat stability; partial import rejects catalog replacement
+PASS: full source catalog coverage and explicit theme/resource metadata {
+  totalBrands: 91,
+  brandsWithResources: 22,
+  totalLinks: 27,
+  types: {
+    'brand-guidelines': 6,
+    'design-system': 7,
+    'developer-design-guide': 3,
+    typography: 2,
+    components: 0,
+    assets: 8,
+    other: 1
+  }
+}
+PASS: source-backed presentation, font/license/asset integrity, CSS uniqueness {
+  totalBrands: 91,
+  primaryFont: {
+    'open-font': 16,
+    'system-font': 6,
+    proprietary: 63,
+    unspecified: 6
+  },
+  brandsWithDeclaredOpenFont: 34,
+  brandAsset: { 'verified-svg': 4, 'verified-image': 0, 'text-wordmark': 87 },
+  brandsWithResources: 22,
+  resourceTypes: {
+    assets: 8,
+    'design-system': 7,
+    'brand-guidelines': 6,
+    typography: 2,
+    'developer-design-guide': 3,
+    other: 1
+  },
+  responsive: 76,
+  motion: { defined: 4, 'not-in-scope': 9, 'not-specified': 78 }
+}
+
+
+COMMAND: npm run audit:demos
+EXIT: 0
+
+> design-reference-hub@0.3.0 audit:demos
+> node scripts/audit-demos.mjs
+
+PASS: 65 recipes, identity/content aliases, card/detail policies, script syntax, export/package/maturity consistency
+PASS: Markdown AST TOC, Korean slugs, duplicate/suffix collisions, fenced code, setext headings and inline labels
+PASS: Batch 1 exact scope, canonical contracts, offline HTML, explicit export parity, package provenance and seven pinned MIT notices
+
+
+COMMAND: npm run audit:brand-resources
+EXIT: 0
+
+> design-reference-hub@0.3.0 audit:brand-resources
+> node scripts/audit-brand-resources.mjs
+
+PASS: 22 brands, 27 curated official URLs; network verification is separate
+
+
+COMMAND: npm run audit:korean-brands
+EXIT: 0
+
+> design-reference-hub@0.3.0 audit:korean-brands
+> node scripts/audit-korean-brands.mjs
+
+PASS: 17 Korean raw/projection/provenance/alias/rights contracts
+
+
+COMMAND: npm run audit:v1.4
+EXIT: 0
+
+> design-reference-hub@0.3.0 audit:v1.4
+> node scripts/audit-v1.4.mjs
+
+{
+  "references": 198,
+  "demos": {
+    "WORKING DEMO": 169,
+    "PROTOTYPE": 28,
+    "OFFICIAL LIVE": 1
+  },
+  "packages": {
+    "Ready": 66,
+    "Partial": 132
+  },
+  "standalone": 65,
+  "checks": "Unique IDs; required package sections; JavaScript syntax; Ready has executable HTML/TSX; motion fallback"
+}
+10 official preset exports: syntax, identity, geometry, color and fallback passed.
+V1.5/V1.6: 728 artifacts; 93 original + 10 Batch 1 records + 91 vendor entries (awesome-design-md MIT); 10 normalized previews; TSX syntax; token parity; Compact length; provenance; restricted/native schema fixtures; six source policies; guide content passed.
+
+
+COMMAND: npm run audit:brand-fidelity
+EXIT: 0
+
+> design-reference-hub@0.3.0 audit:brand-fidelity
+> node scripts/audit-brand-fidelity.mjs
+
+PASS V2.3: 91 brands, 91 raw handoffs, 198 artifact parity checks, 6 unsafe/unresolved inputs rejected

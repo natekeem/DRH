@@ -89,14 +89,28 @@
           "id": "navigation",
           "label": "Navigation · 탐색",
           "kind": "navigation",
-          "count": 4
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "legal",
+          "label": "Legal · 안내",
+          "kind": "legal",
+          "count": 1
         },
         {
           "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 4
+          "count": 3
         },
         {
           "type": "geometry",
@@ -183,14 +197,14 @@
           "id": "buttons",
           "label": "Buttons · 버튼",
           "kind": "buttons",
-          "count": 7
+          "count": 5
         },
         {
           "type": "components",
           "id": "cards",
           "label": "Cards · 카드",
           "kind": "cards",
-          "count": 8
+          "count": 5
         },
         {
           "type": "components",
@@ -208,24 +222,59 @@
         },
         {
           "type": "components",
-          "id": "tables",
-          "label": "Tables · 표",
-          "kind": "tables",
+          "id": "navigation",
+          "label": "Navigation · 탐색",
+          "kind": "navigation",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "cta-band",
+          "label": "CTA · 다음 행동",
+          "kind": "cta-band",
           "count": 1
         },
         {
           "type": "components",
-          "id": "navigation",
-          "label": "Navigation · 탐색",
-          "kind": "navigation",
-          "count": 3
+          "id": "pricing",
+          "label": "Pricing · 요금",
+          "kind": "pricing",
+          "count": 4
+        },
+        {
+          "type": "components",
+          "id": "icon",
+          "label": "Assets · 형태",
+          "kind": "icon",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "legal",
+          "label": "Legal · 안내",
+          "kind": "legal",
+          "count": 1
         },
         {
           "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 4
+          "count": 1
         },
         {
           "type": "geometry",
@@ -309,7 +358,7 @@
           "id": "buttons",
           "label": "Buttons · 버튼",
           "kind": "buttons",
-          "count": 8
+          "count": 7
         },
         {
           "type": "components",
@@ -337,12 +386,26 @@
           "id": "navigation",
           "label": "Navigation · 탐색",
           "kind": "navigation",
-          "count": 5
+          "count": 4
+        },
+        {
+          "type": "components",
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
         },
         {
           "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
           "count": 1
         },
@@ -466,14 +529,35 @@
           "id": "navigation",
           "label": "Navigation · 탐색",
           "kind": "navigation",
-          "count": 4
+          "count": 3
         },
         {
           "type": "components",
-          "id": "other",
-          "label": "기타 구성요소",
-          "kind": "other",
-          "count": 4
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "section",
+          "label": "Sections · 콘텐츠 영역",
+          "kind": "section",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "cta-band",
+          "label": "CTA · 다음 행동",
+          "kind": "cta-band",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
         },
         {
           "type": "geometry",
@@ -611,14 +695,35 @@
           "id": "navigation",
           "label": "Navigation · 탐색",
           "kind": "navigation",
-          "count": 3
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "cta-band",
+          "label": "CTA · 다음 행동",
+          "kind": "cta-band",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
         },
         {
           "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 4
+          "count": 1
         },
         {
           "type": "geometry",
@@ -731,14 +836,35 @@
           "id": "navigation",
           "label": "Navigation · 탐색",
           "kind": "navigation",
-          "count": 3
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "cta-band",
+          "label": "CTA · 다음 행동",
+          "kind": "cta-band",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
         },
         {
           "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 5
+          "count": 3
         },
         {
           "type": "geometry",
@@ -851,14 +977,35 @@
           "id": "navigation",
           "label": "Navigation · 탐색",
           "kind": "navigation",
-          "count": 3
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "cta-band",
+          "label": "CTA · 다음 행동",
+          "kind": "cta-band",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
         },
         {
           "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 5
+          "count": 3
         },
         {
           "type": "geometry",
@@ -943,7 +1090,7 @@
           "id": "cards",
           "label": "Cards · 카드",
           "kind": "cards",
-          "count": 7
+          "count": 4
         },
         {
           "type": "components",
@@ -971,14 +1118,42 @@
           "id": "navigation",
           "label": "Navigation · 탐색",
           "kind": "navigation",
-          "count": 4
+          "count": 3
+        },
+        {
+          "type": "components",
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "cta-band",
+          "label": "CTA · 다음 행동",
+          "kind": "cta-band",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "pricing",
+          "label": "Pricing · 요금",
+          "kind": "pricing",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
         },
         {
           "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 4
+          "count": 2
         },
         {
           "type": "geometry",
@@ -1063,7 +1238,7 @@
           "id": "cards",
           "label": "Cards · 카드",
           "kind": "cards",
-          "count": 10
+          "count": 7
         },
         {
           "type": "components",
@@ -1091,14 +1266,35 @@
           "id": "navigation",
           "label": "Navigation · 탐색",
           "kind": "navigation",
-          "count": 3
+          "count": 2
         },
         {
           "type": "components",
-          "id": "other",
-          "label": "기타 구성요소",
-          "kind": "other",
-          "count": 3
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "cta-band",
+          "label": "CTA · 다음 행동",
+          "kind": "cta-band",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "pricing",
+          "label": "Pricing · 요금",
+          "kind": "pricing",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
         },
         {
           "type": "geometry",
@@ -1183,7 +1379,7 @@
           "id": "cards",
           "label": "Cards · 카드",
           "kind": "cards",
-          "count": 12
+          "count": 9
         },
         {
           "type": "components",
@@ -1211,14 +1407,35 @@
           "id": "navigation",
           "label": "Navigation · 탐색",
           "kind": "navigation",
-          "count": 3
+          "count": 2
         },
         {
           "type": "components",
-          "id": "other",
-          "label": "기타 구성요소",
-          "kind": "other",
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
           "count": 2
+        },
+        {
+          "type": "components",
+          "id": "cta-band",
+          "label": "CTA · 다음 행동",
+          "kind": "cta-band",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "pricing",
+          "label": "Pricing · 요금",
+          "kind": "pricing",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
         },
         {
           "type": "geometry",
@@ -1303,7 +1520,7 @@
           "id": "cards",
           "label": "Cards · 카드",
           "kind": "cards",
-          "count": 8
+          "count": 5
         },
         {
           "type": "components",
@@ -1331,14 +1548,49 @@
           "id": "navigation",
           "label": "Navigation · 탐색",
           "kind": "navigation",
-          "count": 3
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "cta-band",
+          "label": "CTA · 다음 행동",
+          "kind": "cta-band",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "pricing",
+          "label": "Pricing · 요금",
+          "kind": "pricing",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "icon",
+          "label": "Assets · 형태",
+          "kind": "icon",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
         },
         {
           "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 4
+          "count": 1
         },
         {
           "type": "geometry",
@@ -1423,7 +1675,7 @@
           "id": "cards",
           "label": "Cards · 카드",
           "kind": "cards",
-          "count": 5
+          "count": 4
         },
         {
           "type": "components",
@@ -1441,17 +1693,38 @@
         },
         {
           "type": "components",
-          "id": "navigation",
-          "label": "Navigation · 탐색",
-          "kind": "navigation",
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "section",
+          "label": "Sections · 콘텐츠 영역",
+          "kind": "section",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "icon",
+          "label": "Assets · 형태",
+          "kind": "icon",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
           "count": 1
         },
         {
           "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 3
+          "count": 1
         },
         {
           "type": "geometry",
@@ -1531,7 +1804,7 @@
           "id": "cards",
           "label": "Cards · 카드",
           "kind": "cards",
-          "count": 4
+          "count": 3
         },
         {
           "type": "components",
@@ -1559,14 +1832,49 @@
           "id": "navigation",
           "label": "Navigation · 탐색",
           "kind": "navigation",
-          "count": 4
+          "count": 2
         },
         {
           "type": "components",
-          "id": "other",
-          "label": "기타 구성요소",
-          "kind": "other",
-          "count": 6
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "cta-band",
+          "label": "CTA · 다음 행동",
+          "kind": "cta-band",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "pricing",
+          "label": "Pricing · 요금",
+          "kind": "pricing",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "icon",
+          "label": "Assets · 형태",
+          "kind": "icon",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "legal",
+          "label": "Legal · 안내",
+          "kind": "legal",
+          "count": 1
         },
         {
           "type": "geometry",
@@ -1667,14 +1975,42 @@
           "id": "navigation",
           "label": "Navigation · 탐색",
           "kind": "navigation",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "cta-band",
+          "label": "CTA · 다음 행동",
+          "kind": "cta-band",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "code",
+          "label": "Code · 코드",
+          "kind": "code",
           "count": 3
         },
         {
           "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 2
+        },
+        {
+          "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 6
+          "count": 1
         },
         {
           "type": "geometry",
@@ -1754,7 +2090,7 @@
           "id": "cards",
           "label": "Cards · 카드",
           "kind": "cards",
-          "count": 5
+          "count": 4
         },
         {
           "type": "components",
@@ -1775,14 +2111,49 @@
           "id": "navigation",
           "label": "Navigation · 탐색",
           "kind": "navigation",
-          "count": 3
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "cta-band",
+          "label": "CTA · 다음 행동",
+          "kind": "cta-band",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "pricing",
+          "label": "Pricing · 요금",
+          "kind": "pricing",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "code",
+          "label": "Code · 코드",
+          "kind": "code",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 2
         },
         {
           "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 10
+          "count": 6
         },
         {
           "type": "geometry",
@@ -1862,20 +2233,13 @@
           "id": "cards",
           "label": "Cards · 카드",
           "kind": "cards",
-          "count": 9
+          "count": 10
         },
         {
           "type": "components",
           "id": "inputs",
           "label": "Forms · 입력",
           "kind": "inputs",
-          "count": 2
-        },
-        {
-          "type": "components",
-          "id": "badges",
-          "label": "Badges · 배지",
-          "kind": "badges",
           "count": 1
         },
         {
@@ -1890,7 +2254,7 @@
           "id": "tables",
           "label": "Tables · 표",
           "kind": "tables",
-          "count": 2
+          "count": 1
         },
         {
           "type": "components",
@@ -1901,10 +2265,38 @@
         },
         {
           "type": "components",
+          "id": "section",
+          "label": "Sections · 콘텐츠 영역",
+          "kind": "section",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "pricing",
+          "label": "Pricing · 요금",
+          "kind": "pricing",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "status",
+          "label": "Status · 상태",
+          "kind": "status",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
+        },
+        {
+          "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 12
+          "count": 8
         },
         {
           "type": "geometry",
@@ -1979,7 +2371,7 @@
           "id": "cards",
           "label": "Cards · 카드",
           "kind": "cards",
-          "count": 6
+          "count": 5
         },
         {
           "type": "components",
@@ -2007,14 +2399,42 @@
           "id": "navigation",
           "label": "Navigation · 탐색",
           "kind": "navigation",
-          "count": 3
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "cta-band",
+          "label": "CTA · 다음 행동",
+          "kind": "cta-band",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "pricing",
+          "label": "Pricing · 요금",
+          "kind": "pricing",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 2
         },
         {
           "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 4
+          "count": 1
         },
         {
           "type": "geometry",
@@ -2094,7 +2514,7 @@
           "id": "cards",
           "label": "Cards · 카드",
           "kind": "cards",
-          "count": 8
+          "count": 7
         },
         {
           "type": "components",
@@ -2115,14 +2535,49 @@
           "id": "navigation",
           "label": "Navigation · 탐색",
           "kind": "navigation",
-          "count": 3
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "cta-band",
+          "label": "CTA · 다음 행동",
+          "kind": "cta-band",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "pricing",
+          "label": "Pricing · 요금",
+          "kind": "pricing",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "code",
+          "label": "Code · 코드",
+          "kind": "code",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 2
         },
         {
           "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 5
+          "count": 1
         },
         {
           "type": "geometry",
@@ -2209,7 +2664,7 @@
           "id": "inputs",
           "label": "Forms · 입력",
           "kind": "inputs",
-          "count": 3
+          "count": 2
         },
         {
           "type": "components",
@@ -2230,14 +2685,35 @@
           "id": "navigation",
           "label": "Navigation · 탐색",
           "kind": "navigation",
-          "count": 4
+          "count": 2
         },
         {
           "type": "components",
-          "id": "other",
-          "label": "기타 구성요소",
-          "kind": "other",
-          "count": 4
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "section",
+          "label": "Sections · 콘텐츠 영역",
+          "kind": "section",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "cta-band",
+          "label": "CTA · 다음 행동",
+          "kind": "cta-band",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 2
         },
         {
           "type": "geometry",
@@ -2344,7 +2820,7 @@
           "id": "cards",
           "label": "Cards · 카드",
           "kind": "cards",
-          "count": 3
+          "count": 2
         },
         {
           "type": "components",
@@ -2355,31 +2831,38 @@
         },
         {
           "type": "components",
-          "id": "tabs",
-          "label": "Tabs · 탭",
-          "kind": "tabs",
-          "count": 2
-        },
-        {
-          "type": "components",
-          "id": "tables",
-          "label": "Tables · 표",
-          "kind": "tables",
+          "id": "navigation",
+          "label": "Navigation · 탐색",
+          "kind": "navigation",
           "count": 1
         },
         {
           "type": "components",
-          "id": "navigation",
-          "label": "Navigation · 탐색",
-          "kind": "navigation",
+          "id": "section",
+          "label": "Sections · 콘텐츠 영역",
+          "kind": "section",
           "count": 3
         },
         {
           "type": "components",
+          "id": "pricing",
+          "label": "Pricing · 요금",
+          "kind": "pricing",
+          "count": 4
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
+        },
+        {
+          "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 5
+          "count": 3
         },
         {
           "type": "geometry",
@@ -2494,20 +2977,13 @@
           "id": "cards",
           "label": "Cards · 카드",
           "kind": "cards",
-          "count": 7
+          "count": 5
         },
         {
           "type": "components",
           "id": "inputs",
           "label": "Forms · 입력",
           "kind": "inputs",
-          "count": 2
-        },
-        {
-          "type": "components",
-          "id": "tabs",
-          "label": "Tabs · 탭",
-          "kind": "tabs",
           "count": 2
         },
         {
@@ -2522,7 +2998,21 @@
           "id": "navigation",
           "label": "Navigation · 탐색",
           "kind": "navigation",
-          "count": 2
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "pricing",
+          "label": "Pricing · 요금",
+          "kind": "pricing",
+          "count": 4
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
         },
         {
           "type": "geometry",
@@ -2620,7 +3110,7 @@
           "id": "cards",
           "label": "Cards · 카드",
           "kind": "cards",
-          "count": 8
+          "count": 6
         },
         {
           "type": "components",
@@ -2641,12 +3131,26 @@
           "id": "navigation",
           "label": "Navigation · 탐색",
           "kind": "navigation",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "pricing",
+          "label": "Pricing · 요금",
+          "kind": "pricing",
           "count": 2
         },
         {
           "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
+        },
+        {
+          "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
           "count": 2
         },
@@ -2747,7 +3251,7 @@
           "id": "cards",
           "label": "Cards · 카드",
           "kind": "cards",
-          "count": 8
+          "count": 5
         },
         {
           "type": "components",
@@ -2782,14 +3286,42 @@
           "id": "navigation",
           "label": "Navigation · 탐색",
           "kind": "navigation",
-          "count": 3
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "section",
+          "label": "Sections · 콘텐츠 영역",
+          "kind": "section",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "pricing",
+          "label": "Pricing · 요금",
+          "kind": "pricing",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
         },
         {
           "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 4
+          "count": 3
         },
         {
           "type": "geometry",
@@ -2875,7 +3407,7 @@
           "id": "cards",
           "label": "Cards · 카드",
           "kind": "cards",
-          "count": 6
+          "count": 5
         },
         {
           "type": "components",
@@ -2896,12 +3428,26 @@
           "id": "navigation",
           "label": "Navigation · 탐색",
           "kind": "navigation",
-          "count": 2
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
         },
         {
           "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
           "count": 2
         },
@@ -3042,20 +3588,13 @@
           "id": "cards",
           "label": "Cards · 카드",
           "kind": "cards",
-          "count": 7
+          "count": 5
         },
         {
           "type": "components",
           "id": "inputs",
           "label": "Forms · 입력",
           "kind": "inputs",
-          "count": 2
-        },
-        {
-          "type": "components",
-          "id": "tabs",
-          "label": "Tabs · 탭",
-          "kind": "tabs",
           "count": 2
         },
         {
@@ -3070,12 +3609,26 @@
           "id": "navigation",
           "label": "Navigation · 탐색",
           "kind": "navigation",
-          "count": 2
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "pricing",
+          "label": "Pricing · 요금",
+          "kind": "pricing",
+          "count": 4
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
         },
         {
           "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
           "count": 1
         },
@@ -3172,7 +3725,7 @@
         {
           "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
           "count": 4
         },
@@ -3266,7 +3819,7 @@
         {
           "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
           "count": 4
         },
@@ -3354,27 +3907,13 @@
           "id": "cards",
           "label": "Cards · 카드",
           "kind": "cards",
-          "count": 6
+          "count": 4
         },
         {
           "type": "components",
           "id": "inputs",
           "label": "Forms · 입력",
           "kind": "inputs",
-          "count": 2
-        },
-        {
-          "type": "components",
-          "id": "badges",
-          "label": "Badges · 배지",
-          "kind": "badges",
-          "count": 1
-        },
-        {
-          "type": "components",
-          "id": "tabs",
-          "label": "Tabs · 탭",
-          "kind": "tabs",
           "count": 2
         },
         {
@@ -3389,12 +3928,33 @@
           "id": "navigation",
           "label": "Navigation · 탐색",
           "kind": "navigation",
-          "count": 2
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "pricing",
+          "label": "Pricing · 요금",
+          "kind": "pricing",
+          "count": 4
+        },
+        {
+          "type": "components",
+          "id": "status",
+          "label": "Status · 상태",
+          "kind": "status",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
         },
         {
           "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
           "count": 1
         },
@@ -3519,7 +4079,7 @@
         {
           "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
           "count": 5
         },
@@ -3612,10 +4172,17 @@
         },
         {
           "type": "components",
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 1
+        },
+        {
+          "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 5
+          "count": 4
         },
         {
           "type": "geometry",
@@ -3732,17 +4299,24 @@
         },
         {
           "type": "components",
-          "id": "navigation",
-          "label": "Navigation · 탐색",
-          "kind": "navigation",
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
           "count": 1
         },
         {
           "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 6
+          "count": 5
         },
         {
           "type": "geometry",
@@ -3857,14 +4431,28 @@
           "id": "navigation",
           "label": "Navigation · 탐색",
           "kind": "navigation",
-          "count": 4
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 2
         },
         {
           "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 6
+          "count": 5
         },
         {
           "type": "geometry",
@@ -3944,7 +4532,7 @@
           "id": "cards",
           "label": "Cards · 카드",
           "kind": "cards",
-          "count": 10
+          "count": 8
         },
         {
           "type": "components",
@@ -3979,14 +4567,49 @@
           "id": "navigation",
           "label": "Navigation · 탐색",
           "kind": "navigation",
-          "count": 4
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 3
+        },
+        {
+          "type": "components",
+          "id": "section",
+          "label": "Sections · 콘텐츠 영역",
+          "kind": "section",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "pricing",
+          "label": "Pricing · 요금",
+          "kind": "pricing",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "code",
+          "label": "Code · 코드",
+          "kind": "code",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 2
         },
         {
           "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 13
+          "count": 7
         },
         {
           "type": "geometry",
@@ -4085,7 +4708,7 @@
           "id": "cards",
           "label": "Cards · 카드",
           "kind": "cards",
-          "count": 13
+          "count": 10
         },
         {
           "type": "components",
@@ -4117,17 +4740,31 @@
         },
         {
           "type": "components",
-          "id": "navigation",
-          "label": "Navigation · 탐색",
-          "kind": "navigation",
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "pricing",
+          "label": "Pricing · 요금",
+          "kind": "pricing",
+          "count": 3
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
           "count": 2
         },
         {
           "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 8
+          "count": 7
         },
         {
           "type": "geometry",
@@ -4207,14 +4844,14 @@
           "id": "cards",
           "label": "Cards · 카드",
           "kind": "cards",
-          "count": 11
+          "count": 10
         },
         {
           "type": "components",
           "id": "inputs",
           "label": "Forms · 입력",
           "kind": "inputs",
-          "count": 3
+          "count": 2
         },
         {
           "type": "components",
@@ -4239,17 +4876,45 @@
         },
         {
           "type": "components",
-          "id": "navigation",
-          "label": "Navigation · 탐색",
-          "kind": "navigation",
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "section",
+          "label": "Sections · 콘텐츠 영역",
+          "kind": "section",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "pricing",
+          "label": "Pricing · 요금",
+          "kind": "pricing",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "code",
+          "label": "Code · 코드",
+          "kind": "code",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
           "count": 2
         },
         {
           "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 9
+          "count": 5
         },
         {
           "type": "geometry",
@@ -4335,7 +5000,7 @@
           "id": "cards",
           "label": "Cards · 카드",
           "kind": "cards",
-          "count": 13
+          "count": 10
         },
         {
           "type": "components",
@@ -4367,17 +5032,38 @@
         },
         {
           "type": "components",
-          "id": "navigation",
-          "label": "Navigation · 탐색",
-          "kind": "navigation",
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "pricing",
+          "label": "Pricing · 요금",
+          "kind": "pricing",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "code",
+          "label": "Code · 코드",
+          "kind": "code",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
           "count": 2
         },
         {
           "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 6
+          "count": 4
         },
         {
           "type": "geometry",
@@ -4490,7 +5176,7 @@
           "id": "cards",
           "label": "Cards · 카드",
           "kind": "cards",
-          "count": 5
+          "count": 4
         },
         {
           "type": "components",
@@ -4518,12 +5204,26 @@
           "id": "navigation",
           "label": "Navigation · 탐색",
           "kind": "navigation",
-          "count": 2
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "media",
+          "label": "Media · 미디어",
+          "kind": "media",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
         },
         {
           "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
           "count": 4
         },
@@ -4605,21 +5305,21 @@
           "id": "cards",
           "label": "Cards · 카드",
           "kind": "cards",
-          "count": 7
+          "count": 8
         },
         {
           "type": "components",
           "id": "inputs",
           "label": "Forms · 입력",
           "kind": "inputs",
-          "count": 6
+          "count": 4
         },
         {
           "type": "components",
           "id": "badges",
           "label": "Badges · 배지",
           "kind": "badges",
-          "count": 3
+          "count": 2
         },
         {
           "type": "components",
@@ -4640,7 +5340,7 @@
           "id": "tables",
           "label": "Tables · 표",
           "kind": "tables",
-          "count": 4
+          "count": 3
         },
         {
           "type": "components",
@@ -4651,10 +5351,45 @@
         },
         {
           "type": "components",
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "section",
+          "label": "Sections · 콘텐츠 영역",
+          "kind": "section",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "pricing",
+          "label": "Pricing · 요금",
+          "kind": "pricing",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "status",
+          "label": "Status · 상태",
+          "kind": "status",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
+        },
+        {
+          "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 10
+          "count": 7
         },
         {
           "type": "geometry",
@@ -4729,7 +5464,7 @@
           "id": "cards",
           "label": "Cards · 카드",
           "kind": "cards",
-          "count": 17
+          "count": 15
         },
         {
           "type": "components",
@@ -4761,17 +5496,31 @@
         },
         {
           "type": "components",
-          "id": "navigation",
-          "label": "Navigation · 탐색",
-          "kind": "navigation",
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "pricing",
+          "label": "Pricing · 요금",
+          "kind": "pricing",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
           "count": 2
         },
         {
           "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 5
+          "count": 4
         },
         {
           "type": "geometry",
@@ -4851,7 +5600,7 @@
           "id": "cards",
           "label": "Cards · 카드",
           "kind": "cards",
-          "count": 4
+          "count": 3
         },
         {
           "type": "components",
@@ -4879,12 +5628,26 @@
           "id": "navigation",
           "label": "Navigation · 탐색",
           "kind": "navigation",
-          "count": 4
+          "count": 3
+        },
+        {
+          "type": "components",
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
         },
         {
           "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
           "count": 5
         },
@@ -4963,13 +5726,6 @@
         },
         {
           "type": "components",
-          "id": "cards",
-          "label": "Cards · 카드",
-          "kind": "cards",
-          "count": 3
-        },
-        {
-          "type": "components",
           "id": "inputs",
           "label": "Forms · 입력",
           "kind": "inputs",
@@ -4994,14 +5750,35 @@
           "id": "navigation",
           "label": "Navigation · 탐색",
           "kind": "navigation",
-          "count": 4
+          "count": 3
+        },
+        {
+          "type": "components",
+          "id": "pricing",
+          "label": "Pricing · 요금",
+          "kind": "pricing",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "code",
+          "label": "Code · 코드",
+          "kind": "code",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
         },
         {
           "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 4
+          "count": 3
         },
         {
           "type": "geometry",
@@ -5095,7 +5872,7 @@
           "id": "badges",
           "label": "Badges · 배지",
           "kind": "badges",
-          "count": 2
+          "count": 1
         },
         {
           "type": "components",
@@ -5116,14 +5893,35 @@
           "id": "navigation",
           "label": "Navigation · 탐색",
           "kind": "navigation",
-          "count": 3
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "section",
+          "label": "Sections · 콘텐츠 영역",
+          "kind": "section",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
         },
         {
           "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 3
+          "count": 2
         },
         {
           "type": "geometry",
@@ -5231,14 +6029,28 @@
           "id": "navigation",
           "label": "Navigation · 탐색",
           "kind": "navigation",
-          "count": 3
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
         },
         {
           "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 2
+          "count": 1
         },
         {
           "type": "geometry",
@@ -5346,14 +6158,28 @@
           "id": "navigation",
           "label": "Navigation · 탐색",
           "kind": "navigation",
-          "count": 4
+          "count": 3
+        },
+        {
+          "type": "components",
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 3
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
         },
         {
           "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 9
+          "count": 6
         },
         {
           "type": "geometry",
@@ -5452,7 +6278,7 @@
           "id": "cards",
           "label": "Cards · 카드",
           "kind": "cards",
-          "count": 5
+          "count": 4
         },
         {
           "type": "components",
@@ -5480,14 +6306,35 @@
           "id": "navigation",
           "label": "Navigation · 탐색",
           "kind": "navigation",
-          "count": 4
+          "count": 3
+        },
+        {
+          "type": "components",
+          "id": "pricing",
+          "label": "Pricing · 요금",
+          "kind": "pricing",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "code",
+          "label": "Code · 코드",
+          "kind": "code",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
         },
         {
           "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 7
+          "count": 6
         },
         {
           "type": "geometry",
@@ -5573,7 +6420,7 @@
           "id": "cards",
           "label": "Cards · 카드",
           "kind": "cards",
-          "count": 8
+          "count": 6
         },
         {
           "type": "components",
@@ -5608,14 +6455,35 @@
           "id": "navigation",
           "label": "Navigation · 탐색",
           "kind": "navigation",
-          "count": 3
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "pricing",
+          "label": "Pricing · 요금",
+          "kind": "pricing",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
         },
         {
           "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 2
+          "count": 1
         },
         {
           "type": "geometry",
@@ -5737,14 +6605,28 @@
           "id": "navigation",
           "label": "Navigation · 탐색",
           "kind": "navigation",
-          "count": 3
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
         },
         {
           "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 2
+          "count": 1
         },
         {
           "type": "geometry",
@@ -5838,7 +6720,7 @@
           "id": "badges",
           "label": "Badges · 배지",
           "kind": "badges",
-          "count": 2
+          "count": 1
         },
         {
           "type": "components",
@@ -5852,14 +6734,49 @@
           "id": "navigation",
           "label": "Navigation · 탐색",
           "kind": "navigation",
-          "count": 3
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "pricing",
+          "label": "Pricing · 요금",
+          "kind": "pricing",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "code",
+          "label": "Code · 코드",
+          "kind": "code",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "status",
+          "label": "Status · 상태",
+          "kind": "status",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
         },
         {
           "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 5
+          "count": 1
         },
         {
           "type": "geometry",
@@ -5967,14 +6884,42 @@
           "id": "navigation",
           "label": "Navigation · 탐색",
           "kind": "navigation",
-          "count": 3
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "pricing",
+          "label": "Pricing · 요금",
+          "kind": "pricing",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "status",
+          "label": "Status · 상태",
+          "kind": "status",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
         },
         {
           "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 7
+          "count": 3
         },
         {
           "type": "geometry",
@@ -6075,14 +7020,28 @@
           "id": "navigation",
           "label": "Navigation · 탐색",
           "kind": "navigation",
-          "count": 3
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
         },
         {
           "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 3
+          "count": 1
         },
         {
           "type": "geometry",
@@ -6166,10 +7125,17 @@
         },
         {
           "type": "components",
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 1
+        },
+        {
+          "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 3
+          "count": 2
         },
         {
           "type": "geometry",
@@ -6261,7 +7227,7 @@
         {
           "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
           "count": 3
         },
@@ -6349,7 +7315,7 @@
           "id": "cards",
           "label": "Cards · 카드",
           "kind": "cards",
-          "count": 4
+          "count": 2
         },
         {
           "type": "components",
@@ -6370,14 +7336,35 @@
           "id": "navigation",
           "label": "Navigation · 탐색",
           "kind": "navigation",
-          "count": 4
+          "count": 3
+        },
+        {
+          "type": "components",
+          "id": "pricing",
+          "label": "Pricing · 요금",
+          "kind": "pricing",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "code",
+          "label": "Code · 코드",
+          "kind": "code",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
         },
         {
           "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 3
+          "count": 2
         },
         {
           "type": "geometry",
@@ -6477,7 +7464,7 @@
           "id": "cards",
           "label": "Cards · 카드",
           "kind": "cards",
-          "count": 5
+          "count": 2
         },
         {
           "type": "components",
@@ -6498,7 +7485,28 @@
           "id": "navigation",
           "label": "Navigation · 탐색",
           "kind": "navigation",
-          "count": 5
+          "count": 3
+        },
+        {
+          "type": "components",
+          "id": "section",
+          "label": "Sections · 콘텐츠 영역",
+          "kind": "section",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "pricing",
+          "label": "Pricing · 요금",
+          "kind": "pricing",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 2
         },
         {
           "type": "geometry",
@@ -6605,7 +7613,7 @@
           "id": "cards",
           "label": "Cards · 카드",
           "kind": "cards",
-          "count": 5
+          "count": 2
         },
         {
           "type": "components",
@@ -6619,12 +7627,33 @@
           "id": "navigation",
           "label": "Navigation · 탐색",
           "kind": "navigation",
-          "count": 4
+          "count": 3
+        },
+        {
+          "type": "components",
+          "id": "section",
+          "label": "Sections · 콘텐츠 영역",
+          "kind": "section",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "pricing",
+          "label": "Pricing · 요금",
+          "kind": "pricing",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
         },
         {
           "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
           "count": 1
         },
@@ -6706,7 +7735,7 @@
           "id": "cards",
           "label": "Cards · 카드",
           "kind": "cards",
-          "count": 2
+          "count": 1
         },
         {
           "type": "components",
@@ -6720,7 +7749,21 @@
           "id": "navigation",
           "label": "Navigation · 탐색",
           "kind": "navigation",
-          "count": 4
+          "count": 3
+        },
+        {
+          "type": "components",
+          "id": "section",
+          "label": "Sections · 콘텐츠 영역",
+          "kind": "section",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
         },
         {
           "type": "geometry",
@@ -6907,7 +7950,7 @@
           "id": "cards",
           "label": "Cards · 카드",
           "kind": "cards",
-          "count": 5
+          "count": 4
         },
         {
           "type": "components",
@@ -6946,10 +7989,24 @@
         },
         {
           "type": "components",
+          "id": "section",
+          "label": "Sections · 콘텐츠 영역",
+          "kind": "section",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "status",
+          "label": "Status · 상태",
+          "kind": "status",
+          "count": 1
+        },
+        {
+          "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 14
+          "count": 13
         },
         {
           "type": "geometry",
@@ -7040,7 +8097,7 @@
           "id": "cards",
           "label": "Cards · 카드",
           "kind": "cards",
-          "count": 5
+          "count": 2
         },
         {
           "type": "components",
@@ -7061,7 +8118,28 @@
           "id": "navigation",
           "label": "Navigation · 탐색",
           "kind": "navigation",
-          "count": 3
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "section",
+          "label": "Sections · 콘텐츠 영역",
+          "kind": "section",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "pricing",
+          "label": "Pricing · 요금",
+          "kind": "pricing",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
         },
         {
           "type": "geometry",
@@ -7161,7 +8239,7 @@
           "id": "cards",
           "label": "Cards · 카드",
           "kind": "cards",
-          "count": 4
+          "count": 2
         },
         {
           "type": "components",
@@ -7182,13 +8260,27 @@
           "id": "navigation",
           "label": "Navigation · 탐색",
           "kind": "navigation",
-          "count": 3
+          "count": 2
         },
         {
           "type": "components",
-          "id": "other",
-          "label": "기타 구성요소",
-          "kind": "other",
+          "id": "pricing",
+          "label": "Pricing · 요금",
+          "kind": "pricing",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "code",
+          "label": "Code · 코드",
+          "kind": "code",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
           "count": 1
         },
         {
@@ -7283,7 +8375,7 @@
           "id": "cards",
           "label": "Cards · 카드",
           "kind": "cards",
-          "count": 4
+          "count": 1
         },
         {
           "type": "components",
@@ -7311,7 +8403,28 @@
           "id": "navigation",
           "label": "Navigation · 탐색",
           "kind": "navigation",
-          "count": 4
+          "count": 3
+        },
+        {
+          "type": "components",
+          "id": "section",
+          "label": "Sections · 콘텐츠 영역",
+          "kind": "section",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "pricing",
+          "label": "Pricing · 요금",
+          "kind": "pricing",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
         },
         {
           "type": "geometry",
@@ -7502,7 +8615,7 @@
         {
           "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
           "count": 5
         },
@@ -7589,28 +8702,28 @@
           "id": "cards",
           "label": "Cards · 카드",
           "kind": "cards",
-          "count": 4
+          "count": 5
         },
         {
           "type": "components",
           "id": "inputs",
           "label": "Forms · 입력",
           "kind": "inputs",
-          "count": 4
+          "count": 2
         },
         {
           "type": "components",
           "id": "badges",
           "label": "Badges · 배지",
           "kind": "badges",
-          "count": 3
+          "count": 2
         },
         {
           "type": "components",
           "id": "tabs",
           "label": "Tabs · 탭",
           "kind": "tabs",
-          "count": 2
+          "count": 1
         },
         {
           "type": "components",
@@ -7624,21 +8737,63 @@
           "id": "tables",
           "label": "Tables · 표",
           "kind": "tables",
-          "count": 4
+          "count": 3
         },
         {
           "type": "components",
           "id": "navigation",
           "label": "Navigation · 탐색",
           "kind": "navigation",
-          "count": 4
+          "count": 3
+        },
+        {
+          "type": "components",
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "section",
+          "label": "Sections · 콘텐츠 영역",
+          "kind": "section",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "pricing",
+          "label": "Pricing · 요금",
+          "kind": "pricing",
+          "count": 3
+        },
+        {
+          "type": "components",
+          "id": "code",
+          "label": "Code · 코드",
+          "kind": "code",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "status",
+          "label": "Status · 상태",
+          "kind": "status",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 2
         },
         {
           "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 6
+          "count": 2
         },
         {
           "type": "geometry",
@@ -7737,14 +8892,7 @@
           "id": "inputs",
           "label": "Forms · 입력",
           "kind": "inputs",
-          "count": 3
-        },
-        {
-          "type": "components",
-          "id": "badges",
-          "label": "Badges · 배지",
-          "kind": "badges",
-          "count": 1
+          "count": 2
         },
         {
           "type": "components",
@@ -7765,7 +8913,7 @@
           "id": "tables",
           "label": "Tables · 표",
           "kind": "tables",
-          "count": 4
+          "count": 3
         },
         {
           "type": "components",
@@ -7776,10 +8924,45 @@
         },
         {
           "type": "components",
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "pricing",
+          "label": "Pricing · 요금",
+          "kind": "pricing",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "media",
+          "label": "Media · 미디어",
+          "kind": "media",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "status",
+          "label": "Status · 상태",
+          "kind": "status",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
+        },
+        {
+          "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 6
+          "count": 2
         },
         {
           "type": "geometry",
@@ -7860,21 +9043,21 @@
           "id": "cards",
           "label": "Cards · 카드",
           "kind": "cards",
-          "count": 7
+          "count": 6
         },
         {
           "type": "components",
           "id": "inputs",
           "label": "Forms · 입력",
           "kind": "inputs",
-          "count": 4
+          "count": 3
         },
         {
           "type": "components",
           "id": "badges",
           "label": "Badges · 배지",
           "kind": "badges",
-          "count": 2
+          "count": 1
         },
         {
           "type": "components",
@@ -7895,7 +9078,7 @@
           "id": "tables",
           "label": "Tables · 표",
           "kind": "tables",
-          "count": 2
+          "count": 1
         },
         {
           "type": "components",
@@ -7906,10 +9089,59 @@
         },
         {
           "type": "components",
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "section",
+          "label": "Sections · 콘텐츠 영역",
+          "kind": "section",
+          "count": 3
+        },
+        {
+          "type": "components",
+          "id": "pricing",
+          "label": "Pricing · 요금",
+          "kind": "pricing",
+          "count": 4
+        },
+        {
+          "type": "components",
+          "id": "code",
+          "label": "Code · 코드",
+          "kind": "code",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "status",
+          "label": "Status · 상태",
+          "kind": "status",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "icon",
+          "label": "Assets · 형태",
+          "kind": "icon",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
+        },
+        {
+          "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 10
+          "count": 2
         },
         {
           "type": "geometry",
@@ -8031,14 +9263,14 @@
           "id": "inputs",
           "label": "Forms · 입력",
           "kind": "inputs",
-          "count": 2
+          "count": 1
         },
         {
           "type": "components",
           "id": "badges",
           "label": "Badges · 배지",
           "kind": "badges",
-          "count": 2
+          "count": 1
         },
         {
           "type": "components",
@@ -8052,7 +9284,7 @@
           "id": "tables",
           "label": "Tables · 표",
           "kind": "tables",
-          "count": 2
+          "count": 1
         },
         {
           "type": "components",
@@ -8063,10 +9295,45 @@
         },
         {
           "type": "components",
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 3
+        },
+        {
+          "type": "components",
+          "id": "section",
+          "label": "Sections · 콘텐츠 영역",
+          "kind": "section",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "pricing",
+          "label": "Pricing · 요금",
+          "kind": "pricing",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "status",
+          "label": "Status · 상태",
+          "kind": "status",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
+        },
+        {
+          "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 8
+          "count": 3
         },
         {
           "type": "geometry",
@@ -8141,21 +9408,21 @@
           "id": "cards",
           "label": "Cards · 카드",
           "kind": "cards",
-          "count": 3
+          "count": 4
         },
         {
           "type": "components",
           "id": "inputs",
           "label": "Forms · 입력",
           "kind": "inputs",
-          "count": 2
+          "count": 1
         },
         {
           "type": "components",
           "id": "badges",
           "label": "Badges · 배지",
           "kind": "badges",
-          "count": 3
+          "count": 2
         },
         {
           "type": "components",
@@ -8169,7 +9436,7 @@
           "id": "tables",
           "label": "Tables · 표",
           "kind": "tables",
-          "count": 2
+          "count": 1
         },
         {
           "type": "components",
@@ -8180,10 +9447,45 @@
         },
         {
           "type": "components",
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "section",
+          "label": "Sections · 콘텐츠 영역",
+          "kind": "section",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "pricing",
+          "label": "Pricing · 요금",
+          "kind": "pricing",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "status",
+          "label": "Status · 상태",
+          "kind": "status",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
+        },
+        {
+          "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 7
+          "count": 2
         },
         {
           "type": "geometry",
@@ -8258,20 +9560,13 @@
           "id": "cards",
           "label": "Cards · 카드",
           "kind": "cards",
-          "count": 6
+          "count": 7
         },
         {
           "type": "components",
           "id": "inputs",
           "label": "Forms · 입력",
           "kind": "inputs",
-          "count": 2
-        },
-        {
-          "type": "components",
-          "id": "badges",
-          "label": "Badges · 배지",
-          "kind": "badges",
           "count": 1
         },
         {
@@ -8286,7 +9581,7 @@
           "id": "tables",
           "label": "Tables · 표",
           "kind": "tables",
-          "count": 4
+          "count": 3
         },
         {
           "type": "components",
@@ -8297,10 +9592,45 @@
         },
         {
           "type": "components",
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "section",
+          "label": "Sections · 콘텐츠 영역",
+          "kind": "section",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "pricing",
+          "label": "Pricing · 요금",
+          "kind": "pricing",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "status",
+          "label": "Status · 상태",
+          "kind": "status",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
+        },
+        {
+          "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 5
+          "count": 1
         },
         {
           "type": "geometry",
@@ -8382,14 +9712,14 @@
           "id": "inputs",
           "label": "Forms · 입력",
           "kind": "inputs",
-          "count": 2
+          "count": 1
         },
         {
           "type": "components",
           "id": "badges",
           "label": "Badges · 배지",
           "kind": "badges",
-          "count": 3
+          "count": 2
         },
         {
           "type": "components",
@@ -8403,7 +9733,7 @@
           "id": "tables",
           "label": "Tables · 표",
           "kind": "tables",
-          "count": 2
+          "count": 1
         },
         {
           "type": "components",
@@ -8414,10 +9744,45 @@
         },
         {
           "type": "components",
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "section",
+          "label": "Sections · 콘텐츠 영역",
+          "kind": "section",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "pricing",
+          "label": "Pricing · 요금",
+          "kind": "pricing",
+          "count": 3
+        },
+        {
+          "type": "components",
+          "id": "status",
+          "label": "Status · 상태",
+          "kind": "status",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
+        },
+        {
+          "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 6
+          "count": 1
         },
         {
           "type": "geometry",
@@ -8492,20 +9857,13 @@
           "id": "cards",
           "label": "Cards · 카드",
           "kind": "cards",
-          "count": 3
+          "count": 4
         },
         {
           "type": "components",
           "id": "inputs",
           "label": "Forms · 입력",
           "kind": "inputs",
-          "count": 2
-        },
-        {
-          "type": "components",
-          "id": "badges",
-          "label": "Badges · 배지",
-          "kind": "badges",
           "count": 1
         },
         {
@@ -8520,7 +9878,7 @@
           "id": "tables",
           "label": "Tables · 표",
           "kind": "tables",
-          "count": 4
+          "count": 3
         },
         {
           "type": "components",
@@ -8531,10 +9889,45 @@
         },
         {
           "type": "components",
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "section",
+          "label": "Sections · 콘텐츠 영역",
+          "kind": "section",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "pricing",
+          "label": "Pricing · 요금",
+          "kind": "pricing",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "status",
+          "label": "Status · 상태",
+          "kind": "status",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
+        },
+        {
+          "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 7
+          "count": 3
         },
         {
           "type": "geometry",
@@ -8609,21 +10002,21 @@
           "id": "cards",
           "label": "Cards · 카드",
           "kind": "cards",
-          "count": 6
+          "count": 7
         },
         {
           "type": "components",
           "id": "inputs",
           "label": "Forms · 입력",
           "kind": "inputs",
-          "count": 2
+          "count": 1
         },
         {
           "type": "components",
           "id": "badges",
           "label": "Badges · 배지",
           "kind": "badges",
-          "count": 3
+          "count": 2
         },
         {
           "type": "components",
@@ -8637,7 +10030,7 @@
           "id": "tables",
           "label": "Tables · 표",
           "kind": "tables",
-          "count": 2
+          "count": 1
         },
         {
           "type": "components",
@@ -8648,10 +10041,45 @@
         },
         {
           "type": "components",
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "section",
+          "label": "Sections · 콘텐츠 영역",
+          "kind": "section",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "pricing",
+          "label": "Pricing · 요금",
+          "kind": "pricing",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "status",
+          "label": "Status · 상태",
+          "kind": "status",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
+        },
+        {
+          "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 6
+          "count": 1
         },
         {
           "type": "geometry",
@@ -8726,20 +10154,13 @@
           "id": "cards",
           "label": "Cards · 카드",
           "kind": "cards",
-          "count": 3
+          "count": 4
         },
         {
           "type": "components",
           "id": "inputs",
           "label": "Forms · 입력",
           "kind": "inputs",
-          "count": 2
-        },
-        {
-          "type": "components",
-          "id": "badges",
-          "label": "Badges · 배지",
-          "kind": "badges",
           "count": 1
         },
         {
@@ -8754,7 +10175,7 @@
           "id": "tables",
           "label": "Tables · 표",
           "kind": "tables",
-          "count": 2
+          "count": 1
         },
         {
           "type": "components",
@@ -8765,10 +10186,45 @@
         },
         {
           "type": "components",
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "section",
+          "label": "Sections · 콘텐츠 영역",
+          "kind": "section",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "pricing",
+          "label": "Pricing · 요금",
+          "kind": "pricing",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "status",
+          "label": "Status · 상태",
+          "kind": "status",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
+        },
+        {
+          "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 7
+          "count": 3
         },
         {
           "type": "geometry",
@@ -8843,21 +10299,21 @@
           "id": "cards",
           "label": "Cards · 카드",
           "kind": "cards",
-          "count": 6
+          "count": 5
         },
         {
           "type": "components",
           "id": "inputs",
           "label": "Forms · 입력",
           "kind": "inputs",
-          "count": 2
+          "count": 1
         },
         {
           "type": "components",
           "id": "badges",
           "label": "Badges · 배지",
           "kind": "badges",
-          "count": 2
+          "count": 1
         },
         {
           "type": "components",
@@ -8871,7 +10327,7 @@
           "id": "tables",
           "label": "Tables · 표",
           "kind": "tables",
-          "count": 2
+          "count": 1
         },
         {
           "type": "components",
@@ -8882,10 +10338,45 @@
         },
         {
           "type": "components",
+          "id": "hero",
+          "label": "Hero · 주요 메시지",
+          "kind": "hero",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "section",
+          "label": "Sections · 콘텐츠 영역",
+          "kind": "section",
+          "count": 2
+        },
+        {
+          "type": "components",
+          "id": "pricing",
+          "label": "Pricing · 요금",
+          "kind": "pricing",
+          "count": 4
+        },
+        {
+          "type": "components",
+          "id": "status",
+          "label": "Status · 상태",
+          "kind": "status",
+          "count": 1
+        },
+        {
+          "type": "components",
+          "id": "footer",
+          "label": "Footer · 하단",
+          "kind": "footer",
+          "count": 1
+        },
+        {
+          "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
-          "count": 8
+          "count": 2
         },
         {
           "type": "geometry",
@@ -8964,9 +10455,9 @@
         },
         {
           "type": "components",
-          "id": "other",
-          "label": "기타 구성요소",
-          "kind": "other",
+          "id": "content-surface",
+          "label": "Content · 목록과 표면",
+          "kind": "content-surface",
           "count": 2
         },
         {
@@ -9124,9 +10615,9 @@
         },
         {
           "type": "components",
-          "id": "tables",
-          "label": "Tables · 표",
-          "kind": "tables",
+          "id": "content-surface",
+          "label": "Content · 목록과 표면",
+          "kind": "content-surface",
           "count": 1
         },
         {
@@ -9463,9 +10954,9 @@
         },
         {
           "type": "components",
-          "id": "tables",
-          "label": "Tables · 표",
-          "kind": "tables",
+          "id": "content-surface",
+          "label": "Content · 목록과 표면",
+          "kind": "content-surface",
           "count": 1
         },
         {
@@ -9685,7 +11176,7 @@
         {
           "type": "components",
           "id": "other",
-          "label": "기타 구성요소",
+          "label": "분류되지 않은 원본 정의",
           "kind": "other",
           "count": 1
         },
@@ -10247,9 +11738,9 @@
         },
         {
           "type": "components",
-          "id": "other",
-          "label": "기타 구성요소",
-          "kind": "other",
+          "id": "content-surface",
+          "label": "Content · 목록과 표면",
+          "kind": "content-surface",
           "count": 1
         },
         {
@@ -10340,20 +11831,13 @@
           "id": "inputs",
           "label": "Forms · 입력",
           "kind": "inputs",
-          "count": 1
+          "count": 2
         },
         {
           "type": "components",
           "id": "badges",
           "label": "Badges · 배지",
           "kind": "badges",
-          "count": 1
-        },
-        {
-          "type": "components",
-          "id": "other",
-          "label": "기타 구성요소",
-          "kind": "other",
           "count": 1
         },
         {

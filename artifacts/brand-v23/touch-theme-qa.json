@@ -1,0 +1,23 @@
+[
+  {
+    "slug": "baemin",
+    "touch": true,
+    "expanded": true,
+    "feedback": true,
+    "themeParity": false
+  },
+  {
+    "slug": "linear.app",
+    "touch": true,
+    "expanded": true,
+    "feedback": true,
+    "themeParity": true
+  },
+  {
+    "slug": "spotify",
+    "touch": true,
+    "expanded": true,
+    "feedback": true,
+    "themeParity": false
+  }
+]
