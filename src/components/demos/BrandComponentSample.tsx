@@ -51,6 +51,6 @@ export function BrandComponentSample({component,catalog,theme,context=false,cont
   {context?<small className="bc-context-evidence">{key}</small>:<header className="bc-component-title"><h5>{key}</h5>{Boolean(values.use)&&<p title={scalar(values.use)}>{scalar(values.use)}</p>}</header>}
   {specimen}
   {original.backgroundColor&&original.backgroundColor===original.color&&<p className="bc-source-warning">원본의 배경·문자 색이 같습니다. 원본 속성에서 확인하세요.</p>}
-  {!context&&<><p className="bc-metrics">{original.fontSize?`원본 글자 ${original.fontSize} · `:''}{original.padding?`원본 패딩 ${original.padding} · `:''}{composition?'화면에 맞춘 축소 표시':'동작은 DRH 예시'}</p><details className="bc-evidence"><summary>원본 속성 · 개발자 근거</summary><pre>{JSON.stringify(values,null,2)}</pre><p>안전하게 해석한 속성</p><pre>{JSON.stringify(original,null,2)}</pre></details></>}
+  {!context&&<><details className="bc-evidence"><summary>Evidence</summary><p>source · {catalog.entry.upstreamPath} / components.{key}</p><p>confidence · 원본 선언 속성 / 동작·문구는 DRH 예시</p><p className="bc-metrics">{original.fontSize?`원본 글자 ${original.fontSize} · `:''}{original.padding?`원본 패딩 ${original.padding} · `:''}{composition?'화면에 맞춘 축소 표시':'동작은 DRH 예시'}</p><p>original value</p><pre>{JSON.stringify(values,null,2)}</pre><p>안전하게 해석한 속성</p><pre>{JSON.stringify(original,null,2)}</pre></details></>}
  </article>
 }

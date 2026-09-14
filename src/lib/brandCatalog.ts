@@ -50,7 +50,7 @@ export function buildBrandCatalog(entry:VendorEntry,spec:BrandDesignSpec=entry.s
  for(const [pattern,label]of [[/photography|photograph|photo-first/i,'Photography-led'],[/dense|technical|compact/i,'Dense'],[/generous|spacious|whitespace|white space/i,'Spacious'],[/minimal|subtraction|recedes|restraint/i,'Minimal'],[/bevel|Y2K|retro/i,'Retro'],[/editorial/i,'Editorial'],[/pastel/i,'Pastel surfaces'],[/dark|near-black/i,'Dark surfaces'],[/marketplace/i,'Marketplace'],[/product|workspace/i,'Product-first']] as [RegExp,string][]){const found=spec.traits.match(pattern);if(found)dna.push({label,evidence:found[0]})}
  if(dna.length<2){if(!dna.some(d=>d.label.toLowerCase()===spec.layout))dna.push({label:spec.layout.charAt(0).toUpperCase()+spec.layout.slice(1),evidence:'Source-trait composition'});const radius=Object.values(spec.radius).find(v=>numeric(v)>0);if(radius)dna.push({label:'Rounded geometry',evidence:'radius: '+radius})}
  const c=spec.colors,base=entry.tokens.colors,id=isDark(base.canvas)?'dark':'light'
- const themes:BrandTheme[]=[{id,label:id==='dark'?'Dark':'Light',colors:{canvas:base.canvas,surface:base.surface,text:base.text,muted:c['ink-muted']||c.muted||base.text,border:base.border},evidence:['normalized source palette']}]
+ const themes:BrandTheme[]=[{id,label:id==='dark'?'Dark':'Light',colors:{canvas:base.canvas,surface:base.surface,text:base.text,muted:c['ink-muted']||c.muted||c['corporate-muted']||base.text,border:base.border==='currentColor'?(c.divider||c['corporate-border']||'transparent'):base.border},evidence:['normalized source palette']}]
  // Only explicit complementary canvas AND readable ink roles establish another theme.
  const alternate=id==='dark'?'light':'dark'
  const canvas=c['canvas-'+alternate]||c['inverse-canvas']

@@ -1,0 +1,2427 @@
+{
+  "brands": [
+    {
+      "slug": "airbnb",
+      "roles": {
+        "buttons": 8,
+        "inputs": 4,
+        "navigation": 2,
+        "tabs": 3,
+        "other": 3,
+        "cards": 7,
+        "badges": 2,
+        "tables": 1,
+        "footer": 2,
+        "legal": 1
+      },
+      "unknown": [
+        "category-strip",
+        "date-picker-day",
+        "date-picker-day-selected"
+      ],
+      "total": 33
+    },
+    {
+      "slug": "airtable",
+      "roles": {
+        "buttons": 5,
+        "legal": 1,
+        "pricing": 4,
+        "navigation": 2,
+        "hero": 2,
+        "cards": 5,
+        "tabs": 1,
+        "icon": 1,
+        "other": 1,
+        "inputs": 2,
+        "cta-band": 1,
+        "footer": 1
+      },
+      "unknown": [
+        "topic-filter-rail"
+      ],
+      "total": 26
+    },
+    {
+      "slug": "apple",
+      "roles": {
+        "buttons": 7,
+        "hero": 1,
+        "navigation": 4,
+        "cards": 7,
+        "badges": 2,
+        "inputs": 1,
+        "other": 1,
+        "footer": 1
+      },
+      "unknown": [
+        "floating-sticky-bar"
+      ],
+      "total": 24
+    },
+    {
+      "slug": "binance",
+      "roles": {
+        "buttons": 10,
+        "navigation": 3,
+        "hero": 2,
+        "cards": 7,
+        "badges": 1,
+        "tables": 7,
+        "inputs": 2,
+        "section": 1,
+        "cta-band": 1,
+        "footer": 1
+      },
+      "unknown": [],
+      "total": 35
+    },
+    {
+      "slug": "bmw",
+      "roles": {
+        "navigation": 2,
+        "buttons": 6,
+        "hero": 2,
+        "cards": 7,
+        "tables": 1,
+        "badges": 2,
+        "inputs": 1,
+        "tabs": 2,
+        "other": 1,
+        "cta-band": 1,
+        "footer": 1
+      },
+      "unknown": [
+        "m-stripe-divider"
+      ],
+      "total": 26
+    },
+    {
+      "slug": "bmw-m",
+      "roles": {
+        "buttons": 4,
+        "navigation": 2,
+        "hero": 1,
+        "other": 3,
+        "cards": 5,
+        "tables": 1,
+        "tabs": 2,
+        "inputs": 1,
+        "cta-band": 1,
+        "footer": 1
+      },
+      "unknown": [
+        "m-stripe-divider",
+        "chatbot-launcher",
+        "carousel-arrow"
+      ],
+      "total": 21
+    },
+    {
+      "slug": "bugatti",
+      "roles": {
+        "buttons": 2,
+        "navigation": 2,
+        "other": 3,
+        "hero": 1,
+        "cards": 3,
+        "tables": 2,
+        "inputs": 1,
+        "badges": 1,
+        "cta-band": 1,
+        "footer": 1
+      },
+      "unknown": [
+        "wordmark-display",
+        "caption-overlay",
+        "date-pill"
+      ],
+      "total": 17
+    },
+    {
+      "slug": "cal",
+      "roles": {
+        "buttons": 6,
+        "navigation": 3,
+        "hero": 2,
+        "cards": 4,
+        "pricing": 2,
+        "inputs": 2,
+        "tabs": 2,
+        "other": 2,
+        "badges": 1,
+        "cta-band": 1,
+        "footer": 1
+      },
+      "unknown": [
+        "avatar-circle",
+        "rating-stars"
+      ],
+      "total": 26
+    },
+    {
+      "slug": "claude",
+      "roles": {
+        "buttons": 7,
+        "navigation": 2,
+        "hero": 2,
+        "cards": 7,
+        "pricing": 2,
+        "inputs": 2,
+        "tabs": 2,
+        "badges": 2,
+        "cta-band": 2,
+        "footer": 1
+      },
+      "unknown": [],
+      "total": 29
+    },
+    {
+      "slug": "clay",
+      "roles": {
+        "buttons": 6,
+        "navigation": 2,
+        "hero": 2,
+        "cards": 9,
+        "pricing": 2,
+        "inputs": 2,
+        "tabs": 2,
+        "badges": 1,
+        "cta-band": 1,
+        "footer": 1
+      },
+      "unknown": [],
+      "total": 28
+    },
+    {
+      "slug": "clickhouse",
+      "roles": {
+        "buttons": 6,
+        "navigation": 2,
+        "hero": 2,
+        "cards": 5,
+        "pricing": 2,
+        "other": 1,
+        "cta-band": 1,
+        "inputs": 2,
+        "tabs": 2,
+        "badges": 2,
+        "icon": 1,
+        "footer": 1
+      },
+      "unknown": [
+        "stat-callout"
+      ],
+      "total": 27
+    },
+    {
+      "slug": "cohere",
+      "roles": {
+        "buttons": 3,
+        "other": 1,
+        "hero": 1,
+        "cards": 4,
+        "icon": 1,
+        "section": 1,
+        "badges": 1,
+        "tables": 1,
+        "footer": 1
+      },
+      "unknown": [
+        "announcement-bar"
+      ],
+      "total": 14
+    },
+    {
+      "slug": "coinbase",
+      "roles": {
+        "navigation": 2,
+        "buttons": 8,
+        "hero": 2,
+        "cards": 3,
+        "tables": 3,
+        "pricing": 2,
+        "cta-band": 1,
+        "inputs": 2,
+        "badges": 1,
+        "icon": 1,
+        "footer": 2,
+        "legal": 1
+      },
+      "unknown": [],
+      "total": 28
+    },
+    {
+      "slug": "composio",
+      "roles": {
+        "navigation": 1,
+        "buttons": 5,
+        "hero": 1,
+        "code": 3,
+        "cards": 4,
+        "other": 1,
+        "badges": 1,
+        "inputs": 2,
+        "cta-band": 1,
+        "footer": 2
+      },
+      "unknown": [
+        "toolkit-icon"
+      ],
+      "total": 21
+    },
+    {
+      "slug": "cursor",
+      "roles": {
+        "navigation": 1,
+        "buttons": 5,
+        "hero": 1,
+        "cards": 4,
+        "other": 6,
+        "code": 1,
+        "pricing": 2,
+        "inputs": 1,
+        "badges": 1,
+        "cta-band": 1,
+        "footer": 2
+      },
+      "unknown": [
+        "ide-pane",
+        "timeline-pill-thinking",
+        "timeline-pill-grep",
+        "timeline-pill-read",
+        "timeline-pill-edit",
+        "timeline-pill-done"
+      ],
+      "total": 25
+    },
+    {
+      "slug": "dell-1996",
+      "roles": {
+        "other": 8,
+        "section": 2,
+        "cards": 10,
+        "navigation": 2,
+        "inputs": 1,
+        "buttons": 3,
+        "footer": 1,
+        "pricing": 2,
+        "dialogs": 2,
+        "tables": 1,
+        "status": 1
+      },
+      "unknown": [
+        "page-frame",
+        "top-banner",
+        "cta-block-red",
+        "phone-callout",
+        "buy-a-dell-sticker",
+        "new-burst-sticker",
+        "cert-seal",
+        "ex-product-selector"
+      ],
+      "total": 33
+    },
+    {
+      "slug": "elevenlabs",
+      "roles": {
+        "navigation": 1,
+        "buttons": 4,
+        "hero": 1,
+        "cards": 5,
+        "tables": 1,
+        "other": 1,
+        "pricing": 2,
+        "inputs": 1,
+        "badges": 1,
+        "cta-band": 1,
+        "footer": 2
+      },
+      "unknown": [
+        "voice-icon-circular"
+      ],
+      "total": 20
+    },
+    {
+      "slug": "expo",
+      "roles": {
+        "navigation": 1,
+        "buttons": 4,
+        "hero": 1,
+        "cards": 7,
+        "other": 1,
+        "code": 1,
+        "pricing": 2,
+        "inputs": 1,
+        "badges": 1,
+        "cta-band": 1,
+        "footer": 2
+      },
+      "unknown": [
+        "workflow-step-icon"
+      ],
+      "total": 22
+    },
+    {
+      "slug": "ferrari",
+      "roles": {
+        "navigation": 2,
+        "buttons": 5,
+        "hero": 2,
+        "cards": 4,
+        "section": 2,
+        "tables": 3,
+        "inputs": 2,
+        "badges": 1,
+        "cta-band": 1,
+        "footer": 2
+      },
+      "unknown": [],
+      "total": 24
+    },
+    {
+      "slug": "figma",
+      "roles": {
+        "buttons": 7,
+        "pricing": 4,
+        "inputs": 2,
+        "section": 3,
+        "other": 3,
+        "cards": 2,
+        "navigation": 1,
+        "footer": 1
+      },
+      "unknown": [
+        "promo-banner-lilac",
+        "marquee-strip",
+        "comparison-checkmark"
+      ],
+      "total": 23
+    },
+    {
+      "slug": "framer",
+      "roles": {
+        "buttons": 5,
+        "pricing": 4,
+        "inputs": 2,
+        "cards": 5,
+        "tables": 3,
+        "navigation": 1,
+        "footer": 1
+      },
+      "unknown": [],
+      "total": 21
+    },
+    {
+      "slug": "hashicorp",
+      "roles": {
+        "buttons": 7,
+        "cards": 6,
+        "pricing": 2,
+        "inputs": 2,
+        "other": 2,
+        "navigation": 1,
+        "tables": 1,
+        "footer": 1
+      },
+      "unknown": [
+        "product-pill",
+        "cta-banner"
+      ],
+      "total": 22
+    },
+    {
+      "slug": "hp",
+      "roles": {
+        "buttons": 7,
+        "badges": 3,
+        "inputs": 3,
+        "cards": 5,
+        "pricing": 2,
+        "other": 3,
+        "hero": 1,
+        "navigation": 2,
+        "tabs": 2,
+        "tables": 1,
+        "section": 1,
+        "footer": 1
+      },
+      "unknown": [
+        "promo-strip-dark",
+        "utility-strip",
+        "chevron-decoration"
+      ],
+      "total": 31
+    },
+    {
+      "slug": "ibm",
+      "roles": {
+        "buttons": 6,
+        "cards": 5,
+        "hero": 1,
+        "other": 2,
+        "inputs": 4,
+        "tabs": 2,
+        "navigation": 1,
+        "footer": 1
+      },
+      "unknown": [
+        "cta-banner",
+        "utility-bar"
+      ],
+      "total": 22
+    },
+    {
+      "slug": "intercom",
+      "roles": {
+        "buttons": 5,
+        "pricing": 4,
+        "cards": 5,
+        "inputs": 2,
+        "tables": 1,
+        "other": 1,
+        "navigation": 1,
+        "footer": 1
+      },
+      "unknown": [
+        "cta-banner"
+      ],
+      "total": 20
+    },
+    {
+      "slug": "kraken",
+      "roles": {
+        "other": 4,
+        "buttons": 1
+      },
+      "unknown": [
+        "primary-purple",
+        "purple-outlined",
+        "purple-subtle",
+        "secondary-gray"
+      ],
+      "total": 5
+    },
+    {
+      "slug": "lamborghini",
+      "roles": {
+        "buttons": 1,
+        "other": 4,
+        "cards": 1,
+        "inputs": 1
+      },
+      "unknown": [
+        "transparent-ghost",
+        "white-filled",
+        "black-filled",
+        "gray-neutral"
+      ],
+      "total": 7
+    },
+    {
+      "slug": "linear.app",
+      "roles": {
+        "buttons": 6,
+        "pricing": 4,
+        "cards": 4,
+        "inputs": 2,
+        "other": 1,
+        "tables": 1,
+        "status": 1,
+        "navigation": 1,
+        "footer": 1
+      },
+      "unknown": [
+        "cta-banner"
+      ],
+      "total": 21
+    },
+    {
+      "slug": "lovable",
+      "roles": {
+        "other": 5,
+        "buttons": 1,
+        "cards": 1,
+        "inputs": 2
+      },
+      "unknown": [
+        "primary-dark-inset-shadow",
+        "ghost-outline",
+        "cream-surface",
+        "template-gallery",
+        "stats-bar"
+      ],
+      "total": 9
+    },
+    {
+      "slug": "mastercard",
+      "roles": {
+        "other": 4,
+        "buttons": 2,
+        "cards": 3,
+        "hero": 1,
+        "inputs": 1
+      },
+      "unknown": [
+        "primary-ink-pill",
+        "secondary-outlined-pill",
+        "consent-signal-orange-pill",
+        "ghost-watermark-text-block"
+      ],
+      "total": 11
+    },
+    {
+      "slug": "meta",
+      "roles": {
+        "buttons": 8,
+        "tabs": 2,
+        "cards": 8,
+        "other": 5,
+        "inputs": 6,
+        "badges": 4,
+        "footer": 1,
+        "hero": 1,
+        "tables": 3
+      },
+      "unknown": [
+        "product-thumbnail",
+        "color-swatch-circle",
+        "promo-banner",
+        "faq-accordion-item",
+        "product-gallery-pdp"
+      ],
+      "total": 38
+    },
+    {
+      "slug": "minimax",
+      "roles": {
+        "buttons": 7,
+        "cards": 10,
+        "inputs": 4,
+        "tabs": 4,
+        "badges": 4,
+        "other": 5,
+        "tables": 5,
+        "navigation": 2,
+        "footer": 2,
+        "hero": 1
+      },
+      "unknown": [
+        "promo-banner",
+        "doc-toc-item",
+        "product-matrix-grid",
+        "ai-product-matrix",
+        "docs-prose-block"
+      ],
+      "total": 44
+    },
+    {
+      "slug": "mintlify",
+      "roles": {
+        "buttons": 10,
+        "cards": 8,
+        "pricing": 2,
+        "inputs": 3,
+        "tabs": 4,
+        "other": 7,
+        "badges": 4,
+        "code": 2,
+        "tables": 3,
+        "navigation": 2,
+        "section": 1,
+        "hero": 3,
+        "footer": 2
+      },
+      "unknown": [
+        "toggle-monthly-yearly",
+        "promo-banner",
+        "code-inline",
+        "doc-toc-item",
+        "doc-toc-item-active",
+        "logo-wall-item",
+        "faq-accordion-item"
+      ],
+      "total": 51
+    },
+    {
+      "slug": "miro",
+      "roles": {
+        "buttons": 10,
+        "cards": 10,
+        "pricing": 3,
+        "inputs": 3,
+        "other": 7,
+        "tabs": 2,
+        "badges": 8,
+        "tables": 2,
+        "hero": 1,
+        "footer": 2
+      },
+      "unknown": [
+        "filter-dropdown",
+        "toggle-monthly-yearly",
+        "promo-banner",
+        "whiteboard-mockup",
+        "faq-accordion-item",
+        "logo-wall-item",
+        "cta-banner-dark"
+      ],
+      "total": 48
+    },
+    {
+      "slug": "mistral.ai",
+      "roles": {
+        "buttons": 8,
+        "cards": 10,
+        "pricing": 2,
+        "inputs": 2,
+        "other": 5,
+        "tabs": 4,
+        "badges": 4,
+        "hero": 1,
+        "section": 1,
+        "code": 2,
+        "tables": 1,
+        "footer": 2
+      },
+      "unknown": [
+        "text-area",
+        "promo-banner",
+        "cta-banner-cream",
+        "logo-wall-item",
+        "faq-accordion-item"
+      ],
+      "total": 42
+    },
+    {
+      "slug": "mongodb",
+      "roles": {
+        "buttons": 8,
+        "cards": 10,
+        "pricing": 2,
+        "inputs": 4,
+        "tabs": 4,
+        "badges": 5,
+        "other": 4,
+        "hero": 2,
+        "code": 1,
+        "tables": 2,
+        "footer": 2
+      },
+      "unknown": [
+        "promo-banner",
+        "cta-banner-dark",
+        "logo-wall-item",
+        "faq-accordion-item"
+      ],
+      "total": 44
+    },
+    {
+      "slug": "nike",
+      "roles": {
+        "buttons": 5,
+        "inputs": 2,
+        "badges": 4,
+        "cards": 4,
+        "media": 1,
+        "other": 4,
+        "tables": 2,
+        "navigation": 1,
+        "footer": 1
+      },
+      "unknown": [
+        "swatch-dot",
+        "swatch-dot-active",
+        "utility-bar",
+        "filter-sidebar"
+      ],
+      "total": 24
+    },
+    {
+      "slug": "nintendo-2001",
+      "roles": {
+        "navigation": 3,
+        "other": 7,
+        "buttons": 5,
+        "badges": 2,
+        "inputs": 4,
+        "cards": 8,
+        "hero": 1,
+        "section": 1,
+        "tables": 3,
+        "tabs": 1,
+        "footer": 1,
+        "pricing": 2,
+        "dialogs": 2,
+        "status": 1
+      },
+      "unknown": [
+        "logo-pill",
+        "field-label",
+        "dotted-divider",
+        "calendar-widget",
+        "esrb-rating-square",
+        "mascot-bubble",
+        "ex-product-selector"
+      ],
+      "total": 41
+    },
+    {
+      "slug": "notion",
+      "roles": {
+        "buttons": 9,
+        "cards": 15,
+        "pricing": 2,
+        "inputs": 3,
+        "tabs": 4,
+        "badges": 7,
+        "other": 4,
+        "hero": 1,
+        "tables": 3,
+        "footer": 2
+      },
+      "unknown": [
+        "promo-banner",
+        "cta-banner-light",
+        "logo-wall-item",
+        "faq-accordion-item"
+      ],
+      "total": 50
+    },
+    {
+      "slug": "nvidia",
+      "roles": {
+        "buttons": 6,
+        "tabs": 2,
+        "inputs": 3,
+        "cards": 3,
+        "hero": 1,
+        "other": 5,
+        "navigation": 3,
+        "footer": 1,
+        "badges": 1
+      },
+      "unknown": [
+        "cta-strip-dark",
+        "callout-stat",
+        "corner-square",
+        "utility-bar",
+        "breadcrumb-bar"
+      ],
+      "total": 25
+    },
+    {
+      "slug": "ollama",
+      "roles": {
+        "buttons": 5,
+        "inputs": 4,
+        "other": 3,
+        "badges": 1,
+        "code": 2,
+        "pricing": 2,
+        "tables": 1,
+        "navigation": 3,
+        "footer": 1
+      },
+      "unknown": [
+        "install-snippet",
+        "feature-bullet",
+        "cta-strip-dark"
+      ],
+      "total": 22
+    },
+    {
+      "slug": "opencode.ai",
+      "roles": {
+        "buttons": 4,
+        "tabs": 2,
+        "badges": 1,
+        "inputs": 2,
+        "other": 2,
+        "hero": 1,
+        "tables": 4,
+        "cards": 1,
+        "navigation": 2,
+        "footer": 1,
+        "section": 1
+      },
+      "unknown": [
+        "textarea",
+        "install-snippet"
+      ],
+      "total": 21
+    },
+    {
+      "slug": "pinterest",
+      "roles": {
+        "buttons": 8,
+        "inputs": 4,
+        "cards": 5,
+        "other": 1,
+        "badges": 2,
+        "dialogs": 1,
+        "hero": 1,
+        "navigation": 2,
+        "footer": 1
+      },
+      "unknown": [
+        "pin-overlay-pill"
+      ],
+      "total": 25
+    },
+    {
+      "slug": "playstation",
+      "roles": {
+        "buttons": 7,
+        "inputs": 3,
+        "other": 6,
+        "cards": 4,
+        "hero": 3,
+        "badges": 1,
+        "navigation": 3,
+        "footer": 1,
+        "tables": 1
+      },
+      "unknown": [
+        "filter-pill",
+        "filter-pill-active",
+        "ps-plus-banner",
+        "carousel-paddle",
+        "pagination-dot",
+        "pagination-dot-active"
+      ],
+      "total": 29
+    },
+    {
+      "slug": "posthog",
+      "roles": {
+        "buttons": 5,
+        "inputs": 3,
+        "cards": 4,
+        "pricing": 1,
+        "tabs": 4,
+        "badges": 2,
+        "other": 6,
+        "code": 1,
+        "navigation": 3,
+        "footer": 1
+      },
+      "unknown": [
+        "banner-tip-blue",
+        "banner-tip-green",
+        "banner-tip-red",
+        "banner-tip-purple",
+        "inline-code",
+        "doc-sidebar"
+      ],
+      "total": 30
+    },
+    {
+      "slug": "raycast",
+      "roles": {
+        "buttons": 6,
+        "inputs": 3,
+        "tables": 2,
+        "tabs": 2,
+        "badges": 2,
+        "other": 1,
+        "cards": 6,
+        "pricing": 2,
+        "hero": 1,
+        "navigation": 2,
+        "footer": 1
+      },
+      "unknown": [
+        "keycap"
+      ],
+      "total": 28
+    },
+    {
+      "slug": "renault",
+      "roles": {
+        "buttons": 7,
+        "inputs": 1,
+        "hero": 1,
+        "cards": 4,
+        "tables": 1,
+        "other": 1,
+        "badges": 1,
+        "navigation": 2,
+        "footer": 1
+      },
+      "unknown": [
+        "configurator-swatch"
+      ],
+      "total": 19
+    },
+    {
+      "slug": "replicate",
+      "roles": {
+        "buttons": 6,
+        "inputs": 1,
+        "hero": 1,
+        "cards": 2,
+        "pricing": 2,
+        "code": 1,
+        "tabs": 1,
+        "status": 1,
+        "badges": 1,
+        "navigation": 2,
+        "other": 1,
+        "footer": 1
+      },
+      "unknown": [
+        "contributor-avatar"
+      ],
+      "total": 20
+    },
+    {
+      "slug": "resend",
+      "roles": {
+        "buttons": 4,
+        "inputs": 1,
+        "hero": 1,
+        "cards": 2,
+        "pricing": 2,
+        "other": 3,
+        "tabs": 1,
+        "badges": 1,
+        "status": 1,
+        "navigation": 2,
+        "footer": 1
+      },
+      "unknown": [
+        "code-window",
+        "email-mockup",
+        "contributor-avatar"
+      ],
+      "total": 19
+    },
+    {
+      "slug": "revolut",
+      "roles": {
+        "buttons": 7,
+        "inputs": 1,
+        "hero": 2,
+        "cards": 5,
+        "other": 1,
+        "badges": 2,
+        "navigation": 2,
+        "footer": 1
+      },
+      "unknown": [
+        "product-mockup"
+      ],
+      "total": 21
+    },
+    {
+      "slug": "runwayml",
+      "roles": {
+        "cards": 1,
+        "hero": 1,
+        "inputs": 1,
+        "other": 2
+      },
+      "unknown": [
+        "trust-bar",
+        "mission-statement"
+      ],
+      "total": 5
+    },
+    {
+      "slug": "sanity",
+      "roles": {
+        "other": 3,
+        "buttons": 2,
+        "cards": 3,
+        "inputs": 1
+      },
+      "unknown": [
+        "primary-cta-pill",
+        "secondary-dark-pill",
+        "ghost-subtle"
+      ],
+      "total": 9
+    },
+    {
+      "slug": "sentry",
+      "roles": {
+        "buttons": 7,
+        "other": 2,
+        "badges": 1,
+        "inputs": 2,
+        "pricing": 2,
+        "cards": 2,
+        "code": 1,
+        "navigation": 3,
+        "footer": 1
+      },
+      "unknown": [
+        "pill-neutral-dark",
+        "select-violet"
+      ],
+      "total": 21
+    },
+    {
+      "slug": "shopify",
+      "roles": {
+        "buttons": 5,
+        "inputs": 1,
+        "pricing": 2,
+        "cards": 2,
+        "section": 1,
+        "badges": 2,
+        "navigation": 3,
+        "footer": 2
+      },
+      "unknown": [],
+      "total": 18
+    },
+    {
+      "slug": "slack",
+      "roles": {
+        "buttons": 5,
+        "inputs": 1,
+        "other": 1,
+        "pricing": 2,
+        "cards": 2,
+        "section": 1,
+        "navigation": 3,
+        "footer": 1
+      },
+      "unknown": [
+        "pill-cap-shade"
+      ],
+      "total": 16
+    },
+    {
+      "slug": "spacex",
+      "roles": {
+        "buttons": 3,
+        "inputs": 1,
+        "section": 1,
+        "cards": 1,
+        "navigation": 3,
+        "footer": 1
+      },
+      "unknown": [],
+      "total": 10
+    },
+    {
+      "slug": "spotify",
+      "roles": {
+        "buttons": 5,
+        "cards": 1,
+        "inputs": 1
+      },
+      "unknown": [],
+      "total": 7
+    },
+    {
+      "slug": "starbucks",
+      "roles": {
+        "other": 13,
+        "buttons": 3,
+        "tabs": 1,
+        "cards": 4,
+        "status": 1,
+        "navigation": 2,
+        "dialogs": 1,
+        "inputs": 1,
+        "section": 1,
+        "tables": 1
+      },
+      "unknown": [
+        "1-primary-filled-explore-our-afternoon-menu-sign-up-for-free",
+        "2-primary-outlined-give-them-a-try-start-an-order",
+        "3-black-filled-join-now",
+        "4-dark-outlined-sign-in",
+        "5-green-on-green-inverted-see-the-spring-menu",
+        "6-outlined-on-dark-learn-more-order-now",
+        "7-consent-agree-dark-green-variant",
+        "size-options-selector",
+        "add-in-milk-select-outlined-rectangle",
+        "numeric-stepper",
+        "rewards-cost-pill-200-item",
+        "store-availability-selector",
+        "pdp-breadcrumb"
+      ],
+      "total": 28
+    },
+    {
+      "slug": "stripe",
+      "roles": {
+        "buttons": 4,
+        "inputs": 2,
+        "cards": 2,
+        "pricing": 2,
+        "section": 2,
+        "badges": 1,
+        "navigation": 1,
+        "footer": 1
+      },
+      "unknown": [],
+      "total": 15
+    },
+    {
+      "slug": "supabase",
+      "roles": {
+        "buttons": 5,
+        "inputs": 1,
+        "cards": 2,
+        "pricing": 2,
+        "code": 1,
+        "badges": 2,
+        "navigation": 2,
+        "footer": 1
+      },
+      "unknown": [],
+      "total": 16
+    },
+    {
+      "slug": "superhuman",
+      "roles": {
+        "buttons": 5,
+        "inputs": 1,
+        "cards": 1,
+        "pricing": 2,
+        "section": 1,
+        "tables": 1,
+        "tabs": 1,
+        "navigation": 3,
+        "footer": 1
+      },
+      "unknown": [],
+      "total": 16
+    },
+    {
+      "slug": "tesla",
+      "roles": {
+        "buttons": 3,
+        "navigation": 1,
+        "cards": 3,
+        "inputs": 1
+      },
+      "unknown": [],
+      "total": 8
+    },
+    {
+      "slug": "theverge",
+      "roles": {
+        "other": 5,
+        "badges": 1,
+        "cards": 3,
+        "inputs": 1
+      },
+      "unknown": [
+        "primary-jelly-mint-pill",
+        "secondary-dark-slate-pill",
+        "tertiary-outlined-mint",
+        "outlined-ultraviolet-promotional",
+        "storystream-rail-timeline"
+      ],
+      "total": 10
+    },
+    {
+      "slug": "together.ai",
+      "roles": {
+        "navigation": 3,
+        "buttons": 6,
+        "inputs": 2,
+        "badges": 2,
+        "hero": 1,
+        "section": 1,
+        "tabs": 1,
+        "pricing": 3,
+        "cards": 5,
+        "code": 1,
+        "tables": 3,
+        "other": 2,
+        "footer": 2,
+        "dialogs": 2,
+        "status": 1
+      },
+      "unknown": [
+        "toggle-pill-group",
+        "ex-product-selector"
+      ],
+      "total": 35
+    },
+    {
+      "slug": "uber",
+      "roles": {
+        "navigation": 7,
+        "buttons": 7,
+        "tabs": 1,
+        "inputs": 2,
+        "cards": 8,
+        "tables": 3,
+        "other": 2,
+        "hero": 2,
+        "media": 1,
+        "footer": 1,
+        "pricing": 2,
+        "dialogs": 2,
+        "status": 1
+      },
+      "unknown": [
+        "app-download-pill",
+        "ex-product-selector"
+      ],
+      "total": 39
+    },
+    {
+      "slug": "vercel",
+      "roles": {
+        "navigation": 7,
+        "buttons": 5,
+        "tabs": 1,
+        "cards": 6,
+        "code": 1,
+        "inputs": 3,
+        "badges": 1,
+        "pricing": 4,
+        "icon": 1,
+        "hero": 1,
+        "section": 3,
+        "footer": 1,
+        "other": 2,
+        "dialogs": 2,
+        "tables": 1,
+        "status": 1
+      },
+      "unknown": [
+        "banner-marketing",
+        "ex-product-selector"
+      ],
+      "total": 40
+    },
+    {
+      "slug": "vodafone",
+      "roles": {
+        "navigation": 3,
+        "buttons": 4,
+        "inputs": 1,
+        "badges": 1,
+        "cards": 3,
+        "hero": 3,
+        "section": 1,
+        "other": 3,
+        "footer": 1,
+        "pricing": 2,
+        "dialogs": 2,
+        "tables": 1,
+        "status": 1
+      },
+      "unknown": [
+        "speechmark-logo-orb",
+        "divider-on-dark",
+        "ex-product-selector"
+      ],
+      "total": 26
+    },
+    {
+      "slug": "voltagent",
+      "roles": {
+        "navigation": 3,
+        "buttons": 3,
+        "badges": 2,
+        "inputs": 1,
+        "cards": 4,
+        "other": 2,
+        "hero": 1,
+        "section": 2,
+        "footer": 1,
+        "pricing": 2,
+        "dialogs": 2,
+        "tables": 1,
+        "status": 1
+      },
+      "unknown": [
+        "code-mockup",
+        "ex-product-selector"
+      ],
+      "total": 25
+    },
+    {
+      "slug": "warp",
+      "roles": {
+        "navigation": 3,
+        "buttons": 3,
+        "inputs": 1,
+        "cards": 7,
+        "tables": 3,
+        "hero": 1,
+        "section": 1,
+        "footer": 1,
+        "pricing": 2,
+        "other": 1,
+        "dialogs": 2,
+        "status": 1
+      },
+      "unknown": [
+        "ex-product-selector"
+      ],
+      "total": 26
+    },
+    {
+      "slug": "webflow",
+      "roles": {
+        "navigation": 3,
+        "buttons": 4,
+        "inputs": 1,
+        "badges": 2,
+        "cards": 9,
+        "pricing": 3,
+        "hero": 2,
+        "section": 1,
+        "footer": 1,
+        "other": 1,
+        "dialogs": 2,
+        "tables": 1,
+        "status": 1
+      },
+      "unknown": [
+        "ex-product-selector"
+      ],
+      "total": 31
+    },
+    {
+      "slug": "wired",
+      "roles": {
+        "navigation": 3,
+        "buttons": 3,
+        "inputs": 1,
+        "cards": 4,
+        "tables": 3,
+        "other": 3,
+        "hero": 1,
+        "section": 1,
+        "footer": 1,
+        "pricing": 2,
+        "dialogs": 2,
+        "status": 1
+      },
+      "unknown": [
+        "category-eyebrow",
+        "hairline-divider",
+        "ex-product-selector"
+      ],
+      "total": 25
+    },
+    {
+      "slug": "wise",
+      "roles": {
+        "navigation": 3,
+        "buttons": 4,
+        "inputs": 1,
+        "cards": 7,
+        "hero": 2,
+        "section": 1,
+        "badges": 2,
+        "footer": 1,
+        "pricing": 2,
+        "other": 1,
+        "dialogs": 2,
+        "tables": 1,
+        "status": 1
+      },
+      "unknown": [
+        "ex-product-selector"
+      ],
+      "total": 28
+    },
+    {
+      "slug": "x.ai",
+      "roles": {
+        "navigation": 3,
+        "buttons": 3,
+        "inputs": 1,
+        "cards": 4,
+        "hero": 1,
+        "section": 1,
+        "other": 3,
+        "footer": 1,
+        "pricing": 2,
+        "dialogs": 2,
+        "tables": 1,
+        "status": 1
+      },
+      "unknown": [
+        "eyebrow-mono",
+        "divider-hairline",
+        "ex-product-selector"
+      ],
+      "total": 23
+    },
+    {
+      "slug": "zapier",
+      "roles": {
+        "navigation": 3,
+        "buttons": 4,
+        "inputs": 1,
+        "cards": 5,
+        "pricing": 4,
+        "hero": 2,
+        "section": 2,
+        "other": 2,
+        "badges": 1,
+        "footer": 1,
+        "dialogs": 2,
+        "tables": 1,
+        "status": 1
+      },
+      "unknown": [
+        "eyebrow-uppercase",
+        "ex-product-selector"
+      ],
+      "total": 29
+    },
+    {
+      "slug": "29cm",
+      "roles": {
+        "buttons": 2,
+        "content-surface": 2,
+        "inputs": 1
+      },
+      "unknown": [],
+      "total": 5
+    },
+    {
+      "slug": "baemin",
+      "roles": {
+        "buttons": 7
+      },
+      "unknown": [],
+      "total": 7
+    },
+    {
+      "slug": "banksalad",
+      "roles": {
+        "buttons": 2,
+        "cards": 1,
+        "content-surface": 1
+      },
+      "unknown": [],
+      "total": 4
+    },
+    {
+      "slug": "coupang",
+      "roles": {
+        "navigation": 2
+      },
+      "unknown": [],
+      "total": 2
+    },
+    {
+      "slug": "hyundai",
+      "roles": {
+        "tabs": 1
+      },
+      "unknown": [],
+      "total": 1
+    },
+    {
+      "slug": "kakao",
+      "roles": {
+        "buttons": 5,
+        "badges": 1
+      },
+      "unknown": [],
+      "total": 6
+    },
+    {
+      "slug": "kakaobank",
+      "roles": {
+        "buttons": 3,
+        "tabs": 1,
+        "content-surface": 1
+      },
+      "unknown": [],
+      "total": 5
+    },
+    {
+      "slug": "kakaopay",
+      "roles": {
+        "buttons": 2,
+        "cards": 1,
+        "badges": 1
+      },
+      "unknown": [],
+      "total": 4
+    },
+    {
+      "slug": "karrot",
+      "roles": {
+        "buttons": 2,
+        "inputs": 1,
+        "tabs": 1,
+        "other": 1
+      },
+      "unknown": [
+        "snackbar"
+      ],
+      "total": 5
+    },
+    {
+      "slug": "kurly",
+      "roles": {
+        "buttons": 1,
+        "inputs": 1,
+        "cards": 1
+      },
+      "unknown": [],
+      "total": 3
+    },
+    {
+      "slug": "musinsa",
+      "roles": {
+        "buttons": 2,
+        "inputs": 1,
+        "cards": 1
+      },
+      "unknown": [],
+      "total": 4
+    },
+    {
+      "slug": "naver",
+      "roles": {
+        "inputs": 1,
+        "buttons": 2,
+        "tabs": 2,
+        "badges": 1,
+        "cards": 1,
+        "navigation": 1
+      },
+      "unknown": [],
+      "total": 8
+    },
+    {
+      "slug": "oliveyoung",
+      "roles": {
+        "tabs": 1
+      },
+      "unknown": [],
+      "total": 1
+    },
+    {
+      "slug": "samsung",
+      "roles": {
+        "tabs": 1
+      },
+      "unknown": [],
+      "total": 1
+    },
+    {
+      "slug": "socar",
+      "roles": {
+        "buttons": 3,
+        "content-surface": 1
+      },
+      "unknown": [],
+      "total": 4
+    },
+    {
+      "slug": "toss",
+      "roles": {
+        "buttons": 3,
+        "inputs": 2,
+        "badges": 1
+      },
+      "unknown": [],
+      "total": 6
+    },
+    {
+      "slug": "yeogiotte",
+      "roles": {
+        "buttons": 1,
+        "inputs": 1,
+        "badges": 2,
+        "cards": 1
+      },
+      "unknown": [],
+      "total": 5
+    }
+  ],
+  "handoffs": [
+    {
+      "id": "admd-airbnb",
+      "scene": "commerce",
+      "path": "vendor/awesome-design-md/airbnb/DESIGN.md",
+      "sha256": "add34130d67209ad105346d60fe2b290728b9711683969db4b7760e29477a5fe",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 308
+    },
+    {
+      "id": "admd-airtable",
+      "scene": "workspace",
+      "path": "vendor/awesome-design-md/airtable/DESIGN.md",
+      "sha256": "1d225e511213044d3c705bde50265ad010932bfd8a15740a144dd4f480128889",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 310
+    },
+    {
+      "id": "admd-apple",
+      "scene": "product",
+      "path": "vendor/awesome-design-md/apple/DESIGN.md",
+      "sha256": "83fbc614443a9b3d7569e9956a43e7b8740f9d0f939f58b8154f7a7cec3002b2",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 307
+    },
+    {
+      "id": "admd-binance",
+      "scene": "finance",
+      "path": "vendor/awesome-design-md/binance/DESIGN.md",
+      "sha256": "378ff97d568ccbc316519b9d45a29d6649ed8961c9c486c3ed4cea7501d72371",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 309
+    },
+    {
+      "id": "admd-bmw",
+      "scene": "editorial",
+      "path": "vendor/awesome-design-md/bmw/DESIGN.md",
+      "sha256": "b7268279e7c98e85fb80890e06765f4ee8340ba1ea1ccb5a8a5b134de43dac3e",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 305
+    },
+    {
+      "id": "admd-bmw-m",
+      "scene": "editorial",
+      "path": "vendor/awesome-design-md/bmw-m/DESIGN.md",
+      "sha256": "824a1707c0a8d1609d72477d0fa211b9ebe4bdeb3e1fd701790af7b7bb669a4a",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 307
+    },
+    {
+      "id": "admd-bugatti",
+      "scene": "editorial",
+      "path": "vendor/awesome-design-md/bugatti/DESIGN.md",
+      "sha256": "375f0a20ada88cdee5e995ca7edcfbd584ddf5f887024deebd1bc75bfd55b1bc",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 309
+    },
+    {
+      "id": "admd-cal",
+      "scene": "workspace",
+      "path": "vendor/awesome-design-md/cal/DESIGN.md",
+      "sha256": "8cd21b7d67e94c899843d517f4b426e4fee33d47354a433d6a63ebcf79d5a654",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 309
+    },
+    {
+      "id": "admd-claude",
+      "scene": "editorial",
+      "path": "vendor/awesome-design-md/claude/DESIGN.md",
+      "sha256": "3d972f34f8d4f33b442fa28220cf3b7ca2f13c0a97c468e3988148f82521f9df",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 308
+    },
+    {
+      "id": "admd-clay",
+      "scene": "editorial",
+      "path": "vendor/awesome-design-md/clay/DESIGN.md",
+      "sha256": "1abd803a207fbe950a06e155adcd6013c2e149b13e7b88844f5069f9d3d99eb3",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 306
+    },
+    {
+      "id": "admd-clickhouse",
+      "scene": "editorial",
+      "path": "vendor/awesome-design-md/clickhouse/DESIGN.md",
+      "sha256": "50987e29b603cc7503ebe724af810fcf43845e96fdd4083e0fbe5fe00d2cdd2e",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 312
+    },
+    {
+      "id": "admd-cohere",
+      "scene": "editorial",
+      "path": "vendor/awesome-design-md/cohere/DESIGN.md",
+      "sha256": "1c49a5a5f88d43841d4f4afa33831328d47a5715048700a3b75086a822575883",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 308
+    },
+    {
+      "id": "admd-coinbase",
+      "scene": "finance",
+      "path": "vendor/awesome-design-md/coinbase/DESIGN.md",
+      "sha256": "c8c67800dd7f58fcc87ed7d267a3bba862e3419e499e8a66d67731a69d2de1d6",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 310
+    },
+    {
+      "id": "admd-composio",
+      "scene": "developer",
+      "path": "vendor/awesome-design-md/composio/DESIGN.md",
+      "sha256": "e7db886dabecca61f29b83e8f46d7a1e8a43889d30b81bc6e48162ccaafcbb2f",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 310
+    },
+    {
+      "id": "admd-cursor",
+      "scene": "developer",
+      "path": "vendor/awesome-design-md/cursor/DESIGN.md",
+      "sha256": "a3db9b3019dc2f514fdee7cd0ca0a5232c0bd0119e23178e8eebaf6916258d9d",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 308
+    },
+    {
+      "id": "admd-dell-1996",
+      "scene": "editorial",
+      "path": "vendor/awesome-design-md/dell-1996/DESIGN.md",
+      "sha256": "e186c614b1223fe7015670472ac6bc84b5b3fdd5de5325b3ce5bfb7fbe9c8d6e",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 311
+    },
+    {
+      "id": "admd-elevenlabs",
+      "scene": "editorial",
+      "path": "vendor/awesome-design-md/elevenlabs/DESIGN.md",
+      "sha256": "3b359acfaafadbb499c7ed3eebe813a76e0be497a7157b77de207fe275068a66",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 312
+    },
+    {
+      "id": "admd-expo",
+      "scene": "developer",
+      "path": "vendor/awesome-design-md/expo/DESIGN.md",
+      "sha256": "1be7e129b6f75afaa12318a7c51ab22f6f74a214dec22c4827cecc519f112363",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 306
+    },
+    {
+      "id": "admd-ferrari",
+      "scene": "automotive",
+      "path": "vendor/awesome-design-md/ferrari/DESIGN.md",
+      "sha256": "1199e2832641cac7e384aaf3b1f3db87f992240cea5d3d1eee04d9dc00acb17c",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 309
+    },
+    {
+      "id": "admd-figma",
+      "scene": "workspace",
+      "path": "vendor/awesome-design-md/figma/DESIGN.md",
+      "sha256": "716ce8431f47eb8b8135552710e3c4d538bccccf1202e4ceac5428c9aada9972",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 307
+    },
+    {
+      "id": "admd-framer",
+      "scene": "workspace",
+      "path": "vendor/awesome-design-md/framer/DESIGN.md",
+      "sha256": "a5d47dddacf5a04577cec0be6fe0fc53b7402254c7686874af3e59bcc7588cb4",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 308
+    },
+    {
+      "id": "admd-hashicorp",
+      "scene": "editorial",
+      "path": "vendor/awesome-design-md/hashicorp/DESIGN.md",
+      "sha256": "d2df9be72d867e48d318fd18db04e60a78357c27e392ab921fc2ba7f46951442",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 311
+    },
+    {
+      "id": "admd-hp",
+      "scene": "editorial",
+      "path": "vendor/awesome-design-md/hp/DESIGN.md",
+      "sha256": "4c9a248046684bdde5311a0c9881814f50e2381c2b0f3c75b02a35fc64bc8bb8",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 304
+    },
+    {
+      "id": "admd-ibm",
+      "scene": "editorial",
+      "path": "vendor/awesome-design-md/ibm/DESIGN.md",
+      "sha256": "46f6fd65b5e7524fed1133b9b3c0dd619f9a0f145fbb2b87f3675c701a88f3bd",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 305
+    },
+    {
+      "id": "admd-intercom",
+      "scene": "workspace",
+      "path": "vendor/awesome-design-md/intercom/DESIGN.md",
+      "sha256": "962be23cd947e87a86b2ffbc0440e9d0808243a6ef3af2aa04e8e7cc04d48ba3",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 310
+    },
+    {
+      "id": "admd-kraken",
+      "scene": "finance",
+      "path": "vendor/awesome-design-md/kraken/DESIGN.md",
+      "sha256": "41bcbd5642c926a549f0d50f1151484c5776b4536233240c8415cfb79bcf1f38",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 308
+    },
+    {
+      "id": "admd-lamborghini",
+      "scene": "editorial",
+      "path": "vendor/awesome-design-md/lamborghini/DESIGN.md",
+      "sha256": "9aa68c53b481a0befdf72859db5625f85454122294509989aa58414aaee04b34",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 313
+    },
+    {
+      "id": "admd-linear.app",
+      "scene": "workspace",
+      "path": "vendor/awesome-design-md/linear.app/DESIGN.md",
+      "sha256": "30bd30e72c48a16e4bdbd010f2d1c85fab657c6fae3cc85389399aab10f9cb5f",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 308
+    },
+    {
+      "id": "admd-lovable",
+      "scene": "developer",
+      "path": "vendor/awesome-design-md/lovable/DESIGN.md",
+      "sha256": "92790895c833104072643929ba56ebbf42c8f88ffb7bff1926462545d0ace6c7",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 309
+    },
+    {
+      "id": "admd-mastercard",
+      "scene": "finance",
+      "path": "vendor/awesome-design-md/mastercard/DESIGN.md",
+      "sha256": "e76ceaa187f43bd24b8338d2b2314e71e9225b36492e40f32a55782281a10437",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 312
+    },
+    {
+      "id": "admd-meta",
+      "scene": "editorial",
+      "path": "vendor/awesome-design-md/meta/DESIGN.md",
+      "sha256": "306dfad97c006d47b134fb0dbd55ff68d3baa526844d6eb37346373c9ef35339",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 306
+    },
+    {
+      "id": "admd-minimax",
+      "scene": "editorial",
+      "path": "vendor/awesome-design-md/minimax/DESIGN.md",
+      "sha256": "2658b96488bb629749259b152c5ba2912a0e8feb6a03477e265879abd9264c50",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 309
+    },
+    {
+      "id": "admd-mintlify",
+      "scene": "workspace",
+      "path": "vendor/awesome-design-md/mintlify/DESIGN.md",
+      "sha256": "754ffcf35dcd39ef8aef450085ce936aaca5b872ff92caa66be99e91a5c3d5ec",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 310
+    },
+    {
+      "id": "admd-miro",
+      "scene": "workspace",
+      "path": "vendor/awesome-design-md/miro/DESIGN.md",
+      "sha256": "87c71f76297277d64f9679e015a50da88e72d86d7b41badf8733eae1e4cde335",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 306
+    },
+    {
+      "id": "admd-mistral.ai",
+      "scene": "editorial",
+      "path": "vendor/awesome-design-md/mistral.ai/DESIGN.md",
+      "sha256": "40e2c692d72c54bae1e43446e2d059b71d773668d39d71ccb7ededa9fa07d145",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 312
+    },
+    {
+      "id": "admd-mongodb",
+      "scene": "editorial",
+      "path": "vendor/awesome-design-md/mongodb/DESIGN.md",
+      "sha256": "4523f10efd5ccd46f9aeac3b98626e24bcf907bc0c1e46500cb0e3920f932e71",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 309
+    },
+    {
+      "id": "admd-nike",
+      "scene": "commerce",
+      "path": "vendor/awesome-design-md/nike/DESIGN.md",
+      "sha256": "d2a3d363665839e2ddc15c91b8a9f3e92b1962ff55a7ca5d964ab3bb88b8186c",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 306
+    },
+    {
+      "id": "admd-nintendo-2001",
+      "scene": "play",
+      "path": "vendor/awesome-design-md/nintendo-2001/DESIGN.md",
+      "sha256": "9630af17090d5c39ba9d8b5915a597a96c7552efe1422b3b8c3f31fb3e636716",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 321
+    },
+    {
+      "id": "admd-notion",
+      "scene": "workspace",
+      "path": "vendor/awesome-design-md/notion/DESIGN.md",
+      "sha256": "fa9d6e78216d8f3e5d3990709ca2de6bc2e268e945bb94f255fd1bfb15455266",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 308
+    },
+    {
+      "id": "admd-nvidia",
+      "scene": "editorial",
+      "path": "vendor/awesome-design-md/nvidia/DESIGN.md",
+      "sha256": "d649be85daf075c98a17071e707e3901c6e19150044a81716acd01ef1169cc83",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 308
+    },
+    {
+      "id": "admd-ollama",
+      "scene": "developer",
+      "path": "vendor/awesome-design-md/ollama/DESIGN.md",
+      "sha256": "3f36f897e5aad870344dd97e282c8f125ad208dc99449bb08dd38b9259d2f451",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 308
+    },
+    {
+      "id": "admd-opencode.ai",
+      "scene": "developer",
+      "path": "vendor/awesome-design-md/opencode.ai/DESIGN.md",
+      "sha256": "d1a8893c4b8ac90b1e86230eee2effa8bd15add3582853477920e32432336dda",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 310
+    },
+    {
+      "id": "admd-pinterest",
+      "scene": "commerce",
+      "path": "vendor/awesome-design-md/pinterest/DESIGN.md",
+      "sha256": "26a202fd244e9213d5e2475d81581828da1dd97e089e44639d9783d04f96e4a8",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 311
+    },
+    {
+      "id": "admd-playstation",
+      "scene": "editorial",
+      "path": "vendor/awesome-design-md/playstation/DESIGN.md",
+      "sha256": "2a56c109af6cb847fa091b768f719b498ac56b582d010860e73ea5fb72a1590d",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 313
+    },
+    {
+      "id": "admd-posthog",
+      "scene": "developer",
+      "path": "vendor/awesome-design-md/posthog/DESIGN.md",
+      "sha256": "01f497f751d56296bfcd5eb8806325a4bb4786d364941ec6e65c65fa9ee6d362",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 309
+    },
+    {
+      "id": "admd-raycast",
+      "scene": "developer",
+      "path": "vendor/awesome-design-md/raycast/DESIGN.md",
+      "sha256": "6e2c5137e4d914b70996d589688374a801b6f29a35c9c019c22abb5e0170bda3",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 309
+    },
+    {
+      "id": "admd-renault",
+      "scene": "editorial",
+      "path": "vendor/awesome-design-md/renault/DESIGN.md",
+      "sha256": "b343df9a67e57f248e9eee704f52b17dff9cf6a46d1dc9f8d7ab36741940db59",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 309
+    },
+    {
+      "id": "admd-replicate",
+      "scene": "editorial",
+      "path": "vendor/awesome-design-md/replicate/DESIGN.md",
+      "sha256": "c22062d7b4174bf9ced7bc61c48389086cf6eed96a958e098ee70389893b0a15",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 311
+    },
+    {
+      "id": "admd-resend",
+      "scene": "workspace",
+      "path": "vendor/awesome-design-md/resend/DESIGN.md",
+      "sha256": "99536f1b2380511a539f7f3466d46d351e4bf35a5af0c0df395bdc20af05c9be",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 308
+    },
+    {
+      "id": "admd-revolut",
+      "scene": "finance",
+      "path": "vendor/awesome-design-md/revolut/DESIGN.md",
+      "sha256": "b7fa8473315541f5d7e7d76f68a77105d255e6dae00d31d5eb34621d1d52de59",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 309
+    },
+    {
+      "id": "admd-runwayml",
+      "scene": "editorial",
+      "path": "vendor/awesome-design-md/runwayml/DESIGN.md",
+      "sha256": "b0e69bf643f89bb57ac0b82a3bf025e59ff1478c244cb0528ad1e38b3f80dac9",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 308
+    },
+    {
+      "id": "admd-sanity",
+      "scene": "developer",
+      "path": "vendor/awesome-design-md/sanity/DESIGN.md",
+      "sha256": "ea1c442de2b23443f79af46524a81f33951606c8ff043ea9c25ba886264fbdd8",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 308
+    },
+    {
+      "id": "admd-sentry",
+      "scene": "editorial",
+      "path": "vendor/awesome-design-md/sentry/DESIGN.md",
+      "sha256": "655c91d7d23b5e869a966b7f1b63ae650567ad5d69003cfc64b0ee62c8e02c1f",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 308
+    },
+    {
+      "id": "admd-shopify",
+      "scene": "commerce",
+      "path": "vendor/awesome-design-md/shopify/DESIGN.md",
+      "sha256": "495e89b8d0a1848ded013c040f7a2ae62077e9d87fc4385350e25dee02ccdb38",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 309
+    },
+    {
+      "id": "admd-slack",
+      "scene": "workspace",
+      "path": "vendor/awesome-design-md/slack/DESIGN.md",
+      "sha256": "03cb243015a2e11d0faf05caba7f3d0c7fda6839b1f5ce707a23e8d46d1a11bd",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 307
+    },
+    {
+      "id": "admd-spacex",
+      "scene": "editorial",
+      "path": "vendor/awesome-design-md/spacex/DESIGN.md",
+      "sha256": "495450c79faab54d12d677649ca0a2c30a60f64f536a802e945ad54185c5baad",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 308
+    },
+    {
+      "id": "admd-spotify",
+      "scene": "media",
+      "path": "vendor/awesome-design-md/spotify/DESIGN.md",
+      "sha256": "72e964a6cf551d0603f9854f2f42ee08e97ad4d9e17e037f50f6233508288295",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 309
+    },
+    {
+      "id": "admd-starbucks",
+      "scene": "commerce",
+      "path": "vendor/awesome-design-md/starbucks/DESIGN.md",
+      "sha256": "e20338ee10226c63cf2588207288c08e12d60754a53f681657adaf364dfe8fa7",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 311
+    },
+    {
+      "id": "admd-stripe",
+      "scene": "finance",
+      "path": "vendor/awesome-design-md/stripe/DESIGN.md",
+      "sha256": "5c8806b7dd3e0c2554ccba9d1e2a7c78e7c6e50e44fcf6ff5daea6026f8a9ed9",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 308
+    },
+    {
+      "id": "admd-supabase",
+      "scene": "editorial",
+      "path": "vendor/awesome-design-md/supabase/DESIGN.md",
+      "sha256": "f57287d7f44d59e8169dc4b4304ff03c1a2efb37f5433b9c04460caae7710880",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 310
+    },
+    {
+      "id": "admd-superhuman",
+      "scene": "developer",
+      "path": "vendor/awesome-design-md/superhuman/DESIGN.md",
+      "sha256": "3640298bd2957aee80ce88eb465a7541ba835ec105cba364a6a621d885c7f34f",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 312
+    },
+    {
+      "id": "admd-tesla",
+      "scene": "editorial",
+      "path": "vendor/awesome-design-md/tesla/DESIGN.md",
+      "sha256": "19f2f7e6073d708f46d2512e6bab3c7c417cf2b4d9f57ff6ec6f2e056ea942b0",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 307
+    },
+    {
+      "id": "admd-theverge",
+      "scene": "editorial",
+      "path": "vendor/awesome-design-md/theverge/DESIGN.md",
+      "sha256": "5da2c3116e6845826b043ac115a80896a399efda2cebc0188981fba2ef9bb526",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 311
+    },
+    {
+      "id": "admd-together.ai",
+      "scene": "editorial",
+      "path": "vendor/awesome-design-md/together.ai/DESIGN.md",
+      "sha256": "aee472c583f55a2f2c7ee1c403a96dddadb3ff6dc518335451f431e313bf43cf",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 313
+    },
+    {
+      "id": "admd-uber",
+      "scene": "editorial",
+      "path": "vendor/awesome-design-md/uber/DESIGN.md",
+      "sha256": "f30d2257d2d090790332d00ccb16cd2516c3c6008be61ad2ce83c4e991bcc803",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 306
+    },
+    {
+      "id": "admd-vercel",
+      "scene": "developer",
+      "path": "vendor/awesome-design-md/vercel/DESIGN.md",
+      "sha256": "d0951b93c2b4ce9840c715c9f9b3e58a386c6c58ae5cc0f804dec3b116b95bd8",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 308
+    },
+    {
+      "id": "admd-vodafone",
+      "scene": "editorial",
+      "path": "vendor/awesome-design-md/vodafone/DESIGN.md",
+      "sha256": "293a40951e654283978fa744b24177a159d8f2a60f402bc735bf081618af0ef6",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 310
+    },
+    {
+      "id": "admd-voltagent",
+      "scene": "editorial",
+      "path": "vendor/awesome-design-md/voltagent/DESIGN.md",
+      "sha256": "4457887741ae5e965e205282b03c4bff83e47dd7a03cd7f38c64623a17569fcd",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 311
+    },
+    {
+      "id": "admd-warp",
+      "scene": "developer",
+      "path": "vendor/awesome-design-md/warp/DESIGN.md",
+      "sha256": "5b1201f7b1b4e72570d148d1f980fd1cb35e6e4122d48dd271787aa3538a25ad",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 306
+    },
+    {
+      "id": "admd-webflow",
+      "scene": "editorial",
+      "path": "vendor/awesome-design-md/webflow/DESIGN.md",
+      "sha256": "9230c7b3951371fc2edc04958962e32bb7ec9a9b703aa6b72eaf5c7991b7c984",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 309
+    },
+    {
+      "id": "admd-wired",
+      "scene": "editorial",
+      "path": "vendor/awesome-design-md/wired/DESIGN.md",
+      "sha256": "eb439dcc573401dc30583f40e7eef8a60b769232da59e524de6dce56d5c3593e",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 307
+    },
+    {
+      "id": "admd-wise",
+      "scene": "editorial",
+      "path": "vendor/awesome-design-md/wise/DESIGN.md",
+      "sha256": "442df0ad7380efd8712f5574bdca34a73cfb41a2a43454ff459863a6258af547",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 306
+    },
+    {
+      "id": "admd-x.ai",
+      "scene": "editorial",
+      "path": "vendor/awesome-design-md/x.ai/DESIGN.md",
+      "sha256": "9c9ef45d8c0c3b9a7622833cdff8bd125ed6bf296a82cc7274215276706e52eb",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 306
+    },
+    {
+      "id": "admd-zapier",
+      "scene": "editorial",
+      "path": "vendor/awesome-design-md/zapier/DESIGN.md",
+      "sha256": "9aee43ba8ece1b4fd0753b4cad0a29f3497331882fa376f0dd4fea8a018c32fc",
+      "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
+      "promptLength": 308
+    },
+    {
+      "id": "admd-29cm",
+      "scene": "commerce",
+      "path": "vendor/oh-my-design/29cm/DESIGN.md",
+      "sha256": "e6a22d1a2d5462c4093f1d3adbd2a171239089a7d067a63930b47fc2c4cf9ba0",
+      "revision": "15ff013933b37d1800e05c75e7680ed17e56f94b",
+      "promptLength": 291
+    },
+    {
+      "id": "admd-baemin",
+      "scene": "commerce",
+      "path": "vendor/oh-my-design/baemin/DESIGN.md",
+      "sha256": "b04937971f8b91b376d1b523f5a476f6b002a4652284cdaf823eb60f3407af49",
+      "revision": "15ff013933b37d1800e05c75e7680ed17e56f94b",
+      "promptLength": 293
+    },
+    {
+      "id": "admd-banksalad",
+      "scene": "finance",
+      "path": "vendor/oh-my-design/banksalad/DESIGN.md",
+      "sha256": "6406d4ce56623b000d367f0cfbf95653b28152aff43df8f24ec45de178ecb16a",
+      "revision": "15ff013933b37d1800e05c75e7680ed17e56f94b",
+      "promptLength": 296
+    },
+    {
+      "id": "admd-coupang",
+      "scene": "commerce",
+      "path": "vendor/oh-my-design/coupang/DESIGN.md",
+      "sha256": "74f82355f6dda0ad97558f9f74a5c2cdc72946788d6ef48f6412b3c28dc9c325",
+      "revision": "15ff013933b37d1800e05c75e7680ed17e56f94b",
+      "promptLength": 294
+    },
+    {
+      "id": "admd-hyundai",
+      "scene": "editorial",
+      "path": "vendor/oh-my-design/hyundai/DESIGN.md",
+      "sha256": "2dbbd9f31c46779a696b6f3586e20100f43264274df4846d03b848c29c9e3a11",
+      "revision": "15ff013933b37d1800e05c75e7680ed17e56f94b",
+      "promptLength": 294
+    },
+    {
+      "id": "admd-kakao",
+      "scene": "editorial",
+      "path": "vendor/oh-my-design/kakao/DESIGN.md",
+      "sha256": "a06cfee0bc444994b217962ce3892a883b5ecffa2765bfde42645c2222bc8362",
+      "revision": "15ff013933b37d1800e05c75e7680ed17e56f94b",
+      "promptLength": 292
+    },
+    {
+      "id": "admd-kakaobank",
+      "scene": "finance",
+      "path": "vendor/oh-my-design/kakaobank/DESIGN.md",
+      "sha256": "a2659b60968159b143317fb6a99ad21c35e2f04a87ef561edf6c12c2919144cf",
+      "revision": "15ff013933b37d1800e05c75e7680ed17e56f94b",
+      "promptLength": 296
+    },
+    {
+      "id": "admd-kakaopay",
+      "scene": "finance",
+      "path": "vendor/oh-my-design/kakaopay/DESIGN.md",
+      "sha256": "3067d6ac24ee2792e2404f01ef7ec0d50e12447031a4302076fdd433624f169c",
+      "revision": "15ff013933b37d1800e05c75e7680ed17e56f94b",
+      "promptLength": 295
+    },
+    {
+      "id": "admd-karrot",
+      "scene": "editorial",
+      "path": "vendor/oh-my-design/karrot/DESIGN.md",
+      "sha256": "09df85980a8ae2f45e3c936b62f2549fcaf4660904fffee91c9d59d4effca087",
+      "revision": "15ff013933b37d1800e05c75e7680ed17e56f94b",
+      "promptLength": 293
+    },
+    {
+      "id": "admd-kurly",
+      "scene": "commerce",
+      "path": "vendor/oh-my-design/kurly/DESIGN.md",
+      "sha256": "b953f809f8d7e38f4d244891d9901e2e07dce3c4c2b85d7d1a3f710c660395c7",
+      "revision": "15ff013933b37d1800e05c75e7680ed17e56f94b",
+      "promptLength": 292
+    },
+    {
+      "id": "admd-musinsa",
+      "scene": "commerce",
+      "path": "vendor/oh-my-design/musinsa/DESIGN.md",
+      "sha256": "b50efaff74122fcd7aea1d9ba05826bd1a53248a1e92ce7a429ca87868fbd70d",
+      "revision": "15ff013933b37d1800e05c75e7680ed17e56f94b",
+      "promptLength": 294
+    },
+    {
+      "id": "admd-naver",
+      "scene": "editorial",
+      "path": "vendor/oh-my-design/naver/DESIGN.md",
+      "sha256": "7c42dad9552326b6196365ba2acf53579f9db56471488c6694e607fb78ca0e5f",
+      "revision": "15ff013933b37d1800e05c75e7680ed17e56f94b",
+      "promptLength": 292
+    },
+    {
+      "id": "admd-oliveyoung",
+      "scene": "commerce",
+      "path": "vendor/oh-my-design/oliveyoung/DESIGN.md",
+      "sha256": "4069134f2abcb90b9214a85e8a21ef66c08e5929fbce70392ed0381c6ffabdd4",
+      "revision": "15ff013933b37d1800e05c75e7680ed17e56f94b",
+      "promptLength": 298
+    },
+    {
+      "id": "admd-samsung",
+      "scene": "editorial",
+      "path": "vendor/oh-my-design/samsung/DESIGN.md",
+      "sha256": "bacd6c7f5b4c7a05ca60cede7dd76599258064f3df563cbb4fa35a92f9ac7928",
+      "revision": "15ff013933b37d1800e05c75e7680ed17e56f94b",
+      "promptLength": 294
+    },
+    {
+      "id": "admd-socar",
+      "scene": "editorial",
+      "path": "vendor/oh-my-design/socar/DESIGN.md",
+      "sha256": "1af22ef57f6d829048c0d5600860b821f1f74405c37457925696e0ed0dc596e1",
+      "revision": "15ff013933b37d1800e05c75e7680ed17e56f94b",
+      "promptLength": 292
+    },
+    {
+      "id": "admd-toss",
+      "scene": "finance",
+      "path": "vendor/oh-my-design/toss/DESIGN.md",
+      "sha256": "115778c526c36b165ad5828b95637c2289c05735e5d81d8a00c4c7d195c50c32",
+      "revision": "15ff013933b37d1800e05c75e7680ed17e56f94b",
+      "promptLength": 291
+    },
+    {
+      "id": "admd-yeogiotte",
+      "scene": "editorial",
+      "path": "vendor/oh-my-design/yeogiotte/DESIGN.md",
+      "sha256": "60940591b636a9551efaf81f3b95c2e18dd0e08b7bb31ede96b0054d6ec274a8",
+      "revision": "15ff013933b37d1800e05c75e7680ed17e56f94b",
+      "promptLength": 291
+    }
+  ],
+  "guideLinks": [
+    {
+      "path": "src/components/ArtifactWorkspace.tsx",
+      "slug": "apply-demo-code"
+    },
+    {
+      "path": "src/components/ReferenceProjectHandoff.tsx",
+      "slug": "apply-demo-code"
+    },
+    {
+      "path": "src/content/guides/apply-demo-code.md",
+      "slug": "quickstart"
+    },
+    {
+      "path": "src/content/guides/apply-demo-code.md",
+      "slug": "license-basics"
+    },
+    {
+      "path": "src/content/guides/apply-demo-code.md",
+      "slug": "create-design-md"
+    },
+    {
+      "path": "src/content/guides/create-design-md.md",
+      "slug": "quickstart"
+    },
+    {
+      "path": "src/content/guides/create-design-md.md",
+      "slug": "quickstart"
+    },
+    {
+      "path": "src/content/guides/create-design-md.md",
+      "slug": "apply-demo-code"
+    },
+    {
+      "path": "src/content/guides/license-basics.md",
+      "slug": "apply-demo-code"
+    },
+    {
+      "path": "src/content/guides/quickstart.md",
+      "slug": "apply-demo-code"
+    },
+    {
+      "path": "src/content/guides/quickstart.md",
+      "slug": "create-design-md"
+    },
+    {
+      "path": "src/content/guides/quickstart.md",
+      "slug": "license-basics"
+    }
+  ],
+  "negativeCases": 6
+}

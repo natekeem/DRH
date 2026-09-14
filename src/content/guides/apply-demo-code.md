@@ -15,7 +15,7 @@ Reference를 이미 골랐다면 필요한 파일을 저장하고 기존 앱에 
 | CSS | 함께 제공된 DOM·동작 코드에 스타일을 적용할 때 |
 | Tokens / Tailwind | 프로젝트의 토큰 구조와 Tailwind 버전에 맞춰 연결할 때 |
 
-탭이 없으면 해당 형식은 제공하지 않습니다. Brand Catalog의 In Context는 DRH의 적용 예시이며, 공식 제품 코드 export가 아닙니다.
+탭이 없으면 해당 형식은 제공하지 않습니다. Brand Catalog의 Applied Canvas는 DRH의 적용 예시이며, 공식 제품 코드 export가 아닙니다.
 
 ## 2. 파일을 저장하고 실행
 

@@ -2,7 +2,7 @@ import { lazy, Suspense, Fragment, type CSSProperties } from 'react'
 import { componentStyle, length, scalar, typeStyle, type BrandCatalog as Catalog, type BrandTheme } from '../../lib/brandCatalog'
 import { brandIdentifier, cleanSource, curatedColors, curatedRoles, curatedRule, representativeRows, motionEvidence, resolveBrandFont, responsiveEvidence, shortRule, sourceLines, sourceTable } from '../../lib/brandPresentation'
 import { BrandComponentSample } from './BrandComponentSample'
-const BrandProjectHandoff=lazy(()=>import('./BrandProjectHandoff'))
+import { BrandExperienceCatalog } from './BrandExperienceCatalog'
 const BrandSourceNotes=lazy(()=>import('./BrandSourceNotes'))
 const resourceLabels:Record<string,string>={'brand-guidelines':'브랜드 가이드','design-system':'디자인 시스템','developer-design-guide':'개발자 디자인 가이드',typography:'타이포그래피',components:'컴포넌트',assets:'브랜드 에셋',other:'공식 자료'}
 export function catalogStyle(theme:BrandTheme):CSSProperties{return {'--bc-canvas':theme.colors.canvas,'--bc-surface':theme.colors.surface,'--bc-ink':theme.colors.text,'--bc-muted':theme.colors.muted,'--bc-border':theme.colors.border} as CSSProperties}
@@ -13,6 +13,7 @@ function RuleCards({value,expanded,kind,slug}:{value:unknown;expanded:boolean;ki
  return <><div className="bc-grid bc-rules">{rows.length?(expanded?rows:representativeRows(rows,6)).map((row,i)=>{const summary=curatedRule(slug,kind,row);return <article key={i}><small>{kind==='elevation'?'단계':'화면 조건'}</small><h5>{row[0]}</h5>{kind==='responsive'&&<strong className="bc-breakpoint">{row[1]}</strong>}{summary?<p>{summary}</p>:<><p>{kind==='elevation'?shortRule(row[1]||''):shortRule(row[2]||'')}</p>{kind==='elevation'&&row[2]&&<p className="bc-note">사용처 · {shortRule(row[2])}</p>}</>}</article>}):<p className="bc-note">{lines.length?shortRule(lines[0].split(/(?<=\.)\s/)[0]):'정성적 규칙이 정의되어 있습니다. 원문 근거를 확인하세요.'}</p>}</div>{!expanded&&rows.length>6&&<p className="bc-note bc-catalog-count">대표 6개 / 전체 {rows.length}개 · 크게 보기에서 모든 조건을 확인하세요.</p>}<Evidence value={value}/></>
 }
 export function BrandCatalog({catalog,theme,expanded=false}:{catalog:Catalog;theme:BrandTheme;expanded?:boolean}){
+ if(!expanded)return <BrandExperienceCatalog catalog={catalog} theme={theme}/>
  const {spec,entry}=catalog
  const asset=brandIdentifier(entry.slug,spec)
  const roles=expanded?catalog.roles:curatedRoles(catalog.roles)
@@ -37,6 +38,6 @@ export function BrandCatalog({catalog,theme,expanded=false}:{catalog:Catalog;the
    {section.type==='layout'&&<><div className="bc-layout" data-layout={spec.layout} aria-label={spec.layout+' layout schematic'}>{['탐색','주요 영역','보조 콘텐츠','보조 콘텐츠'].map((v,i)=><div key={i}>{v}</div>)}</div><p className="bc-note">{spec.layout} · 원본 특성을 요약한 구성도</p>{expanded&&<Evidence value={spec.traits}/>}</>}
    {section.type==='source'&&<><p className="bc-note">{entry.sourceName || 'VoltAgent / awesome-design-md'} · MIT repository content · {entry.upstreamCommit.slice(0,12)}<br/>{entry.upstreamRepo || 'https://github.com/VoltAgent/awesome-design-md'}<br/>{entry.upstreamPath}<br/>문서 MIT와 브랜드 상표·로고·폰트 권리는 별도입니다.{entry.referenceRights&&<><br/>{entry.referenceRights}</>}</p><a href={import.meta.env.BASE_URL+'vendor/'+(entry.vendorSource||'awesome-design-md')+'/'+entry.slug+'/DESIGN.md'} target="_blank" rel="noreferrer">원본 DESIGN.md ↗</a>{expanded&&<><a className="bc-full-json" href={import.meta.env.BASE_URL+'brand-design-specs/'+entry.slug+'.json'} target="_blank" rel="noreferrer">전체 Spec JSON ↗</a><details><summary>전체 원문 섹션 · 개발자 근거</summary>{Object.entries(spec.sections||{}).map(([k,v])=><Fragment key={k}><h5>{k}</h5><pre>{v}</pre></Fragment>)}</details></>}</>}
   </section>)}
-  <Suspense fallback={null}><BrandProjectHandoff slug={entry.slug}/></Suspense>
+
  </div>
 }

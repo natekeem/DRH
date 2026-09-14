@@ -1,12 +1,12 @@
 # DRH Agent Distribution Plan
 
-작성: 2026-09-14 · V2.3 범위는 공통 contract, 검증과 설계 문서입니다. Skill·Plugin·CLI 설치물은 이번에 배포하지 않습니다.
+갱신: 2026-09-14 · V2.4 범위는 공통 contract, 검증과 설계 문서입니다. Skill·Plugin·CLI 설치물은 이번에 배포하지 않습니다.
 
 ## Canonical data and consumers
 
 ```text
 Pinned raw DESIGN.md + BrandDesignSpec + canonical ReferenceItem
-        ├── Website: discover → Catalog → In Context
+        ├── Website: Overview → Design DNA → Component Library → Applied Canvas → Resources
         └── resolveArtifacts → buildReferenceHandoff
                                    ├── Portable artifact bundle
                                    ├── future Claude Code Skill
@@ -30,6 +30,7 @@ Website를 새 데이터 원본으로 스크래핑하지 않습니다. Website�
 | agent.compact / extended | 기존 artifact resolver와 정확히 같은 문자열. 두 번째 Agent 생성 파이프라인을 두지 않습니다. |
 | agent.applyPrompt | 프로젝트를 먼저 확인하고 원본 근거·충돌·화면 검수를 지시하는 1,000자 미만의 짧은 요청. |
 | source | 출처 이름, repository, pinned revision, 문서 license와 notices. |
+| experience | V2.4 additive contract: version, deterministic scene, semantic componentGroups and applied-preview disclaimer; same src/lib/brandExperience.ts consumed by Website. Layout and example content are DRH compositions. |
 | officialResources | Website와 같은 검증 registry. official link가 에셋 재배포 허가는 아닙니다. |
 
 현재 TypeScript runtime module은 Website 및 저장소 내 build 도구의 입력입니다. 공개 HTTP 검색 API, 설치 가능한 package 또는 독립 Node SDK를 이미 제공한다는 뜻은 아닙니다. `scripts/audit-brand-fidelity.mjs`가 esbuild의 raw-file loader로 shared module을 로드하는 재현 가능한 예시입니다.

@@ -11,7 +11,7 @@ for(const item of p.references){
  assert.equal(h.agent.extended,artifacts.agent?.extended);assert.equal(h.agent.compact,artifacts.agent?.compact)
  assert(h.agent.applyPrompt.length<1000);assert(h.agent.applyPrompt.includes('390px / 1440px'))
  assert.equal(h.schemaVersion,1);assert.equal(JSON.parse(JSON.stringify(h)).id,item.id)
- if(h.designMd?.path){const raw=await readFile('public/'+h.designMd.path);const sha=createHash('sha256').update(raw).digest('hex');if(h.designMd.sha256)assert.equal(sha,h.designMd.sha256);assert(!h.designMd.text,'No loading placeholder in portable contract');report.handoffs.push({id:h.id,path:h.designMd.path,sha256:sha,revision:h.source.revision,promptLength:h.agent.applyPrompt.length})}
+ if(h.designMd?.path){const raw=await readFile('public/'+h.designMd.path);const sha=createHash('sha256').update(raw).digest('hex');if(h.designMd.sha256)assert.equal(sha,h.designMd.sha256);assert(!h.designMd.text,'No loading placeholder in portable contract');assert(h.experience?.scene);assert.equal(h.experience.componentGroups.length,6);assert(h.experience.disclaimer.includes('공식 제품 화면이 아닌'));report.handoffs.push({id:h.id,scene:h.experience.scene,path:h.designMd.path,sha256:sha,revision:h.source.revision,promptLength:h.agent.applyPrompt.length})}
  if(!item.demo.startsWith('vendor-design-md:'))continue
  const entry=p.vendorEntryBySlug[item.demo.slice('vendor-design-md:'.length)],spec=JSON.parse(await readFile('public/brand-design-specs/'+entry.slug+'.json','utf8')),before=JSON.stringify(spec),c=p.buildBrandCatalog(entry,spec)
  const roles={},unknown=[]
@@ -37,6 +37,6 @@ const guides=await readdir('src/content/guides'),slugs=new Set(guides.filter(f=>
 async function scan(dir){for(const item of await readdir(dir,{withFileTypes:true})){const path=dir+'/'+item.name;if(item.isDirectory()){if(item.name!=='data')await scan(path)}else if(/\.(tsx?|md)$/.test(path)){for(const match of (await readFile(path,'utf8')).matchAll(/\/guides\/([a-z][\w-]*)/g)){assert(slugs.has(match[1]),'Stale guide: '+path+' '+match[1]);report.guideLinks.push({path,slug:match[1]})}}}}
 await scan('src')
 const css=await readFile('src/components/demos/vendorDesignPreview.css','utf8'),sample=await readFile('src/components/demos/BrandComponentSample.tsx','utf8'),applied=await readFile('src/components/demos/BrandAppliedPreview.tsx','utf8')
-assert(!css.includes('var(--bc-border)'));assert(!css.includes('border-bottom:1px solid currentColor'));assert(!/Sample surface|Design in the details\.|Sample field/.test(sample));assert(applied.includes('<BrandComponentSample')&&applied.includes('data-evidence="drh-scaffolding"'));assert(!/<img|https:\/\//.test(applied))
-await mkdir('artifacts/brand-v23',{recursive:true});await writeFile('artifacts/brand-v23/fidelity-audit.json',JSON.stringify(report,null,2)+'\n')
-console.log('PASS V2.3:',report.brands.length,'brands,',report.handoffs.length,'raw handoffs,',p.references.length,'artifact parity checks,',report.negativeCases,'unsafe/unresolved inputs rejected')
+assert(!css.includes('var(--bc-border)'));assert(!css.includes('border-bottom:1px solid currentColor'));assert(!/Sample surface|Design in the details\.|Sample field/.test(sample));assert(applied.includes('resolveComponentStyle')&&applied.includes('experienceScene')&&applied.includes('data-evidence="drh-scaffolding"'));assert(!/<img|https:\/\//.test(applied))
+await mkdir('artifacts/brand-v24',{recursive:true});await writeFile('artifacts/brand-v24/fidelity-audit.json',JSON.stringify(report,null,2)+'\n')
+console.log('PASS brand fidelity:',report.brands.length,'brands,',report.handoffs.length,'raw handoffs,',p.references.length,'artifact parity checks,',report.negativeCases,'unsafe/unresolved inputs rejected')

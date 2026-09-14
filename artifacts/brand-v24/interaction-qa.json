@@ -1,0 +1,30 @@
+[
+  {
+    "id": "glassmorphism",
+    "bottomHandoff": true,
+    "artifactDownload": true,
+    "clipboard": true
+  },
+  {
+    "id": "card-tilt",
+    "bottomHandoff": true,
+    "artifactDownload": true,
+    "clipboard": true
+  },
+  {
+    "id": "minimal-saas",
+    "bottomHandoff": true,
+    "artifactDownload": true,
+    "clipboard": true
+  },
+  {
+    "id": "admd-vercel",
+    "jump": true,
+    "keyboardTabs": true,
+    "nestedDialogEscape": true
+  },
+  {
+    "id": "admd-linear.app",
+    "sourceLightTheme": true
+  }
+]

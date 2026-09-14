@@ -2328,7 +2328,7 @@
             "surface": "#ffffff",
             "text": "#000000",
             "muted": "#000000",
-            "border": "currentColor"
+            "border": "transparent"
           },
           "evidence": [
             "normalized source palette"
@@ -3858,7 +3858,7 @@
             "surface": "#000000",
             "text": "#FFFFFF",
             "muted": "#FFFFFF",
-            "border": "currentColor"
+            "border": "transparent"
           },
           "evidence": [
             "normalized source palette"
@@ -4118,7 +4118,7 @@
             "surface": "#f7f4ed",
             "text": "#1c1c1c",
             "muted": "#1c1c1c",
-            "border": "currentColor"
+            "border": "transparent"
           },
           "evidence": [
             "normalized source palette"
@@ -4224,7 +4224,7 @@
             "surface": "#F3F0EE",
             "text": "#141413",
             "muted": "#141413",
-            "border": "currentColor"
+            "border": "transparent"
           },
           "evidence": [
             "normalized source palette"
@@ -7266,7 +7266,7 @@
             "surface": "#0b0b0b",
             "text": "#ffffff",
             "muted": "#ffffff",
-            "border": "currentColor"
+            "border": "transparent"
           },
           "evidence": [
             "normalized source palette"
@@ -7401,7 +7401,7 @@
             "surface": "#ffffff",
             "text": "#1f1633",
             "muted": "#1f1633",
-            "border": "currentColor"
+            "border": "transparent"
           },
           "evidence": [
             "normalized source palette"
@@ -7800,7 +7800,7 @@
             "surface": "#ffffff",
             "text": "#000000",
             "muted": "#000000",
-            "border": "currentColor"
+            "border": "transparent"
           },
           "evidence": [
             "normalized source palette"
@@ -8048,7 +8048,7 @@
             "surface": "#f2f0eb",
             "text": "rgba(0, 0, 0, 0.87)",
             "muted": "rgba(0, 0, 0, 0.87)",
-            "border": "currentColor"
+            "border": "transparent"
           },
           "evidence": [
             "normalized source palette"
@@ -8994,7 +8994,7 @@
             "surface": "#efefef",
             "text": "#000000",
             "muted": "#000000",
-            "border": "currentColor"
+            "border": "transparent"
           },
           "evidence": [
             "normalized source palette"
@@ -9365,7 +9365,7 @@
             "surface": "#f2f2f2",
             "text": "#25282b",
             "muted": "#25282b",
-            "border": "currentColor"
+            "border": "transparent"
           },
           "evidence": [
             "normalized source palette"
@@ -10111,7 +10111,7 @@
             "surface": "#e8ebe6",
             "text": "#0e0f0c",
             "muted": "#0e0f0c",
-            "border": "currentColor"
+            "border": "transparent"
           },
           "evidence": [
             "normalized source palette"
@@ -10408,7 +10408,7 @@
             "surface": "#f8f4f0",
             "text": "#201515",
             "muted": "#201515",
-            "border": "currentColor"
+            "border": "transparent"
           },
           "evidence": [
             "normalized source palette"
@@ -10567,8 +10567,8 @@
             "canvas": "#ffffff",
             "surface": "#ffffff",
             "text": "#111111",
-            "muted": "#111111",
-            "border": "currentColor"
+            "muted": "#6c6d6f",
+            "border": "#a6a7a9"
           },
           "evidence": [
             "normalized source palette"
@@ -10655,7 +10655,7 @@
             "surface": "#ffffff",
             "text": "#111111",
             "muted": "#9fa4b0",
-            "border": "currentColor"
+            "border": "transparent"
           },
           "evidence": [
             "normalized source palette"
@@ -10801,7 +10801,7 @@
             "surface": "#ffffff",
             "text": "#000000",
             "muted": "#999999",
-            "border": "currentColor"
+            "border": "transparent"
           },
           "evidence": [
             "normalized source palette"
@@ -10994,7 +10994,7 @@
             "surface": "#f7f7f7",
             "text": "#444444",
             "muted": "#444444",
-            "border": "currentColor"
+            "border": "#e6e6e6"
           },
           "evidence": [
             "normalized source palette"
@@ -11101,7 +11101,7 @@
             "surface": "#f3f3f3",
             "text": "#000000",
             "muted": "#666666",
-            "border": "currentColor"
+            "border": "transparent"
           },
           "evidence": [
             "normalized source palette"
@@ -11403,7 +11403,7 @@
             "surface": "#ffffff",
             "text": "#111111",
             "muted": "#666666",
-            "border": "currentColor"
+            "border": "transparent"
           },
           "evidence": [
             "normalized source palette"
@@ -11516,7 +11516,7 @@
             "canvas": "#ffffff",
             "surface": "#ffffff",
             "text": "#111111",
-            "muted": "#111111",
+            "muted": "#717680",
             "border": "#e5e5e5"
           },
           "evidence": [
@@ -11599,7 +11599,7 @@
             "surface": "#ffffff",
             "text": "#111111",
             "muted": "#111111",
-            "border": "currentColor"
+            "border": "transparent"
           },
           "evidence": [
             "normalized source palette"

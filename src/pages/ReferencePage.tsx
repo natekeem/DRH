@@ -5,6 +5,7 @@ import { shaderPresets } from '../data/shaderPresets'
 import { DemoRenderer } from '../components/demos/DemoRenderer'
 import { DesignSystemPreview } from '../components/demos/DesignSystemPreview'
 import { ArtifactWorkspace } from '../components/ArtifactWorkspace'
+import { ReferenceProjectHandoff } from '../components/ReferenceProjectHandoff'
 import { ReferenceCard } from '../components/ReferenceCard'
 import { categoryKo, descriptionKo } from '../data/ko'
 import { references, vendorSlugFromId } from '../data/references'
@@ -24,12 +25,15 @@ export function ReferencePage(){
 
   // Lazy-fetch the raw DESIGN.md for vendor entries when the page loads
   useEffect(()=>{
-    if(!vendorSlug)return
+    let active=true
+    setVendorRawMd(null)
+    if(!vendorSlug){setVendorMdLoading(false);return}
     setVendorMdLoading(true)
     fetchVendorDesignMd(vendorSlug)
-      .then(raw=>setVendorRawMd(raw))
-      .catch(()=>setVendorRawMd(null))
-      .finally(()=>setVendorMdLoading(false))
+      .then(raw=>{if(active)setVendorRawMd(raw)})
+      .catch(()=>{if(active)setVendorRawMd(null)})
+      .finally(()=>{if(active)setVendorMdLoading(false)})
+    return()=>{active=false}
   },[vendorSlug])
 
   const baseArtifacts=useMemo(()=>item?artifactViews(item,preset):[],[item,preset])
@@ -43,12 +47,13 @@ export function ReferencePage(){
   const related=references.filter(r=>r.id!==item.id&&(r.category===item.category||r.tags.some(t=>item.tags.includes(t)))).slice(0,4)
   const maturity=demoMaturity(item)
   const isVendor=!!vendorSlug
-  return <main className="reference-workspace-page">
-    <header className="workspace-title"><div>{(location.state as {fromExplore?:boolean}|null)?.fromExplore?<button className="detail-back" onClick={()=>navigate(-1)}><ArrowLeft size={16}/> 탐색</button>:<Link to="/explore"><ArrowLeft size={16}/> 탐색</Link>}<span className="workspace-divider"/><h1>{item.name}</h1></div><div className="detail-badges"><span className={`demo-status-pill maturity-${maturity.kind}`}>● {maturity.label}</span><span className={`license-pill ${item.license.status}`}>{item.license.status==='copy-ok'?'● Copy OK':item.license.status==='reference'?'● Reference only':'● Restricted'}</span>{isVendor&&<span className="license-pill copy-ok">● MIT · awesome-design-md</span>}</div></header>
+  return <main className={"reference-workspace-page"+(isVendor?" brand-experience-page":"")}>
+    <header className="workspace-title"><div>{(location.state as {fromExplore?:boolean}|null)?.fromExplore?<button className="detail-back" onClick={()=>navigate(-1)}><ArrowLeft size={16}/> 탐색</button>:<Link to="/explore"><ArrowLeft size={16}/> 탐색</Link>}<span className="workspace-divider"/><h1>{item.name}</h1></div><div className="detail-badges"><span className={`demo-status-pill maturity-${maturity.kind}`}>● {maturity.label}</span><span className={`license-pill ${item.license.status}`}>{item.license.status==='copy-ok'?'● Copy OK':item.license.status==='reference'?'● Reference only':'● Restricted'}</span>{isVendor&&<span className="license-pill copy-ok">● Source document · MIT</span>}</div></header>
     <div className="reference-workspace">
       <section className="workspace-preview" aria-label="Live preview"><div className="preview-meta"><span>{item.category} · {categoryKo[item.category]} / {item.subcategory}</span><span>01 / SEE</span></div><div className="workspace-demo-shell"><div className="demo-toolbar"><span><i/>{isVendor?'BRAND DESIGN PREVIEW':item.designSystem?'DESIGN SYSTEM PREVIEW':maturity.kind==='external'?'SOURCE REFERENCE':'LIVE PREVIEW'}</span>{!isVendor&&maturity.kind!=='external'&&<button onClick={()=>setReplay(v=>v+1)}><RotateCcw size={13}/> Replay</button>}</div><div className={`detail-demo workspace-demo ${item.category==='Pages'||item.category==='Background'?'wide-preview':''}`} key={item.id+replay}>{item.designSystem?<DesignSystemPreview tokens={item.designSystem}/>:maturity.kind==='external'?<div className="source-only-preview"><h2>원본에서 확인하는 Reference</h2><p>이 항목은 코드와 이미지를 재배포하지 않습니다.</p><a href={item.source.url} target="_blank" rel="noreferrer">Source 열기 ↗</a></div>:<DemoRenderer kind={item.demo} detail preset={preset}/>}</div></div></section>
-      <ArtifactWorkspace key={item.id+(vendorRawMd?'loaded':'pending')} artifacts={artifacts}/>
+      {!isVendor&&<ArtifactWorkspace key={item.id+(vendorRawMd?'loaded':'pending')} artifacts={artifacts}/>}
     </div>
+    {isVendor&&<details className="experience-artifacts"><summary>Resources · 원본 문서 / Tokens / Agent Package</summary><ArtifactWorkspace key={item.id+(vendorRawMd?"loaded":"pending")} artifacts={artifacts}/></details>}
     <section className="workspace-context">
       <div className="context-about">
         <span className="eyebrow">ABOUT THIS REFERENCE</span>
@@ -77,6 +82,7 @@ export function ReferencePage(){
       </div>
     </section>}
     <section className="related workspace-related"><div className="section-heading"><span className="eyebrow">KEEP EXPLORING</span><h2>비슷한 Reference</h2></div><div className="reference-grid compact-grid">{related.map(r=><ReferenceCard key={r.id} item={r}/>)}</div><Link className="text-link" to={`/explore?category=${encodeURIComponent(item.category)}`}>{item.category} 전체 보기 <ArrowUpRight size={16}/></Link></section>
+    <ReferenceProjectHandoff item={item}/>
   </main>
 }
 

@@ -1,3 +1,4 @@
+import { experienceScene, componentGroups } from './brandExperience'
 import type { ReferenceItem, ReferenceArtifacts } from '../types'
 import type { OfficialBrandResource } from '../brandDesignSpec'
 import { resolveArtifacts } from './artifacts'
@@ -13,6 +14,7 @@ export type ReferenceHandoff = {
  designMd?: {path?:string;sha256?:string;text?:string}
  agent: {compact?:string;extended?:string;applyPrompt:string}
  source: {name:string;repo?:string;revision?:string;license?:string;notices?:string}
+ experience?: {version:1;scene:ReturnType<typeof experienceScene>;componentGroups:typeof componentGroups;disclaimer:string}
  officialResources: OfficialBrandResource[]
 }
 
@@ -30,5 +32,5 @@ export function buildReferenceHandoff(item:ReferenceItem,artifacts:ReferenceArti
   '완료 후 390px / 1440px에서 화면, 키보드 조작과 reduced motion을 확인하세요.',
   entry?`원본 snapshot: ${entry.sourceName||'VoltAgent awesome-design-md'} · ${entry.upstreamCommit.slice(0,12)}`:''
  ].filter(Boolean).join('\n')
- return {schemaVersion:1,id:item.id,name:item.name,kind:entry||item.designSystem?'brand':'reference',aliases:entry?.aliases||[],designMd,agent:{compact:artifacts.agent?.compact,extended:artifacts.agent?.extended,applyPrompt},source:{name:entry?.sourceName||item.source.name,repo:entry?.upstreamRepo||p?.repository||item.source.repository,revision:entry?.upstreamCommit||p?.sourceRevision,license:p?.license||item.license.name,notices:p?.notices},officialResources:slug?(resources as Record<string,OfficialBrandResource[]>)[slug]||[]:[]}
+ return {schemaVersion:1,experience:entry?{version:1,scene:experienceScene({entry,spec:entry.spec}),componentGroups,disclaimer:"DRH Applied Preview — 공식 제품 화면이 아닌 디자인 시스템 적용 예시입니다."}:undefined,id:item.id,name:item.name,kind:entry||item.designSystem?'brand':'reference',aliases:entry?.aliases||[],designMd,agent:{compact:artifacts.agent?.compact,extended:artifacts.agent?.extended,applyPrompt},source:{name:entry?.sourceName||item.source.name,repo:entry?.upstreamRepo||p?.repository||item.source.repository,revision:entry?.upstreamCommit||p?.sourceRevision,license:p?.license||item.license.name,notices:p?.notices},officialResources:slug?(resources as Record<string,OfficialBrandResource[]>)[slug]||[]:[]}
 }
