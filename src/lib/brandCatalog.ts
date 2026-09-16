@@ -8,7 +8,11 @@ import { motionEvidence, responsiveEvidence, resolveBrandFont, sourceLines } fro
 export type ComponentKind = 'buttons'|'inputs'|'cards'|'badges'|'tabs'|'dialogs'|'tables'|'navigation'|'hero'|'section'|'cta-band'|'pricing'|'media'|'code'|'status'|'icon'|'footer'|'legal'|'content-surface'|'other'
 export type CatalogComponent = { key:string; kind:ComponentKind; values:Record<string,unknown> }
 export type BrandCatalogSection = { type:'overview'|'official-resources'|'colors'|'typography'|'components'|'geometry'|'elevation'|'motion'|'responsive'|'layout'|'source'; id:string; label:string; count?:number; kind?:ComponentKind }
-export type BrandTheme = {id:'light'|'dark';label:string;colors:{canvas:string;surface:string;text:string;muted:string;border:string};evidence:string[]}
+export type BrandTheme = {id:'light'|'dark';label:string;colors:{canvas:string;surface:string;text:string;muted:string;border:string;positive?:string;negative?:string;accent?:string};evidence:string[]}
+/** Canonical section model shared by Detail, Expanded, and Applied Canvas views. */
+export type CanonicalBrandSection = {id:string;label:string}
+export const canonicalSections:CanonicalBrandSection[]=[{id:'overview',label:'Overview'},{id:'design-dna',label:'Design DNA'},{id:'components',label:'Component Library'},{id:'applied-canvas',label:'Applied Canvas'},{id:'resources',label:'Resources'}]
+export type ComponentSizeContract = 'compact'|'medium'|'wide'|'full'
 export type BrandCatalog = {entry:VendorEntry;spec:BrandDesignSpec;dna:{label:string;evidence:string}[];colors:[string,string][];roles:[string,BrandTypeRole][];components:CatalogComponent[];sections:BrandCatalogSection[];themes:BrandTheme[];officialResources:OfficialBrandResource[]}
 export const componentLabels:Record<ComponentKind,string>={buttons:'Buttons · 버튼',cards:'Cards · 카드',inputs:'Forms · 입력',badges:'Badges · 배지',tabs:'Tabs · 탭',dialogs:'Dialogs · 대화상자',tables:'Tables · 표',navigation:'Navigation · 탐색',hero:'Hero · 주요 메시지',section:'Sections · 콘텐츠 영역','cta-band':'CTA · 다음 행동',pricing:'Pricing · 요금',media:'Media · 미디어',code:'Code · 코드',status:'Status · 상태',icon:'Assets · 형태',footer:'Footer · 하단',legal:'Legal · 안내','content-surface':'Content · 목록과 표면',other:'분류되지 않은 원본 정의'}
 export const scalar=(v:unknown,fallback='')=>typeof v==='string'||typeof v==='number'?String(v):fallback
@@ -51,13 +55,16 @@ export function buildBrandCatalog(entry:VendorEntry,spec:BrandDesignSpec=entry.s
  const dna:{label:string;evidence:string}[]=[]
  for(const [pattern,label]of [[/photography|photograph|photo-first/i,'Photography-led'],[/dense|technical|compact/i,'Dense'],[/generous|spacious|whitespace|white space/i,'Spacious'],[/minimal|subtraction|recedes|restraint/i,'Minimal'],[/bevel|Y2K|retro/i,'Retro'],[/editorial/i,'Editorial'],[/pastel/i,'Pastel surfaces'],[/dark|near-black/i,'Dark surfaces'],[/marketplace/i,'Marketplace'],[/product|workspace/i,'Product-first']] as [RegExp,string][]){const found=spec.traits.match(pattern);if(found)dna.push({label,evidence:found[0]})}
  if(dna.length<2){if(!dna.some(d=>d.label.toLowerCase()===spec.layout))dna.push({label:spec.layout.charAt(0).toUpperCase()+spec.layout.slice(1),evidence:'Source-trait composition'});const radius=Object.values(spec.radius).find(v=>numeric(v)>0);if(radius)dna.push({label:'Rounded geometry',evidence:'radius: '+radius})}
- const c=spec.colors,base=entry.tokens.colors,id=isDark(base.canvas)?'dark':'light'
- const themes:BrandTheme[]=[{id,label:id==='dark'?'Dark':'Light',colors:{canvas:base.canvas,surface:base.surface,text:base.text,muted:c['ink-muted']||c.muted||c['corporate-muted']||base.text,border:base.border==='currentColor'?(c.divider||c['corporate-border']||'transparent'):base.border},evidence:['normalized source palette']}]
- // Only explicit complementary canvas AND readable ink roles establish another theme.
- const alternate=id==='dark'?'light':'dark'
- const canvas=c['canvas-'+alternate]||c['inverse-canvas']
- const ink=c[alternate==='light'?'body-on-light':'body-on-dark']||c['inverse-ink']||c['on-'+alternate]
- if(canvas&&ink&&canvas!==base.canvas&&isDark(canvas)===(alternate==='dark')&&isDark(ink)!==isDark(canvas))themes.push({id:alternate,label:alternate==='dark'?'Dark':'Light',colors:{canvas,surface:c[alternate==='light'?'surface-soft-light':'surface-card-dark']||c['inverse-surface-1']||canvas,text:ink,muted:ink,border:c['hairline-on-'+alternate]||c['hairline-'+alternate]||c['inverse-hairline']||ink},evidence:Object.entries(c).filter(([,v])=>v===canvas||v===ink).map(([k])=>'colors.'+k)})
+  const c=spec.colors,base=entry.tokens.colors,id=isDark(base.canvas)?'dark':'light'
+  const positive=c['trading-up']||c['semantic-success']||c['success']||c['positive']
+  const negative=c['trading-down']||c['semantic-error']||c['error']||c['negative']||c['danger']
+  const accent=c['accent-turquoise']||c['accent']||c['secondary']||c['info']
+  const themes:BrandTheme[]=[{id,label:id==='dark'?'Dark':'Light',colors:{canvas:base.canvas,surface:base.surface,text:base.text,muted:c['ink-muted']||c.muted||c['corporate-muted']||base.text,border:base.border==='currentColor'?(c.divider||c['corporate-border']||'transparent'):base.border,positive,negative,accent},evidence:['normalized source palette']}]
+  // Only explicit complementary canvas AND readable ink roles establish another theme.
+  const alternate=id==='dark'?'light':'dark'
+  const canvas=c['canvas-'+alternate]||c['inverse-canvas']
+  const ink=c[alternate==='light'?'body-on-light':'body-on-dark']||c['inverse-ink']||c['on-'+alternate]
+  if(canvas&&ink&&canvas!==base.canvas&&isDark(canvas)===(alternate==='dark')&&isDark(ink)!==isDark(canvas))themes.push({id:alternate,label:alternate==='dark'?'Dark':'Light',colors:{canvas,surface:c[alternate==='light'?'surface-soft-light':'surface-card-dark']||c['inverse-surface-1']||canvas,text:ink,muted:c[alternate==='light'?'muted':'muted']||ink,border:c['hairline-on-'+alternate]||c['hairline-'+alternate]||c['inverse-hairline']||(alternate==='light'?(c['border-strong']||c['hairline']||'#e0e0e0'):ink),positive,negative,accent},evidence:Object.entries(c).filter(([,v])=>v===canvas||v===ink).map(([k])=>'colors.'+k)})
  const officialResources=(resourceRegistry as Record<string,OfficialBrandResource[]>)[entry.slug]||[]
  const sections:BrandCatalogSection[]=[]
  if(officialResources.length)sections.push({type:'official-resources',id:'official',label:'Official Resources · 공식 가이드',count:officialResources.length})

@@ -1,22 +1,110 @@
-import type { BrandCatalog, BrandTheme } from '../../lib/brandCatalog'
-import { typeStyle, length } from '../../lib/brandCatalog'
-import { brandIdentifier, resolveBrandFont } from '../../lib/brandPresentation'
-import { componentGroups, componentSize } from '../../lib/brandExperience'
+import { type CSSProperties } from 'react'
+import { canonicalSections, componentStyle, isDark, type BrandCatalog, type BrandTheme } from '../../lib/brandCatalog'
+import { componentGroups, componentSize, experienceScene, experienceVariant } from '../../lib/brandExperience'
+import { brandIdentifier, resolveBrandFont, curatedColors, curatedRoles } from '../../lib/brandPresentation'
 import { BrandComponentSample } from './BrandComponentSample'
 import { BrandAppliedPreview } from './BrandAppliedPreview'
 
-export const experienceSections=[{id:'overview',label:'Overview'},{id:'dna',label:'Design DNA'},{id:'library',label:'Component Library'},{id:'applied',label:'Applied Canvas'},{id:'resources',label:'Resources'}]
-export function BrandExperienceCatalog({catalog,theme}:{catalog:BrandCatalog;theme:BrandTheme}) {
+function SectionNav({catalog}:{catalog:BrandCatalog}) {
+ const hasResources=catalog.officialResources.length>0
+ return <nav className="ex-section-nav" aria-label="Section navigation">{canonicalSections.filter(s=>s.id!=='resources'||hasResources).map(s=><a key={s.id} href={'#ex-'+s.id}>{s.label}</a>)}</nav>
+}
+
+function OverviewSection({catalog,theme}:{catalog:BrandCatalog;theme:BrandTheme}) {
  const asset=brandIdentifier(catalog.entry.slug,catalog.spec)
- const palette=[['Primary',catalog.spec.colors.primary],['Surface',theme.colors.surface],['Canvas',theme.colors.canvas],['Text',theme.colors.text],['Muted',theme.colors.muted],['Border',theme.colors.border==='transparent'?undefined:theme.colors.border],['Accent',catalog.colors.find(([key])=>/^accent/.test(key))?.[1]]]
- const typography=[['Display',/display|hero/],['Heading',/heading|headline|title|display-md|lead/],['Body',/body|paragraph/],['Caption',/caption|small|label/]] as const
- return <div className="bc-content bc-experience" data-catalog-mode="curated">
-  <section className="bc-section ex-overview" data-section="overview"><small>01 / Overview</small><h3>{catalog.entry.name}</h3><p>색과 글자의 인상부터 화면에 적용된 조합까지 살펴보세요.</p><div className="bc-dna">{catalog.dna.map(d=><span key={d.label} title={d.evidence}>{d.label}</span>)}</div><p className="bc-note">DESIGN.md 기반 DRH 예시 · 공식 제품 화면이 아닙니다.</p></section>
-  <section className="bc-section" data-section="dna"><h4>Design DNA</h4><h5>Semantic palette</h5><div className="ex-palette">{palette.map(([label,value])=><div key={label}><i style={{background:value||'transparent'}}/><b>{label}</b><code>{value||'원본 미지정'}</code></div>)}</div><details className="bc-evidence"><summary>Evidence · Color</summary><p>source · DESIGN.md colors / 명시된 테마 우선. Surface·Canvas·Text·Muted·Border는 기존 theme resolver의 표시 역할입니다.</p>{catalog.colors.map(([key,value])=><p key={key}>{key} · {value}</p>)}<p>confidence · 원본 선언값과 표시 역할 매핑. Accent 미지정 시 임의로 보완하지 않습니다.</p></details>
-   <div className="ex-type-hierarchy">{typography.map(([label,pattern],i)=>{const found=(label==='Body'?catalog.roles.find(([key])=>key==='body'):undefined)||catalog.roles.find(([key])=>pattern.test(key));const role=found?.[1];const font=resolveBrandFont(role?{...role,...(i>0?{script:'ko' as const}:{})}:{});return <div key={label}><small>{label}</small>{role?<><p style={{...typeStyle(role),fontFamily:font.stack,fontSize:`clamp(12px, ${length(role.fontSize)||[48,32,17,13][i]+'px'}, ${[48,32,20,14][i]}px)`}}>{['Design speaks.','더 명확한 일상의 디자인','색과 글자, 여백이 모여 브랜드의 목소리가 됩니다.','작은 디테일까지 이어지는 경험 · Aa 0123'][i]}</p><small className="bc-note">{font.family}{font.scriptFallback?' · 한글 대체: '+font.scriptFallback:''} · {font.kind==='proprietary'?'원본 전용 글꼴 대체 표시':font.kind}</small><details className="bc-evidence"><summary>Evidence · {label}</summary><p>source · typography.{found?.[0]} / confidence · 원본 선언값</p><p>표시 크기는 비교용 계층입니다. original value:</p>{Object.entries(role).map(([key,value])=><p key={key}>{key} · {String(value)}</p>)}</details></>:<p className="bc-note">원본에 이 역할이 지정되지 않았습니다.</p>}</div>})}</div>
-  </section>
-  <section className="bc-section" data-section="library"><h4>Component Library</h4><p className="bc-note">원본 구성요소의 대표 예시 · 전체 변형과 기술 근거는 전체 카탈로그에서 확인하세요.</p>{componentGroups.map(group=>{const selected=group.kinds.flatMap(kind=>catalog.components.filter(c=>c.kind===kind&&!/hover|pressed|focus|disabled|selected|active/.test(c.key)).slice(0,kind==='buttons'?3:2));return selected.length?<section className="ex-group" key={group.label}><h5>{group.label}</h5><div className="ex-component-grid">{selected.map(c=><div className={'ex-size-'+componentSize(c.kind)} key={c.key}><BrandComponentSample component={c} catalog={catalog} theme={theme}/></div>)}</div></section>:null})}</section>
-  <section className="bc-section" data-section="applied"><h4>Applied Canvas</h4><BrandAppliedPreview catalog={catalog} theme={theme}/></section>
-  <section className="bc-section" data-section="resources"><h4>Resources</h4>{asset.attribution&&<p className="bc-note">{asset.attribution} <a href={asset.evidenceUrl} target="_blank" rel="noreferrer">로고 사용 조건 ↗</a></p>}<div className="bc-resources">{catalog.officialResources.map(r=><a key={r.url} href={r.url} target="_blank" rel="noreferrer"><small>{r.type}</small><b>{r.label} ↗</b><span>{r.description}</span></a>)}</div>{!catalog.officialResources.length&&<p className="bc-note">검증된 공식 자료 링크가 등록되지 않았습니다.</p>}<p className="bc-note">{catalog.entry.sourceName||'VoltAgent / awesome-design-md'} · {catalog.entry.upstreamCommit.slice(0,12)}<br/>문서 라이선스와 브랜드 상표·로고·폰트 권리는 별도입니다. {catalog.entry.referenceRights}</p><a href={import.meta.env.BASE_URL+'vendor/'+(catalog.entry.vendorSource||'awesome-design-md')+'/'+catalog.entry.slug+'/DESIGN.md'}>원본 DESIGN.md ↗</a></section>
+ const heading=catalog.roles.find(([k])=>/heading|headline|title|display/.test(k))?.[1]||catalog.roles[0]?.[1]||{}
+ const headingFont=resolveBrandFont(heading)
+ const btn=catalog.components.find(c=>c.kind==='buttons'&&!/disabled|hover|focus/.test(c.key))
+ const btnStyle=btn?componentStyle(btn.values,catalog,theme):undefined
+ return <section id="ex-overview" className="bc-section ex-overview" data-section="overview">
+  <h4>Overview</h4>
+  <div className="bc-dna">{catalog.dna.map(d=><span key={d.label} title={d.evidence}>{d.label}</span>)}</div>
+  <h3 style={{fontFamily:headingFont.stack,fontWeight:700}}>{catalog.entry.name}</h3>
+  <p>{catalog.entry.description}</p>
+  {asset.attribution&&<p className="bc-note bc-attribution">{asset.attribution}</p>}
+  <div className="bc-overview-samples">
+   <div className="bc-type-scroll"><span style={{fontFamily:headingFont.stack,fontSize:'clamp(24px,3vw,40px)',fontWeight:heading.fontWeight||700}}>Aa — Design</span></div>
+   {btnStyle&&<span className="bc-overview-button" style={btnStyle}>Continue →</span>}
+  </div>
+ </section>
+}
+
+function DesignDnaSection({catalog,theme}:{catalog:BrandCatalog;theme:BrandTheme}) {
+ const colors=curatedColors(catalog.colors)
+ const roles=curatedRoles(catalog.roles)
+ const allThemes=catalog.themes
+ return <section id="ex-design-dna" className="bc-section ex-design-dna" data-section="design-dna">
+  <h4>Design DNA</h4>
+
+  {/* Semantic Palette */}
+  <h5>Palette</h5>
+  {allThemes.length>1&&<p className="bc-note">{allThemes.map(t=>t.label).join(' / ')} 테마가 감지되었습니다.</p>}
+  <div className="ex-palette">
+   {colors.map(([key,value])=><div key={key}><i style={{background:value}}/><span>{key}</span><code>{value}</code></div>)}
+  </div>
+  {colors.length<catalog.colors.length&&<p className="bc-note bc-catalog-count">대표 {colors.length}개 / 전체 {catalog.colors.length}개 · 크게 보기에서 확인</p>}
+
+  {/* Typography Hierarchy */}
+  <h5 className="ex-type-heading">Typography</h5>
+  <div className="ex-type-hierarchy">
+   {roles.map(([key,role])=>{
+    const font=resolveBrandFont(role)
+    const size=typeof role.fontSize==='number'?role.fontSize+'px':role.fontSize||'16px'
+    return <div key={key} data-font-kind={font.kind}>
+     <small>{key} · {size} · {typeof role.fontWeight==='number'||typeof role.fontWeight==='string'?role.fontWeight:'400'} · {font.declared||'미지정'}</small>
+     <p style={{fontFamily:font.stack,fontSize:`clamp(12px, ${size}, 48px)`,fontWeight:role.fontWeight as number,lineHeight:role.lineHeight||1.4,letterSpacing:role.letterSpacing||'normal'} as CSSProperties}>
+      {/body|paragraph/.test(key)?'Good design makes the everyday feel simple.':/mono/.test(key)?'const design = 2026;':'Aa — Design'}
+     </p>
+     <small className="bc-note">표시: {font.family} · {font.kind==='open-font'?'로컬 공개 폰트':font.kind==='system-font'?'OS 글꼴':'대체 글꼴'}</small>
+    </div>
+   })}
+  </div>
+  {roles.length<catalog.roles.length&&<p className="bc-note bc-catalog-count">대표 {roles.length}개 / 전체 {catalog.roles.length}개</p>}
+ </section>
+}
+
+function ComponentLibrarySection({catalog,theme}:{catalog:BrandCatalog;theme:BrandTheme}) {
+ const scene=experienceScene(catalog)
+ const variant=experienceVariant(catalog)
+ const groups=componentGroups.map(g=>({...g,components:catalog.components.filter(c=>g.kinds.includes(c.kind)&&!/hover|pressed|focus|disabled|selected|active/.test(c.key))})).filter(g=>g.components.length)
+ return <section id="ex-components" className="bc-section ex-components" data-section="components">
+  <h4>Component Library</h4>
+  {groups.map(group=><div key={group.label} className="ex-group">
+   <h5>{group.label}</h5>
+   <div className="ex-component-grid">
+    {group.components.map(c=><div key={c.key} className={'ex-size-'+componentSize(c.kind)}>
+     <BrandComponentSample component={c} catalog={catalog} theme={theme} scene={scene} variant={variant}/>
+    </div>)}
+   </div>
+  </div>)}
+  {!groups.length&&<p className="bc-note">원본에서 감지된 컴포넌트가 없습니다.</p>}
+ </section>
+}
+
+function AppliedCanvasSection({catalog,theme}:{catalog:BrandCatalog;theme:BrandTheme}) {
+ return <section id="ex-applied-canvas" className="bc-section" data-section="applied-canvas">
+  <h4>Applied Canvas</h4>
+  <BrandAppliedPreview catalog={catalog} theme={theme}/>
+ </section>
+}
+
+function ResourcesSection({catalog}:{catalog:BrandCatalog}) {
+ const resourceLabels:Record<string,string>={'brand-guidelines':'브랜드 가이드','design-system':'디자인 시스템','developer-design-guide':'개발자 디자인 가이드',typography:'타이포그래피',components:'컴포넌트',assets:'브랜드 에셋',other:'공식 자료'}
+ if(!catalog.officialResources.length)return null
+ return <section id="ex-resources" className="bc-section" data-section="resources">
+  <h4>Resources</h4>
+  <div className="bc-resources">{catalog.officialResources.map(r=><a key={r.url} href={r.url} target="_blank" rel="noreferrer" title={r.description}><small>{resourceLabels[r.type]||r.type}</small><b>{r.label} ↗</b><span>{r.description}</span></a>)}</div>
+ </section>
+}
+
+export function BrandExperienceCatalog({catalog,theme}:{catalog:BrandCatalog;theme:BrandTheme}) {
+ return <div className="bc-experience" data-catalog-mode="experience">
+  <p className="bc-note">핵심 보기 · 브랜드를 비교하는 대표 스타일<br/>DESIGN.md 기반 DRH 예시입니다. 공식 제품 화면이 아닙니다.</p>
+  <SectionNav catalog={catalog}/>
+  <OverviewSection catalog={catalog} theme={theme}/>
+  <DesignDnaSection catalog={catalog} theme={theme}/>
+  <ComponentLibrarySection catalog={catalog} theme={theme}/>
+  <AppliedCanvasSection catalog={catalog} theme={theme}/>
+  <ResourcesSection catalog={catalog}/>
  </div>
 }
