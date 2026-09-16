@@ -1,13 +1,5 @@
 /* Neutral DRH layout. Source component styles stay inline on specimens. */
-.brand-experience-page .reference-workspace{display:block;max-width:1440px;margin:auto}
-.brand-experience-page .workspace-demo-shell{height:auto;display:block}
-.brand-experience-page .workspace-demo:has(.bc-detail){height:auto;overflow:visible}
-.brand-experience-page .workspace-demo .bc-detail{height:auto;max-height:none;overflow:visible;scrollbar-gutter:auto}
-.brand-experience-page .bc-header{position:relative}
 .brand-experience-page .bc-experience{max-width:1200px;padding:24px 36px}
-.experience-artifacts{border:1px solid #dedee3;border-radius:12px;padding:20px;margin:0 auto 32px;max-width:1440px}
-.experience-artifacts>summary{cursor:pointer;font-weight:600}
-.experience-artifacts .artifact-workspace{height:auto;margin-top:16px}
 .reference-handoff{--catalog-rule:#e1e3e8;--catalog-ink:#272a32;--catalog-muted:#626875;padding:40px 24px 56px!important;border-top:1px solid #dedee3;color:#272a32;background:#fafafa;margin-top:40px}
 .reference-handoff h2{font-size:26px;margin:0 0 24px}
 .reference-handoff .bc-handoff-grid>div{display:flex;gap:16px;align-items:center}

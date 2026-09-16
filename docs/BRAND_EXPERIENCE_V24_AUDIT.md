@@ -6,7 +6,7 @@ Base: V2.3 `358edf8` (the V2.3 branch, not a separate main integration).
 
 ## Delivered experience
 
-Brand Detail now uses the page as its scroll owner, with Overview → Design DNA → Component Library → Applied Canvas → Resources. Full technical inventory remains in the separate native “전체 카탈로그” dialog. Artifact workspace is disclosed under Resources. Every reference page ends with Continue in your project: download the available DESIGN.md or Agent Package, copy the apply prompt, and open the implementation guide.
+Layout follow-up: Brand Detail restores the left preview / right artifact workspace, with the preview catalog as its single scroll owner, with Overview → Design DNA → Component Library → Applied Canvas → Resources. Full technical inventory remains in the separate native “크게 보기” dialog. Artifact workspace remains beside the preview on desktop and stacks below it on mobile. Every reference page ends with Continue in your project: download the available DESIGN.md or Agent Package, copy the apply prompt, and open the implementation guide.
 
 Component Library groups Actions, Forms, Surfaces, Navigation, Data and Composition, with compact / medium / wide spans. Original metrics and source values are in Evidence disclosures. Typography compares Display, Heading, Body and Caption using source roles and bounded sizes; role mapping and original metrics remain visible in Evidence. Missing roles and Accent values remain explicitly absent. Local Korean fallbacks are labeled.
 
@@ -54,3 +54,7 @@ Evidence: `artifacts/brand-v24/browser-qa.json`, `interaction-qa.json`, `fidelit
 Reproduce browser checks with `PLAYWRIGHT_PATH` pointing to an existing Playwright installation and `DRH_URL` pointing to a running build, then run `node tests/brand-designs/experience-v24-qa.mjs` and `node tests/brand-designs/experience-v24-interactions.mjs`.
 
 No new source imports, proprietary fonts, external runtime assets, maturity promotions, main merge or remote push are part of this commit.
+
+## Layout follow-up
+
+Restored the original two-column workspace while keeping V2.4 content and the bottom handoff. Fixed Apple button-store-hero: the button noun now takes precedence over its hero placement suffix. The original 9999px radius belongs to a button, not a full hero composition. No source values were changed. Regression checks cover Apple, Baemin and Linear at 1920 / 1440 / 390, one preview scroll owner, expanded button dimensions, section navigation and Escape focus restoration. Evidence: artifacts/brand-v24-layout-fix/. All audits, typecheck and build passed.

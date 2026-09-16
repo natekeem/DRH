@@ -24,9 +24,7 @@
     {
       "slug": "airtable",
       "roles": {
-        "buttons": 5,
-        "legal": 1,
-        "pricing": 4,
+        "buttons": 7,
         "navigation": 2,
         "hero": 2,
         "cards": 5,
@@ -34,6 +32,7 @@
         "icon": 1,
         "other": 1,
         "inputs": 2,
+        "pricing": 3,
         "cta-band": 1,
         "footer": 1
       },
@@ -45,8 +44,7 @@
     {
       "slug": "apple",
       "roles": {
-        "buttons": 7,
-        "hero": 1,
+        "buttons": 8,
         "navigation": 4,
         "cards": 7,
         "badges": 2,
@@ -573,8 +571,7 @@
     {
       "slug": "meta",
       "roles": {
-        "buttons": 8,
-        "tabs": 2,
+        "buttons": 10,
         "cards": 8,
         "other": 5,
         "inputs": 6,
@@ -742,8 +739,7 @@
       "roles": {
         "navigation": 3,
         "other": 7,
-        "buttons": 5,
-        "badges": 2,
+        "buttons": 6,
         "inputs": 4,
         "cards": 8,
         "hero": 1,
@@ -751,6 +747,7 @@
         "tables": 3,
         "tabs": 1,
         "footer": 1,
+        "badges": 1,
         "pricing": 2,
         "dialogs": 2,
         "status": 1
@@ -833,8 +830,7 @@
     {
       "slug": "opencode.ai",
       "roles": {
-        "buttons": 4,
-        "tabs": 2,
+        "buttons": 6,
         "badges": 1,
         "inputs": 2,
         "other": 2,
@@ -1251,8 +1247,7 @@
       "slug": "uber",
       "roles": {
         "navigation": 7,
-        "buttons": 7,
-        "tabs": 1,
+        "buttons": 8,
         "inputs": 2,
         "cards": 8,
         "tables": 3,
@@ -1324,11 +1319,11 @@
       "slug": "voltagent",
       "roles": {
         "navigation": 3,
-        "buttons": 3,
-        "badges": 2,
+        "buttons": 4,
         "inputs": 1,
         "cards": 4,
         "other": 2,
+        "badges": 1,
         "hero": 1,
         "section": 2,
         "footer": 1,

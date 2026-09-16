@@ -16,8 +16,8 @@ try{
  }
  await page.goto(base+'/#/reference/admd-vercel');const root=page.locator('.bc-detail[data-brand=vercel][data-full-spec=true]');await root.locator('[data-section=resources]').waitFor()
  await root.locator('.bc-jump-menu summary').click();await root.locator('.bc-jump-options button').filter({hasText:'Applied Canvas'}).click()
- assert(await root.locator('[data-section=applied]').evaluate(e=>Math.abs(e.getBoundingClientRect().top-100)<5))
- await root.getByRole('button',{name:'전체 카탈로그 ↗'}).click();const expanded=page.locator('.bc-expanded');await expanded.waitFor()
+ assert(await root.evaluate(e=>e.scrollTop>0 && Math.abs(e.querySelector('[data-section=applied]').getBoundingClientRect().top-e.getBoundingClientRect().top-e.querySelector('.bc-header').getBoundingClientRect().height-12)<5))
+ await root.getByRole('button',{name:'크게 보기 ↗'}).click();const expanded=page.locator('.bc-expanded');await expanded.waitFor()
  const tab=expanded.locator('[role=tab]').first();await tab.focus();await page.keyboard.press('ArrowRight');assert.equal(await expanded.locator('[role=tab]').nth(1).getAttribute('aria-selected'),'true')
  const open=expanded.getByRole('button',{name:'대화상자 열기'}).first();await open.click();await expanded.locator('.bc-sample-dialog[open]').waitFor();await page.keyboard.press('Escape');assert.equal(await expanded.locator('.bc-sample-dialog[open]').count(),0);assert.equal(await expanded.count(),1);await page.keyboard.press('Escape');assert.equal(await page.locator('.bc-expanded').count(),0)
  report.push({id:'admd-vercel',jump:true,keyboardTabs:true,nestedDialogEscape:true})

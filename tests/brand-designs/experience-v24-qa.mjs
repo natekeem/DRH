@@ -44,7 +44,7 @@ try{
    if(await canvas.locator('.ap-choices button').count()){await canvas.locator('.ap-choices button').nth(1).tap();assert.equal(await canvas.locator('.ap-choices button').nth(1).getAttribute('aria-pressed'),'true')}
    if(slug==='linear.app'){await canvas.getByRole('textbox',{name:'이슈 검색'}).fill('탐색');assert.equal(await canvas.locator('.ap-issue').count(),1);await canvas.locator('.ap-issue').click();assert((await canvas.locator('[role=status]').innerText()).includes('상세'))}
    const evidence=root.locator('.bc-component .bc-evidence').first();assert.equal(await evidence.getAttribute('open'),null);await evidence.locator('summary').click();assert((await evidence.innerText()).includes('original value'))
-   const trigger=root.getByRole('button',{name:'전체 카탈로그 ↗'});await trigger.click();const expanded=page.locator('.bc-expanded');await expanded.waitFor()
+   const trigger=root.getByRole('button',{name:'크게 보기 ↗'});await trigger.click();const expanded=page.locator('.bc-expanded');await expanded.waitFor()
    const spec=JSON.parse(await readFile('public/brand-design-specs/'+slug+'.json','utf8'));assert.equal(await expanded.locator('.bc-component').count(),Object.keys(spec.components).length)
    await page.keyboard.press('Escape');await expanded.waitFor({state:'detached'});assert(await trigger.evaluate(e=>document.activeElement===e))
    const download=page.locator('.reference-handoff a[download]'),pending=page.waitForEvent('download');await download.click();const file=await pending,bytes=await readFile(await file.path()),href=await download.getAttribute('href');const original=await readFile('public/'+href.replace(/^\//,''));assert.equal(createHash('sha256').update(bytes).digest('hex'),createHash('sha256').update(original).digest('hex'))
@@ -58,7 +58,7 @@ try{
   await page.goto(base+'/#/reference/admd-'+slug);await page.locator(`.bc-detail[data-full-spec=true][data-brand="${slug}"] [data-section=resources]`).waitFor();await context.setOffline(true)
   const canvas=page.locator('.ap-canvas');await canvas.locator('.ap-choices button').nth(1).tap();assert.equal(await canvas.locator('.ap-choices button').nth(1).getAttribute('aria-pressed'),'true')
   const motion=await canvas.evaluate(e=>[e,...e.querySelectorAll('*')].filter(x=>getComputedStyle(x).animationName!=='none'||parseFloat(getComputedStyle(x).transitionDuration)>0).length);assert.equal(motion,0)
-  await page.getByRole('button',{name:'전체 카탈로그 ↗'}).click();await page.locator('.bc-expanded').waitFor();await page.keyboard.press('Escape');await context.setOffline(false);report.offline.push({slug,warmCache:true,reducedMotion:true})
+  await page.getByRole('button',{name:'크게 보기 ↗'}).click();await page.locator('.bc-expanded').waitFor();await page.keyboard.press('Escape');await context.setOffline(false);report.offline.push({slug,warmCache:true,reducedMotion:true})
  }
  await page.locator('.reference-handoff').getByRole('link',{name:'Implementation guide'}).click();await page.locator('.guide-markdown').waitFor();assert((await page.locator('.guide-markdown').innerText()).includes('DESIGN.md'))
  assert.deepEqual(report.errors,[]);assert.deepEqual(report.external,[])

@@ -21,6 +21,8 @@ export function componentKind(key:string,values:Record<string,unknown>={}):Compo
  if(values.type==='listItem')return /header|menu|nav/.test(key)?'navigation':'content-surface'
  const semantic=String(values.semantic??values.role??values.use??'').toLowerCase()
  if(explicit[semantic])return explicit[semantic]
+ // A component noun takes precedence over its placement (e.g. button-store-hero).
+ if(/^button(?:-|$)/.test(key))return 'buttons'
  if(/hero/.test(key))return 'hero'
  if(/pricing|tier/.test(key))return 'pricing'
  if(/cta-band/.test(key))return 'cta-band'

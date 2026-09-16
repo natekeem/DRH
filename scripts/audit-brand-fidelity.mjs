@@ -21,6 +21,7 @@ for(const item of p.references){
 }
 const c=p.buildBrandCatalog(p.vendorEntryBySlug.coinbase,JSON.parse(await readFile('public/brand-design-specs/coinbase.json','utf8'))),theme=c.themes[0]
 for(const [key,kind]of [['hero-band-dark','hero'],['hero-band-light','hero'],['pricing-tier-featured','pricing'],['cta-band-dark','cta-band'],['asset-icon-circular','icon'],['legal-band','legal']])assert.equal(c.components.find(v=>v.key===key).kind,kind)
+assert.equal(p.componentKind('button-store-hero',{}),'buttons');assert.equal(p.componentKind('hero-band-dark',{}),'hero')
 const hero=p.resolveComponentStyle(c.spec.components['hero-band-dark'],c,theme),preview=p.projectComponentStyle(hero,true)
 assert.equal(hero.fontSize,'80px');assert.equal(hero.padding,'96px');assert.equal(hero.lineHeight,1);assert.equal(preview.fontSize,'clamp(12px, 80px, 40px)');assert.equal(preview.padding,'min(96px, 32px)')
 assert.equal(p.resolveComponentStyle({boxShadow:'rgba(0,0,0,0.3) 0px 8px 8px'},c,theme).boxShadow,'0px 8px 8px rgba(0,0,0,0.3)')

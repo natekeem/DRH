@@ -197,7 +197,7 @@
           "id": "buttons",
           "label": "Buttons · 버튼",
           "kind": "buttons",
-          "count": 5
+          "count": 7
         },
         {
           "type": "components",
@@ -246,7 +246,7 @@
           "id": "pricing",
           "label": "Pricing · 요금",
           "kind": "pricing",
-          "count": 4
+          "count": 3
         },
         {
           "type": "components",
@@ -260,13 +260,6 @@
           "id": "footer",
           "label": "Footer · 하단",
           "kind": "footer",
-          "count": 1
-        },
-        {
-          "type": "components",
-          "id": "legal",
-          "label": "Legal · 안내",
-          "kind": "legal",
           "count": 1
         },
         {
@@ -358,7 +351,7 @@
           "id": "buttons",
           "label": "Buttons · 버튼",
           "kind": "buttons",
-          "count": 7
+          "count": 8
         },
         {
           "type": "components",
@@ -387,13 +380,6 @@
           "label": "Navigation · 탐색",
           "kind": "navigation",
           "count": 4
-        },
-        {
-          "type": "components",
-          "id": "hero",
-          "label": "Hero · 주요 메시지",
-          "kind": "hero",
-          "count": 1
         },
         {
           "type": "components",
@@ -4260,7 +4246,7 @@
           "id": "buttons",
           "label": "Buttons · 버튼",
           "kind": "buttons",
-          "count": 8
+          "count": 10
         },
         {
           "type": "components",
@@ -4282,13 +4268,6 @@
           "label": "Badges · 배지",
           "kind": "badges",
           "count": 4
-        },
-        {
-          "type": "components",
-          "id": "tabs",
-          "label": "Tabs · 탭",
-          "kind": "tabs",
-          "count": 2
         },
         {
           "type": "components",
@@ -5298,7 +5277,7 @@
           "id": "buttons",
           "label": "Buttons · 버튼",
           "kind": "buttons",
-          "count": 5
+          "count": 6
         },
         {
           "type": "components",
@@ -5319,7 +5298,7 @@
           "id": "badges",
           "label": "Badges · 배지",
           "kind": "badges",
-          "count": 2
+          "count": 1
         },
         {
           "type": "components",
@@ -5851,7 +5830,7 @@
           "id": "buttons",
           "label": "Buttons · 버튼",
           "kind": "buttons",
-          "count": 4
+          "count": 6
         },
         {
           "type": "components",
@@ -5873,13 +5852,6 @@
           "label": "Badges · 배지",
           "kind": "badges",
           "count": 1
-        },
-        {
-          "type": "components",
-          "id": "tabs",
-          "label": "Tabs · 탭",
-          "kind": "tabs",
-          "count": 2
         },
         {
           "type": "components",
@@ -8878,7 +8850,7 @@
           "id": "buttons",
           "label": "Buttons · 버튼",
           "kind": "buttons",
-          "count": 7
+          "count": 8
         },
         {
           "type": "components",
@@ -8893,13 +8865,6 @@
           "label": "Forms · 입력",
           "kind": "inputs",
           "count": 2
-        },
-        {
-          "type": "components",
-          "id": "tabs",
-          "label": "Tabs · 탭",
-          "kind": "tabs",
-          "count": 1
         },
         {
           "type": "components",
@@ -9401,7 +9366,7 @@
           "id": "buttons",
           "label": "Buttons · 버튼",
           "kind": "buttons",
-          "count": 3
+          "count": 4
         },
         {
           "type": "components",
@@ -9422,7 +9387,7 @@
           "id": "badges",
           "label": "Badges · 배지",
           "kind": "badges",
-          "count": 2
+          "count": 1
         },
         {
           "type": "components",
