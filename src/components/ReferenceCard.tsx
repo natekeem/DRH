@@ -13,7 +13,9 @@ export function ReferenceCard({ item, large=false }:{item:ReferenceItem;large?:b
   const location=useLocation()
   const maturity=demoMaturity(item)
   const statusBelowPreview=Boolean(recipes[item.demo]?.sourceNotes)
-  return <article className={`reference-card ${large?'large':''}`}>
+  const designSystemCard=item.category==='DESIGN.md'
+  const vendorBrand=item.demo.startsWith('vendor-design-md:')
+  return <article className={`reference-card ${large?'large':''}${designSystemCard?' design-system-reference-card':''}${vendorBrand?' brand-reference-card':''}`}>
     <div className="card-demo">{item.designSystem?<DesignSystemPreview tokens={item.designSystem} compact/>:<DemoRenderer kind={item.demo} detail={large}/>}<div className={`live-chip maturity-${maturity.kind}`} hidden={statusBelowPreview}><i/> {maturity.label}</div></div>
     <Link className="reference-card-link" state={{fromExplore:location.pathname==='/explore'}} to={`/reference/${item.id}`} aria-label={`${item.name} 상세 보기`}>
       <div className="card-meta">
@@ -22,7 +24,7 @@ export function ReferenceCard({ item, large=false }:{item:ReferenceItem;large?:b
       </div>
       {statusBelowPreview&&<span className={`preview-status maturity-${maturity.kind}`}>● {maturity.label}</span>}
       <p>{descriptionKo(item)}</p>
-      <div className="card-tags"><span className={`license-dot ${item.license.status}`}>{statusLabel[item.license.status]}</span>{item.tags.slice(0,3).map(t=><span key={t}>#{t}</span>)}</div>
+      <div className="card-footer"><div className="card-tags"><span className={`license-dot ${item.license.status}`}>{statusLabel[item.license.status]}</span>{(vendorBrand?item.tags.filter(t=>!['vendor','awesome-design-md'].includes(t)).slice(0,2):item.tags.slice(0,3)).map(t=><span key={t}>#{t}</span>)}</div>{vendorBrand&&<span className="brand-card-action">시스템 보기 <ArrowUpRight size={13}/></span>}</div>
     </Link>
   </article>
 }

@@ -2,7 +2,7 @@
 
 Ready: 효과별 로직·DOM·동일한 실행 HTML·출처·검수 조건 제공. Partial: 구조는 제공하지만 완성된 재현 코드/효과별 계약이 부족함. DESIGN.md는 문서이며 실행 코드로 집계하지 않는다.
 
-{"Ready":66,"Partial":132}
+{"Ready":91,"Partial":132}
 
 | Reference | Prompt | Logic | Starter Code | Source | License | Ready |
 |---|---|---|---|---|---|---|
@@ -51,6 +51,20 @@ Ready: 효과별 로직·DOM·동일한 실행 HTML·출처·검수 조건 제�
 | Ripple Interaction (ripple) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
 | Shape Morph (morph) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
 | Accordion Motion (accordion-motion) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Pixel Run Cycle (pixel-run-cycle) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Chalk Path Draw (chalk-path-draw) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Neon Light Trace (neon-light-trace) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Polygon Glide (polygon-glide) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Comic Impact Beat (comic-impact-beat) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Flat Orbit System (flat-orbit-system) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Paper Layer Parallax (paper-layer-parallax) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Kinetic Chrome Form (kinetic-chrome-form) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Brick Build Loop (brick-build-loop) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Clay Character Bounce (clay-character-bounce) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Risograph Offset Jitter (risograph-offset-jitter) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Blueprint Assembly (blueprint-assembly) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Ink Wash Reveal (ink-wash-reveal) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Holographic Scan Field (holographic-scan-field) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
 | Typewriter (typewriter) | 구체적 | 효과별 | 실행 HTML | https://safi.me.uk/typewriterjs/ | https://github.com/tameemsafi/typewriterjs/blob/main/LICENSE | Ready |
 | Text Reveal (text-reveal) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
 | Blur Reveal (blur-reveal) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
@@ -93,6 +107,17 @@ Ready: 효과별 로직·DOM·동일한 실행 HTML·출처·검수 조건 제�
 | Internal Admin (admin-page) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
 | Login / Signup (login-page) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
 | Event Landing (event-page) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
+| Bottom Tab Bar (tab-bar-navigation) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Top Tabs (top-tabs-navigation) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Navigation Drawer (navigation-drawer) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Breadcrumbs (breadcrumb-navigation) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Sticky Header (sticky-header-navigation) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Floating Action Button (floating-action-button) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Pagination (pagination-navigation) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Infinite Scroll (infinite-scroll-navigation) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Back Navigation (back-navigation) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Mega Menu (mega-menu-navigation) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Stepper (stepper-navigation) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
 | Minimal SaaS (minimal-saas) | 기본/부분 | 미완성 | DESIGN.md | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
 | Playful Neo-Brutalism (playful-brutal) | 기본/부분 | 미완성 | DESIGN.md | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
 | Editorial (editorial-system) | 기본/부분 | 미완성 | DESIGN.md | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |

@@ -1,8 +1,8 @@
 # V1.4 Demo Status
 
-93개 항목을 renderer, CSS/JS 동작, source, export 기준으로 재분류했다. Working은 canonical 핵심 효과를 보여주는 데모이며 실제 제품 통합 완료를 의미하지 않는다. Prototype은 수량을 맞추기 위해 승격하지 않았다. V1.5에서 정규화 토큰을 갖춘 DESIGN.md specimen 10개를 Working으로 검증했다. Browser 증거와 검수 범위는 V1_4_AUDIT.md 및 V1_5_REFERENCE_WORKSPACE.md 참조.
+223개 항목을 renderer, CSS/JS 동작, source, export 기준으로 재분류했다. Working은 canonical 핵심 효과를 보여주는 데모이며 실제 제품 통합 완료를 의미하지 않는다. Prototype은 수량을 맞추기 위해 승격하지 않았다. V1.5에서 정규화 토큰을 갖춘 DESIGN.md specimen 10개를 Working으로 검증했다. Browser 증거와 검수 범위는 V1_4_AUDIT.md 및 V1_5_REFERENCE_WORKSPACE.md 참조.
 
-- WORKING DEMO: 169
+- WORKING DEMO: 194
 - PROTOTYPE: 28
 - OFFICIAL LIVE: 1
 
@@ -53,6 +53,20 @@
 | Ripple Interaction (ripple) | Motion | WORKING DEMO | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
 | Shape Morph (morph) | Motion | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
 | Accordion Motion (accordion-motion) | Motion | WORKING DEMO | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
+| Pixel Run Cycle (pixel-run-cycle) | Motion | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
+| Chalk Path Draw (chalk-path-draw) | Motion | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
+| Neon Light Trace (neon-light-trace) | Motion | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
+| Polygon Glide (polygon-glide) | Motion | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
+| Comic Impact Beat (comic-impact-beat) | Motion | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
+| Flat Orbit System (flat-orbit-system) | Motion | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
+| Paper Layer Parallax (paper-layer-parallax) | Motion | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
+| Kinetic Chrome Form (kinetic-chrome-form) | Motion | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
+| Brick Build Loop (brick-build-loop) | Motion | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
+| Clay Character Bounce (clay-character-bounce) | Motion | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
+| Risograph Offset Jitter (risograph-offset-jitter) | Motion | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
+| Blueprint Assembly (blueprint-assembly) | Motion | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
+| Ink Wash Reveal (ink-wash-reveal) | Motion | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
+| Holographic Scan Field (holographic-scan-field) | Motion | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
 | Typewriter (typewriter) | Text | WORKING DEMO | WORKING DEMO | HTML/CSS/JS shared preview/export | TypewriterJS | 제품 적용 시 크기/내용 조정 |
 | Text Reveal (text-reveal) | Text | WORKING DEMO | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
 | Blur Reveal (blur-reveal) | Text | WORKING DEMO | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
@@ -95,6 +109,17 @@
 | Internal Admin (admin-page) | Pages | PROTOTYPE | PROTOTYPE | 기존 React/CSS demo | Design Reference Hub | 실제 다중 section/화면 동작 및 일치하는 export 필요 |
 | Login / Signup (login-page) | Pages | PROTOTYPE | PROTOTYPE | 기존 React/CSS demo | Design Reference Hub | 실제 다중 section/화면 동작 및 일치하는 export 필요 |
 | Event Landing (event-page) | Pages | PROTOTYPE | PROTOTYPE | 기존 React/CSS demo | Design Reference Hub | 실제 다중 section/화면 동작 및 일치하는 export 필요 |
+| Bottom Tab Bar (tab-bar-navigation) | UI Patterns | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
+| Top Tabs (top-tabs-navigation) | UI Patterns | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
+| Navigation Drawer (navigation-drawer) | UI Patterns | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
+| Breadcrumbs (breadcrumb-navigation) | UI Patterns | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
+| Sticky Header (sticky-header-navigation) | UI Patterns | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
+| Floating Action Button (floating-action-button) | UI Patterns | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
+| Pagination (pagination-navigation) | UI Patterns | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
+| Infinite Scroll (infinite-scroll-navigation) | UI Patterns | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
+| Back Navigation (back-navigation) | UI Patterns | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
+| Mega Menu (mega-menu-navigation) | UI Patterns | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
+| Stepper (stepper-navigation) | UI Patterns | PROTOTYPE | WORKING DEMO | HTML/CSS/JS shared preview/export | Design Reference Hub | 제품 적용 시 크기/내용 조정 |
 | Minimal SaaS (minimal-saas) | DESIGN.md | PROTOTYPE | WORKING DEMO | Normalized tokens / generic specimen | Design Reference Hub | 실행 가능한 export 보강 |
 | Playful Neo-Brutalism (playful-brutal) | DESIGN.md | PROTOTYPE | WORKING DEMO | Normalized tokens / generic specimen | Design Reference Hub | 실행 가능한 export 보강 |
 | Editorial (editorial-system) | DESIGN.md | PROTOTYPE | WORKING DEMO | Normalized tokens / generic specimen | Design Reference Hub | 실행 가능한 export 보강 |

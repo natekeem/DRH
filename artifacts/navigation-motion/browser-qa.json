@@ -1,0 +1,430 @@
+{
+  "cases": [
+    {
+      "id": "pixel-run-cycle",
+      "demo": "motion-pixel-loop",
+      "width": 1440,
+      "pageMetrics": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "frameMetrics": {
+        "width": 737,
+        "scrollWidth": 737
+      }
+    },
+    {
+      "id": "pixel-run-cycle",
+      "demo": "motion-pixel-loop",
+      "width": 390,
+      "pageMetrics": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "frameMetrics": {
+        "width": 356,
+        "scrollWidth": 356
+      }
+    },
+    {
+      "id": "chalk-path-draw",
+      "demo": "motion-chalk-draw",
+      "width": 1440,
+      "pageMetrics": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "frameMetrics": {
+        "width": 737,
+        "scrollWidth": 737
+      }
+    },
+    {
+      "id": "chalk-path-draw",
+      "demo": "motion-chalk-draw",
+      "width": 390,
+      "pageMetrics": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "frameMetrics": {
+        "width": 356,
+        "scrollWidth": 356
+      }
+    },
+    {
+      "id": "neon-light-trace",
+      "demo": "motion-neon-trace",
+      "width": 1440,
+      "pageMetrics": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "frameMetrics": {
+        "width": 737,
+        "scrollWidth": 737
+      }
+    },
+    {
+      "id": "neon-light-trace",
+      "demo": "motion-neon-trace",
+      "width": 390,
+      "pageMetrics": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "frameMetrics": {
+        "width": 356,
+        "scrollWidth": 356
+      }
+    },
+    {
+      "id": "polygon-glide",
+      "demo": "motion-low-poly",
+      "width": 1440,
+      "pageMetrics": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "frameMetrics": {
+        "width": 737,
+        "scrollWidth": 737
+      }
+    },
+    {
+      "id": "polygon-glide",
+      "demo": "motion-low-poly",
+      "width": 390,
+      "pageMetrics": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "frameMetrics": {
+        "width": 356,
+        "scrollWidth": 356
+      }
+    },
+    {
+      "id": "comic-impact-beat",
+      "demo": "motion-comic-impact",
+      "width": 1440,
+      "pageMetrics": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "frameMetrics": {
+        "width": 737,
+        "scrollWidth": 737
+      }
+    },
+    {
+      "id": "comic-impact-beat",
+      "demo": "motion-comic-impact",
+      "width": 390,
+      "pageMetrics": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "frameMetrics": {
+        "width": 356,
+        "scrollWidth": 356
+      }
+    },
+    {
+      "id": "flat-orbit-system",
+      "demo": "motion-flat-vector",
+      "width": 1440,
+      "pageMetrics": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "frameMetrics": {
+        "width": 737,
+        "scrollWidth": 737
+      }
+    },
+    {
+      "id": "flat-orbit-system",
+      "demo": "motion-flat-vector",
+      "width": 390,
+      "pageMetrics": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "frameMetrics": {
+        "width": 356,
+        "scrollWidth": 356
+      }
+    },
+    {
+      "id": "paper-layer-parallax",
+      "demo": "motion-paper-cutout",
+      "width": 1440,
+      "pageMetrics": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "frameMetrics": {
+        "width": 737,
+        "scrollWidth": 737
+      }
+    },
+    {
+      "id": "paper-layer-parallax",
+      "demo": "motion-paper-cutout",
+      "width": 390,
+      "pageMetrics": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "frameMetrics": {
+        "width": 356,
+        "scrollWidth": 356
+      }
+    },
+    {
+      "id": "kinetic-chrome-form",
+      "demo": "motion-cgi-kinetic",
+      "width": 1440,
+      "pageMetrics": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "frameMetrics": {
+        "width": 737,
+        "scrollWidth": 737
+      }
+    },
+    {
+      "id": "kinetic-chrome-form",
+      "demo": "motion-cgi-kinetic",
+      "width": 390,
+      "pageMetrics": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "frameMetrics": {
+        "width": 356,
+        "scrollWidth": 356
+      }
+    },
+    {
+      "id": "brick-build-loop",
+      "demo": "motion-brick-build",
+      "width": 1440,
+      "pageMetrics": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "frameMetrics": {
+        "width": 737,
+        "scrollWidth": 737
+      }
+    },
+    {
+      "id": "brick-build-loop",
+      "demo": "motion-brick-build",
+      "width": 390,
+      "pageMetrics": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "frameMetrics": {
+        "width": 356,
+        "scrollWidth": 356
+      }
+    },
+    {
+      "id": "clay-character-bounce",
+      "demo": "motion-clay-bounce",
+      "width": 1440,
+      "pageMetrics": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "frameMetrics": {
+        "width": 737,
+        "scrollWidth": 737
+      }
+    },
+    {
+      "id": "clay-character-bounce",
+      "demo": "motion-clay-bounce",
+      "width": 390,
+      "pageMetrics": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "frameMetrics": {
+        "width": 356,
+        "scrollWidth": 356
+      }
+    },
+    {
+      "id": "risograph-offset-jitter",
+      "demo": "motion-risograph",
+      "width": 1440,
+      "pageMetrics": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "frameMetrics": {
+        "width": 737,
+        "scrollWidth": 737
+      }
+    },
+    {
+      "id": "risograph-offset-jitter",
+      "demo": "motion-risograph",
+      "width": 390,
+      "pageMetrics": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "frameMetrics": {
+        "width": 356,
+        "scrollWidth": 356
+      }
+    },
+    {
+      "id": "blueprint-assembly",
+      "demo": "motion-blueprint",
+      "width": 1440,
+      "pageMetrics": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "frameMetrics": {
+        "width": 737,
+        "scrollWidth": 737
+      }
+    },
+    {
+      "id": "blueprint-assembly",
+      "demo": "motion-blueprint",
+      "width": 390,
+      "pageMetrics": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "frameMetrics": {
+        "width": 356,
+        "scrollWidth": 356
+      }
+    },
+    {
+      "id": "ink-wash-reveal",
+      "demo": "motion-ink-wash",
+      "width": 1440,
+      "pageMetrics": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "frameMetrics": {
+        "width": 737,
+        "scrollWidth": 737
+      }
+    },
+    {
+      "id": "ink-wash-reveal",
+      "demo": "motion-ink-wash",
+      "width": 390,
+      "pageMetrics": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "frameMetrics": {
+        "width": 356,
+        "scrollWidth": 356
+      }
+    },
+    {
+      "id": "holographic-scan-field",
+      "demo": "motion-holographic",
+      "width": 1440,
+      "pageMetrics": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "frameMetrics": {
+        "width": 737,
+        "scrollWidth": 737
+      }
+    },
+    {
+      "id": "holographic-scan-field",
+      "demo": "motion-holographic",
+      "width": 390,
+      "pageMetrics": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "frameMetrics": {
+        "width": 356,
+        "scrollWidth": 356
+      }
+    },
+    {
+      "id": "kinetic-chrome-form",
+      "demo": "motion-cgi-kinetic",
+      "width": 1440,
+      "pageMetrics": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "frameMetrics": {
+        "width": 737,
+        "scrollWidth": 737
+      }
+    },
+    {
+      "id": "paper-layer-parallax",
+      "demo": "motion-paper-cutout",
+      "width": 1440,
+      "pageMetrics": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "frameMetrics": {
+        "width": 737,
+        "scrollWidth": 737
+      }
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "alignment": [
+    {
+      "id": "admd-apple",
+      "boxes": [
+        {
+          "top": 263.59375,
+          "bottom": 943.59375,
+          "height": 680
+        },
+        {
+          "top": 263.59375,
+          "bottom": 943.59375,
+          "height": 680
+        }
+      ],
+      "metaBottom": 247.59375
+    },
+    {
+      "id": "pixel-run-cycle",
+      "boxes": [
+        {
+          "top": 263.59375,
+          "bottom": 943.59375,
+          "height": 680
+        },
+        {
+          "top": 263.59375,
+          "bottom": 943.59375,
+          "height": 680
+        }
+      ],
+      "metaBottom": 247.59375
+    }
+  ]
+}

@@ -1645,7 +1645,7 @@
       "path": "vendor/awesome-design-md/airbnb/DESIGN.md",
       "sha256": "add34130d67209ad105346d60fe2b290728b9711683969db4b7760e29477a5fe",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 308
+      "promptLength": 346
     },
     {
       "id": "admd-airtable",
@@ -1653,7 +1653,7 @@
       "path": "vendor/awesome-design-md/airtable/DESIGN.md",
       "sha256": "1d225e511213044d3c705bde50265ad010932bfd8a15740a144dd4f480128889",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 310
+      "promptLength": 350
     },
     {
       "id": "admd-apple",
@@ -1661,7 +1661,7 @@
       "path": "vendor/awesome-design-md/apple/DESIGN.md",
       "sha256": "83fbc614443a9b3d7569e9956a43e7b8740f9d0f939f58b8154f7a7cec3002b2",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 307
+      "promptLength": 344
     },
     {
       "id": "admd-binance",
@@ -1669,7 +1669,7 @@
       "path": "vendor/awesome-design-md/binance/DESIGN.md",
       "sha256": "378ff97d568ccbc316519b9d45a29d6649ed8961c9c486c3ed4cea7501d72371",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 309
+      "promptLength": 348
     },
     {
       "id": "admd-bmw",
@@ -1677,7 +1677,7 @@
       "path": "vendor/awesome-design-md/bmw/DESIGN.md",
       "sha256": "b7268279e7c98e85fb80890e06765f4ee8340ba1ea1ccb5a8a5b134de43dac3e",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 305
+      "promptLength": 340
     },
     {
       "id": "admd-bmw-m",
@@ -1685,7 +1685,7 @@
       "path": "vendor/awesome-design-md/bmw-m/DESIGN.md",
       "sha256": "824a1707c0a8d1609d72477d0fa211b9ebe4bdeb3e1fd701790af7b7bb669a4a",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 307
+      "promptLength": 344
     },
     {
       "id": "admd-bugatti",
@@ -1693,7 +1693,7 @@
       "path": "vendor/awesome-design-md/bugatti/DESIGN.md",
       "sha256": "375f0a20ada88cdee5e995ca7edcfbd584ddf5f887024deebd1bc75bfd55b1bc",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 309
+      "promptLength": 348
     },
     {
       "id": "admd-cal",
@@ -1701,7 +1701,7 @@
       "path": "vendor/awesome-design-md/cal/DESIGN.md",
       "sha256": "8cd21b7d67e94c899843d517f4b426e4fee33d47354a433d6a63ebcf79d5a654",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 309
+      "promptLength": 344
     },
     {
       "id": "admd-claude",
@@ -1709,7 +1709,7 @@
       "path": "vendor/awesome-design-md/claude/DESIGN.md",
       "sha256": "3d972f34f8d4f33b442fa28220cf3b7ca2f13c0a97c468e3988148f82521f9df",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 308
+      "promptLength": 346
     },
     {
       "id": "admd-clay",
@@ -1717,7 +1717,7 @@
       "path": "vendor/awesome-design-md/clay/DESIGN.md",
       "sha256": "1abd803a207fbe950a06e155adcd6013c2e149b13e7b88844f5069f9d3d99eb3",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 306
+      "promptLength": 342
     },
     {
       "id": "admd-clickhouse",
@@ -1725,7 +1725,7 @@
       "path": "vendor/awesome-design-md/clickhouse/DESIGN.md",
       "sha256": "50987e29b603cc7503ebe724af810fcf43845e96fdd4083e0fbe5fe00d2cdd2e",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 312
+      "promptLength": 354
     },
     {
       "id": "admd-cohere",
@@ -1733,7 +1733,7 @@
       "path": "vendor/awesome-design-md/cohere/DESIGN.md",
       "sha256": "1c49a5a5f88d43841d4f4afa33831328d47a5715048700a3b75086a822575883",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 308
+      "promptLength": 346
     },
     {
       "id": "admd-coinbase",
@@ -1741,7 +1741,7 @@
       "path": "vendor/awesome-design-md/coinbase/DESIGN.md",
       "sha256": "c8c67800dd7f58fcc87ed7d267a3bba862e3419e499e8a66d67731a69d2de1d6",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 310
+      "promptLength": 350
     },
     {
       "id": "admd-composio",
@@ -1749,7 +1749,7 @@
       "path": "vendor/awesome-design-md/composio/DESIGN.md",
       "sha256": "e7db886dabecca61f29b83e8f46d7a1e8a43889d30b81bc6e48162ccaafcbb2f",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 310
+      "promptLength": 350
     },
     {
       "id": "admd-cursor",
@@ -1757,7 +1757,7 @@
       "path": "vendor/awesome-design-md/cursor/DESIGN.md",
       "sha256": "a3db9b3019dc2f514fdee7cd0ca0a5232c0bd0119e23178e8eebaf6916258d9d",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 308
+      "promptLength": 346
     },
     {
       "id": "admd-dell-1996",
@@ -1765,7 +1765,7 @@
       "path": "vendor/awesome-design-md/dell-1996/DESIGN.md",
       "sha256": "e186c614b1223fe7015670472ac6bc84b5b3fdd5de5325b3ce5bfb7fbe9c8d6e",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 311
+      "promptLength": 352
     },
     {
       "id": "admd-elevenlabs",
@@ -1773,7 +1773,7 @@
       "path": "vendor/awesome-design-md/elevenlabs/DESIGN.md",
       "sha256": "3b359acfaafadbb499c7ed3eebe813a76e0be497a7157b77de207fe275068a66",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 312
+      "promptLength": 354
     },
     {
       "id": "admd-expo",
@@ -1781,7 +1781,7 @@
       "path": "vendor/awesome-design-md/expo/DESIGN.md",
       "sha256": "1be7e129b6f75afaa12318a7c51ab22f6f74a214dec22c4827cecc519f112363",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 306
+      "promptLength": 342
     },
     {
       "id": "admd-ferrari",
@@ -1789,7 +1789,7 @@
       "path": "vendor/awesome-design-md/ferrari/DESIGN.md",
       "sha256": "1199e2832641cac7e384aaf3b1f3db87f992240cea5d3d1eee04d9dc00acb17c",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 309
+      "promptLength": 348
     },
     {
       "id": "admd-figma",
@@ -1797,7 +1797,7 @@
       "path": "vendor/awesome-design-md/figma/DESIGN.md",
       "sha256": "716ce8431f47eb8b8135552710e3c4d538bccccf1202e4ceac5428c9aada9972",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 307
+      "promptLength": 344
     },
     {
       "id": "admd-framer",
@@ -1805,7 +1805,7 @@
       "path": "vendor/awesome-design-md/framer/DESIGN.md",
       "sha256": "a5d47dddacf5a04577cec0be6fe0fc53b7402254c7686874af3e59bcc7588cb4",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 308
+      "promptLength": 346
     },
     {
       "id": "admd-hashicorp",
@@ -1813,7 +1813,7 @@
       "path": "vendor/awesome-design-md/hashicorp/DESIGN.md",
       "sha256": "d2df9be72d867e48d318fd18db04e60a78357c27e392ab921fc2ba7f46951442",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 311
+      "promptLength": 352
     },
     {
       "id": "admd-hp",
@@ -1821,7 +1821,7 @@
       "path": "vendor/awesome-design-md/hp/DESIGN.md",
       "sha256": "4c9a248046684bdde5311a0c9881814f50e2381c2b0f3c75b02a35fc64bc8bb8",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 304
+      "promptLength": 338
     },
     {
       "id": "admd-ibm",
@@ -1829,7 +1829,7 @@
       "path": "vendor/awesome-design-md/ibm/DESIGN.md",
       "sha256": "46f6fd65b5e7524fed1133b9b3c0dd619f9a0f145fbb2b87f3675c701a88f3bd",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 305
+      "promptLength": 340
     },
     {
       "id": "admd-intercom",
@@ -1837,7 +1837,7 @@
       "path": "vendor/awesome-design-md/intercom/DESIGN.md",
       "sha256": "962be23cd947e87a86b2ffbc0440e9d0808243a6ef3af2aa04e8e7cc04d48ba3",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 310
+      "promptLength": 350
     },
     {
       "id": "admd-kraken",
@@ -1845,7 +1845,7 @@
       "path": "vendor/awesome-design-md/kraken/DESIGN.md",
       "sha256": "41bcbd5642c926a549f0d50f1151484c5776b4536233240c8415cfb79bcf1f38",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 308
+      "promptLength": 346
     },
     {
       "id": "admd-lamborghini",
@@ -1853,7 +1853,7 @@
       "path": "vendor/awesome-design-md/lamborghini/DESIGN.md",
       "sha256": "9aa68c53b481a0befdf72859db5625f85454122294509989aa58414aaee04b34",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 313
+      "promptLength": 356
     },
     {
       "id": "admd-linear.app",
@@ -1861,7 +1861,7 @@
       "path": "vendor/awesome-design-md/linear.app/DESIGN.md",
       "sha256": "30bd30e72c48a16e4bdbd010f2d1c85fab657c6fae3cc85389399aab10f9cb5f",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 308
+      "promptLength": 350
     },
     {
       "id": "admd-lovable",
@@ -1869,7 +1869,7 @@
       "path": "vendor/awesome-design-md/lovable/DESIGN.md",
       "sha256": "92790895c833104072643929ba56ebbf42c8f88ffb7bff1926462545d0ace6c7",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 309
+      "promptLength": 348
     },
     {
       "id": "admd-mastercard",
@@ -1877,7 +1877,7 @@
       "path": "vendor/awesome-design-md/mastercard/DESIGN.md",
       "sha256": "e76ceaa187f43bd24b8338d2b2314e71e9225b36492e40f32a55782281a10437",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 312
+      "promptLength": 354
     },
     {
       "id": "admd-meta",
@@ -1885,7 +1885,7 @@
       "path": "vendor/awesome-design-md/meta/DESIGN.md",
       "sha256": "306dfad97c006d47b134fb0dbd55ff68d3baa526844d6eb37346373c9ef35339",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 306
+      "promptLength": 342
     },
     {
       "id": "admd-minimax",
@@ -1893,7 +1893,7 @@
       "path": "vendor/awesome-design-md/minimax/DESIGN.md",
       "sha256": "2658b96488bb629749259b152c5ba2912a0e8feb6a03477e265879abd9264c50",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 309
+      "promptLength": 348
     },
     {
       "id": "admd-mintlify",
@@ -1901,7 +1901,7 @@
       "path": "vendor/awesome-design-md/mintlify/DESIGN.md",
       "sha256": "754ffcf35dcd39ef8aef450085ce936aaca5b872ff92caa66be99e91a5c3d5ec",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 310
+      "promptLength": 350
     },
     {
       "id": "admd-miro",
@@ -1909,7 +1909,7 @@
       "path": "vendor/awesome-design-md/miro/DESIGN.md",
       "sha256": "87c71f76297277d64f9679e015a50da88e72d86d7b41badf8733eae1e4cde335",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 306
+      "promptLength": 342
     },
     {
       "id": "admd-mistral.ai",
@@ -1917,7 +1917,7 @@
       "path": "vendor/awesome-design-md/mistral.ai/DESIGN.md",
       "sha256": "40e2c692d72c54bae1e43446e2d059b71d773668d39d71ccb7ededa9fa07d145",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 312
+      "promptLength": 354
     },
     {
       "id": "admd-mongodb",
@@ -1925,7 +1925,7 @@
       "path": "vendor/awesome-design-md/mongodb/DESIGN.md",
       "sha256": "4523f10efd5ccd46f9aeac3b98626e24bcf907bc0c1e46500cb0e3920f932e71",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 309
+      "promptLength": 348
     },
     {
       "id": "admd-nike",
@@ -1933,7 +1933,7 @@
       "path": "vendor/awesome-design-md/nike/DESIGN.md",
       "sha256": "d2a3d363665839e2ddc15c91b8a9f3e92b1962ff55a7ca5d964ab3bb88b8186c",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 306
+      "promptLength": 342
     },
     {
       "id": "admd-nintendo-2001",
@@ -1941,7 +1941,7 @@
       "path": "vendor/awesome-design-md/nintendo-2001/DESIGN.md",
       "sha256": "9630af17090d5c39ba9d8b5915a597a96c7552efe1422b3b8c3f31fb3e636716",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 321
+      "promptLength": 366
     },
     {
       "id": "admd-notion",
@@ -1949,7 +1949,7 @@
       "path": "vendor/awesome-design-md/notion/DESIGN.md",
       "sha256": "fa9d6e78216d8f3e5d3990709ca2de6bc2e268e945bb94f255fd1bfb15455266",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 308
+      "promptLength": 346
     },
     {
       "id": "admd-nvidia",
@@ -1957,7 +1957,7 @@
       "path": "vendor/awesome-design-md/nvidia/DESIGN.md",
       "sha256": "d649be85daf075c98a17071e707e3901c6e19150044a81716acd01ef1169cc83",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 308
+      "promptLength": 346
     },
     {
       "id": "admd-ollama",
@@ -1965,7 +1965,7 @@
       "path": "vendor/awesome-design-md/ollama/DESIGN.md",
       "sha256": "3f36f897e5aad870344dd97e282c8f125ad208dc99449bb08dd38b9259d2f451",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 308
+      "promptLength": 346
     },
     {
       "id": "admd-opencode.ai",
@@ -1973,7 +1973,7 @@
       "path": "vendor/awesome-design-md/opencode.ai/DESIGN.md",
       "sha256": "d1a8893c4b8ac90b1e86230eee2effa8bd15add3582853477920e32432336dda",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 310
+      "promptLength": 353
     },
     {
       "id": "admd-pinterest",
@@ -1981,7 +1981,7 @@
       "path": "vendor/awesome-design-md/pinterest/DESIGN.md",
       "sha256": "26a202fd244e9213d5e2475d81581828da1dd97e089e44639d9783d04f96e4a8",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 311
+      "promptLength": 352
     },
     {
       "id": "admd-playstation",
@@ -1989,7 +1989,7 @@
       "path": "vendor/awesome-design-md/playstation/DESIGN.md",
       "sha256": "2a56c109af6cb847fa091b768f719b498ac56b582d010860e73ea5fb72a1590d",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 313
+      "promptLength": 356
     },
     {
       "id": "admd-posthog",
@@ -1997,7 +1997,7 @@
       "path": "vendor/awesome-design-md/posthog/DESIGN.md",
       "sha256": "01f497f751d56296bfcd5eb8806325a4bb4786d364941ec6e65c65fa9ee6d362",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 309
+      "promptLength": 348
     },
     {
       "id": "admd-raycast",
@@ -2005,7 +2005,7 @@
       "path": "vendor/awesome-design-md/raycast/DESIGN.md",
       "sha256": "6e2c5137e4d914b70996d589688374a801b6f29a35c9c019c22abb5e0170bda3",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 309
+      "promptLength": 348
     },
     {
       "id": "admd-renault",
@@ -2013,7 +2013,7 @@
       "path": "vendor/awesome-design-md/renault/DESIGN.md",
       "sha256": "b343df9a67e57f248e9eee704f52b17dff9cf6a46d1dc9f8d7ab36741940db59",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 309
+      "promptLength": 348
     },
     {
       "id": "admd-replicate",
@@ -2021,7 +2021,7 @@
       "path": "vendor/awesome-design-md/replicate/DESIGN.md",
       "sha256": "c22062d7b4174bf9ced7bc61c48389086cf6eed96a958e098ee70389893b0a15",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 311
+      "promptLength": 352
     },
     {
       "id": "admd-resend",
@@ -2029,7 +2029,7 @@
       "path": "vendor/awesome-design-md/resend/DESIGN.md",
       "sha256": "99536f1b2380511a539f7f3466d46d351e4bf35a5af0c0df395bdc20af05c9be",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 308
+      "promptLength": 346
     },
     {
       "id": "admd-revolut",
@@ -2037,7 +2037,7 @@
       "path": "vendor/awesome-design-md/revolut/DESIGN.md",
       "sha256": "b7fa8473315541f5d7e7d76f68a77105d255e6dae00d31d5eb34621d1d52de59",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 309
+      "promptLength": 348
     },
     {
       "id": "admd-runwayml",
@@ -2045,7 +2045,7 @@
       "path": "vendor/awesome-design-md/runwayml/DESIGN.md",
       "sha256": "b0e69bf643f89bb57ac0b82a3bf025e59ff1478c244cb0528ad1e38b3f80dac9",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 308
+      "promptLength": 348
     },
     {
       "id": "admd-sanity",
@@ -2053,7 +2053,7 @@
       "path": "vendor/awesome-design-md/sanity/DESIGN.md",
       "sha256": "ea1c442de2b23443f79af46524a81f33951606c8ff043ea9c25ba886264fbdd8",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 308
+      "promptLength": 346
     },
     {
       "id": "admd-sentry",
@@ -2061,7 +2061,7 @@
       "path": "vendor/awesome-design-md/sentry/DESIGN.md",
       "sha256": "655c91d7d23b5e869a966b7f1b63ae650567ad5d69003cfc64b0ee62c8e02c1f",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 308
+      "promptLength": 346
     },
     {
       "id": "admd-shopify",
@@ -2069,7 +2069,7 @@
       "path": "vendor/awesome-design-md/shopify/DESIGN.md",
       "sha256": "495e89b8d0a1848ded013c040f7a2ae62077e9d87fc4385350e25dee02ccdb38",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 309
+      "promptLength": 348
     },
     {
       "id": "admd-slack",
@@ -2077,7 +2077,7 @@
       "path": "vendor/awesome-design-md/slack/DESIGN.md",
       "sha256": "03cb243015a2e11d0faf05caba7f3d0c7fda6839b1f5ce707a23e8d46d1a11bd",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 307
+      "promptLength": 344
     },
     {
       "id": "admd-spacex",
@@ -2085,7 +2085,7 @@
       "path": "vendor/awesome-design-md/spacex/DESIGN.md",
       "sha256": "495450c79faab54d12d677649ca0a2c30a60f64f536a802e945ad54185c5baad",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 308
+      "promptLength": 346
     },
     {
       "id": "admd-spotify",
@@ -2093,7 +2093,7 @@
       "path": "vendor/awesome-design-md/spotify/DESIGN.md",
       "sha256": "72e964a6cf551d0603f9854f2f42ee08e97ad4d9e17e037f50f6233508288295",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 309
+      "promptLength": 348
     },
     {
       "id": "admd-starbucks",
@@ -2101,7 +2101,7 @@
       "path": "vendor/awesome-design-md/starbucks/DESIGN.md",
       "sha256": "e20338ee10226c63cf2588207288c08e12d60754a53f681657adaf364dfe8fa7",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 311
+      "promptLength": 352
     },
     {
       "id": "admd-stripe",
@@ -2109,7 +2109,7 @@
       "path": "vendor/awesome-design-md/stripe/DESIGN.md",
       "sha256": "5c8806b7dd3e0c2554ccba9d1e2a7c78e7c6e50e44fcf6ff5daea6026f8a9ed9",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 308
+      "promptLength": 346
     },
     {
       "id": "admd-supabase",
@@ -2117,7 +2117,7 @@
       "path": "vendor/awesome-design-md/supabase/DESIGN.md",
       "sha256": "f57287d7f44d59e8169dc4b4304ff03c1a2efb37f5433b9c04460caae7710880",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 310
+      "promptLength": 350
     },
     {
       "id": "admd-superhuman",
@@ -2125,7 +2125,7 @@
       "path": "vendor/awesome-design-md/superhuman/DESIGN.md",
       "sha256": "3640298bd2957aee80ce88eb465a7541ba835ec105cba364a6a621d885c7f34f",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 312
+      "promptLength": 354
     },
     {
       "id": "admd-tesla",
@@ -2133,7 +2133,7 @@
       "path": "vendor/awesome-design-md/tesla/DESIGN.md",
       "sha256": "19f2f7e6073d708f46d2512e6bab3c7c417cf2b4d9f57ff6ec6f2e056ea942b0",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 307
+      "promptLength": 344
     },
     {
       "id": "admd-theverge",
@@ -2141,7 +2141,7 @@
       "path": "vendor/awesome-design-md/theverge/DESIGN.md",
       "sha256": "5da2c3116e6845826b043ac115a80896a399efda2cebc0188981fba2ef9bb526",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 311
+      "promptLength": 351
     },
     {
       "id": "admd-together.ai",
@@ -2149,7 +2149,7 @@
       "path": "vendor/awesome-design-md/together.ai/DESIGN.md",
       "sha256": "aee472c583f55a2f2c7ee1c403a96dddadb3ff6dc518335451f431e313bf43cf",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 313
+      "promptLength": 356
     },
     {
       "id": "admd-uber",
@@ -2157,7 +2157,7 @@
       "path": "vendor/awesome-design-md/uber/DESIGN.md",
       "sha256": "f30d2257d2d090790332d00ccb16cd2516c3c6008be61ad2ce83c4e991bcc803",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 306
+      "promptLength": 342
     },
     {
       "id": "admd-vercel",
@@ -2165,7 +2165,7 @@
       "path": "vendor/awesome-design-md/vercel/DESIGN.md",
       "sha256": "d0951b93c2b4ce9840c715c9f9b3e58a386c6c58ae5cc0f804dec3b116b95bd8",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 308
+      "promptLength": 346
     },
     {
       "id": "admd-vodafone",
@@ -2173,7 +2173,7 @@
       "path": "vendor/awesome-design-md/vodafone/DESIGN.md",
       "sha256": "293a40951e654283978fa744b24177a159d8f2a60f402bc735bf081618af0ef6",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 310
+      "promptLength": 350
     },
     {
       "id": "admd-voltagent",
@@ -2181,7 +2181,7 @@
       "path": "vendor/awesome-design-md/voltagent/DESIGN.md",
       "sha256": "4457887741ae5e965e205282b03c4bff83e47dd7a03cd7f38c64623a17569fcd",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 311
+      "promptLength": 352
     },
     {
       "id": "admd-warp",
@@ -2189,7 +2189,7 @@
       "path": "vendor/awesome-design-md/warp/DESIGN.md",
       "sha256": "5b1201f7b1b4e72570d148d1f980fd1cb35e6e4122d48dd271787aa3538a25ad",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 306
+      "promptLength": 342
     },
     {
       "id": "admd-webflow",
@@ -2197,7 +2197,7 @@
       "path": "vendor/awesome-design-md/webflow/DESIGN.md",
       "sha256": "9230c7b3951371fc2edc04958962e32bb7ec9a9b703aa6b72eaf5c7991b7c984",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 309
+      "promptLength": 348
     },
     {
       "id": "admd-wired",
@@ -2205,7 +2205,7 @@
       "path": "vendor/awesome-design-md/wired/DESIGN.md",
       "sha256": "eb439dcc573401dc30583f40e7eef8a60b769232da59e524de6dce56d5c3593e",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 307
+      "promptLength": 344
     },
     {
       "id": "admd-wise",
@@ -2213,7 +2213,7 @@
       "path": "vendor/awesome-design-md/wise/DESIGN.md",
       "sha256": "442df0ad7380efd8712f5574bdca34a73cfb41a2a43454ff459863a6258af547",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 306
+      "promptLength": 342
     },
     {
       "id": "admd-x.ai",
@@ -2221,7 +2221,7 @@
       "path": "vendor/awesome-design-md/x.ai/DESIGN.md",
       "sha256": "9c9ef45d8c0c3b9a7622833cdff8bd125ed6bf296a82cc7274215276706e52eb",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 306
+      "promptLength": 342
     },
     {
       "id": "admd-zapier",
@@ -2229,7 +2229,7 @@
       "path": "vendor/awesome-design-md/zapier/DESIGN.md",
       "sha256": "9aee43ba8ece1b4fd0753b4cad0a29f3497331882fa376f0dd4fea8a018c32fc",
       "revision": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
-      "promptLength": 308
+      "promptLength": 346
     },
     {
       "id": "admd-29cm",
@@ -2237,7 +2237,7 @@
       "path": "vendor/oh-my-design/29cm/DESIGN.md",
       "sha256": "e6a22d1a2d5462c4093f1d3adbd2a171239089a7d067a63930b47fc2c4cf9ba0",
       "revision": "15ff013933b37d1800e05c75e7680ed17e56f94b",
-      "promptLength": 291
+      "promptLength": 327
     },
     {
       "id": "admd-baemin",
@@ -2245,7 +2245,7 @@
       "path": "vendor/oh-my-design/baemin/DESIGN.md",
       "sha256": "b04937971f8b91b376d1b523f5a476f6b002a4652284cdaf823eb60f3407af49",
       "revision": "15ff013933b37d1800e05c75e7680ed17e56f94b",
-      "promptLength": 293
+      "promptLength": 331
     },
     {
       "id": "admd-banksalad",
@@ -2253,7 +2253,7 @@
       "path": "vendor/oh-my-design/banksalad/DESIGN.md",
       "sha256": "6406d4ce56623b000d367f0cfbf95653b28152aff43df8f24ec45de178ecb16a",
       "revision": "15ff013933b37d1800e05c75e7680ed17e56f94b",
-      "promptLength": 296
+      "promptLength": 337
     },
     {
       "id": "admd-coupang",
@@ -2261,7 +2261,7 @@
       "path": "vendor/oh-my-design/coupang/DESIGN.md",
       "sha256": "74f82355f6dda0ad97558f9f74a5c2cdc72946788d6ef48f6412b3c28dc9c325",
       "revision": "15ff013933b37d1800e05c75e7680ed17e56f94b",
-      "promptLength": 294
+      "promptLength": 333
     },
     {
       "id": "admd-hyundai",
@@ -2269,7 +2269,7 @@
       "path": "vendor/oh-my-design/hyundai/DESIGN.md",
       "sha256": "2dbbd9f31c46779a696b6f3586e20100f43264274df4846d03b848c29c9e3a11",
       "revision": "15ff013933b37d1800e05c75e7680ed17e56f94b",
-      "promptLength": 294
+      "promptLength": 333
     },
     {
       "id": "admd-kakao",
@@ -2277,7 +2277,7 @@
       "path": "vendor/oh-my-design/kakao/DESIGN.md",
       "sha256": "a06cfee0bc444994b217962ce3892a883b5ecffa2765bfde42645c2222bc8362",
       "revision": "15ff013933b37d1800e05c75e7680ed17e56f94b",
-      "promptLength": 292
+      "promptLength": 329
     },
     {
       "id": "admd-kakaobank",
@@ -2285,7 +2285,7 @@
       "path": "vendor/oh-my-design/kakaobank/DESIGN.md",
       "sha256": "a2659b60968159b143317fb6a99ad21c35e2f04a87ef561edf6c12c2919144cf",
       "revision": "15ff013933b37d1800e05c75e7680ed17e56f94b",
-      "promptLength": 296
+      "promptLength": 337
     },
     {
       "id": "admd-kakaopay",
@@ -2293,7 +2293,7 @@
       "path": "vendor/oh-my-design/kakaopay/DESIGN.md",
       "sha256": "3067d6ac24ee2792e2404f01ef7ec0d50e12447031a4302076fdd433624f169c",
       "revision": "15ff013933b37d1800e05c75e7680ed17e56f94b",
-      "promptLength": 295
+      "promptLength": 335
     },
     {
       "id": "admd-karrot",
@@ -2301,7 +2301,7 @@
       "path": "vendor/oh-my-design/karrot/DESIGN.md",
       "sha256": "09df85980a8ae2f45e3c936b62f2549fcaf4660904fffee91c9d59d4effca087",
       "revision": "15ff013933b37d1800e05c75e7680ed17e56f94b",
-      "promptLength": 293
+      "promptLength": 331
     },
     {
       "id": "admd-kurly",
@@ -2309,7 +2309,7 @@
       "path": "vendor/oh-my-design/kurly/DESIGN.md",
       "sha256": "b953f809f8d7e38f4d244891d9901e2e07dce3c4c2b85d7d1a3f710c660395c7",
       "revision": "15ff013933b37d1800e05c75e7680ed17e56f94b",
-      "promptLength": 292
+      "promptLength": 329
     },
     {
       "id": "admd-musinsa",
@@ -2317,7 +2317,7 @@
       "path": "vendor/oh-my-design/musinsa/DESIGN.md",
       "sha256": "b50efaff74122fcd7aea1d9ba05826bd1a53248a1e92ce7a429ca87868fbd70d",
       "revision": "15ff013933b37d1800e05c75e7680ed17e56f94b",
-      "promptLength": 294
+      "promptLength": 333
     },
     {
       "id": "admd-naver",
@@ -2325,7 +2325,7 @@
       "path": "vendor/oh-my-design/naver/DESIGN.md",
       "sha256": "7c42dad9552326b6196365ba2acf53579f9db56471488c6694e607fb78ca0e5f",
       "revision": "15ff013933b37d1800e05c75e7680ed17e56f94b",
-      "promptLength": 292
+      "promptLength": 329
     },
     {
       "id": "admd-oliveyoung",
@@ -2333,7 +2333,7 @@
       "path": "vendor/oh-my-design/oliveyoung/DESIGN.md",
       "sha256": "4069134f2abcb90b9214a85e8a21ef66c08e5929fbce70392ed0381c6ffabdd4",
       "revision": "15ff013933b37d1800e05c75e7680ed17e56f94b",
-      "promptLength": 298
+      "promptLength": 340
     },
     {
       "id": "admd-samsung",
@@ -2341,7 +2341,7 @@
       "path": "vendor/oh-my-design/samsung/DESIGN.md",
       "sha256": "bacd6c7f5b4c7a05ca60cede7dd76599258064f3df563cbb4fa35a92f9ac7928",
       "revision": "15ff013933b37d1800e05c75e7680ed17e56f94b",
-      "promptLength": 294
+      "promptLength": 333
     },
     {
       "id": "admd-socar",
@@ -2349,7 +2349,7 @@
       "path": "vendor/oh-my-design/socar/DESIGN.md",
       "sha256": "1af22ef57f6d829048c0d5600860b821f1f74405c37457925696e0ed0dc596e1",
       "revision": "15ff013933b37d1800e05c75e7680ed17e56f94b",
-      "promptLength": 292
+      "promptLength": 329
     },
     {
       "id": "admd-toss",
@@ -2357,7 +2357,7 @@
       "path": "vendor/oh-my-design/toss/DESIGN.md",
       "sha256": "115778c526c36b165ad5828b95637c2289c05735e5d81d8a00c4c7d195c50c32",
       "revision": "15ff013933b37d1800e05c75e7680ed17e56f94b",
-      "promptLength": 291
+      "promptLength": 327
     },
     {
       "id": "admd-yeogiotte",
@@ -2365,7 +2365,7 @@
       "path": "vendor/oh-my-design/yeogiotte/DESIGN.md",
       "sha256": "60940591b636a9551efaf81f3b95c2e18dd0e08b7bb31ede96b0054d6ec274a8",
       "revision": "15ff013933b37d1800e05c75e7680ed17e56f94b",
-      "promptLength": 291
+      "promptLength": 332
     }
   ],
   "guideLinks": [
@@ -2416,6 +2416,10 @@
     {
       "path": "src/content/guides/quickstart.md",
       "slug": "license-basics"
+    },
+    {
+      "path": "src/pages/ReferencePage.tsx",
+      "slug": "apply-demo-code"
     }
   ],
   "negativeCases": 6

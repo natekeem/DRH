@@ -5,7 +5,7 @@ import { BrandComponentSample } from './BrandComponentSample'
 import { BrandExperienceCatalog } from './BrandExperienceCatalog'
 const BrandSourceNotes=lazy(()=>import('./BrandSourceNotes'))
 const resourceLabels:Record<string,string>={'brand-guidelines':'브랜드 가이드','design-system':'디자인 시스템','developer-design-guide':'개발자 디자인 가이드',typography:'타이포그래피',components:'컴포넌트',assets:'브랜드 에셋',other:'공식 자료'}
-export function catalogStyle(theme:BrandTheme):CSSProperties{return {'--bc-canvas':theme.colors.canvas,'--bc-surface':theme.colors.surface,'--bc-ink':theme.colors.text,'--bc-muted':theme.colors.muted,'--bc-border':theme.colors.border} as CSSProperties}
+export function catalogStyle(theme:BrandTheme):CSSProperties{return {'--bc-canvas':theme.colors.canvas,'--bc-surface':theme.colors.surface,'--bc-ink':theme.colors.text,'--bc-muted':theme.colors.muted,'--bc-border':theme.colors.border,'--catalog-canvas':theme.colors.canvas,'--catalog-surface':theme.colors.surface,'--catalog-ink':theme.colors.text,'--catalog-muted':theme.colors.muted,'--catalog-rule':theme.colors.border} as CSSProperties}
 function Evidence({value}:{value:unknown}) {return sourceLines(value).length?<details className="bc-raw"><summary>원문 근거 보기</summary><Suspense fallback={<p className="bc-note">원문을 불러오는 중…</p>}><BrandSourceNotes value={value}/></Suspense></details>:null}
 function RuleCards({value,expanded,kind,slug}:{value:unknown;expanded:boolean;kind:'elevation'|'responsive';slug:string}) {
  const rows=sourceTable(value)

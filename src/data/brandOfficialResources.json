@@ -1,19 +1,4 @@
 {
-  "binance": [
-    {
-      "type": "design-system",
-      "label": "Binance Design System",
-      "url": "https://www.binance.com/en/design-system",
-      "source": "official",
-      "checkedAt": "2026-09-16",
-      "description": "Binance의 공식 디자인 시스템 및 브랜드 에셋 가이드입니다.",
-      "evidence": {
-        "url": "https://www.binance.com/en/design-system",
-        "title": "Binance Design System",
-        "method": "HEAD"
-      }
-    }
-  ],
   "apple": [
     {
       "type": "design-system",

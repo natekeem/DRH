@@ -26,7 +26,7 @@ export function buildReferenceHandoff(item:ReferenceItem,artifacts:ReferenceArti
  const p=artifacts.designMd?.provenance??artifacts.agent?.provenance
  const applyPrompt=[
   '이 프로젝트의 기존 기능, 구조와 프로젝트 규칙을 먼저 확인하세요.',
-  `${designMd?'./DESIGN.md':'첨부한 Agent Package'}를 ${item.name} 디자인 reference로 사용해 요청한 화면을 수정하세요.`,
+  `${designMd?`./DESIGN.md와 ./${item.id}-agent-package.md`:'첨부한 Agent Package'}를 먼저 읽고 ${item.name} 디자인 reference로 사용해 요청한 화면을 수정하세요.`,
   '확인되지 않은 브랜드 규칙이나 에셋을 새로 만들지 마세요. 공식 제품 화면으로 취급하지 마세요.',
   '프로젝트 규칙과 충돌하면 구현 전에 알려주세요. 원본 출처와 라이선스 고지를 보존하세요.',
   '완료 후 390px / 1440px에서 화면, 키보드 조작과 reduced motion을 확인하세요.',

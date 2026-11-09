@@ -17,9 +17,17 @@ try{
   await page.setViewportSize({width,height})
   for(const [i,slug]of canaries.entries()){
    await page.goto(base+'/#/reference/admd-'+slug)
-   const root=page.locator(`.bc-detail[data-full-spec=true][data-brand="${slug}"]`);await root.locator('[data-section=resources]').waitFor()
-   assert.deepEqual(await root.locator('.bc-experience>.bc-section').evaluateAll(els=>els.map(e=>e.dataset.section)),['overview','dna','library','applied','resources'])
+   const root=page.locator(`.bc-detail[data-full-spec=true][data-brand="${slug}"]`);await root.locator('[data-section=applied-canvas]').waitFor()
+   const sectionOrder=await root.locator('.bc-experience>.bc-section').evaluateAll(els=>els.map(e=>e.dataset.section))
+   assert.deepEqual(sectionOrder,sectionOrder.includes('resources')?['resources','applied-canvas','overview','design-dna','components']:['applied-canvas','overview','design-dna','components'])
    assert.equal(await root.locator('[data-kind=other]').count(),0)
+   assert.equal(await page.locator('.brand-agent-heading').count(),1)
+   assert.equal(await page.locator('.brand-agent-workspace .artifact-panel').count(),1)
+   assert.equal(await page.locator('.brand-agent-workspace .artifact-tabs [role=tab]').count(),4)
+   assert.equal(await page.locator('.brand-agent-workspace .artifact-actions button').count(),1)
+   assert.equal(await page.locator('.brand-agent-workspace .artifact-actions a[download]').count(),1)
+   if(width>=1200){const panels=await page.locator('.workspace-preview,.brand-agent-workspace').evaluateAll(els=>els.map(e=>e.getBoundingClientRect().height));assert(Math.abs(panels[0]-panels[1])<1,'Preview and agent panel height mismatch: '+panels.join('/'))}
+   if(slug==='apple'&&width===1440){await page.locator('.brand-agent-heading').getByRole('button',{name:'Copy start prompt'}).click();const copied=await page.evaluate(()=>navigator.clipboard.readText());assert(copied.includes('./DESIGN.md와 ./admd-apple-agent-package.md'))}
    assert.equal(await page.locator('.reference-handoff').count(),1)
    assert(await page.locator('main').evaluate(e=>e.lastElementChild.classList.contains('reference-handoff')))
    const canvas=root.locator('.ap-canvas'),applied=root.locator('.bc-applied')
@@ -27,8 +35,8 @@ try{
    assert((await applied.innerText()).includes('공식 제품 화면이 아닌 디자인 시스템 적용 예시입니다.'))
    const metrics=await root.evaluate(e=>({width:e.clientWidth,scrollWidth:e.scrollWidth,pageWidth:document.documentElement.clientWidth,pageScroll:document.documentElement.scrollWidth,overflow:[...e.querySelectorAll('.ap-canvas,.bc-sample,.bc-composition,.ex-type-hierarchy>div')].filter(x=>x.scrollWidth>x.clientWidth+2).map(x=>({class:x.className,key:x.closest('[data-component]')?.dataset.component,width:x.clientWidth,scroll:x.scrollWidth}))}))
    assert(metrics.scrollWidth<=metrics.width+1,JSON.stringify(metrics));assert(metrics.pageScroll<=metrics.pageWidth+1,JSON.stringify(metrics));assert.deepEqual(metrics.overflow,[],slug+' '+width+' '+JSON.stringify(metrics.overflow))
-   await root.locator('[data-section=dna]').screenshot({style:".site-header,.header-backdrop-rail{visibility:hidden}",path:`${out}/${slug}-dna-${width}.png`})
-   await root.locator('[data-section=library]').screenshot({style:".site-header,.header-backdrop-rail{visibility:hidden}",path:`${out}/${slug}-library-${width}.png`})
+   await root.locator('[data-section=design-dna]').screenshot({style:".site-header,.header-backdrop-rail{visibility:hidden}",path:`${out}/${slug}-dna-${width}.png`})
+   await root.locator('[data-section=components]').screenshot({style:".site-header,.header-backdrop-rail{visibility:hidden}",path:`${out}/${slug}-library-${width}.png`})
    await applied.screenshot({style:".site-header,.header-backdrop-rail{visibility:hidden}",path:`${out}/${slug}-applied-${width}.png`})
    assert.equal(await page.locator('main a[href]').evaluateAll(els=>els.filter(e=>/^https?:\/\/(?:localhost|127\.0\.0\.1)/.test(e.getAttribute('href'))).length),0)
    const action=canvas.locator('.ap-action').first()
@@ -53,9 +61,15 @@ try{
    console.log('PASS',slug,width)
   }
  }
+ await page.setViewportSize({width:1440,height:1000});await page.goto(base+'/#/reference/admd-binance')
+ const binance=page.locator('.bc-detail[data-full-spec=true][data-brand="binance"]');await binance.locator('[data-section=applied-canvas]').waitFor()
+ const themeSurfaces=async()=>binance.evaluate(e=>{const applied=e.querySelector('.ap-canvas');return {theme:e.dataset.theme,catalog:getComputedStyle(e).backgroundColor,applied:applied?getComputedStyle(applied).backgroundColor:''}})
+ assert.deepEqual(await themeSurfaces(),{theme:'dark',catalog:'rgb(11, 14, 17)',applied:'rgb(11, 14, 17)'})
+ await binance.getByRole('button',{name:'Light',exact:true}).click();assert.deepEqual(await themeSurfaces(),{theme:'light',catalog:'rgb(255, 255, 255)',applied:'rgb(255, 255, 255)'})
+ report.interactions.push({slug:'binance',themeCoverage:'catalog+applied'})
  await page.emulateMedia({reducedMotion:'reduce'})
  for(const slug of ['apple','baemin','linear.app']){
-  await page.goto(base+'/#/reference/admd-'+slug);await page.locator(`.bc-detail[data-full-spec=true][data-brand="${slug}"] [data-section=resources]`).waitFor();await context.setOffline(true)
+  await page.goto(base+'/#/reference/admd-'+slug);await page.locator(`.bc-detail[data-full-spec=true][data-brand="${slug}"] [data-section=applied-canvas]`).waitFor();await context.setOffline(true)
   const canvas=page.locator('.ap-canvas');await canvas.locator('.ap-choices button').nth(1).tap();assert.equal(await canvas.locator('.ap-choices button').nth(1).getAttribute('aria-pressed'),'true')
   const motion=await canvas.evaluate(e=>[e,...e.querySelectorAll('*')].filter(x=>getComputedStyle(x).animationName!=='none'||parseFloat(getComputedStyle(x).transitionDuration)>0).length);assert.equal(motion,0)
   await page.getByRole('button',{name:'크게 보기 ↗'}).click();await page.locator('.bc-expanded').waitFor();await page.keyboard.press('Escape');await context.setOffline(false);report.offline.push({slug,warmCache:true,reducedMotion:true})
@@ -63,5 +77,5 @@ try{
  await page.locator('.reference-handoff').getByRole('link',{name:'Implementation guide'}).click();await page.locator('.guide-markdown').waitFor();assert((await page.locator('.guide-markdown').innerText()).includes('DESIGN.md'))
  assert.deepEqual(report.errors,[]);assert.deepEqual(report.external,[])
  await writeFile(out+'/browser-qa.json',JSON.stringify(report,null,2)+'\n')
- console.log('PASS V2.4 browser:',report.cases.length,'responsive cases')
+ console.log('PASS V2.8 browser:',report.cases.length,'responsive cases')
 }catch(e){console.error(JSON.stringify(report));await page.screenshot({path:out+'/failure.png'});console.error((await page.locator('body').innerText()).slice(0,1600));throw e}finally{await browser.close()}

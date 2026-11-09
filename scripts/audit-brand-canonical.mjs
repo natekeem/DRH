@@ -12,7 +12,7 @@ function pass(msg) {
 
 async function audit() {
   console.log('\n=======================================');
-  console.log(' AUDIT: V2.5 Canonical Brand (Binance)');
+  console.log(' AUDIT: V2.8 Canonical Brand (Binance)');
   console.log('=======================================\n');
 
   // 1 & 2: Themes
@@ -66,10 +66,19 @@ async function audit() {
   // 9: Resources
   const resPath = path.resolve('src/data/brandOfficialResources.json');
   const resources = JSON.parse(fs.readFileSync(resPath, 'utf-8'));
-  if (!resources.binance || !resources.binance.length) {
-    fatal("Binance official resource entry missing");
+  const verification = [
+    ...JSON.parse(fs.readFileSync(path.resolve('artifacts/brand-v22/official-resource-checks.json'), 'utf-8')),
+    ...JSON.parse(fs.readFileSync(path.resolve('artifacts/brand-v2/official-resource-checks.json'), 'utf-8')),
+  ];
+  for (const [slug, entries] of Object.entries(resources)) {
+    for (const entry of entries) {
+      const check = verification.find(item => item.slug === slug && item.url === entry.url);
+      if (!check || check.status !== 200 || !check.heading?.length || check.title !== entry.evidence?.title) {
+        fatal(`Unreviewed official resource promoted for ${slug}`);
+      }
+    }
   }
-  pass("Official resource registry preserved and populated");
+  pass("Official resource registry contains reviewed evidence only");
 
   // 10: Verified Assets
   const assetsPath = path.resolve('src/data/brandVerifiedAssets.json');
@@ -86,7 +95,7 @@ async function audit() {
   }
   pass("Source provenance section preserved");
 
-  console.log('\n\x1b[32mAll 11 V2.5 Canonical Brand requirements satisfied.\x1b[0m\n');
+  console.log('\n\x1b[32mAll 11 V2.8 Canonical Brand requirements satisfied.\x1b[0m\n');
 }
 
 audit().catch(e => {

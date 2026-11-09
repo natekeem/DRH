@@ -309,7 +309,9 @@
             "surface": "#ffffff",
             "text": "#181d26",
             "muted": "#41454d",
-            "border": "#dddddd"
+            "border": "#dddddd",
+            "positive": "#006400",
+            "accent": "#254fad"
           },
           "evidence": [
             "normalized source palette"
@@ -585,7 +587,10 @@
             "surface": "#1e2329",
             "text": "#eaecef",
             "muted": "#707a8a",
-            "border": "#2b3139"
+            "border": "#2b3139",
+            "positive": "#0ecb81",
+            "negative": "#f6465d",
+            "accent": "#2dbdb6"
           },
           "evidence": [
             "normalized source palette"
@@ -598,8 +603,11 @@
             "canvas": "#ffffff",
             "surface": "#fafafa",
             "text": "#181a20",
-            "muted": "#181a20",
-            "border": "#eaecef"
+            "muted": "#707a8a",
+            "border": "#eaecef",
+            "positive": "#0ecb81",
+            "negative": "#f6465d",
+            "accent": "#2dbdb6"
           },
           "evidence": [
             "colors.ink",
@@ -751,7 +759,9 @@
             "surface": "#ffffff",
             "text": "#262626",
             "muted": "#6b6b6b",
-            "border": "#e6e6e6"
+            "border": "#e6e6e6",
+            "positive": "#22c55e",
+            "negative": "#dc2626"
           },
           "evidence": [
             "normalized source palette"
@@ -892,7 +902,8 @@
             "surface": "#000000",
             "text": "#ffffff",
             "muted": "#7e7e7e",
-            "border": "#3c3c3c"
+            "border": "#3c3c3c",
+            "positive": "#0fa336"
           },
           "evidence": [
             "normalized source palette"
@@ -1033,7 +1044,8 @@
             "surface": "#000000",
             "text": "#ffffff",
             "muted": "#999999",
-            "border": "#262626"
+            "border": "#262626",
+            "positive": "#5fa657"
           },
           "evidence": [
             "normalized source palette"
@@ -1181,7 +1193,9 @@
             "surface": "#ffffff",
             "text": "#111111",
             "muted": "#6b7280",
-            "border": "#e5e7eb"
+            "border": "#e5e7eb",
+            "positive": "#10b981",
+            "negative": "#ef4444"
           },
           "evidence": [
             "normalized source palette"
@@ -1322,7 +1336,9 @@
             "surface": "#faf9f5",
             "text": "#141413",
             "muted": "#6c6a64",
-            "border": "#e6dfd8"
+            "border": "#e6dfd8",
+            "positive": "#5db872",
+            "negative": "#c64545"
           },
           "evidence": [
             "normalized source palette"
@@ -1463,7 +1479,9 @@
             "surface": "#fffaf0",
             "text": "#0a0a0a",
             "muted": "#6a6a6a",
-            "border": "#e5e5e5"
+            "border": "#e5e5e5",
+            "positive": "#22c55e",
+            "negative": "#ef4444"
           },
           "evidence": [
             "normalized source palette"
@@ -1618,7 +1636,9 @@
             "surface": "#0a0a0a",
             "text": "#ffffff",
             "muted": "#888888",
-            "border": "#2a2a2a"
+            "border": "#2a2a2a",
+            "positive": "#22c55e",
+            "negative": "#ef4444"
           },
           "evidence": [
             "normalized source palette"
@@ -1747,7 +1767,8 @@
             "surface": "#ffffff",
             "text": "#212121",
             "muted": "#93939f",
-            "border": "#d9d9dd"
+            "border": "#d9d9dd",
+            "negative": "#b30000"
           },
           "evidence": [
             "normalized source palette"
@@ -2033,7 +2054,9 @@
             "surface": "#0f0f0f",
             "text": "#ffffff",
             "muted": "#888888",
-            "border": "#222222"
+            "border": "#222222",
+            "positive": "#33d17a",
+            "negative": "#ff4d4d"
           },
           "evidence": [
             "normalized source palette"
@@ -2176,7 +2199,9 @@
             "surface": "#fafaf7",
             "text": "#26251e",
             "muted": "#807d72",
-            "border": "#e6e5e0"
+            "border": "#e6e5e0",
+            "positive": "#1f8a65",
+            "negative": "#cf2d56"
           },
           "evidence": [
             "normalized source palette"
@@ -2457,7 +2482,9 @@
             "surface": "#fafafa",
             "text": "#0c0a09",
             "muted": "#777169",
-            "border": "#e7e5e4"
+            "border": "#e7e5e4",
+            "positive": "#16a34a",
+            "negative": "#dc2626"
           },
           "evidence": [
             "normalized source palette"
@@ -2600,7 +2627,9 @@
             "surface": "#fafafa",
             "text": "#171717",
             "muted": "#999999",
-            "border": "#f0f0f3"
+            "border": "#f0f0f3",
+            "positive": "#16a34a",
+            "negative": "#eb8e90"
           },
           "evidence": [
             "normalized source palette"
@@ -2736,7 +2765,8 @@
             "surface": "#303030",
             "text": "#ffffff",
             "muted": "#666666",
-            "border": "#303030"
+            "border": "#303030",
+            "positive": "#03904a"
           },
           "evidence": [
             "normalized source palette"
@@ -2749,8 +2779,9 @@
             "canvas": "#ffffff",
             "surface": "#f7f7f7",
             "text": "#181818",
-            "muted": "#181818",
-            "border": "#d2d2d2"
+            "muted": "#666666",
+            "border": "#d2d2d2",
+            "positive": "#03904a"
           },
           "evidence": [
             "colors.ink",
@@ -2885,7 +2916,8 @@
             "surface": "#ffffff",
             "text": "#000000",
             "muted": "#000000",
-            "border": "#e6e6e6"
+            "border": "#e6e6e6",
+            "positive": "#1ea64a"
           },
           "evidence": [
             "normalized source palette"
@@ -2899,7 +2931,8 @@
             "surface": "#000000",
             "text": "#ffffff",
             "muted": "#ffffff",
-            "border": "#ffffff"
+            "border": "#ffffff",
+            "positive": "#1ea64a"
           },
           "evidence": [
             "colors.primary",
@@ -3035,7 +3068,8 @@
             "surface": "#090909",
             "text": "#ffffff",
             "muted": "#999999",
-            "border": "#262626"
+            "border": "#262626",
+            "positive": "#22c55e"
           },
           "evidence": [
             "normalized source palette"
@@ -3049,7 +3083,8 @@
             "surface": "#ffffff",
             "text": "#000000",
             "muted": "#000000",
-            "border": "#000000"
+            "border": "#262626",
+            "positive": "#22c55e"
           },
           "evidence": [
             "colors.primary",
@@ -3175,7 +3210,9 @@
             "surface": "#000000",
             "text": "#ffffff",
             "muted": "#b2b6bd",
-            "border": "#3b3d45"
+            "border": "#3b3d45",
+            "positive": "#00ca8e",
+            "negative": "#e62b1e"
           },
           "evidence": [
             "normalized source palette"
@@ -3189,7 +3226,9 @@
             "surface": "#ffffff",
             "text": "#000000",
             "muted": "#000000",
-            "border": "#000000"
+            "border": "#3b3d45",
+            "positive": "#00ca8e",
+            "negative": "#e62b1e"
           },
           "evidence": [
             "colors.primary",
@@ -3344,7 +3383,8 @@
             "surface": "#ffffff",
             "text": "#1a1a1a",
             "muted": "#1a1a1a",
-            "border": "#e8e8e8"
+            "border": "#e8e8e8",
+            "negative": "#b3262b"
           },
           "evidence": [
             "normalized source palette"
@@ -3472,7 +3512,9 @@
             "surface": "#ffffff",
             "text": "#161616",
             "muted": "#525252",
-            "border": "#e0e0e0"
+            "border": "#e0e0e0",
+            "positive": "#24a148",
+            "negative": "#da1e28"
           },
           "evidence": [
             "normalized source palette"
@@ -3486,7 +3528,9 @@
             "surface": "#262626",
             "text": "#ffffff",
             "muted": "#ffffff",
-            "border": "#ffffff"
+            "border": "#ffffff",
+            "positive": "#24a148",
+            "negative": "#da1e28"
           },
           "evidence": [
             "colors.on-primary",
@@ -3653,7 +3697,9 @@
             "surface": "#f5f1ec",
             "text": "#111111",
             "muted": "#626260",
-            "border": "#d3cec6"
+            "border": "#d3cec6",
+            "positive": "#0bdf50",
+            "negative": "#c41c1c"
           },
           "evidence": [
             "normalized source palette"
@@ -3667,7 +3713,9 @@
             "surface": "#313130",
             "text": "#ffffff",
             "muted": "#ffffff",
-            "border": "#ffffff"
+            "border": "#ffffff",
+            "positive": "#0bdf50",
+            "negative": "#c41c1c"
           },
           "evidence": [
             "colors.on-primary",
@@ -3979,7 +4027,8 @@
             "surface": "#010102",
             "text": "#f7f8f8",
             "muted": "#d0d6e0",
-            "border": "#23252a"
+            "border": "#23252a",
+            "positive": "#27a644"
           },
           "evidence": [
             "normalized source palette"
@@ -3993,7 +4042,8 @@
             "surface": "#f5f6f6",
             "text": "#000000",
             "muted": "#000000",
-            "border": "#000000"
+            "border": "#23252a",
+            "positive": "#27a644"
           },
           "evidence": [
             "colors.on-primary",
@@ -4332,7 +4382,8 @@
             "surface": "#ffffff",
             "text": "#1c1e21",
             "muted": "#1c1e21",
-            "border": "#ced0d4"
+            "border": "#ced0d4",
+            "positive": "#31a24c"
           },
           "evidence": [
             "normalized source palette"
@@ -4638,7 +4689,7 @@
             "canvas": "#0a0a0a",
             "surface": "#0a0a0a",
             "text": "#ffffff",
-            "muted": "#ffffff",
+            "muted": "#a8a8aa",
             "border": "#1f1f1f"
           },
           "evidence": [
@@ -5092,7 +5143,7 @@
             "canvas": "#001e2b",
             "surface": "#001e2b",
             "text": "#ffffff",
-            "muted": "#ffffff",
+            "muted": "#a8b3bc",
             "border": "#1c2d38"
           },
           "evidence": [
@@ -5241,7 +5292,9 @@
             "surface": "#ffffff",
             "text": "#111111",
             "muted": "#111111",
-            "border": "#cacacb"
+            "border": "#cacacb",
+            "positive": "#007d48",
+            "accent": "#1151ff"
           },
           "evidence": [
             "normalized source palette"
@@ -5400,7 +5453,8 @@
             "surface": "#9fbee7",
             "text": "#21242e",
             "muted": "#21242e",
-            "border": "#5a5f8c"
+            "border": "#5a5f8c",
+            "negative": "#e60012"
           },
           "evidence": [
             "normalized source palette"
@@ -5536,7 +5590,9 @@
             "surface": "#f6f5f4",
             "text": "#1a1a1a",
             "muted": "#bbb8b1",
-            "border": "#e5e3df"
+            "border": "#e5e3df",
+            "positive": "#1aae39",
+            "negative": "#e03131"
           },
           "evidence": [
             "normalized source palette"
@@ -5665,7 +5721,8 @@
             "surface": "#ffffff",
             "text": "#000000",
             "muted": "#000000",
-            "border": "#cccccc"
+            "border": "#cccccc",
+            "negative": "#e52020"
           },
           "evidence": [
             "normalized source palette"
@@ -5930,7 +5987,10 @@
             "surface": "#fdfcfc",
             "text": "#201d1d",
             "muted": "#201d1d",
-            "border": "rgba(15,0,0,0.12)"
+            "border": "rgba(15,0,0,0.12)",
+            "positive": "#30d158",
+            "negative": "#ff3b30",
+            "accent": "#007aff"
           },
           "evidence": [
             "normalized source palette"
@@ -6059,7 +6119,8 @@
             "surface": "#ffffff",
             "text": "#000000",
             "muted": "#000000",
-            "border": "#dadad3"
+            "border": "#dadad3",
+            "negative": "#9e0a0a"
           },
           "evidence": [
             "normalized source palette"
@@ -6635,7 +6696,10 @@
             "surface": "#ffffff",
             "text": "#000000",
             "muted": "#000000",
-            "border": "#f2f2f2"
+            "border": "#f2f2f2",
+            "positive": "#8dc572",
+            "negative": "#be6464",
+            "accent": "#337ab7"
           },
           "evidence": [
             "normalized source palette"
@@ -7664,7 +7728,9 @@
             "surface": "#ffffff",
             "text": "#1d1d1d",
             "muted": "#1d1d1d",
-            "border": "#e6e6e6"
+            "border": "#e6e6e6",
+            "positive": "#007a5a",
+            "negative": "#cc4117"
           },
           "evidence": [
             "normalized source palette"
@@ -8631,7 +8697,8 @@
             "surface": "#2d2d2d",
             "text": "#ffffff",
             "muted": "#ffffff",
-            "border": "#309875"
+            "border": "#309875",
+            "negative": "#5200ff"
           },
           "evidence": [
             "normalized source palette"
@@ -9138,7 +9205,9 @@
             "surface": "#fafafa",
             "text": "#171717",
             "muted": "#171717",
-            "border": "#ebebeb"
+            "border": "#ebebeb",
+            "positive": "#0070f3",
+            "negative": "#ee0000"
           },
           "evidence": [
             "normalized source palette"
@@ -10076,7 +10145,9 @@
             "surface": "#e8ebe6",
             "text": "#0e0f0c",
             "muted": "#0e0f0c",
-            "border": "transparent"
+            "border": "transparent",
+            "positive": "#2ead4b",
+            "negative": "#d03238"
           },
           "evidence": [
             "normalized source palette"
@@ -10460,7 +10531,8 @@
             "surface": "#ffffff",
             "text": "#111111",
             "muted": "#5d5d5d",
-            "border": "#dddddd"
+            "border": "#dddddd",
+            "accent": "#ff4800"
           },
           "evidence": [
             "normalized source palette"
@@ -10620,7 +10692,8 @@
             "surface": "#ffffff",
             "text": "#111111",
             "muted": "#9fa4b0",
-            "border": "transparent"
+            "border": "transparent",
+            "accent": "#555c68"
           },
           "evidence": [
             "normalized source palette"
@@ -10959,7 +11032,8 @@
             "surface": "#f7f7f7",
             "text": "#444444",
             "muted": "#444444",
-            "border": "#e6e6e6"
+            "border": "#e6e6e6",
+            "accent": "#888888"
           },
           "evidence": [
             "normalized source palette"
@@ -11180,7 +11254,10 @@
             "surface": "#f7f8fa",
             "text": "#111111",
             "muted": "#868b94",
-            "border": "#eaebee"
+            "border": "#eaebee",
+            "positive": "#1aa174",
+            "negative": "#fa2314",
+            "accent": "#009ceb"
           },
           "evidence": [
             "normalized source palette"
@@ -11733,7 +11810,8 @@
             "surface": "#f2f3f8",
             "text": "#111111",
             "muted": "#b4bbcb",
-            "border": "#e5e8ef"
+            "border": "#e5e8ef",
+            "accent": "#697383"
           },
           "evidence": [
             "normalized source palette"
@@ -11840,7 +11918,8 @@
             "surface": "#f2f4f6",
             "text": "#4e5968",
             "muted": "#8b95a1",
-            "border": "#e5e8eb"
+            "border": "#e5e8eb",
+            "negative": "#e42939"
           },
           "evidence": [
             "normalized source palette"

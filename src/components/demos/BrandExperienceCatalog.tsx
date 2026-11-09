@@ -7,7 +7,15 @@ import { BrandAppliedPreview } from './BrandAppliedPreview'
 
 function SectionNav({catalog}:{catalog:BrandCatalog}) {
  const hasResources=catalog.officialResources.length>0
- return <nav className="ex-section-nav" aria-label="Section navigation">{canonicalSections.filter(s=>s.id!=='resources'||hasResources).map(s=><a key={s.id} href={'#ex-'+s.id}>{s.label}</a>)}</nav>
+ const jump=(targetId:string,current:HTMLElement)=>{
+  const root=current.closest('.bc-root') as HTMLElement|null
+  const target=root?.querySelector<HTMLElement>('#ex-'+targetId)
+  if(!root||!target)return
+  const headerHeight=root.querySelector<HTMLElement>(':scope > .bc-header')?.getBoundingClientRect().height||0
+  const offset=target.getBoundingClientRect().top-root.getBoundingClientRect().top+root.scrollTop-headerHeight-12
+  root.scrollTo({top:Math.max(0,offset),behavior:'auto'})
+ }
+ return <nav className="ex-section-nav" aria-label="Section navigation">{canonicalSections.filter(s=>s.id!=='resources'||hasResources).map(s=><button type="button" key={s.id} onClick={e=>jump(s.id,e.currentTarget)}>{s.label}</button>)}</nav>
 }
 
 function OverviewSection({catalog,theme}:{catalog:BrandCatalog;theme:BrandTheme}) {
@@ -82,8 +90,10 @@ function ComponentLibrarySection({catalog,theme}:{catalog:BrandCatalog;theme:Bra
 }
 
 function AppliedCanvasSection({catalog,theme}:{catalog:BrandCatalog;theme:BrandTheme}) {
- return <section id="ex-applied-canvas" className="bc-section" data-section="applied-canvas">
-  <h4>Applied Canvas</h4>
+ return <section id="ex-applied-canvas" className="bc-section ex-applied-primary" data-section="applied-canvas">
+  <span className="ex-preview-kicker">01 / BRAND PREVIEW</span>
+  <h4>규칙이 화면이 되는 순간</h4>
+  <p className="bc-note">색, 글꼴, 컴포넌트 속성은 원본 DESIGN.md에서 가져오고 배치와 예시 내용은 DRH가 구성했습니다. 직접 눌러 보며 화면의 성격을 확인하세요.</p>
   <BrandAppliedPreview catalog={catalog} theme={theme}/>
  </section>
 }
@@ -99,12 +109,12 @@ function ResourcesSection({catalog}:{catalog:BrandCatalog}) {
 
 export function BrandExperienceCatalog({catalog,theme}:{catalog:BrandCatalog;theme:BrandTheme}) {
  return <div className="bc-experience" data-catalog-mode="experience">
-  <p className="bc-note">핵심 보기 · 브랜드를 비교하는 대표 스타일<br/>DESIGN.md 기반 DRH 예시입니다. 공식 제품 화면이 아닙니다.</p>
+  <p className="bc-note bc-experience-intro">DESIGN.md → source-driven preview<br/>공식 제품 화면이 아닌, 검증된 규칙을 적용한 DRH 예시입니다.</p>
   <SectionNav catalog={catalog}/>
+  <ResourcesSection catalog={catalog}/>
+  <AppliedCanvasSection catalog={catalog} theme={theme}/>
   <OverviewSection catalog={catalog} theme={theme}/>
   <DesignDnaSection catalog={catalog} theme={theme}/>
   <ComponentLibrarySection catalog={catalog} theme={theme}/>
-  <AppliedCanvasSection catalog={catalog} theme={theme}/>
-  <ResourcesSection catalog={catalog}/>
  </div>
 }
