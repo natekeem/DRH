@@ -2,7 +2,7 @@
 
 Ready: 효과별 로직·DOM·동일한 실행 HTML·출처·검수 조건 제공. Partial: 구조는 제공하지만 완성된 재현 코드/효과별 계약이 부족함. DESIGN.md는 문서이며 실행 코드로 집계하지 않는다.
 
-{"Ready":91,"Partial":132}
+{"Ready":102,"Partial":121}
 
 | Reference | Prompt | Logic | Starter Code | Source | License | Ready |
 |---|---|---|---|---|---|---|
@@ -10,20 +10,20 @@ Ready: 효과별 로직·DOM·동일한 실행 HTML·출처·검수 조건 제�
 | Morphing Dialog (morphing-dialog) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
 | Dock Magnification (dock-magnification) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
 | Split Flap (split-flap) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
-| Minimalism (minimalism) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
-| Neo-Brutalism (neo-brutalism) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
+| Minimalism (minimalism) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Neo-Brutalism (neo-brutalism) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
 | Glassmorphism (glassmorphism) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
 | Liquid Glass (liquid-glass) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
-| Bento Grid (bento) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
-| Editorial (editorial) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
-| Swiss / International (swiss) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
-| Y2K (y2k) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
-| Frutiger Aero (frutiger-aero) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
-| Terminal Aesthetic (terminal) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
+| Bento Grid (bento) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Editorial (editorial) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Swiss / International (swiss) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Y2K (y2k) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Frutiger Aero (frutiger-aero) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Terminal Aesthetic (terminal) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
 | Claymorphism (claymorphism) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
-| Cyberpunk (cyberpunk) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
-| Luxury (luxury) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
-| Dark UI (dark-ui) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
+| Cyberpunk (cyberpunk) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Luxury (luxury) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Dark UI (dark-ui) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
 | Shader Gradient (shader-gradient) | 구체적 | 효과별 | 실행 TSX | https://shadergradient.co/ | https://github.com/ruucm/shadergradient/blob/main/packages/shadergradient/package.json | Ready |
 | Aurora Background (aurora-background) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
 | Animated Gradient Mesh (gradient-mesh) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |

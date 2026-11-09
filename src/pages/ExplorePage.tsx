@@ -53,6 +53,7 @@ export function ExplorePage(){
   },[params])
 
   const subcategories=useMemo(()=>Array.from(new Set(references.filter(r=>category==='All'||r.category===category).map(r=>r.subcategory))).sort(),[category])
+  const categoryCounts=useMemo(()=>Object.fromEntries(categories.map(c=>[c,references.filter(r=>r.category===c).length])) as Record<Category,number>,[])
 
   const filteredReferences=useMemo(()=>references.filter(r=>{
     if(category!=='All'&&r.category!==category)return false
@@ -71,9 +72,6 @@ export function ExplorePage(){
     }
     return true
   }), [query])
-  const brandReferences=useMemo(()=>filteredReferences.filter(isVendorBrand),[filteredReferences])
-  const designSystemPatterns=useMemo(()=>filteredReferences.filter(r=>!isVendorBrand(r)),[filteredReferences])
-  const groupedBrandBrowse=category==='DESIGN.md'&&sub==='All'&&!query.trim()&&brandReferences.length>0
   const brandOnly=filteredReferences.length>0&&filteredReferences.every(isVendorBrand)
 
   const choose=(cat:Category|'All')=>{setCategory(cat);const next=new URLSearchParams(params);next.delete('sub'); if(cat==='All')next.delete('category');else next.set('category',cat);setParams(next,{replace:true})}
@@ -130,8 +128,8 @@ export function ExplorePage(){
 
       {currentView === 'references' && (
         <div className="category-tabs">
-          <button className={category==='All'?'active':''} onClick={()=>choose('All')}>전체</button>
-          {categories.map(c=><button key={c} className={category===c?'active':''} onClick={()=>choose(c)}>{c}<small>{categoryKo[c]}</small></button>)}
+          <button className={category==='All'?'active':''} onClick={()=>choose('All')}><span>전체</span><em>({references.length})</em></button>
+          {categories.map(c=><button key={c} className={category===c?'active':''} onClick={()=>choose(c)}><span>{c}<small>{categoryKo[c]}</small></span><em>({categoryCounts[c]})</em></button>)}
         </div>
       )}
 
@@ -163,21 +161,7 @@ export function ExplorePage(){
     {currentView === 'references' ? (
       <section className="listing-results">
         <div className="result-count"><b>{filteredReferences.length}</b>개 <span>{category==='All'?'전체 카테고리':`${category} · ${categoryKo[category]}`}</span></div>
-        {filteredReferences.length ? groupedBrandBrowse ? (
-          <div className="brand-browse-groups">
-            <section className="brand-listing-group" aria-labelledby="brand-systems-heading">
-              <header className="brand-listing-intro">
-                <div><span className="eyebrow">BRAND DESIGN SYSTEMS / {brandReferences.length}</span><h2 id="brand-systems-heading">화면을 보고,<br/>규칙까지 가져가세요.</h2></div>
-                <p>각 카드는 같은 DESIGN.md에서 만든 미리보기입니다. 상세에서 적용 화면과 근거를 확인하고, 원본 문서와 Agent 구현 계약을 바로 확인·복사·저장할 수 있습니다.</p>
-              </header>
-              <div className="reference-grid brand-reference-grid">{brandReferences.map(r=><ReferenceCard key={r.id} item={r}/>)}</div>
-            </section>
-            {designSystemPatterns.length>0&&<section className="design-system-patterns" aria-labelledby="system-patterns-heading">
-              <header><span className="eyebrow">FOUNDATIONS / {designSystemPatterns.length}</span><h2 id="system-patterns-heading">범용 Design System 패턴</h2><p>특정 브랜드가 아닌, 제품 유형별 토큰과 구성 규칙입니다.</p></header>
-              <div className="reference-grid">{designSystemPatterns.map(r=><ReferenceCard key={r.id} item={r}/>)}</div>
-            </section>}
-          </div>
-        ) : (
+        {filteredReferences.length ? (
           <div className={`reference-grid ${brandOnly?'brand-reference-grid':''}`}>{filteredReferences.map(r=><ReferenceCard key={r.id} item={r}/>)}</div>
         ) : (
           <div className="empty-state"><h2>조건에 맞는 Reference가 없습니다.</h2><p>검색어를 넓히거나 Filter를 하나 해제해 보세요.</p></div>

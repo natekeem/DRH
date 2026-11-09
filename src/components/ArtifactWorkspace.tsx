@@ -11,7 +11,8 @@ export function ArtifactWorkspace({artifacts,item}:{artifacts:ArtifactView[];ite
   const [mode,setMode]=useState<'compact'|'extended'>('extended')
   const current=artifacts.find(a=>a.id===tab)??artifacts[0]
   const vendorBrand=Boolean(item?.demo.startsWith('vendor-design-md:'))
-  const handoff=item&&vendorBrand?buildReferenceHandoff(item):null
+  const handoff=item?buildReferenceHandoff(item):null
+  const sourceStamp=handoff?.source.revision?.slice(0,12)||(handoff?.source.name==='Design Reference Hub'?'Hub Original':handoff?.source.name||'Source noted')
   const text=mode==='compact'&&current.compact?current.compact:current.text
   const label=current.id==='agent'?'Agent Package 전체 복사':`Copy ${current.id==='tokens'?'JSON':current.id==='react'?'TSX':current.label}`
   const onKey=(e:KeyboardEvent<HTMLButtonElement>,index:number)=>{
@@ -24,11 +25,11 @@ export function ArtifactWorkspace({artifacts,item}:{artifacts:ArtifactView[];ite
     e.preventDefault();setTab(artifacts[next].id)
     document.getElementById(`artifact-tab-${artifacts[next].id}`)?.focus()
   }
-  return <section className={`artifact-workspace-wrapper${vendorBrand?' brand-agent-workspace':''}`} aria-label="Artifact workspace">
+  return <section className={`artifact-workspace-wrapper agent-workspace${vendorBrand?' brand-agent-workspace':''}`} aria-label="Artifact workspace">
     {handoff&&<div className="brand-agent-heading">
-      <div className="brand-agent-heading-copy"><span className="eyebrow">TAKE IT TO YOUR AGENT</span><h2>{item?.name}의 규칙을 Agent로 가져가세요.</h2><p>아래에서 원문과 구현 계약을 먼저 확인한 뒤, 필요한 파일을 그대로 복사하거나 저장할 수 있습니다.</p></div>
+      <div className="brand-agent-heading-copy"><span className="eyebrow">TAKE IT TO YOUR AGENT</span><h2>{vendorBrand?`${item?.name}의 규칙을 Agent로 가져가세요.`:`${item?.name}을 프로젝트에 바로 적용하세요.`}</h2><p>{vendorBrand?'원문과 구현 계약을 함께 확인한 뒤 필요한 파일을 그대로 복사하거나 저장하세요.':'미리보기와 같은 동작을 재현하는 구현 계약입니다. 코드를 확인하고 복사하거나 파일로 저장하세요.'}</p></div>
       <div className="brand-agent-heading-actions"><CopyButton text={handoff.agent.applyPrompt} label="Copy start prompt"/><Link to="/guides/apply-demo-code">사용 가이드 ↗</Link></div>
-      <div className="brand-agent-proof"><span>Source-bound</span><span>Copy + Download</span><span>Responsive contract</span><span>{handoff.source.revision?.slice(0,12)||'Pinned snapshot'}</span></div>
+      <div className="brand-agent-proof"><span>{vendorBrand?'Source-bound':'Preview parity'}</span><span>Copy + Download</span><span>Responsive + reduced motion</span><span>{sourceStamp}</span></div>
     </div>}
     <div className="artifact-workspace">
       <div className="artifact-tabs" role="tablist" aria-label="Artifacts">{artifacts.map((a,i)=><button key={a.id} id={`artifact-tab-${a.id}`} role="tab" aria-selected={current.id===a.id} aria-controls="artifact-panel" tabIndex={current.id===a.id?0:-1} onKeyDown={e=>onKey(e,i)} onClick={()=>setTab(a.id)}>{a.label}</button>)}</div>

@@ -4067,6 +4067,8 @@ button {
   align-items: center;
   gap: 5px;
 }
+.category-tabs button>span{display:inline-flex;align-items:center;gap:5px}
+.category-tabs button em{font-size:9px;font-style:normal;font-variant-numeric:tabular-nums;opacity:.46}
 .category-tabs button small {
   font-size: 9px;
   opacity: 0.45;
@@ -4074,6 +4076,7 @@ button {
 .category-tabs button.active small {
   opacity: 0.65;
 }
+.category-tabs button.active em{opacity:.72}
 .listing-hero p {
   max-width: 700px;
 }
@@ -5641,6 +5644,7 @@ pre, code, .overflow-anywhere {
   margin-bottom: 16px;
 }
 .workspace-source {
+  min-width: 0;
   margin-bottom: 64px;
   padding: 32px;
   background: var(--surface);
@@ -5656,6 +5660,7 @@ pre, code, .overflow-anywhere {
   color: #656568;
   font-size: 14px;
   margin-bottom: 16px;
+  overflow-wrap: anywhere;
 }
 .workspace-source-links {
   display: flex;
@@ -5663,6 +5668,7 @@ pre, code, .overflow-anywhere {
   flex-wrap: wrap;
 }
 .workspace-source-links a {
+  min-width: 0;
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -5670,6 +5676,7 @@ pre, code, .overflow-anywhere {
   color: #111;
   text-decoration: underline;
   text-underline-offset: 4px;
+  overflow-wrap: anywhere;
 }
 
 
@@ -5792,8 +5799,8 @@ pre, code, .overflow-anywhere {
 }
 
 
-/* Interactive specimens keep maturity labels clear of their controls. */
-.live-chip[hidden]{display:none}.preview-status{display:inline-block;font-size:9px;font-weight:700;letter-spacing:.04em;color:#28695a;background:#e5f4eb;border-radius:99px;padding:4px 8px;margin-top:8px}
+/* Every browse card uses one predictable maturity position. */
+.reference-card .live-chip{top:12px;right:12px;min-height:24px;pointer-events:none;transform:none;transform-origin:top right}
 
 .sources-filters { display: flex; gap: 8px; flex-wrap: wrap; }
 .sources-filters select { height: 42px; padding: 0 32px 0 14px; border: 1px solid var(--line); border-radius: 9px; background: #fff; font-size: 11px; font-weight: 600; appearance: none; background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'); background-repeat: no-repeat; background-position: right 12px top 50%; background-size: 8px auto; outline: 0; }
@@ -5848,7 +5855,6 @@ pre, code, .overflow-anywhere {
 .design-system-reference-card{display:flex;min-width:0;flex-direction:column}
 .design-system-reference-card .card-demo{--reference-preview-ratio:4 / 3;border-color:#1112;border-radius:15px;box-shadow:0 1px 0 #fff inset,0 8px 24px #22182b0a}
 .brand-card-action{display:inline-flex;flex:0 0 auto;align-items:center;gap:3px;font-size:10px;font-weight:750;white-space:nowrap}
-.brand-reference-card .live-chip{top:12px;right:12px;transform:scale(.88);transform-origin:top right}
 .design-system-patterns{padding-top:64px;border-top:1px solid var(--line)}
 .design-system-patterns>header{display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,.7fr);gap:12px 48px;align-items:end;margin-bottom:32px}
 .design-system-patterns>header .eyebrow{grid-column:1/-1}
@@ -5865,8 +5871,8 @@ pre, code, .overflow-anywhere {
 .brand-agent-heading-actions>a{border-color:#d0c9d4;background:#fff9;color:#554f59}
 .brand-agent-proof{display:flex;grid-column:1/-1;align-items:center;flex-wrap:wrap;gap:7px}
 .brand-agent-proof span{padding:5px 8px;border:1px solid #cfc9d3;border-radius:999px;background:#fff9;font:8px/1.2 ui-monospace,SFMono-Regular,Consolas,monospace;color:#5f5963}
-.brand-agent-workspace .artifact-workspace{border-radius:0 0 16px 16px}
-@media(min-width:1200px){.brand-experience-page .reference-workspace{grid-template-rows:var(--workspace-panel-height)}.brand-experience-page .workspace-preview{display:grid;grid-template-rows:auto minmax(0,1fr);min-height:0}.brand-experience-page .workspace-demo-shell{height:auto;min-height:0}.brand-agent-workspace{height:100%;min-height:0;overflow:hidden}.brand-agent-workspace .artifact-workspace{height:auto;min-height:0;flex:1}.brand-agent-workspace .artifact-panel{display:flex;min-height:0;flex:1;flex-direction:column}.brand-agent-workspace .artifact-panel pre{min-height:0;max-height:none;flex:1}}
+.agent-workspace .artifact-workspace{border-radius:0 0 16px 16px}
+@media(min-width:1200px){.brand-experience-page .reference-workspace{grid-template-rows:var(--workspace-panel-height)}.brand-experience-page .workspace-preview{display:grid;grid-template-rows:auto minmax(0,1fr);min-height:0}.brand-experience-page .workspace-demo-shell{height:auto;min-height:0}.agent-workspace{height:var(--workspace-panel-height);min-height:0;overflow:hidden}.agent-workspace .artifact-workspace{height:auto;min-height:0;flex:1}.agent-workspace .artifact-panel{display:flex;min-height:0;flex:1;flex-direction:column}.agent-workspace .artifact-panel pre{min-height:0;max-height:none;flex:1}}
 @media(max-width:1200px){.listing-results .reference-grid,.collection-strip{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:900px){.brand-listing-intro{grid-template-columns:minmax(0,1fr);gap:24px}.listing-results .reference-grid,.collection-strip{grid-template-columns:repeat(2,minmax(0,1fr))}.design-system-patterns>header{grid-template-columns:minmax(0,1fr)}.design-system-patterns>header .eyebrow{grid-column:auto}.brand-agent-heading{grid-template-columns:minmax(0,1fr)}.brand-agent-heading-actions{justify-content:flex-start}.brand-agent-proof{grid-column:auto}}
 @media(max-width:600px){.brand-browse-groups{gap:72px}.brand-listing-intro{padding:4px 0 30px}.brand-listing-intro h2{font-size:40px}.brand-listing-intro>p{font-size:13px}.listing-results .reference-grid,.collection-strip{display:grid;grid-template-columns:minmax(0,1fr);row-gap:42px;overflow:visible}.collection-strip>.reference-card{min-width:0}.listing-page .reference-card .reference-card-link{min-height:168px}.listing-page .reference-card .card-meta h3{min-height:auto}.listing-page .reference-card p{min-height:calc(1.55em * 2);-webkit-line-clamp:2}.design-system-reference-card .card-demo{--reference-preview-ratio:16 / 11}.brand-agent-heading{padding:20px 16px 16px}.brand-agent-heading h2{font-size:24px}.brand-agent-heading p{font-size:10px}.brand-agent-heading-actions{display:grid;grid-template-columns:minmax(0,1fr) auto}.brand-agent-heading-actions .copy-button-wrap button{width:100%;min-height:44px}.brand-agent-proof span{font-size:7px}.collection-section{padding:58px 0}.collection-section h2{font-size:38px}}

@@ -2416,10 +2416,6 @@
     {
       "path": "src/content/guides/quickstart.md",
       "slug": "license-basics"
-    },
-    {
-      "path": "src/pages/ReferencePage.tsx",
-      "slug": "apply-demo-code"
     }
   ],
   "negativeCases": 6
