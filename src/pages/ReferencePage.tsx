@@ -7,9 +7,10 @@ import { DesignSystemPreview } from '../components/demos/DesignSystemPreview'
 import { ArtifactWorkspace } from '../components/ArtifactWorkspace'
 import { ReferenceProjectHandoff } from '../components/ReferenceProjectHandoff'
 import { ReferenceCard } from '../components/ReferenceCard'
-import { categoryKo, descriptionKo } from '../data/ko'
-import { references, vendorSlugFromId } from '../data/references'
+import { aboutBodyKo, categoryKo, descriptionKo } from '../data/ko'
+import { collections, references, vendorSlugFromId } from '../data/references'
 import { demoMaturity, provenanceFor } from '../lib/referencePackage'
+import { relatedReferencesFor } from '../lib/relatedReferences'
 import { artifactViews } from '../lib/artifacts'
 import { fetchVendorDesignMd } from '../lib/vendorDesignMd'
 import type { ArtifactView } from '../lib/artifacts'
@@ -44,21 +45,21 @@ export function ReferencePage(){
   },[baseArtifacts,vendorSlug,vendorRawMd])
 
   if(!item)return <main className="not-found"><h1>Reference를 찾을 수 없습니다.</h1><Link to="/explore">탐색으로 돌아가기</Link></main>
-  const related=references.filter(r=>r.id!==item.id&&(r.category===item.category||r.tags.some(t=>item.tags.includes(t)))).slice(0,4)
+  const related=relatedReferencesFor(item,references,collections)
   const maturity=demoMaturity(item)
   const isVendor=!!vendorSlug
   return <main className={"reference-workspace-page"+(isVendor?" brand-experience-page":"")}>
     <header className="workspace-title"><div>{(location.state as {fromExplore?:boolean}|null)?.fromExplore?<button className="detail-back" onClick={()=>navigate(-1)}><ArrowLeft size={16}/> 탐색</button>:<Link to="/explore"><ArrowLeft size={16}/> 탐색</Link>}<span className="workspace-divider"/><h1>{item.name}</h1></div><div className="detail-badges"><span className={`demo-status-pill maturity-${maturity.kind}`}>● {maturity.label}</span><span className={`license-pill ${item.license.status}`}>{item.license.status==='copy-ok'?'● Copy OK':item.license.status==='reference'?'● Reference only':'● Restricted'}</span>{isVendor&&<span className="license-pill copy-ok">● Source document · MIT</span>}</div></header>
     <div className="reference-workspace">
       <div className="reference-workspace-meta"><div><span>{item.category} · {categoryKo[item.category]} / {item.subcategory}</span><span>01 / SEE</span></div><div><span>AGENT PACKAGE</span><span>02 / USE</span></div></div>
-      <section className="workspace-preview" aria-label="Live preview"><div className="workspace-demo-shell"><div className="demo-toolbar"><span><i/>{isVendor?'BRAND DESIGN PREVIEW':item.designSystem?'DESIGN SYSTEM PREVIEW':maturity.kind==='external'?'SOURCE REFERENCE':'LIVE PREVIEW'}</span>{!isVendor&&maturity.kind!=='external'&&<button onClick={()=>setReplay(v=>v+1)}><RotateCcw size={13}/> Replay</button>}</div><div className={`detail-demo workspace-demo ${item.category==='Pages'||item.category==='Background'?'wide-preview':''}`} key={item.id+replay}>{item.designSystem?<DesignSystemPreview tokens={item.designSystem}/>:maturity.kind==='external'?<div className="source-only-preview"><h2>원본에서 확인하는 Reference</h2><p>이 항목은 코드와 이미지를 재배포하지 않습니다.</p><a href={item.source.url} target="_blank" rel="noreferrer">Source 열기 ↗</a></div>:<DemoRenderer kind={item.demo} detail preset={preset}/>}</div></div></section>
+      <section className="workspace-preview" aria-label="Live preview"><div className="workspace-demo-shell"><div className="demo-toolbar"><span><i/>{isVendor?'BRAND DESIGN PREVIEW':item.designSystem?'DESIGN SYSTEM PREVIEW':maturity.kind==='external'?'SOURCE REFERENCE':'LIVE PREVIEW'}</span>{!isVendor&&maturity.kind!=='external'&&<button onClick={()=>setReplay(v=>v+1)}><RotateCcw size={13}/> Replay</button>}</div><div className={`detail-demo workspace-demo ${['Pages','Sections','Background'].includes(item.category)?'wide-preview':''}${item.category==='Sections'?' section-preview':''}`} key={item.id+replay}>{item.designSystem?<DesignSystemPreview tokens={item.designSystem}/>:maturity.kind==='external'?<div className="source-only-preview"><h2>원본에서 확인하는 Reference</h2><p>이 항목은 코드와 이미지를 재배포하지 않습니다.</p><a href={item.source.url} target="_blank" rel="noreferrer">Source 열기 ↗</a></div>:<DemoRenderer kind={item.demo} detail preset={preset}/>}</div></div></section>
       <ArtifactWorkspace key={item.id+(vendorRawMd?'loaded':'pending')} artifacts={artifacts} item={item}/>
     </div>
     <section className="workspace-context">
       <div className="context-about">
         <span className="eyebrow">ABOUT THIS REFERENCE</span>
         <h2>{descriptionKo(item)}</h2>
-        <p>{isVendor?'검증된 upstream 문서(MIT)에서 가져온 토큰 기반 오프라인 미리보기입니다.':item.designSystem?'문서에 정의된 토큰의 시각화입니다.':maturity.description}</p>
+        <p>{aboutBodyKo(item)}</p>
         {item.demo==='shader-gradient'&&<p>공식 프리셋 · {preset.title}</p>}
         {isVendor&&vendorMdLoading&&<p style={{opacity:0.5,fontSize:'0.8em'}}>DESIGN.md 로딩 중…</p>}
         <div className="tag-list">{item.tags.filter(t=>!['vendor','awesome-design-md'].includes(t)).slice(0,6).map(t=><span key={t}>#{t}</span>)}</div>

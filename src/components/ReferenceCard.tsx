@@ -12,8 +12,9 @@ export function ReferenceCard({ item, large=false }:{item:ReferenceItem;large?:b
   const location=useLocation()
   const maturity=demoMaturity(item)
   const designSystemCard=item.category==='DESIGN.md'
+  const tokenDesignSystemCard=Boolean(item.designSystem)
   const vendorBrand=item.demo.startsWith('vendor-design-md:')
-  return <article className={`reference-card ${large?'large':''}${designSystemCard?' design-system-reference-card':''}${vendorBrand?' brand-reference-card':''}`}>
+  return <article className={`reference-card ${large?'large':''}${designSystemCard?' design-system-reference-card':''}${tokenDesignSystemCard?' token-design-system-card':''}${vendorBrand?' brand-reference-card':''}`}>
     <div className="card-demo">{item.designSystem?<DesignSystemPreview tokens={item.designSystem} compact/>:<DemoRenderer kind={item.demo} detail={large}/>}<div className={`live-chip maturity-${maturity.kind}`}><i/> {maturity.label}</div></div>
     <Link className="reference-card-link" state={{fromExplore:location.pathname==='/explore'}} to={`/reference/${item.id}`} aria-label={`${item.name} 상세 보기`}>
       <div className="card-meta">

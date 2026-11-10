@@ -25,6 +25,10 @@ export const categoryDescriptionKo: Record<Category, string> = {
 }
 
 const ko: Record<string, string> = {
+  'progressive-blur':'가장자리로 갈수록 Blur 강도가 자연스럽게 높아져 콘텐츠와 배경의 경계를 부드럽게 정리하는 효과입니다.',
+  'morphing-dialog':'Trigger가 끊기지 않고 Dialog 표면으로 확장되어 시작점과 결과 화면의 관계를 보여주는 전환입니다.',
+  'dock-magnification':'Pointer와 가까운 항목일수록 부드럽게 커져 현재 탐색 위치와 선택 대상을 강조하는 Navigation 모션입니다.',
+  'split-flap':'위아래 Panel이 뒤집히며 문자가 바뀌어 아날로그 도착 안내판 같은 리듬을 만드는 Text 효과입니다.',
   minimalism:'여백과 위계를 중심으로 색과 장식을 절제한 가장 조용한 UI 스타일입니다.',
   'neo-brutalism':'굵은 선, 단순한 도형, 강한 색과 의도적으로 투박한 구성이 특징입니다.',
   glassmorphism:'반투명 표면, 배경 블러와 얇은 하이라이트로 깊이를 만드는 스타일입니다.',
@@ -145,6 +149,42 @@ const ko: Record<string, string> = {
   'bento-saas-system':'Bento Feature Card와 짧은 Proof를 중심으로 구성한 Modular SaaS 시스템입니다.',
 }
 
-export function descriptionKo(item: Pick<ReferenceItem, 'id' | 'description'>) {
-  return ko[item.id] ?? item.description
+type LocalizableReference = Pick<ReferenceItem, 'id' | 'name' | 'description' | 'category' | 'subcategory' | 'demo'>
+
+const fallbackKo: Record<Category, (item: LocalizableReference) => string> = {
+  'UI Patterns': item => `${item.name}에서 필요한 상태, 입력과 피드백을 실제 화면 흐름으로 확인할 수 있는 UI 패턴입니다.`,
+  Styles: item => `${item.name}의 색상, 타이포그래피와 표면 규칙을 하나의 화면 언어로 정리한 스타일 레퍼런스입니다.`,
+  Pages: item => `${item.name}에 필요한 정보 위계, 탐색과 주요 행동을 완성된 페이지 흐름으로 구성한 레퍼런스입니다.`,
+  Sections: item => `${item.name}의 핵심 메시지와 행동을 독립적으로 적용할 수 있게 구성한 섹션 레퍼런스입니다.`,
+  Background: item => `${item.name}의 빛, 색상과 움직임으로 콘텐츠 뒤에 깊이와 분위기를 만드는 배경 레퍼런스입니다.`,
+  Motion: item => `${item.name}의 타이밍, 이동과 상태 변화를 직접 재생하며 확인할 수 있는 모션 레퍼런스입니다.`,
+  Text: item => `${item.name}의 등장 순서와 리듬으로 문장의 의미와 시선을 강조하는 타이포그래피 레퍼런스입니다.`,
+  Effects: item => `${item.name}의 재질, 빛과 반응을 한 요소에 적용해 시각적 초점을 만드는 효과 레퍼런스입니다.`,
+  'DESIGN.md': item => `${item.name}의 색상, 타이포그래피, 간격과 컴포넌트 규칙을 실제 화면에 적용한 디자인 가이드입니다.`,
+}
+
+export function descriptionKo(item: LocalizableReference) {
+  return ko[item.id] ?? fallbackKo[item.category](item)
+}
+
+export function aboutBodyKo(item: LocalizableReference & Pick<ReferenceItem, 'designSystem'>) {
+  if (item.demo.startsWith('vendor-design-md:')) {
+    return '공개된 DESIGN.md의 핵심 규칙을 토큰으로 재구성했습니다. 미리보기와 원문을 함께 비교하고 Agent 구현 계약으로 바로 이어갈 수 있습니다.'
+  }
+  if (item.designSystem) {
+    return '색상, 글꼴, 간격, 모서리와 동작 시간을 같은 토큰으로 연결했습니다. 미리보기와 내려받는 Artifact가 동일한 규칙을 사용합니다.'
+  }
+
+  const body: Record<Category, string> = {
+    'UI Patterns': '상태 변화, Keyboard 조작과 입력 피드백까지 포함한 실제 동작을 미리보기에서 확인할 수 있습니다.',
+    Styles: '대표 Surface와 Typography의 관계를 먼저 확인하고, 같은 시각 언어를 화면 전체로 확장할 수 있습니다.',
+    Pages: 'Desktop과 좁은 화면에서 정보 위계와 주요 Interaction이 어떻게 이어지는지 함께 확인할 수 있습니다.',
+    Sections: '상세 미리보기는 별도 카드 없이 전체 Stage를 사용하며, 필요한 구간만 독립적으로 가져가 적용할 수 있습니다.',
+    Background: '콘텐츠 가독성을 유지하면서 움직임과 Pointer 반응이 배경 안에서 어떻게 작동하는지 확인할 수 있습니다.',
+    Motion: '재생 타이밍, 입력 반응과 Reduced Motion 상태를 함께 고려한 구현입니다.',
+    Text: '완성된 문장을 접근성 이름으로 유지하면서 글자와 단어의 등장 리듬을 구현합니다.',
+    Effects: 'Hover, Focus와 Pointer 입력에 반응하되 콘텐츠 자체의 선명도와 조작 가능성을 유지합니다.',
+    'DESIGN.md': '화면에 보이는 결과와 Agent에게 전달하는 규칙이 같은 Token과 Component 계약을 사용합니다.',
+  }
+  return body[item.category]
 }
