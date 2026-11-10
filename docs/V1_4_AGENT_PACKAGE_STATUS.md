@@ -2,7 +2,7 @@
 
 Ready: 효과별 로직·DOM·동일한 실행 HTML·출처·검수 조건 제공. Partial: 구조는 제공하지만 완성된 재현 코드/효과별 계약이 부족함. DESIGN.md는 문서이며 실행 코드로 집계하지 않는다.
 
-{"Ready":102,"Partial":121}
+{"Ready":122,"Partial":101}
 
 | Reference | Prompt | Logic | Starter Code | Source | License | Ready |
 |---|---|---|---|---|---|---|
@@ -74,7 +74,7 @@ Ready: 효과별 로직·DOM·동일한 실행 HTML·출처·검수 조건 제�
 | Scramble Text (scramble-text) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
 | Rotating Words (rotating-words) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
 | Number Ticker (number-ticker) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
-| Hand-drawn Highlight (highlight-animation) | 기본/부분 | 미완성 | 없음 | https://roughnotation.com/ | https://github.com/rough-stuff/rough-notation/blob/master/LICENSE | Partial |
+| Hand-drawn Highlight (highlight-animation) | 구체적 | 효과별 | 실행 HTML | https://roughnotation.com/ | https://github.com/rough-stuff/rough-notation/blob/master/LICENSE | Ready |
 | Glass Card (glass-card) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
 | Glow Card (glow-card) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
 | Spotlight Card (spotlight-card) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
@@ -85,28 +85,28 @@ Ready: 효과별 로직·DOM·동일한 실행 HTML·출처·검수 조건 제�
 | Image Reveal (image-reveal) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
 | Image Comparison (comparison-slider) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
 | Confetti Burst (confetti) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
-| Hero Section (hero-section) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
-| Floating Navbar (navbar-section) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
+| Hero Section (hero-section) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Floating Navbar (navbar-section) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
 | Bento Feature Grid (bento-section) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
-| Logo Cloud (logo-cloud) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
-| Statistics (stats-section) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
-| Timeline (timeline-section) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
-| Pricing Cards (pricing-section) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
-| Testimonials (testimonials-section) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
-| Feature Comparison (comparison-section) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
+| Logo Cloud (logo-cloud) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Statistics (stats-section) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Timeline (timeline-section) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Pricing Cards (pricing-section) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Testimonials (testimonials-section) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Feature Comparison (comparison-section) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
 | FAQ (faq-section) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
-| CTA Banner (cta-section) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
-| Footer (footer-section) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
+| CTA Banner (cta-section) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Footer (footer-section) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
 | Contact Split (contact-section) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
-| SaaS Landing (saas-page) | 기본/부분 | 미완성 | 없음 | https://astrowind.vercel.app/ | https://github.com/arthelokyo/astrowind/blob/main/LICENSE.md | Partial |
-| Developer Tool (developer-tool-page) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
-| Dashboard (dashboard-page) | 기본/부분 | 미완성 | 없음 | https://tremor.so/ | https://github.com/tremorlabs/tremor/blob/main/LICENSE | Partial |
-| Documentation (docs-page) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
-| Portfolio (portfolio-page) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
-| Explainer / Education (education-page) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
-| Internal Admin (admin-page) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
-| Login / Signup (login-page) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
-| Event Landing (event-page) | 기본/부분 | 미완성 | 없음 | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Partial |
+| SaaS Landing (saas-page) | 구체적 | 효과별 | 실행 HTML | https://astrowind.vercel.app/ | https://github.com/arthelokyo/astrowind/blob/main/LICENSE.md | Ready |
+| Developer Tool (developer-tool-page) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Dashboard (dashboard-page) | 구체적 | 효과별 | 실행 HTML | https://tremor.so/ | https://github.com/tremorlabs/tremor/blob/main/LICENSE | Ready |
+| Documentation (docs-page) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Portfolio (portfolio-page) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Explainer / Education (education-page) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Internal Admin (admin-page) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Login / Signup (login-page) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
+| Event Landing (event-page) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
 | Bottom Tab Bar (tab-bar-navigation) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
 | Top Tabs (top-tabs-navigation) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |
 | Navigation Drawer (navigation-drawer) | 구체적 | 효과별 | 실행 HTML | Hub Original | https://github.com/natekeem/DRH/blob/main/LICENSE | Ready |

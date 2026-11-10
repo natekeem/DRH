@@ -7,7 +7,7 @@ import { fluidCursorHtml } from './demo-exports/fluidCursorHtml'
 import { metaballsHtml } from './demo-exports/metaballsHtml'
 import { liquidRefractionHtml } from './demo-exports/liquidRefractionHtml'
 export type DemoMaturity = 'official' | 'working' | 'prototype' | 'external'
-const legacy = new Set(['particles','accordion','rough-highlight'])
+const legacy = new Set(['particles','accordion'])
 const advancedDemos = new Set(['fluid-cursor', 'metaballs', 'liquid-refraction'])
 export function demoMaturity(item:ReferenceItem):{kind:DemoMaturity;label:string;description:string}{
  if(item.implementation.type==='external')return{kind:'external',label:'LINK ONLY',description:'원본에서 확인하며 코드는 재배포하지 않습니다.'}

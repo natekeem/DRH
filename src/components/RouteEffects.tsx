@@ -19,8 +19,9 @@ export function RouteEffects() {
     positions.current.set(old.key, y.current)
     previous.current = location
     const changedPage = old.pathname !== location.pathname
-    if (changedPage || (navigation === 'POP' && old.key !== location.key)) {
-      const top = navigation === 'POP' ? positions.current.get(location.key) ?? 0 : 0
+    const distinctPop = navigation === 'POP' && old.key !== location.key
+    if (changedPage || distinctPop) {
+      const top = distinctPop ? positions.current.get(location.key) ?? 0 : 0
       window.scrollTo({ top, behavior: 'instant' })
       y.current = window.scrollY
     }

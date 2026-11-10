@@ -9,6 +9,7 @@ export function DemoViewport({children, detail=false}:{children:React.ReactNode;
 }
 export function RecipeDemo({kind, detail=false}:{kind:string;detail?:boolean}) {
  const frame=useRef<HTMLIFrameElement>(null)
+ const forceReduced=new URLSearchParams(window.location.search).get('motion')==='reduce'
  useEffect(()=>{
    const reset=()=>frame.current?.contentWindow?.postMessage({type:'drh:pointerleave'},'*')
    // Opaque-origin frames can miss pointerleave when crossing process boundaries.
@@ -17,5 +18,5 @@ export function RecipeDemo({kind, detail=false}:{kind:string;detail?:boolean}) {
    window.addEventListener('blur',reset)
    return()=>{document.removeEventListener('pointermove',reset);window.removeEventListener('blur',reset)}
  },[])
- return <iframe ref={frame} className="recipe-demo" title={`${kind} 실행 데모`} sandbox="allow-scripts" onPointerLeave={e=>e.currentTarget.contentWindow?.postMessage({type:'drh:pointerleave'},'*')} srcDoc={recipeHtml(kind, { variant: detail ? 'detail' : 'card' })??''}/>
+ return <iframe ref={frame} className="recipe-demo" title={`${kind} 실행 데모`} sandbox="allow-scripts" onPointerLeave={e=>e.currentTarget.contentWindow?.postMessage({type:'drh:pointerleave'},'*')} srcDoc={recipeHtml(kind, { variant: detail ? 'detail' : 'card', forceReduced })??''}/>
 }

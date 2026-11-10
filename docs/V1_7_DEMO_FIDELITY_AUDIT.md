@@ -1,5 +1,7 @@
 # V1.7 Canonical Demo Fidelity & Layout Audit
 
+> Historical snapshot. Current inventory and the completed Pages/Sections composition pass are documented in `REFERENCE_IMPLEMENTATION_ROADMAP.md`, `V1_4_DEMO_STATUS.md`, and `V1_8_COMPOSITION_COMPLETION_AUDIT.md`. The counts below intentionally preserve the V1.7 audit state.
+
 검수: 2026-09-09–10. Reference 추가 없음: 기존 167개 유지. ShaderGradient Landing 및 V1.6.2 advanced engines는 변경하지 않았다.
 
 ## Demo architecture
