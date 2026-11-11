@@ -21,7 +21,7 @@ export function GuideArticle(){
         <nav aria-label="On this page"><h2>ON THIS PAGE</h2>{headings.map(h=><a className={h.depth===3?'toc-subheading':''} href={`#/guides/${slug}#${h.id}`} key={h.id} onClick={e=>{e.preventDefault();const target=document.getElementById(h.id);target?.scrollIntoView({block:'start',behavior:'instant'});target?.focus({preventScroll:true})}}>{h.text}</a>)}</nav>
         <p className="guide-updated">Updated {guide.updatedAt} · {guide.readingTime}</p>
         {guide.sources.length>0&&<section className="guide-sources"><h2>Source attribution</h2>{guide.sources.map(s=><a key={s.url} href={s.url} target="_blank" rel="noreferrer">{s.label} ↗</a>)}</section>}
-        <Link className="text-link" to="/explore?category=DESIGN.md">DESIGN.md 둘러보기 →</Link>
+        <Link className="text-link" to="/explore?category=DESIGN.md">브랜드 디자인 둘러보기 →</Link>
         <section className="guide-related"><h2>함께 읽기</h2>{guides.filter(g=>g.slug!==slug).map(g=><Link key={g.slug} to={`/guides/${g.slug}`}>{g.title} →</Link>)}</section>
       </aside>
     </div>

@@ -7,8 +7,8 @@ import { MarketingSection } from '../components/landing/MarketingSection'
 import { BrowserMockup } from '../components/landing/BrowserMockup'
 import { InteractionCards } from '../components/landing/InteractionCards'
 import { AgentExportPanel } from '../components/landing/AgentExportPanel'
-import { categories, collections, references } from '../data/references'
-import { categoryDescriptionKo, categoryKo } from '../data/ko'
+import { categories, publicCollections as collections, publicReferences as references } from '../data/references'
+import { categoryDescriptionKo, categoryDisplayName, categoryKo } from '../data/ko'
 
 export function HomePage(){
   const spotlight=['liquid-lens-effect','image-trail','neo-brutalism','bento-section','text-reveal'].map(id=>references.find(r=>r.id===id)!).filter(Boolean)
@@ -46,7 +46,7 @@ export function HomePage(){
         subtitle="마음에 든 Reference를 찾았으면 정확한 이름, Prompt, 구현 힌트와 DESIGN.md를 한 번에 가져갑니다."
         accent
         primaryTo="/explore?category=DESIGN.md"
-        primaryLabel="DESIGN.md 둘러보기"
+        primaryLabel="브랜드 디자인 둘러보기"
         secondaryTo="/sources"
         secondaryLabel="Source & License"
       ><AgentExportPanel/></MarketingSection>
@@ -54,7 +54,7 @@ export function HomePage(){
 
     <main className="hub-home-after">
       <section className="home-intro section-pad"><div className="section-heading split"><div><span className="eyebrow">04 / EXPLORE THE HUB</span><h2>이름을 몰라도<br/>눈으로 먼저 찾습니다.</h2></div><p>긴 설명을 읽기 전에 Preview를 직접 보고 고릅니다. 마음에 드는 Reference를 찾은 다음 이름, Prompt, Code, DESIGN.md를 가져가면 됩니다.</p></div>
-        <div className="category-grid">{categories.map((cat,i)=><Link key={cat} to={`/explore?category=${encodeURIComponent(cat)}`}><small>{String(i+1).padStart(2,'0')}</small><h3>{cat}<em>{categoryKo[cat]}</em></h3><p>{categoryDescriptionKo[cat]}</p><ArrowUpRight size={18}/></Link>)}</div>
+        <div className="category-grid">{categories.map((cat,i)=><Link key={cat} to={`/explore?category=${encodeURIComponent(cat)}`}><small>{String(i+1).padStart(2,'0')}</small><h3>{categoryDisplayName(cat)}<em>{categoryKo[cat]}</em></h3><p>{categoryDescriptionKo[cat]}</p><ArrowUpRight size={18}/></Link>)}</div>
       </section>
 
       <section className="dark-section section-pad"><div className="section-heading split"><div><span className="eyebrow light">05 / FEATURED LIVE DEMOS</span><h2>움직여 보고.<br/>만져 보고. 고릅니다.</h2></div><p>핵심 Reference는 정적 Screenshot보다 Live Demo를 우선합니다. Cursor를 움직이고, Hover하고, 클릭하면서 실제 느낌을 확인하세요.</p></div>

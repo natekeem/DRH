@@ -3,10 +3,10 @@ import { readFile, writeFile, mkdir } from 'node:fs/promises'
 import { createHash } from 'node:crypto'
 import { build } from 'esbuild'
 import postcss from 'postcss'
-const bundle=await build({stdin:{contents:"export * from './src/lib/brandPresentation';export {buildBrandCatalog} from './src/lib/brandCatalog';export {vendorEntries} from './src/data/awesomeDesignMd'",resolveDir:process.cwd()},bundle:true,write:false,platform:'node',format:'esm'})
+const bundle=await build({stdin:{contents:"export * from './src/lib/brandPresentation';export {buildBrandCatalog} from './src/lib/brandCatalog';export {experienceScene,experienceVariant} from './src/lib/brandExperience';export {vendorEntries} from './src/data/awesomeDesignMd'",resolveDir:process.cwd()},bundle:true,write:false,platform:'node',format:'esm'})
 const p=await import('data:text/javascript;base64,'+Buffer.from(bundle.outputFiles[0].text).toString('base64'))
 const hash=b=>createHash('sha256').update(b).digest('hex')
-const coverage={totalBrands:p.vendorEntries.length,primaryFont:{'open-font':0,'system-font':0,proprietary:0,unspecified:0},brandsWithDeclaredOpenFont:0,brandAsset:{'verified-svg':0,'verified-image':0,'text-wordmark':0},brandsWithResources:0,resourceTypes:{},responsive:0,motion:{defined:0,'not-in-scope':0,'not-specified':0}}
+const coverage={totalBrands:p.vendorEntries.length,primaryFont:{'open-font':0,'system-font':0,proprietary:0,unspecified:0},brandsWithDeclaredOpenFont:0,brandAsset:{'verified-svg':0,'verified-image':0,'text-wordmark':0},brandsWithResources:0,resourceTypes:{},responsive:0,motion:{defined:0,'not-in-scope':0,'not-specified':0},scenes:{}}
 for(const font of p.brandFontAssets){
  assert.equal(font.kind,'open-font');assert.equal(font.license,'SIL OFL 1.1');assert(/^[a-f0-9]{40}$/.test(font.commit));assert(font.sourceUrl.includes(font.commit));assert(font.evidenceUrl.includes(font.commit))
  assert.equal(hash(await readFile('public/'+font.src)),font.sha256)
@@ -17,6 +17,10 @@ const curatedCopy=JSON.parse(await readFile('src/data/brandCuratedCopy.json','ut
 for(const entry of p.vendorEntries){
  const spec=JSON.parse(await readFile('public/brand-design-specs/'+entry.slug+'.json','utf8'))
  const catalog=p.buildBrandCatalog(entry,spec),fonts=catalog.roles.map(([,r])=>p.resolveBrandFont(r)),primary=fonts[0]||p.resolveBrandFont({})
+ const scene=p.experienceScene(catalog),variant=p.experienceVariant(catalog)
+ assert(['product','commerce','finance','workspace','media','automotive','play','developer','editorial'].includes(scene),'Unknown applied scene: '+entry.slug)
+ assert(['default','crypto'].includes(variant),'Unknown scene variant: '+entry.slug)
+ coverage.scenes[scene]=(coverage.scenes[scene]||0)+1
  for(const [kind,translations]of Object.entries(curatedCopy[entry.slug]||{})){
   const originals=p.sourceTable(kind==='elevation'?spec.depth:p.responsiveEvidence(spec)).map(row=>row.join(' | '))
   for(const t of translations){assert(originals.includes(t.source),'Stale Korean summary: '+entry.slug);assert(t.summary&&!/[\[\]{}]/.test(t.summary))}
@@ -66,6 +70,10 @@ const experience=await readFile('src/components/demos/BrandExperienceCatalog.tsx
 assert(!experience.includes('href={\'#ex-'),'Brand section navigation must not mutate the HashRouter route')
 assert(experience.includes("root.scrollTo({top:Math.max(0,offset),behavior:'auto'})"),'Brand section navigation must scroll the preview container')
 assert(experience.indexOf('<ResourcesSection')<experience.indexOf('<AppliedCanvasSection')&&experience.indexOf('<AppliedCanvasSection')<experience.indexOf('<OverviewSection'),'Brand detail must lead with evidence and applied preview')
+assert(experience.includes('<CoverageStrip')&&experience.includes('<FoundationSpecimen'),'Every brand needs source coverage and a non-empty foundation fallback')
+assert(!experience.includes('원본에서 감지된 컴포넌트가 없습니다.'),'Sparse brands must not end in an empty component state')
+const identity=await readFile('src/components/BrandIdentityMark.tsx','utf8')
+assert(identity.includes('공식 로고 아님')&&identity.includes("asset.type!=='text-wordmark'"),'Unverified brand identifiers must be disclosed as text marks')
 const workspace=await readFile('src/components/ArtifactWorkspace.tsx','utf8')
 assert(workspace.includes('buildReferenceHandoff')&&workspace.includes('brand-agent-heading')&&workspace.includes('Copy start prompt'),'Brand artifact workspace must expose one portable agent start prompt')
 assert(workspace.includes('artifact-panel')&&workspace.includes('CopyButton text={text}')&&workspace.includes('DownloadButton text={text}'),'Brand artifacts must use the shared inspect, copy and download workspace')

@@ -16,12 +16,15 @@ export function experienceScene(catalog:Pick<BrandCatalog,'entry'|'spec'>):Exper
  if(/ferrari/.test(slug))return 'automotive'
  if(/nintendo/.test(slug))return 'play'
  if(/vercel/.test(slug))return 'developer'
- const category=[catalog.entry.category,catalog.spec.layout].join(' ').toLowerCase()
- if(/finance|fintech|crypto|bank/.test(category))return 'finance'
- if(/commerce|delivery|shopping|marketplace/.test(category))return 'commerce'
- if(/music|media|stream/.test(category))return 'media'
- if(/developer/.test(category))return 'developer'
- if(/saas|software/.test(category))return 'workspace'
+ const category=[catalog.entry.category,catalog.spec.layout,catalog.spec.traits,catalog.entry.description||''].join(' ').toLowerCase()
+ if(/automotive|vehicle|mobility|motorsport|spaceflight/.test(category))return 'automotive'
+ if(/finance|fintech|crypto|bank|payment|trading|exchange/.test(category))return 'finance'
+ if(/commerce|delivery|shopping|marketplace|retail|food/.test(category))return 'commerce'
+ if(/music|media|stream|playlist|audio/.test(category))return 'media'
+ if(/\bretro\b|\bgaming\b|\bgame\b|\bplay\b/.test(category))return 'play'
+ if(/design tools|saas|productivity|workflow|workspace/.test(category))return 'workspace'
+ if(/developer|backend|devops|ai & llm|artificial intelligence|code/.test(category))return 'developer'
+ if(/big tech|consumer electronics|hardware/.test(category))return 'product'
  return 'editorial'
 }
 /** Detect crypto/fintech variant for finance scenes — based on source data, not slug. */

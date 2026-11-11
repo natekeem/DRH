@@ -2,8 +2,8 @@ import { Search, SlidersHorizontal, X, ArrowUpRight } from 'lucide-react'
 import { useEffect, useMemo, useState, useRef } from 'react'
 import { useSearchParams, useLocation, Link } from 'react-router-dom'
 import { ReferenceCard } from '../components/ReferenceCard'
-import { categories, references, collections } from '../data/references'
-import { categoryKo } from '../data/ko'
+import { categories, publicCollections as collections, publicReferences as references } from '../data/references'
+import { categoryDisplayName, categoryKo } from '../data/ko'
 import { demoMaturity } from '../lib/referencePackage'
 import type { Category, ReferenceItem } from '../types'
 
@@ -129,7 +129,7 @@ export function ExplorePage(){
       {currentView === 'references' && (
         <div className="category-tabs">
           <button className={category==='All'?'active':''} onClick={()=>choose('All')}><span>전체</span><em>({references.length})</em></button>
-          {categories.map(c=><button key={c} className={category===c?'active':''} onClick={()=>choose(c)}><span>{c}<small>{categoryKo[c]}</small></span><em>({categoryCounts[c]})</em></button>)}
+          {categories.map(c=><button key={c} className={category===c?'active':''} onClick={()=>choose(c)}><span>{categoryDisplayName(c)}<small>{categoryKo[c]}</small></span><em>({categoryCounts[c]})</em></button>)}
         </div>
       )}
 
@@ -160,7 +160,7 @@ export function ExplorePage(){
 
     {currentView === 'references' ? (
       <section className="listing-results">
-        <div className="result-count"><b>{filteredReferences.length}</b>개 <span>{category==='All'?'전체 카테고리':`${category} · ${categoryKo[category]}`}</span></div>
+        <div className="result-count"><b>{filteredReferences.length}</b>개 <span>{category==='All'?'전체 카테고리':`${categoryDisplayName(category)} · ${categoryKo[category]}`}</span></div>
         {filteredReferences.length ? (
           <div className={`reference-grid ${brandOnly?'brand-reference-grid':''}`}>{filteredReferences.map(r=><ReferenceCard key={r.id} item={r}/>)}</div>
         ) : (

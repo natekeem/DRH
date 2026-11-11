@@ -7,8 +7,8 @@ import { DesignSystemPreview } from '../components/demos/DesignSystemPreview'
 import { ArtifactWorkspace } from '../components/ArtifactWorkspace'
 import { ReferenceProjectHandoff } from '../components/ReferenceProjectHandoff'
 import { ReferenceCard } from '../components/ReferenceCard'
-import { aboutBodyKo, categoryKo, descriptionKo } from '../data/ko'
-import { collections, references, vendorSlugFromId } from '../data/references'
+import { aboutBodyKo, categoryDisplayName, categoryKo, descriptionKo } from '../data/ko'
+import { publicCollections as collections, publicReferences as references, vendorSlugFromId } from '../data/references'
 import { demoMaturity, provenanceFor } from '../lib/referencePackage'
 import { relatedReferencesFor } from '../lib/relatedReferences'
 import { artifactViews } from '../lib/artifacts'
@@ -51,7 +51,7 @@ export function ReferencePage(){
   return <main className={"reference-workspace-page"+(isVendor?" brand-experience-page":"")}>
     <header className="workspace-title"><div>{(location.state as {fromExplore?:boolean}|null)?.fromExplore?<button className="detail-back" onClick={()=>navigate(-1)}><ArrowLeft size={16}/> 탐색</button>:<Link to="/explore"><ArrowLeft size={16}/> 탐색</Link>}<span className="workspace-divider"/><h1>{item.name}</h1></div><div className="detail-badges"><span className={`demo-status-pill maturity-${maturity.kind}`}>● {maturity.label}</span><span className={`license-pill ${item.license.status}`}>{item.license.status==='copy-ok'?'● Copy OK':item.license.status==='reference'?'● Reference only':'● Restricted'}</span>{isVendor&&<span className="license-pill copy-ok">● Source document · MIT</span>}</div></header>
     <div className="reference-workspace">
-      <div className="reference-workspace-meta"><div><span>{item.category} · {categoryKo[item.category]} / {item.subcategory}</span><span>01 / SEE</span></div><div><span>AGENT PACKAGE</span><span>02 / USE</span></div></div>
+      <div className="reference-workspace-meta"><div><span>{categoryDisplayName(item.category)} · {categoryKo[item.category]} / {item.subcategory}</span><span>01 / SEE</span></div><div><span>AGENT PACKAGE</span><span>02 / USE</span></div></div>
       <section className="workspace-preview" aria-label="Live preview"><div className="workspace-demo-shell"><div className="demo-toolbar"><span><i/>{isVendor?'BRAND DESIGN PREVIEW':item.designSystem?'DESIGN SYSTEM PREVIEW':maturity.kind==='external'?'SOURCE REFERENCE':'LIVE PREVIEW'}</span>{!isVendor&&maturity.kind!=='external'&&<button onClick={()=>setReplay(v=>v+1)}><RotateCcw size={13}/> Replay</button>}</div><div className={`detail-demo workspace-demo ${['Pages','Sections','Background'].includes(item.category)?'wide-preview':''}${item.category==='Sections'?' section-preview':''}`} key={item.id+replay}>{item.designSystem?<DesignSystemPreview tokens={item.designSystem}/>:maturity.kind==='external'?<div className="source-only-preview"><h2>원본에서 확인하는 Reference</h2><p>이 항목은 코드와 이미지를 재배포하지 않습니다.</p><a href={item.source.url} target="_blank" rel="noreferrer">Source 열기 ↗</a></div>:<DemoRenderer kind={item.demo} detail preset={preset}/>}</div></div></section>
       <ArtifactWorkspace key={item.id+(vendorRawMd?'loaded':'pending')} artifacts={artifacts} item={item}/>
     </div>
@@ -82,7 +82,7 @@ export function ReferencePage(){
         {item.license.evidenceUrl&&<a href={item.license.evidenceUrl} target="_blank" rel="noreferrer">License evidence ↗</a>}
       </div>
     </section>}
-    <section className="related workspace-related"><div className="section-heading"><span className="eyebrow">KEEP EXPLORING</span><h2>비슷한 Reference</h2></div><div className="reference-grid compact-grid">{related.map(r=><ReferenceCard key={r.id} item={r}/>)}</div><Link className="text-link" to={`/explore?category=${encodeURIComponent(item.category)}`}>{item.category} 전체 보기 <ArrowUpRight size={16}/></Link></section>
+    <section className="related workspace-related"><div className="section-heading"><span className="eyebrow">KEEP EXPLORING</span><h2>비슷한 Reference</h2></div><div className="reference-grid compact-grid">{related.map(r=><ReferenceCard key={r.id} item={r}/>)}</div><Link className="text-link" to={`/explore?category=${encodeURIComponent(item.category)}`}>{categoryDisplayName(item.category)} 전체 보기 <ArrowUpRight size={16}/></Link></section>
     <ReferenceProjectHandoff item={item}/>
   </main>
 }

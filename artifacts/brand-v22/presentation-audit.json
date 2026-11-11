@@ -27,6 +27,17 @@
       "defined": 4,
       "not-in-scope": 9,
       "not-specified": 78
+    },
+    "scenes": {
+      "finance": 12,
+      "workspace": 15,
+      "product": 4,
+      "automotive": 10,
+      "developer": 24,
+      "media": 4,
+      "play": 3,
+      "commerce": 13,
+      "editorial": 6
     }
   },
   "fontAssets": [

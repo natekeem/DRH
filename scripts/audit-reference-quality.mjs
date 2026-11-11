@@ -2,7 +2,15 @@ import assert from 'node:assert/strict';
 import { demoModule } from './demo-module.mjs';
 
 async function run() {
-  const { references, recipes, demoMaturity } = await demoModule();
+  const { references, publicReferences, publicCollections, recipes, demoMaturity } = await demoModule();
+
+  const internalPresets=references.filter(ref=>ref.category==='DESIGN.md'&&ref.subcategory==='Preset');
+  assert.equal(internalPresets.length,10,'Expected ten compatibility-only DESIGN.md presets');
+  assert.equal(publicReferences.length,references.length-internalPresets.length,'Public catalog must omit only compatibility presets');
+  assert(publicReferences.every(ref=>!internalPresets.some(preset=>preset.id===ref.id)),'Compatibility preset leaked into public catalog');
+  assert.equal(publicReferences.filter(ref=>ref.demo.startsWith('vendor-design-md:')).length,91,'Public Brand Design catalog must expose all 91 brands');
+  const publicIds=new Set(publicReferences.map(ref=>ref.id));
+  assert(publicCollections.every(collection=>collection.ids.every(id=>publicIds.has(id))),'Public collection contains a hidden reference');
 
   const ids = new Set();
   

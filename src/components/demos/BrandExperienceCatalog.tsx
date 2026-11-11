@@ -1,9 +1,10 @@
 import { type CSSProperties } from 'react'
 import { canonicalSections, componentStyle, isDark, type BrandCatalog, type BrandTheme } from '../../lib/brandCatalog'
 import { componentGroups, componentSize, experienceScene, experienceVariant } from '../../lib/brandExperience'
-import { brandIdentifier, resolveBrandFont, curatedColors, curatedRoles } from '../../lib/brandPresentation'
+import { brandIdentifier, resolveBrandFont, curatedColors, curatedRoles, motionEvidence, responsiveEvidence } from '../../lib/brandPresentation'
 import { BrandComponentSample } from './BrandComponentSample'
 import { BrandAppliedPreview } from './BrandAppliedPreview'
+import { BrandIdentityMark } from '../BrandIdentityMark'
 
 function SectionNav({catalog}:{catalog:BrandCatalog}) {
  const hasResources=catalog.officialResources.length>0
@@ -27,7 +28,7 @@ function OverviewSection({catalog,theme}:{catalog:BrandCatalog;theme:BrandTheme}
  return <section id="ex-overview" className="bc-section ex-overview" data-section="overview">
   <h4>Overview</h4>
   <div className="bc-dna">{catalog.dna.map(d=><span key={d.label} title={d.evidence}>{d.label}</span>)}</div>
-  <h3 style={{fontFamily:headingFont.stack,fontWeight:700}}>{catalog.entry.name}</h3>
+  <div className="ex-overview-lockup"><BrandIdentityMark slug={catalog.entry.slug} dark={isDark(theme.colors.canvas)} context="preview"/><h3 style={{fontFamily:headingFont.stack,fontWeight:700}}>{catalog.entry.name}</h3></div>
   <p>{catalog.entry.description}</p>
   {asset.attribution&&<p className="bc-note bc-attribution">{asset.attribution}</p>}
   <div className="bc-overview-samples">
@@ -35,6 +36,46 @@ function OverviewSection({catalog,theme}:{catalog:BrandCatalog;theme:BrandTheme}
    {btnStyle&&<span className="bc-overview-button" style={btnStyle}>Continue →</span>}
   </div>
  </section>
+}
+
+function CoverageStrip({catalog}:{catalog:BrandCatalog}) {
+ const responsive=Object.keys(responsiveEvidence(catalog.spec)).length>0
+ const motion=motionEvidence(catalog.spec).state
+ const items=[
+  ['COLOR',`${catalog.colors.length} roles`],
+  ['TYPE',`${catalog.roles.length} roles`],
+  ['COMPONENT',catalog.components.length?`${catalog.components.length} definitions`:'foundation only'],
+  ['BEHAVIOR',`${responsive?'responsive evidence':'responsive not specified'} · ${motion==='defined'?'motion defined':motion==='not-in-scope'?'motion out of scope':'motion not specified'}`],
+ ]
+ return <section className="ex-coverage" aria-label="원본 디자인 규칙 범위" data-evidence="source-coverage">{items.map(([label,value])=><div key={label}><small>{label}</small><b>{value}</b></div>)}</section>
+}
+
+function FoundationSpecimen({catalog,theme}:{catalog:BrandCatalog;theme:BrandTheme}) {
+ const heading=catalog.roles.find(([key])=>/display|hero|heading|headline|title/.test(key))?.[1]||catalog.roles[0]?.[1]||{}
+ const body=catalog.roles.find(([key])=>/body|paragraph/.test(key))?.[1]||catalog.roles[1]?.[1]||heading
+ const primary=resolveComponentStyleColor(catalog.spec.colors.primary,theme.colors.text)
+ const radius=Object.values(catalog.spec.radius||{}).find(value=>typeof value==='string')||'12px'
+ const style={
+  '--foundation-canvas':theme.colors.canvas,
+  '--foundation-surface':theme.colors.surface,
+  '--foundation-ink':theme.colors.text,
+  '--foundation-rule':theme.colors.border,
+  '--foundation-accent':primary,
+  '--foundation-radius':radius,
+  '--foundation-heading':resolveBrandFont(heading).stack,
+  '--foundation-body':resolveBrandFont({...body,script:'ko'}).stack,
+ } as CSSProperties
+ return <div className="ex-foundation" style={style} data-evidence="source-foundations">
+  <div className="ex-foundation-copy"><small>FOUNDATION COMPOSITION</small><h5>원문에 독립 컴포넌트 정의가 없어 파운데이션으로 구성했습니다.</h5><p>색상, 글꼴, 모서리와 레이아웃 성격만 적용한 DRH 예시입니다. 공식 컴포넌트로 해석하지 않습니다.</p></div>
+  <div className="ex-foundation-stage">
+   <header><span>{catalog.entry.name}</span><small>{catalog.spec.layout.toUpperCase()}</small></header>
+   <div><p>TYPE / COLOR / SPACE</p><strong>Aa</strong><i/><i/><i/></div>
+  </div>
+ </div>
+}
+
+function resolveComponentStyleColor(value:unknown,fallback:string) {
+ return typeof value==='string'&&value.trim()?value:fallback
 }
 
 function DesignDnaSection({catalog,theme}:{catalog:BrandCatalog;theme:BrandTheme}) {
@@ -77,6 +118,7 @@ function ComponentLibrarySection({catalog,theme}:{catalog:BrandCatalog;theme:Bra
  const groups=componentGroups.map(g=>({...g,components:catalog.components.filter(c=>g.kinds.includes(c.kind)&&!/hover|pressed|focus|disabled|selected|active/.test(c.key))})).filter(g=>g.components.length)
  return <section id="ex-components" className="bc-section ex-components" data-section="components">
   <h4>Component Library</h4>
+  <p className="bc-note">원문에서 감지한 컴포넌트 정의 {catalog.components.length}개를 상태 변형과 기본 형태로 나누어 보여줍니다.</p>
   {groups.map(group=><div key={group.label} className="ex-group">
    <h5>{group.label}</h5>
    <div className="ex-component-grid">
@@ -85,7 +127,7 @@ function ComponentLibrarySection({catalog,theme}:{catalog:BrandCatalog;theme:Bra
     </div>)}
    </div>
   </div>)}
-  {!groups.length&&<p className="bc-note">원본에서 감지된 컴포넌트가 없습니다.</p>}
+  {!groups.length&&<FoundationSpecimen catalog={catalog} theme={theme}/>}
  </section>
 }
 
@@ -111,6 +153,7 @@ export function BrandExperienceCatalog({catalog,theme}:{catalog:BrandCatalog;the
  return <div className="bc-experience" data-catalog-mode="experience">
   <p className="bc-note bc-experience-intro">DESIGN.md → source-driven preview<br/>공식 제품 화면이 아닌, 검증된 규칙을 적용한 DRH 예시입니다.</p>
   <SectionNav catalog={catalog}/>
+  <CoverageStrip catalog={catalog}/>
   <ResourcesSection catalog={catalog}/>
   <AppliedCanvasSection catalog={catalog} theme={theme}/>
   <OverviewSection catalog={catalog} theme={theme}/>

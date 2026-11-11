@@ -5861,6 +5861,18 @@ pre, code, .overflow-anywhere {
 .token-design-system-card .ds-compact .ds-swatches span{font-size:9px}
 .token-design-system-card .ds-compact .ds-swatches code{font-size:7px}
 .brand-card-action{display:inline-flex;flex:0 0 auto;align-items:center;gap:3px;font-size:10px;font-weight:750;white-space:nowrap}
+.card-title-line{display:flex;align-items:center;gap:10px;min-width:0;margin-top:7px}
+.card-title-line h3{min-width:0;margin-top:0!important}
+.brand-identity-mark{display:grid;place-items:center;flex:0 0 auto;width:38px;height:38px;overflow:hidden;border:1px solid var(--brand-mark-border,#1112);border-radius:11px;background:var(--brand-mark-bg,#fff);color:var(--brand-mark-ink,#111);box-shadow:0 1px 0 #fff8 inset;font-family:var(--brand-mark-font,system-ui);font-size:12px;font-weight:800;letter-spacing:-.04em}
+.brand-identity-mark.is-text>span[aria-hidden=true]{display:grid;width:100%;height:100%;place-items:center;background:var(--brand-mark-bg,#111);color:var(--brand-mark-ink,#fff)}
+.brand-identity-mark img{display:block;width:74%;height:74%;object-fit:contain}
+.brand-identity-mark.is-logotype{width:58px}
+.brand-identity-mark.is-logotype img{width:82%;height:62%}
+.brand-identity-mark.context-preview{width:34px;height:34px;border-radius:9px}
+.brand-identity-mark.context-preview.is-logotype{width:68px}
+.ap-brand-lockup{display:flex;align-items:center;gap:10px;min-width:0}
+.ap-brand-lockup>b{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ap-brand-lockup:has(.brand-identity-mark.is-logotype)>b{display:none}
 .design-system-patterns{padding-top:64px;border-top:1px solid var(--line)}
 .design-system-patterns>header{display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,.7fr);gap:12px 48px;align-items:end;margin-bottom:32px}
 .design-system-patterns>header .eyebrow{grid-column:1/-1}

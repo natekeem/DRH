@@ -229,6 +229,12 @@ export const references: ReferenceItem[] = [
 
 export const categories: Category[] = ['Styles','UI Patterns','Pages','Sections','Background','Motion','Text','Effects','DESIGN.md']
 
+// The ten hub-authored DESIGN.md presets are retained as compatibility fixtures for
+// the package/audit pipeline, but they are no longer part of the public catalog.
+// The public category is a brand-reference library, not a mixture of brands and
+// generic style recipes.
+export const publicReferences = references.filter(item => !(item.category === 'DESIGN.md' && item.subcategory === 'Preset'))
+
 // ── Vendor entry lookup ───────────────────────────────────────────────────────
 export const vendorEntryBySlug = Object.fromEntries(vendorEntries.map(v => [v.slug, v]))
 export const vendorSlugFromId = (id: string) => id.startsWith('admd-') ? id.slice(5) : null
@@ -250,6 +256,12 @@ export const collections = [
   { id:'brand-retro', title:'Retro Web', description:'Web design aesthetics from a different era — pixel constraints, CRT monitors, and early-internet energy.', ids:['admd-dell-1996','admd-nintendo-2001','admd-hp','admd-playstation','admd-wired','admd-theverge'] },
 ]
 
-export const featuredReferences = references.filter((r) => r.featured)
-export const wowReferences = references.filter((r) => r.wow)
+const publicReferenceIds = new Set(publicReferences.map(reference => reference.id))
+export const publicCollections = collections.map(collection => ({
+  ...collection,
+  ids: collection.ids.filter(id => publicReferenceIds.has(id)),
+}))
+
+export const featuredReferences = publicReferences.filter((r) => r.featured)
+export const wowReferences = publicReferences.filter((r) => r.wow)
 

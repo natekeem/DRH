@@ -9,8 +9,10 @@ export const categoryKo: Record<Category, string> = {
   Motion: '모션',
   Text: '텍스트',
   Effects: '효과',
-  'DESIGN.md': '디자인 가이드',
+  'DESIGN.md': '브랜드 디자인',
 }
+
+export const categoryDisplayName = (category:Category) => category==='DESIGN.md'?'Brand Design':category
 
 export const categoryDescriptionKo: Record<Category, string> = {
   'UI Patterns': '검색, 선택, 알림과 로딩처럼 반복해서 쓰는 인터페이스 동작입니다.',
@@ -21,7 +23,7 @@ export const categoryDescriptionKo: Record<Category, string> = {
   Motion: 'Scroll, Hover, Cursor 등 움직임과 공간감을 만드는 인터랙션입니다.',
   Text: 'Reveal, Scramble, Ticker 등 타이포그래피에 움직임을 더합니다.',
   Effects: 'Glass, Glow, Lens, Border 등 한 요소를 강하게 만드는 시각 효과입니다.',
-  'DESIGN.md': 'Coding Agent에게 그대로 전달할 수 있는 디자인 방향과 규칙입니다.',
+  'DESIGN.md': '실제 브랜드의 색상, 타이포그래피와 컴포넌트 규칙을 화면으로 비교합니다.',
 }
 
 const ko: Record<string, string> = {
@@ -160,7 +162,7 @@ const fallbackKo: Record<Category, (item: LocalizableReference) => string> = {
   Motion: item => `${item.name}의 타이밍, 이동과 상태 변화를 직접 재생하며 확인할 수 있는 모션 레퍼런스입니다.`,
   Text: item => `${item.name}의 등장 순서와 리듬으로 문장의 의미와 시선을 강조하는 타이포그래피 레퍼런스입니다.`,
   Effects: item => `${item.name}의 재질, 빛과 반응을 한 요소에 적용해 시각적 초점을 만드는 효과 레퍼런스입니다.`,
-  'DESIGN.md': item => `${item.name}의 색상, 타이포그래피, 간격과 컴포넌트 규칙을 실제 화면에 적용한 디자인 가이드입니다.`,
+  'DESIGN.md': item => `${item.name}의 색상, 타이포그래피, 간격과 컴포넌트 규칙을 실제 화면에 적용한 브랜드 디자인 레퍼런스입니다.`,
 }
 
 export function descriptionKo(item: LocalizableReference) {
