@@ -1,0 +1,17 @@
+{
+  "type": "verified-svg",
+  "format": "svg",
+  "provider": "simple-icons",
+  "label": "Webflow",
+  "src": "brand-assets/webflow/logo.svg",
+  "darkSrc": "brand-assets/webflow/logo-dark.svg",
+  "sourceUrl": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/webflow.svg",
+  "evidenceUrl": "https://brand-at.webflow.io",
+  "license": "Simple Icons 16.37.0 icon data, CC0-1.0; recolored with the Simple Icons brand hex #146EF5. Trademark rights remain with the owner; identification only, not MIT.",
+  "attribution": "Webflow 상표·로고는 해당 소유자의 자산입니다. Simple Icons 아이콘을 브랜드 식별 목적으로만 표시하며 제휴·보증을 뜻하지 않습니다.",
+  "usageTerms": "Unmodified shape; aspect ratio preserved. Only fill color set (brand hex, or neutral black/white when illegible). No affiliation or endorsement claim.",
+  "checkedAt": "2026-11-11",
+  "sha256": "cbd85813c626c03120d3ad66e17ca98a57c1efb3065b567e0054b54bcd2f1943",
+  "darkSha256": "cbd85813c626c03120d3ad66e17ca98a57c1efb3065b567e0054b54bcd2f1943",
+  "originalSha256": "04343bc856b7c074048aa80b5f17582286ae611ef47af17472607df5cea68d6a"
+}

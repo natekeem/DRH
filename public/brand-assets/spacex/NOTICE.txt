@@ -1,0 +1,17 @@
+{
+  "type": "verified-svg",
+  "format": "svg",
+  "provider": "simple-icons",
+  "label": "SpaceX",
+  "src": "brand-assets/spacex/logo.svg",
+  "darkSrc": "brand-assets/spacex/logo-dark.svg",
+  "sourceUrl": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/spacex.svg",
+  "evidenceUrl": "https://github.com/simple-icons/simple-icons/blob/16.37.0/DISCLAIMER.md",
+  "license": "Simple Icons 16.37.0 icon data, CC0-1.0; recolored with the Simple Icons brand hex #000000. Trademark rights remain with the owner; identification only, not MIT.",
+  "attribution": "SpaceX 상표·로고는 해당 소유자의 자산입니다. Simple Icons 아이콘을 브랜드 식별 목적으로만 표시하며 제휴·보증을 뜻하지 않습니다.",
+  "usageTerms": "Unmodified shape; aspect ratio preserved. Only fill color set (brand hex, or neutral black/white when illegible). No affiliation or endorsement claim.",
+  "checkedAt": "2026-11-11",
+  "sha256": "9d9bb986fdf63ebbaf375321d6f2a2b98a167a78164f705cea6329f732f9b955",
+  "darkSha256": "a72b76f836120db58b1498222f53d275f9644a8ff1c850665b2c12c000e67e6f",
+  "originalSha256": "b62123e05102ff4faa0a900d385c5312426f397a72ed9b6e4018821d9c18ac9a"
+}

@@ -40,7 +40,6 @@ export function ExplorePage(){
   useEffect(()=>{
     if ((location.state as any)?.focusSearch) {
       searchRef.current?.focus({preventScroll:true})
-
     }
   }, [location.state])
 

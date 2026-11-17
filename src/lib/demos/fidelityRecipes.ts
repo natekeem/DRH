@@ -2,7 +2,7 @@ import type { DemoRecipe } from './recipes'
 
 export type DensityPolicy = 'density-sensitive' | 'scale-sensitive' | 'fixed-object'
 export const densityPolicy = (kind: string): DensityPolicy =>
-  ['particles','meteors','dot-grid','retro-grid','starfield','beams','waves','confetti','image-trail'].includes(kind) ? 'density-sensitive' :
+  ['particles','meteors','dot-grid','retro-grid','starfield','beams','waves','confetti','image-trail','neural-network-field','ascending-matrix-rain'].includes(kind) ? 'density-sensitive' :
   ['style-neumorphism','style-skeuomorphism','style-bauhaus','style-japandi','page-agency','rough-highlight','section-hero','section-navbar','section-logos','section-stats','section-timeline','section-pricing','section-testimonials','section-comparison','section-cta','section-footer','page-saas','page-devtool','page-dashboard','page-docs','page-portfolio','page-education','page-admin','page-login','page-event','aurora','gradient-mesh','noise-blobs','spotlight','spotlight-background','cursor-follow','ripple','image-reveal','comparison-slider'].includes(kind) ? 'scale-sensitive' : 'fixed-object'
 
 const observe = `function observeSize(fn){const ro=new ResizeObserver(()=>{fn();restart()});ro.observe(document.querySelector('main'));fn();window.addEventListener('pagehide',()=>ro.disconnect(),{once:true})}`

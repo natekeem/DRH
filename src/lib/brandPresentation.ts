@@ -4,7 +4,7 @@ import assets from '../data/brandVerifiedAssets.json'
 import curatedCopy from '../data/brandCuratedCopy.json'
 
 export { fonts as brandFontAssets }
-export type VerifiedBrandAsset = BrandDesignSpec['brandAsset'] & {darkSrc?:string;format?:string;attribution?:string;checkedAt?:string;sha256?:string;darkSha256?:string}
+export type VerifiedBrandAsset = BrandDesignSpec['brandAsset'] & {darkSrc?:string;format?:string;provider?:string;attribution?:string;checkedAt?:string;sha256?:string;darkSha256?:string}
 export function brandIdentifier(slug:string,spec:BrandDesignSpec):VerifiedBrandAsset {return (assets as Record<string,VerifiedBrandAsset>)[slug]||spec.brandAsset}
 export function curatedRule(slug:string,kind:string,row:string[]) {
  const group=(curatedCopy as Record<string,Record<string,{source:string;summary:string}[]>>)[slug]?.[kind]

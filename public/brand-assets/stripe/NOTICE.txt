@@ -1,0 +1,17 @@
+{
+  "type": "verified-svg",
+  "format": "svg",
+  "provider": "simple-icons",
+  "label": "Stripe",
+  "src": "brand-assets/stripe/logo.svg",
+  "darkSrc": "brand-assets/stripe/logo-dark.svg",
+  "sourceUrl": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/stripe.svg",
+  "evidenceUrl": "https://github.com/simple-icons/simple-icons/blob/16.37.0/DISCLAIMER.md",
+  "license": "Simple Icons 16.37.0 icon data, CC0-1.0; recolored with the Simple Icons brand hex #635BFF. Trademark rights remain with the owner; identification only, not MIT.",
+  "attribution": "Stripe 상표·로고는 해당 소유자의 자산입니다. Simple Icons 아이콘을 브랜드 식별 목적으로만 표시하며 제휴·보증을 뜻하지 않습니다.",
+  "usageTerms": "Unmodified shape; aspect ratio preserved. Only fill color set (brand hex, or neutral black/white when illegible). No affiliation or endorsement claim.",
+  "checkedAt": "2026-11-11",
+  "sha256": "7576775bf9915b696bbb9162268f5c56147d2b4221a76ac6a9ca92835239b7e9",
+  "darkSha256": "7576775bf9915b696bbb9162268f5c56147d2b4221a76ac6a9ca92835239b7e9",
+  "originalSha256": "130c6d957b8977f5eda2928267b9df531ca038a400a801765d263801bb1bd870"
+}

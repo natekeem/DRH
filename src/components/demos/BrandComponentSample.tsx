@@ -21,14 +21,58 @@ export function BrandComponentSample({component,catalog,theme,context=false,cont
  const bodyRole=catalog.roles.find(([k])=>/body|paragraph/.test(k))?.[1]||catalog.roles[0]?.[1]||{}
  const bodyStyle:CSSProperties={fontFamily:resolveBrandFont(bodyRole).stack,fontSize:13,lineHeight:1.6,letterSpacing:'normal',fontWeight:400}
  const explicitContext=/(?:^|-)on-dark|overlay/.test(key)?true:/(?:^|-)on-light/.test(key)?false:undefined
- const transparent=!original.backgroundColor||original.backgroundColor==='transparent'||/^rgba/.test(String(original.backgroundColor))
- const needsBackdrop=transparent&&(explicitContext!==undefined||typeof original.color==='string'&&isDark(original.color)===isDark(theme.colors.canvas))
- const backdropDark=explicitContext??!isDark(String(original.color))
- const backdrop=needsBackdrop?catalog.colors.find(([role,c])=>/canvas|surface|^ink$|foreground|^dark$|background/.test(role)&&isDark(c)===backdropDark)?.[1]||(backdropDark?'#202124':'#ffffff'):undefined
+ const transparent=!original.backgroundColor||original.backgroundColor==='transparent'||/^rgba\(.*0\)$/.test(String(original.backgroundColor))
+ const sameContrast=typeof original.color==='string'&&isDark(original.color)===isDark(theme.colors.canvas)
+ const needsBackdrop=explicitContext!==undefined||(transparent&&sameContrast)
+ const backdropDark=explicitContext??(isDark(theme.colors.canvas)?false:true)
+ const backdrop=needsBackdrop?catalog.colors.find(([role,c])=>/canvas|surface|^ink$|foreground|^dark$|background/.test(role)&&isDark(c)===backdropDark)?.[1]||(backdropDark?'#1c1d22':'#ffffff'):undefined
  const button=catalog.components.find(c=>c.kind==='buttons'&&!/disabled|hover|focus/.test(c.key))
  const action=button?<button style={projectComponentStyle(resolveComponentStyle(button.values,catalog,theme))} onClick={()=>setFeedback('선택했습니다. 실제 서비스 요청은 보내지 않습니다.')}>시작하기</button>:null
+ const buttonStyle: CSSProperties = { ...style }
+ if(kind==='buttons'){
+  const isIconKey = /icon|circular|circle|arrow|chip|avatar|carousel-control|play-pause/.test(key);
+  const isExplicitSquare = Boolean(values.size) || Boolean(original.width && original.height && Math.abs(parseFloat(String(original.width)) - parseFloat(String(original.height))) <= 4 && parseFloat(String(original.width)) <= 52);
+  const isIconButton = isIconKey || isExplicitSquare || sampleContent.label.length <= 2;
+  if(isIconButton){
+   const btnSize = original.width || original.height || (typeof values.size === 'string' ? values.size : '40px');
+   buttonStyle.width = btnSize;
+   buttonStyle.height = btnSize;
+   buttonStyle.minHeight = btnSize;
+   buttonStyle.maxHeight = btnSize;
+   buttonStyle.minWidth = btnSize;
+   buttonStyle.maxWidth = btnSize;
+   buttonStyle.aspectRatio = '1 / 1';
+   buttonStyle.display = 'inline-flex';
+   buttonStyle.alignItems = 'center';
+   buttonStyle.justifyContent = 'center';
+   buttonStyle.padding = '0';
+   buttonStyle.lineHeight = '1';
+   const numSize = parseFloat(String(btnSize));
+   if(numSize && (!buttonStyle.fontSize || parseFloat(String(buttonStyle.fontSize)) > numSize * 0.5)){
+    buttonStyle.fontSize = Math.round(numSize * 0.45) + 'px';
+   }
+  } else {
+   buttonStyle.whiteSpace = 'nowrap';
+   buttonStyle.width = 'auto';
+   if(!buttonStyle.minWidth) buttonStyle.minWidth = 'fit-content';
+   if(original.height){
+    buttonStyle.height = original.height;
+    buttonStyle.display = 'inline-flex';
+    buttonStyle.alignItems = 'center';
+    buttonStyle.justifyContent = 'center';
+   }
+  }
+  if(original.backgroundColor && original.color){
+   const bgDark = isDark(String(original.backgroundColor));
+   const textDark = isDark(String(original.color));
+   if(bgDark === textDark) buttonStyle.color = bgDark ? '#ffffff' : '#111111';
+  }
+  if(transparent && (!original.borderColor || original.borderColor === 'transparent' || original.borderStyle === 'none')){
+   buttonStyle.boxShadow = buttonStyle.boxShadow || 'inset 0 0 0 1px var(--catalog-rule)';
+  }
+ }
  let sample
- if(kind==='buttons')sample=<button style={style} disabled={disabled} aria-label={/play/.test(key)?'재생 상태 예시':undefined} onClick={()=>{setSelected(!selected);setFeedback(/play/.test(key)?'재생 상태 예시입니다. 실제 음원은 없습니다.':'클릭했습니다. 실제 서비스 요청은 보내지 않습니다.')}}>{sampleContent.label}</button>
+ if(kind==='buttons')sample=<button style={buttonStyle} disabled={disabled} aria-label={/play/.test(key)?'재생 상태 예시':undefined} onClick={()=>{setSelected(!selected);setFeedback(/play/.test(key)?'재생 상태 예시입니다. 실제 음원은 없습니다.':'클릭했습니다. 실제 서비스 요청은 보내지 않습니다.')}}>{sampleContent.label}</button>
  else if(kind==='inputs')sample=<label className="bc-field"><span>{sampleContent.label}</span>{/radio|checkbox|agreement/.test(key)||values.type==='toggle'?<input type={/radio/.test(key)?'radio':'checkbox'} checked={selected} onChange={()=>setSelected(!selected)} style={style}/>: /select/.test(key)?<select style={style} value={text} onChange={e=>setText(e.target.value)}><option value="">항목 선택</option><option>개인 계정</option><option>팀 계정</option></select>:<input style={{...style,...(/error/.test(key)?error:{})}} value={text} disabled={disabled} aria-invalid={/error/.test(key)||undefined} placeholder={sampleContent.placeholder||'name@example.com'} onChange={e=>setText(e.target.value)}/>}</label>
  else if(kind==='tabs'){const tabItems=sampleContent.items||['개요','활동','설정'];sample=<div className="bc-tabs-specimen"><div role="tablist" aria-label={label}>{tabItems.map((v,i)=><button key={v} role="tab" id={id+'-'+i} aria-controls={id+'-panel'} aria-selected={index===i} tabIndex={index===i?0:-1} onKeyDown={e=>{if(['ArrowLeft','ArrowRight','Home','End'].includes(e.key)){e.preventDefault();const next=e.key==='Home'?0:e.key==='End'?tabItems.length-1:(index+(e.key==='ArrowRight'?1:tabItems.length-1))%tabItems.length;setIndex(next);(e.currentTarget.parentElement?.children[next] as HTMLElement)?.focus()}}} onClick={()=>setIndex(i)} style={{...style,...(index===i?active:{}),...(index===i&&indicator?{borderBottom:`2px solid ${indicator}`}:{})}}>{v}</button>)}</div><p id={id+'-panel'} role="tabpanel" aria-labelledby={id+'-'+index}>{tabItems[index]} 섹션의 내용입니다.</p></div>}
  else if(kind==='dialogs')sample=<><button className="bc-control" onClick={()=>dialog.current?.showModal()}>대화상자 열기</button><dialog ref={dialog} className="bc-sample-dialog" style={style} aria-labelledby={id} onCancel={e=>e.stopPropagation()}><h4 id={id}>변경 사항 확인</h4><p style={bodyStyle}>설정을 저장하기 전에 확인하세요.</p><button className="bc-control" onClick={()=>dialog.current?.close()}>닫기</button></dialog></>

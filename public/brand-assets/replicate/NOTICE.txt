@@ -1,0 +1,17 @@
+{
+  "type": "verified-svg",
+  "format": "svg",
+  "provider": "simple-icons",
+  "label": "Replicate",
+  "src": "brand-assets/replicate/logo.svg",
+  "darkSrc": "brand-assets/replicate/logo-dark.svg",
+  "sourceUrl": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/replicate.svg",
+  "evidenceUrl": "https://github.com/simple-icons/simple-icons/blob/16.37.0/DISCLAIMER.md",
+  "license": "Simple Icons 16.37.0 icon data, CC0-1.0; recolored with the Simple Icons brand hex #000000. Trademark rights remain with the owner; identification only, not MIT.",
+  "attribution": "Replicate 상표·로고는 해당 소유자의 자산입니다. Simple Icons 아이콘을 브랜드 식별 목적으로만 표시하며 제휴·보증을 뜻하지 않습니다.",
+  "usageTerms": "Unmodified shape; aspect ratio preserved. Only fill color set (brand hex, or neutral black/white when illegible). No affiliation or endorsement claim.",
+  "checkedAt": "2026-11-11",
+  "sha256": "2b56b6a5c34ab91d2382a769b6d81bbb5b6152df6c474a4f798b73ce45560e33",
+  "darkSha256": "496dcb45e58b667b26d51280e5f438d3c5c3454c3547cf73e06342c5549c1cfd",
+  "originalSha256": "e59687194f210fc30319202cc66185e83a0bd8962c0d60ab4257bb10b07050d8"
+}

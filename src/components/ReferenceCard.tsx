@@ -12,19 +12,35 @@ const statusLabel = { 'copy-ok':'Copy OK', 'reference':'Reference', 'restricted'
 export function ReferenceCard({ item, large=false }:{item:ReferenceItem;large?:boolean}) {
   const location=useLocation()
   const maturity=demoMaturity(item)
+  const isPage=item.category==='Pages'
   const designSystemCard=item.category==='DESIGN.md'
   const tokenDesignSystemCard=Boolean(item.designSystem)
   const vendorBrand=item.demo.startsWith('vendor-design-md:')
   const vendorSlug=vendorBrand?item.demo.slice('vendor-design-md:'.length):null
-  return <article className={`reference-card ${large?'large':''}${designSystemCard?' design-system-reference-card':''}${tokenDesignSystemCard?' token-design-system-card':''}${vendorBrand?' brand-reference-card':''}`}>
-    <div className="card-demo">{item.designSystem?<DesignSystemPreview tokens={item.designSystem} compact/>:<DemoRenderer kind={item.demo} detail={large}/>}<div className={`live-chip maturity-${maturity.kind}`}><i/> {maturity.label}</div></div>
-    <Link className="reference-card-link" state={{fromExplore:location.pathname==='/explore'}} to={`/reference/${item.id}`} aria-label={`${item.name} 상세 보기`}>
+
+  return <article className={`reference-card ${large?'large':''}${isPage?' page-reference-card':''}${designSystemCard?' design-system-reference-card':''}${tokenDesignSystemCard?' token-design-system-card':''}${vendorBrand?' brand-reference-card':''}`}>
+    <div className="card-demo">
+      {item.designSystem?<DesignSystemPreview tokens={item.designSystem} compact/>:<DemoRenderer kind={item.demo} detail={large}/>}
+    </div>
+    <div className="card-summary">
       <div className="card-meta">
-        <div className="card-meta-copy"><span className="eyebrow">{categoryDisplayName(item.category)} · {categoryKo[item.category]} / {item.subcategory}</span><div className="card-title-line">{vendorSlug&&<BrandIdentityMark slug={vendorSlug}/>}<h3>{item.name}</h3></div></div>
-        <ArrowUpRight size={18}/>
+        <span className="eyebrow">{categoryDisplayName(item.category)} · {categoryKo[item.category]} / {item.subcategory}</span>
+        <h3>
+          <Link className="reference-card-link" state={{fromExplore:location.pathname==='/explore'}} to={`/reference/${item.id}`} aria-label={`${item.name} 상세 보기`}>
+            {vendorSlug&&<BrandIdentityMark slug={vendorSlug}/>}
+            <span className="card-title">{item.name}</span>
+            <ArrowUpRight size={18} aria-hidden="true"/>
+          </Link>
+        </h3>
       </div>
       <p>{descriptionKo(item)}</p>
-      <div className="card-footer"><div className="card-tags"><span className={`license-dot ${item.license.status}`}>{statusLabel[item.license.status]}</span>{(vendorBrand?item.tags.filter(t=>!['vendor','awesome-design-md'].includes(t)).slice(0,2):item.tags.slice(0,3)).map(t=><span key={t}>#{t}</span>)}</div>{vendorBrand&&<span className="brand-card-action">시스템 보기 <ArrowUpRight size={13}/></span>}</div>
-    </Link>
+      <div className="card-footer">
+        <div className="card-tags">
+          <div className={`live-chip maturity-${maturity.kind}`}><i aria-hidden="true"/> {maturity.label}</div>
+          <span className={`license-dot ${item.license.status}`}>{statusLabel[item.license.status]}</span>
+          {(vendorBrand?item.tags.filter(t=>!['vendor','awesome-design-md'].includes(t)).slice(0,2):item.tags.slice(0,3)).map(t=><span key={t}>#{t}</span>)}
+        </div>
+      </div>
+    </div>
   </article>
 }

@@ -90,7 +90,8 @@
 .ap-workspace aside{border-right:1px solid var(--ap-border);padding-right:20px}
 .ap-workspace aside .ap-choices{display:grid;justify-items:start}
 .ap-workspace input{padding:12px;border:1px solid var(--ap-border);width:100%;margin:12px 0 24px}
-.ap-canvas .ap-issue{display:flex;align-items:center;gap:12px;width:100%;padding:18px 8px;border-bottom:1px solid var(--ap-border);text-align:left;min-height:52px}
+.ap-canvas .ap-issue{display:flex;align-items:center;gap:12px;width:100%;padding:12px 14px!important;margin-bottom:8px;text-align:left;min-height:44px;font-size:13px!important;transition:background .15s}
+.ap-canvas .ap-issue:hover{filter:brightness(0.97)}
 .ap-issue>b{flex:1;font-size:13px}
 .ap-issue>small{font-size:10px;opacity:.6}
 .ap-media-heading{padding:16px 0}

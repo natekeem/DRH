@@ -1,0 +1,17 @@
+{
+  "type": "verified-svg",
+  "format": "svg",
+  "provider": "simple-icons",
+  "label": "Hyundai",
+  "src": "brand-assets/hyundai/logo.svg",
+  "darkSrc": "brand-assets/hyundai/logo-dark.svg",
+  "sourceUrl": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/hyundai.svg",
+  "evidenceUrl": "https://github.com/simple-icons/simple-icons/blob/16.37.0/DISCLAIMER.md",
+  "license": "Simple Icons 16.37.0 icon data, CC0-1.0; recolored with the Simple Icons brand hex #002C5E. Trademark rights remain with the owner; identification only, not MIT.",
+  "attribution": "Hyundai 상표·로고는 해당 소유자의 자산입니다. Simple Icons 아이콘을 브랜드 식별 목적으로만 표시하며 제휴·보증을 뜻하지 않습니다.",
+  "usageTerms": "Unmodified shape; aspect ratio preserved. Only fill color set (brand hex, or neutral black/white when illegible). No affiliation or endorsement claim.",
+  "checkedAt": "2026-11-11",
+  "sha256": "66f4cb7b95f0b6de383293f77a8e184e6254cd4a468c04b203de27d8fd3df1a0",
+  "darkSha256": "b827899c93602afe6fff6d747dbdb950b81491b6e50c5440b70e0f6a4f1a2387",
+  "originalSha256": "dcd2d6c20e7c4bc431f7c3a1108c4493b007f978b8ee6f48b007406cc8435937"
+}

@@ -1,0 +1,17 @@
+{
+  "type": "verified-svg",
+  "format": "svg",
+  "provider": "simple-icons",
+  "label": "Naver",
+  "src": "brand-assets/naver/logo.svg",
+  "darkSrc": "brand-assets/naver/logo-dark.svg",
+  "sourceUrl": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/naver.svg",
+  "evidenceUrl": "https://developers.naver.com/docs/login/bi/bi.md",
+  "license": "Simple Icons 16.37.0 icon data, CC0-1.0; recolored with the Simple Icons brand hex #03C75A. Trademark rights remain with the owner; identification only, not MIT.",
+  "attribution": "Naver 상표·로고는 해당 소유자의 자산입니다. Simple Icons 아이콘을 브랜드 식별 목적으로만 표시하며 제휴·보증을 뜻하지 않습니다.",
+  "usageTerms": "Unmodified shape; aspect ratio preserved. Only fill color set (brand hex, or neutral black/white when illegible). No affiliation or endorsement claim.",
+  "checkedAt": "2026-11-11",
+  "sha256": "4a10bf40e7c04b65451ae60d618a9a3792049acedde0d842fb2a2572100108d7",
+  "darkSha256": "4a10bf40e7c04b65451ae60d618a9a3792049acedde0d842fb2a2572100108d7",
+  "originalSha256": "6c8125ff3908b12e0d0e0dd56bfeaa90013547a0124f7e34e2b149ba474150a8"
+}

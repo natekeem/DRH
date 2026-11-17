@@ -1,0 +1,17 @@
+{
+  "type": "verified-svg",
+  "format": "svg",
+  "provider": "simple-icons",
+  "label": "Notion",
+  "src": "brand-assets/notion/logo.svg",
+  "darkSrc": "brand-assets/notion/logo-dark.svg",
+  "sourceUrl": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/notion.svg",
+  "evidenceUrl": "https://github.com/simple-icons/simple-icons/blob/16.37.0/DISCLAIMER.md",
+  "license": "Simple Icons 16.37.0 icon data, CC0-1.0; recolored with the Simple Icons brand hex #000000. Trademark rights remain with the owner; identification only, not MIT.",
+  "attribution": "Notion 상표·로고는 해당 소유자의 자산입니다. Simple Icons 아이콘을 브랜드 식별 목적으로만 표시하며 제휴·보증을 뜻하지 않습니다.",
+  "usageTerms": "Unmodified shape; aspect ratio preserved. Only fill color set (brand hex, or neutral black/white when illegible). No affiliation or endorsement claim.",
+  "checkedAt": "2026-11-11",
+  "sha256": "fdddc8f06178df169036d3f5fc336eb98b15cad375afa04d0a5cd7aa61b65739",
+  "darkSha256": "66603ff51824f5d722977448fe39b9ad58c1eb2c700a8ae6b04fa35e8140d389",
+  "originalSha256": "b17d2a2b592a06252efef522d5205f0c7a958f748d40df1011ed081417e42f85"
+}

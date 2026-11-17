@@ -1,0 +1,17 @@
+{
+  "type": "verified-svg",
+  "format": "svg",
+  "provider": "simple-icons",
+  "label": "Dell",
+  "src": "brand-assets/dell-1996/logo.svg",
+  "darkSrc": "brand-assets/dell-1996/logo-dark.svg",
+  "sourceUrl": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/dell.svg",
+  "evidenceUrl": "https://brand.delltechnologies.com/logos/",
+  "license": "Simple Icons 16.37.0 icon data, CC0-1.0; recolored with the Simple Icons brand hex #007DB8. Trademark rights remain with the owner; identification only, not MIT.",
+  "attribution": "Dell 상표·로고는 해당 소유자의 자산입니다. Simple Icons 아이콘을 브랜드 식별 목적으로만 표시하며 제휴·보증을 뜻하지 않습니다.",
+  "usageTerms": "Unmodified shape; aspect ratio preserved. Only fill color set (brand hex, or neutral black/white when illegible). No affiliation or endorsement claim.",
+  "checkedAt": "2026-11-11",
+  "sha256": "ae54d23986bac617dbfbae0c78dfc88e1630a2ba3b2ca36c904b95c5b10eaa0b",
+  "darkSha256": "ae54d23986bac617dbfbae0c78dfc88e1630a2ba3b2ca36c904b95c5b10eaa0b",
+  "originalSha256": "be787bc8a294cecf64f7197b36f3f095583b2274f13ab336e7dabfe582353c45"
+}

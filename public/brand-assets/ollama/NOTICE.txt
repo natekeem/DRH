@@ -1,0 +1,17 @@
+{
+  "type": "verified-svg",
+  "format": "svg",
+  "provider": "simple-icons",
+  "label": "Ollama",
+  "src": "brand-assets/ollama/logo.svg",
+  "darkSrc": "brand-assets/ollama/logo-dark.svg",
+  "sourceUrl": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/ollama.svg",
+  "evidenceUrl": "https://github.com/simple-icons/simple-icons/blob/16.37.0/DISCLAIMER.md",
+  "license": "Simple Icons 16.37.0 icon data, CC0-1.0; recolored with the Simple Icons brand hex #000000. Trademark rights remain with the owner; identification only, not MIT.",
+  "attribution": "Ollama 상표·로고는 해당 소유자의 자산입니다. Simple Icons 아이콘을 브랜드 식별 목적으로만 표시하며 제휴·보증을 뜻하지 않습니다.",
+  "usageTerms": "Unmodified shape; aspect ratio preserved. Only fill color set (brand hex, or neutral black/white when illegible). No affiliation or endorsement claim.",
+  "checkedAt": "2026-11-11",
+  "sha256": "8d113044ac7b6a4bea46c335f8410a04976c2e6ae5beaf9fc6b823d90f8b05a0",
+  "darkSha256": "2689f6707d6f0e80f6b99692d561747319db9267f6537bd3b8eb0ea381d8e9f8",
+  "originalSha256": "9c62bf0159ee96c8b58c86a732f33b002b4b3bb165ec86e8ecca51ad6a82dab6"
+}

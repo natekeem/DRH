@@ -88,7 +88,7 @@ function LegacyDemoRenderer({ kind, detail=false }:{kind:string;detail?:boolean}
   </PointerSurface>
 }
 
-export function DemoRenderer({kind,detail=false,preset}:{kind:string;detail?:boolean;preset?:OfficialShaderPreset}){
+export function DemoRenderer({kind,detail=false,preset,forceReduced}:{kind:string;detail?:boolean;preset?:OfficialShaderPreset;forceReduced?:boolean}){
   if(kind.startsWith('vendor-design-md:')){
     const slug=kind.slice('vendor-design-md:'.length)
     const entry=vendorEntryBySlug[slug]
@@ -100,5 +100,5 @@ export function DemoRenderer({kind,detail=false,preset}:{kind:string;detail?:boo
   if (kind === 'metaballs') return <DemoViewport detail={detail}><MetaballsDemo variant={detail ? 'detail' : 'card'} /></DemoViewport>
   if (kind === 'liquid-refraction') return <DemoViewport detail={detail}><LiquidRefractionDemo variant={detail ? 'detail' : 'card'} /></DemoViewport>
 
-  return <DemoViewport detail={detail}>{kind==='shader-gradient'&&preset?<div className="demo-stage shader-demo"><ShaderBackdrop preset={preset} compact={!detail}/></div>:recipes[kind]?<RecipeDemo kind={kind} detail={detail}/>:<LegacyDemoRenderer kind={kind} detail={detail}/>}</DemoViewport>
+  return <DemoViewport detail={detail}>{kind==='shader-gradient'&&preset?<div className="demo-stage shader-demo"><ShaderBackdrop preset={preset} compact={!detail}/></div>:recipes[kind]?<RecipeDemo kind={kind} detail={detail} forceReduced={forceReduced}/>:<LegacyDemoRenderer kind={kind} detail={detail}/>}</DemoViewport>
 }

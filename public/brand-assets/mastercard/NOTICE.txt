@@ -1,0 +1,17 @@
+{
+  "type": "verified-svg",
+  "format": "svg",
+  "provider": "simple-icons",
+  "label": "MasterCard",
+  "src": "brand-assets/mastercard/logo.svg",
+  "darkSrc": "brand-assets/mastercard/logo-dark.svg",
+  "sourceUrl": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/mastercard.svg",
+  "evidenceUrl": "https://www.mastercard.com/brandcenter/us/en/brand-requirements/mastercard.html",
+  "license": "Simple Icons 16.37.0 icon data, CC0-1.0; recolored with the Simple Icons brand hex #EB001B. Trademark rights remain with the owner; identification only, not MIT.",
+  "attribution": "MasterCard 상표·로고는 해당 소유자의 자산입니다. Simple Icons 아이콘을 브랜드 식별 목적으로만 표시하며 제휴·보증을 뜻하지 않습니다.",
+  "usageTerms": "Unmodified shape; aspect ratio preserved. Only fill color set (brand hex, or neutral black/white when illegible). No affiliation or endorsement claim.",
+  "checkedAt": "2026-11-11",
+  "sha256": "de700f189a1f157df6611c4d30df55af602a093af364a4b667c17999e6e070db",
+  "darkSha256": "de700f189a1f157df6611c4d30df55af602a093af364a4b667c17999e6e070db",
+  "originalSha256": "b6e25beff2c54363d6c79d58a7c924cd484908c8f6203388b6c1fe34accfffaa"
+}

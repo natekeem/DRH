@@ -1,7 +1,7 @@
 import {createRequire} from 'node:module'
 import {mkdir,readFile,writeFile} from 'node:fs/promises'
 import assert from 'node:assert/strict'
-import {demoModule} from '../../scripts/demo-module.mjs'
+import {demoModule} from '../../scripts/lib/demo-module.mjs'
 const require=createRequire(import.meta.url)
 const {chromium}=require(process.env.PLAYWRIGHT_PATH||'playwright')
 const base=process.env.DRH_URL||'http://127.0.0.1:5173'

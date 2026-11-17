@@ -1,0 +1,17 @@
+{
+  "type": "verified-svg",
+  "format": "svg",
+  "provider": "simple-icons",
+  "label": "Kakao",
+  "src": "brand-assets/kakao/logo.svg",
+  "darkSrc": "brand-assets/kakao/logo-dark.svg",
+  "sourceUrl": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/kakao.svg",
+  "evidenceUrl": "https://github.com/simple-icons/simple-icons/blob/16.37.0/DISCLAIMER.md",
+  "license": "Simple Icons 16.37.0 icon data, CC0-1.0; recolored with the Simple Icons brand hex #FFCD00. Trademark rights remain with the owner; identification only, not MIT.",
+  "attribution": "Kakao 상표·로고는 해당 소유자의 자산입니다. Simple Icons 아이콘을 브랜드 식별 목적으로만 표시하며 제휴·보증을 뜻하지 않습니다.",
+  "usageTerms": "Unmodified shape; aspect ratio preserved. Only fill color set (brand hex, or neutral black/white when illegible). No affiliation or endorsement claim.",
+  "checkedAt": "2026-11-11",
+  "sha256": "c3ae9cf80142e98eaf236523b51a42a8fb834d87138515ea53f63251f8822183",
+  "darkSha256": "6685059f197fb85bab4171b148ee693300fae958ee299cda775b5e2d89fa548b",
+  "originalSha256": "01af137d8a9b05d7acfef0577d88ee56c9389cec70e5b9d3d873b19aee9b4673"
+}

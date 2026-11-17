@@ -1,0 +1,17 @@
+{
+  "type": "verified-svg",
+  "format": "svg",
+  "provider": "simple-icons",
+  "label": "Vodafone",
+  "src": "brand-assets/vodafone/logo.svg",
+  "darkSrc": "brand-assets/vodafone/logo-dark.svg",
+  "sourceUrl": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/vodafone.svg",
+  "evidenceUrl": "https://github.com/simple-icons/simple-icons/blob/16.37.0/DISCLAIMER.md",
+  "license": "Simple Icons 16.37.0 icon data, CC0-1.0; recolored with the Simple Icons brand hex #E60000. Trademark rights remain with the owner; identification only, not MIT.",
+  "attribution": "Vodafone 상표·로고는 해당 소유자의 자산입니다. Simple Icons 아이콘을 브랜드 식별 목적으로만 표시하며 제휴·보증을 뜻하지 않습니다.",
+  "usageTerms": "Unmodified shape; aspect ratio preserved. Only fill color set (brand hex, or neutral black/white when illegible). No affiliation or endorsement claim.",
+  "checkedAt": "2026-11-11",
+  "sha256": "d664e5cf0e01942afbc5581b619fd76399445fcea1fb1dcc8d0412383149ebb8",
+  "darkSha256": "d664e5cf0e01942afbc5581b619fd76399445fcea1fb1dcc8d0412383149ebb8",
+  "originalSha256": "34f76381fbc56f72a21eec2f838650b206a1e8a8e669859e932b103f126ae2da"
+}

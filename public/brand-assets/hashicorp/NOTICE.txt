@@ -1,0 +1,17 @@
+{
+  "type": "verified-svg",
+  "format": "svg",
+  "provider": "simple-icons",
+  "label": "HashiCorp",
+  "src": "brand-assets/hashicorp/logo.svg",
+  "darkSrc": "brand-assets/hashicorp/logo-dark.svg",
+  "sourceUrl": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/hashicorp.svg",
+  "evidenceUrl": "https://www.hashicorp.com/brand",
+  "license": "Simple Icons 16.37.0 icon data, CC0-1.0; recolored with the Simple Icons brand hex #000000. Trademark rights remain with the owner; identification only, not MIT.",
+  "attribution": "HashiCorp 상표·로고는 해당 소유자의 자산입니다. Simple Icons 아이콘을 브랜드 식별 목적으로만 표시하며 제휴·보증을 뜻하지 않습니다.",
+  "usageTerms": "Unmodified shape; aspect ratio preserved. Only fill color set (brand hex, or neutral black/white when illegible). No affiliation or endorsement claim.",
+  "checkedAt": "2026-11-11",
+  "sha256": "027ef46f2b7a71b05b482f62798ad76426c35d12c7c865b7e9d9a85335b4a68c",
+  "darkSha256": "01f8d7b735e87e1b30382fe7910c329fb164491663a1f1e4bb937a6bd1733d3a",
+  "originalSha256": "e3b6859835041e0a106e02bd60894c230eb4a97a49219f5bf6a649dd3acdab59"
+}

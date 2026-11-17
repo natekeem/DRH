@@ -3,7 +3,7 @@ import { createPortal } from 'react-dom'
 import { ChevronDown } from 'lucide-react'
 import type { VendorEntry } from '../../data/awesomeDesignMd'
 import type { BrandDesignSpec } from '../../brandDesignSpec'
-import { buildBrandCatalog, canonicalSections, componentStyle } from '../../lib/brandCatalog'
+import { buildBrandCatalog, canonicalSections, componentStyle, isDark } from '../../lib/brandCatalog'
 import { brandIdentifier, resolveBrandFont } from '../../lib/brandPresentation'
 import { BrandCatalog, catalogStyle } from './BrandCatalog'
 import './vendorDesignPreview.css'
@@ -54,7 +54,7 @@ export function VendorDesignPreview({entry,detail=false}:{entry:VendorEntry;deta
   else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first?.focus()}
  }
  const asset=brandIdentifier(entry.slug,catalog.spec)
- const identifier=<span className="bc-identifier" data-asset-format={asset.format} style={{fontFamily:resolveBrandFont(catalog.roles[0]?.[1]||{}).stack}}>{asset.type!=='text-wordmark'&&<img src={import.meta.env.BASE_URL+(!detail&&theme.id==='dark'&&asset.darkSrc?asset.darkSrc:asset.src)} alt=""/>}<b>{asset.label}</b><small>{entry.category}</small></span>
+ const identifier=<span className="bc-identifier" data-asset-format={asset.format} style={{fontFamily:resolveBrandFont(catalog.roles[0]?.[1]||{}).stack}}>{asset.type!=='text-wordmark'&&<img src={import.meta.env.BASE_URL+((theme.id==='dark'||isDark(theme.colors.canvas))&&asset.darkSrc?asset.darkSrc:asset.src)} alt=""/>}<b>{asset.label}</b><small>{entry.category}</small></span>
  const controls=<div className="bc-themes" aria-label="Source themes">{catalog.themes.length>1?catalog.themes.map(t=><button key={t.id} className="bc-control" aria-pressed={theme.id===t.id} onClick={()=>setThemeId(t.id)}>{t.label}</button>):<span>{theme.label} · source</span>}</div>
  if(!detail){const micro=[catalog.components.find(c=>c.kind==='buttons'),catalog.components.find(c=>['inputs','badges','cards'].includes(c.kind))].filter((c):c is NonNullable<typeof c>=>!!c);if(!micro.length&&catalog.components.length)micro.push(catalog.components[0]);const colors=[...new Map([['primary',entry.tokens.colors.primary],...catalog.colors].map(([k,v])=>[v,[k,v]])).values()].slice(0,6)
  return <div className="bc-root bc-card" style={catalogStyle(theme)} data-brand={entry.slug} data-layout={catalog.spec.layout}>{identifier}<div className="bc-dna">{catalog.dna.map(d=><span key={d.label} title={d.evidence}>{d.label}</span>)}</div><div className="bc-micro" aria-hidden="true">{micro.map(c=><span key={c.key} style={componentStyle(c.values,catalog,theme)}>{c.kind==='inputs'?'Search…':c.kind==='badges'?'Label':c.kind==='cards'?'Card':c.kind==='tabs'?'Overview':c.kind==='navigation'?'Menu item':c.kind==='other'?'Sample':/secondary/.test(c.key)?'Secondary':'Continue →'}</span>)}</div><div className="bc-mini-palette">{colors.map(([key,value])=><i key={key} style={{background:value}} title={key+': '+value}/>)}</div></div>}

@@ -39,7 +39,14 @@ export function componentSize(kind:ComponentKind):ComponentSizeContract {
 export function componentSampleContent(kind:ComponentKind,key:string,scene:ExperienceSceneType,variant:ExperienceVariant):{label:string;placeholder?:string;items?:string[];headers?:string[];rows?:string[][]} {
  const crypto=variant==='crypto'
  if(kind==='buttons'){
-  if(/play/.test(key))return {label:crypto?'▶':'▶'}
+  if(/play/.test(key))return {label:'▶'}
+  if(/pause/.test(key))return {label:'⏸'}
+  if(/search|find/.test(key))return {label:'⌕'}
+  if(/close|dismiss|clear|delete|remove/.test(key))return {label:'✕'}
+  if(/arrow|chevron|next|forward/.test(key))return {label:'→'}
+  if(/back|prev|left|return/.test(key))return {label:'←'}
+  if(/menu|hamburger/.test(key))return {label:'≡'}
+  if(/icon|circular|circle|avatar|chip|control|action-circle/.test(key))return {label:'✦'}
   if(/secondary|more/.test(key))return {label:crypto?'View Details':'자세히 보기'}
   if(/download/.test(key))return {label:'Download'}
   return {label:crypto?'Buy Crypto':'Continue →'}

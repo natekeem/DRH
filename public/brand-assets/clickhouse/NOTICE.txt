@@ -1,0 +1,17 @@
+{
+  "type": "verified-svg",
+  "format": "svg",
+  "provider": "simple-icons",
+  "label": "ClickHouse",
+  "src": "brand-assets/clickhouse/logo.svg",
+  "darkSrc": "brand-assets/clickhouse/logo-dark.svg",
+  "sourceUrl": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/clickhouse.svg",
+  "evidenceUrl": "https://github.com/simple-icons/simple-icons/blob/16.37.0/DISCLAIMER.md",
+  "license": "Simple Icons 16.37.0 icon data, CC0-1.0; recolored with the Simple Icons brand hex #FFCC01. Trademark rights remain with the owner; identification only, not MIT.",
+  "attribution": "ClickHouse 상표·로고는 해당 소유자의 자산입니다. Simple Icons 아이콘을 브랜드 식별 목적으로만 표시하며 제휴·보증을 뜻하지 않습니다.",
+  "usageTerms": "Unmodified shape; aspect ratio preserved. Only fill color set (brand hex, or neutral black/white when illegible). No affiliation or endorsement claim.",
+  "checkedAt": "2026-11-11",
+  "sha256": "ea1f3d43a853a7bd606ea337ea892f7140fc662b07e1ada81a96d2dd7585d43a",
+  "darkSha256": "56b721320616172170bb817a949dd88f71a52254b07caeec6589d0ff9d363cb5",
+  "originalSha256": "9fa7c12613763111ca26bbc1fe10994960028bc3da9faf47247de231a0b27589"
+}

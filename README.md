@@ -1,136 +1,56 @@
 # Design Reference Hub
 
-> Current package: **Post-V1.7 Batch 1** — foundational styles + accessible UI patterns. [Audit and source record](docs/POST_V17_BATCH1_AUDIT.md)
+웹 UI의 패턴, 모션, 배경, 페이지 구성과 브랜드 `DESIGN.md`를 살펴보는 레퍼런스 라이브러리입니다. 미리보기에서 동작을 확인하고 상세에서 Agent Package, 실행 가능한 코드 또는 원본 자료를 확인할 수 있습니다.
 
-> **See it. Name it. Build it.**
+[웹 앱 열기](https://natekeem.github.io/DRH/) · [저장소 문서 안내](docs/README.md)
 
-A visual reference library for people who build web interfaces with coding agents but may not know the design vocabulary yet.
+## 로컬 실행
 
-The product deliberately optimizes for this workflow:
+GitHub Pages의 빌드 환경에 맞춰 Node.js 22 이상을 사용합니다.
 
-**Browse → See → Pick → Copy → Vibe Coding**
-
-## Current Post-V1.7 Batch 1
-
-- ShaderGradient-powered full-screen Hero using the 10 official upstream presets
-- ShaderGradient-style landing sequence: live preset gallery → marketing demos → Agent handoff
-- 177 reference entries: 93 original + 74 vendor DESIGN.md + 10 Batch 1 additions
-- 9 content categories: Styles, UI Patterns, Pages, Sections, Background, Motion, Text, Effects, DESIGN.md
-- Live/interactive preview renderer shared by gallery cards and detail pages
-- Search, category and subcategory filters
-- Demo maturity labels: OFFICIAL LIVE / WORKING DEMO / PROTOTYPE / LINK ONLY
-- Detailed Agent Package copy/download for weaker coding agents
-- Copy Prompt / Copy DESIGN.md / implementation starter
-- Starter `index.html` download for Pages/Sections
-- Curated Collections
-- 184-source research index with license triage (182 researched sources + Framer Marketplace Templates/Assets review)
-- Hash-based routing for GitHub Pages compatibility
-- Reduced-motion, coarse-pointer and WebGL-context virtualization fallbacks
-- GitHub Actions Pages deployment
-- Korean-first product UI with English canonical design/effect names
-- Routing/interaction polish pass documented under `/docs`
-- Detailed Codex handoff and live-demo backlog under `/docs`
-
-## Stack
-
-- React 18 + TypeScript + Vite
-- `@shadergradient/react` + Three.js for the hero and Shader Gradient reference
-- CSS/React Hub-original demos for most reference previews
-- Lucide icons
-- React Router HashRouter
-
-ShaderGradient v2 supports React 18/19; for Vite with React 18 the project uses the R3F 8.x line. See the upstream repository before changing this version matrix.
-
-## Run locally
-
-```bash
-npm install
+```sh
+npm ci
 npm run dev
 ```
 
-Production build:
-
-```bash
-npm run build
+```sh
+npm run check
 npm run preview
 ```
 
-## Deploy to GitHub Pages
+`check`는 타입 검사, 프로덕션 빌드, 저장소의 감사 스크립트를 실행합니다. 미리보기와 내보내기 동작을 브라우저에서 확인하는 방법은 [Validation](docs/development/validation.md)에 있습니다.
 
-> **Internal-use note:** GitHub Pages hosting is not a privacy boundary by itself. Keep the repository/site on an access-controlled company GitHub/Pages setup or internal static host before adding internal-only DESIGN.md, screenshots, prompts, project names, or company assets. The V1 public-source dataset is also marked `noindex`, but `noindex` is not access control.
+## 앱 경로
 
-1. Create a GitHub repository and push this project to `main`.
-2. In **Settings → Pages**, set **Source** to **GitHub Actions**.
-3. Push to `main` or run the `Deploy to GitHub Pages` workflow manually.
-4. The app uses `HashRouter` and Vite `base: './'`, so project Pages URLs work without SPA rewrite rules.
+| 경로 | 화면 |
+| --- | --- |
+| `#/` | 홈과 예제 |
+| `#/explore` | Reference 목록과 필터 |
+| `#/explore?view=collections` | 주제별 컬렉션 |
+| `#/reference/<id>` | 미리보기, 출처, 구현 자료 |
+| `#/guides` | 사용 가이드 |
+| `#/sources` | 출처와 라이선스 조사 목록 |
 
-Example:
+가이드 본문과 제목에 대한 URL은 [Guide Routes](docs/development/guide-routes.md)에서 확인할 수 있습니다.
 
-```text
-https://<org-or-user>.github.io/design-reference-hub/
-```
+## 저장소 배치
 
-## Content architecture
+| 위치 | 내용 |
+| --- | --- |
+| [src/](src/) | React 앱, 레퍼런스 데이터, 데모 구현, 가이드 원문 |
+| [public/](public/) | 실행 시 제공하는 에셋과 원본 서드파티 문서 |
+| [docs/](docs/README.md) | 유지보수 문서, 품질 및 출처 기준, 변경 이력 |
+| [scripts/](scripts/README.md) | 감사, 데이터 동기화, 보고서 생성과 출처 확인 |
+| [tests/](tests/) | 브라우저 QA, 재현용 샘플과 데이터 |
+| [artifacts/](artifacts/README.md) | 검증 시점의 결과와 현재 로컬 리포트 |
+| [reference/](reference/README.md) | 초기 버전과 조사 자료 |
 
-```text
-src/data/references.ts
-        │
-        ├── Gallery cards
-        ├── Search / filters
-        ├── Detail pages
-        ├── Collections
-        └── Agent copy blocks
+새 Reference는 [데이터 목록](src/data/references.ts)에 추가합니다. 카드, 상세, 내보내기는 가능한 한 동일한 구현을 공유합니다. 수정 전에 [Reference Quality Standard](docs/REFERENCE_QUALITY_STANDARD.md)를 읽고 출처와 구현 자료를 확인하세요.
 
-reference.demo
-        ↓
-src/components/demos/DemoRenderer.tsx
-        ↓
-shared live preview in card + detail
-```
+## 배포
 
-A new reference should normally require:
+`main`에 푸시하면 [GitHub Pages 워크플로](.github/workflows/deploy-pages.yml)가 `dist/`를 빌드해 배포합니다. Vite의 상대 base 경로와 HashRouter가 GitHub Pages의 프로젝트 하위 경로에서 동작하도록 합니다.
 
-1. One metadata entry in `src/data/references.ts`
-2. One `demo` key implemented in `DemoRenderer.tsx` if a new behavior is needed
-3. Source/license evidence
+## 라이선스
 
-Do **not** create a new route/page per reference.
-
-## License policy
-
-The Hub repository itself is MIT. That does **not** make every linked external source, screenshot, font, image, icon or brand asset MIT.
-
-Reference decisions are intentionally separated:
-
-- **Copy OK** — permissive implementation or Hub-original demo
-- **Reference** — useful to discover, but source redistribution is custom/mixed/unclear
-- **Restricted** — do not ingest source code into this catalog
-
-The source research snapshot lives in `src/data/source-map.json` and is exposed through `/sources`.
-
-## Important docs
-
-- [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)
-- [`docs/DESIGN_SYSTEM.md`](docs/DESIGN_SYSTEM.md)
-- [`docs/REFERENCE_SCHEMA.md`](docs/REFERENCE_SCHEMA.md)
-- [`docs/DEMO_IMPLEMENTATION_GUIDE.md`](docs/DEMO_IMPLEMENTATION_GUIDE.md)
-- [`docs/LIVE_DEMO_BACKLOG.md`](docs/LIVE_DEMO_BACKLOG.md)
-- [`docs/SOURCE_LICENSE_POLICY.md`](docs/SOURCE_LICENSE_POLICY.md)
-- [`docs/CODEX_HANDOFF.md`](docs/CODEX_HANDOFF.md)
-- [`docs/SHADERGRADIENT_PORT.md`](docs/SHADERGRADIENT_PORT.md)
-- [`docs/THIRD_PARTY_ATTRIBUTION.md`](docs/THIRD_PARTY_ATTRIBUTION.md)
-- [`docs/V1_3_CHANGELOG.md`](docs/V1_3_CHANGELOG.md)
-- [`docs/USER_ADJUSTMENTS_V1_3.md`](docs/USER_ADJUSTMENTS_V1_3.md)
-- [`docs/ANTIGRAVITY_PROMPT.md`](docs/ANTIGRAVITY_PROMPT.md)
-- [`docs/CODEX_PRIORITY_PROMPT.md`](docs/CODEX_PRIORITY_PROMPT.md)
-- [`docs/BUILD_VERIFICATION_V1_3.md`](docs/BUILD_VERIFICATION_V1_3.md)
-- [`docs/V1_2_CHANGELOG.md`](docs/V1_2_CHANGELOG.md)
-- [`docs/POLISH_PASS_2026-09-06.md`](docs/POLISH_PASS_2026-09-06.md)
-
-## Product principle
-
-This is not an AI generator, chatbot, or design-system administration product.
-
-The experience should remain visually led:
-
-> **Example first → name second → copy third.**
+저장소 코드는 [MIT](LICENSE)입니다. 외부 디자인 문서, 폰트, 로고 및 구현 자료는 각 항목의 출처와 고지에 따릅니다. [Source & License Policy](docs/standards/source-license.md)와 [Third-Party Attribution](docs/sources/third-party-attribution.md)을 참고하세요.

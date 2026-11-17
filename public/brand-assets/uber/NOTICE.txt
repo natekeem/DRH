@@ -1,0 +1,17 @@
+{
+  "type": "verified-svg",
+  "format": "svg",
+  "provider": "simple-icons",
+  "label": "Uber",
+  "src": "brand-assets/uber/logo.svg",
+  "darkSrc": "brand-assets/uber/logo-dark.svg",
+  "sourceUrl": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/uber.svg",
+  "evidenceUrl": "https://assets.uber.com/d/k4nuxdZ8MC7E/user-guide#/user-guide/terms-of-use",
+  "license": "Simple Icons 16.37.0 icon data, CC0-1.0; recolored with the Simple Icons brand hex #000000. Trademark rights remain with the owner; identification only, not MIT.",
+  "attribution": "Uber 상표·로고는 해당 소유자의 자산입니다. Simple Icons 아이콘을 브랜드 식별 목적으로만 표시하며 제휴·보증을 뜻하지 않습니다.",
+  "usageTerms": "Unmodified shape; aspect ratio preserved. Only fill color set (brand hex, or neutral black/white when illegible). No affiliation or endorsement claim.",
+  "checkedAt": "2026-11-11",
+  "sha256": "29eaa0ec30571c0694e7e42ab34816adb5955e414248c240b2b82dee3d8b75ca",
+  "darkSha256": "d563717e8f236352e853b873183f92b5c60cce1862781366985353322c4f8482",
+  "originalSha256": "8e580232236d43c715637618ce31621f2afc802a22af9b12706dc153c6a52002"
+}

@@ -140,7 +140,11 @@ export function mountAdvancedDemo(root, options = {}) {
   function allowed() { return !disposed && enabled && intersecting && !document.hidden && !reduced.matches && !lost && width > 0 && height > 0; }
   function tick(time) {
     raf = 0;
-    if (!allowed()) return;
+    if (!allowed()) {
+      // A frame can observe the new preference before the media query change event.
+      if (mode === 'webgl2' && reduced.matches) sync();
+      return;
+    }
     if (resizeDirty) init();
     if (!renderer) return;
     const dt = lastTime ? clamp((time - lastTime) / 1000, .001, 1 / 30) : 1 / 60;

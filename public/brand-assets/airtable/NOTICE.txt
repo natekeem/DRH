@@ -1,0 +1,17 @@
+{
+  "type": "verified-svg",
+  "format": "svg",
+  "provider": "simple-icons",
+  "label": "Airtable",
+  "src": "brand-assets/airtable/logo.svg",
+  "darkSrc": "brand-assets/airtable/logo-dark.svg",
+  "sourceUrl": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/airtable.svg",
+  "evidenceUrl": "https://github.com/simple-icons/simple-icons/blob/16.37.0/DISCLAIMER.md",
+  "license": "Simple Icons 16.37.0 icon data, CC0-1.0; recolored with the Simple Icons brand hex #18BFFF. Trademark rights remain with the owner; identification only, not MIT.",
+  "attribution": "Airtable 상표·로고는 해당 소유자의 자산입니다. Simple Icons 아이콘을 브랜드 식별 목적으로만 표시하며 제휴·보증을 뜻하지 않습니다.",
+  "usageTerms": "Unmodified shape; aspect ratio preserved. Only fill color set (brand hex, or neutral black/white when illegible). No affiliation or endorsement claim.",
+  "checkedAt": "2026-11-11",
+  "sha256": "752f03ea13cc75d90de50fc09abf60b6144d1382da4c8881f51abdbde599572a",
+  "darkSha256": "752f03ea13cc75d90de50fc09abf60b6144d1382da4c8881f51abdbde599572a",
+  "originalSha256": "5d65b71d7c21151d54ef18acdcbac914c264f7139e3e8160a0895979fe31e391"
+}

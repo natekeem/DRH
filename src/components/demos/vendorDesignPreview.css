@@ -57,7 +57,10 @@
  .bc-surface{min-width:100%;max-width:100%;padding:20px;overflow-wrap:anywhere}
 .bc-surface strong{display:block;font-weight:inherit}
 .bc-surface p{font:12px/1.6 system-ui;margin-top:12px}
-.bc-sample nav button{background:none;border:0;color:inherit;padding:4px;font:inherit}
+.bc-sample nav button{background:none;border:0;color:inherit;padding:6px 14px!important;font:inherit;border-radius:6px;min-width:48px;text-align:center;cursor:pointer;white-space:nowrap}
+.bc-sample nav button:hover{background:var(--catalog-surface, rgba(0,0,0,0.06))}
+.bc-tabs-specimen [role=tablist]{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.bc-tabs-specimen [role=tab]{padding:6px 14px!important;min-width:52px;text-align:center;white-space:nowrap}
 .bc-sample nav [aria-current=page]{text-decoration:underline}
 .bc-sample [role=tab][aria-selected=true]{text-decoration:underline;text-underline-offset:6px}
 .bc-sample [role=tabpanel]{font-size:12px;padding-top:12px}

@@ -64,4 +64,4 @@ If the duration, behavior, or dependencies in the Agent Package differ from the 
 
 ## 5. Vendor DESIGN.md previews
 
-Vendor previews additionally follow [Brand DESIGN.md Preview Standard](BRAND_DESIGN_PREVIEW_STANDARD.md) for source-driven compositions, identifiers, sync preservation and Card/Detail browser acceptance. The maturity, provenance and artifact rules above continue to apply.
+Vendor previews additionally follow [Brand DESIGN.md Preview Standard](standards/brand-design-preview.md) for source-driven compositions, identifiers, sync preservation and Card/Detail browser acceptance. The maturity, provenance and artifact rules above continue to apply.

@@ -8,6 +8,7 @@ import { buildAgentPackage, buildStandaloneHtml, provenanceFor, starterCodeFor }
 import { recipes } from './demos/recipes'
 import { designCss, designMarkdown, designTailwind } from './designSystem'
 import { vendorEntryBySlug, UPSTREAM_COMMIT, UPSTREAM_REPO } from '../data/references'
+import { vendorSnapshotPath } from './vendorDesignMd'
 
 const hub = 'https://github.com/natekeem/DRH'
 export const hubProvenance: ArtifactProvenance = { origin:'hub-original', sourceUrl:hub, repository:hub, license:'MIT', evidenceUrl:hub+'/blob/main/LICENSE', notices:hubLicense }
@@ -32,7 +33,7 @@ export function resolveArtifacts(item: ReferenceItem, preset?: OfficialShaderPre
     const vProv=vendorProvenance(slug)
     const dProv=vendorDerivedProvenance(slug)
     const t=entry?.tokens
-    const upstreamPath=`/vendor/${entry.vendorSource || 'awesome-design-md'}/${encodeURIComponent(slug)}/DESIGN.md`
+    const upstreamPath=`public/${vendorSnapshotPath(slug)}/DESIGN.md`
     // DESIGN.md placeholder — lazy content is fetched client-side in ReferencePage
     const designMdPlaceholder=`<!-- DESIGN.md raw content is loaded lazily from ${upstreamPath} -->\n# ${item.name}\n\nLoading raw DESIGN.md from upstream snapshot…\nIf content does not appear, the file may not be available offline.`
     // Compact agent artifact
@@ -90,7 +91,7 @@ export function resolveArtifacts(item: ReferenceItem, preset?: OfficialShaderPre
     }
   }
   const extended=buildAgentPackage(item,preset)
-  const compact=`# ${item.name}\n\n${item.prompt??item.description}\n\n## Behavior\n${recipe?.logic??(item.designSystem?'Apply the normalized design tokens and component rules.':'Prototype/reference: consult Extended for missing implementation details.')}\n\n## Dependencies\n${item.demo==='shader-gradient'?'React 18 + @shadergradient/react@2.4.20':standalone?'None for HTML; React 18+ for the iframe wrapper.':item.implementation.dependencies.join(', ')||'None required.'}\n\n## Must / Must Not\nPreserve exact CSS values, keyboard focus and reduced-motion. Do not claim prototype code is complete. Do not copy upstream assets without permission.\n\n## Tokens / Starter\n${out.designMd?.compact??(standalone?'Save the HTML artifact as index.html. Core CSS:\n```css\n'+(recipe?.css??'')+'\n```\nStarter structure (full behavior is in HTML / Extended):\n```html\n'+(recipe?.html??'')+'\n```':starter?'```tsx\n'+starter+'\n```':'No executable starter available. Use Source for discovery only.')}\n\n## Source / License\n${provenanceFor(item)}\n${item.source.url||hub}\n${item.license.name}: ${item.license.evidenceUrl||hub+'/blob/main/LICENSE'}\n`
+  const compact=`# ${item.name}\n\n${item.prompt??item.description}\n\n## Visual System\n${recipe?.visualSystem??'Keep the reference values mapped to one coherent product token system.'}\n\n## Behavior\n${recipe?.logic??(item.designSystem?'Apply the normalized design tokens and component rules.':'Prototype/reference: consult Extended for missing implementation details.')}\n\n## Dependencies\n${item.demo==='shader-gradient'?'React 18 + @shadergradient/react@2.4.20':standalone?'None for HTML; React 18+ for the iframe wrapper.':item.implementation.dependencies.join(', ')||'None required.'}\n\n## Must / Must Not\nPreserve the CSS token roles, keyboard focus and reduced-motion. Do not introduce a second decorative accent palette, claim prototype code is complete, or copy upstream assets without permission.\n\n## Tokens / Starter\n${out.designMd?.compact??(standalone?'Save the HTML artifact as index.html. Core CSS:\n```css\n'+(recipe?.css??'')+'\n```\nStarter structure (full behavior is in HTML / Extended):\n```html\n'+(recipe?.html??'')+'\n```':starter?'```tsx\n'+starter+'\n```':'No executable starter available. Use Source for discovery only.')}\n\n## Source / License\n${provenanceFor(item)}\n${item.source.url||hub}\n${item.license.name}: ${item.license.evidenceUrl||hub+'/blob/main/LICENSE'}\n`
   out.agent={extended,compact,filename:`${item.id}-agent-package.md`,provenance:hubProvenance}
   if(!allowed)return {agent:item.artifacts?.agent?.provenance.origin==='hub-original'?item.artifacts.agent:out.agent}
   const merged={...out,...item.artifacts}

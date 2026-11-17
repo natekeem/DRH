@@ -1,0 +1,17 @@
+{
+  "type": "verified-svg",
+  "format": "svg",
+  "provider": "simple-icons",
+  "label": "Figma",
+  "src": "brand-assets/figma/logo.svg",
+  "darkSrc": "brand-assets/figma/logo-dark.svg",
+  "sourceUrl": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/figma.svg",
+  "evidenceUrl": "https://www.figma.com/using-the-figma-brand/",
+  "license": "Simple Icons 16.37.0 icon data, CC0-1.0; recolored with the Simple Icons brand hex #F24E1E. Trademark rights remain with the owner; identification only, not MIT.",
+  "attribution": "Figma 상표·로고는 해당 소유자의 자산입니다. Simple Icons 아이콘을 브랜드 식별 목적으로만 표시하며 제휴·보증을 뜻하지 않습니다.",
+  "usageTerms": "Unmodified shape; aspect ratio preserved. Only fill color set (brand hex, or neutral black/white when illegible). No affiliation or endorsement claim.",
+  "checkedAt": "2026-11-11",
+  "sha256": "b9171110637bb953781a04044d9957478ae84f6a7ac597a25c0bfdfb3292a45e",
+  "darkSha256": "b9171110637bb953781a04044d9957478ae84f6a7ac597a25c0bfdfb3292a45e",
+  "originalSha256": "2f86fca501dfed321a62f28743f29d9dd738dac91668eac5260ab746d1ef8840"
+}

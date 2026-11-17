@@ -1,0 +1,17 @@
+{
+  "type": "verified-svg",
+  "format": "svg",
+  "provider": "simple-icons",
+  "label": "Intercom",
+  "src": "brand-assets/intercom/logo.svg",
+  "darkSrc": "brand-assets/intercom/logo-dark.svg",
+  "sourceUrl": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/intercom.svg",
+  "evidenceUrl": "https://www.intercom.com/press",
+  "license": "Simple Icons 16.37.0 icon data, CC0-1.0; recolored with the Simple Icons brand hex #6AFDEF. Trademark rights remain with the owner; identification only, not MIT.",
+  "attribution": "Intercom 상표·로고는 해당 소유자의 자산입니다. Simple Icons 아이콘을 브랜드 식별 목적으로만 표시하며 제휴·보증을 뜻하지 않습니다.",
+  "usageTerms": "Unmodified shape; aspect ratio preserved. Only fill color set (brand hex, or neutral black/white when illegible). No affiliation or endorsement claim.",
+  "checkedAt": "2026-11-11",
+  "sha256": "04d2bf4de256bfc7d66467e8e7872b413691f08fde70d9bc81166000a96cd8f0",
+  "darkSha256": "9e08625c57d0ed7592619f9f6f5ef0a8fb17e9a41c8ec2127f3a741febcdaccf",
+  "originalSha256": "5500c77b2e27022c06ef7457ff395e2c41398a3fb03b41b02e337af3e3ecdb54"
+}

@@ -1,0 +1,17 @@
+{
+  "type": "verified-svg",
+  "format": "svg",
+  "provider": "simple-icons",
+  "label": "Resend",
+  "src": "brand-assets/resend/logo.svg",
+  "darkSrc": "brand-assets/resend/logo-dark.svg",
+  "sourceUrl": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/resend.svg",
+  "evidenceUrl": "https://resend.com/brand",
+  "license": "Simple Icons 16.37.0 icon data, CC0-1.0; recolored with the Simple Icons brand hex #000000. Trademark rights remain with the owner; identification only, not MIT.",
+  "attribution": "Resend 상표·로고는 해당 소유자의 자산입니다. Simple Icons 아이콘을 브랜드 식별 목적으로만 표시하며 제휴·보증을 뜻하지 않습니다.",
+  "usageTerms": "Unmodified shape; aspect ratio preserved. Only fill color set (brand hex, or neutral black/white when illegible). No affiliation or endorsement claim.",
+  "checkedAt": "2026-11-11",
+  "sha256": "ad78ae8e1b24aebc422ebee263e8b31a7fe457f85f453062e111988b9194140e",
+  "darkSha256": "a543ab5474a7562b4c7cc0efe776ada96cff0dea8c7f9a18faadb17d093aa571",
+  "originalSha256": "1a95a84811b2f856852afdbcb475419d9f8d18d6cc9dd7353d89a246162662eb"
+}

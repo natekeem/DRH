@@ -1,0 +1,17 @@
+{
+  "type": "verified-svg",
+  "format": "svg",
+  "provider": "simple-icons",
+  "label": "Raycast",
+  "src": "brand-assets/raycast/logo.svg",
+  "darkSrc": "brand-assets/raycast/logo-dark.svg",
+  "sourceUrl": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/raycast.svg",
+  "evidenceUrl": "https://www.raycast.com/press",
+  "license": "Simple Icons 16.37.0 icon data, CC0-1.0; recolored with the Simple Icons brand hex #FF6363. Trademark rights remain with the owner; identification only, not MIT.",
+  "attribution": "Raycast 상표·로고는 해당 소유자의 자산입니다. Simple Icons 아이콘을 브랜드 식별 목적으로만 표시하며 제휴·보증을 뜻하지 않습니다.",
+  "usageTerms": "Unmodified shape; aspect ratio preserved. Only fill color set (brand hex, or neutral black/white when illegible). No affiliation or endorsement claim.",
+  "checkedAt": "2026-11-11",
+  "sha256": "ebee285df6996de4de69365b7d754eb4300bb83b201d4186f1b3d8d911f4d91d",
+  "darkSha256": "ebee285df6996de4de69365b7d754eb4300bb83b201d4186f1b3d8d911f4d91d",
+  "originalSha256": "0daad0147951c8835e424ee2099e314a33d1c6c7f9b19eaa501504f6c89a06a4"
+}

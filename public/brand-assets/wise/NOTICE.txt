@@ -1,0 +1,17 @@
+{
+  "type": "verified-svg",
+  "format": "svg",
+  "provider": "simple-icons",
+  "label": "Wise",
+  "src": "brand-assets/wise/logo.svg",
+  "darkSrc": "brand-assets/wise/logo-dark.svg",
+  "sourceUrl": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/wise.svg",
+  "evidenceUrl": "https://wise.design/foundations/logo",
+  "license": "Simple Icons 16.37.0 icon data, CC0-1.0; recolored with the Simple Icons brand hex #9FE870. Trademark rights remain with the owner; identification only, not MIT.",
+  "attribution": "Wise 상표·로고는 해당 소유자의 자산입니다. Simple Icons 아이콘을 브랜드 식별 목적으로만 표시하며 제휴·보증을 뜻하지 않습니다.",
+  "usageTerms": "Unmodified shape; aspect ratio preserved. Only fill color set (brand hex, or neutral black/white when illegible). No affiliation or endorsement claim.",
+  "checkedAt": "2026-11-11",
+  "sha256": "66d4b4bc4977cd913d8cfd065ad0d3f7e486a3cf315947c30b89401b61d9714a",
+  "darkSha256": "882842c0a729e633e84fff24bf9edecec8216b8bf0b47f866e32f82d41fb6c18",
+  "originalSha256": "910c96635631906e3a2f502d6a43a7155b987f6ce46a44198c51f0877b2fc70c"
+}

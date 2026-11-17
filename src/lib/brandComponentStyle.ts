@@ -50,15 +50,25 @@ export function resolveComponentStyle(values:Record<string,unknown>,catalog:Bran
  if(shorthand){t.fontSize??=shorthand[1];t.fontWeight??=Number(shorthand[2]);t.lineHeight??=shorthand[3]}
  // Standard CSS font shorthand is parsed, never assigned wholesale.
  const cssFont=typeof values.font==='string'?values.font.match(/^(?:(normal|bold|[1-9]00)\s+)?([\d.]+(?:px|rem|em))(?:\/([\d.]+(?:px|rem|em)?))?\s+([\w\s,'"-]+)$/):null
- if(cssFont){t.fontWeight??=cssFont[1];t.fontSize??=cssFont[2];t.lineHeight??=cssFont[3];t.fontFamily??=cssFont[4]}
+ if(cssFont){
+  t.fontWeight??=cssFont[1];t.fontSize??=cssFont[2]
+  if(cssFont[3]){
+   if(/^[1-9]00$/.test(cssFont[3])){
+    t.fontWeight??=Number(cssFont[3])
+   }else{
+    t.lineHeight??=cssFont[3]
+   }
+  }
+  t.fontFamily??=cssFont[4]
+ }
  t.fontSize??=values.fontSize as string;t.fontWeight??=values.fontWeight as string;t.lineHeight??=values.lineHeight as string;t.letterSpacing??=values.letterSpacing as string;t.fontFamily??=values.fontFamily as string
- const s:ResolvedComponentStyle={backgroundColor:color(values.backgroundColor??values.bg),color:color(values.textColor??values.fg??values.color),borderRadius:lengths(resolve(values.rounded??values.borderRadius??values.radius)),padding:lengths(resolve(values.padding)),paddingBlock:lengths(resolve(values.paddingBlock)),paddingInline:lengths(resolve(values.paddingInline)),height:len(values.height??values.size),width:len(values.width??values.size),minHeight:len(values.minHeight),maxHeight:len(values.maxHeight),minWidth:len(values.minWidth),maxWidth:len(values.maxWidth),fontSize:len(t.fontSize??typography.size),letterSpacing:len(t.letterSpacing??typography.tracking)}
+ const s:ResolvedComponentStyle={backgroundColor:color(values.backgroundColor??values.bg),color:color(values.textColor??values.fg??values.color),borderRadius:(()=>{const r=resolve(values.rounded??values.borderRadius??values.radius);const norm=typeof r==='string'&&/^(?:50%|100%)$/.test(r.trim())&&!(values.width&&values.height&&String(values.width)===String(values.height))?'9999px':r;return lengths(norm)})(),padding:lengths(resolve(values.padding)),paddingBlock:lengths(resolve(values.paddingBlock)),paddingInline:lengths(resolve(values.paddingInline)),height:len(values.height??values.size),width:len(values.width??values.size),minHeight:len(values.minHeight),maxHeight:len(values.maxHeight),minWidth:len(values.minWidth),maxWidth:len(values.maxWidth),fontSize:len(t.fontSize??typography.size),letterSpacing:len(t.letterSpacing??typography.tracking)}
  if(typeof (t.fontFamily??t.declaredFamily)==='string'&&/^[\w\s,'"-]+$/.test(String(t.fontFamily??t.declaredFamily)))s.fontFamily=resolveBrandFont(t).stack
  if(/^(none|uppercase|lowercase|capitalize)$/.test(String(t.textTransform)))s.textTransform=t.textTransform as CSSProperties['textTransform']
  const weight=t.fontWeight??typography.weight
  if(/^(?:[1-9]\d{0,2}|1000|normal|bold)$/.test(String(weight)))s.fontWeight=weight as CSSProperties['fontWeight']
  const leading=String(resolve(t.lineHeight)??'')
- if(/^\d+(?:\.\d+)?$/.test(leading))s.lineHeight=Number(leading)
+ if(/^\d+(?:\.\d+)?$/.test(leading)){const num=Number(leading);if(num>=100&&num<=900&&num%100===0){if(!s.fontWeight)s.fontWeight=num as CSSProperties['fontWeight']}else if(num<=4){s.lineHeight=num}}
  else if(safeLength(leading))s.lineHeight=s.fontSize?.toString().endsWith('px')&&leading.endsWith('px')?parseFloat(leading)/parseFloat(String(s.fontSize)):safeLength(leading)
  const border=typeof values.border==='string'?values.border.trim():''
  const b=border.match(/^(\d+(?:\.\d+)?(?:px|rem|em)?)[ ]+(solid|dashed|dotted|double|ridge|groove|inset|outset)[ ]+(.+)$/)

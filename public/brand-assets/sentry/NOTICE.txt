@@ -1,0 +1,17 @@
+{
+  "type": "verified-svg",
+  "format": "svg",
+  "provider": "simple-icons",
+  "label": "Sentry",
+  "src": "brand-assets/sentry/logo.svg",
+  "darkSrc": "brand-assets/sentry/logo-dark.svg",
+  "sourceUrl": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/sentry.svg",
+  "evidenceUrl": "https://github.com/simple-icons/simple-icons/blob/16.37.0/DISCLAIMER.md",
+  "license": "Simple Icons 16.37.0 icon data, CC0-1.0; recolored with the Simple Icons brand hex #362D59. Trademark rights remain with the owner; identification only, not MIT.",
+  "attribution": "Sentry 상표·로고는 해당 소유자의 자산입니다. Simple Icons 아이콘을 브랜드 식별 목적으로만 표시하며 제휴·보증을 뜻하지 않습니다.",
+  "usageTerms": "Unmodified shape; aspect ratio preserved. Only fill color set (brand hex, or neutral black/white when illegible). No affiliation or endorsement claim.",
+  "checkedAt": "2026-11-11",
+  "sha256": "24ac56868a3b5dd440c4de2a3cf8f6864591ba81067eedd8d6be0b0690b136eb",
+  "darkSha256": "91b37174bc7882d6914515b4bd75f7398e3dcd4109f23edccf33d4d46ca253ca",
+  "originalSha256": "8ba32902ffbac503784607374f57df5e3cbcf57a99d0adff03e735575500adc6"
+}

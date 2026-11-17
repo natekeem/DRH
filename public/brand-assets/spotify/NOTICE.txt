@@ -1,0 +1,17 @@
+{
+  "type": "verified-svg",
+  "format": "svg",
+  "provider": "simple-icons",
+  "label": "Spotify",
+  "src": "brand-assets/spotify/logo.svg",
+  "darkSrc": "brand-assets/spotify/logo-dark.svg",
+  "sourceUrl": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/spotify.svg",
+  "evidenceUrl": "https://developer.spotify.com/documentation/general/design-and-branding/#using-our-logo",
+  "license": "Simple Icons 16.37.0 icon data, CC0-1.0; recolored with the Simple Icons brand hex #1ED760. Trademark rights remain with the owner; identification only, not MIT.",
+  "attribution": "Spotify 상표·로고는 해당 소유자의 자산입니다. Simple Icons 아이콘을 브랜드 식별 목적으로만 표시하며 제휴·보증을 뜻하지 않습니다.",
+  "usageTerms": "Unmodified shape; aspect ratio preserved. Only fill color set (brand hex, or neutral black/white when illegible). No affiliation or endorsement claim.",
+  "checkedAt": "2026-11-11",
+  "sha256": "366bb7f8086dd7c7e0d9edc4c54b0b47fd3b003f6d10a04d83c4ccff8e6f4bf5",
+  "darkSha256": "366bb7f8086dd7c7e0d9edc4c54b0b47fd3b003f6d10a04d83c4ccff8e6f4bf5",
+  "originalSha256": "b9ec9bec7769c35643981586d6ea0d675aaf3871b32f8a291bcac7a87fff0bc1"
+}

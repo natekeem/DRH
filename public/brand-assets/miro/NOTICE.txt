@@ -1,0 +1,17 @@
+{
+  "type": "verified-svg",
+  "format": "svg",
+  "provider": "simple-icons",
+  "label": "Miro",
+  "src": "brand-assets/miro/logo.svg",
+  "darkSrc": "brand-assets/miro/logo-dark.svg",
+  "sourceUrl": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/miro.svg",
+  "evidenceUrl": "https://github.com/simple-icons/simple-icons/blob/16.37.0/DISCLAIMER.md",
+  "license": "Simple Icons 16.37.0 icon data, CC0-1.0; recolored with the Simple Icons brand hex #050038. Trademark rights remain with the owner; identification only, not MIT.",
+  "attribution": "Miro 상표·로고는 해당 소유자의 자산입니다. Simple Icons 아이콘을 브랜드 식별 목적으로만 표시하며 제휴·보증을 뜻하지 않습니다.",
+  "usageTerms": "Unmodified shape; aspect ratio preserved. Only fill color set (brand hex, or neutral black/white when illegible). No affiliation or endorsement claim.",
+  "checkedAt": "2026-11-11",
+  "sha256": "bd0810bca2ba457c9642b9b1580c627820ee623f1989f80feba629994c44fda1",
+  "darkSha256": "3f542c11c3674b1b676ebbbef5a4dddffa0fef1ea7a16b05e4bc17707d8b842f",
+  "originalSha256": "1fd0ef517dbef098f56d2c67d7cb6d9850df2d69357848500be0c610b41e237e"
+}

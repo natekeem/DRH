@@ -1,0 +1,17 @@
+{
+  "type": "verified-svg",
+  "format": "svg",
+  "provider": "simple-icons",
+  "label": "Renault",
+  "src": "brand-assets/renault/logo.svg",
+  "darkSrc": "brand-assets/renault/logo-dark.svg",
+  "sourceUrl": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/renault.svg",
+  "evidenceUrl": "https://github.com/simple-icons/simple-icons/blob/16.37.0/DISCLAIMER.md",
+  "license": "Simple Icons 16.37.0 icon data, CC0-1.0; recolored with the Simple Icons brand hex #FFCC33. Trademark rights remain with the owner; identification only, not MIT.",
+  "attribution": "Renault 상표·로고는 해당 소유자의 자산입니다. Simple Icons 아이콘을 브랜드 식별 목적으로만 표시하며 제휴·보증을 뜻하지 않습니다.",
+  "usageTerms": "Unmodified shape; aspect ratio preserved. Only fill color set (brand hex, or neutral black/white when illegible). No affiliation or endorsement claim.",
+  "checkedAt": "2026-11-11",
+  "sha256": "18a45665122ce180f10d48c6972e56dd88233d97508c8063349e4cef8dcba229",
+  "darkSha256": "82152c01daea2577da780ceabc06c00cfbd7f4df4347579c50e40f5e13f905f7",
+  "originalSha256": "59a8b5df584c85f680e2f81b8255a3bbf562ce291c5a9db6a78f393c4ecad7d6"
+}

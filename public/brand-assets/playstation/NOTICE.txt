@@ -1,0 +1,17 @@
+{
+  "type": "verified-svg",
+  "format": "svg",
+  "provider": "simple-icons",
+  "label": "PlayStation",
+  "src": "brand-assets/playstation/logo.svg",
+  "darkSrc": "brand-assets/playstation/logo-dark.svg",
+  "sourceUrl": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/playstation.svg",
+  "evidenceUrl": "https://github.com/simple-icons/simple-icons/blob/16.37.0/DISCLAIMER.md",
+  "license": "Simple Icons 16.37.0 icon data, CC0-1.0; recolored with the Simple Icons brand hex #0070D1. Trademark rights remain with the owner; identification only, not MIT.",
+  "attribution": "PlayStation 상표·로고는 해당 소유자의 자산입니다. Simple Icons 아이콘을 브랜드 식별 목적으로만 표시하며 제휴·보증을 뜻하지 않습니다.",
+  "usageTerms": "Unmodified shape; aspect ratio preserved. Only fill color set (brand hex, or neutral black/white when illegible). No affiliation or endorsement claim.",
+  "checkedAt": "2026-11-11",
+  "sha256": "72de575d8d8245fe383182d2efc92bdfa4160dd28cc535042a4aae3b566945c8",
+  "darkSha256": "72de575d8d8245fe383182d2efc92bdfa4160dd28cc535042a4aae3b566945c8",
+  "originalSha256": "b68b4d7b63443759b9c4d77a5501c5758eeae06a6d594d278d5eb6cb4d3dbbe4"
+}

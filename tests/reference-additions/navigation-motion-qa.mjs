@@ -1,11 +1,11 @@
 import assert from 'node:assert/strict'
 import { createRequire } from 'node:module'
-import { mkdir, writeFile } from 'node:fs/promises'
+import { mkdir, readFile, writeFile } from 'node:fs/promises'
 
 const require = createRequire(import.meta.url)
 const { chromium } = require(process.env.PLAYWRIGHT_PATH || 'playwright')
 const base = process.env.DRH_URL || 'http://127.0.0.1:5174'
-const out = 'artifacts/navigation-motion'
+const out = 'artifacts/local/browser/navigation-motion'
 const browser = await chromium.launch({ executablePath: process.env.EDGE_PATH || 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe', headless: true })
 const context = await browser.newContext()
 const page = await context.newPage()
@@ -58,14 +58,17 @@ const openReference = async (id, demo, width, height) => {
   return frame
 }
 
-const panelAlignment = async (id, rightSelector) => {
+const panelAlignment = async id => {
   await page.setViewportSize({ width: 1440, height: 1000 })
   await page.goto(`${base}/#/reference/${id}`)
   await page.locator('.reference-workspace-meta').waitFor()
-  const boxes = await page.locator(`.workspace-demo-shell,${rightSelector}`).evaluateAll(elements => elements.map(element => {
-    const rect = element.getBoundingClientRect()
-    return { top: rect.top, bottom: rect.bottom, height: rect.height }
-  }))
+  // Read both panels from one live workspace. Loading a vendor source can remount the artifact panel.
+  const boxes = await page.locator('.reference-workspace').evaluate(workspace =>
+    [...workspace.querySelectorAll('.workspace-demo-shell,.agent-workspace')].map(element => {
+      const rect = element.getBoundingClientRect()
+      return { top: rect.top, bottom: rect.bottom, height: rect.height }
+    }),
+  )
   assert.equal(boxes.length, 2)
   assert(Math.abs(boxes[0].top - boxes[1].top) < 1, `${id} panel tops: ${JSON.stringify(boxes)}`)
   assert(Math.abs(boxes[0].height - boxes[1].height) < 1, `${id} panel heights: ${JSON.stringify(boxes)}`)
@@ -117,8 +120,16 @@ try {
   await page.goto(`${base}/#/reference/animation-style-reel`)
   assert.match(await page.locator('main').innerText(), /찾을 수 없습니다/)
 
-  await panelAlignment('admd-apple', '.brand-agent-workspace')
-  await panelAlignment('pixel-run-cycle', '.artifact-workspace')
+  const appleSource = page.waitForResponse(response =>
+    response.url() === `${base}/vendor/awesome-design-md/apple/DESIGN.md` && response.ok(),
+  )
+  await panelAlignment('admd-apple')
+  const rawDesignMd = (await readFile('public/vendor/awesome-design-md/apple/DESIGN.md', 'utf8')).replaceAll('\r\n', '\n')
+  await appleSource
+  await page.locator('#artifact-tab-designMd').click()
+  await page.waitForFunction(raw => document.querySelector('#artifact-panel[data-type="designMd"] pre')
+    ?.textContent?.replaceAll('\r\n', '\n') === raw, rawDesignMd)
+  await panelAlignment('pixel-run-cycle')
 
   await page.setViewportSize({ width: 390, height: 844 })
   await page.goto(`${base}/#/reference/admd-apple`)

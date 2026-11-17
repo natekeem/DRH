@@ -112,8 +112,8 @@ ${item.artifacts?.designMd?.extended??item.designMd??''}
   },
   'metaballs': {
     html: '<canvas></canvas>',
-    logic: 'continuous field, smooth merge, pointer repel / attraction, spring equilibrium, ellipse deformation, field shader, card/detail blob counts. DO NOT replace this with: - opacity trail - blur-only glass - CSS circles',
-    acceptance: 'blobs share smooth necks, merge/separate under input. velocity changes ellipse deformation.'
+    logic: 'Render a continuous field in a canvas that fills its preview. Place the spring anchors around its horizontal and vertical center. Hover repels the blobs, press attracts them, and velocity changes ellipse deformation. Keep the card/detail blob counts and shared field shader. Use the static fallback for reduced motion.',
+    acceptance: 'At rest, blobs are centered and fully visible in Card and Detail. Blobs share smooth necks and visibly merge or separate under input.'
   },
   'liquid-refraction': {
     html: '<canvas></canvas>',
@@ -135,6 +135,9 @@ ${item.prompt??''}
 ## Visual Target
 ${item.description}
 ${official?`아래 TSX는 공식 ${preset.title} preset과 renderer를 사용한다.`:r?'Starter Code는 Hub 미리보기와 동일한 HTML/CSS/JavaScript다. 색상·크기·blur·timing 값을 유지한 후 제품 내용을 교체한다.':'현재 미리보기는 구성 참고용이며 완성된 전체 페이지 코드가 아니다.'}
+
+## Visual System
+${r&&'visualSystem' in r?r.visualSystem:'이 reference에 정의된 시각 값과 기존 제품의 토큰 역할을 대응시킨다. 임의의 보조 브랜드 팔레트를 추가하지 않는다.'}
 
 ## Interaction Behavior
 ${r?.logic??'구체적인 interaction 로직은 아직 미완성이다. 원본을 확인하고 trigger, 상태 전이, 시간, 종료 조건을 명시해야 한다.'}

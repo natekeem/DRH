@@ -1,0 +1,17 @@
+{
+  "type": "verified-svg",
+  "format": "svg",
+  "provider": "simple-icons",
+  "label": "Expo",
+  "src": "brand-assets/expo/logo.svg",
+  "darkSrc": "brand-assets/expo/logo-dark.svg",
+  "sourceUrl": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/expo.svg",
+  "evidenceUrl": "https://expo.dev/brand/",
+  "license": "Simple Icons 16.37.0 icon data, CC0-1.0; recolored with the Simple Icons brand hex #1C2024. Trademark rights remain with the owner; identification only, not MIT.",
+  "attribution": "Expo 상표·로고는 해당 소유자의 자산입니다. Simple Icons 아이콘을 브랜드 식별 목적으로만 표시하며 제휴·보증을 뜻하지 않습니다.",
+  "usageTerms": "Unmodified shape; aspect ratio preserved. Only fill color set (brand hex, or neutral black/white when illegible). No affiliation or endorsement claim.",
+  "checkedAt": "2026-11-11",
+  "sha256": "e523ebeca815bcf0523611d8b0d57ba580392195344ff62b2907682ce8af6cb3",
+  "darkSha256": "bc9aee0cf7ad6c93c3d343832baa5f778631d3587f1bd4651fe431a87bc9e2f9",
+  "originalSha256": "fe31b54a038878735a20ff497c6b250221707047785a324c4f7ef83228f40c6a"
+}

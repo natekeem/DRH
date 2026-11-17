@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict'
 import {createRequire} from 'node:module'
 import {writeFile} from 'node:fs/promises'
-import {demoModule} from '../../scripts/demo-module.mjs'
+import {demoModule} from '../../scripts/lib/demo-module.mjs'
 const require=createRequire(import.meta.url),{chromium}=require(process.env.PLAYWRIGHT_PATH||'playwright')
 const browser=await chromium.launch({channel:'msedge',headless:true})
 const page=await browser.newPage({viewport:{width:1440,height:1000}})

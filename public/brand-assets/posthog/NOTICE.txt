@@ -1,0 +1,17 @@
+{
+  "type": "verified-svg",
+  "format": "svg",
+  "provider": "simple-icons",
+  "label": "PostHog",
+  "src": "brand-assets/posthog/logo.svg",
+  "darkSrc": "brand-assets/posthog/logo-dark.svg",
+  "sourceUrl": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/posthog.svg",
+  "evidenceUrl": "https://posthog.com/handbook/company/brand-assets",
+  "license": "Simple Icons 16.37.0 icon data, CC0-1.0; recolored with the Simple Icons brand hex #000000. Trademark rights remain with the owner; identification only, not MIT.",
+  "attribution": "PostHog 상표·로고는 해당 소유자의 자산입니다. Simple Icons 아이콘을 브랜드 식별 목적으로만 표시하며 제휴·보증을 뜻하지 않습니다.",
+  "usageTerms": "Unmodified shape; aspect ratio preserved. Only fill color set (brand hex, or neutral black/white when illegible). No affiliation or endorsement claim.",
+  "checkedAt": "2026-11-11",
+  "sha256": "85191881b464b9e92ea1c9de7d52217d745bb228029f357f6f4d37621a955c63",
+  "darkSha256": "0daff91e2dcf04fdd087b375df05c7c9f7bd339f00270f1017b4d8b797580a1a",
+  "originalSha256": "5bf868765c8159a0d308d5577c86f2fc2f76d63795182a5a39bc362d5d4329f1"
+}

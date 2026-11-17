@@ -19,7 +19,7 @@ function initials(name:string) {
   return Array.from(word).slice(0,2).join('').toUpperCase()
 }
 
-export function BrandIdentityMark({slug,dark=false,context='card'}:{slug:string;dark?:boolean;context?:'card'|'preview'}) {
+export function BrandIdentityMark({slug,dark=false,context='card'}:{slug:string;dark?:boolean;context?:'card'|'preview'|'about'}) {
   const entry=vendorEntryBySlug[slug]
   if(!entry)return null
   const asset=brandIdentifier(slug,entry.spec)
@@ -27,17 +27,22 @@ export function BrandIdentityMark({slug,dark=false,context='card'}:{slug:string;
   const primary=entry.tokens.colors.primary
   const canvas=entry.tokens.colors.canvas
   const border=entry.tokens.colors.border
+  const darkCanvas=isDark(canvas)
+  const fallbackBorder=dark||darkCanvas?'rgba(255,255,255,0.18)':'rgba(17,17,17,0.14)'
+  const resolvedBorder=border&&border!=='currentColor'?border:fallbackBorder
   const markStyle:IdentityMarkStyle={
     '--brand-mark-bg':asset.type==='text-wordmark'?primary:dark?'#ffffff':'#ffffff',
     '--brand-mark-ink':asset.type==='text-wordmark'?(isDark(primary)?'#ffffff':'#111111'):dark?'#ffffff':'#111111',
-    '--brand-mark-border':border==='currentColor'?(dark?'#ffffff33':'#11111122'):border,
+    '--brand-mark-border':resolvedBorder,
     '--brand-mark-font':resolveBrandFont(role).stack,
     backgroundColor:asset.type==='text-wordmark'?primary:dark?'#ffffff0a':canvas,
   }
   const verified=asset.type!=='text-wordmark'
-  const src=(dark&&asset.darkSrc?asset.darkSrc:asset.src)?.replace(/^\/+/, '')
-  const note=verified?'공식 제공 식별 자산 · 참고 표시':'DRH 텍스트 식별 마크 · 공식 로고 아님'
-  return <span className={`brand-identity-mark ${verified?'is-verified':'is-text'} is-${asset.format||'mark'} context-${context}`} style={markStyle} role="img" aria-label={`${entry.name} · ${note}`} title={note} data-asset-kind={asset.type}>
+  // A dark brand canvas needs the light-ink variant even when the surrounding page is light.
+  const darkSurface=dark||darkCanvas
+  const src=(darkSurface&&asset.darkSrc?asset.darkSrc:asset.src)?.replace(/^\/+/, '')
+  const note=!verified?'DRH 텍스트 식별 마크 · 공식 로고 아님':asset.provider==='simple-icons'?'Simple Icons 브랜드 아이콘 · 식별 목적 참고 표시':'공식 제공 식별 자산 · 참고 표시'
+  return <span className={`brand-identity-mark ${verified?'is-verified':'is-text'} is-${asset.format||'mark'} context-${context} brand-${slug}`} style={markStyle} role="img" aria-label={`${entry.name} · ${note}`} title={note} data-asset-kind={asset.type}>
     {verified&&src?<img src={import.meta.env.BASE_URL+src} alt=""/>:<span aria-hidden="true">{initials(asset.label||entry.name)}</span>}
     <span className="sr-only">{note}</span>
   </span>

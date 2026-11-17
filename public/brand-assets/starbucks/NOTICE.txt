@@ -1,0 +1,17 @@
+{
+  "type": "verified-svg",
+  "format": "svg",
+  "provider": "simple-icons",
+  "label": "Starbucks",
+  "src": "brand-assets/starbucks/logo.svg",
+  "darkSrc": "brand-assets/starbucks/logo-dark.svg",
+  "sourceUrl": "https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/starbucks.svg",
+  "evidenceUrl": "https://creative.starbucks.com",
+  "license": "Simple Icons 16.37.0 icon data, CC0-1.0; recolored with the Simple Icons brand hex #006241. Trademark rights remain with the owner; identification only, not MIT.",
+  "attribution": "Starbucks 상표·로고는 해당 소유자의 자산입니다. Simple Icons 아이콘을 브랜드 식별 목적으로만 표시하며 제휴·보증을 뜻하지 않습니다.",
+  "usageTerms": "Unmodified shape; aspect ratio preserved. Only fill color set (brand hex, or neutral black/white when illegible). No affiliation or endorsement claim.",
+  "checkedAt": "2026-11-11",
+  "sha256": "e8a397a07e93c0a4167c84707e4b6a825b3ec652cb6e7a0d463f3bdb95269a85",
+  "darkSha256": "f08ca99948475a9e324e82766afbc18949598d19969603f20824c916cbf43ba7",
+  "originalSha256": "b12ac9042b77a04d88f28e5be655719dd1e321b0b700ea5a280df4e1ca8c23c8"
+}

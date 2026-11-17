@@ -31,7 +31,116 @@ type Seed = {
   designMd?: string
 }
 
-const promptFor = (s: Seed) => `Create a ${s.name} treatment for a modern web interface. ${s.description} Use it for ${s.useCases.join(', ')}. Keep the interaction purposeful, responsive, keyboard-safe where relevant, and provide a reduced-motion fallback.`
+const pagePrompts: Record<string, string> = {
+  'login-page': `Build a modern, production-grade Split Authentication (Login & Signup) page in React/TypeScript with Tailwind CSS or CSS Modules.
+
+Architecture & Layout:
+- Desktop (≥768px): Split 2-column layout (52% form surface, 48% brand showcase panel).
+- Mobile (<768px): Responsive single-column layout prioritizing the authentication form with zero horizontal overflow.
+
+Left / Main Form Column:
+- Header: Minimalist brand lockup (geometric SVG logo mark + workspace name) and a subtle "Need help?" support link.
+- Mode Switcher: Segmented tab pill ("Sign in" / "Create account") supporting keyboard roving focus (ArrowLeft/ArrowRight, Home/End) and ARIA roles.
+- Social SSO: Google (multi-color SVG) and GitHub (monochrome SVG) single-click auth buttons with clean 1px border and hover lift.
+- Divider: Subtle "or with email" divider.
+- Form Inputs: Full Name (revealed dynamically in Create Account mode), Email Address, and Password with inline Show/Hide eye toggle. Inputs must feature min-height 44px, 14px text, 10px rounded corners, and accessible focus-visible rings (indigo/violet glow).
+- Form Options: "Keep me signed in" checkbox and "Forgot password?" interactive link.
+- CTA: High-contrast primary button ("Sign in securely" / "Create account") with hover transform and active states.
+- Client Validation: Native HTML5 + accessible inline status region (role="status"); auto-focus the first invalid field with aria-invalid="true".
+
+Right / Brand Showcase Column:
+- Dark Obsidian Theme: Deep dark background (#0a0d14) with subtle radial mesh gradient glow (#6366f1 and #10b981) and fine 36px grid overlay.
+- Security Chip: "Private by default · No credentials leave client sandbox" pill with shield SVG icon.
+- Glassmorphic Social Proof: Frosted card (backdrop-blur-md, 1px border #ffffff1a) with 5-star rating, authentic testimonial quote, user avatar, and "Verified Customer" badge.
+- Trust Metrics: 3-column stats bar ("99.99% Uptime SLA", "SOC 2 Type II", "256-bit AES Encryption").
+
+Accessibility & Motion:
+- Fully keyboard accessible (Tab sequence, Enter to submit, Space to toggle).
+- Complete prefers-reduced-motion fallback disabling transitions.
+- Client-safe demo behavior without mock API leaks.`,
+  'saas-page': `Build a conversion-optimized, high-fidelity SaaS Landing Page in React/TypeScript and modern CSS.
+
+Key Sections:
+1. Sticky Header: Brand mark, central navigation links (Product, Outcomes, Stories), and prominent CTA buttons ("Log in", "Start free ↗") with blur backdrop.
+2. Value Proposition Hero: Bold display headline (clamp 52px-96px), concise subtitle, primary CTA with micro-trust badge ("No card required · 14-day trial"), and a 3D perspective window previewing the actual decision board.
+3. Social Proof Bar: High-contrast monochrome customer logo wall.
+4. Interactive Product Tour: 3-mode accessible tablist (01 Observe, 02 Decide, 03 Learn) with keyboard navigation that dynamically updates the interactive evidence board.
+5. Quantified Outcomes: 3-column metric cards (+2.4x velocity, -31% rework, 86% coverage) with geometric accent art.
+6. Testimonial & Closing CTA: Customer quote with author bio and a high-converting final action banner.
+
+Quality & A11y: Container queries for responsive scaling from 390px mobile to 1440px desktop, roving focus on tabs, and full reduced-motion support.`,
+  'dashboard-page': `Build a dense yet calm modern Application Dashboard in React/TypeScript.
+
+Layout & Components:
+- Collapsible Sidebar: Brand logo, icon-driven navigation items with active indicators and count badges, and current team profile footer.
+- Top Action Bar: View title, quick search trigger, date range segmented pill (7D / 30D / 90D), and "+ New decision" primary CTA.
+- KPI Summary Grid: 4 metric cards with sparkline indicators, period percentage changes, and status tags.
+- Dynamic Charts & Lists: SVG/CSS bar chart with accessible tooltips, donut/ring evidence health gauge, and real-time team activity feed with avatars.
+- Command Palette: Accessible native dialog triggered by "/" or Search button with live keyboard filtering.
+
+Accessibility: Full keyboard navigation, ARIA landmarks (main, aside, nav), and container queries.`,
+  'developer-tool-page': `Build a dark-mode technical Developer Tool Landing Page in React/TypeScript.
+
+Layout & Components:
+- Sticky Monospace Header: Angular terminal logo, navigation anchors, and GitHub star counter pill.
+- Interactive Hero: Punchy developer copy, copyable CLI command row with Selection API feedback, and a live terminal trace window simulating real-time agent execution logs with color-coded steps.
+- Runtime Code Switcher: Tablist switching between TypeScript, Python, and HTTP curl examples with syntax highlighting and a runnable local example button with latency feedback.
+- Architecture Flow Graph: Visual DAG node graph (Input → Plan → Tools → Answer) with animated connecting edges.
+- Technical Specs & Benchmarks: Latency comparison metrics and structured documentation quicklinks.
+
+Accessibility: Keyboard accessible tabs, prefers-reduced-motion fallback, and zero mock API network requests.`,
+  'docs-page': `Build a developer-first Documentation Page with rapid scanning and search in React/TypeScript.
+
+Layout & Features:
+- 3-Column Desktop Shell: Grouped sidebar navigation on the left, optimal measure article (max 68ch) in center, and on-page Table of Contents on the right.
+- Fast Search: Modal command dialog opened via "/" shortcut with instant substring filtering and Arrow/Enter navigation.
+- Article Chrome: Breadcrumbs, display heading, callout tips, interactive multi-manager code blocks (npm, pnpm, manual) with copy selection, and step-by-step implementation guides.
+- Responsive Behavior: Stacks into a clean single-column reader below 650px while keeping search accessible.`,
+  'portfolio-page': `Build an editorial Design Studio Portfolio in React/TypeScript.
+
+Layout & Art Direction:
+- Hero: Oversized display typography (clamp 72px-160px), studio practice statement, and kinetic geometric CSS artwork.
+- Filterable Work Grid: Asymmetric 2-column project showcase with category filters (All, Identity, Digital, Space) that dynamically re-order and filter projects with count updates.
+- Native Case Study Modal: Clicking any project opens an accessible HTML dialog with detailed challenge/system writeups and keyboard-friendly next project cycle.`,
+  'education-page': `Build an interactive Explainer / Educational Page in React/TypeScript.
+
+Layout & Interaction:
+- Question-Led Hero: Engaging question headline with playful card stack visual.
+- 4-Step Interactive Lesson: Step-by-step progress bar and accessible tablist that dynamically morphs an interactive bento diagram to demonstrate visual hierarchy rules.
+- Conceptual Analogy: Visual comparison diagram breaking down abstract concepts into everyday mental models.
+- Interactive Knowledge Check: 3-option visual quiz that evaluates user choices and provides instant, encouraging feedback.`,
+  'admin-page': `Build a high-density Internal Operations Admin Console in React/TypeScript.
+
+Layout & Controls:
+- Operations Header: Section breadcrumbs, create automation CTA, and export button.
+- Operational Health Cards: 4 live status cards (Healthy, Needs Attention, Paused, 24h Runs).
+- Data Table Toolbar: Live search input, status dropdown filter, "Owned by me" toggle button, and record count.
+- Dense Table: Sortable name column, multi-row selection with "Select all", color-coded status badges, owner avatars, schedule metadata, and actions dropdown.
+- Sticky Bulk Action Bar: Pops up when rows are checked to execute batch pause, reassign, or clear actions.`,
+  'event-page': `Build a bold, high-energy Event / Conference Landing Page in React/TypeScript.
+
+Layout & Features:
+- Kinetic Hero: Giant typographic headline, live D-Day countdown clock (Hours : Minutes : Seconds), and marquee ribbon banner.
+- Multi-Track Schedule: Filterable session timetable (Craft, Systems, Tools) with speaker tags, time slots, and add-to-schedule buttons.
+- Speaker Grid: Bold geometric portrait cards with speaker bios.
+- Registration Modal: Native ticket dialog with pass-type radio selector and validation.`,
+}
+
+const backgroundPrompts: Record<string, string> = {
+  'neural-network-field': 'Build a pure full-bleed Canvas 2D neural-network background with no headline, labels, HUD, or buttons. Show the complete network on the first frame: use a deterministic, evenly distributed normalized node set, precomputed nearest-neighbor edges, restrained cyan/blue light, and a few continuously travelling edge signals. Never use entrance animation, morphing, spawn queues, stored particle velocity, or spring return. Clear the opaque canvas every frame. Pointer input may only produce local computed brightening and up to 18px of non-persistent radial bending. Pause offscreen, freeze in reduced motion, scale density for card/detail, and clean up ResizeObserver, IntersectionObserver, events, and RAF on pagehide.',
+  'ascending-matrix-rain': 'Build a pure full-bleed Canvas 2D digital-rain background with no headline, labels, HUD, or buttons. Fill the first frame with deterministic columns of digits, Katakana, and symbols moving from bottom to top. Each stream has a near-white green leading glyph and a fading green trail below it. Clear the opaque canvas every frame so trails never accumulate or brighten over time. Recompute column count from container width, use only system monospace fonts, let pointer proximity brighten nearby columns without spawning content, freeze a complete static frame for reduced motion, pause offscreen, and clean up observers, events, and RAF on pagehide.',
+}
+
+const promptFor = (s: Seed) => {
+  if (backgroundPrompts[s.id]) return backgroundPrompts[s.id]
+  if (s.category === 'Pages' && pagePrompts[s.id]) {
+    return pagePrompts[s.id]
+  }
+  if (s.category === 'Pages') {
+    return `Build a production-ready ${s.name} architecture for a modern web application. ${s.description} Target use cases: ${s.useCases.join(', ')}. Ensure complete responsiveness from 390px mobile to 1440px desktop, keyboard navigation (Tab roving focus, Arrow keys for tabs, Escape for dialogs), accessible ARIA roles, semantic landmarks, and seamless prefers-reduced-motion fallback.`
+  }
+  return `Create a ${s.name} treatment for a modern web interface. ${s.description} Use it for ${s.useCases.join(', ')}. Keep the interaction purposeful, responsive, keyboard-safe where relevant, and provide a reduced-motion fallback.`
+}
 
 const mk = (s: Seed): ReferenceItem => ({
   ...s,
@@ -94,6 +203,8 @@ export const references: ReferenceItem[] = [
   mk({ id:'fluid-cursor', name:'Fluid Cursor Field', category:'Background', subcategory:'Fluid', demo:'fluid-cursor', description:'Colorful smoke-like fields bloom where the pointer moves.', tags:['fluid','smoke','cursor'], useCases:['hero','creative studio','showcase'], featured:true, wow:true }),
   mk({ id:'metaballs', name:'Interactive Metaballs', category:'Background', subcategory:'Organic', demo:'metaballs', description:'Soft cells merge visually and repel around the pointer.', tags:['metaball','blob','cursor'], useCases:['experimental','science','creative'], wow:true }),
   mk({ id:'starfield', name:'Starfield', category:'Background', subcategory:'Particles', demo:'starfield', description:'Layered stars drift at different depths for gentle spatial motion.', tags:['stars','space','depth'], useCases:['product launch','space','developer'] }),
+  mk({ id:'neural-network-field', name:'Neural Network Field', category:'Background', subcategory:'Particles', demo:'neural-network-field', description:'A complete neural graph fills the preview from the first frame, with restrained edge signals and quiet pointer-local bending instead of entrance or spring animation.', tags:['canvas','network','nodes','pointer','ambient'], useCases:['AI landing','research','developer tool','data background'], featured:true, wow:true, source:'Euiyun Lab (visual reference only)', sourceUrl:'https://euiyun.com/', license:'MIT (DRH clean-room implementation)', licenseEvidence:'https://github.com/natekeem/DRH/blob/main/LICENSE', licenseNotes:'euiyun.com의 공개 화면에서 신경망 배경의 분위기만 관찰했습니다. 외부 소스 코드·셰이더·폰트·이미지·브랜드 자산을 포함하지 않는 DRH 독립 구현입니다.' }),
+  mk({ id:'ascending-matrix-rain', name:'Ascending Matrix Rain', category:'Background', subcategory:'Code', demo:'ascending-matrix-rain', description:'Digits, Katakana, and symbols rise in luminous columns with bright leading glyphs and fading trails that never accumulate over time.', tags:['canvas','matrix','glyphs','code','ambient'], useCases:['developer tool','cybersecurity','terminal hero','technology background'], featured:true, wow:true, source:'Design Reference Hub', sourceUrl:'https://github.com/natekeem/DRH', license:'MIT', licenseEvidence:'https://github.com/natekeem/DRH/blob/main/LICENSE', licenseNotes:'특정 영화 프레임·폰트·코드·로고를 복제하지 않고 상승 방향으로 새로 설계한 Hub Original Canvas 2D 배경입니다.' }),
 
   // Motion
   mk({ id:'scroll-reveal', name:'Scroll Reveal', category:'Motion', subcategory:'Scroll', demo:'scroll-reveal', description:'Content enters as it approaches the viewport with controlled opacity and position.', tags:['scroll','reveal','entrance'], useCases:['landing','story','feature section'], source:'Motion Primitives', sourceUrl:'https://motion-primitives.com/', repo:'https://github.com/ibelick/motion-primitives', license:'MIT' }),
@@ -171,7 +282,7 @@ export const references: ReferenceItem[] = [
   mk({ id:'portfolio-page', name:'Portfolio', category:'Pages', subcategory:'Creative', demo:'page-portfolio', description:'Project-led storytelling with oversized media and minimal chrome.', tags:['portfolio','gallery','creative'], useCases:['designer','studio','photographer'] }),
   mk({ id:'education-page', name:'Explainer / Education', category:'Pages', subcategory:'Content', demo:'page-education', description:'Friendly cards, annotations and clear progressive disclosure simplify complex concepts.', tags:['education','ELI5','learning'], useCases:['training','onboarding','knowledge'] }),
   mk({ id:'admin-page', name:'Internal Admin', category:'Pages', subcategory:'Application', demo:'page-admin', description:'Utility-first management UI with table controls, filters and status pills.', tags:['admin','internal','table'], useCases:['operations','RPA','backoffice'] }),
-  mk({ id:'login-page', name:'Login / Signup', category:'Pages', subcategory:'Authentication', demo:'page-login', description:'A focused authentication experience with one clear task and optional brand panel.', tags:['login','signup','auth'], useCases:['SaaS','internal tool','community'] }),
+  mk({ id:'login-page', name:'Login / Signup', category:'Pages', subcategory:'Authentication', demo:'page-login', description:'A modern split authentication experience with tabbed sign-in/sign-up, SSO options, interactive password toggle, and a dark obsidian brand proof showcase.', tags:['login','signup','auth','sso'], useCases:['SaaS','internal tool','community','enterprise'] }),
   mk({ id:'event-page', name:'Event Landing', category:'Pages', subcategory:'Landing', demo:'page-event', description:'Time, speakers and registration are staged around a bold campaign identity.', tags:['event','conference','registration'], useCases:['conference','launch','meetup'] }),
 
   // UI Patterns / Screen navigation — Hub original, interactive and offline.
@@ -240,7 +351,7 @@ export const vendorEntryBySlug = Object.fromEntries(vendorEntries.map(v => [v.sl
 export const vendorSlugFromId = (id: string) => id.startsWith('admd-') ? id.slice(5) : null
 
 export const collections = [
-  { id:'wow', title:'WOW Landing Effects', description:'High-impact motion and interaction that earns attention in the first 10 seconds.', ids:['shader-gradient','liquid-lens-effect','image-trail','fluid-cursor','rgb-lens','metaballs','parallax','text-reveal'] },
+  { id:'wow', title:'WOW Landing Effects', description:'High-impact motion and interaction that earns attention in the first 10 seconds.', ids:['shader-gradient','liquid-lens-effect','image-trail','fluid-cursor','rgb-lens','metaballs','parallax','text-reveal','neural-network-field','ascending-matrix-rain'] },
   { id:'animation-style-library', title:'Animation Style Library', description:'Independent, reusable motion studies spanning drawn, printed, tactile, geometric, cinematic and interactive visual languages.', ids:['pixel-run-cycle','chalk-path-draw','neon-light-trace','polygon-glide','comic-impact-beat','flat-orbit-system','paper-layer-parallax','kinetic-chrome-form','brick-build-loop','clay-character-bounce','risograph-offset-jitter','blueprint-assembly','ink-wash-reveal','holographic-scan-field','retro-grid','aurora-background','gradient-mesh','morph','particles','metaballs','image-trail','liquid-lens-effect'] },
   { id:'screen-navigation', title:'Screen Navigation Essentials', description:'Twelve ways to move between destinations, levels, pages and staged tasks.', ids:['tab-bar-navigation','top-tabs-navigation','navigation-drawer','breadcrumb-navigation','sticky-header-navigation','floating-action-button','pagination-navigation','infinite-scroll-navigation','back-navigation','mega-menu-navigation','bottom-sheet','stepper-navigation'] },
   { id:'glass', title:'Liquid & Glass', description:'Translucency, refraction, soft light and fluid material experiments.', ids:['liquid-glass','glassmorphism','glass-card','liquid-lens-effect','spotlight-card','shader-gradient'] },
